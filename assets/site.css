@@ -549,6 +549,51 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .prose li::before { top: calc(0.
 }
 html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .doc-summary .tick { margin-top: 0.2em; }
 .doc-summary .tick svg { width: 16px; height: 16px; }
+.prose .doc-summary + p { margin-top: 14px; font-size: 14.5px; }
+
+/* Legal pages: lettered lists (a), (b), (c), and the permissions table, which becomes cards on a phone. */
+.prose ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: item; }
+.prose p + ol, .prose ol + p { margin-top: 14px; }
+.prose ol > li { padding-left: 2.2em; counter-increment: item; }
+.prose ol > li::before {
+  content: "(" counter(item, lower-alpha) ")"; left: 0; top: 0;
+  width: auto; height: auto; border-radius: 0; background: none; color: var(--ink); font-weight: 600;
+}
+html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .prose ol > li::before { top: 0; }
+.prose .table { margin-top: 18px; }
+.prose table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 12px 16px 12px 0; border-top: 1px solid var(--hair); }
+.prose thead th { border-top: 0; padding-top: 0; font-size: 13.5px; font-weight: 600; color: var(--ink3); }
+.prose tbody th { color: var(--ink); font-weight: 650; width: 30%; }
+.prose td { color: var(--ink2); }
+@media (max-width: 640px) {
+  .prose thead { display: none; }
+  .prose table, .prose tbody, .prose tr, .prose th, .prose td { display: block; width: auto; }
+  .prose tbody tr { border-top: 1px solid var(--hair); padding: 14px 0; }
+  .prose tbody th, .prose td { border: 0; padding: 0; width: auto; }
+  .prose td { margin-top: 6px; }
+  .prose td::before { content: attr(data-label) ": "; color: var(--ink); font-weight: 600; }
+  html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .prose td::before { content: attr(data-label) "："; }
+}
+
+/* FAQ page: the questions in groups, listed beside them on wide screens. */
+.faq-group + .faq-group { margin-top: 72px; }
+.faq-group h2 {
+  font-size: clamp(25px, 2.5vw, 31px); line-height: 1.2; letter-spacing: -0.022em;
+  max-width: none; margin: 0 0 10px;
+}
+html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .faq-group h2 { letter-spacing: 0; line-height: 1.35; }
+.faq-group .qa summary { font-size: 18px; }
+.qa details p a { color: var(--ink); text-underline-offset: 3px; }
+.faq-all { margin-top: 26px; }
+.faq-all a {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  font-weight: 650; font-size: 15px; color: var(--ink);
+  border-bottom: 2px solid var(--lime); padding-bottom: 3px;
+}
+.faq-all .arrow { transition: transform .2s; }
+.faq-all a:hover .arrow { transform: translateX(3px); }
+.nav-links a[aria-current="page"] { color: var(--night-ink); }
 
 /* Support: a lime card to write to us, then answers as cards. */
 .help-contact {
@@ -598,6 +643,9 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .doc-summary .tick { margin-top:
 }
 
 @media (max-width: 900px) {
+  /* Seven section links in German or French need about 900 pixels; below that the menu stays. */
+  .nav-links { display: none; }
+  .lang, .langmenu { margin-left: auto; }
   .hero { padding: 48px 0 112px; }
   .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .visual { margin: 0 auto; }

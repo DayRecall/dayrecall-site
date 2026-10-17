@@ -24,6 +24,8 @@ def tags(value):
     out = []
     for t in TAG.findall(value):
         t = re.sub(r'aria-label="[^"]*"?', 'aria-label=""', t)
+        if t.startswith('<a ') and not re.search(r'href="#', t):
+            t = re.sub(r'href="[^"]*"', 'href=""', t)   # a web link may point to the page in this language
         if t in ('<span class="nw">', '<br>'):
             continue
         out.append(t)
