@@ -470,12 +470,221 @@
     <loc>https://dayrecall.com/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
   </url>
   <url>
     <loc>https://dayrecall.com/zh/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/da/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/es/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/it/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ja/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ko/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/nl/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/pt/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/sv/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/tr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
   </url>
 </urlset>

@@ -1,0 +1,128 @@
+<!--
+{
+  "title": "Assistance — DayRecall",
+  "description": "Aide sur DayRecall : réponses rapides aux questions courantes sur l’écoute, les transcriptions, les réponses et vos données, ainsi que la façon de nous contacter."
+}
+-->
+  <section class="page-head">
+    <div class="wrap">
+      <p class="kicker">Assistance</p>
+      <h1>Aide sur DayRecall</h1>
+      <p class="lead">Des réponses rapides aux questions courantes et un moyen de nous joindre directement si elles ne suffisent pas.</p>
+    </div>
+  </section>
+
+  <section class="help">
+    <div class="wrap">
+      <div class="help-contact">
+        <div>
+          <h2>Écrivez-nous</h2>
+          <p>Dites-nous à peu près quand le problème est survenu, sur quel appareil et ce que vous avez vu. Un journal est très utile : <a href="#log">voici comment l’envoyer</a>.</p>
+          <p class="help-note">Vous testez la bêta ? Vous pouvez aussi envoyer des commentaires et des captures d’écran depuis l’application TestFlight.</p>
+        </div>
+        <a class="help-pill" href="mailto:support@dayrecall.com"><span class="dot"></span>support@dayrecall.com</a>
+        <div class="help-follow">
+          <p>Suivez DayRecall pour les actualités et les nouveautés. Pour obtenir de l’aide ou nous faire part de vos commentaires, écrivez-nous : c’est par e-mail que nous répondons.</p>
+          {{@social}}
+        </div>
+      </div>
+
+      <div class="help-needs">
+        <p class="kicker">Avant de commencer</p>
+        <h2>Ce qu’il vous faut</h2>
+        <div class="grid">
+          <article class="feat">
+            <h3>iPhone</h3>
+            <p>Un iPhone sous iOS 26 ou version ultérieure. Il garde votre journée et transforme la parole en texte.</p>
+          </article>
+          <article class="feat">
+            <h3>Apple Watch</h3>
+            <p>Une Apple Watch sous watchOS 26 ou version ultérieure écoute pour vous. Elle est facultative : vous pouvez aussi enregistrer avec l’iPhone ou importer de l’audio.</p>
+          </article>
+          <article class="feat">
+            <h3>Apple Intelligence</h3>
+            <p>Les réponses et les tâches utilisent Apple Intelligence : il faut donc un iPhone compatible sur lequel Apple Intelligence est activée. Pour les réponses, vous pouvez utiliser votre propre API à la place.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-answers" id="questions">
+    <div class="wrap">
+      <p class="kicker">Questions courantes</p>
+      <h2>Réponses rapides</h2>
+      <div class="grid help-grid">
+        <article class="feat">
+          <span class="ico" data-icon="watch"></span>
+          <h3>La montre n’écoute pas</h3>
+          <p>Votre Apple Watch n’écoute que pendant les horaires définis dans <strong>Réglages › Horaires d’écoute</strong>. Quand ils commencent, la montre vous demande si vous voulez démarrer : touchez <strong>Démarrer</strong> et elle s’arrêtera d’elle-même à la fin.</p>
+          <p>Un appel ou Siri interrompt l’écoute ; touchez <strong>Démarrer</strong> sur la montre pour reprendre. La page Aujourd’hui sur votre iPhone indique si la montre écoute.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="clock"></span>
+          <h3>Quand le texte apparaît-il ?</h3>
+          <p>La montre transmet ce qu’elle a entendu environ toutes les deux heures et quand elle s’arrête d’écouter ; votre iPhone le transforme en texte dès réception. Pour voir le texte plus tôt, ouvrez DayRecall et touchez <strong>Synchroniser maintenant</strong>.</p>
+          <p>La première fois, votre iPhone télécharge le modèle vocal d’Apple pour votre langue. Les enregistrements sont transformés en texte une fois qu’il est prêt.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>Pas de réponses ou pas de tâches</h3>
+          <p>Les deux utilisent Apple Intelligence. Vérifiez dans l’application Réglages de l’iPhone qu’il est activé et que son téléchargement est terminé. Les tâches apparaissent une fois qu’un enregistrement a été transformé en texte.</p>
+          <p>Pour les réponses, vous pouvez aussi utiliser votre propre API dans <strong>Réglages › Répondre avec</strong>.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="people"></span>
+          <h3>Identifier les personnes qui parlent</h3>
+          <p>Activez <strong>Identifier les personnes qui parlent</strong> dans <strong>Réglages › Transcription</strong> et enregistrez environ une minute de votre voix dans un endroit calme. Vos phrases sont ensuite marquées Moi, et celles des autres Autre 1, Autre 2.</p>
+          <p>Pour réenregistrer votre voix ou la supprimer, ouvrez <strong>Ma voix</strong> au même endroit.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="globe"></span>
+          <h3>Plusieurs langues</h3>
+          <p>Activez la <strong>Transcription multilingue</strong> dans <strong>Réglages › Transcription</strong> et ajoutez jusqu’à deux autres langues. DayRecall suit alors les conversations qui passent de l’une à l’autre.</p>
+          <p>La transcription prend plus de temps et consomme plus de batterie tant que cette option est activée.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>Transmettre une journée à une application IA</h3>
+          <p>Touchez <strong>Transmettre la journée à une application IA</strong> dans Aujourd’hui, une journée passée ou Poser une question, puis choisissez votre application IA dans la feuille de partage.</p>
+          <p>Pour récupérer les tâches qu’elle a trouvées, copiez sa réponse et touchez <strong>Importer la réponse de l’IA</strong> dans l’application Raccourcis ou dans <strong>Réglages › Tâches</strong>.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="calendar"></span>
+          <h3>Calendrier et Rappels</h3>
+          <p>Les promesses, les échéances et les réunions attendent dans Tâches, sous <strong>À confirmer</strong>. Confirmez un événement pour ouvrir l’écran Nouvel événement d’iOS.</p>
+          <p>Pour envoyer aussi les tâches confirmées vers Rappels, activez <strong>Ajouter les tâches confirmées à Rappels</strong> dans <strong>Réglages › Tâches</strong>.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>Les lieux sur la carte</h3>
+          <p>Activez <strong>Afficher la journée sur une carte</strong> dans <strong>Réglages › Lieux</strong>. Quand iOS demande l’accès à la position, choisissez Toujours afin de noter les lieux même lorsque DayRecall est fermé. Cette fonction consomme un peu de batterie.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="trash"></span>
+          <h3>Supprimer vos données</h3>
+          <p>Supprimez un enregistrement depuis sa page, ou supprimez tout avec <strong>Réglages › Confidentialité › Supprimer tous les souvenirs</strong>. <strong>Supprimer ma voix</strong> efface votre empreinte vocale.</p>
+          <p>La suppression de l’application efface ce qu’elle a stocké ; si vous avez enregistré une clé pour votre propre API, touchez d’abord <strong>Supprimer la clé enregistrée</strong>. Plus de détails dans la <a href="/privacy/">politique de confidentialité</a>.</p>
+        </article>
+        <article class="feat" id="log">
+          <span class="ico" data-icon="list"></span>
+          <h3>Nous envoyer un journal</h3>
+          <p>Ouvrez <strong>Réglages › Options pour les développeurs › Journaux</strong>, touchez <strong>Partager le journal</strong> et envoyez le fichier à <a href="mailto:support@dayrecall.com">support@dayrecall.com</a>.</p>
+          <p>Le journal indique ce que l’application a fait et quand. Il ne contient jamais les propos tenus, vos questions, des noms ni des lieux.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark help-more">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Confidentialité</p>
+        <h2>Du texte uniquement. Sur votre iPhone. Vous décidez.</h2>
+        <p>Ce que DayRecall conserve, où ces données restent et les rares cas où quelque chose quitte vos appareils.</p>
+      </div>
+      <a class="help-pill" href="/privacy/"><span class="dot"></span>Lire la politique de confidentialité</a>
+    </div>
+  </section>

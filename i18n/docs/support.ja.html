@@ -1,0 +1,128 @@
+<!--
+{
+  "title": "サポート — DayRecall",
+  "description": "DayRecall の使い方に関するヘルプ。聞き取り、文字起こし、回答、データについてのよくある質問と、お問い合わせ方法をご案内します。"
+}
+-->
+  <section class="page-head">
+    <div class="wrap">
+      <p class="kicker">サポート</p>
+      <h1>DayRecall の使い方</h1>
+      <p class="lead">よくある質問への簡単な回答と、お困りのときの連絡先をご案内します。</p>
+    </div>
+  </section>
+
+  <section class="help">
+    <div class="wrap">
+      <div class="help-contact">
+        <div>
+          <h2>お問い合わせ</h2>
+          <p>問題が起きたおおよその時刻、使っていた端末、画面に表示された内容をお知らせください。ログがあると特に役立ちます。<a href="#log">送信方法はこちら</a>。</p>
+          <p class="help-note">ベータ版を試している場合は、TestFlight アプリからスクリーンショットを添えてフィードバックを送ることもできます。</p>
+        </div>
+        <a class="help-pill" href="mailto:support@dayrecall.com"><span class="dot"></span>support@dayrecall.com</a>
+        <div class="help-follow">
+          <p>DayRecall をフォローすると、最新情報を確認できます。サポートやご意見はメールでお送りください。メールでお返事します。</p>
+          {{@social}}
+        </div>
+      </div>
+
+      <div class="help-needs">
+        <p class="kicker">使い始める前に</p>
+        <h2>必要なもの</h2>
+        <div class="grid">
+          <article class="feat">
+            <h3>iPhone</h3>
+            <p>iOS 26 以降を搭載した iPhone。一日の内容を保存し、音声を文字にします。</p>
+          </article>
+          <article class="feat">
+            <h3>Apple Watch</h3>
+            <p>watchOS 26 以降を搭載した Apple Watch で聞き取れます。必須ではなく、iPhone で録音したり、音声ファイルを読み込んだりすることもできます。</p>
+          </article>
+          <article class="feat">
+            <h3>Apple Intelligence</h3>
+            <p>回答と、やることの抽出には Apple Intelligence を使うため、対応する iPhone でこの機能をオンにする必要があります。回答には代わりにご自身の API を使うこともできます。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-answers" id="questions">
+    <div class="wrap">
+      <p class="kicker">よくある質問</p>
+      <h2>簡単な回答</h2>
+      <div class="grid help-grid">
+        <article class="feat">
+          <span class="ico" data-icon="watch"></span>
+          <h3>Apple Watch が聞き取っていない</h3>
+          <p>Apple Watch が聞き取るのは、<strong>設定 › 聞き取り時間</strong>で指定した時間帯だけです。開始時刻になると、Apple Watch が開始するか確認します。<strong>開始</strong>をタップすると聞き取りが始まり、終了時刻に自動で止まります。</p>
+          <p>通話や Siri の使用中は聞き取りが一時停止します。続けるには Apple Watch で<strong>開始</strong>をタップしてください。iPhone の「今日」ページで、Apple Watch が聞き取っているか確認できます。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="clock"></span>
+          <h3>文字はいつ表示されますか？</h3>
+          <p>Apple Watch は聞き取った内容を約 2 時間ごと、および聞き取りを停止したときに iPhone に渡します。iPhone は受け取ると文字にします。早く確認したいときは DayRecall を開き、<strong>今すぐ同期</strong>をタップしてください。</p>
+          <p>初回は iPhone が使用言語に対応する Apple の音声モデルをダウンロードします。準備ができると、録音した内容が文字に変換されます。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>回答や、やることが表示されない</h3>
+          <p>どちらにも Apple Intelligence を使います。iPhone の設定アプリで、この機能がオンになっていて、ダウンロードが完了しているか確認してください。やることは、録音した内容が文字になった後に表示されます。</p>
+          <p>回答には、<strong>設定 › 回答方法</strong>でご自身の API を選ぶこともできます。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="people"></span>
+          <h3>話し手を区別する</h3>
+          <p><strong>設定 › 文字起こし</strong>で<strong>話し手を表示</strong>をオンにし、静かな場所で約 1 分間、ご自身の声を録音してください。以後、あなたの発言には「自分」、ほかの人には「ほかの人 1」「ほかの人 2」と表示されます。</p>
+          <p>声を録音し直したり削除したりするには、同じ場所にある<strong>自分の声</strong>を開いてください。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="globe"></span>
+          <h3>複数の言語を使う</h3>
+          <p><strong>設定 › 文字起こし</strong>で<strong>多言語文字起こし</strong>をオンにし、使用言語をさらに最大 2 つ追加してください。DayRecall は言語が切り替わる会話にも対応します。</p>
+          <p>この機能をオンにすると、文字起こしにかかる時間とバッテリー消費が増えます。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>一日分を AI アプリに渡す</h3>
+          <p>「今日」、過去の日付、または「質問」画面で<strong>一日分を AI アプリに渡す</strong>をタップし、共有シートから使う AI アプリを選んでください。</p>
+          <p>AI が見つけたやることを取り込むには、回答をコピーし、ショートカットアプリまたは<strong>設定 › やること</strong>で<strong>AI の回答を取り込む</strong>をタップしてください。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="calendar"></span>
+          <h3>カレンダーとリマインダー</h3>
+          <p>約束、締め切り、会議は「やること」の<strong>確認待ち</strong>に表示されます。予定を確認すると、iOS の「新規イベント」画面が開きます。</p>
+          <p>確認した、やることもリマインダーに追加するには、<strong>設定 › やること</strong>で<strong>確認済みのやることをリマインダーに追加</strong>をオンにしてください。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>地図に場所を表示する</h3>
+          <p><strong>設定 › 場所</strong>で<strong>一日を地図に表示</strong>をオンにしてください。iOS が位置情報へのアクセスを求めたら「常に許可」を選ぶと、DayRecall を閉じている間も場所を記録できます。バッテリーを多少消費します。</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="trash"></span>
+          <h3>データを削除する</h3>
+          <p>個々の録音はそのページから、すべての記憶は<strong>設定 › プライバシー › すべての記憶を削除</strong>から削除できます。<strong>自分の声を削除</strong>で声紋を消せます。</p>
+          <p>アプリを削除すると、アプリに保存されていた内容も消えます。ご自身の API のキーを保存している場合は、先に<strong>保存済みのキーを削除</strong>をタップしてください。詳しくは<a href="/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+        </article>
+        <article class="feat" id="log">
+          <span class="ico" data-icon="list"></span>
+          <h3>ログを送る</h3>
+          <p><strong>設定 › 開発者向けオプション › ログ</strong>を開き、<strong>ログを共有</strong>をタップして、ファイルを <a href="mailto:support@dayrecall.com">support@dayrecall.com</a> に送ってください。</p>
+          <p>ログにはアプリが何をいつ行ったかが記録されます。話された内容、あなたの質問、人名、場所は含まれません。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark help-more">
+    <div class="wrap">
+      <div>
+        <p class="kicker">プライバシー</p>
+        <h2>文字だけ。あなたの iPhone に。決めるのはあなた。</h2>
+        <p>DayRecall が保存するものとその保存先、端末の外に情報が出る場合について説明します。</p>
+      </div>
+      <a class="help-pill" href="/privacy/"><span class="dot"></span>プライバシーポリシーを読む</a>
+    </div>
+  </section>
