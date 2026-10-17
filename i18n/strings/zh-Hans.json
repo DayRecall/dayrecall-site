@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — 你一整天的 AI 记忆｜Apple Watch 录音自动转文字",
+  "description": "DayRecall 用 Apple Watch 或 iPhone 在你选定的时段里录音，自动转成文字，只存在你的 iPhone 上；随时问问这一天，原话都找得回来。",
+  "og_title": "DayRecall — 你一整天的 AI 记忆",
+  "og_description": "Apple Watch（或者只用 iPhone）在你选定的时段里替你听着，说过的话都变成文字。随时问问这一天。",
+  "og_image_alt": "DayRecall：你一整天的 AI 记忆。最适合 Apple Watch，只用 iPhone 也行。",
+  "app_description": "一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App：在你选定的时段里替你听着，把说过的话变成文字存在 iPhone 上，随时回答关于这一天的问题，并给出原话。",
+  "app_features": [
+    "Apple Watch 全天聆听，手机不在身边也可以；只用 iPhone 也能听",
+    "在 iPhone 上把说话转成文字，随后删除录音",
+    "随时问问这一天，给出原话和说话的时刻",
+    "分清是谁说的：我、其他人 1、其他人 2",
+    "一段对话最多三种语言，并翻译成你的母语",
+    "找出待办、截止日期和会议，由你确认",
+    "不用账号，没有服务器；回答由 Apple 设备端模型完成"
+  ],
+  "keywords": "Apple Watch 录音,录音转文字,AI 记忆,AI 录音,会议记录,语音转文字,手表录音,健忘,DayRecall",
+  "top_01": "跳到正文",
+  "nav_01": "DayRecall 首页",
+  "nav_02": "页面导航",
+  "nav_03": "怎么用",
+  "nav_04": "设备",
+  "nav_05": "省电",
+  "nav_06": "多人识别",
+  "nav_07": "多语言",
+  "nav_08": "隐私",
+  "hero_01": "最适合 Apple Watch · 只用 iPhone 也行",
+  "hero_02": "<span class=\"nw\">你<span class=\"hl\">一整天</span>的</span> AI&nbsp;记忆",
+  "hero_03": "写给容易忘事的人。在你选定的时段里，Apple Watch（或者只用 iPhone）替你听着，说过的话都变成文字存在 iPhone 上。<strong><span class=\"nw\">随时问问这一天，</span><span class=\"nw\">原话都找得回来。</span>",
+  "hero_04": "内测中 · 即将登陆 App Store",
+  "hero_05": "前往 App Store 下载 ",
+  "hero_06": "看看怎么用 ",
+  "hero_07": "<span class=\"nw\">聆听时每小时</span><span class=\"nw\">额外耗电</span><a class=\"fn\" href=\"#n1\" aria-label=\"注 1",
+  "hero_08": "人声召回率<a class=\"fn\" href=\"#n2\" aria-label=\"注 2",
+  "hero_09": "17&nbsp;秒</b><span><span class=\"nw\">处理 3 分钟</span><span class=\"nw\">对话</span><a class=\"fn\" href=\"#n3\" aria-label=\"注 3",
+  "hero_10": "问 DayRecall“小王今天答应了我什么？”：回答列出两件事，每件都带编号，链接到当时说这句话的那一刻。",
+  "hero_11": "正在听</b><span>工作日 · 9:00–18:00",
+  "how_01": "怎么用",
+  "how_02": "<span class=\"nw\">早上点一下，</span><span class=\"nw\">一整天都能问。</span>",
+  "how_03": "一段声音被扫过：只有说话的部分亮起来并被留下，中间安静的部分被跳过。",
+  "how_04": "记住说过的话",
+  "how_05": "Apple Watch 会在你选定的时段里听，手机不在身边也一样。早上轻点一下，到点自动停止。自研超轻量人声模型在手表本地运行，只留下有人说话的片段。",
+  "how_06": "声音进了垃圾桶，变成标着“我”和“其他人 1”的几行文字；会议、待办和截止时间被挑了出来。",
+  "how_07": "自动整理",
+  "how_08": "iPhone 在设备上把说话转成文字、删除音频，并找出待办、截止日期和会议。它还能分清哪些是你说的，哪些是别人说的。",
+  "how_09": "记忆滑进 iPhone 并锁上；想去云端的内容被拦下，又回到手机里。",
+  "how_10": "默认保护隐私",
+  "how_11": "你的记忆保存在你的 iPhone 上，由 Apple 设备端模型回答。之后也可以改用自己的云端 API；在你允许之前，不会发送任何内容。",
+  "devices_01": "设备",
+  "devices_02": "<span class=\"nw\">手机不在身边，</span><span class=\"nw\">手表照样记。</span>",
+  "devices_03": "Apple Watch 可以独立聆听一整天。录音先存在手表上，每 2 小时同步到 iPhone 一次；手机不在身边也没关系，等两台设备再次连上（比如晚上回到家）就自动补上。iPhone 不用一直连着。",
+  "devices_04": "最推荐</span></h3><p>一直戴在手腕上，不需要手机陪着。",
+  "devices_05": "只有 iPhone</h3><p>没有 Apple Watch？iPhone 自己也能听。",
+  "devices_06": "两台一起</h3><p>一天只有一条时间线；两台都听到的话只显示一次，手表停了，iPhone 可以接着听。",
+  "devices_07": "从 Apple Watch 和 iPhone 开始，每一台会听的设备，都汇进同一份记忆。",
+  "devices_08": "iPhone 不在身边时，手表照样听，攒下 3 段待同步；11:00 iPhone 回来，3 段录音传过去，变成文字。",
+  "battery_01": "省电",
+  "battery_02": "<span class=\"nw\">听一整天，</span><span class=\"nw\">几乎不费电。</span>",
+  "battery_03": "从 9:00 到 18:00 的一个工作日：对话沿着时间轴一段段亮起，聆听多用的电只涨到约 8%。",
+  "battery_04": "自研专业级超轻量人声模型，<strong>仅 2,561 个参数</strong>，配合自研推理算子加速，在手表本地每 0.1 秒完成一次判断。",
+  "battery_05": "只保留有人说话的片段，安静、键盘声、风扇声在耗电之前就被过滤。从模型结构到推理算子，全部为手表从头设计，源自我们在 AI 加速方向的博士研究。",
+  "battery_06": "自研超轻量模型",
+  "battery_07": "自研算子加速",
+  "battery_08": "手表本地推理",
+  "battery_09": "AI 加速博士研究",
+  "battery_10": "聆听时每小时额外耗电<a class=\"fn\" href=\"#n1\" aria-label=\"注 1",
+  "battery_11": "人声召回率<a class=\"fn\" href=\"#n2\" aria-label=\"注 2",
+  "battery_12": "环境噪声直接跳过<a class=\"fn\" href=\"#n2\" aria-label=\"注 2",
+  "battery_13": "17&nbsp;秒</p><p class=\"l\">处理 3 分钟对话<a class=\"fn\" href=\"#n3\" aria-label=\"注 3",
+  "battery_14": "基于 DayRecall 于 2026 年 10 月在 Apple Watch Series 11 上进行的内部测试。实际耗电因设置和使用情况而异。",
+  "battery_15": "基于公开数据集的实验室测试：人声召回率取自 AMI 会议语料测试集，噪声跳过取自 DEMAND 环境噪声数据集。",
+  "battery_16": "基于 DayRecall 于 2026 年 10 月在 iPhone 17 Pro Max 上进行的内部测试。实际处理时间因机型和使用情况而异。",
+  "voices_01": "多人识别",
+  "voices_02": "<span class=\"nw\">认得你的声音，</span><span class=\"nw\">也分得清其他人。</span>",
+  "voices_03": "读一遍五张小卡片，大约一分钟，你说的话就都标成 <span class=\"tag-me\">我</span>。同一段对话里的其他人各有编号：<span class=\"tag-other\">其他人 1</span>、<span class=\"tag-other\">其他人 2</span>……你答应别人的事，和别人答应你的事，再也不会混在一起。",
+  "voices_04": "同一段对话中的多位说话人，逐一区分",
+  "voices_05": "待办自动标明是谁的承诺",
+  "voices_06": "一小时对话，4.4 秒完成说话人识别",
+  "voices_07": "声纹只存在你的 iPhone 上，他人声音从不保存",
+  "voices_08": "可选功能，默认关闭。速度基于 iPhone 17 Pro Max 上的内部测试。",
+  "voices_09": "一段会议里的四句话被一一听到，分别标成“我”“其他人 1”“其他人 2”“我”；三个声音聚在上方。",
+  "languages_01": "多语言",
+  "languages_02": "<span class=\"nw\">说着说着换了语言，</span><span class=\"nw\">照样记得下。</span>",
+  "languages_03": "最多选三种工作语言。DayRecall 自动识别语种切换，每一段都按原本说的语言转写。<span data-feature=\"translation\">其他语言的句子，还能翻译成你的母语。",
+  "languages_04": "一段对话最多三种语言",
+  "languages_05": "每一段按原语言转写",
+  "languages_06": "翻译成你的母语",
+  "languages_07": "一小时对话，约 32 秒完成语种识别",
+  "languages_08": "多语言转写为高级设置，默认关闭。速度基于 iPhone 17 Pro Max 上的内部测试。App 界面支持 13 种语言。",
+  "languages_09": "工作语言中文、英语、日语随着每句话依次亮起，每句按原来的语言写下；英语和日语的句子下面出现中文翻译。",
+  "features_01": "功能",
+  "features_02": "<span class=\"nw\">专为容易丢掉的</span><span class=\"nw\">细节而做</span>",
+  "features_03": "待办由你确认",
+  "features_04": "答应的事、截止日期和会议会从这一天里找出来；你点了确认，才会进日历和提醒事项。",
+  "features_05": "用自己的话问",
+  "features_06": "小王答应了我什么？报告哪天交？每个回答都标着出处，能点开看到当时说的那句话。",
+  "features_07": "哪一天都一目了然",
+  "features_08": "按时间线看一天，往回翻以前的日子，也能搜索听到过的一切。",
+  "features_09": "一周的计划",
+  "features_10": "每周把接下来的截止日期和答应过的事放在一起，由你挑哪些放进日历。",
+  "features_11": "需要时看地点",
+  "features_12": "在一天的地图上看每段对话发生在哪里。默认关闭，你打开才会用。",
+  "features_13": "交给你用的 AI",
+  "features_14": "想看得更深？把一天的文字以文本文件交给你常用的 AI App，只在你选择时发送。",
+  "privacy_01": "隐私",
+  "privacy_02": "<span class=\"nw\">只留文字，</span><span class=\"nw\">只在你的 iPhone&nbsp;上，</span><span class=\"nw\">由你决定。</span>",
+  "privacy_03": "记忆滑进 iPhone 并锁上；想去云端的内容被拦下，又回到手机里。",
+  "privacy_04": "存文字，不存录音",
+  "privacy_05": "说的话在 iPhone 上转成文字，随后删除录音。",
+  "privacy_06": "不用账号，没有我们的服务器",
+  "privacy_07": "不需要注册，我们也没有能看到你一天的服务器。",
+  "privacy_08": "你不允许，什么都不会发出",
+  "privacy_09": "回答用的是 Apple 设备端模型。把一天交给 AI App，或改用自己的云端 API，都要你允许才会发生。",
+  "privacy_10": "你告诉正在交谈的人，对方点头同意，你们俩连在了一起。",
+  "privacy_11": "告诉身边的人",
+  "privacy_12": "请告诉和你交谈的人，DayRecall 正在听。有些地方即使只保留文字，也要求征得所有人的同意，请遵守你所在地的规定。",
+  "final_01": "你一整天的 AI 记忆。",
+  "final_02": "即将登陆 App Store",
+  "final_03": "前往 App Store 下载 ",
+  "final_04": "最适合 Apple Watch · 只用 iPhone 也行 · 13 种语言",
+  "foot_01": "Apple Watch 和 iPhone 是 Apple Inc. 在美国及其他国家和地区注册的商标。",
+  "faq": [
+    {
+      "q": "DayRecall 是什么？",
+      "a": "DayRecall 是一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App，写给容易忘事的人。在你选定的时段里，它替你听着，把说过的话变成文字存在 iPhone 上，随时回答关于这一天的问题，并给出原话和出处。"
+    },
+    {
+      "q": "必须有 Apple Watch 吗？",
+      "a": "不必。DayRecall 最适合搭配 Apple Watch，只用 iPhone 也能单独聆听。两台一起用时，一天只有一条时间线，两台都听到的话只显示一次。"
+    },
+    {
+      "q": "iPhone 需要一直在手表旁边吗？",
+      "a": "不需要。Apple Watch 会先把录音存着，每 2 小时同步到 iPhone 一次；手机不在身边时，等两台设备再次连上（比如晚上回到家）就自动补上。"
+    },
+    {
+      "q": "DayRecall 会保存录音吗？",
+      "a": "不会。说的话在 iPhone 上转成文字后，录音随即删除，只保留文字。"
+    },
+    {
+      "q": "数据存在哪里？谁能看到？",
+      "a": "存在你的 iPhone 上。不用注册账号，我们也没有服务器。回答由 Apple 设备端模型完成；除非你自己选择使用云端 API，或把某一天交给 AI App，否则什么都不会离开你的 iPhone。"
+    },
+    {
+      "q": "耗电多吗？",
+      "a": "很少。自研超轻量人声模型只保留有人说话的片段。在 Apple Watch Series 11 上的内部测试中，聆听时每小时额外耗电约 0.9%。"
+    },
+    {
+      "q": "支持哪些语言？",
+      "a": "App 界面支持 13 种语言。转写时，一段对话里最多可以混用三种语言，其他语言的句子还能翻译成你的母语。"
+    },
+    {
+      "q": "什么时候能用上？",
+      "a": "DayRecall 正在内测，即将登陆 App Store。"
+    }
+  ],
+  "lang_label": "语言",
+  "foot_label": "更多",
+  "foot_privacy": "隐私政策",
+  "foot_support": "支持",
+  "faq_kicker": "常见问题",
+  "faq_heading": "你可能想问",
+  "og_h1": "<span class=\"nw\">你<span class=\"hl\">一整天</span>的</span><br>AI&nbsp;记忆",
+  "og_sub": "最适合 Apple Watch · 只用 iPhone 也行",
+  "stage": {
+    "me": "我",
+    "other": "其他人 1",
+    "other2": "其他人 2",
+    "battery": {
+      "title": "工作日",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "聆听额外耗电"
+    },
+    "sync": {
+      "away": "iPhone 不在身边",
+      "waiting": "{n} 段待同步",
+      "syncing": "正在同步…",
+      "synced": "已同步到 iPhone"
+    },
+    "speakers": {
+      "place": "办公室",
+      "time": "14:10",
+      "lines": [
+        "周五能上线吗？",
+        "设计今天就能做完。",
+        "我周四来测。",
+        "好，我去跟客户说。"
+      ]
+    },
+    "languages": {
+      "label": "工作语言",
+      "names": [
+        "中文",
+        "英语",
+        "日语"
+      ],
+      "rows": [
+        {
+          "lang": "zh-Hans",
+          "text": "那我们周五上线。"
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "设计今天就能做完。"
+        },
+        {
+          "lang": "ja",
+          "text": "木曜日にテストします。",
+          "tr": "我周四来测。"
+        }
+      ]
+    },
+    "ask": {
+      "title": "问问你的记忆",
+      "sub": "可以问录过的内容，也可以问任何问题。",
+      "tryAsking": "试着问问",
+      "s1": "这周有哪些 deadline？",
+      "s2": "昨天开会我们达成了哪些共识？",
+      "placeholder": "输入问题",
+      "question": "小王今天答应了我什么？",
+      "thinking": "正在思考…",
+      "from": "来自你的录音",
+      "a1": "小王周三会把文案发给你。",
+      "a2": "你周五前要把报价发给小王。",
+      "sources": "2 个来源",
+      "today": "今天",
+      "watch": "Apple Watch",
+      "snip1": "我周三把文案发给你。",
+      "snip2": "好的，我周五发给你。",
+      "office": "办公室",
+      "row0": "好。文案什么时候能给我？",
+      "cited": "已引用",
+      "tabs": [
+        "今天",
+        "待办",
+        "提问",
+        "回顾"
+      ]
+    }
+  }
+}

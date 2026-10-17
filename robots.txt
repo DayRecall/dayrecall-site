@@ -2,5 +2,6 @@
 User-agent: *
 Allow: /
 Disallow: /tools/
+Disallow: /i18n/
 
 Sitemap: https://dayrecall.com/sitemap.xml

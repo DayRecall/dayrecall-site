@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — AI-geheugen | Apple Watch & iPhone spraakopname",
+  "description": "DayRecall luistert mee op Apple Watch of iPhone in de uren die je kiest, zet spraak om in tekst op je iPhone en beantwoordt vragen over je dag.",
+  "og_title": "DayRecall — AI-geheugen voor je hele dag",
+  "og_description": "Je Apple Watch, of gewoon je iPhone, luistert tijdens de uren die jij kiest en bewaart wat er gezegd is als tekst. Vraag op elk moment naar je dag.",
+  "og_image_alt": "DayRecall: AI-geheugen voor je hele dag. Het best met Apple Watch, werkt ook alleen met iPhone.",
+  "app_description": "Een AI-geheugenapp voor Apple Watch en iPhone. Tijdens de uren die je kiest luistert hij mee, bewaart wat er gezegd is als tekst op je iPhone en beantwoordt vragen over je dag met de exacte woorden.",
+  "app_features": [
+    "Luistert de hele dag mee op Apple Watch, zonder iPhone in de buurt; werkt ook alleen met iPhone",
+    "Spraak wordt op je iPhone omgezet in tekst en de audio wordt verwijderd",
+    "Vraag naar je dag en krijg de exacte woorden terug, met het moment waarop ze werden gezegd",
+    "Markeert wie wat zei: Ik, Ander 1, Ander 2",
+    "Volgt gesprekken in maximaal drie talen, vertaald naar jouw taal",
+    "Haalt taken, deadlines en vergaderingen eruit, zodat je ze kunt bevestigen",
+    "Geen account en geen server; antwoorden gebruiken het model van Apple op het apparaat"
+  ],
+  "keywords": "Apple Watch spraakopname, transcriptie, spraak naar tekst, spraakherkenning, AI-geheugen, vergadernotities, geheugensteun, gesprekken transcriberen, DayRecall",
+  "top_01": "Naar de inhoud springen",
+  "nav_01": "DayRecall, startpagina",
+  "nav_02": "Onderdelen",
+  "nav_03": "Hoe het werkt",
+  "nav_04": "Apparaten",
+  "nav_05": "Batterij",
+  "nav_06": "Stemmen",
+  "nav_07": "Talen",
+  "nav_08": "Privacy",
+  "hero_01": "Het best met Apple Watch · Werkt ook alleen met iPhone",
+  "hero_02": "AI-geheugen voor je <span class=\"hl\">hele&nbsp;dag</span>",
+  "hero_03": "Voor iedereen die dingen vergeet. Je Apple Watch, of gewoon je iPhone, luistert tijdens de uren die jij kiest, en wat er gezegd is, wordt bewaard als tekst op je iPhone. <strong>Vraag op elk moment naar je dag en krijg de exacte woorden terug.",
+  "hero_04": "In beta · Binnenkort in de App Store",
+  "hero_05": "Download DayRecall in de App Store ",
+  "hero_06": "Bekijk hoe het werkt ",
+  "hero_07": "extra batterijverbruik per uur tijdens het luisteren<a class=\"fn\" href=\"#n1\" aria-label=\"Noot 1",
+  "hero_08": "van de spraak opgevangen<a class=\"fn\" href=\"#n2\" aria-label=\"Noot 2",
+  "hero_09": "17&nbsp;sec.</b><span>om 3 minuten gesprek te verwerken<a class=\"fn\" href=\"#n3\" aria-label=\"Noot 3",
+  "hero_10": "Aan DayRecall vragen “Wat heeft Sam me vandaag beloofd?”: het antwoord noemt twee beloften, elk met een nummer en gekoppeld aan het moment waarop het werd gezegd.",
+  "hero_11": "Luistert</b><span>Werkdagen · 9:00–18:00",
+  "how_01": "Hoe het werkt",
+  "how_02": "Eén tik in de ochtend. Antwoorden de hele dag.",
+  "how_03": "Een geluidsstrook wordt gescand: alleen de stukken spraak lichten op en blijven bewaard; de stilte ertussen wordt overgeslagen.",
+  "how_04": "Onthoud wat er is gezegd",
+  "how_05": "Je Apple Watch luistert tijdens de uren die je kiest, ook als je iPhone is achtergebleven. Eén tik in de ochtend, en het stopt vanzelf. Ons eigen ultralichte spraakmodel draait direct op het horloge en bewaart alleen de momenten waarop iemand praat.",
+  "how_06": "Het geluid gaat de prullenbak in en wordt regels tekst, gemarkeerd als Ik en Ander 1; een vergadering, een taak en een deadline worden eruit gehaald.",
+  "how_07": "Voor je geordend",
+  "how_08": "Je iPhone zet de spraak op het apparaat om in tekst, verwijdert het geluid en haalt de taken, deadlines en vergaderingen eruit. Hij kan ook onderscheiden wat je zei van wat anderen zeiden.",
+  "how_09": "Het geheugen gaat de iPhone in en die vergrendelt zich; alles op weg naar de cloud wordt tegengehouden en komt terug.",
+  "how_10": "Standaard privé",
+  "how_11": "Je geheugen blijft op je iPhone, en antwoorden gebruiken het model van Apple dat op het apparaat draait. Later kun je je eigen cloud-API kiezen; er wordt niets verstuurd voordat je dat toestaat.",
+  "devices_01": "Apparaten",
+  "devices_02": "Je horloge heeft je iPhone niet in de buurt nodig.",
+  "devices_03": "Apple Watch luistert de hele dag op zichzelf. Opnamen wachten op het horloge en gaan elke twee uur naar je iPhone. Is je iPhone niet in de buurt, dan worden ze alsnog overgezet zodra de twee weer verbinding maken, bijvoorbeeld als je ’s avonds thuiskomt. Je iPhone hoeft nooit verbonden te blijven.",
+  "devices_04": "Best</span></h3><p>De hele dag aan je pols, zonder telefoon nodig.",
+  "devices_05": "Alleen een iPhone</h3><p>Geen Apple Watch? Je iPhone kan zelf luisteren.",
+  "devices_06": "Beide samen</h3><p>Eén tijdlijn voor de dag. Wat beide toestellen hoorden, staat er één keer in, en als het horloge stopt, neemt je iPhone het over.",
+  "devices_07": "Het begint bij Apple Watch en iPhone: elk apparaat dat luistert, voegt iets toe aan één geheugen.",
+  "devices_08": "Als de iPhone niet in de buurt is, blijft het horloge luisteren en houdt drie fragmenten vast; als de iPhone om 11:00 weer terug is, gaan de fragmenten over en verschijnen ze als tekst.",
+  "battery_01": "Batterij",
+  "battery_02": "Luistert de hele dag en tast de batterij nauwelijks aan.",
+  "battery_03": "Een werkdag van 9:00 tot 18:00: de gesprekken lichten langs de dag op, en het batterijverbruik van het luisteren loopt op tot slechts ongeveer 8%.",
+  "battery_04": "Een zelf ontwikkeld, ultralicht spraakmodel van professionele kwaliteit: <strong>slechts 2.561 parameters</strong>, dat op onze eigen geversnelde inferentiekernels draait en elke tiende seconde een beslissing neemt, direct op het horloge.",
+  "battery_05": "Alleen spraak blijft bewaard. Stilte, toetsenborden en ventilatoren worden eruit gefilterd voordat ze ook maar iets van de batterij kosten. Alles, van de architectuur tot de kernels, is voor het horloge ontworpen, op basis van ons promotieonderzoek naar AI-versnelling.",
+  "battery_06": "Zelf ontwikkeld ultralicht model",
+  "battery_07": "Eigen geversnelde kernels",
+  "battery_08": "Inferentie op het horloge",
+  "battery_09": "Promotieonderzoek naar AI-versnelling",
+  "battery_10": "extra batterijverbruik per uur tijdens het luisteren<a class=\"fn\" href=\"#n1\" aria-label=\"Noot 1",
+  "battery_11": "van de spraak opgevangen<a class=\"fn\" href=\"#n2\" aria-label=\"Noot 2",
+  "battery_12": "van het achtergrondgeluid overgeslagen<a class=\"fn\" href=\"#n2\" aria-label=\"Noot 2",
+  "battery_13": "17&nbsp;sec.</p><p class=\"l\">om 3 minuten gesprek te verwerken<a class=\"fn\" href=\"#n3\" aria-label=\"Noot 3",
+  "battery_14": "Gebaseerd op interne tests van DayRecall op Apple Watch Series 11, oktober 2026. Het batterijverbruik verschilt per instelling en gebruik.",
+  "battery_15": "Labtests met openbare datasets: opgevangen spraak op de testset van het AMI Meeting Corpus, overgeslagen achtergrondgeluid op de DEMAND-ruisdataset.",
+  "battery_16": "Gebaseerd op interne tests van DayRecall op iPhone 17 Pro Max, oktober 2026. De verwerkingstijd verschilt per model en gebruik.",
+  "voices_01": "Stemmen",
+  "voices_02": "Herkent je stem. Onderscheidt alle anderen.",
+  "voices_03": "Lees eenmalig vijf korte kaartjes voor, ongeveer een minuut, en alles wat je zegt wordt gemarkeerd als <span class=\"tag-me\">Ik</span>. Iedereen anders in het gesprek krijgt een eigen nummer, <span class=\"tag-other\">Ander 1</span>, <span class=\"tag-other\">Ander 2</span> enzovoort, zodat wat je belooft en wat anderen jou beloven nooit door elkaar raakt.",
+  "voices_04": "Meerdere sprekers in één gesprek, elk apart herkend",
+  "voices_05": "Taken weten van wie de belofte was",
+  "voices_06": "Sprekerherkenning voor een uur gesprek in 4,4 sec.",
+  "voices_07": "Je stemafdruk blijft op je iPhone. Andere stemmen worden nooit opgeslagen.",
+  "voices_08": "Optioneel en standaard uit. Snelheid gebaseerd op interne tests op iPhone 17 Pro Max.",
+  "voices_09": "Vier zinnen uit een vergadering worden één voor één gehoord en gemarkeerd als Ik, Ander 1, Ander 2 en Ik; de drie stemmen verzamelen zich bovenaan.",
+  "languages_01": "Talen",
+  "languages_02": "Wissel midden in een gesprek van taal. Het houdt gewoon bij.",
+  "languages_03": "Kies maximaal drie werktalen. DayRecall herkent elke taalwissel en transcribeert elk deel in de taal waarin het werd gesproken. <span data-feature=\"translation\">Zinnen in de andere talen kunnen daarna in jouw taal worden vertaald.",
+  "languages_04": "Maximaal drie talen in één gesprek",
+  "languages_05": "Elk deel in zijn eigen taal getranscribeerd",
+  "languages_06": "Vertaald naar jouw taal",
+  "languages_07": "Taaldetectie voor een uur gesprek in ongeveer 32 sec.",
+  "languages_08": "Meertalige transcriptie is een geavanceerde instelling, standaard uit. Snelheid gebaseerd op interne tests op iPhone 17 Pro Max. De app zelf is in 13 talen beschikbaar.",
+  "languages_09": "De werktalen Nederlands, Engels en Chinees lichten om beurten op terwijl er in elke taal een zin wordt opgeschreven; de Engelse en Chinese zinnen krijgen een Nederlandse vertaling.",
+  "features_01": "Functies",
+  "features_02": "Gemaakt voor de details die je anders kwijtraakt",
+  "features_03": "Taken die je bevestigt",
+  "features_04": "Beloften, deadlines en vergaderingen worden uit je dag gehaald. Niets belandt in je agenda of Herinneringen voordat je ja zegt.",
+  "features_05": "Vraag het in je eigen woorden",
+  "features_06": "Wat heeft Sam beloofd? Wanneer moet het rapport klaar zijn? Elk antwoord laat zien waar het vandaan komt, tot op de zin die werd gezegd.",
+  "features_07": "Elke dag in één oogopslag",
+  "features_08": "Bekijk een dag als tijdlijn, blader terug door eerdere dagen en zoek in alles wat je hebt gehoord.",
+  "features_09": "Een plan voor de week",
+  "features_10": "Elke week alle komende deadlines en beloften op één plek. Je kiest wat in je agenda komt.",
+  "features_11": "Plekken, als je dat wilt",
+  "features_12": "Zie op een kaart van je dag waar elk gesprek plaatsvond. Staat uit totdat je het aanzet.",
+  "features_13": "Geef een dag door aan je AI-app",
+  "features_14": "Voor meer diepgang stuur je de tekst van een dag als tekstbestand naar de AI-app die je gebruikt, alleen als je dat kiest.",
+  "privacy_01": "Privacy",
+  "privacy_02": "Alleen tekst. Op je iPhone. Jij beslist.",
+  "privacy_03": "Het geheugen gaat de iPhone in en die vergrendelt zich; alles op weg naar de cloud wordt tegengehouden en komt terug.",
+  "privacy_04": "Tekst, geen audio",
+  "privacy_05": "Spraak wordt op je iPhone omgezet in tekst en daarna wordt de audio verwijderd.",
+  "privacy_06": "Geen account, geen server van ons",
+  "privacy_07": "Je hoeft je nergens aan te melden, en wij draaien geen servers die je dag zien.",
+  "privacy_08": "Niets gaat de deur uit zonder jou",
+  "privacy_09": "Antwoorden gebruiken het model van Apple dat op het apparaat draait. Een dag aan een AI-app geven, of je eigen cloud-API gebruiken, gebeurt alleen als je dat toestaat.",
+  "privacy_10": "Je vertelt het aan degene met wie je praat; die stemt in, en jullie twee zijn verbonden.",
+  "privacy_11": "Laat de mensen om je heen het weten",
+  "privacy_12": "Laat de mensen met wie je praat weten dat DayRecall meeluistert. Op sommige plekken is toestemming van iedereen vereist, ook als alleen tekst wordt bewaard, dus houd je aan de regels waar je bent.",
+  "final_01": "AI-geheugen voor je hele dag.",
+  "final_02": "Binnenkort in de App Store",
+  "final_03": "Download DayRecall in de App Store ",
+  "final_04": "Het best met Apple Watch · Werkt ook alleen met iPhone · In 13 talen",
+  "foot_01": "Apple Watch en iPhone zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio’s.",
+  "faq": [
+    {
+      "q": "Wat is DayRecall?",
+      "a": "DayRecall is een AI-geheugenapp voor Apple Watch en iPhone, gemaakt voor mensen die dingen vergeten. Tijdens de uren die je kiest, luistert hij mee, bewaart hij wat er is gezegd als tekst op je iPhone en beantwoordt hij vragen over je dag met de exacte woorden en waar die vandaan komen."
+    },
+    {
+      "q": "Heb ik een Apple Watch nodig?",
+      "a": "Nee. DayRecall werkt het best met Apple Watch, en je iPhone kan ook zelf luisteren. Als beide luisteren, is je dag één tijdlijn en wordt wat beide hoorden één keer getoond."
+    },
+    {
+      "q": "Moet mijn iPhone in de buurt van mijn horloge blijven?",
+      "a": "Nee. Je Apple Watch bewaart zijn opnamen en stuurt ze elke twee uur naar je iPhone, of zodra de twee weer verbinding maken, bijvoorbeeld als je ’s avonds thuiskomt."
+    },
+    {
+      "q": "Bewaart DayRecall audio-opnamen?",
+      "a": "Nee. Spraak wordt op je iPhone omgezet in tekst en daarna wordt de audio verwijderd. Alleen de tekst blijft bewaard."
+    },
+    {
+      "q": "Waar staan mijn gegevens en wie kan ze zien?",
+      "a": "Op je iPhone. Er is geen account en geen DayRecall-server. Antwoorden gebruiken het model van Apple dat op het apparaat draait, en niets verlaat je iPhone tenzij je ervoor kiest je eigen cloud-API te gebruiken of een dag aan een AI-app te geven."
+    },
+    {
+      "q": "Hoeveel batterij gebruikt het?",
+      "a": "Heel weinig. Ons eigen ultralichte spraakmodel bewaart alleen de momenten waarop iemand praat. In interne tests op Apple Watch Series 11 voegde luisteren ongeveer 0,9% extra batterijverbruik per uur toe."
+    },
+    {
+      "q": "Welke talen worden ondersteund?",
+      "a": "De app is in 13 talen beschikbaar. Hij kan ook een gesprek transcriberen waarin wordt gewisseld tussen maximaal drie talen, en de andere talen vertalen naar jouw taal."
+    },
+    {
+      "q": "Wanneer kan ik DayRecall krijgen?",
+      "a": "DayRecall is in beta en binnenkort beschikbaar in de App Store."
+    }
+  ],
+  "lang_label": "Taal",
+  "foot_label": "Meer",
+  "foot_privacy": "Privacybeleid",
+  "foot_support": "Ondersteuning",
+  "faq_kicker": "Veelgestelde vragen",
+  "faq_heading": "Je vragen, beantwoord",
+  "og_h1": "AI-geheugen voor je <span class=\"hl\">hele&nbsp;dag</span>",
+  "og_sub": "Het best met Apple Watch · Werkt ook alleen met iPhone",
+  "stage": {
+    "me": "Ik",
+    "other": "Ander 1",
+    "other2": "Ander 2",
+    "battery": {
+      "title": "Werkdag",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "Batterijverbruik door luisteren"
+    },
+    "sync": {
+      "away": "iPhone niet in de buurt",
+      "waiting": "{n} in de wachtrij",
+      "syncing": "Synchroniseren…",
+      "synced": "Gesynchroniseerd met iPhone"
+    },
+    "speakers": {
+      "place": "Kantoor",
+      "time": "14:10",
+      "lines": [
+        "Kunnen we vrijdag lanceren?",
+        "Het ontwerp is vandaag klaar.",
+        "Ik test het donderdag.",
+        "Mooi, ik zeg het tegen de klant."
+      ]
+    },
+    "languages": {
+      "label": "Werktalen",
+      "names": [
+        "Nederlands",
+        "Engels",
+        "Chinees"
+      ],
+      "rows": [
+        {
+          "lang": "nl",
+          "text": "Dus we lanceren vrijdag."
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "Het ontwerp is vandaag klaar."
+        },
+        {
+          "lang": "zh-Hans",
+          "text": "我周四来测。",
+          "tr": "Ik test het donderdag."
+        }
+      ]
+    },
+    "ask": {
+      "title": "Vraag het je geheugen",
+      "sub": "Alles wat je hebt opgenomen, of gewoon alles.",
+      "tryAsking": "Vraag bijvoorbeeld",
+      "s1": "Welke deadlines komen er deze week aan?",
+      "s2": "Wat hebben we in de vergadering van gisteren afgesproken?",
+      "placeholder": "Stel een vraag",
+      "question": "Wat heeft Sam me vandaag beloofd?",
+      "thinking": "Denkt na…",
+      "from": "Uit je opnamen",
+      "a1": "Sam stuurt je de tekst op woensdag.",
+      "a2": "Je stuurt Sam de offerte uiterlijk vrijdag.",
+      "sources": "2 bronnen",
+      "today": "Vandaag",
+      "watch": "Apple Watch",
+      "snip1": "Ik stuur je de tekst op woensdag.",
+      "snip2": "Prima, ik stuur hem vrijdag.",
+      "office": "Kantoor",
+      "row0": "Mooi. Wanneer krijg ik de tekst?",
+      "cited": "Geciteerd",
+      "tabs": [
+        "Vandaag",
+        "Taken",
+        "Vraag",
+        "Archief"
+      ]
+    }
+  }
+}

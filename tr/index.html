@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DayRecall — AI hafıza uygulaması | Apple Watch & iPhone</title>
+<meta name="description" content="DayRecall: Apple Watch ve iPhone için AI hafıza uygulaması. Seçtiğiniz saatlerde dinler, konuşmaları iPhone'unuzda metne çevirir, gününüz hakkında yanıtlar.">
+<meta name="keywords" content="Apple Watch sesi metne çevirme, konuşmayı yazıya dökme, toplantı notları, yapay zeka hafızası, AI hafıza uygulaması, unutkanlık, DayRecall">
+<link rel="canonical" href="https://dayrecall.com/tr/">
+<link rel="alternate" hreflang="en" href="https://dayrecall.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
+<link rel="alternate" hreflang="da" href="https://dayrecall.com/da/">
+<link rel="alternate" hreflang="de" href="https://dayrecall.com/de/">
+<link rel="alternate" hreflang="es" href="https://dayrecall.com/es/">
+<link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/">
+<link rel="alternate" hreflang="it" href="https://dayrecall.com/it/">
+<link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/">
+<link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/">
+<link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/">
+<link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/">
+<link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-1024.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DayRecall">
+<meta property="og:title" content="DayRecall — Tüm gününüz için AI hafızası">
+<meta property="og:description" content="Apple Watch'unuz ya da yalnızca iPhone'unuz, seçtiğiniz saatlerde dinler ve söylenenleri metin olarak saklar. Gününüz hakkında istediğiniz zaman sorun.">
+<meta property="og:url" content="https://dayrecall.com/tr/">
+<meta property="og:image" content="https://dayrecall.com/assets/og-tr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DayRecall: Tüm gününüz için AI hafızası. En iyisi Apple Watch ile, yalnız iPhone ile de çalışır.">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dayrecall.com/#org",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "logo": "https://dayrecall.com/assets/icon-1024.png",
+      "email": "support@dayrecall.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dayrecall.com/#website",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "da",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "nl",
+        "pt-PT",
+        "sv",
+        "tr"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dayrecall.com/#app",
+      "name": "DayRecall",
+      "description": "Apple Watch ve iPhone için bir AI hafıza uygulaması. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözlerle yanıtlar.",
+      "url": "https://dayrecall.com/tr/",
+      "image": "https://dayrecall.com/assets/icon-1024.png",
+      "operatingSystem": "iOS 26, watchOS 26",
+      "applicationCategory": "UtilitiesApplication",
+      "featureList": [
+        "Apple Watch ile gün boyu dinler, yanınızda iPhone olmasa da; yalnız iPhone ile de çalışır",
+        "Konuşma iPhone'da metne dönüşür ve ses silinir",
+        "Gününüz hakkında sorun, tam sözleri ve söylendikleri anı alın",
+        "Kimin ne dediğini işaretler: Ben, Diğer 1, Diğer 2",
+        "En fazla üç dildeki konuşmayı takip eder ve sizin dilinize çevirir",
+        "Görevleri, son tarihleri ve toplantıları onaylamanız için ayıklar",
+        "Hesap ve sunucu yok; yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dayrecall.com/tr/#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "DayRecall nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall, şeyleri unutan insanlar için tasarlanmış, Apple Watch ve iPhone için bir AI hafıza uygulamasıdır. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözleri ve nereden geldikleriyle yanıtlar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apple Watch'a ihtiyacım var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. DayRecall en iyi Apple Watch ile çalışır, iPhone'unuz da kendi başına dinleyebilir. İkisi birlikte dinlediğinde gününüz tek bir zaman tüneli olur ve ikisinin de duyduğu şey yalnızca bir kez gösterilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "iPhone'um saatimin yakınında durmak zorunda mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Apple Watch kayıtlarını saklar ve her iki saatte bir ya da iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, iPhone'unuza gönderir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall ses kayıtlarını saklıyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir. Yalnızca metin saklanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verilerim nerede ve kim görebilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone'unuzda. Hesap yok ve DayRecall sunucusu yok. Yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir; kendi bulut API'nizi kullanmayı ya da bir günü bir AI uygulamasına aktarmayı seçmediğiniz sürece hiçbir şey iPhone'unuzdan çıkmaz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pil ne kadar kullanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çok az. Kendi geliştirdiğimiz ultra hafif konuşma modeli yalnızca birinin konuştuğu anları tutar. Apple Watch Series 11 üzerindeki dahili testte dinleme saatte yaklaşık %0,9 ek pil harcadı."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hangi dilleri destekliyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uygulama 13 dilde sunulur. Ayrıca üç dile kadar değişen bir konuşmayı yazıya dökebilir ve diğer dillerdeki sözleri sizin dilinize çevirebilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall'ı ne zaman edinebilirim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall beta aşamasında ve yakında App Store'da."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="stage-words">{"me": "Ben", "other": "Diğer 1", "other2": "Diğer 2", "battery": {"title": "Çalışma günü", "hours": "9:00–18:00", "ticks": ["9:00", "12:00", "15:00", "18:00"], "used": "Dinlemenin kullandığı pil"}, "sync": {"away": "iPhone yakınızda değil", "waiting": "{n} eşitleme bekliyor", "syncing": "Eşitleniyor…", "synced": "iPhone ile eşitlendi"}, "speakers": {"place": "Ofis", "time": "14:10", "lines": ["Cuma günü yayına çıkabilir miyiz?", "Tasarım bugün biter.", "Perşembe günü test ederim.", "Harika, müşteriye ben söylerim."]}, "languages": {"label": "Çalışma dilleri", "names": ["Türkçe", "İngilizce", "Çince"], "rows": [{"lang": "tr", "text": "Yani cuma günü yayına çıkıyoruz."}, {"lang": "en", "text": "The design will be done today.", "tr": "Tasarım bugün biter."}, {"lang": "zh-Hans", "text": "我周四来测。", "tr": "Perşembe günü test edeceğim."}]}, "ask": {"title": "Hafızanıza sorun", "sub": "Kaydettiğiniz her şeyi ya da aklınıza gelen herhangi bir şeyi sorun.", "tryAsking": "Şunu sormayı deneyin", "s1": "Bu hafta hangi son tarihler var?", "s2": "Dünkü toplantıda neler üzerinde anlaştık?", "placeholder": "Bir soru sorun", "question": "Sam bugün bana ne söz verdi?", "thinking": "Düşünüyor…", "from": "Kayıtlarınızdan", "a1": "Sam metni çarşamba günü size gönderecek.", "a2": "Siz teklifi cuma gününe kadar Sam'e göndereceksiniz.", "sources": "2 kaynak", "today": "Bugün", "watch": "Apple Watch", "snip1": "Metni çarşamba günü size göndereceğim.", "snip2": "Tabii, cuma günü göndereceğim.", "office": "Ofis", "row0": "Harika. Metni ne zaman alabilirim?", "cited": "Alıntılandı", "tabs": ["Bugün", "Görevler", "Sor", "Arşiv"]}}</script>
+<link rel="stylesheet" href="/assets/site.css?v=6f854874">
+<script src="/assets/stages.js?v=fc881cd3" defer></script>
+<script src="/assets/store.js?v=267b0b59" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/tr/" aria-label="DayRecall, ana sayfa"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
+    <nav class="nav-links" aria-label="Bölümler">
+      <a href="#how">Nasıl çalışır</a>
+      <a href="#devices">Cihazlar</a>
+      <a href="#battery">Pil</a>
+      <a href="#voices">Sesler</a>
+      <a href="#languages">Diller</a>
+      <a href="#privacy">Gizlilik</a>
+    </nav>
+    <details class="langmenu">
+      <summary aria-label="Dil"><span class="ico" data-icon="globe"></span><span>Türkçe</span></summary>
+      <ul>
+        <li><a href="/" hreflang="en" lang="en">English</a></li>
+        <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="/da/" hreflang="da" lang="da">Dansk</a></li>
+        <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+        <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
+        <li><a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li>
+        <li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li>
+        <li><a href="/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır</p>
+        <h1>AI hafızası <span class="hl">tüm&nbsp;gününüz</span> için</h1>
+        <p class="lead">Bir şeyleri unutan herkes için. Apple Watch'unuz ya da yalnızca iPhone'unuz, seçtiğiniz saatlerde dinler; söylenenler iPhone'unuzda metin olarak saklanır. <strong>Gününüz hakkında istediğiniz zaman sorun, söylenenlerin tam sözlerini alın.</strong></p>
+        <div class="cta-row">
+          <span class="pill" data-prelaunch><span class="dot"></span>Beta aşamasında · Yakında App Store'da</span>
+          <a class="pill store" data-store href="https://dayrecall.com/tr/" hidden>DayRecall'ı App Store'dan edinin <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="ghost" href="#how">Nasıl çalıştığını görün <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="proof">
+          <li><b>%0,9</b><span>dinlerken saat başına ek pil kullanımı<a class="fn" href="#n1" aria-label="Not 1">1</a></span></li>
+          <li><b>%99,9</b><span>konuşma yakalandı<a class="fn" href="#n2" aria-label="Not 2">2</a></span></li>
+          <li><b>17&nbsp;sn</b><span>3 dakikalık konuşmayı işlemek için<a class="fn" href="#n3" aria-label="Not 3">3</a></span></li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="DayRecall'a “Sam bugün bana ne söz verdi?” diye sorduğunuzda yanıt, numaralandırılmış ve söylendiği ana bağlantılı iki sözü listeler."></div>
+        <div class="chip" aria-hidden="true">
+          <span class="watch" data-icon="watch"></span>
+          <span><b>Dinliyor</b><span>İş günleri · 9:00–18:00</span></span>
+          <i class="live"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="kicker">Nasıl çalışır</p>
+      <h2>Sabah tek dokunuş. Gün boyu yanıtlar.</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="stage t-light" data-stage="listening" role="img" aria-label="Bir ses şeridi taranır: yalnızca konuşma patlamaları işaretlenir ve saklanır; aradaki sessizlik atlanır."></div>
+          <h3><span class="num">1</span>Söylenenleri hatırlayın</h3>
+          <p>iPhone'unuz yanınızda olmasa bile Apple Watch'unuz seçtiğiniz saatlerde dinler. Sabah tek dokunuş yeter; ardından kendiliğinden durur. Kendi geliştirdiğimiz ultra hafif konuşma modeli doğrudan saatin üzerinde çalışır ve yalnızca birinin konuştuğu anları tutar.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="tidying" role="img" aria-label="Ses çöp kutusuna gider ve Ben ile Diğer 1 olarak işaretlenmiş metin satırlarına dönüşür; bir toplantı, bir görev ve bir son tarih ayıklanır."></div>
+          <h3><span class="num">2</span>Sizin için düzenlenir</h3>
+          <p>iPhone'unuz konuşmayı cihaz üzerinde metne çevirir, sesi siler ve görevleri, son tarihleri ve toplantıları ayıklar. Sizin söylediklerinizi başkalarının söylediklerinden de ayırt edebilir.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="privacy" role="img" aria-label="Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner."></div>
+          <h3><span class="num">3</span>Baştan gizli</h3>
+          <p>Anılarınız iPhone'unuzda kalır ve yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir. İsterseniz daha sonra kendi bulut API'nizi seçebilirsiniz; siz izin verene kadar hiçbir şey gönderilmez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Cihazlar</p>
+        <h2>Apple Watch'unuzun iPhone'unuzun yakınında olması gerekmez.</h2>
+        <p class="body">Apple Watch gün boyu kendi başına dinler. Kayıtlar Apple Watch'ta bekler ve her iki saatte bir iPhone'unuza gönderilir; iPhone'unuz yanınızda değilse, iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, hemen yetişirler. iPhone'unuzun sürekli bağlı kalması hiç gerekmez.</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">En iyisi</span></h3><p>Gün boyu bileğinizde, iPhone'a gerek kalmadan.</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>Yalnızca iPhone</h3><p>Apple Watch yok mu? iPhone'unuz kendi başına dinleyebilir.</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>İkisi birlikte</h3><p>Gün için tek bir zaman tüneli. İkisinin de duyduğu şey yalnızca bir kez gösterilir; saat dinlemeyi durdurursa iPhone'unuz devralabilir.</p></div></li>
+        </ul>
+        <p class="vision">Apple Watch ve iPhone ile başlar: dinleyen her cihaz tek bir hafızaya ekler.</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="iPhone uzaktayken saat dinlemeye devam eder ve üç klip tutar; saat 11:00'de iPhone'unuz geri geldiğinde klipler aktarılır ve metin olarak görünür."></div>
+    </div>
+  </section>
+
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">Pil</p>
+      <h2>Gün boyu dinler. Pilinize neredeyse hiç dokunmaz.</h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="9:00–18:00 arası bir iş günü: konuşmalar gün boyunca işaretlenir ve dinlemenin kullandığı pil yalnızca yaklaşık %8'e çıkar."></div>
+        <div class="power-copy">
+          <p class="big">Kendi bünyemizde geliştirilmiş, profesyonel düzeyde ultra hafif bir konuşma modeli: <strong>yalnızca 2.561 parametre</strong>. Kendi hızlandırılmış çıkarım çekirdeklerimizde çalışır, her onda bir saniyede bir karar verir ve doğrudan saatin üzerinde işler.</p>
+          <p>Yalnızca konuşma saklanır. Sessizlik, klavye ve fan sesleri pil harcamadan önce süzülür. Mimariden çekirdeklere kadar her şey saat için tasarlandı; AI hızlandırma alanındaki doktora araştırmamıza dayanıyor.</p>
+          <ul class="badges">
+            <li>Kendi geliştirdiğimiz ultra hafif model</li>
+            <li>Özel hızlandırılmış çekirdekler</li>
+            <li>Saat üzerinde çıkarım</li>
+            <li>AI hızlandırma alanında doktora araştırması</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">%0,9</p><p class="l">dinlerken saat başına ek pil kullanımı<a class="fn" href="#n1" aria-label="Not 1">1</a></p></div>
+        <div class="stat"><p class="n">%99,9</p><p class="l">konuşma yakalandı<a class="fn" href="#n2" aria-label="Not 2">2</a></p></div>
+        <div class="stat"><p class="n">%95</p><p class="l">arka plan gürültüsü atlandı<a class="fn" href="#n2" aria-label="Not 2">2</a></p></div>
+        <div class="stat"><p class="n">17&nbsp;sn</p><p class="l">3 dakikalık konuşmayı işlemek<a class="fn" href="#n3" aria-label="Not 3">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">DayRecall tarafından Ekim 2026'da Apple Watch Series 11 üzerinde yapılan dahili testlere dayanır. Pil kullanımı ayarlara ve kullanıma göre değişir.</li>
+        <li id="n2">Herkese açık veri kümeleri üzerinde laboratuvar testi: konuşma yakalaması AMI Meeting Corpus test kümesinde, gürültü atlaması DEMAND gürültü veri kümesinde ölçüldü.</li>
+        <li id="n3">DayRecall tarafından Ekim 2026'da iPhone 17 Pro Max üzerinde yapılan dahili testlere dayanır. İşlem süresi iPhone modeline ve kullanıma göre değişir.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Sesler</p>
+        <h2>Sesinizi tanır. Diğer herkesi birbirinden ayırır.</h2>
+        <p class="body">Beş kısa kartı bir kez, yaklaşık bir dakika içinde okuyun; söylediğiniz her şey <span class="tag-me">Ben</span> olarak işaretlenir. Konuşmadaki diğer herkes kendi numarasını alır: <span class="tag-other">Diğer 1</span>, <span class="tag-other">Diğer 2</span> ve devamı; böylece verdiğiniz sözler ile size verilen sözler asla karışmaz.</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Bir konuşmada birden fazla konuşmacı, her biri ayrı ayrı tanınır</li>
+          <li><span class="tick" data-icon="check"></span>Görevler, sözü kimin verdiğini bilir</li>
+          <li><span class="tick" data-icon="check"></span>Bir saatlik konuşmada konuşmacı tanıma 4,4 saniyede</li>
+          <li><span class="tick" data-icon="check"></span>Ses iziniz iPhone'unuzda kalır. Diğer sesler hiçbir zaman saklanmaz.</li>
+        </ul>
+        <p class="note">İsteğe bağlıdır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır.</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="Bir toplantıdan dört satır tek tek dinlenir ve Ben, Diğer 1, Diğer 2 ve Ben olarak işaretlenir; üç ses en üstte bir araya gelir."></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Diller</p>
+        <h2>Konuşma ortasında dil değiştirin; DayRecall ayak uydurur.</h2>
+        <p class="body">En fazla üç çalışma dili seçin. DayRecall her dil geçişini algılar ve her bölümü konuşulduğu dilde yazıya döker. <span data-feature="translation">Diğer dillerdeki satırlar ardından sizin dilinize çevrilebilir.</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Bir konuşmada en fazla üç dil</li>
+          <li><span class="tick" data-icon="check"></span>Her bölüm kendi dilinde yazıya dökülür</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>Sizin dilinize çevrilir</li>
+          <li><span class="tick" data-icon="check"></span>Bir saatlik konuşmada dil tanıma yaklaşık 32 saniyede</li>
+        </ul>
+        <p class="note">Çok dilli yazıya dökme gelişmiş bir ayardır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır. Uygulamanın kendisi 13 dilde sunulur.</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="Çalışma dilleri Türkçe, İngilizce ve Çince sırayla işaretlenir ve her birinde bir satır yazıya dökülür; İngilizce ve Çince satırların Türkçe çevirisi gösterilir."></div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="kicker">Özellikler</p>
+      <h2>Unutacağınız ayrıntılar için tasarlandı</h2>
+      <div class="grid">
+        <article class="feat">
+          <span class="ico" data-icon="checkCircle"></span>
+          <h3>Onayladığınız görevler</h3>
+          <p>Söz verilenler, son tarihler ve toplantılar gününüzden ayıklanır. Siz onaylamadıkça hiçbir şey takviminize ya da Hatırlatıcılar'a eklenmez.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>Kendi sözcüklerinizle sorun</h3>
+          <p>Sam ne söz verdi? Rapor ne zaman teslim edilecek? Her yanıt nereden geldiğini gösterir; söylenen satıra kadar.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="history"></span>
+          <h3>Her gün, bir bakışta</h3>
+          <p>Bir günü zaman tüneli olarak görün, geçmiş günlere göz atın ve duyduğunuz her şeyi arayın.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="week"></span>
+          <h3>Haftanız için plan</h3>
+          <p>Her hafta, önümüzdeki son tarihler ve sözler tek bir yerde. Takviminize neyin ekleneceğini siz seçersiniz.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>İsterseniz Yerler</h3>
+          <p>Her konuşmanın gününüzün haritasında nerede geçtiğini görün. Siz açana kadar kapalıdır.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>Bir günü AI uygulamanıza aktarın</h3>
+          <p>Daha derin bir bakış için, yalnızca siz seçtiğinizde, bir günün metnini kullandığınız AI uygulamasına metin dosyası olarak gönderin.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="privacy">
+    <div class="wrap">
+      <p class="kicker">Gizlilik</p>
+      <h2>Yalnızca metin. iPhone'unuzda. Karar sizde.</h2>
+      <div class="priv">
+        <div class="stage t-dark" data-stage="privacy" role="img" aria-label="Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner."></div>
+        <div class="points">
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Ses değil, metin</h3>
+            <p>Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Hesap yok, bizim sunucumuz yok</h3>
+            <p>Kaydolmanız gereken bir şey yok; gününüzü gören sunucuları da çalıştırmıyoruz.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Siz izin vermeden hiçbir şey dışarı çıkmaz</h3>
+            <p>Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Bir günü bir AI uygulamasına aktarmak ya da kendi bulut API'nizi kullanmak yalnızca siz izin verdiğinizde gerçekleşir.</p>
+          </div>
+        </div>
+      </div>
+      <div class="consent">
+        <div class="stage t-dark" data-stage="consent" role="img" aria-label="Konuştuğunuz kişiye söylersiniz; o kişi kabul eder ve ikiniz birbirinize bağlanırsınız."></div>
+        <div>
+          <h3>Çevrenizdekilere söyleyin</h3>
+          <p>Konuştuğunuz kişilere DayRecall'ın dinlediğini söyleyin. Bazı yerlerde yalnızca metin tutulsa bile herkesin rızası gerekir; bulunduğunuz yerin kurallarına uyun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <p class="kicker">SSS</p>
+        <h2>Merak edilenler</h2>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>DayRecall nedir?</summary>
+          <p>DayRecall, şeyleri unutan insanlar için tasarlanmış, Apple Watch ve iPhone için bir AI hafıza uygulamasıdır. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözleri ve nereden geldikleriyle yanıtlar.</p>
+        </details>
+        <details>
+          <summary>Apple Watch'a ihtiyacım var mı?</summary>
+          <p>Hayır. DayRecall en iyi Apple Watch ile çalışır, iPhone'unuz da kendi başına dinleyebilir. İkisi birlikte dinlediğinde gününüz tek bir zaman tüneli olur ve ikisinin de duyduğu şey yalnızca bir kez gösterilir.</p>
+        </details>
+        <details>
+          <summary>iPhone'um saatimin yakınında durmak zorunda mı?</summary>
+          <p>Hayır. Apple Watch kayıtlarını saklar ve her iki saatte bir ya da iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, iPhone'unuza gönderir.</p>
+        </details>
+        <details>
+          <summary>DayRecall ses kayıtlarını saklıyor mu?</summary>
+          <p>Hayır. Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir. Yalnızca metin saklanır.</p>
+        </details>
+        <details>
+          <summary>Verilerim nerede ve kim görebilir?</summary>
+          <p>iPhone'unuzda. Hesap yok ve DayRecall sunucusu yok. Yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir; kendi bulut API'nizi kullanmayı ya da bir günü bir AI uygulamasına aktarmayı seçmediğiniz sürece hiçbir şey iPhone'unuzdan çıkmaz.</p>
+        </details>
+        <details>
+          <summary>Pil ne kadar kullanır?</summary>
+          <p>Çok az. Kendi geliştirdiğimiz ultra hafif konuşma modeli yalnızca birinin konuştuğu anları tutar. Apple Watch Series 11 üzerindeki dahili testte dinleme saatte yaklaşık %0,9 ek pil harcadı.</p>
+        </details>
+        <details>
+          <summary>Hangi dilleri destekliyor?</summary>
+          <p>Uygulama 13 dilde sunulur. Ayrıca üç dile kadar değişen bir konuşmayı yazıya dökebilir ve diğer dillerdeki sözleri sizin dilinize çevirebilir.</p>
+        </details>
+        <details>
+          <summary>DayRecall'ı ne zaman edinebilirim?</summary>
+          <p>DayRecall beta aşamasında ve yakında App Store'da.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+      <h2>DayRecall</h2>
+      <p class="sub">Tüm gününüz için AI hafızası.</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>Yakında App Store'da</span>
+      <a class="pill store" data-store href="https://dayrecall.com/tr/" hidden>DayRecall'ı App Store'dan edinin <span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır · 13 dilde</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 DayRecall</span>
+    <span class="tm">Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.</span>
+    <nav class="foot-links" aria-label="Daha fazla">
+      <a href="/privacy/" hreflang="en">Gizlilik Politikası</a>
+      <a href="/support/" hreflang="en">Destek</a>
+    </nav>
+    <nav class="foot-langs" aria-label="Dil">
+      <a href="/" hreflang="en" lang="en">English</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="/da/" hreflang="da" lang="da">Dansk</a>
+      <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/" hreflang="it" lang="it">Italiano</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+      <a href="/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

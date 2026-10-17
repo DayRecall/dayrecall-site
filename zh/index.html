@@ -9,6 +9,17 @@
 <link rel="canonical" href="https://dayrecall.com/zh/">
 <link rel="alternate" hreflang="en" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
+<link rel="alternate" hreflang="da" href="https://dayrecall.com/da/">
+<link rel="alternate" hreflang="de" href="https://dayrecall.com/de/">
+<link rel="alternate" hreflang="es" href="https://dayrecall.com/es/">
+<link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/">
+<link rel="alternate" hreflang="it" href="https://dayrecall.com/it/">
+<link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/">
+<link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/">
+<link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/">
+<link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/">
 <link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
 <meta name="theme-color" content="#0B0C0E">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
@@ -25,6 +36,17 @@
 <meta property="og:image:alt" content="DayRecall：你一整天的 AI 记忆。最适合 Apple Watch，只用 iPhone 也行。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
@@ -45,7 +67,18 @@
       "url": "https://dayrecall.com/",
       "inLanguage": [
         "en",
-        "zh-Hans"
+        "zh-Hans",
+        "da",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "nl",
+        "pt-PT",
+        "sv",
+        "tr"
       ],
       "publisher": {
         "@id": "https://dayrecall.com/#org"
@@ -147,8 +180,9 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/assets/site.css?v=b0655b41">
-<script src="/assets/stages.js?v=d03301f1" defer></script>
+<script type="application/json" id="stage-words">{"me": "我", "other": "其他人 1", "other2": "其他人 2", "battery": {"title": "工作日", "hours": "9:00–18:00", "ticks": ["9:00", "12:00", "15:00", "18:00"], "used": "聆听额外耗电"}, "sync": {"away": "iPhone 不在身边", "waiting": "{n} 段待同步", "syncing": "正在同步…", "synced": "已同步到 iPhone"}, "speakers": {"place": "办公室", "time": "14:10", "lines": ["周五能上线吗？", "设计今天就能做完。", "我周四来测。", "好，我去跟客户说。"]}, "languages": {"label": "工作语言", "names": ["中文", "英语", "日语"], "rows": [{"lang": "zh-Hans", "text": "那我们周五上线。"}, {"lang": "en", "text": "The design will be done today.", "tr": "设计今天就能做完。"}, {"lang": "ja", "text": "木曜日にテストします。", "tr": "我周四来测。"}]}, "ask": {"title": "问问你的记忆", "sub": "可以问录过的内容，也可以问任何问题。", "tryAsking": "试着问问", "s1": "这周有哪些 deadline？", "s2": "昨天开会我们达成了哪些共识？", "placeholder": "输入问题", "question": "小王今天答应了我什么？", "thinking": "正在思考…", "from": "来自你的录音", "a1": "小王周三会把文案发给你。", "a2": "你周五前要把报价发给小王。", "sources": "2 个来源", "today": "今天", "watch": "Apple Watch", "snip1": "我周三把文案发给你。", "snip2": "好的，我周五发给你。", "office": "办公室", "row0": "好。文案什么时候能给我？", "cited": "已引用", "tabs": ["今天", "待办", "提问", "回顾"]}}</script>
+<link rel="stylesheet" href="/assets/site.css?v=6f854874">
+<script src="/assets/stages.js?v=fc881cd3" defer></script>
 <script src="/assets/store.js?v=267b0b59" defer></script>
 </head>
 <body>
@@ -165,7 +199,24 @@
       <a href="#languages">多语言</a>
       <a href="#privacy">隐私</a>
     </nav>
-    <a class="lang" href="/" hreflang="en" lang="en">English</a>
+    <details class="langmenu">
+      <summary aria-label="语言"><span class="ico" data-icon="globe"></span><span>简体中文</span></summary>
+      <ul>
+        <li><a href="/" hreflang="en" lang="en">English</a></li>
+        <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a></li>
+        <li><a href="/da/" hreflang="da" lang="da">Dansk</a></li>
+        <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+        <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
+        <li><a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li>
+        <li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li>
+        <li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+      </ul>
+    </details>
   </div>
 </header>
 
@@ -438,7 +489,21 @@
     <nav class="foot-links" aria-label="更多">
       <a href="/zh/privacy/">隐私政策</a>
       <a href="/zh/support/">支持</a>
+    </nav>
+    <nav class="foot-langs" aria-label="语言">
       <a href="/" hreflang="en" lang="en">English</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+      <a href="/da/" hreflang="da" lang="da">Dansk</a>
+      <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/" hreflang="it" lang="it">Italiano</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+      <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
     </nav>
   </div>
 </footer>

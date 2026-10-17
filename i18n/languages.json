@@ -1,0 +1,15 @@
+[
+  {"code": "en", "path": "/", "og": "en_US", "name": "English", "privacy": "/privacy/", "support": "/support/"},
+  {"code": "zh-Hans", "path": "/zh/", "og": "zh_CN", "name": "简体中文", "privacy": "/zh/privacy/", "support": "/zh/support/"},
+  {"code": "da", "path": "/da/", "og": "da_DK", "name": "Dansk"},
+  {"code": "de", "path": "/de/", "og": "de_DE", "name": "Deutsch"},
+  {"code": "es", "path": "/es/", "og": "es_ES", "name": "Español"},
+  {"code": "fr", "path": "/fr/", "og": "fr_FR", "name": "Français"},
+  {"code": "it", "path": "/it/", "og": "it_IT", "name": "Italiano"},
+  {"code": "ja", "path": "/ja/", "og": "ja_JP", "name": "日本語"},
+  {"code": "ko", "path": "/ko/", "og": "ko_KR", "name": "한국어"},
+  {"code": "nl", "path": "/nl/", "og": "nl_NL", "name": "Nederlands"},
+  {"code": "pt-PT", "path": "/pt/", "og": "pt_PT", "name": "Português"},
+  {"code": "sv", "path": "/sv/", "og": "sv_SE", "name": "Svenska"},
+  {"code": "tr", "path": "/tr/", "og": "tr_TR", "name": "Türkçe"}
+]

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DayRecall — 하루를 기억하는 AI | Apple Watch·iPhone</title>
+<meta name="description" content="DayRecall은 정한 시간 동안 Apple Watch 또는 iPhone으로 듣고, 말한 내용을 iPhone에서 텍스트로 바꾸며, 하루에 대한 질문에 원래 말 그대로 답하는 AI 기억 앱이에요.">
+<meta name="keywords" content="Apple Watch 녹음, iPhone 녹음, 음성 텍스트 변환, 받아쓰기 앱, AI 기억, 회의록 앱, 건망증, 하루 기록, DayRecall">
+<link rel="canonical" href="https://dayrecall.com/ko/">
+<link rel="alternate" hreflang="en" href="https://dayrecall.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
+<link rel="alternate" hreflang="da" href="https://dayrecall.com/da/">
+<link rel="alternate" hreflang="de" href="https://dayrecall.com/de/">
+<link rel="alternate" hreflang="es" href="https://dayrecall.com/es/">
+<link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/">
+<link rel="alternate" hreflang="it" href="https://dayrecall.com/it/">
+<link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/">
+<link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/">
+<link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/">
+<link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/">
+<link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-1024.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DayRecall">
+<meta property="og:title" content="DayRecall — 하루 전체를 위한 AI 기억">
+<meta property="og:description" content="정해 둔 시간 동안 Apple Watch, 또는 iPhone만으로 듣고 말한 내용을 텍스트로 남겨요. 하루에 대해 언제든 물어보세요.">
+<meta property="og:url" content="https://dayrecall.com/ko/">
+<meta property="og:image" content="https://dayrecall.com/assets/og-ko.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DayRecall: 하루 전체를 위한 AI 기억. Apple Watch와 함께 가장 좋고, iPhone만으로도 작동해요.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dayrecall.com/#org",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "logo": "https://dayrecall.com/assets/icon-1024.png",
+      "email": "support@dayrecall.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dayrecall.com/#website",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "da",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "nl",
+        "pt-PT",
+        "sv",
+        "tr"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dayrecall.com/#app",
+      "name": "DayRecall",
+      "description": "Apple Watch와 iPhone용 AI 기억 앱이에요. 정해 둔 시간 동안 듣고, 말한 내용을 iPhone에 텍스트로 남기며, 하루에 대한 질문에 원래 한 말 그대로 답해요.",
+      "url": "https://dayrecall.com/ko/",
+      "image": "https://dayrecall.com/assets/icon-1024.png",
+      "operatingSystem": "iOS 26, watchOS 26",
+      "applicationCategory": "UtilitiesApplication",
+      "featureList": [
+        "iPhone이 근처에 없어도 Apple Watch로 하루 종일 들어요. iPhone만으로도 작동해요",
+        "음성은 iPhone에서 텍스트로 바뀌고, 음성 파일은 지워져요",
+        "하루에 대해 묻고, 원래 말과 그 말이 나온 시각을 받아요",
+        "누가 말했는지 구분해요: 나, 다른 사람 1, 다른 사람 2",
+        "최대 세 개 언어로 된 대화를 따라가고, 내 언어로 번역해요",
+        "할 일, 마감 기한, 회의를 골라내서 내가 확인하도록 해요",
+        "계정도 서버도 없어요. 답변은 Apple의 기기 내 모델로 만들어요"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dayrecall.com/ko/#faq",
+      "inLanguage": "ko",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "DayRecall이 뭔가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall은 잘 잊어버리는 분들을 위한 AI 기억 앱으로, Apple Watch와 iPhone에서 쓸 수 있어요. 정해 둔 시간 동안 듣고, 말한 내용을 iPhone에 텍스트로 남기며, 하루에 대한 질문에 원래 한 말 그대로와 그 출처를 함께 답해요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apple Watch가 꼭 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. DayRecall은 Apple Watch와 함께 쓸 때 가장 좋고, iPhone만으로도 혼자 들을 수 있어요. 두 기기가 함께 들으면 하루가 하나의 타임라인이 되고, 두 기기가 모두 들은 내용은 한 번만 보여요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "iPhone이 워치 근처에 꼭 있어야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. Apple Watch가 녹음을 보관했다가 두 시간마다, 또는 두 기기가 다시 연결되는 대로(예: 저녁에 집에 돌아왔을 때) iPhone으로 보내요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall이 녹음 파일을 보관하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요. 텍스트만 남아요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "데이터는 어디에 있고, 누가 볼 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone에 있어요. 계정이 없고 DayRecall 서버도 없어요. 답변은 Apple의 기기 내 모델로 만들어지며, 직접 클라우드 API를 쓰기로 하거나 AI 앱에 하루를 넘기기로 하지 않는 한 어떤 것도 iPhone 밖으로 나가지 않아요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "배터리를 얼마나 쓰나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아주 조금이에요. 자체 개발한 초경량 음성 모델이 누군가 말하는 순간만 남겨요. Apple Watch Series 11에서 진행한 내부 테스트에서 듣는 동안 시간당 배터리를 약 0.9% 더 썼어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "지원하는 언어는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "앱은 13개 언어로 제공돼요. 한 대화에서 최대 세 가지 언어가 섞여도 텍스트로 변환하고, 다른 언어는 내 언어로 번역할 수 있어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall은 언제 쓸 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall은 베타 중이며 곧 App Store에 출시돼요."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="stage-words">{"me": "나", "other": "다른 사람 1", "other2": "다른 사람 2", "battery": {"title": "근무일", "hours": "9:00–18:00", "ticks": ["9:00", "12:00", "15:00", "18:00"], "used": "듣는 데 쓰인 배터리"}, "sync": {"away": "iPhone이 근처에 없음", "waiting": "동기화 대기 {n}개", "syncing": "동기화 중…", "synced": "iPhone에 동기화됨"}, "speakers": {"place": "사무실", "time": "14:10", "lines": ["금요일에 출시할 수 있을까요?", "디자인은 오늘 끝날 거예요.", "목요일에 테스트할게요.", "좋아요, 고객에게 제가 알릴게요."]}, "languages": {"label": "사용 언어", "names": ["한국어", "영어", "중국어"], "rows": [{"lang": "ko", "text": "그래서 금요일에 출시해요."}, {"lang": "en", "text": "The design will be done today.", "tr": "디자인은 오늘 끝날 거예요."}, {"lang": "zh-Hans", "text": "我周四来测。", "tr": "목요일에 테스트할게요."}]}, "ask": {"title": "기억에 물어보기", "sub": "녹음한 내용도, 그 밖의 무엇이든 물어보세요.", "tryAsking": "이렇게 물어보세요", "s1": "이번 주에 다가오는 마감은 뭐가 있어?", "s2": "어제 회의에서 우리가 뭘 합의했지?", "placeholder": "질문하기", "question": "민수가 오늘 나한테 뭘 약속했어?", "thinking": "생각 중…", "from": "내 녹음에서", "a1": "민수가 수요일에 문구를 보내 줄 거예요.", "a2": "금요일까지 민수에게 견적을 보내기로 했어요.", "sources": "출처 2개", "today": "오늘", "watch": "Apple Watch", "snip1": "수요일에 문구 보내 드릴게요.", "snip2": "좋아요, 금요일에 보내 드릴게요.", "office": "사무실", "row0": "좋아요. 문구는 언제 받을 수 있을까요?", "cited": "인용됨", "tabs": ["오늘", "할 일", "질문", "보관함"]}}</script>
+<link rel="stylesheet" href="/assets/site.css?v=6f854874">
+<script src="/assets/stages.js?v=fc881cd3" defer></script>
+<script src="/assets/store.js?v=267b0b59" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/ko/" aria-label="DayRecall 홈"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
+    <nav class="nav-links" aria-label="페이지 탐색">
+      <a href="#how">작동 방식</a>
+      <a href="#devices">기기</a>
+      <a href="#battery">배터리</a>
+      <a href="#voices">목소리</a>
+      <a href="#languages">언어</a>
+      <a href="#privacy">개인정보 보호</a>
+    </nav>
+    <details class="langmenu">
+      <summary aria-label="언어"><span class="ico" data-icon="globe"></span><span>한국어</span></summary>
+      <ul>
+        <li><a href="/" hreflang="en" lang="en">English</a></li>
+        <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="/da/" hreflang="da" lang="da">Dansk</a></li>
+        <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+        <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="/ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li>
+        <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
+        <li><a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li>
+        <li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li>
+        <li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>Apple Watch와 함께 가장 좋아요 · iPhone만으로도 작동해요</p>
+        <h1><span class="hl">하루&nbsp;전체</span>를 위한 AI 기억</h1>
+        <p class="lead">잘 잊어버리는 모든 분을 위한 앱이에요. 정해 둔 시간 동안 Apple Watch, 또는 iPhone만으로 듣고, 말한 내용은 iPhone에 텍스트로 남아요. <strong>하루에 대해 언제든 물어보면, 원래 한 말 그대로 돌려받을 수 있어요.</strong></p>
+        <div class="cta-row">
+          <span class="pill" data-prelaunch><span class="dot"></span>베타 진행 중 · App Store 출시 예정</span>
+          <a class="pill store" data-store href="https://dayrecall.com/ko/" hidden>App Store에서 DayRecall 받기 <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="ghost" href="#how">작동 방식 보기 <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="proof">
+          <li><b>0.9%</b><span>듣는 동안 시간당 추가 배터리 사용<a class="fn" href="#n1" aria-label="주석 1">1</a></span></li>
+          <li><b>99.9%</b><span>음성 포착률<a class="fn" href="#n2" aria-label="주석 2">2</a></span></li>
+          <li><b>17&nbsp;초</b><span>3분 대화를 처리하는 시간<a class="fn" href="#n3" aria-label="주석 3">3</a></span></li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="DayRecall에 “민수가 오늘 나한테 뭘 약속했어?”라고 물으면, 답에는 약속 두 가지가 번호와 함께 나오고, 각각 그 말이 나온 순간으로 연결돼요."></div>
+        <div class="chip" aria-hidden="true">
+          <span class="watch" data-icon="watch"></span>
+          <span><b>듣는 중</b><span>평일 · 9:00–18:00</span></span>
+          <i class="live"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="kicker">작동 방식</p>
+      <h2>아침에 한 번 누르면, 하루 종일 답을 얻어요.</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="stage t-light" data-stage="listening" role="img" aria-label="소리를 한 줄로 쭉 훑어서, 말소리가 있는 부분만 남기고 그 사이의 고요한 부분은 건너뛰어요."></div>
+          <h3><span class="num">1</span>나눈 말을 기억하세요</h3>
+          <p>정해 둔 시간 동안 Apple Watch가 듣고, iPhone을 두고 나가도 괜찮아요. 아침에 한 번 누르면 되고, 알아서 멈춰요. 자체 개발한 초경량 음성 모델이 워치에서 바로 돌아가며, 누군가 말하는 순간만 남겨요.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="tidying" role="img" aria-label="음성은 지워지고, “나”와 “다른 사람 1”로 표시된 텍스트 줄이 남아요. 회의, 할 일, 마감 기한이 골라져요."></div>
+          <h3><span class="num">2</span>알아서 정리</h3>
+          <p>iPhone에서 음성을 텍스트로 바꾸고, 음성 파일은 지우며, 할 일, 마감 기한, 회의를 골라내요. 내가 한 말과 다른 사람이 한 말도 구분할 수 있어요.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="privacy" role="img" aria-label="기억은 iPhone으로 옮겨져 잠기고, 클라우드로 향하는 것은 멈춰서 다시 돌아와요."></div>
+          <h3><span class="num">3</span>기본적으로 비공개</h3>
+          <p>기억은 iPhone에만 머물고, 답변은 Apple의 기기 내 모델로 만들어요. 나중에 원하는 클라우드 API를 고를 수 있지만, 허용하기 전에는 아무것도 보내지 않아요.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">기기</p>
+        <h2>워치는 휴대폰이 가까이 없어도 괜찮아요.</h2>
+        <p class="body">Apple Watch는 혼자서도 하루 종일 들어요. 녹음은 워치에 보관했다가 두 시간마다 iPhone으로 보내요. iPhone이 근처에 없으면, 두 기기가 다시 연결되는 순간(예: 저녁에 집에 돌아왔을 때) 밀린 녹음이 한꺼번에 옮겨져요. iPhone이 계속 연결돼 있을 필요는 전혀 없어요.</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">가장 좋은 선택</span></h3><p>하루 종일 손목에 차고 있으면, 휴대폰은 필요 없어요.</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>iPhone만 있다면</h3><p>Apple Watch가 없나요? iPhone이 혼자서도 들을 수 있어요.</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>둘을 함께 쓰면</h3><p>하루가 하나의 타임라인으로 정리돼요. 두 기기가 모두 들은 내용은 한 번만 보이고, 워치가 멈추면 iPhone이 이어서 들어요.</p></div></li>
+        </ul>
+        <p class="vision">Apple Watch와 iPhone으로 시작하고, 듣는 기기가 늘수록 모두 하나의 기억에 더해져요.</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="iPhone이 없는 동안에도 워치는 계속 듣고 녹음 조각 세 개를 보관해요. 11:00에 iPhone이 돌아오면 조각이 옮겨져 텍스트로 나타나요."></div>
+    </div>
+  </section>
+
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">배터리</p>
+      <h2>하루 종일 듣는데도 배터리는 거의 쓰지 않아요.</h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="9:00부터 18:00까지의 근무일: 대화가 하루를 따라 차례로 켜지고, 듣기가 쓰는 배터리는 약 8%뿐이에요."></div>
+        <div class="power-copy">
+          <p class="big">자체 개발한 전문가급 초경량 음성 모델로, <strong>파라미터는 단 2,561개</strong>예요. 자체 가속 추론 커널 위에서 돌아가며, 워치에서 0.1초마다 한 번씩 판단해요.</p>
+          <p>음성만 남겨요. 침묵, 키보드 소리, 냉각 팬 소리는 배터리를 쓰기 전에 걸러져요. 모델 구조에서 연산 커널까지 모두 워치를 위해 설계했고, AI 가속 분야의 박사 연구를 바탕으로 했어요.</p>
+          <ul class="badges">
+            <li>자체 개발 초경량 모델</li>
+            <li>맞춤 가속 커널</li>
+            <li>워치 안에서 바로 추론</li>
+            <li>AI 가속 분야 박사 연구</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">0.9%</p><p class="l">듣는 동안 시간당 추가 배터리 사용<a class="fn" href="#n1" aria-label="주석 1">1</a></p></div>
+        <div class="stat"><p class="n">99.9%</p><p class="l">음성 포착률<a class="fn" href="#n2" aria-label="주석 2">2</a></p></div>
+        <div class="stat"><p class="n">95%</p><p class="l">배경 소음 건너뜀<a class="fn" href="#n2" aria-label="주석 2">2</a></p></div>
+        <div class="stat"><p class="n">17&nbsp;초</p><p class="l">3분 대화를 처리하는 시간<a class="fn" href="#n3" aria-label="주석 3">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">Apple Watch Series 11에서 DayRecall이 2026년 10월에 진행한 내부 테스트 기준이에요. 설정과 사용 방식에 따라 배터리 사용량은 달라져요.</li>
+        <li id="n2">공개 데이터셋으로 한 실험실 테스트: 음성 포착률은 AMI Meeting Corpus 테스트 세트, 배경 소음 건너뜀은 DEMAND 소음 데이터셋으로 측정했어요.</li>
+        <li id="n3">DayRecall이 2026년 10월 iPhone 17 Pro Max에서 진행한 내부 테스트 기준이에요. 처리 시간은 기기 모델과 사용 방식에 따라 달라져요.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">목소리</p>
+        <h2>내 목소리는 알아보고, 다른 사람들은 구분해요.</h2>
+        <p class="body">짧은 카드 다섯 장을 한 번 읽으면 돼요(약 1분). 그러면 내가 하는 말은 모두 <span class="tag-me">나</span>로 표시돼요. 같은 대화의 다른 사람들은 각자 번호를 받아요. <span class="tag-other">다른 사람 1</span>, <span class="tag-other">다른 사람 2</span> 식으로요. 그래서 내가 한 약속과 나에게 한 약속이 절대 섞이지 않아요.</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>한 대화 속 여러 화자를 각각 구분</li>
+          <li><span class="tick" data-icon="check"></span>할 일에 누구의 약속인지 표시돼요</li>
+          <li><span class="tick" data-icon="check"></span>한 시간 분량의 대화를 4.4초 만에 화자 인식</li>
+          <li><span class="tick" data-icon="check"></span>내 목소리 정보는 iPhone에만 머물고, 다른 사람의 목소리는 저장하지 않아요.</li>
+        </ul>
+        <p class="note">선택 사항이며 기본적으로 꺼져 있어요. 속도는 iPhone 17 Pro Max에서 진행한 내부 테스트 기준이에요.</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="회의의 네 문장이 하나씩 들리고 “나”, “다른 사람 1”, “다른 사람 2”, “나”로 표시돼요. 세 목소리는 위쪽에 모여요."></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">언어</p>
+        <h2>대화 중에 언어를 바꿔도 따라가요.</h2>
+        <p class="body">사용 언어를 최대 세 개까지 고르세요. DayRecall이 언어가 바뀔 때마다 알아채고, 각 부분을 말한 그 언어 그대로 텍스트로 옮겨요. <span data-feature="translation">그다음 다른 언어로 된 문장을 내 언어로 번역할 수 있어요.</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>한 대화에 최대 세 개 언어</li>
+          <li><span class="tick" data-icon="check"></span>각 부분은 자기 언어로 텍스트 변환</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>내 언어로 번역돼요</li>
+          <li><span class="tick" data-icon="check"></span>한 시간 분량의 대화를 약 32초 만에 언어 감지</li>
+        </ul>
+        <p class="note">다국어 텍스트 변환은 고급 설정이며 기본적으로 꺼져 있어요. 속도는 iPhone 17 Pro Max에서 진행한 내부 테스트 기준이에요. 앱 자체는 13개 언어로 제공돼요.</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="사용 언어인 한국어, 영어, 중국어가 차례로 켜지면서 각각 한 문장씩 적혀요. 영어와 중국어 문장에는 한국어 번역이 붙어요."></div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="kicker">기능</p>
+      <h2>놓치기 쉬운 세부 사항까지 챙겨요.</h2>
+      <div class="grid">
+        <article class="feat">
+          <span class="ico" data-icon="checkCircle"></span>
+          <h3>내가 확인하는 할 일</h3>
+          <p>약속, 마감 기한, 회의를 하루에서 골라내요. 확인을 누르기 전에는 캘린더나 미리 알림에 아무것도 들어가지 않아요.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>내 말로 질문하세요</h3>
+          <p>민수가 뭘 약속했어? 보고서는 언제까지야? 모든 답변에는 출처가 표시되고, 그 말이 나온 줄까지 바로 확인할 수 있어요.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="history"></span>
+          <h3>어느 날이든 한눈에</h3>
+          <p>하루를 타임라인으로 보고, 지난날로 넘겨 보고, 들었던 모든 내용을 검색할 수 있어요.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="week"></span>
+          <h3>한 주의 계획</h3>
+          <p>매주 앞으로의 마감 기한과 약속을 한곳에 모아 보여줘요. 캘린더에 넣을 것은 직접 골라요.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>원한다면 장소도</h3>
+          <p>하루 지도에서 대화가 있었던 장소를 볼 수 있어요. 직접 켜기 전까지는 꺼져 있어요.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>AI 앱에 하루 넘기기</h3>
+          <p>더 깊이 보고 싶다면, 하루의 텍스트 기록을 쓰는 AI 앱에 텍스트 파일로 보낼 수 있어요. 내가 선택했을 때만 보내요.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="privacy">
+    <div class="wrap">
+      <p class="kicker">개인정보 보호</p>
+      <h2>텍스트만 저장해요. iPhone 안에서. 선택은 내 몫이에요.</h2>
+      <div class="priv">
+        <div class="stage t-dark" data-stage="privacy" role="img" aria-label="기억은 iPhone으로 옮겨져 잠기고, 클라우드로 향하는 것은 멈춰서 다시 돌아와요."></div>
+        <div class="points">
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>음성이 아니라 텍스트만 저장</h3>
+            <p>말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>계정 없음, DayRecall 서버 없음</h3>
+            <p>가입할 것도 없고, 여러분의 하루를 볼 수 있는 서버도 운영하지 않아요.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>허락하기 전에는 아무것도 나가지 않아요</h3>
+            <p>답변은 Apple의 기기 내 모델로 만들어요. AI 앱에 하루를 넘기거나 내 클라우드 API를 쓰는 것은 허용했을 때만 이루어져요.</p>
+          </div>
+        </div>
+      </div>
+      <div class="consent">
+        <div class="stage t-dark" data-stage="consent" role="img" aria-label="대화하는 상대에게 알리고, 상대가 동의하면 두 사람이 연결돼요."></div>
+        <div>
+          <h3>주변 사람들에게 알리세요</h3>
+          <p>대화하는 사람들에게 DayRecall이 듣고 있다는 것을 알려 주세요. 텍스트만 남기더라도 모두의 동의를 요구하는 곳도 있으니, 계신 곳의 규칙을 따르세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <p class="kicker">FAQ</p>
+        <h2>궁금한 점, 답해 드려요</h2>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>DayRecall이 뭔가요?</summary>
+          <p>DayRecall은 잘 잊어버리는 분들을 위한 AI 기억 앱으로, Apple Watch와 iPhone에서 쓸 수 있어요. 정해 둔 시간 동안 듣고, 말한 내용을 iPhone에 텍스트로 남기며, 하루에 대한 질문에 원래 한 말 그대로와 그 출처를 함께 답해요.</p>
+        </details>
+        <details>
+          <summary>Apple Watch가 꼭 필요한가요?</summary>
+          <p>아니요. DayRecall은 Apple Watch와 함께 쓸 때 가장 좋고, iPhone만으로도 혼자 들을 수 있어요. 두 기기가 함께 들으면 하루가 하나의 타임라인이 되고, 두 기기가 모두 들은 내용은 한 번만 보여요.</p>
+        </details>
+        <details>
+          <summary>iPhone이 워치 근처에 꼭 있어야 하나요?</summary>
+          <p>아니요. Apple Watch가 녹음을 보관했다가 두 시간마다, 또는 두 기기가 다시 연결되는 대로(예: 저녁에 집에 돌아왔을 때) iPhone으로 보내요.</p>
+        </details>
+        <details>
+          <summary>DayRecall이 녹음 파일을 보관하나요?</summary>
+          <p>아니요. 말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요. 텍스트만 남아요.</p>
+        </details>
+        <details>
+          <summary>데이터는 어디에 있고, 누가 볼 수 있나요?</summary>
+          <p>iPhone에 있어요. 계정이 없고 DayRecall 서버도 없어요. 답변은 Apple의 기기 내 모델로 만들어지며, 직접 클라우드 API를 쓰기로 하거나 AI 앱에 하루를 넘기기로 하지 않는 한 어떤 것도 iPhone 밖으로 나가지 않아요.</p>
+        </details>
+        <details>
+          <summary>배터리를 얼마나 쓰나요?</summary>
+          <p>아주 조금이에요. 자체 개발한 초경량 음성 모델이 누군가 말하는 순간만 남겨요. Apple Watch Series 11에서 진행한 내부 테스트에서 듣는 동안 시간당 배터리를 약 0.9% 더 썼어요.</p>
+        </details>
+        <details>
+          <summary>지원하는 언어는 무엇인가요?</summary>
+          <p>앱은 13개 언어로 제공돼요. 한 대화에서 최대 세 가지 언어가 섞여도 텍스트로 변환하고, 다른 언어는 내 언어로 번역할 수 있어요.</p>
+        </details>
+        <details>
+          <summary>DayRecall은 언제 쓸 수 있나요?</summary>
+          <p>DayRecall은 베타 중이며 곧 App Store에 출시돼요.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+      <h2>DayRecall</h2>
+      <p class="sub">하루 전체를 위한 AI 기억.</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>곧 App Store에 출시돼요</span>
+      <a class="pill store" data-store href="https://dayrecall.com/ko/" hidden>App Store에서 DayRecall 받기 <span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">Apple Watch와 함께 가장 좋아요 · iPhone만으로도 작동해요 · 13개 언어</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 DayRecall</span>
+    <span class="tm">Apple Watch와 iPhone은 미국 및 기타 국가와 지역에 등록된 Apple Inc.의 상표예요.</span>
+    <nav class="foot-links" aria-label="더 보기">
+      <a href="/privacy/" hreflang="en">개인정보 처리방침</a>
+      <a href="/support/" hreflang="en">고객 지원</a>
+    </nav>
+    <nav class="foot-langs" aria-label="언어">
+      <a href="/" hreflang="en" lang="en">English</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="/da/" hreflang="da" lang="da">Dansk</a>
+      <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/" hreflang="it" lang="it">Italiano</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a>
+      <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+      <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

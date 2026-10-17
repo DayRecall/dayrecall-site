@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DayRecall — Mémoire IA de votre journée | Apple Watch et iPhone</title>
+<meta name="description" content="Mémoire IA pour Apple Watch et iPhone : DayRecall écoute aux heures choisies, transcrit en texte sur iPhone et répond à vos questions sur la journée.">
+<meta name="keywords" content="DayRecall, mémoire IA, aide-mémoire, transcription vocale, compte rendu de réunion, application anti-oubli, Apple Watch, iPhone">
+<link rel="canonical" href="https://dayrecall.com/fr/">
+<link rel="alternate" hreflang="en" href="https://dayrecall.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
+<link rel="alternate" hreflang="da" href="https://dayrecall.com/da/">
+<link rel="alternate" hreflang="de" href="https://dayrecall.com/de/">
+<link rel="alternate" hreflang="es" href="https://dayrecall.com/es/">
+<link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/">
+<link rel="alternate" hreflang="it" href="https://dayrecall.com/it/">
+<link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/">
+<link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/">
+<link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/">
+<link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/">
+<link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/">
+<link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-1024.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DayRecall">
+<meta property="og:title" content="DayRecall — Mémoire IA de votre journée">
+<meta property="og:description" content="Votre Apple Watch, ou simplement votre iPhone, écoute pendant les heures que vous choisissez et garde ce qui a été dit sous forme de texte. Posez vos questions sur la journée à tout moment.">
+<meta property="og:url" content="https://dayrecall.com/fr/">
+<meta property="og:image" content="https://dayrecall.com/assets/og-fr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DayRecall : la mémoire IA de toute votre journée. Idéal avec Apple Watch, fonctionne avec iPhone seul.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dayrecall.com/#org",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "logo": "https://dayrecall.com/assets/icon-1024.png",
+      "email": "support@dayrecall.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dayrecall.com/#website",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "inLanguage": [
+        "en",
+        "zh-Hans",
+        "da",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "nl",
+        "pt-PT",
+        "sv",
+        "tr"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dayrecall.com/#app",
+      "name": "DayRecall",
+      "description": "Une application de mémoire IA pour Apple Watch et iPhone. Pendant les heures que vous choisissez, elle écoute, garde ce qui a été dit en texte sur votre iPhone et répond à vos questions sur votre journée avec les mots exacts.",
+      "url": "https://dayrecall.com/fr/",
+      "image": "https://dayrecall.com/assets/icon-1024.png",
+      "operatingSystem": "iOS 26, watchOS 26",
+      "applicationCategory": "UtilitiesApplication",
+      "featureList": [
+        "Écoute toute la journée sur Apple Watch, sans iPhone à proximité ; fonctionne aussi avec iPhone seul",
+        "La parole devient du texte sur l’iPhone, et l’audio est supprimé",
+        "Posez vos questions sur la journée et obtenez les mots exacts, avec le moment où ils ont été dits",
+        "Indique qui a dit quoi : Moi, Autre 1, Autre 2",
+        "Suit les conversations en jusqu’à trois langues, avec traduction dans la vôtre",
+        "Repère les tâches, échéances et réunions, à confirmer par vous",
+        "Pas de compte ni de serveur ; les réponses utilisent le modèle d’Apple exécuté sur l’appareil"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dayrecall.com/fr/#faq",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu’est-ce que DayRecall ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall est une application de mémoire IA pour Apple Watch et iPhone, conçue pour les personnes qui oublient des choses. Pendant les heures que vous choisissez, elle écoute, garde ce qui a été dit en texte sur votre iPhone, et répond à vos questions sur votre journée avec les mots exacts et leur origine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ai-je besoin d’une Apple Watch ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. DayRecall fonctionne au mieux avec Apple Watch, et votre iPhone peut aussi écouter seul. Quand les deux écoutent, votre journée forme une seule chronologie, et ce que les deux ont entendu n’apparaît qu’une fois."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mon iPhone doit-il rester près de ma montre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Votre Apple Watch conserve ses enregistrements et les envoie à votre iPhone toutes les deux heures, ou dès que les deux se reconnectent, par exemple quand vous rentrez le soir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall conserve-t-il les enregistrements audio ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La parole est transformée en texte sur votre iPhone, puis l’audio est supprimé. Seul le texte est conservé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Où sont mes données, et qui peut les voir ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur votre iPhone. Il n’y a ni compte ni serveur DayRecall. Les réponses utilisent le modèle d’Apple exécuté sur l’appareil, et rien ne quitte votre iPhone, sauf si vous choisissez d’utiliser votre propre API cloud ou de transmettre une journée à une application IA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de batterie consomme-t-elle ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Très peu. Notre modèle vocal ultra-léger, développé en interne, ne garde que les moments où quelqu’un parle. Lors de tests internes sur Apple Watch Series 11, l’écoute a ajouté environ 0,9 % de batterie par heure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles langues sont prises en charge ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L’application est disponible en 13 langues. Elle peut aussi transcrire une conversation qui passe d’une langue à l’autre, jusqu’à trois langues, et traduire les autres langues dans la vôtre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand puis-je obtenir DayRecall ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall est en bêta et bientôt disponible sur l’App Store."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/json" id="stage-words">{"me": "Moi", "other": "Autre 1", "other2": "Autre 2", "battery": {"title": "Jour ouvré", "hours": "9:00–18:00", "ticks": ["9:00", "12:00", "15:00", "18:00"], "used": "Batterie utilisée par l’écoute"}, "sync": {"away": "iPhone absent", "waiting": "{n} à synchroniser", "syncing": "Synchronisation…", "synced": "Synchronisé sur iPhone"}, "speakers": {"place": "Bureau", "time": "14:10", "lines": ["Pouvons-nous lancer vendredi ?", "Le design sera terminé aujourd’hui.", "Je le testerai jeudi.", "Super, je préviens le client."]}, "languages": {"label": "Langues de travail", "names": ["Français", "Anglais", "Chinois"], "rows": [{"lang": "fr", "text": "Donc on lance vendredi."}, {"lang": "en", "text": "The design will be done today.", "tr": "Le design sera terminé aujourd’hui."}, {"lang": "zh-Hans", "text": "我周四来测。", "tr": "Je le testerai jeudi."}]}, "ask": {"title": "Interrogez votre mémoire", "sub": "Ce que vous avez enregistré, ou n’importe quoi d’autre.", "tryAsking": "Essayez de demander", "s1": "Quelles échéances arrivent cette semaine ?", "s2": "Qu’avons-nous convenu lors de la réunion d’hier ?", "placeholder": "Posez une question", "question": "Qu’est-ce que Sam m’a promis aujourd’hui ?", "thinking": "Réflexion…", "from": "D’après vos enregistrements", "a1": "Sam vous enverra le texte mercredi.", "a2": "Vous enverrez à Sam le devis d’ici vendredi.", "sources": "2 sources", "today": "Aujourd’hui", "watch": "Apple Watch", "snip1": "Je vous enverrai le texte mercredi.", "snip2": "Entendu, je l’enverrai vendredi.", "office": "Bureau", "row0": "Parfait. Quand puis-je avoir le texte ?", "cited": "Cité", "tabs": ["Aujourd’hui", "À faire", "Demander", "Archives"]}}</script>
+<link rel="stylesheet" href="/assets/site.css?v=6f854874">
+<script src="/assets/stages.js?v=fc881cd3" defer></script>
+<script src="/assets/store.js?v=267b0b59" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/fr/" aria-label="DayRecall, accueil"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">Comment ça marche</a>
+      <a href="#devices">Appareils</a>
+      <a href="#battery">Batterie</a>
+      <a href="#voices">Voix</a>
+      <a href="#languages">Langues</a>
+      <a href="#privacy">Confidentialité</a>
+    </nav>
+    <details class="langmenu">
+      <summary aria-label="Langue"><span class="ico" data-icon="globe"></span><span>Français</span></summary>
+      <ul>
+        <li><a href="/" hreflang="en" lang="en">English</a></li>
+        <li><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="/da/" hreflang="da" lang="da">Dansk</a></li>
+        <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+        <li><a href="/fr/" hreflang="fr" lang="fr" aria-current="page">Français</a></li>
+        <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
+        <li><a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a></li>
+        <li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li>
+        <li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>Idéal avec Apple Watch · Fonctionne avec iPhone seul</p>
+        <h1>La mémoire IA de <span class="hl">toute&nbsp;votre&nbsp;journée</span></h1>
+        <p class="lead">Pour tous ceux qui oublient des choses. Votre Apple Watch, ou simplement votre iPhone, écoute pendant les heures que vous choisissez, et ce qui a été dit est conservé sous forme de texte sur votre iPhone. <strong>Posez vos questions sur la journée à tout moment, et retrouvez les mots exacts.</strong></p>
+        <div class="cta-row">
+          <span class="pill" data-prelaunch><span class="dot"></span>En bêta · Bientôt sur l’App Store</span>
+          <a class="pill store" data-store href="https://dayrecall.com/fr/" hidden>Télécharger DayRecall sur l’App Store <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="ghost" href="#how">Découvrir comment ça marche <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="proof">
+          <li><b>0,9&nbsp;%</b><span>de batterie en plus par heure d’écoute<a class="fn" href="#n1" aria-label="Note 1">1</a></span></li>
+          <li><b>99,9&nbsp;%</b><span>de la parole captée<a class="fn" href="#n2" aria-label="Note 2">2</a></span></li>
+          <li><b>17&nbsp;s</b><span>pour traiter 3 minutes de conversation<a class="fn" href="#n3" aria-label="Note 3">3</a></span></li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="Demander à DayRecall « Qu’est-ce que Sam m’a promis aujourd’hui ? » : la réponse liste deux promesses, chacune numérotée et reliée au moment où elle a été dite."></div>
+        <div class="chip" aria-hidden="true">
+          <span class="watch" data-icon="watch"></span>
+          <span><b>À l’écoute</b><span>Jours ouvrés · 9:00–18:00</span></span>
+          <i class="live"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="kicker">Comment ça marche</p>
+      <h2>Une pression le matin. Des réponses toute la journée.</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="stage t-light" data-stage="listening" role="img" aria-label="Une bande sonore est analysée : seuls les passages de parole s’allument et sont gardés ; les silences entre eux sont ignorés."></div>
+          <h3><span class="num">1</span>Retenez ce qui a été dit</h3>
+          <p>Votre Apple Watch écoute pendant les heures que vous choisissez, même si votre iPhone est resté à la maison. Une pression le matin suffit, et l’écoute s’arrête toute seule. Notre modèle vocal ultra-léger, développé en interne, tourne directement sur la montre et ne garde que les moments où quelqu’un parle.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="tidying" role="img" aria-label="L’audio part à la corbeille et devient des lignes de texte marquées « Moi » et « Autre 1 » ; une réunion, une tâche et une échéance sont repérées."></div>
+          <h3><span class="num">2</span>Organisé pour vous</h3>
+          <p>Votre iPhone transforme la parole en texte directement sur l’appareil, supprime l’audio et repère les tâches, échéances et réunions. Il peut aussi distinguer ce que vous avez dit de ce que les autres ont dit.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="privacy" role="img" aria-label="Les souvenirs entrent dans l’iPhone, qui se verrouille ; tout ce qui part vers le cloud est bloqué, puis revient."></div>
+          <h3><span class="num">3</span>Privé par défaut</h3>
+          <p>Vos souvenirs restent sur votre iPhone, et les réponses utilisent le modèle d’Apple exécuté sur l’appareil. Vous pourrez plus tard choisir votre propre API cloud ; rien n’est envoyé sans votre accord.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Appareils</p>
+        <h2>Votre montre n’a pas besoin de votre téléphone à proximité.</h2>
+        <p class="body">Apple Watch écoute seule, toute la journée. Les enregistrements attendent sur la montre et rejoignent votre iPhone toutes les deux heures ; si votre iPhone n’est pas là, ils sont transférés dès que les deux appareils se reconnectent, par exemple quand vous rentrez le soir. Votre iPhone n’a jamais besoin de rester connecté.</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">Idéal</span></h3><p>Au poignet toute la journée, sans téléphone nécessaire.</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>Juste un iPhone</h3><p>Pas d’Apple Watch ? Votre iPhone peut écouter seul.</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>Les deux ensemble</h3><p>Une seule chronologie pour la journée. Ce que les deux ont entendu n’apparaît qu’une fois, et si la montre s’arrête, votre iPhone peut prendre le relais.</p></div></li>
+        </ul>
+        <p class="vision">Tout commence avec Apple Watch et iPhone : chaque appareil qui écoute enrichit une même mémoire.</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="Quand l’iPhone est absent, la montre continue d’écouter et garde trois extraits en attente ; quand l’iPhone revient à 11:00, les extraits sont transférés et apparaissent sous forme de texte."></div>
+    </div>
+  </section>
+
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">Batterie</p>
+      <h2>Écoute toute la journée. Ne consomme presque pas de batterie.</h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="Une journée de travail, de 9:00 à 18:00 : les conversations s’allument le long de la journée, et la batterie utilisée par l’écoute ne grimpe qu’à environ 8 %."></div>
+        <div class="power-copy">
+          <p class="big">Un modèle vocal ultra-léger de qualité professionnelle, conçu en interne : <strong>seulement 2 561 paramètres</strong>, qui tourne sur nos propres noyaux de calcul accélérés et décide à chaque dixième de seconde, directement sur la montre.</p>
+          <p>Seule la parole est conservée. Silences, claviers et bruits de ventilateurs sont filtrés avant de coûter la moindre batterie. De l’architecture aux noyaux de calcul, tout a été pensé pour la montre, à partir de nos recherches de doctorat sur l’accélération de l’IA.</p>
+          <ul class="badges">
+            <li>Modèle ultra-léger maison</li>
+            <li>Noyaux accélérés sur mesure</li>
+            <li>Inférence sur la montre</li>
+            <li>Recherche doctorale en accélération de l’IA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">0,9&nbsp;%</p><p class="l">de batterie en plus par heure d’écoute<a class="fn" href="#n1" aria-label="Note 1">1</a></p></div>
+        <div class="stat"><p class="n">99,9&nbsp;%</p><p class="l">de la parole captée<a class="fn" href="#n2" aria-label="Note 2">2</a></p></div>
+        <div class="stat"><p class="n">95&nbsp;%</p><p class="l">de bruit de fond ignoré<a class="fn" href="#n2" aria-label="Note 2">2</a></p></div>
+        <div class="stat"><p class="n">17&nbsp;s</p><p class="l">pour traiter 3 minutes de conversation<a class="fn" href="#n3" aria-label="Note 3">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">D’après des tests internes de DayRecall sur Apple Watch Series 11, octobre 2026. La consommation de batterie varie selon les réglages et l’usage.</li>
+        <li id="n2">Tests en laboratoire sur des jeux de données publics : parole captée sur le jeu de test AMI Meeting Corpus, bruit ignoré sur le jeu de données de bruit DEMAND.</li>
+        <li id="n3">D’après des tests internes de DayRecall sur iPhone 17 Pro Max, octobre 2026. Le temps de traitement varie selon le modèle et l’usage.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Voix</p>
+        <h2>Reconnaît votre voix, et distingue tous les autres.</h2>
+        <p class="body">Lisez une fois cinq courtes fiches, environ une minute, et tout ce que vous dites est marqué <span class="tag-me">Moi</span>. Chaque autre personne de la conversation reçoit son propre numéro, <span class="tag-other">Autre 1</span>, <span class="tag-other">Autre 2</span> et ainsi de suite, pour que vos promesses et celles qui vous sont faites ne se mélangent jamais.</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Plusieurs locuteurs dans une même conversation, chacun distingué</li>
+          <li><span class="tick" data-icon="check"></span>Les tâches indiquent qui a fait la promesse</li>
+          <li><span class="tick" data-icon="check"></span>Reconnaissance des locuteurs pour une heure de conversation en 4,4 secondes</li>
+          <li><span class="tick" data-icon="check"></span>Votre empreinte vocale reste sur votre iPhone. Les autres voix ne sont jamais conservées.</li>
+        </ul>
+        <p class="note">Facultatif et désactivé par défaut. Vitesse d’après des tests internes sur iPhone 17 Pro Max.</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="Quatre répliques d’une réunion sont entendues une à une et marquées Moi, Autre 1, Autre 2 et Moi ; les trois voix se regroupent en haut."></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Langues</p>
+        <h2>Changez de langue en pleine conversation. Il suit le rythme.</h2>
+        <p class="body">Choisissez jusqu’à trois langues de travail. DayRecall détecte chaque changement et transcrit chaque passage dans sa langue d’origine. <span data-feature="translation">Les répliques dans les autres langues peuvent ensuite être traduites dans la vôtre.</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Jusqu’à trois langues dans une même conversation</li>
+          <li><span class="tick" data-icon="check"></span>Chaque passage transcrit dans sa propre langue</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>Traduit dans votre langue</li>
+          <li><span class="tick" data-icon="check"></span>Identification de la langue pour une heure de conversation en environ 32 secondes</li>
+        </ul>
+        <p class="note">La transcription multilingue est un réglage avancé, désactivé par défaut. Vitesse d’après des tests internes sur iPhone 17 Pro Max. L’application elle-même est disponible en 13 langues.</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="Les langues de travail (français, anglais et chinois) s’allument à tour de rôle, à mesure qu’une réplique est transcrite dans chacune ; les répliques en anglais et en chinois reçoivent une traduction en français."></div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="kicker">Fonctionnalités</p>
+      <h2>Pensé pour les détails que vous finiriez par oublier</h2>
+      <div class="grid">
+        <article class="feat">
+          <span class="ico" data-icon="checkCircle"></span>
+          <h3>Tâches à confirmer</h3>
+          <p>Promesses, échéances et réunions sont repérées dans votre journée. Rien n’arrive dans votre calendrier ni dans Rappels tant que vous n’avez pas dit oui.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>Posez vos questions avec vos propres mots</h3>
+          <p>Qu’est-ce que Sam a promis ? Quand le rapport est-il attendu ? Chaque réponse indique d’où elle vient, jusqu’à la réplique prononcée.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="history"></span>
+          <h3>N’importe quel jour, d’un coup d’œil</h3>
+          <p>Voyez une journée sous forme de chronologie, feuilletez les jours passés et recherchez tout ce que vous avez entendu.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="week"></span>
+          <h3>Un plan pour la semaine</h3>
+          <p>Chaque semaine, les échéances et promesses à venir sont réunies au même endroit. Vous choisissez ce qui entre dans votre calendrier.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>Lieux, si vous le souhaitez</h3>
+          <p>Voyez où s’est déroulée chaque conversation sur une carte de votre journée. Désactivé jusqu’à ce que vous l’activiez.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>Transmettez une journée à votre application IA</h3>
+          <p>Pour aller plus loin, envoyez la transcription d’une journée à l’application IA que vous utilisez, sous forme de fichier texte, uniquement lorsque vous le décidez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="privacy">
+    <div class="wrap">
+      <p class="kicker">Confidentialité</p>
+      <h2>Texte uniquement. Sur votre iPhone. À vous de décider.</h2>
+      <div class="priv">
+        <div class="stage t-dark" data-stage="privacy" role="img" aria-label="Les souvenirs entrent dans l’iPhone, qui se verrouille ; tout ce qui part vers le cloud est bloqué, puis revient."></div>
+        <div class="points">
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Du texte, pas de l’audio</h3>
+            <p>La parole est transformée en texte sur votre iPhone, puis l’audio est supprimé.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Aucun compte, aucun serveur de notre part</h3>
+            <p>Aucune inscription, et nous n’exploitons aucun serveur qui voit votre journée.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Rien ne part sans vous</h3>
+            <p>Les réponses utilisent le modèle d’Apple exécuté sur l’appareil. Transmettre une journée à une application IA, ou utiliser votre propre API cloud, n’arrive que si vous l’autorisez.</p>
+          </div>
+        </div>
+      </div>
+      <div class="consent">
+        <div class="stage t-dark" data-stage="consent" role="img" aria-label="Vous prévenez la personne avec qui vous parlez ; elle accepte, et vous êtes tous les deux reliés."></div>
+        <div>
+          <h3>Prévenez votre entourage</h3>
+          <p>Dites aux personnes avec qui vous parlez que DayRecall écoute. Certains lieux exigent le consentement de tous, même lorsque seul le texte est conservé ; suivez les règles en vigueur là où vous êtes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <p class="kicker">FAQ</p>
+        <h2>Vos questions, nos réponses</h2>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>Qu’est-ce que DayRecall ?</summary>
+          <p>DayRecall est une application de mémoire IA pour Apple Watch et iPhone, conçue pour les personnes qui oublient des choses. Pendant les heures que vous choisissez, elle écoute, garde ce qui a été dit en texte sur votre iPhone, et répond à vos questions sur votre journée avec les mots exacts et leur origine.</p>
+        </details>
+        <details>
+          <summary>Ai-je besoin d’une Apple Watch ?</summary>
+          <p>Non. DayRecall fonctionne au mieux avec Apple Watch, et votre iPhone peut aussi écouter seul. Quand les deux écoutent, votre journée forme une seule chronologie, et ce que les deux ont entendu n’apparaît qu’une fois.</p>
+        </details>
+        <details>
+          <summary>Mon iPhone doit-il rester près de ma montre ?</summary>
+          <p>Non. Votre Apple Watch conserve ses enregistrements et les envoie à votre iPhone toutes les deux heures, ou dès que les deux se reconnectent, par exemple quand vous rentrez le soir.</p>
+        </details>
+        <details>
+          <summary>DayRecall conserve-t-il les enregistrements audio ?</summary>
+          <p>Non. La parole est transformée en texte sur votre iPhone, puis l’audio est supprimé. Seul le texte est conservé.</p>
+        </details>
+        <details>
+          <summary>Où sont mes données, et qui peut les voir ?</summary>
+          <p>Sur votre iPhone. Il n’y a ni compte ni serveur DayRecall. Les réponses utilisent le modèle d’Apple exécuté sur l’appareil, et rien ne quitte votre iPhone, sauf si vous choisissez d’utiliser votre propre API cloud ou de transmettre une journée à une application IA.</p>
+        </details>
+        <details>
+          <summary>Combien de batterie consomme-t-elle ?</summary>
+          <p>Très peu. Notre modèle vocal ultra-léger, développé en interne, ne garde que les moments où quelqu’un parle. Lors de tests internes sur Apple Watch Series 11, l’écoute a ajouté environ 0,9 % de batterie par heure.</p>
+        </details>
+        <details>
+          <summary>Quelles langues sont prises en charge ?</summary>
+          <p>L’application est disponible en 13 langues. Elle peut aussi transcrire une conversation qui passe d’une langue à l’autre, jusqu’à trois langues, et traduire les autres langues dans la vôtre.</p>
+        </details>
+        <details>
+          <summary>Quand puis-je obtenir DayRecall ?</summary>
+          <p>DayRecall est en bêta et bientôt disponible sur l’App Store.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+      <h2>DayRecall</h2>
+      <p class="sub">La mémoire IA de toute votre journée.</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>Bientôt sur l’App Store</span>
+      <a class="pill store" data-store href="https://dayrecall.com/fr/" hidden>Télécharger DayRecall sur l’App Store <span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">Idéal avec Apple Watch · Fonctionne avec iPhone seul · En 13 langues</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 DayRecall</span>
+    <span class="tm">Apple Watch et iPhone sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays et régions.</span>
+    <nav class="foot-links" aria-label="Plus">
+      <a href="/privacy/" hreflang="en">Politique de confidentialité</a>
+      <a href="/support/" hreflang="en">Assistance</a>
+    </nav>
+    <nav class="foot-langs" aria-label="Langue">
+      <a href="/" hreflang="en" lang="en">English</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="/da/" hreflang="da" lang="da">Dansk</a>
+      <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/fr/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+      <a href="/it/" hreflang="it" lang="it">Italiano</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+      <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

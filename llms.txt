@@ -18,8 +18,20 @@ DayRecall 是一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App，写给�
 
 ## Pages
 
-- [Home (English)](https://dayrecall.com/): what DayRecall does, how it works, devices, battery, voices, languages, privacy, FAQ
-- [首页（简体中文）](https://dayrecall.com/zh/)
+- Home page, in the 13 languages the app supports:
+  - [English](https://dayrecall.com/)
+  - [简体中文](https://dayrecall.com/zh/)
+  - [Dansk](https://dayrecall.com/da/)
+  - [Deutsch](https://dayrecall.com/de/)
+  - [Español](https://dayrecall.com/es/)
+  - [Français](https://dayrecall.com/fr/)
+  - [Italiano](https://dayrecall.com/it/)
+  - [日本語](https://dayrecall.com/ja/)
+  - [한국어](https://dayrecall.com/ko/)
+  - [Nederlands](https://dayrecall.com/nl/)
+  - [Português](https://dayrecall.com/pt/)
+  - [Svenska](https://dayrecall.com/sv/)
+  - [Türkçe](https://dayrecall.com/tr/)
 - [Privacy Policy](https://dayrecall.com/privacy/) · [隐私政策](https://dayrecall.com/zh/privacy/)
 - [Support](https://dayrecall.com/support/) · [支持](https://dayrecall.com/zh/support/)
 

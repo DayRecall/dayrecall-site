@@ -1,0 +1,247 @@
+<body>
+<a class="skip" href="#main">{{top_01}}</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="{{@home}}" aria-label="{{nav_01}}"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
+    <nav class="nav-links" aria-label="{{nav_02}}">
+      <a href="#how">{{nav_03}}</a>
+      <a href="#devices">{{nav_04}}</a>
+      <a href="#battery">{{nav_05}}</a>
+      <a href="#voices">{{nav_06}}</a>
+      <a href="#languages">{{nav_07}}</a>
+      <a href="#privacy">{{nav_08}}</a>
+    </nav>
+    {{@langmenu}}
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>{{hero_01}}</p>
+        <h1>{{hero_02}}</h1>
+        <p class="lead">{{hero_03}}</strong></p>
+        <div class="cta-row">
+          <span class="pill" data-prelaunch><span class="dot"></span>{{hero_04}}</span>
+          <a class="pill store" data-store href="{{@home_url}}" hidden>{{hero_05}}<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="ghost" href="#how">{{hero_06}}<span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="proof">
+          <li><b>{{@pct:0.9}}</b><span>{{hero_07}}">1</a></span></li>
+          <li><b>{{@pct:99.9}}</b><span>{{hero_08}}">2</a></span></li>
+          <li><b>{{hero_09}}">3</a></span></li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="{{hero_10}}"></div>
+        <div class="chip" aria-hidden="true">
+          <span class="watch" data-icon="watch"></span>
+          <span><b>{{hero_11}}</span></span>
+          <i class="live"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="kicker">{{how_01}}</p>
+      <h2>{{how_02}}</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="stage t-light" data-stage="listening" role="img" aria-label="{{how_03}}"></div>
+          <h3><span class="num">1</span>{{how_04}}</h3>
+          <p>{{how_05}}</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="tidying" role="img" aria-label="{{how_06}}"></div>
+          <h3><span class="num">2</span>{{how_07}}</h3>
+          <p>{{how_08}}</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="privacy" role="img" aria-label="{{how_09}}"></div>
+          <h3><span class="num">3</span>{{how_10}}</h3>
+          <p>{{how_11}}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">{{devices_01}}</p>
+        <h2>{{devices_02}}</h2>
+        <p class="body">{{devices_03}}</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">{{devices_04}}</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>{{devices_05}}</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>{{devices_06}}</p></div></li>
+        </ul>
+        <p class="vision">{{devices_07}}</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="{{devices_08}}"></div>
+    </div>
+  </section>
+
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">{{battery_01}}</p>
+      <h2>{{battery_02}}</h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="{{battery_03}}"></div>
+        <div class="power-copy">
+          <p class="big">{{battery_04}}</p>
+          <p>{{battery_05}}</p>
+          <ul class="badges">
+            <li>{{battery_06}}</li>
+            <li>{{battery_07}}</li>
+            <li>{{battery_08}}</li>
+            <li>{{battery_09}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">{{@pct:0.9}}</p><p class="l">{{battery_10}}">1</a></p></div>
+        <div class="stat"><p class="n">{{@pct:99.9}}</p><p class="l">{{battery_11}}">2</a></p></div>
+        <div class="stat"><p class="n">{{@pct:95}}</p><p class="l">{{battery_12}}">2</a></p></div>
+        <div class="stat"><p class="n">{{battery_13}}">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">{{battery_14}}</li>
+        <li id="n2">{{battery_15}}</li>
+        <li id="n3">{{battery_16}}</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">{{voices_01}}</p>
+        <h2>{{voices_02}}</h2>
+        <p class="body">{{voices_03}}</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>{{voices_04}}</li>
+          <li><span class="tick" data-icon="check"></span>{{voices_05}}</li>
+          <li><span class="tick" data-icon="check"></span>{{voices_06}}</li>
+          <li><span class="tick" data-icon="check"></span>{{voices_07}}</li>
+        </ul>
+        <p class="note">{{voices_08}}</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="{{voices_09}}"></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">{{languages_01}}</p>
+        <h2>{{languages_02}}</h2>
+        <p class="body">{{languages_03}}</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>{{languages_04}}</li>
+          <li><span class="tick" data-icon="check"></span>{{languages_05}}</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>{{languages_06}}</li>
+          <li><span class="tick" data-icon="check"></span>{{languages_07}}</li>
+        </ul>
+        <p class="note">{{languages_08}}</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="{{languages_09}}"></div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="kicker">{{features_01}}</p>
+      <h2>{{features_02}}</h2>
+      <div class="grid">
+        <article class="feat">
+          <span class="ico" data-icon="checkCircle"></span>
+          <h3>{{features_03}}</h3>
+          <p>{{features_04}}</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>{{features_05}}</h3>
+          <p>{{features_06}}</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="history"></span>
+          <h3>{{features_07}}</h3>
+          <p>{{features_08}}</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="week"></span>
+          <h3>{{features_09}}</h3>
+          <p>{{features_10}}</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>{{features_11}}</h3>
+          <p>{{features_12}}</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>{{features_13}}</h3>
+          <p>{{features_14}}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="privacy">
+    <div class="wrap">
+      <p class="kicker">{{privacy_01}}</p>
+      <h2>{{privacy_02}}</h2>
+      <div class="priv">
+        <div class="stage t-dark" data-stage="privacy" role="img" aria-label="{{privacy_03}}"></div>
+        <div class="points">
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>{{privacy_04}}</h3>
+            <p>{{privacy_05}}</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>{{privacy_06}}</h3>
+            <p>{{privacy_07}}</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>{{privacy_08}}</h3>
+            <p>{{privacy_09}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="consent">
+        <div class="stage t-dark" data-stage="consent" role="img" aria-label="{{privacy_10}}"></div>
+        <div>
+          <h3>{{privacy_11}}</h3>
+          <p>{{privacy_12}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{@faq}}
+  <section class="final">
+    <div class="wrap">
+      <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+      <h2>DayRecall</h2>
+      <p class="sub">{{final_01}}</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>{{final_02}}</span>
+      <a class="pill store" data-store href="{{@home_url}}" hidden>{{final_03}}<span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">{{final_04}}</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 DayRecall</span>
+    <span class="tm">{{foot_01}}</span>
+    {{@footlinks}}
+  </div>
+</footer>
+</body>
+</html>

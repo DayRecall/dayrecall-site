@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — AI-minne för hela dagen | Apple Watch och iPhone",
+  "description": "DayRecall lyssnar på Apple Watch eller iPhone under de timmar du väljer, gör tal till text på din iPhone och svarar på frågor om din dag.",
+  "og_title": "DayRecall — AI-minne för hela dagen",
+  "og_description": "Din Apple Watch, eller bara din iPhone, lyssnar under de timmar du väljer och sparar det som sades som text. Fråga om din dag när som helst.",
+  "og_image_alt": "DayRecall: AI-minne för hela dagen. Bäst med Apple Watch, fungerar med bara iPhone.",
+  "app_description": "En AI-minnesapp för Apple Watch och iPhone. Under de timmar du väljer lyssnar den, sparar det som sades som text på din iPhone och svarar på frågor om din dag med de exakta orden.",
+  "app_features": [
+    "Lyssnar hela dagen med Apple Watch, utan iPhone i närheten; fungerar också med bara iPhone",
+    "Tal blir text på iPhone och ljudet raderas",
+    "Fråga om din dag och få de exakta orden, med stunden de sades",
+    "Markerar vem som sa vad: Jag, Annan 1, Annan 2",
+    "Följer samtal på upp till tre språk, översatta till ditt",
+    "Plockar ut att göra-punkter, deadlines och möten som du bekräftar",
+    "Inget konto och ingen server; svaren kommer från Apples modell på enheten"
+  ],
+  "keywords": "AI-minne, minnesapp, transkribering, transkribera samtal, tal till text, mötesanteckningar, röstanteckningar, Apple Watch-app, DayRecall",
+  "top_01": "Hoppa till innehållet",
+  "nav_01": "DayRecall, startsida",
+  "nav_02": "Avsnitt",
+  "nav_03": "Så fungerar det",
+  "nav_04": "Enheter",
+  "nav_05": "Batteri",
+  "nav_06": "Röster",
+  "nav_07": "Språk",
+  "nav_08": "Integritet",
+  "hero_01": "Bäst med Apple Watch · Fungerar med bara iPhone",
+  "hero_02": "AI-minne för <span class=\"hl\">hela&nbsp;dagen</span>",
+  "hero_03": "För alla som glömmer saker. Din Apple Watch, eller bara din iPhone, lyssnar under de timmar du väljer, och det som sades sparas som text på din iPhone. <strong>Fråga om din dag när som helst och få tillbaka de exakta orden.",
+  "hero_04": "I beta · Kommer snart till App Store",
+  "hero_05": "Hämta DayRecall i App Store ",
+  "hero_06": "Se hur det fungerar ",
+  "hero_07": "extra batteriåtgång per timme under lyssning<a class=\"fn\" href=\"#n1\" aria-label=\"Fotnot 1",
+  "hero_08": "av talet som fångas upp<a class=\"fn\" href=\"#n2\" aria-label=\"Fotnot 2",
+  "hero_09": "17&nbsp;s</b><span>för att bearbeta 3 minuters samtal<a class=\"fn\" href=\"#n3\" aria-label=\"Fotnot 3",
+  "hero_10": "Du frågar DayRecall ”Vad lovade Sam mig idag?”: svaret listar två löften, var och ett numrerat och kopplat till stunden då det sades.",
+  "hero_11": "Lyssnar</b><span>Vardagar · 9.00–18.00",
+  "how_01": "Så fungerar det",
+  "how_02": "Ett tryck på morgonen. Svar hela dagen.",
+  "how_03": "Ett ljudstråk skannas. Bara de skurar där någon pratar tänds och sparas, och tystnaden mellan dem hoppas över.",
+  "how_04": "Kom ihåg vad som sades",
+  "how_05": "Din Apple Watch lyssnar under de timmar du väljer, även när iPhonen är kvar hemma. Ett tryck på morgonen, så slutar den av sig själv. Vår egenutvecklade, ultralätta talmodell körs direkt på klockan och behåller bara de stunder när någon pratar.",
+  "how_06": "Ljudet slängs och blir textrader märkta Jag och Annan 1; ett möte, en att göra-punkt och en deadline plockas ut.",
+  "how_07": "Ordnat åt dig",
+  "how_08": "Din iPhone gör tal till text på enheten, raderar ljudet och plockar ut att göra-punkterna, deadlines och möten. Den kan också skilja det du sa från det som andra sa.",
+  "how_09": "Minnena glider in i iPhonen och den låser sig; allt som är på väg till molnet stoppas och kommer tillbaka.",
+  "how_10": "Privat från början",
+  "how_11": "Dina minnen stannar på din iPhone, och svaren kommer från Apples modell på enheten. Senare kan du välja ett eget API i molnet; ingenting skickas förrän du tillåter det.",
+  "devices_01": "Enheter",
+  "devices_02": "Din klocka behöver inte telefonen i närheten.",
+  "devices_03": "Apple Watch lyssnar på egen hand hela dagen. Inspelningarna väntar på klockan och skickas till din iPhone varannan timme. Om iPhonen inte är i närheten hinner de ikapp så snart de två ansluter igen, till exempel när du kommer hem på kvällen. Din iPhone behöver aldrig vara ansluten hela tiden.",
+  "devices_04": "Bäst</span></h3><p>På handleden hela dagen, utan att telefonen behövs.",
+  "devices_05": "Bara iPhone</h3><p>Ingen Apple Watch? Din iPhone kan lyssna på egen hand.",
+  "devices_06": "Båda tillsammans</h3><p>En tidslinje för dagen. Det som båda hörde visas en gång, och om klockan slutar lyssna kan din iPhone ta över.",
+  "devices_07": "Det börjar med Apple Watch och iPhone: varje enhet som lyssnar bidrar till ett och samma minne.",
+  "devices_08": "När iPhonen inte är i närheten lyssnar klockan vidare och sparar tre klipp; när iPhonen är tillbaka vid 11.00 flyttas klippen över och visas som text.",
+  "battery_01": "Batteri",
+  "battery_02": "Lyssnar hela dagen. Knappt något batteri går åt.",
+  "battery_03": "En arbetsdag från 9.00 till 18.00: samtalen tänds längs tidslinjen, och lyssningen tar bara cirka 8 % av batteriet.",
+  "battery_04": "En egenutvecklad, ultralätt talmodell av professionell kvalitet: <strong>bara 2&nbsp;561 parametrar</strong>, som körs på egna accelererade inferenskärnor och fattar ett beslut var tiondels sekund, direkt på klockan.",
+  "battery_05": "Bara tal sparas. Tystnad, tangentbord och fläktar filtreras bort innan de kostar något batteri. Allt, från arkitekturen till kärnorna, är utformat för klockan och bygger på vår doktorsforskning inom AI-acceleration.",
+  "battery_06": "Egenutvecklad ultralätt modell",
+  "battery_07": "Egna accelererade kärnor",
+  "battery_08": "Inferens på klockan",
+  "battery_09": "Doktorsforskning i AI-acceleration",
+  "battery_10": "extra batteriåtgång per timme under lyssning<a class=\"fn\" href=\"#n1\" aria-label=\"Fotnot 1",
+  "battery_11": "av talet som fångas upp<a class=\"fn\" href=\"#n2\" aria-label=\"Fotnot 2",
+  "battery_12": "av bakgrundsljud hoppas över<a class=\"fn\" href=\"#n2\" aria-label=\"Fotnot 2",
+  "battery_13": "17&nbsp;s</p><p class=\"l\">för att bearbeta 3 minuters samtal<a class=\"fn\" href=\"#n3\" aria-label=\"Fotnot 3",
+  "battery_14": "Baserat på DayRecalls interna tester på Apple Watch Series 11, oktober 2026. Batteriåtgången varierar med inställningar och användning.",
+  "battery_15": "Labbtest på offentliga datamängder: fångat tal i testdelen av AMI Meeting Corpus och bakgrundsljud som hoppats över i DEMAND-brusdatamängden.",
+  "battery_16": "Baserat på DayRecalls interna tester på iPhone 17 Pro Max, oktober 2026. Bearbetningstiden varierar med modell och användning.",
+  "voices_01": "Röster",
+  "voices_02": "Känner igen din röst. Skiljer alla andra åt.",
+  "voices_03": "Läs upp fem korta kort en gång, på ungefär en minut, så markeras allt du säger med <span class=\"tag-me\">Jag</span>. Alla andra i samtalet får var sitt eget nummer, <span class=\"tag-other\">Annan 1</span>, <span class=\"tag-other\">Annan 2</span> och så vidare, så att dina löften och de löften andra ger dig aldrig blandas ihop.",
+  "voices_04": "Flera talare i samma samtal, var och en skiljs åt",
+  "voices_05": "Att göra-punkter vet vems löfte det var",
+  "voices_06": "Talarigenkänning för en timmes samtal på 4,4 sekunder",
+  "voices_07": "Ditt röstavtryck stannar på din iPhone. Andras röster sparas aldrig.",
+  "voices_08": "Valfritt och avstängt som standard. Hastigheten bygger på interna tester på iPhone 17 Pro Max.",
+  "voices_09": "Fyra rader ur ett möte hörs en i taget och märks Jag, Annan 1, Annan 2 och Jag; de tre rösterna samlas överst.",
+  "languages_01": "Språk",
+  "languages_02": "Byt språk mitt i samtalet. Appen hänger med.",
+  "languages_03": "Välj upp till tre arbetsspråk. DayRecall upptäcker varje språkbyte och transkriberar varje del på det språk den talades på. <span data-feature=\"translation\">Rader på de andra språken kan sedan översättas till ditt.",
+  "languages_04": "Upp till tre språk i ett samtal",
+  "languages_05": "Varje del transkriberas på sitt eget språk",
+  "languages_06": "Översatt till ditt språk",
+  "languages_07": "Språkigenkänning för en timmes samtal på cirka 32 sekunder",
+  "languages_08": "Flerspråkig transkription är en avancerad inställning, avstängd som standard. Hastigheten bygger på interna tester på iPhone 17 Pro Max. Själva appen finns på 13 språk.",
+  "languages_09": "Arbetsspråken svenska, engelska och kinesiska tänds i tur och ordning när en rad på varje språk skrivs ner; de engelska och kinesiska raderna får svenska översättningar.",
+  "features_01": "Funktioner",
+  "features_02": "Gjord för detaljerna du annars skulle tappa bort",
+  "features_03": "Att göra du bekräftar",
+  "features_04": "Löften, deadlines och möten plockas ut ur din dag. Inget når din kalender eller Påminnelser förrän du säger ja.",
+  "features_05": "Fråga med egna ord",
+  "features_06": "Vad lovade Sam? När ska rapporten vara klar? Varje svar visar var det kommer ifrån, ända ner till raden som sades.",
+  "features_07": "Vilken dag som helst, i en blick",
+  "features_08": "Se en dag som en tidslinje, bläddra tillbaka i tidigare dagar och sök bland allt du har hört.",
+  "features_09": "En plan för veckan",
+  "features_10": "Varje vecka samlas kommande deadlines och löften på ett ställe. Du väljer vad som ska in i kalendern.",
+  "features_11": "Platser, om du vill ha dem",
+  "features_12": "Se var varje samtal ägde rum på en karta över din dag. Avstängt tills du slår på det.",
+  "features_13": "Lämna en dag till din AI-app",
+  "features_14": "Vill du titta djupare kan du skicka en dags avskrift till den AI-app du använder, som en textfil, bara när du väljer det.",
+  "privacy_01": "Integritet",
+  "privacy_02": "Bara text. På din iPhone. Ditt beslut.",
+  "privacy_03": "Minnena glider in i iPhonen och den låser sig; allt som är på väg till molnet stoppas och kommer tillbaka.",
+  "privacy_04": "Text, inte ljud",
+  "privacy_05": "Tal blir text på din iPhone, och sedan raderas ljudet.",
+  "privacy_06": "Inget konto, ingen server från oss",
+  "privacy_07": "Det finns inget att registrera sig för, och vi driver inga servrar som ser din dag.",
+  "privacy_08": "Inget lämnar utan ditt val",
+  "privacy_09": "Svaren kommer från Apples modell på enheten. Att lämna en dag till en AI-app eller använda ditt eget API i molnet sker bara när du tillåter det.",
+  "privacy_10": "Du berättar för den du pratar med; när hen samtycker kopplas ni två ihop.",
+  "privacy_11": "Säg till de runt omkring dig",
+  "privacy_12": "Säg till de du pratar med att DayRecall lyssnar. På vissa platser krävs allas samtycke även när bara text sparas, så följ reglerna där du befinner dig.",
+  "final_01": "AI-minne för hela din dag.",
+  "final_02": "Kommer snart till App Store",
+  "final_03": "Hämta DayRecall i App Store ",
+  "final_04": "Bäst med Apple Watch · Fungerar med bara iPhone · På 13 språk",
+  "foot_01": "Apple Watch och iPhone är varumärken som tillhör Apple Inc., registrerade i USA och andra länder och regioner.",
+  "faq": [
+    {
+      "q": "Vad är DayRecall?",
+      "a": "DayRecall är en AI-minnesapp för Apple Watch och iPhone, gjord för dig som glömmer saker. Under de timmar du väljer lyssnar den, sparar det som sades som text på din iPhone och svarar på frågor om din dag med de exakta orden och var de kommer ifrån."
+    },
+    {
+      "q": "Behöver jag en Apple Watch?",
+      "a": "Nej. DayRecall fungerar bäst med Apple Watch, men din iPhone kan också lyssna på egen hand. När båda lyssnar blir din dag en enda tidslinje, och det som båda hörde visas bara en gång."
+    },
+    {
+      "q": "Måste min iPhone vara nära min klocka?",
+      "a": "Nej. Din Apple Watch sparar sina inspelningar och skickar dem till din iPhone varannan timme, eller så snart de två ansluter igen, till exempel när du kommer hem på kvällen."
+    },
+    {
+      "q": "Sparar DayRecall ljudinspelningar?",
+      "a": "Nej. Tal blir text på din iPhone, och sedan raderas ljudet. Bara texten sparas."
+    },
+    {
+      "q": "Var finns mina data, och vem kan se dem?",
+      "a": "På din iPhone. Det finns inget konto och ingen DayRecall-server. Svaren kommer från Apples modell på enheten, och ingenting lämnar din iPhone om du inte väljer att använda ditt eget API i molnet eller lämna över en dag till en AI-app."
+    },
+    {
+      "q": "Hur mycket batteri använder den?",
+      "a": "Väldigt lite. Vår egenutvecklade, ultralätta talmodell behåller bara de stunder när någon pratar. I interna tester på Apple Watch Series 11 gav lyssningen en extra batteriåtgång på cirka 0,9 % per timme."
+    },
+    {
+      "q": "Vilka språk stöds?",
+      "a": "Appen finns på 13 språk. Den kan också transkribera ett samtal som byter mellan upp till tre språk, och översätta de andra språken till ditt."
+    },
+    {
+      "q": "När kan jag få DayRecall?",
+      "a": "DayRecall är i beta och kommer snart till App Store."
+    }
+  ],
+  "lang_label": "Språk",
+  "foot_label": "Mer",
+  "foot_privacy": "Integritetspolicy",
+  "foot_support": "Support",
+  "faq_kicker": "Vanliga frågor",
+  "faq_heading": "Dina frågor, besvarade",
+  "og_h1": "AI-minne för <span class=\"hl\">hela&nbsp;dagen</span>",
+  "og_sub": "Bäst med Apple Watch · Fungerar med bara iPhone",
+  "stage": {
+    "me": "Jag",
+    "other": "Annan 1",
+    "other2": "Annan 2",
+    "battery": {
+      "title": "Arbetsdag",
+      "hours": "9.00–18.00",
+      "ticks": [
+        "9.00",
+        "12.00",
+        "15.00",
+        "18.00"
+      ],
+      "used": "Batteriåtgång för lyssning"
+    },
+    "sync": {
+      "away": "iPhone inte i närheten",
+      "waiting": "{n} väntar på synkning",
+      "syncing": "Synkar…",
+      "synced": "Synkad till iPhone"
+    },
+    "speakers": {
+      "place": "Kontoret",
+      "time": "14.10",
+      "lines": [
+        "Kan vi lansera på fredag?",
+        "Designen blir klar idag.",
+        "Jag testar det på torsdag.",
+        "Bra, jag säger till kunden."
+      ]
+    },
+    "languages": {
+      "label": "Arbetsspråk",
+      "names": [
+        "Svenska",
+        "Engelska",
+        "Kinesiska"
+      ],
+      "rows": [
+        {
+          "lang": "sv",
+          "text": "Så vi lanserar på fredag."
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "Designen blir klar idag."
+        },
+        {
+          "lang": "zh-Hans",
+          "text": "我周四测试。",
+          "tr": "Jag testar det på torsdag."
+        }
+      ]
+    },
+    "ask": {
+      "title": "Fråga ditt minne",
+      "sub": "Allt du har hört, eller vad som helst.",
+      "tryAsking": "Prova att fråga",
+      "s1": "Vilka deadlines har vi den här veckan?",
+      "s2": "Vad kom vi överens om på gårdagens möte?",
+      "placeholder": "Ställ en fråga",
+      "question": "Vad lovade Sam mig idag?",
+      "thinking": "Tänker…",
+      "from": "Från dina inspelningar",
+      "a1": "Sam skickar dig texten på onsdag.",
+      "a2": "Du skickar offerten till Sam senast på fredag.",
+      "sources": "2 källor",
+      "today": "I dag",
+      "watch": "Apple Watch",
+      "snip1": "Jag skickar dig texten på onsdag.",
+      "snip2": "Visst, jag skickar det på fredag.",
+      "office": "Kontoret",
+      "row0": "Bra. När kan jag få texten?",
+      "cited": "Citerad",
+      "tabs": [
+        "I dag",
+        "Att göra",
+        "Fråga",
+        "Arkiv"
+      ]
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — Memoria IA per la tua giornata | Apple Watch e iPhone",
+  "description": "DayRecall: memoria IA per Apple Watch e iPhone. Ascolta nelle ore che scegli, trasforma il parlato in testo sull’iPhone e risponde alle domande sulla giornata.",
+  "og_title": "DayRecall — Memoria IA per tutta la giornata",
+  "og_description": "Il tuo Apple Watch, o il solo iPhone, ascolta nelle ore che scegli e conserva ciò che è stato detto sotto forma di testo. Chiedi della tua giornata quando vuoi.",
+  "og_image_alt": "DayRecall: memoria IA per tutta la giornata. Ideale con Apple Watch, funziona anche solo con iPhone.",
+  "app_description": "Un’app di memoria IA per Apple Watch e iPhone. Nelle ore che scegli ascolta, conserva ciò che è stato detto come testo sul tuo iPhone e risponde alle domande sulla giornata con le parole esatte.",
+  "app_features": [
+    "Ascolta tutto il giorno con Apple Watch, anche senza iPhone vicino; funziona anche solo con iPhone",
+    "Il parlato diventa testo sull’iPhone e l’audio viene eliminato",
+    "Chiedi della giornata e ottieni le parole esatte, con il momento in cui sono state dette",
+    "Distingue chi parla: Io, Altra voce 1, Altra voce 2",
+    "Segue le conversazioni in un massimo di tre lingue, tradotte nella tua",
+    "Individua per te cose da fare, scadenze e riunioni, da confermare",
+    "Nessun account e nessun server; le risposte usano il modello on-device di Apple"
+  ],
+  "keywords": "memoria IA, app per non dimenticare, app per ricordare, trascrizione vocale, da voce a testo, trascrizione audio iPhone, appunti delle riunioni, promemoria vocale",
+  "top_01": "Vai al contenuto",
+  "nav_01": "DayRecall, pagina iniziale",
+  "nav_02": "Sezioni",
+  "nav_03": "Come funziona",
+  "nav_04": "Dispositivi",
+  "nav_05": "Batteria",
+  "nav_06": "Voci",
+  "nav_07": "Lingue",
+  "nav_08": "Privacy",
+  "hero_01": "Ideale con Apple Watch · Funziona anche solo con iPhone",
+  "hero_02": "La memoria IA per <span class=\"hl\">tutta&nbsp;la giornata</span>",
+  "hero_03": "Per chiunque dimentichi le cose. Il tuo Apple Watch, o il solo iPhone, ascolta nelle ore che scegli, e ciò che è stato detto viene conservato come testo sul tuo iPhone. <strong>Chiedi della tua giornata quando vuoi, e riceverai indietro le parole esatte.",
+  "hero_04": "In beta · Presto disponibile sull’App Store",
+  "hero_05": "Scarica DayRecall su App Store ",
+  "hero_06": "Scopri come funziona ",
+  "hero_07": "di batteria in più all’ora durante l’ascolto<a class=\"fn\" href=\"#n1\" aria-label=\"Nota 1",
+  "hero_08": "del parlato catturato<a class=\"fn\" href=\"#n2\" aria-label=\"Nota 2",
+  "hero_09": "17&nbsp;s</b><span>per elaborare 3 minuti di conversazione<a class=\"fn\" href=\"#n3\" aria-label=\"Nota 3",
+  "hero_10": "Chiedendo a DayRecall “Cosa mi ha promesso Sam oggi?”: la risposta elenca due promesse, ciascuna numerata e collegata al momento in cui è stata detta.",
+  "hero_11": "In ascolto</b><span>Giorni feriali · 9:00–18:00",
+  "how_01": "Come funziona",
+  "how_02": "Un tocco al mattino. Risposte per tutto il giorno.",
+  "how_03": "Una striscia di suono viene scansionata: si accendono e si conservano solo gli sprazzi di parlato, mentre il silenzio in mezzo viene saltato.",
+  "how_04": "Ricorda ciò che è stato detto",
+  "how_05": "Il tuo Apple Watch ascolta nelle ore che scegli, anche se l’iPhone resta indietro. Un tocco al mattino, e si ferma da solo. Il nostro modello vocale ultra-leggero, sviluppato internamente, gira direttamente sull’orologio e conserva solo i momenti in cui qualcuno sta parlando.",
+  "how_06": "Il suono va nel cestino e diventa righe di testo contrassegnate come Io e Altra voce 1; riunioni, cose da fare e scadenze vengono individuate.",
+  "how_07": "Organizzato per te",
+  "how_08": "Il tuo iPhone trasforma il parlato in testo direttamente sul dispositivo, elimina l’audio e individua cose da fare, scadenze e riunioni. Può anche distinguere ciò che hai detto tu da ciò che hanno detto gli altri.",
+  "how_09": "I ricordi scorrono nell’iPhone, che si blocca; tutto ciò che sta per andare nel cloud viene fermato e riportato indietro.",
+  "how_10": "Privacy di serie",
+  "how_11": "I tuoi ricordi restano sul tuo iPhone, e le risposte usano il modello on-device di Apple. Più avanti potrai scegliere una tua API cloud; finché non dai il permesso, non viene inviato nulla.",
+  "devices_01": "Dispositivi",
+  "devices_02": "Il tuo orologio non ha bisogno del telefono vicino.",
+  "devices_03": "Apple Watch ascolta da solo, tutto il giorno. Le registrazioni restano sull’orologio e vengono inviate all’iPhone ogni due ore; se l’iPhone non è nelle vicinanze, vengono recuperate appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera. Il tuo iPhone non deve mai restare connesso.",
+  "devices_04": "Ideale</span></h3><p>Al polso tutto il giorno, senza bisogno del telefono.",
+  "devices_05": "Solo iPhone</h3><p>Niente Apple Watch? Il tuo iPhone può ascoltare anche da solo.",
+  "devices_06": "Entrambi insieme</h3><p>Una sola cronologia della giornata. Ciò che entrambi hanno sentito compare una volta sola e, se l’orologio si ferma, l’iPhone può subentrare.",
+  "devices_07": "Si comincia con Apple Watch e iPhone: ogni dispositivo che ascolta si aggiunge a un’unica memoria.",
+  "devices_08": "Con l’iPhone lontano, l’orologio continua ad ascoltare e conserva tre clip; quando l’iPhone torna alle 11:00, le clip passano all’iPhone e compaiono come testo.",
+  "battery_01": "Batteria",
+  "battery_02": "Ascolta tutto il giorno. Quasi non tocca la batteria.",
+  "battery_03": "Una giornata lavorativa dalle 9:00 alle 18:00: le conversazioni si accendono lungo la giornata, e la batteria usata dall’ascolto arriva soltanto a circa l’8%.",
+  "battery_04": "Un modello vocale ultra-leggero di livello professionale, sviluppato internamente: <strong>appena 2.561 parametri</strong>, eseguito con i nostri kernel di inferenza accelerati e che prende una decisione ogni decimo di secondo, direttamente sull’orologio.",
+  "battery_05": "Viene conservato solo il parlato. Silenzio, tastiere e ventole vengono filtrati prima che consumino batteria. Dall’architettura ai kernel, tutto è stato progettato per l’orologio, attingendo alla nostra ricerca di dottorato sull’accelerazione IA.",
+  "battery_06": "Modello ultra-leggero interno",
+  "battery_07": "Kernel di accelerazione personalizzati",
+  "battery_08": "Inferenza sull’orologio",
+  "battery_09": "Ricerca di dottorato sull’accelerazione IA",
+  "battery_10": "di batteria in più all’ora durante l’ascolto<a class=\"fn\" href=\"#n1\" aria-label=\"Nota 1",
+  "battery_11": "del parlato catturato<a class=\"fn\" href=\"#n2\" aria-label=\"Nota 2",
+  "battery_12": "di rumore di fondo saltato<a class=\"fn\" href=\"#n2\" aria-label=\"Nota 2",
+  "battery_13": "17&nbsp;s</p><p class=\"l\">per elaborare 3 minuti di conversazione<a class=\"fn\" href=\"#n3\" aria-label=\"Nota 3",
+  "battery_14": "Basato su test interni di DayRecall su Apple Watch Series 11, ottobre 2026. Il consumo della batteria varia in base alle impostazioni e all’uso.",
+  "battery_15": "Test di laboratorio su dataset pubblici: parlato catturato sul set di test AMI Meeting Corpus, rumore di fondo saltato sul dataset di rumore DEMAND.",
+  "battery_16": "Basato su test interni di DayRecall su iPhone 17 Pro Max, ottobre 2026. Il tempo di elaborazione varia in base al modello e all’uso.",
+  "voices_01": "Voci",
+  "voices_02": "Riconosce la tua voce. Distingue tutti gli altri.",
+  "voices_03": "Leggi una sola volta cinque brevi schede, in circa un minuto, e tutto ciò che dici viene contrassegnato come <span class=\"tag-me\">Io</span>. Ogni altra persona nella conversazione riceve un numero proprio, <span class=\"tag-other\">Altra voce 1</span>, <span class=\"tag-other\">Altra voce 2</span> e così via, così le promesse che fai e quelle che ti vengono fatte non si confondono mai.",
+  "voices_04": "Più voci in una stessa conversazione, ciascuna distinta",
+  "voices_05": "Le cose da fare ricordano chi ha fatto la promessa",
+  "voices_06": "Riconoscimento dei parlanti per un’ora di conversazione in 4,4 secondi",
+  "voices_07": "La tua impronta vocale resta sul tuo iPhone. Le altre voci non vengono mai memorizzate.",
+  "voices_08": "Facoltativo e disattivato per impostazione predefinita. Velocità basata su test interni su iPhone 17 Pro Max.",
+  "voices_09": "Quattro frasi di una riunione vengono ascoltate una per una e contrassegnate come Io, Altra voce 1, Altra voce 2 e Io; le tre voci si raccolgono in alto.",
+  "languages_01": "Lingue",
+  "languages_02": "Cambia lingua a metà conversazione. Sta al passo.",
+  "languages_03": "Scegli fino a tre lingue di lavoro. DayRecall riconosce ogni cambio di lingua e trascrive ogni parte nella lingua in cui è stata parlata. <span data-feature=\"translation\">Le righe nelle altre lingue possono poi essere tradotte nella tua.",
+  "languages_04": "Fino a tre lingue in una stessa conversazione",
+  "languages_05": "Ogni parte trascritta nella propria lingua",
+  "languages_06": "Tradotto nella tua lingua",
+  "languages_07": "Rilevamento della lingua per un’ora di conversazione in circa 32 secondi",
+  "languages_08": "La trascrizione multilingue è un’impostazione avanzata, disattivata per impostazione predefinita. Velocità basata su test interni su iPhone 17 Pro Max. L’app stessa è disponibile in 13 lingue.",
+  "languages_09": "Le lingue di lavoro italiano, inglese e cinese si accendono a turno mentre viene scritta una riga per ciascuna; le righe in inglese e in cinese ricevono una traduzione in italiano.",
+  "features_01": "Funzioni",
+  "features_02": "Pensata per i dettagli che altrimenti perderesti",
+  "features_03": "Cose da fare che confermi tu",
+  "features_04": "Promesse, scadenze e riunioni vengono individuate nella tua giornata. Nulla arriva nel Calendario o in Promemoria finché non dici di sì.",
+  "features_05": "Chiedi con le tue parole",
+  "features_06": "Cosa ha promesso Sam? Quando va consegnata la relazione? Ogni risposta mostra da dove viene, fino alla riga che è stata detta.",
+  "features_07": "Qualsiasi giornata, a colpo d’occhio",
+  "features_08": "Guarda una giornata come cronologia, sfoglia i giorni passati e cerca tutto ciò che hai sentito.",
+  "features_09": "Un piano per la settimana",
+  "features_10": "Ogni settimana, le scadenze e le promesse in arrivo in un unico posto. Scegli tu cosa mettere nel calendario.",
+  "features_11": "Luoghi, se li vuoi",
+  "features_12": "Vedi dove si è svolta ogni conversazione su una mappa della giornata. Disattivato finché non lo attivi.",
+  "features_13": "Affida una giornata alla tua app IA",
+  "features_14": "Per un’analisi più approfondita, invia la trascrizione di una giornata all’app IA che usi, come file di testo, solo quando decidi tu.",
+  "privacy_01": "Privacy",
+  "privacy_02": "Solo testo. Sul tuo iPhone. Decidi tu.",
+  "privacy_03": "I ricordi scorrono nell’iPhone, che si blocca; tutto ciò che sta per andare nel cloud viene fermato e riportato indietro.",
+  "privacy_04": "Testo, non audio",
+  "privacy_05": "Il parlato viene trasformato in testo sull’iPhone, e poi l’audio viene eliminato.",
+  "privacy_06": "Nessun account, nessun server nostro",
+  "privacy_07": "Non c’è nulla a cui registrarsi, e non gestiamo server che vedono la tua giornata.",
+  "privacy_08": "Nulla esce senza di te",
+  "privacy_09": "Le risposte usano il modello on-device di Apple. Affidare una giornata a un’app IA, o usare una tua API cloud, avviene solo se lo consenti.",
+  "privacy_10": "Avvisi la persona con cui parli; se è d’accordo, voi due siete collegati.",
+  "privacy_11": "Avvisa chi hai intorno",
+  "privacy_12": "Di’ alle persone con cui parli che DayRecall sta ascoltando. Alcuni luoghi richiedono il consenso di tutti anche quando si conserva solo testo, quindi rispetta le regole del posto in cui ti trovi.",
+  "final_01": "La memoria IA per tutta la giornata.",
+  "final_02": "Presto disponibile sull’App Store",
+  "final_03": "Scarica DayRecall su App Store ",
+  "final_04": "Ideale con Apple Watch · Funziona anche solo con iPhone · In 13 lingue",
+  "foot_01": "Apple Watch e iPhone sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi e regioni.",
+  "faq": [
+    {
+      "q": "Che cos’è DayRecall?",
+      "a": "DayRecall è un’app di memoria IA per Apple Watch e iPhone, pensata per chi dimentica le cose. Nelle ore che scegli, ascolta, conserva ciò che è stato detto come testo sul tuo iPhone e risponde alle domande sulla tua giornata con le parole esatte e con l’indicazione della loro provenienza."
+    },
+    {
+      "q": "Serve un Apple Watch?",
+      "a": "No. DayRecall funziona al meglio con Apple Watch, e il tuo iPhone può anche ascoltare da solo. Quando ascoltano entrambi, la tua giornata è un’unica cronologia, e ciò che hanno sentito entrambi compare una sola volta."
+    },
+    {
+      "q": "L’iPhone deve restare vicino all’orologio?",
+      "a": "No. Apple Watch conserva le sue registrazioni e le invia all’iPhone ogni due ore, oppure appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera."
+    },
+    {
+      "q": "DayRecall conserva le registrazioni audio?",
+      "a": "No. Il parlato viene trasformato in testo sul tuo iPhone, e poi l’audio viene eliminato. Viene conservato solo il testo."
+    },
+    {
+      "q": "Dove sono i miei dati, e chi può vederli?",
+      "a": "Sul tuo iPhone. Non esistono account né server di DayRecall. Le risposte usano il modello on-device di Apple, e nulla lascia il tuo iPhone a meno che tu non scelga di usare una tua API cloud o di affidare una giornata a un’app IA."
+    },
+    {
+      "q": "Quanta batteria consuma?",
+      "a": "Pochissima. Il nostro modello vocale ultra-leggero, sviluppato internamente, conserva solo i momenti in cui qualcuno sta parlando. Nei test interni su Apple Watch Series 11, l’ascolto ha aggiunto circa lo 0,9% di batteria all’ora."
+    },
+    {
+      "q": "Quali lingue supporta?",
+      "a": "L’app è disponibile in 13 lingue. Può anche trascrivere una conversazione che cambia lingua, fino a un massimo di tre, e tradurre nella tua le altre."
+    },
+    {
+      "q": "Quando posso avere DayRecall?",
+      "a": "DayRecall è in beta e presto disponibile sull’App Store."
+    }
+  ],
+  "lang_label": "Lingua",
+  "foot_label": "Altro",
+  "foot_privacy": "Informativa sulla privacy",
+  "foot_support": "Assistenza",
+  "faq_kicker": "FAQ",
+  "faq_heading": "Domande e risposte",
+  "og_h1": "La memoria IA per <span class=\"hl\">tutta&nbsp;la giornata</span>",
+  "og_sub": "Ideale con Apple Watch · Funziona anche solo con iPhone",
+  "stage": {
+    "me": "Io",
+    "other": "Altra voce 1",
+    "other2": "Altra voce 2",
+    "battery": {
+      "title": "Giorno feriale",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "Batteria usata dall’ascolto"
+    },
+    "sync": {
+      "away": "iPhone non nelle vicinanze",
+      "waiting": "{n} da sincronizzare",
+      "syncing": "Sincronizzazione…",
+      "synced": "Sincronizzato con iPhone"
+    },
+    "speakers": {
+      "place": "Ufficio",
+      "time": "14:10",
+      "lines": [
+        "Possiamo lanciare venerdì?",
+        "Il design sarà pronto oggi.",
+        "Lo provo giovedì.",
+        "Ottimo, lo dico al cliente."
+      ]
+    },
+    "languages": {
+      "label": "Lingue di lavoro",
+      "names": [
+        "Italiano",
+        "Inglese",
+        "Cinese"
+      ],
+      "rows": [
+        {
+          "lang": "it",
+          "text": "Quindi lanciamo venerdì."
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "Il design sarà pronto oggi."
+        },
+        {
+          "lang": "zh-Hans",
+          "text": "我周四来测。",
+          "tr": "Lo provo giovedì."
+        }
+      ]
+    },
+    "ask": {
+      "title": "Chiedi alla tua memoria",
+      "sub": "Quello che hai registrato, o qualsiasi altra cosa.",
+      "tryAsking": "Prova a chiedere",
+      "s1": "Quali scadenze ci sono questa settimana?",
+      "s2": "Cosa abbiamo concordato alla riunione di ieri?",
+      "placeholder": "Fai una domanda",
+      "question": "Cosa mi ha promesso Sam oggi?",
+      "thinking": "Sto pensando…",
+      "from": "Dalle tue registrazioni",
+      "a1": "Sam ti manderà il testo mercoledì.",
+      "a2": "Entro venerdì manderai a Sam il preventivo.",
+      "sources": "2 fonti",
+      "today": "Oggi",
+      "watch": "Apple Watch",
+      "snip1": "Ti mando il testo mercoledì.",
+      "snip2": "Certo, lo mando venerdì.",
+      "office": "Ufficio",
+      "row0": "Perfetto. Quando posso avere il testo?",
+      "cited": "Citato",
+      "tabs": [
+        "Oggi",
+        "Da fare",
+        "Chiedi",
+        "Archivio"
+      ]
+    }
+  }
+}

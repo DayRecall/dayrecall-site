@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — AI hafıza uygulaması | Apple Watch & iPhone",
+  "description": "DayRecall: Apple Watch ve iPhone için AI hafıza uygulaması. Seçtiğiniz saatlerde dinler, konuşmaları iPhone'unuzda metne çevirir, gününüz hakkında yanıtlar.",
+  "og_title": "DayRecall — Tüm gününüz için AI hafızası",
+  "og_description": "Apple Watch'unuz ya da yalnızca iPhone'unuz, seçtiğiniz saatlerde dinler ve söylenenleri metin olarak saklar. Gününüz hakkında istediğiniz zaman sorun.",
+  "og_image_alt": "DayRecall: Tüm gününüz için AI hafızası. En iyisi Apple Watch ile, yalnız iPhone ile de çalışır.",
+  "app_description": "Apple Watch ve iPhone için bir AI hafıza uygulaması. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözlerle yanıtlar.",
+  "app_features": [
+    "Apple Watch ile gün boyu dinler, yanınızda iPhone olmasa da; yalnız iPhone ile de çalışır",
+    "Konuşma iPhone'da metne dönüşür ve ses silinir",
+    "Gününüz hakkında sorun, tam sözleri ve söylendikleri anı alın",
+    "Kimin ne dediğini işaretler: Ben, Diğer 1, Diğer 2",
+    "En fazla üç dildeki konuşmayı takip eder ve sizin dilinize çevirir",
+    "Görevleri, son tarihleri ve toplantıları onaylamanız için ayıklar",
+    "Hesap ve sunucu yok; yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir"
+  ],
+  "keywords": "Apple Watch sesi metne çevirme, konuşmayı yazıya dökme, toplantı notları, yapay zeka hafızası, AI hafıza uygulaması, unutkanlık, DayRecall",
+  "top_01": "İçeriğe geç",
+  "nav_01": "DayRecall, ana sayfa",
+  "nav_02": "Bölümler",
+  "nav_03": "Nasıl çalışır",
+  "nav_04": "Cihazlar",
+  "nav_05": "Pil",
+  "nav_06": "Sesler",
+  "nav_07": "Diller",
+  "nav_08": "Gizlilik",
+  "hero_01": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır",
+  "hero_02": "AI hafızası <span class=\"hl\">tüm&nbsp;gününüz</span> için",
+  "hero_03": "Bir şeyleri unutan herkes için. Apple Watch'unuz ya da yalnızca iPhone'unuz, seçtiğiniz saatlerde dinler; söylenenler iPhone'unuzda metin olarak saklanır. <strong>Gününüz hakkında istediğiniz zaman sorun, söylenenlerin tam sözlerini alın.",
+  "hero_04": "Beta aşamasında · Yakında App Store'da",
+  "hero_05": "DayRecall'ı App Store'dan edinin ",
+  "hero_06": "Nasıl çalıştığını görün ",
+  "hero_07": "dinlerken saat başına ek pil kullanımı<a class=\"fn\" href=\"#n1\" aria-label=\"Not 1",
+  "hero_08": "konuşma yakalandı<a class=\"fn\" href=\"#n2\" aria-label=\"Not 2",
+  "hero_09": "17&nbsp;sn</b><span>3 dakikalık konuşmayı işlemek için<a class=\"fn\" href=\"#n3\" aria-label=\"Not 3",
+  "hero_10": "DayRecall'a “Sam bugün bana ne söz verdi?” diye sorduğunuzda yanıt, numaralandırılmış ve söylendiği ana bağlantılı iki sözü listeler.",
+  "hero_11": "Dinliyor</b><span>İş günleri · 9:00–18:00",
+  "how_01": "Nasıl çalışır",
+  "how_02": "Sabah tek dokunuş. Gün boyu yanıtlar.",
+  "how_03": "Bir ses şeridi taranır: yalnızca konuşma patlamaları işaretlenir ve saklanır; aradaki sessizlik atlanır.",
+  "how_04": "Söylenenleri hatırlayın",
+  "how_05": "iPhone'unuz yanınızda olmasa bile Apple Watch'unuz seçtiğiniz saatlerde dinler. Sabah tek dokunuş yeter; ardından kendiliğinden durur. Kendi geliştirdiğimiz ultra hafif konuşma modeli doğrudan saatin üzerinde çalışır ve yalnızca birinin konuştuğu anları tutar.",
+  "how_06": "Ses çöp kutusuna gider ve Ben ile Diğer 1 olarak işaretlenmiş metin satırlarına dönüşür; bir toplantı, bir görev ve bir son tarih ayıklanır.",
+  "how_07": "Sizin için düzenlenir",
+  "how_08": "iPhone'unuz konuşmayı cihaz üzerinde metne çevirir, sesi siler ve görevleri, son tarihleri ve toplantıları ayıklar. Sizin söylediklerinizi başkalarının söylediklerinden de ayırt edebilir.",
+  "how_09": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
+  "how_10": "Baştan gizli",
+  "how_11": "Anılarınız iPhone'unuzda kalır ve yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir. İsterseniz daha sonra kendi bulut API'nizi seçebilirsiniz; siz izin verene kadar hiçbir şey gönderilmez.",
+  "devices_01": "Cihazlar",
+  "devices_02": "Apple Watch'unuzun iPhone'unuzun yakınında olması gerekmez.",
+  "devices_03": "Apple Watch gün boyu kendi başına dinler. Kayıtlar Apple Watch'ta bekler ve her iki saatte bir iPhone'unuza gönderilir; iPhone'unuz yanınızda değilse, iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, hemen yetişirler. iPhone'unuzun sürekli bağlı kalması hiç gerekmez.",
+  "devices_04": "En iyisi</span></h3><p>Gün boyu bileğinizde, iPhone'a gerek kalmadan.",
+  "devices_05": "Yalnızca iPhone</h3><p>Apple Watch yok mu? iPhone'unuz kendi başına dinleyebilir.",
+  "devices_06": "İkisi birlikte</h3><p>Gün için tek bir zaman tüneli. İkisinin de duyduğu şey yalnızca bir kez gösterilir; saat dinlemeyi durdurursa iPhone'unuz devralabilir.",
+  "devices_07": "Apple Watch ve iPhone ile başlar: dinleyen her cihaz tek bir hafızaya ekler.",
+  "devices_08": "iPhone uzaktayken saat dinlemeye devam eder ve üç klip tutar; saat 11:00'de iPhone'unuz geri geldiğinde klipler aktarılır ve metin olarak görünür.",
+  "battery_01": "Pil",
+  "battery_02": "Gün boyu dinler. Pilinize neredeyse hiç dokunmaz.",
+  "battery_03": "9:00–18:00 arası bir iş günü: konuşmalar gün boyunca işaretlenir ve dinlemenin kullandığı pil yalnızca yaklaşık %8'e çıkar.",
+  "battery_04": "Kendi bünyemizde geliştirilmiş, profesyonel düzeyde ultra hafif bir konuşma modeli: <strong>yalnızca 2.561 parametre</strong>. Kendi hızlandırılmış çıkarım çekirdeklerimizde çalışır, her onda bir saniyede bir karar verir ve doğrudan saatin üzerinde işler.",
+  "battery_05": "Yalnızca konuşma saklanır. Sessizlik, klavye ve fan sesleri pil harcamadan önce süzülür. Mimariden çekirdeklere kadar her şey saat için tasarlandı; AI hızlandırma alanındaki doktora araştırmamıza dayanıyor.",
+  "battery_06": "Kendi geliştirdiğimiz ultra hafif model",
+  "battery_07": "Özel hızlandırılmış çekirdekler",
+  "battery_08": "Saat üzerinde çıkarım",
+  "battery_09": "AI hızlandırma alanında doktora araştırması",
+  "battery_10": "dinlerken saat başına ek pil kullanımı<a class=\"fn\" href=\"#n1\" aria-label=\"Not 1",
+  "battery_11": "konuşma yakalandı<a class=\"fn\" href=\"#n2\" aria-label=\"Not 2",
+  "battery_12": "arka plan gürültüsü atlandı<a class=\"fn\" href=\"#n2\" aria-label=\"Not 2",
+  "battery_13": "17&nbsp;sn</p><p class=\"l\">3 dakikalık konuşmayı işlemek<a class=\"fn\" href=\"#n3\" aria-label=\"Not 3",
+  "battery_14": "DayRecall tarafından Ekim 2026'da Apple Watch Series 11 üzerinde yapılan dahili testlere dayanır. Pil kullanımı ayarlara ve kullanıma göre değişir.",
+  "battery_15": "Herkese açık veri kümeleri üzerinde laboratuvar testi: konuşma yakalaması AMI Meeting Corpus test kümesinde, gürültü atlaması DEMAND gürültü veri kümesinde ölçüldü.",
+  "battery_16": "DayRecall tarafından Ekim 2026'da iPhone 17 Pro Max üzerinde yapılan dahili testlere dayanır. İşlem süresi iPhone modeline ve kullanıma göre değişir.",
+  "voices_01": "Sesler",
+  "voices_02": "Sesinizi tanır. Diğer herkesi birbirinden ayırır.",
+  "voices_03": "Beş kısa kartı bir kez, yaklaşık bir dakika içinde okuyun; söylediğiniz her şey <span class=\"tag-me\">Ben</span> olarak işaretlenir. Konuşmadaki diğer herkes kendi numarasını alır: <span class=\"tag-other\">Diğer 1</span>, <span class=\"tag-other\">Diğer 2</span> ve devamı; böylece verdiğiniz sözler ile size verilen sözler asla karışmaz.",
+  "voices_04": "Bir konuşmada birden fazla konuşmacı, her biri ayrı ayrı tanınır",
+  "voices_05": "Görevler, sözü kimin verdiğini bilir",
+  "voices_06": "Bir saatlik konuşmada konuşmacı tanıma 4,4 saniyede",
+  "voices_07": "Ses iziniz iPhone'unuzda kalır. Diğer sesler hiçbir zaman saklanmaz.",
+  "voices_08": "İsteğe bağlıdır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır.",
+  "voices_09": "Bir toplantıdan dört satır tek tek dinlenir ve Ben, Diğer 1, Diğer 2 ve Ben olarak işaretlenir; üç ses en üstte bir araya gelir.",
+  "languages_01": "Diller",
+  "languages_02": "Konuşma ortasında dil değiştirin; DayRecall ayak uydurur.",
+  "languages_03": "En fazla üç çalışma dili seçin. DayRecall her dil geçişini algılar ve her bölümü konuşulduğu dilde yazıya döker. <span data-feature=\"translation\">Diğer dillerdeki satırlar ardından sizin dilinize çevrilebilir.",
+  "languages_04": "Bir konuşmada en fazla üç dil",
+  "languages_05": "Her bölüm kendi dilinde yazıya dökülür",
+  "languages_06": "Sizin dilinize çevrilir",
+  "languages_07": "Bir saatlik konuşmada dil tanıma yaklaşık 32 saniyede",
+  "languages_08": "Çok dilli yazıya dökme gelişmiş bir ayardır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır. Uygulamanın kendisi 13 dilde sunulur.",
+  "languages_09": "Çalışma dilleri Türkçe, İngilizce ve Çince sırayla işaretlenir ve her birinde bir satır yazıya dökülür; İngilizce ve Çince satırların Türkçe çevirisi gösterilir.",
+  "features_01": "Özellikler",
+  "features_02": "Unutacağınız ayrıntılar için tasarlandı",
+  "features_03": "Onayladığınız görevler",
+  "features_04": "Söz verilenler, son tarihler ve toplantılar gününüzden ayıklanır. Siz onaylamadıkça hiçbir şey takviminize ya da Hatırlatıcılar'a eklenmez.",
+  "features_05": "Kendi sözcüklerinizle sorun",
+  "features_06": "Sam ne söz verdi? Rapor ne zaman teslim edilecek? Her yanıt nereden geldiğini gösterir; söylenen satıra kadar.",
+  "features_07": "Her gün, bir bakışta",
+  "features_08": "Bir günü zaman tüneli olarak görün, geçmiş günlere göz atın ve duyduğunuz her şeyi arayın.",
+  "features_09": "Haftanız için plan",
+  "features_10": "Her hafta, önümüzdeki son tarihler ve sözler tek bir yerde. Takviminize neyin ekleneceğini siz seçersiniz.",
+  "features_11": "İsterseniz Yerler",
+  "features_12": "Her konuşmanın gününüzün haritasında nerede geçtiğini görün. Siz açana kadar kapalıdır.",
+  "features_13": "Bir günü AI uygulamanıza aktarın",
+  "features_14": "Daha derin bir bakış için, yalnızca siz seçtiğinizde, bir günün metnini kullandığınız AI uygulamasına metin dosyası olarak gönderin.",
+  "privacy_01": "Gizlilik",
+  "privacy_02": "Yalnızca metin. iPhone'unuzda. Karar sizde.",
+  "privacy_03": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
+  "privacy_04": "Ses değil, metin",
+  "privacy_05": "Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir.",
+  "privacy_06": "Hesap yok, bizim sunucumuz yok",
+  "privacy_07": "Kaydolmanız gereken bir şey yok; gününüzü gören sunucuları da çalıştırmıyoruz.",
+  "privacy_08": "Siz izin vermeden hiçbir şey dışarı çıkmaz",
+  "privacy_09": "Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Bir günü bir AI uygulamasına aktarmak ya da kendi bulut API'nizi kullanmak yalnızca siz izin verdiğinizde gerçekleşir.",
+  "privacy_10": "Konuştuğunuz kişiye söylersiniz; o kişi kabul eder ve ikiniz birbirinize bağlanırsınız.",
+  "privacy_11": "Çevrenizdekilere söyleyin",
+  "privacy_12": "Konuştuğunuz kişilere DayRecall'ın dinlediğini söyleyin. Bazı yerlerde yalnızca metin tutulsa bile herkesin rızası gerekir; bulunduğunuz yerin kurallarına uyun.",
+  "final_01": "Tüm gününüz için AI hafızası.",
+  "final_02": "Yakında App Store'da",
+  "final_03": "DayRecall'ı App Store'dan edinin ",
+  "final_04": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır · 13 dilde",
+  "foot_01": "Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.",
+  "faq": [
+    {
+      "q": "DayRecall nedir?",
+      "a": "DayRecall, şeyleri unutan insanlar için tasarlanmış, Apple Watch ve iPhone için bir AI hafıza uygulamasıdır. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözleri ve nereden geldikleriyle yanıtlar."
+    },
+    {
+      "q": "Apple Watch'a ihtiyacım var mı?",
+      "a": "Hayır. DayRecall en iyi Apple Watch ile çalışır, iPhone'unuz da kendi başına dinleyebilir. İkisi birlikte dinlediğinde gününüz tek bir zaman tüneli olur ve ikisinin de duyduğu şey yalnızca bir kez gösterilir."
+    },
+    {
+      "q": "iPhone'um saatimin yakınında durmak zorunda mı?",
+      "a": "Hayır. Apple Watch kayıtlarını saklar ve her iki saatte bir ya da iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, iPhone'unuza gönderir."
+    },
+    {
+      "q": "DayRecall ses kayıtlarını saklıyor mu?",
+      "a": "Hayır. Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir. Yalnızca metin saklanır."
+    },
+    {
+      "q": "Verilerim nerede ve kim görebilir?",
+      "a": "iPhone'unuzda. Hesap yok ve DayRecall sunucusu yok. Yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir; kendi bulut API'nizi kullanmayı ya da bir günü bir AI uygulamasına aktarmayı seçmediğiniz sürece hiçbir şey iPhone'unuzdan çıkmaz."
+    },
+    {
+      "q": "Pil ne kadar kullanır?",
+      "a": "Çok az. Kendi geliştirdiğimiz ultra hafif konuşma modeli yalnızca birinin konuştuğu anları tutar. Apple Watch Series 11 üzerindeki dahili testte dinleme saatte yaklaşık %0,9 ek pil harcadı."
+    },
+    {
+      "q": "Hangi dilleri destekliyor?",
+      "a": "Uygulama 13 dilde sunulur. Ayrıca üç dile kadar değişen bir konuşmayı yazıya dökebilir ve diğer dillerdeki sözleri sizin dilinize çevirebilir."
+    },
+    {
+      "q": "DayRecall'ı ne zaman edinebilirim?",
+      "a": "DayRecall beta aşamasında ve yakında App Store'da."
+    }
+  ],
+  "lang_label": "Dil",
+  "foot_label": "Daha fazla",
+  "foot_privacy": "Gizlilik Politikası",
+  "foot_support": "Destek",
+  "faq_kicker": "SSS",
+  "faq_heading": "Merak edilenler",
+  "og_h1": "AI hafızası <span class=\"hl\">tüm&nbsp;gününüz</span> için",
+  "og_sub": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır",
+  "stage": {
+    "me": "Ben",
+    "other": "Diğer 1",
+    "other2": "Diğer 2",
+    "battery": {
+      "title": "Çalışma günü",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "Dinlemenin kullandığı pil"
+    },
+    "sync": {
+      "away": "iPhone yakınızda değil",
+      "waiting": "{n} eşitleme bekliyor",
+      "syncing": "Eşitleniyor…",
+      "synced": "iPhone ile eşitlendi"
+    },
+    "speakers": {
+      "place": "Ofis",
+      "time": "14:10",
+      "lines": [
+        "Cuma günü yayına çıkabilir miyiz?",
+        "Tasarım bugün biter.",
+        "Perşembe günü test ederim.",
+        "Harika, müşteriye ben söylerim."
+      ]
+    },
+    "languages": {
+      "label": "Çalışma dilleri",
+      "names": [
+        "Türkçe",
+        "İngilizce",
+        "Çince"
+      ],
+      "rows": [
+        {
+          "lang": "tr",
+          "text": "Yani cuma günü yayına çıkıyoruz."
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "Tasarım bugün biter."
+        },
+        {
+          "lang": "zh-Hans",
+          "text": "我周四来测。",
+          "tr": "Perşembe günü test edeceğim."
+        }
+      ]
+    },
+    "ask": {
+      "title": "Hafızanıza sorun",
+      "sub": "Kaydettiğiniz her şeyi ya da aklınıza gelen herhangi bir şeyi sorun.",
+      "tryAsking": "Şunu sormayı deneyin",
+      "s1": "Bu hafta hangi son tarihler var?",
+      "s2": "Dünkü toplantıda neler üzerinde anlaştık?",
+      "placeholder": "Bir soru sorun",
+      "question": "Sam bugün bana ne söz verdi?",
+      "thinking": "Düşünüyor…",
+      "from": "Kayıtlarınızdan",
+      "a1": "Sam metni çarşamba günü size gönderecek.",
+      "a2": "Siz teklifi cuma gününe kadar Sam'e göndereceksiniz.",
+      "sources": "2 kaynak",
+      "today": "Bugün",
+      "watch": "Apple Watch",
+      "snip1": "Metni çarşamba günü size göndereceğim.",
+      "snip2": "Tabii, cuma günü göndereceğim.",
+      "office": "Ofis",
+      "row0": "Harika. Metni ne zaman alabilirim?",
+      "cited": "Alıntılandı",
+      "tabs": [
+        "Bugün",
+        "Görevler",
+        "Sor",
+        "Arşiv"
+      ]
+    }
+  }
+}

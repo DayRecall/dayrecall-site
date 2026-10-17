@@ -11,95 +11,14 @@
   'use strict';
 
   var NS = 'http://www.w3.org/2000/svg';
-  var lang = (document.documentElement.lang || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+  var lang = document.documentElement.lang || 'en';
 
-  // Words drawn inside the animations; the Chinese comes from the app's string catalog.
-  var WORDS = {
-    en: {
-      me: 'Me',
-      other: 'Other 1',
-      other2: 'Other 2',
-      battery: { title: 'Workday', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: 'Battery used by listening' },
-      sync: { away: 'iPhone not nearby', waiting: '{n} waiting to sync', syncing: 'Syncing…', synced: 'Synced to iPhone' },
-      speakers: {
-        place: 'Office', time: '14:10',
-        lines: ['Can we launch on Friday?', 'Design will be done today.', 'I’ll test it on Thursday.', 'Great, I’ll tell the client.']
-      },
-      languages: {
-        label: 'Working languages',
-        names: ['English', 'Chinese', 'Japanese'],
-        rows: [
-          { lang: 'en', text: 'So we launch on Friday.' },
-          { lang: 'zh-Hans', text: '设计今天就能做完。', tr: 'The design will be done today.' },
-          { lang: 'ja', text: '木曜日にテストします。', tr: 'I’ll test it on Thursday.' }
-        ]
-      },
-      ask: {
-        title: 'Ask your memory',
-        sub: 'Anything you recorded, or anything at all.',
-        tryAsking: 'Try asking',
-        s1: 'What deadlines are coming up this week?',
-        s2: 'What did we agree on in yesterday’s meeting?',
-        placeholder: 'Ask a question',
-        question: 'What did Sam promise me today?',
-        thinking: 'Thinking…',
-        from: 'From your recordings',
-        a1: 'Sam will send you the copy on Wednesday.',
-        a2: 'You will send Sam the quote by Friday.',
-        sources: '2 sources',
-        today: 'Today',
-        watch: 'Apple Watch',
-        snip1: 'I’ll send you the copy on Wednesday.',
-        snip2: 'Sure, I’ll send it on Friday.',
-        office: 'Office',
-        row0: 'Great. When can I have the copy?',
-        cited: 'Cited',
-        tabs: ['Today', 'To-dos', 'Ask', 'Library']
-      }
-    },
-    zh: {
-      me: '我',
-      other: '其他人 1',
-      other2: '其他人 2',
-      battery: { title: '工作日', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: '聆听额外耗电' },
-      sync: { away: 'iPhone 不在身边', waiting: '{n} 段待同步', syncing: '正在同步…', synced: '已同步到 iPhone' },
-      speakers: {
-        place: '办公室', time: '14:10',
-        lines: ['周五能上线吗？', '设计今天就能做完。', '我周四来测。', '好，我去跟客户说。']
-      },
-      languages: {
-        label: '工作语言',
-        names: ['中文', '英语', '日语'],
-        rows: [
-          { lang: 'zh-Hans', text: '那我们周五上线。' },
-          { lang: 'en', text: 'The design will be done today.', tr: '设计今天就能做完。' },
-          { lang: 'ja', text: '木曜日にテストします。', tr: '我周四来测。' }
-        ]
-      },
-      ask: {
-        title: '问问你的记忆',
-        sub: '可以问录过的内容，也可以问任何问题。',
-        tryAsking: '试着问问',
-        s1: '这周有哪些 deadline？',
-        s2: '昨天开会我们达成了哪些共识？',
-        placeholder: '输入问题',
-        question: '小王今天答应了我什么？',
-        thinking: '正在思考…',
-        from: '来自你的录音',
-        a1: '小王周三会把文案发给你。',
-        a2: '你周五前要把报价发给小王。',
-        sources: '2 个来源',
-        today: '今天',
-        watch: 'Apple Watch',
-        snip1: '我周三把文案发给你。',
-        snip2: '好的，我周五发给你。',
-        office: '办公室',
-        row0: '好。文案什么时候能给我？',
-        cited: '已引用',
-        tabs: ['今天', '待办', '提问', '回顾']
-      }
-    }
-  };
+  // Words drawn inside the animations come from the page: i18n/build.py writes each language's
+  // into <script id="stage-words"> from i18n/strings/<language>.json.
+  var WORDS = (function () {
+    var node = document.getElementById('stage-words');
+    try { return node ? JSON.parse(node.textContent) : {}; } catch (err) { return {}; }
+  })();
 
   // ---------------------------------------------------------------------------------------------
   // Motion: the app's IntroMotion helpers.
@@ -112,6 +31,15 @@
   function pulse(t, a, b) { return Math.sin(Math.PI * seg(t, a, b)); }
   function spring(x) { var t = clamp(x); return t >= 1 ? 1 : 1 - Math.exp(-8 * t) * Math.cos(9 * t); }
   function typed(s, x) { var c = Array.from(s); return c.slice(0, Math.floor(c.length * clamp(x))).join(''); }
+  /** A share as the page's language writes it: 8.1% in English, 8,1 % in German, %8,1 in Turkish. */
+  function percent(value, digits) {
+    try {
+      return new Intl.NumberFormat(lang, { style: 'percent', minimumFractionDigits: digits, maximumFractionDigits: digits })
+        .format(value / 100);
+    } catch (err) {
+      return value.toFixed(digits) + '%';
+    }
+  }
   /** The onboarding stages fade their picture in at the start of a loop and out at the end. */
   function loopFade(t, length) { return Math.min(seg(t, 0, 0.3), 1 - seg(t, length - 0.5, length)); }
 
@@ -991,12 +919,12 @@
 
       // The whole track is a full battery; the lime part is what listening has used so far.
       fit(txt(root, B.used, left, 169, 11, 600, 'ink2'), 200, 0.8);
-      var readout = txt(root, '0.0%', 306, 169, 15, 700, 'ink', { anchor: 'end' });
+      var readout = txt(root, percent(0, 1), 306, 169, 15, 700, 'ink', { anchor: 'end' });
       readout.style.fontVariantNumeric = 'tabular-nums';
       el(root, 'rect', { x: left, y: 182, width: span, height: 12, rx: 6, fill: 'tile' });
       var share = el(root, 'rect', { x: left, y: 182, height: 12, rx: 6, fill: 'hl' });
-      txt(root, '0%', left, 207, 9.5, 500, 'ink3', { mono: true });
-      txt(root, '100%', 306, 207, 9.5, 500, 'ink3', { anchor: 'end', mono: true });
+      txt(root, percent(0, 0), left, 207, 9.5, 500, 'ink3', { mono: true });
+      txt(root, percent(100, 0), 306, 207, 9.5, 500, 'ink3', { anchor: 'end', mono: true });
       var lastClock = '', lastReadout = '';
 
       return function (t) {
@@ -1019,7 +947,7 @@
         }
         var used = perHour * now;
         share.setAttribute('width', used > 0 ? Math.max(12, span * used / 100) : 0);
-        var shown = used.toFixed(1) + '%';
+        var shown = percent(used, 1);
         if (shown !== lastReadout) {
           readout.textContent = shown;
           lastReadout = shown;
@@ -1152,7 +1080,7 @@
           row.turn = el(g, 'g');
           move(icon(row.turn, 'turn', 13, 'ink3'), x + 6, 20.5);
           row.trLine = txt(g, '', x + 18, 21, 11.5, 500, 'ink2');
-          row.trLine.setAttribute('lang', ctx.lang === 'zh' ? 'zh-Hans' : 'en');
+          row.trLine.setAttribute('lang', ctx.lang);
           fitTyped(row.trLine, r.tr, 310 - x - 18);
           row.trText = r.tr;
           row.trLast = null;
@@ -1310,7 +1238,7 @@
     host.appendChild(svg);
     var render;
     try {
-      render = def.build(svg, { words: WORDS[lang], host: host, lang: lang });
+      render = def.build(svg, { words: WORDS, host: host, lang: lang });
     } catch (err) {
       if (window.console) console.error(err);
       return;

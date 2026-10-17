@@ -1,0 +1,247 @@
+{
+  "title": "DayRecall — AI-hukommelse for hele dagen | Apple Watch og iPhone",
+  "description": "DayRecall lytter med på Apple Watch eller iPhone i de tidsrum, du vælger, omdanner tale til tekst på din iPhone og svarer på spørgsmål om din dag.",
+  "og_title": "DayRecall — AI-hukommelse for hele dagen",
+  "og_description": "Din Apple Watch, eller bare din iPhone, lytter med i de tidsrum, du vælger, og gemmer det sagte som tekst. Spørg om din dag når som helst.",
+  "og_image_alt": "DayRecall: AI-hukommelse for hele dagen. Bedst med Apple Watch, virker også alene med iPhone.",
+  "app_description": "En AI-hukommelsesapp til Apple Watch og iPhone. I de tidsrum, du vælger, lytter den med, gemmer det sagte som tekst på din iPhone og svarer på spørgsmål om din dag med de præcise ord.",
+  "app_features": [
+    "Lytter hele dagen med Apple Watch, uden iPhone i nærheden; virker også alene med iPhone",
+    "Tale bliver til tekst på iPhone, og lydoptagelsen slettes",
+    "Spørg om din dag og få de præcise ord, med tidspunktet hvor de blev sagt",
+    "Viser hvem der sagde hvad: Mig, Anden 1, Anden 2",
+    "Følger samtaler på op til tre sprog og oversætter til dit sprog",
+    "Finder opgaver, deadlines og møder for dig, så du kan bekræfte dem",
+    "Ingen konto og ingen server; svarene bruger Apples model på enheden"
+  ],
+  "keywords": "AI-hukommelse, tale til tekst, transskription, mødereferat, diktafon, optagelse af møder, optageapp, Apple Watch, DayRecall",
+  "top_01": "Gå til indholdet",
+  "nav_01": "DayRecall, startside",
+  "nav_02": "Sektioner",
+  "nav_03": "Sådan virker det",
+  "nav_04": "Enheder",
+  "nav_05": "Batteri",
+  "nav_06": "Stemmer",
+  "nav_07": "Sprog",
+  "nav_08": "Anonymitet",
+  "hero_01": "Bedst med Apple Watch · Virker også alene med iPhone",
+  "hero_02": "AI-hukommelse for <span class=\"hl\">hele&nbsp;dagen</span>",
+  "hero_03": "Til alle, der glemmer ting. Din Apple Watch, eller bare din iPhone, lytter med i de tidsrum, du vælger, og det sagte gemmes som tekst på din iPhone. <strong>Spørg om din dag når som helst, og få de præcise ord tilbage.",
+  "hero_04": "I beta · Kommer snart til App Store",
+  "hero_05": "Hent DayRecall i App Store ",
+  "hero_06": "Se, hvordan det virker ",
+  "hero_07": "ekstra batteriforbrug pr. time under lytning<a class=\"fn\" href=\"#n1\" aria-label=\"Fodnote 1",
+  "hero_08": "af talen fanget<a class=\"fn\" href=\"#n2\" aria-label=\"Fodnote 2",
+  "hero_09": "17&nbsp;sek.</b><span>for at behandle 3 minutters samtale<a class=\"fn\" href=\"#n3\" aria-label=\"Fodnote 3",
+  "hero_10": "Du spørger DayRecall “Hvad lovede Sam mig i dag?”: svaret viser to løfter, hvert med sit nummer og knyttet til det øjeblik, det blev sagt.",
+  "hero_11": "Lytter</b><span>Hverdage · 9:00–18:00",
+  "how_01": "Sådan virker det",
+  "how_02": "Ét tryk om morgenen. Svar hele dagen.",
+  "how_03": "Et lydspor scannes: kun de tale-udbrud lyser op og gemmes, mens stilheden imellem springes over.",
+  "how_04": "Husk, hvad der blev sagt",
+  "how_05": "Din Apple Watch lytter i de tidsrum, du vælger, også hvis din iPhone bliver liggende. Ét tryk om morgenen, og den stopper af sig selv. Vores egenudviklede ultralette talemodel kører direkte på uret og gemmer kun de øjeblikke, hvor nogen taler.",
+  "how_06": "Lyden går i papirkurven og bliver til tekstlinjer mærket Mig og Anden 1; et møde, en opgave og en deadline plukkes ud.",
+  "how_07": "Ordnet for dig",
+  "how_08": "Din iPhone omdanner tale til tekst på enheden, sletter lyden og finder opgaver, deadlines og møder. Den kan også skelne, hvad du selv sagde, fra hvad andre sagde.",
+  "how_09": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
+  "how_10": "Privat fra start",
+  "how_11": "Dine minder bliver på din iPhone, og svarene bruger Apples model på enheden. Senere kan du vælge din egen cloud-API; intet sendes, før du tillader det.",
+  "devices_01": "Enheder",
+  "devices_02": "Din Apple Watch behøver ikke din iPhone i nærheden.",
+  "devices_03": "Apple Watch lytter selv hele dagen. Optagelserne venter på uret og sendes til din iPhone hver 2. time. Er iPhone ikke i nærheden, indhentes de, så snart de to forbindes igen, fx når du kommer hjem om aftenen. Din iPhone skal ikke være forbundet hele tiden.",
+  "devices_04": "Bedst</span></h3><p>På håndleddet hele dagen, uden at telefonen skal være med.",
+  "devices_05": "Kun iPhone</h3><p>Ingen Apple Watch? Din iPhone kan lytte selv.",
+  "devices_06": "Begge sammen</h3><p>Én tidslinje for dagen. Det, begge hører, vises én gang, og hvis uret stopper, kan din iPhone tage over.",
+  "devices_07": "Det starter med Apple Watch og iPhone: hver enhed, der lytter, lægger til ét fælles minde.",
+  "devices_08": "Når iPhone er væk, lytter uret videre og gemmer tre klip. Når iPhone er tilbage kl. 11:00, flyttes klippene over og vises som tekst.",
+  "battery_01": "Batteri",
+  "battery_02": "Lytter hele dagen. Batteriet mærker næsten ingenting.",
+  "battery_03": "En arbejdsdag fra 9:00 til 18:00: samtalerne lyser op langs dagen, og batteriforbruget til lytning stiger kun til omkring 8&nbsp;%.",
+  "battery_04": "En egenudviklet ultralet talemodel af professionel kvalitet med <strong>kun 2.561 parametre</strong>. Den kører på vores egne accelererede inferenskerner og træffer en afgørelse hver tiendedel af et sekund, direkte på uret.",
+  "battery_05": "Kun tale gemmes. Stilhed, tastatur og ventilatorer filtreres væk, før de koster batteri. Alt fra arkitekturen til kernerne er designet til uret, bygget på vores doktorforskning i AI-acceleration.",
+  "battery_06": "Egenudviklet ultralet model",
+  "battery_07": "Skræddersyede accelererede kerner",
+  "battery_08": "Inferens direkte på uret",
+  "battery_09": "Ph.d.-forskning i AI-acceleration",
+  "battery_10": "ekstra batteriforbrug pr. time under lytning<a class=\"fn\" href=\"#n1\" aria-label=\"Fodnote 1",
+  "battery_11": "af talen fanget<a class=\"fn\" href=\"#n2\" aria-label=\"Fodnote 2",
+  "battery_12": "af baggrundsstøj sprunget over<a class=\"fn\" href=\"#n2\" aria-label=\"Fodnote 2",
+  "battery_13": "17&nbsp;sek.</p><p class=\"l\">for at behandle 3 minutters samtale<a class=\"fn\" href=\"#n3\" aria-label=\"Fodnote 3",
+  "battery_14": "Baseret på DayRecalls interne test på Apple Watch Series 11, oktober 2026. Batteriforbruget varierer med indstillinger og brug.",
+  "battery_15": "Laboratorietest på offentlige datasæt: tale fanget på testsættet fra AMI Meeting Corpus, støj sprunget over i DEMAND-støjdatasættet.",
+  "battery_16": "Baseret på DayRecalls interne test på iPhone 17 Pro Max, oktober 2026. Behandlingstiden varierer med model og brug.",
+  "voices_01": "Stemmer",
+  "voices_02": "Kender din stemme. Skiller alle andre ad.",
+  "voices_03": "Læs fem små kort op én gang, cirka et minut, så bliver alt, du siger, markeret <span class=\"tag-me\">Mig</span>. Alle andre i samtalen får hver sit eget nummer, <span class=\"tag-other\">Anden 1</span>, <span class=\"tag-other\">Anden 2</span> og så videre, så dine løfter og løfterne til dig aldrig blandes sammen.",
+  "voices_04": "Flere talere i samme samtale, hver for sig",
+  "voices_05": "Opgaver ved, hvis løfte det var",
+  "voices_06": "Talergenkendelse for en times samtale på 4,4 sekunder",
+  "voices_07": "Dit stemmeaftryk bliver på din iPhone. Andres stemmer gemmes aldrig.",
+  "voices_08": "Valgfri og slået fra som standard. Hastighed baseret på intern test på iPhone 17 Pro Max.",
+  "voices_09": "Fire linjer fra et møde høres én ad gangen og markeres Mig, Anden 1, Anden 2 og Mig; de tre stemmer samles øverst.",
+  "languages_01": "Sprog",
+  "languages_02": "Skift sprog midt i samtalen. Den følger med.",
+  "languages_03": "Vælg op til tre arbejdssprog. DayRecall registrerer hvert sprogskifte og transskriberer hver del på det sprog, den blev sagt på. <span data-feature=\"translation\">Linjer på de andre sprog kan derefter oversættes til dit sprog.",
+  "languages_04": "Op til tre sprog i samme samtale",
+  "languages_05": "Hver del transskriberet på sit eget sprog",
+  "languages_06": "Oversat til dit sprog",
+  "languages_07": "Sproggenkendelse for en times samtale på cirka 32 sekunder",
+  "languages_08": "Flersproget transskription er en avanceret indstilling, slået fra som standard. Hastighed baseret på intern test på iPhone 17 Pro Max. Selve appen findes på 13 sprog.",
+  "languages_09": "Arbejdssprogene dansk, engelsk og kinesisk lyser op på skift, mens en linje på hvert sprog skrives ned; de engelske og kinesiske linjer får danske oversættelser.",
+  "features_01": "Funktioner",
+  "features_02": "Lavet til de detaljer, du ellers ville tabe",
+  "features_03": "Opgaver, du bekræfter",
+  "features_04": "Løfter, deadlines og møder plukkes ud af din dag. Intet kommer i din kalender eller påmindelser, før du siger ja.",
+  "features_05": "Spørg med dine egne ord",
+  "features_06": "Hvad lovede Sam? Hvornår skal rapporten være klar? Hvert svar viser, hvor det kom fra, helt ned til den linje, der blev sagt.",
+  "features_07": "Hver dag, med et blik",
+  "features_08": "Se en dag som en tidslinje, bladre tilbage til tidligere dage, og søg i alt, du har hørt.",
+  "features_09": "En plan for ugen",
+  "features_10": "Hver uge samlet et sted: de kommende deadlines og løfter. Du vælger, hvad der kommer i din kalender.",
+  "features_11": "Steder, hvis du vil have dem",
+  "features_12": "Se, hvor hver samtale fandt sted, på et kort over din dag. Slået fra, til du tænder for det.",
+  "features_13": "Giv en dag til din AI-app",
+  "features_14": "Vil du dykke dybere? Send en dags udskrift til den AI-app, du bruger, som en tekstfil, kun når du selv vælger det.",
+  "privacy_01": "Anonymitet",
+  "privacy_02": "Kun tekst. På din iPhone. Dit valg.",
+  "privacy_03": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
+  "privacy_04": "Tekst, ikke lyd",
+  "privacy_05": "Tale omdannes til tekst på din iPhone, og derefter slettes lyden.",
+  "privacy_06": "Ingen konto, ingen server fra os",
+  "privacy_07": "Der er intet at oprette, og vi driver ikke servere, der kan se din dag.",
+  "privacy_08": "Intet sendes uden dit ja",
+  "privacy_09": "Svarene bruger Apples model på enheden. At give en dag til en AI-app eller bruge din egen cloud-API sker kun, når du tillader det.",
+  "privacy_10": "Du fortæller personen, du taler med; de siger ja, og I to er forbundet.",
+  "privacy_11": "Sig det til dem omkring dig",
+  "privacy_12": "Fortæl dem, du taler med, at DayRecall lytter med. Nogle steder kræver det samtykke fra alle, selv når der kun gemmes tekst, så følg reglerne, hvor du er.",
+  "final_01": "AI-hukommelse for hele dagen.",
+  "final_02": "Kommer snart til App Store",
+  "final_03": "Hent DayRecall i App Store ",
+  "final_04": "Bedst med Apple Watch · Virker også alene med iPhone · På 13 sprog",
+  "foot_01": "Apple Watch og iPhone er varemærker tilhørende Apple Inc., registreret i USA og andre lande og regioner.",
+  "faq": [
+    {
+      "q": "Hvad er DayRecall?",
+      "a": "DayRecall er en AI-hukommelsesapp til Apple Watch og iPhone, lavet til mennesker, der glemmer ting. I de tidsrum, du vælger, lytter den med, gemmer det sagte som tekst på din iPhone og svarer på spørgsmål om din dag med de præcise ord og hvor de kom fra."
+    },
+    {
+      "q": "Skal jeg have en Apple Watch?",
+      "a": "Nej. DayRecall virker bedst med Apple Watch, og din iPhone kan også lytte alene. Når begge lytter, bliver din dag til én tidslinje, og det, begge har hørt, vises én gang."
+    },
+    {
+      "q": "Skal min iPhone være i nærheden af min Apple Watch?",
+      "a": "Nej. Din Apple Watch gemmer sine optagelser og sender dem til din iPhone hver 2. time, eller så snart de to forbindes igen, fx når du kommer hjem om aftenen."
+    },
+    {
+      "q": "Gemmer DayRecall lydoptagelser?",
+      "a": "Nej. Tale omdannes til tekst på din iPhone, og derefter slettes lyden. Kun teksten gemmes."
+    },
+    {
+      "q": "Hvor er mine data, og hvem kan se dem?",
+      "a": "På din iPhone. Der er ingen konto og ingen DayRecall-server. Svarene bruger Apples model på enheden, og intet forlader din iPhone, medmindre du vælger at bruge din egen cloud-API eller give en dag til en AI-app."
+    },
+    {
+      "q": "Hvor meget batteri bruger den?",
+      "a": "Meget lidt. Vores egenudviklede ultralette talemodel gemmer kun de øjeblikke, hvor nogen taler. I intern test på Apple Watch Series 11 lagde lytning cirka 0,9 % batteri til pr. time."
+    },
+    {
+      "q": "Hvilke sprog understøtter den?",
+      "a": "Appen findes på 13 sprog. Den kan også transskribere en samtale, der skifter mellem op til tre sprog, og oversætte de andre sprog til dit."
+    },
+    {
+      "q": "Hvornår kan jeg få DayRecall?",
+      "a": "DayRecall er i beta og kommer snart til App Store."
+    }
+  ],
+  "lang_label": "Sprog",
+  "foot_label": "Mere",
+  "foot_privacy": "Privatlivspolitik",
+  "foot_support": "Support",
+  "faq_kicker": "FAQ",
+  "faq_heading": "Spørgsmål og svar",
+  "og_h1": "AI-hukommelse for <span class=\"hl\">hele&nbsp;dagen</span>",
+  "og_sub": "Bedst med Apple Watch · Virker også alene med iPhone",
+  "stage": {
+    "me": "Mig",
+    "other": "Anden 1",
+    "other2": "Anden 2",
+    "battery": {
+      "title": "Arbejdsdag",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "Batteriforbrug ved lytning"
+    },
+    "sync": {
+      "away": "iPhone er ikke i nærheden",
+      "waiting": "{n} venter på synkronisering",
+      "syncing": "Synkroniserer…",
+      "synced": "Synkroniseret til iPhone"
+    },
+    "speakers": {
+      "place": "Kontoret",
+      "time": "14:10",
+      "lines": [
+        "Kan vi lancere på fredag?",
+        "Designet er færdigt i dag.",
+        "Jeg tester det på torsdag.",
+        "Fint, jeg siger til kunden."
+      ]
+    },
+    "languages": {
+      "label": "Arbejdssprog",
+      "names": [
+        "Dansk",
+        "Engelsk",
+        "Kinesisk"
+      ],
+      "rows": [
+        {
+          "lang": "da",
+          "text": "Så lancerer vi på fredag."
+        },
+        {
+          "lang": "en",
+          "text": "The design will be done today.",
+          "tr": "Designet er færdigt i dag."
+        },
+        {
+          "lang": "zh-Hans",
+          "text": "我周四来测。",
+          "tr": "Jeg tester det på torsdag."
+        }
+      ]
+    },
+    "ask": {
+      "title": "Spørg din hukommelse",
+      "sub": "Alt, hvad du har optaget, eller hvad som helst.",
+      "tryAsking": "Prøv at spørge",
+      "s1": "Hvilke deadlines er der i denne uge?",
+      "s2": "Hvad blev vi enige om på mødet i går?",
+      "placeholder": "Stil et spørgsmål",
+      "question": "Hvad lovede Sam mig i dag?",
+      "thinking": "Tænker…",
+      "from": "Fra dine optagelser",
+      "a1": "Sam sender dig teksten på onsdag.",
+      "a2": "Du sender Sam tilbuddet senest fredag.",
+      "sources": "2 kilder",
+      "today": "I dag",
+      "watch": "Apple Watch",
+      "snip1": "Jeg sender dig teksten på onsdag.",
+      "snip2": "Selvfølgelig, jeg sender den på fredag.",
+      "office": "Kontoret",
+      "row0": "Fint. Hvornår kan jeg få teksten?",
+      "cited": "Citeret",
+      "tabs": [
+        "I dag",
+        "Opgaver",
+        "Spørg",
+        "Arkiv"
+      ]
+    }
+  }
+}
