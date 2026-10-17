@@ -480,6 +480,14 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .qa summary { letter-spacing: 0;
 .foot-langs a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .foot a { text-decoration: none; color: var(--ink2); }
 .foot a:hover, .foot a[aria-current="page"] { color: var(--ink); }
+/* Our accounts: each platform's own glyph in the text colour, with a 36-pixel target for a finger. */
+.social { display: flex; align-items: center; gap: 2px; margin: -9px; }
+.social a {
+  display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
+  transition: color .15s, background-color .15s;
+}
+.social svg { width: 18px; height: 18px; fill: currentColor; }
+.foot .social a:hover { background: var(--hair); }
 
 /* ---------- Text pages: privacy policy and support ---------- */
 
@@ -605,6 +613,14 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .faq-group h2 { letter-spacing: 
 .help-contact p + p { margin-top: 10px; }
 .help-contact .help-note { font-size: 15px; color: var(--ink2); }
 .help-contact p a { color: var(--ink); text-underline-offset: 3px; }
+/* Under the email: our accounts are for news; help and feedback stay with email. */
+.help-follow {
+  grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px 32px; padding-top: 22px; border-top: 1px solid rgba(17, 19, 24, 0.14);
+}
+.help-contact .help-follow p { font-size: 15px; color: var(--ink2); max-width: 40em; }
+.help-follow .social a { color: var(--ink); }
+.help-follow .social a:hover { background: rgba(17, 19, 24, 0.08); }
 .help-pill {
   justify-self: end;
   display: inline-flex; align-items: center; gap: 12px;
