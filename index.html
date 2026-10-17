@@ -32,7 +32,9 @@
     <a class="brand" href="/" aria-label="DayRecall, home"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
     <nav class="nav-links" aria-label="Sections">
       <a href="#how">How it works</a>
-      <a href="#features">Features</a>
+      <a href="#battery">Battery</a>
+      <a href="#voices">Voices</a>
+      <a href="#languages">Languages</a>
       <a href="#privacy">Privacy</a>
     </nav>
     <a class="lang" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
@@ -50,6 +52,11 @@
           <span class="pill"><span class="dot"></span>In beta · Coming soon to the App Store</span>
           <a class="ghost" href="#how">See how it works <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
+        <ul class="proof">
+          <li><b>0.9%</b><span>extra battery per hour while listening<a class="fn" href="#n1" aria-label="Note 1">1</a></span></li>
+          <li><b>99.9%</b><span>of speech caught<a class="fn" href="#n2" aria-label="Note 2">2</a></span></li>
+          <li><b>17&nbsp;s</b><span>to write down 3 minutes of talk<a class="fn" href="#n3" aria-label="Note 3">3</a></span></li>
+        </ul>
       </div>
       <div class="visual">
         <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="Asking DayRecall “What did Sam promise me today?”: the answer lists two promises, each numbered and linked to the moment it was said."></div>
@@ -86,19 +93,72 @@
     </div>
   </section>
 
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">Battery</p>
+      <h2>Listens all day. Barely touches the battery.</h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="A workday from 9:00 to 18:00: the conversations light up along the day, and the battery that listening uses grows to only about 8%."></div>
+        <div class="power-copy">
+          <p class="big">An ultra-light speech model of our own runs right on the watch: <strong>2,561 parameters</strong>, checking every tenth of a second whether someone is talking.</p>
+          <p>Only the talking is kept. Silence, typing and fan noise are skipped before they cost any battery. One morning in our tests, the watch listened for 2 hours and kept just the 3 minutes of talk.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">0.9%</p><p class="l">extra battery per hour while listening, on Apple Watch Series&nbsp;11<a class="fn" href="#n1" aria-label="Note 1">1</a></p></div>
+        <div class="stat"><p class="n">99.9%</p><p class="l">of speech caught<a class="fn" href="#n2" aria-label="Note 2">2</a></p></div>
+        <div class="stat"><p class="n">95%</p><p class="l">of background noise skipped<a class="fn" href="#n2" aria-label="Note 2">2</a></p></div>
+        <div class="stat"><p class="n">17&nbsp;s</p><p class="l">for iPhone to write down 3 minutes of talk<a class="fn" href="#n3" aria-label="Note 3">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">Measured by us on Apple Watch Series 11 with the app’s battery log, off the charger. While DayRecall was listening, the whole watch used 2.5% of its battery per hour; the rest of the day it used 1.6% per hour. The difference, 0.9% per hour, is what listening adds. It varies with settings and use.</li>
+        <li id="n2">Lab tests of the speech model on the watch. Speech caught: the share of speech kept from the AMI Meeting Corpus test set (14.3 hours of far-field meeting audio). Noise skipped: the share of time nothing is recorded across the 9 noise environments of the DEMAND dataset.</li>
+        <li id="n3">Measured by us on iPhone with the app’s processing log: a 3-minute recording, all talk, was done in 17 seconds. Times vary with the iPhone and what else it is doing.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Voices</p>
+        <h2>Knows your voice. Tells everyone else apart.</h2>
+        <p class="body">Read five short cards once, about a minute, and everything you say is marked <span class="tag-me">Me</span>. Everyone else in the conversation gets a number of their own, <span class="tag-other">Other 1</span>, <span class="tag-other">Other 2</span> and on, so your promises and the ones made to you never get mixed up.</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Several people in one conversation, each kept apart</li>
+          <li><span class="tick" data-icon="check"></span>To-dos know who promised what</li>
+          <li><span class="tick" data-icon="check"></span>An hour of talk sorted by voice in 4.4 seconds on iPhone</li>
+          <li><span class="tick" data-icon="check"></span>Only your own voiceprint is kept, on your iPhone. Other voices are never stored.</li>
+        </ul>
+        <p class="note">Optional, and off until you turn it on. Speed measured by us with the app’s built-in test.</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="Four lines of a meeting are heard one by one and marked Me, Other 1, Other 2 and Me; the three voices gather at the top."></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Languages</p>
+        <h2>Switch languages mid-conversation. It keeps up.</h2>
+        <p class="body">Pick up to three working languages. DayRecall notices when the language changes and writes each part down in the language it was spoken in. <span data-feature="translation">Lines in the other languages can then be translated into yours.</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>Up to three languages in one conversation</li>
+          <li><span class="tick" data-icon="check"></span>Each part written in the language it was spoken in</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>Translated into your own language</li>
+          <li><span class="tick" data-icon="check"></span>An hour of talk checked for language in about 32 seconds on iPhone</li>
+        </ul>
+        <p class="note">Multilingual transcription is an advanced setting, off until you turn it on. The app itself comes in 13 languages.</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="The working languages English, Chinese and Japanese light up in turn as a line in each is written down; the Chinese and Japanese lines get English translations."></div>
+    </div>
+  </section>
+
   <section class="features" id="features">
     <div class="wrap">
       <p class="kicker">Features</p>
       <h2>Made for the details you’d otherwise lose</h2>
       <div class="grid">
-        <article class="feat wide">
-          <div>
-            <span class="ico" data-icon="people"></span>
-            <h3>Who said what</h3>
-            <p>Record your voice once, and your lines are marked <span class="tag-me">Me</span>. Everyone else is <span class="tag-other">Other 1</span>, <span class="tag-other">Other 2</span>. So “I’ll send it Friday” is clearly your promise. Optional, and your voiceprint never leaves your iPhone.</p>
-          </div>
-          <div class="stage t-light" data-stage="voice" role="img" aria-label="Lines of a conversation appear one by one, tagged Me or Other 1."></div>
-        </article>
         <article class="feat">
           <span class="ico" data-icon="checkCircle"></span>
           <h3>To-dos you confirm</h3>
@@ -128,11 +188,6 @@
           <span class="ico" data-icon="share"></span>
           <h3>Hand a day to your AI app</h3>
           <p>For a deeper look, send a day’s transcript to the AI app you use, as a text file, only when you choose.</p>
-        </article>
-        <article class="feat">
-          <span class="ico" data-icon="globe"></span>
-          <h3>In 13 languages</h3>
-          <p>DayRecall comes in 13 languages, and it can follow a conversation that switches between them.</p>
         </article>
       </div>
     </div>
@@ -184,7 +239,9 @@
   <div class="wrap">
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</span>
-    <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    <nav class="foot-links" aria-label="More">
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    </nav>
   </div>
 </footer>
 </body>

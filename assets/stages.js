@@ -18,6 +18,21 @@
     en: {
       me: 'Me',
       other: 'Other 1',
+      other2: 'Other 2',
+      battery: { title: 'Workday', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: 'Battery used by listening' },
+      speakers: {
+        place: 'Office', time: '14:10',
+        lines: ['Can we launch on Friday?', 'Design will be done today.', 'I’ll test it on Thursday.', 'Great, I’ll tell the client.']
+      },
+      languages: {
+        label: 'Working languages',
+        names: ['English', 'Chinese', 'Japanese'],
+        rows: [
+          { lang: 'en', text: 'So we launch on Friday.' },
+          { lang: 'zh-Hans', text: '设计今天就能做完。', tr: 'The design will be done today.' },
+          { lang: 'ja', text: '木曜日にテストします。', tr: 'I’ll test it on Thursday.' }
+        ]
+      },
       ask: {
         title: 'Ask your memory',
         sub: 'Anything you recorded, or anything at all.',
@@ -44,6 +59,21 @@
     zh: {
       me: '我',
       other: '其他人 1',
+      other2: '其他人 2',
+      battery: { title: '工作日', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: '聆听多用的电' },
+      speakers: {
+        place: '办公室', time: '14:10',
+        lines: ['周五能上线吗？', '设计今天就能做完。', '我周四来测。', '好，我去跟客户说。']
+      },
+      languages: {
+        label: '工作语言',
+        names: ['中文', '英语', '日语'],
+        rows: [
+          { lang: 'zh-Hans', text: '那我们周五上线。' },
+          { lang: 'en', text: 'The design will be done today.', tr: '设计今天就能做完。' },
+          { lang: 'ja', text: '木曜日にテストします。', tr: '我周四来测。' }
+        ]
+      },
       ask: {
         title: '问问你的记忆',
         sub: '可以问录过的内容，也可以问任何问题。',
@@ -199,7 +229,9 @@
     pin: [['path', 's', { d: 'M12 20.5s-6-5.2-6-10.2a6 6 0 0 1 12 0c0 5-6 10.2-6 10.2z' }], ['circle', 's', { cx: 12, cy: 10.3, r: 2.2 }]],
     share: [['path', 's', { d: 'M12 3.8v11M8 7.6l4-3.8 4 3.8M5.5 11.5v7.2c0 .8.7 1.5 1.5 1.5h10c.8 0 1.5-.7 1.5-1.5v-7.2' }]],
     globe: [['circle', 's', { cx: 12, cy: 12, r: 8.5 }], ['path', 's', { d: 'M3.5 12h17M12 3.5c2.4 2.3 3.6 5.2 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.2-3.6-8.5S9.6 5.8 12 3.5z' }]],
-    week: [['rect', 's', { x: 4, y: 5.5, width: 16, height: 14.5, rx: 2.5 }], ['path', 's', { d: 'M4 10h16M8.5 3.5v4M15.5 3.5v4M8 14h2M11 14h2M14 14h2M8 17h2' }]]
+    week: [['rect', 's', { x: 4, y: 5.5, width: 16, height: 14.5, rx: 2.5 }], ['path', 's', { d: 'M4 10h16M8.5 3.5v4M15.5 3.5v4M8 14h2M11 14h2M14 14h2M8 17h2' }]],
+    turn: [['path', 's', { d: 'M6.5 5.5v5.7a3.3 3.3 0 0 0 3.3 3.3H18M14.2 10.7l3.8 3.8-3.8 3.8' }]],
+    mail: [['rect', 's', { x: 3.5, y: 5.5, width: 17, height: 13, rx: 2.5 }], ['path', 's', { d: 'M4.5 7.5l7.5 5.6 7.5-5.6' }]]
   };
 
   /** An icon centred on the origin of a new group; `size` is the side of its 24-point box. */
@@ -252,8 +284,8 @@
   }
 
   // ---------------------------------------------------------------------------------------------
-  // 1. The watch listens, and keeps only the speech (ListeningStage). The app's battery gauge is
-  //    left out until it has been measured on a real watch.
+  // 1. The watch listens, and keeps only the speech (ListeningStage). Below, the detector sleeps in
+  //    the quiet and wakes for speech, and the battery barely moves.
 
   var Listening = {
     w: 330, h: 230, length: 8, still: 5.9,
@@ -297,7 +329,10 @@
       var detOn = el(det, 'rect', { x: -18, y: -18, width: 36, height: 36, rx: 11, fill: 'hl' });
       var moon = icon(det, 'moon', 20, 'ink2', 'tile');
       var wave = icon(det, 'wave', 21, 'on-hl');
-      el(root, 'rect', { x: 72, y: 199, width: 234, height: 2, rx: 1, fill: 'hair' });
+      el(root, 'rect', { x: 90, y: 199, width: 150, height: 2, rx: 1, fill: 'hair' });
+      el(root, 'rect', { x: 266.25, y: 190.75, width: 38.5, height: 18.5, rx: 5.25, fill: 'none', stroke: 'ink2', 'stroke-width': 1.5 });
+      el(root, 'rect', { x: 307.5, y: 196, width: 3, height: 8, rx: 1.5, fill: 'ink2' });
+      var charge = el(root, 'rect', { x: 268.5, y: 194, height: 12, rx: 3, fill: 'hl' });
 
       return function (t) {
         op(root, loopFade(t, 8));
@@ -338,6 +373,7 @@
         op(detOn, active);
         op(moon, 1 - active);
         op(wave, active);
+        charge.setAttribute('width', 34 * lerp(0.9, 0.86, seg(t, 0, 8)));
       };
     }
   };
@@ -903,12 +939,276 @@
   };
 
   // ---------------------------------------------------------------------------------------------
+  // The site's own pictures for the highlights, in the same style.
+
+  /** Sets a line's size so its whole text fits in `maxW`, before it is typed in. */
+  function fitTyped(e, str, maxW) {
+    e.textContent = str;
+    var w = width(e);
+    if (w > maxW) e.setAttribute('font-size', parseFloat(e.getAttribute('font-size')) * Math.max(0.72, maxW / w));
+    e.textContent = '';
+  }
+
+  // 7. A workday on the watch: the talking is kept as the day goes by, and the share of the
+  //    battery that listening takes grows only a sliver. The extra use per hour comes from the
+  //    page (data-per-hour), which says how it was measured.
+
+  var Battery = {
+    w: 330, h: 230, length: 8.5, still: 6.6,
+    build: function (svg, ctx) {
+      var B = ctx.words.battery;
+      var perHour = parseFloat(ctx.host.getAttribute('data-per-hour')) || 0.9;
+      var left = 24, span = 282, hours = 9, from = 0.9, to = 5.9;
+      var talks = [[0.35, 1.15], [1.9, 2.3], [4.5, 5.45], [6.05, 6.35], [7.3, 8.3]];
+      function hx(h) { return left + span * h / hours; }
+
+      card(svg, 330, 230, 28);
+      var root = el(svg, 'g');
+      el(root, 'rect', { x: 20, y: 21, width: 34, height: 34, rx: 11, fill: 'hl' });
+      move(icon(root, 'watch', 20, 'on-hl'), 37, 38);
+      fit(txt(root, B.title, 66, 31, 13.5, 700, 'ink'), 130, 0.8);
+      txt(root, B.hours, 66, 47, 10.5, 500, 'ink2', { mono: true });
+      var clock = txt(root, '9:00', 308, 38.5, 22, 600, 'ink', { anchor: 'end', mono: true });
+
+      el(root, 'rect', { x: left, y: 111, width: span, height: 2, rx: 1, fill: 'hair' });
+      var passed = el(root, 'rect', { x: left, y: 111, height: 2, rx: 1, fill: 'ink3' });
+      var blocks = talks.map(function () { return el(root, 'rect', { fill: 'hl' }); });
+      B.ticks.forEach(function (label, i) {
+        el(root, 'rect', { x: hx(3 * i) - 0.75, y: 124, width: 1.5, height: 5, rx: 0.75, fill: 'ink3' });
+        txt(root, label, hx(3 * i), 141, 10, 500, 'ink3', { anchor: i === 0 ? 'start' : i === 3 ? 'end' : 'middle', mono: true });
+      });
+      var head = el(root, 'g');
+      el(head, 'rect', { x: -1.25, y: -22, width: 2.5, height: 44, rx: 1.25, fill: 'accent' });
+      el(head, 'circle', { cx: 0, cy: -22, r: 4, fill: 'accent' });
+
+      // The whole track is a full battery; the lime part is what listening has used so far.
+      fit(txt(root, B.used, left, 169, 11, 600, 'ink2'), 200, 0.8);
+      var readout = txt(root, '0.0%', 306, 169, 15, 700, 'ink', { anchor: 'end' });
+      readout.style.fontVariantNumeric = 'tabular-nums';
+      el(root, 'rect', { x: left, y: 182, width: span, height: 12, rx: 6, fill: 'tile' });
+      var share = el(root, 'rect', { x: left, y: 182, height: 12, rx: 6, fill: 'hl' });
+      txt(root, '0%', left, 207, 9.5, 500, 'ink3', { mono: true });
+      txt(root, '100%', 306, 207, 9.5, 500, 'ink3', { anchor: 'end', mono: true });
+      var lastClock = '', lastReadout = '';
+
+      return function (t) {
+        op(root, loopFade(t, Battery.length));
+        var now = hours * seg(t, from, to);
+        var x = hx(now);
+        passed.setAttribute('width', Math.max(0, x - left));
+        talks.forEach(function (r, k) {
+          var a = hx(r[0]), b = hx(Math.min(r[1], Math.max(r[0], now)));
+          cap(blocks[k], (a + b) / 2, 112, b - a, lerp(4, 18, easeOut(seg(now, r[0], r[0] + 0.3))));
+          op(blocks[k], now > r[0] ? 1 : 0);
+        });
+        move(head, x, 112);
+        op(head, seg(t, from - 0.3, from) * (1 - seg(t, to + 0.2, to + 0.6)));
+        var minutes = Math.floor(now * 60 + 1e-6);
+        var hhmm = (9 + Math.floor(minutes / 60)) + ':' + ('0' + (minutes % 60)).slice(-2);
+        if (hhmm !== lastClock) {
+          clock.textContent = hhmm;
+          lastClock = hhmm;
+        }
+        var used = perHour * now;
+        share.setAttribute('width', used > 0 ? Math.max(12, span * used / 100) : 0);
+        var shown = used.toFixed(1) + '%';
+        if (shown !== lastReadout) {
+          readout.textContent = shown;
+          lastReadout = shown;
+        }
+      };
+    }
+  };
+
+  // 8. Several voices in one conversation: each line is heard, then marked Me, Other 1 or Other 2,
+  //    and the voices met so far gather at the top.
+
+  var Speakers = {
+    w: 330, h: 230, length: 9, still: 7.2,
+    build: function (svg, ctx) {
+      var S = ctx.words.speakers;
+      var names = [ctx.words.me, ctx.words.other, ctx.words.other2];
+      var who = [0, 1, 2, 0], ys = [80, 118, 156, 194], starts = [0.5, 1.75, 3.0, 4.25];
+
+      card(svg, 330, 230, 28);
+      var root = el(svg, 'g');
+      var placeW = fit(txt(root, S.place, 20, 36, 14, 700, 'ink'), 150, 0.8);
+      txt(root, S.time, 20 + placeW + 8, 36.5, 10.5, 400, 'ink2', { mono: true });
+      var faces = [0, 1, 2].map(function (k) {
+        var g = el(root, 'g');
+        el(g, 'circle', { r: 14, fill: 'card' });
+        el(g, 'circle', { r: 12, fill: k === 0 ? 'hl' : 'tile' });
+        icon(g, 'person', 15, k === 0 ? 'on-hl' : 'ink2');
+        return g;
+      });
+
+      var rows = who.map(function (k, i) {
+        var g = el(root, 'g');
+        var ripple = el(g, 'rect', { fill: 'none', stroke: k === 0 ? 'hl' : 'ink3', 'stroke-width': 2 });
+        var tag = el(g, 'g');
+        var box = el(tag, 'rect', { fill: k === 0 ? 'hl' : 'tile' });
+        var label = txt(tag, names[k], 0, 0.5, 11, 700, k === 0 ? 'on-hl' : 'ink', { anchor: 'middle' });
+        var w = fit(label, 64, 0.7) + 18;
+        [box, ripple].forEach(function (r) { put(r, { x: -w / 2, y: -11, width: w, height: 22, rx: 11 }); });
+        return {
+          k: k, i: i, y: ys[i], s: starts[i], w: w, ripple: ripple, tag: tag, text: S.lines[i], last: null,
+          bars: [0, 1, 2, 3, 4, 5, 6].map(function () { return el(g, 'rect', { fill: 'ink3' }); }),
+          line: txt(g, '', 0, ys[i] + 0.5, 12.5, 400, 'ink')
+        };
+      });
+      var textX = 20 + Math.max.apply(null, rows.map(function (r) { return r.w; })) + 10;
+      rows.forEach(function (r) {
+        r.line.setAttribute('x', textX);
+        fitTyped(r.line, r.text, 310 - textX);
+      });
+
+      return function (t) {
+        op(root, loopFade(t, Speakers.length));
+        rows.forEach(function (r) {
+          var s = r.s;
+          var heard = seg(t, s, s + 0.12) * (1 - seg(t, s + 0.5, s + 0.7));
+          r.bars.forEach(function (b, j) {
+            cap(b, textX + 4 + 9 * j, r.y, 4, (4 + 12 * Math.abs(Math.sin(t * 9 + j * 1.3 + r.i))) * seg(t, s, s + 0.2));
+            op(b, heard);
+          });
+          var pop = easeOut(seg(t, s + 0.35, s + 0.7));
+          move(r.tag, 20 + r.w / 2, r.y, 0.6 + 0.4 * pop);
+          op(r.tag, pop);
+          var rip = seg(t, s + 0.4, s + 1.0);
+          move(r.ripple, 20 + r.w / 2, r.y, 1 + 0.35 * rip);
+          op(r.ripple, 0.8 * Math.sin(Math.PI * rip));
+          var shown = typed(r.text, seg(t, s + 0.55, s + 1.15));
+          if (shown !== r.last) {
+            r.line.textContent = shown;
+            r.last = shown;
+          }
+        });
+        faces.forEach(function (f, k) {
+          var first = starts[who.indexOf(k)];
+          move(f, 266 + 18 * k, 36, lerp(0.3, 1, spring(seg(t, first + 0.4, first + 0.8))));
+          op(f, seg(t, first + 0.4, first + 0.55));
+        });
+      };
+    }
+  };
+
+  // 9. Languages: the working language in use lights up as the talk switches; each part is
+  //    written in the language it was spoken in, and the other languages are translated into
+  //    yours (data-translate="off" leaves the translations out).
+
+  var Languages = {
+    w: 330, h: 230, length: 10, still: 7.6,
+    build: function (svg, ctx) {
+      var L = ctx.words.languages;
+      var translate = ctx.host.getAttribute('data-translate') !== 'off';
+      var starts = [0.8, 2.2, 3.6], turns = [5.2, 5.8];
+      var ys = translate ? [100, 136, 186] : [104, 144, 184];
+      var lit = translate ?
+        [[0, 0.8, 2.2], [1, 2.2, 3.6], [2, 3.6, 5.0], [0, 5.0, 9.6]] :
+        [[0, 0.8, 2.2], [1, 2.2, 3.6], [2, 3.6, 9.6]];
+
+      card(svg, 330, 230, 28);
+      var root = el(svg, 'g');
+      txt(root, L.label, 20, 28, 10.5, 600, 'ink2');
+      var cx = 20;
+      var chips = L.names.map(function (name) {
+        var g = el(root, 'g');
+        var box = el(g, 'rect', { x: 0, y: -12, height: 24, rx: 12, fill: 'tile' });
+        var on = el(g, 'rect', { x: 0, y: -12, height: 24, rx: 12, fill: 'hl' });
+        var off = txt(g, name, 12, 0.5, 11.5, 600, 'ink2');
+        var onText = txt(g, name, 12, 0.5, 11.5, 600, 'on-hl');
+        var w = width(off) + 24;
+        box.setAttribute('width', w);
+        on.setAttribute('width', w);
+        var chip = { g: g, on: on, off: off, onText: onText, x: cx };
+        cx += w + 8;
+        return chip;
+      });
+      el(root, 'rect', { x: 20, y: 76, width: 290, height: 1, fill: 'hair' });
+
+      var rows = L.rows.map(function (r, k) {
+        var g = el(root, 'g', { transform: 'translate(0 ' + ys[k] + ')' });
+        var x = 20, tag = null;
+        if (k > 0) {
+          tag = el(g, 'g');
+          var tagBox = el(tag, 'rect', { x: 20, y: -8.5, height: 17, rx: 6, fill: 'tile' });
+          var tagW = width(txt(tag, L.names[k], 27, 0.5, 9.5, 600, 'ink2')) + 14;
+          tagBox.setAttribute('width', tagW);
+          x += tagW + 8;
+        }
+        var line = txt(g, '', x, 0.5, 12.5, 400, 'ink');
+        line.setAttribute('lang', r.lang);
+        fitTyped(line, r.text, 310 - x);
+        var row = { tag: tag, line: line, text: r.text, last: null };
+        if (translate && r.tr) {
+          row.turn = el(g, 'g');
+          move(icon(row.turn, 'turn', 13, 'ink3'), x + 6, 20.5);
+          row.trLine = txt(g, '', x + 18, 21, 11.5, 500, 'ink2');
+          row.trLine.setAttribute('lang', ctx.lang === 'zh' ? 'zh-Hans' : 'en');
+          fitTyped(row.trLine, r.tr, 310 - x - 18);
+          row.trText = r.tr;
+          row.trLast = null;
+        }
+        return row;
+      });
+
+      return function (t) {
+        op(root, loopFade(t, Languages.length));
+        chips.forEach(function (c, k) {
+          var a = easeOut(seg(t, 0.2 + 0.12 * k, 0.55 + 0.12 * k));
+          move(c.g, c.x, 52 + (1 - a) * 6);
+          op(c.g, a);
+          var on = 0;
+          lit.forEach(function (s) {
+            if (s[0] === k) on = Math.max(on, seg(t, s[1], s[1] + 0.2) * (1 - seg(t, s[2], s[2] + 0.2)));
+          });
+          op(c.on, on);
+          op(c.onText, on);
+          op(c.off, 1 - on);
+        });
+        rows.forEach(function (r, k) {
+          var s = starts[k];
+          if (r.tag) {
+            var pop = easeOut(seg(t, s, s + 0.3));
+            r.tag.setAttribute('transform', 'translate(20 0) scale(' + (0.6 + 0.4 * pop) + ') translate(-20 0)');
+            op(r.tag, pop);
+          }
+          var shown = typed(r.text, seg(t, s + 0.15, s + 0.85));
+          if (shown !== r.last) {
+            r.line.textContent = shown;
+            r.last = shown;
+          }
+          if (r.trLine) {
+            var a = turns[k - 1];
+            op(r.turn, easeOut(seg(t, a, a + 0.25)));
+            var trShown = typed(r.trText, seg(t, a + 0.1, a + 0.7));
+            if (trShown !== r.trLast) {
+              r.trLine.textContent = trShown;
+              r.trLast = trShown;
+            }
+          }
+        });
+      };
+    }
+  };
+
+  // ---------------------------------------------------------------------------------------------
   // Playing: only the animations on screen run; with Reduce Motion each shows its still frame.
 
-  var STAGES = { listening: Listening, tidying: Tidying, privacy: Privacy, consent: Consent, voice: Voice, ask: AskDay };
+  var STAGES = {
+    listening: Listening, tidying: Tidying, privacy: Privacy, consent: Consent, voice: Voice, ask: AskDay,
+    battery: Battery, speakers: Speakers, languages: Languages
+  };
   var calm = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
   var items = [];
   var frameId = 0;
+
+  // A fixed frame for screenshots and promo images: ?still shows every animation's still frame,
+  // ?t=4.5 the frame 4.5 seconds into each loop. Nothing moves then.
+  var query = window.URLSearchParams ? new URLSearchParams(location.search) : null;
+  var fixedAt = !query ? null : query.has('t') ? parseFloat(query.get('t')) : query.has('still') ? 'still' : null;
+  if (fixedAt !== null && fixedAt !== 'still' && !(fixedAt >= 0)) fixedAt = null;
+  if (fixedAt !== null) calm = { matches: true };
 
   function mount(host) {
     var def = STAGES[host.getAttribute('data-stage')];
@@ -918,12 +1218,12 @@
     host.appendChild(svg);
     var render;
     try {
-      render = def.build(svg, { words: WORDS[lang] });
+      render = def.build(svg, { words: WORDS[lang], host: host, lang: lang });
     } catch (err) {
       if (window.console) console.error(err);
       return;
     }
-    render(def.still);
+    render(typeof fixedAt === 'number' ? Math.min(fixedAt, def.length - 0.01) : def.still);
     items.push({ host: host, def: def, render: render, visible: false, start: 0 });
   }
 

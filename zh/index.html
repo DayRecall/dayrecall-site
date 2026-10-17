@@ -32,7 +32,9 @@
     <a class="brand" href="/zh/" aria-label="DayRecall 首页"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
     <nav class="nav-links" aria-label="页面导航">
       <a href="#how">怎么用</a>
-      <a href="#features">功能</a>
+      <a href="#battery">省电</a>
+      <a href="#voices">多人识别</a>
+      <a href="#languages">多语言</a>
       <a href="#privacy">隐私</a>
     </nav>
     <a class="lang" href="/" hreflang="en" lang="en">English</a>
@@ -45,11 +47,16 @@
       <div class="copy">
         <p class="eyebrow"><span class="ico" data-icon="watch"></span>适用于 iPhone 和 Apple Watch</p>
         <h1><span class="nw">你<span class="hl">一整天</span>的</span> AI&nbsp;记忆</h1>
-        <p class="lead">写给容易忘事的人。Apple Watch 在你选定的时段里听，iPhone 把说过的话变成文字替你记着。<strong>随时问问这一天，<span class="nw">原话都找得回来。</span></strong></p>
+        <p class="lead">写给容易忘事的人。Apple Watch 在你选定的时段里听，iPhone 把说过的话变成文字替你记着。<strong><span class="nw">随时问问这一天，</span><span class="nw">原话都找得回来。</span></strong></p>
         <div class="cta-row">
           <span class="pill"><span class="dot"></span>内测中 · 即将登陆 App Store</span>
           <a class="ghost" href="#how">看看怎么用 <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
+        <ul class="proof">
+          <li><b>0.9%</b><span><span class="nw">聆听时每小时</span><span class="nw">多耗的电</span><a class="fn" href="#n1" aria-label="注 1">1</a></span></li>
+          <li><b>99.9%</b><span>人声召回率<a class="fn" href="#n2" aria-label="注 2">2</a></span></li>
+          <li><b>17&nbsp;秒</b><span><span class="nw">处理 3 分钟</span><span class="nw">的说话</span><a class="fn" href="#n3" aria-label="注 3">3</a></span></li>
+        </ul>
       </div>
       <div class="visual">
         <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="问 DayRecall“小王今天答应了我什么？”：回答列出两件事，每件都带编号，链接到当时说这句话的那一刻。"></div>
@@ -86,19 +93,72 @@
     </div>
   </section>
 
+  <section class="dark power" id="battery">
+    <div class="wrap">
+      <p class="kicker">省电</p>
+      <h2><span class="nw">听一整天，</span><span class="nw">几乎不费电。</span></h2>
+      <div class="power-top">
+        <div class="stage t-dark" data-stage="battery" data-per-hour="0.9" role="img" aria-label="从 9:00 到 18:00 的一个工作日：对话沿着时间轴一段段亮起，聆听多用的电只涨到约 8%。"></div>
+        <div class="power-copy">
+          <p class="big">手表上跑的是我们自己训练的超轻量人声模型：<strong>只有 2,561 个参数</strong>，每 0.1 秒判断一次有没有人在说话。</p>
+          <p>只留下说话的部分；安静、打字声、风扇声，在耗电之前就被跳过。我们测试的一个上午，手表听了 2 小时，只留下其中 3 分钟的说话。</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="n">0.9%</p><p class="l">聆听时每小时多耗的电，Apple Watch Series&nbsp;11<a class="fn" href="#n1" aria-label="注 1">1</a></p></div>
+        <div class="stat"><p class="n">99.9%</p><p class="l">人声召回率<a class="fn" href="#n2" aria-label="注 2">2</a></p></div>
+        <div class="stat"><p class="n">95%</p><p class="l">环境噪声直接跳过<a class="fn" href="#n2" aria-label="注 2">2</a></p></div>
+        <div class="stat"><p class="n">17&nbsp;秒</p><p class="l">iPhone 把 3 分钟的说话变成文字<a class="fn" href="#n3" aria-label="注 3">3</a></p></div>
+      </div>
+      <ol class="notes">
+        <li id="n1">我们用 App 内置的电量记录，在 Apple Watch Series 11 上实测（未充电时）：DayRecall 在听的时候，整只手表每小时用电 2.5%；其余时间每小时 1.6%。两者之差每小时 0.9%，就是聆听多用的电。实际数字因设置和使用情况而异。</li>
+        <li id="n2">手表上人声模型的实验室测试。人声召回率：在 AMI 会议语料测试集（14.3 小时远场会议录音）上，保留下来的说话占全部说话的比例。噪声跳过：在 DEMAND 数据集的 9 种噪声环境里，没有录音的时间所占的比例。</li>
+        <li id="n3">我们用 App 内置的处理记录，在 iPhone 上实测：一段 3 分钟、全是说话的录音，17 秒处理完。实际时间因 iPhone 型号和当时的负载而异。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spot voices" id="voices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">多人识别</p>
+        <h2><span class="nw">认得你的声音，</span><span class="nw">也分得清其他人。</span></h2>
+        <p class="body">读一遍五张小卡片，大约一分钟，你说的话就都标成 <span class="tag-me">我</span>。同一段对话里的其他人各有编号：<span class="tag-other">其他人 1</span>、<span class="tag-other">其他人 2</span>……你答应别人的事，和别人答应你的事，再也不会混在一起。</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>一段对话里有好几个人，也能一一分开</li>
+          <li><span class="tick" data-icon="check"></span>待办知道是谁答应的</li>
+          <li><span class="tick" data-icon="check"></span>在 iPhone 上，一小时的说话 4.4 秒就能按声音分好</li>
+          <li><span class="tick" data-icon="check"></span>只保存你自己的声纹，而且只在你的 iPhone 上；别人的声音从不保存</li>
+        </ul>
+        <p class="note">可选功能，你打开之前不会启用。速度是我们用 App 内置的测试测得的。</p>
+      </div>
+      <div class="stage t-light" data-stage="speakers" role="img" aria-label="一段会议里的四句话被一一听到，分别标成“我”“其他人 1”“其他人 2”“我”；三个声音聚在上方。"></div>
+    </div>
+  </section>
+
+  <section class="spot langs flip" id="languages">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">多语言</p>
+        <h2><span class="nw">说着说着换了语言，</span><span class="nw">照样记得下。</span></h2>
+        <p class="body">选最多三种工作语言。DayRecall 会发现语言变了，把每一段按原来说的语言写下来。<span data-feature="translation">别的语言的句子，还能翻译成你的母语。</span></p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>一段对话里最多三种语言</li>
+          <li><span class="tick" data-icon="check"></span>每一段都按原来说的语言写下来</li>
+          <li data-feature="translation"><span class="tick" data-icon="check"></span>翻译成你的母语</li>
+          <li><span class="tick" data-icon="check"></span>在 iPhone 上，一小时的说话约 32 秒就能分清语言</li>
+        </ul>
+        <p class="note">多语言转写是高级设置，你打开之前不会启用。App 界面本身支持 13 种语言。</p>
+      </div>
+      <div class="stage t-light" data-stage="languages" role="img" aria-label="工作语言中文、英语、日语随着每句话依次亮起，每句按原来的语言写下；英语和日语的句子下面出现中文翻译。"></div>
+    </div>
+  </section>
+
   <section class="features" id="features">
     <div class="wrap">
       <p class="kicker">功能</p>
       <h2><span class="nw">专为容易丢掉的</span><span class="nw">细节而做</span></h2>
       <div class="grid">
-        <article class="feat wide">
-          <div>
-            <span class="ico" data-icon="people"></span>
-            <h3>分清谁说的</h3>
-            <p>录一次你的声音，你说的话就标成 <span class="tag-me">我</span>，其他人是 <span class="tag-other">其他人 1</span>、<span class="tag-other">其他人 2</span>。“我周五发给你”是谁答应的，一眼就清楚。这是可选功能，你的声纹不会离开 iPhone。</p>
-          </div>
-          <div class="stage t-light" data-stage="voice" role="img" aria-label="对话一行行出现，分别标着“我”或“其他人 1”。"></div>
-        </article>
         <article class="feat">
           <span class="ico" data-icon="checkCircle"></span>
           <h3>待办由你确认</h3>
@@ -128,11 +188,6 @@
           <span class="ico" data-icon="share"></span>
           <h3>交给你用的 AI</h3>
           <p>想看得更深？把一天的文字以文本文件交给你常用的 AI App，只在你选择时发送。</p>
-        </article>
-        <article class="feat">
-          <span class="ico" data-icon="globe"></span>
-          <h3>支持 13 种语言</h3>
-          <p>DayRecall 提供 13 种语言，还能跟上中途切换语言的对话。</p>
         </article>
       </div>
     </div>
@@ -184,7 +239,9 @@
   <div class="wrap">
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch 和 iPhone 是 Apple Inc. 在美国及其他国家和地区注册的商标。</span>
-    <a href="/" hreflang="en" lang="en">English</a>
+    <nav class="foot-links" aria-label="更多">
+      <a href="/" hreflang="en" lang="en">English</a>
+    </nav>
   </div>
 </footer>
 </body>
