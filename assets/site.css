@@ -367,7 +367,112 @@ html[lang^="zh"] .consent h3 { letter-spacing: 0; line-height: 1.3; }
 .foot .tm { flex: 1 1 360px; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 .foot a { text-decoration: none; color: var(--ink2); }
-.foot a:hover { color: var(--ink); }
+.foot a:hover, .foot a[aria-current="page"] { color: var(--ink); }
+
+/* ---------- Text pages: privacy policy and support ---------- */
+
+.page-head {
+  background:
+    radial-gradient(760px 440px at 88% 0%, rgba(205, 240, 74, 0.10), transparent 64%),
+    var(--night);
+  color: var(--night-ink);
+  padding: 84px 0 92px;
+}
+.page-head .kicker { color: var(--night-ink2); }
+.page-head h1 { font-size: clamp(40px, 5.4vw, 68px); margin: 0 0 22px; max-width: 13em; }
+.page-head .lead { max-width: 34em; margin-bottom: 0; }
+.page-head .meta { margin-top: 26px; font-size: 14px; color: var(--night-ink2); }
+
+/* The policy reads as one column, with its sections listed beside it on wide screens. */
+.doc { background: var(--paper); padding: 84px 0 120px; }
+.doc .wrap {
+  display: grid; grid-template-columns: 220px minmax(0, 720px); gap: 80px; justify-content: center;
+}
+.toc {
+  position: sticky; top: 100px; align-self: start;
+  max-height: calc(100vh - 124px); overflow-y: auto;
+  font-size: 14.5px; line-height: 1.4;
+}
+.toc p { font-weight: 650; margin-bottom: 12px; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--hair); }
+.toc a {
+  display: block; padding: 6px 0 6px 16px; margin-left: -2px; border-left: 2px solid transparent;
+  text-decoration: none; color: var(--ink2); transition: color .15s, border-color .15s;
+}
+.toc a:hover { color: var(--ink); border-left-color: var(--ink); }
+
+.prose { line-height: 1.65; }
+html[lang^="zh"] .prose { line-height: 1.85; }
+.prose h2 {
+  font-size: clamp(25px, 2.5vw, 31px); line-height: 1.2; letter-spacing: -0.022em;
+  max-width: none; margin: 72px 0 18px; text-wrap: balance;
+}
+html[lang^="zh"] .prose h2 { letter-spacing: 0; line-height: 1.35; }
+.prose h3 { font-size: 19px; line-height: 1.3; letter-spacing: -0.012em; margin: 34px 0 10px; }
+html[lang^="zh"] .prose h3 { letter-spacing: 0; }
+.prose p, .prose li { color: var(--ink2); }
+.prose p + p, .prose p + ul, .prose ul + p { margin-top: 14px; }
+.prose ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.prose li { position: relative; padding-left: 24px; }
+.prose li::before {
+  content: ""; position: absolute; left: 4px; top: calc(0.825em - 3.5px);
+  width: 7px; height: 7px; border-radius: 50%; background: var(--ink);
+}
+html[lang^="zh"] .prose li::before { top: calc(0.925em - 3.5px); }
+.prose strong { color: var(--ink); font-weight: 650; }
+.prose a {
+  color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px;
+  text-underline-offset: 3px; text-decoration-color: var(--ink3);
+}
+.prose a:hover { background: var(--lime-soft); text-decoration-color: var(--ink); }
+
+.doc-summary { background: var(--ground); border-radius: 26px; padding: 30px 32px 32px; }
+.prose .doc-summary h2 { font-size: 21px; margin: 0 0 20px; }
+.prose .doc-summary ul { gap: 16px; }
+.prose .doc-summary li { display: flex; gap: 14px; padding-left: 0; color: var(--ink); }
+.prose .doc-summary li::before { content: none; }
+.doc-summary .tick {
+  flex: none; width: 26px; height: 26px; margin-top: 0.05em; border-radius: 50%;
+  background: var(--lime); color: var(--ink); display: grid; place-items: center;
+}
+html[lang^="zh"] .doc-summary .tick { margin-top: 0.2em; }
+.doc-summary .tick svg { width: 16px; height: 16px; }
+
+/* Support: a lime card to write to us, then answers as cards. */
+.help-contact {
+  background: var(--lime); color: var(--ink); border-radius: 30px; padding: 44px 48px;
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 28px 48px; align-items: center;
+}
+.help-contact h2 { font-size: clamp(28px, 3.2vw, 40px); max-width: none; margin-bottom: 12px; }
+.help-contact p { color: var(--ink); max-width: 34em; }
+.help-contact p + p { margin-top: 10px; }
+.help-contact .help-note { font-size: 15px; color: var(--ink2); }
+.help-contact p a { color: var(--ink); text-underline-offset: 3px; }
+.help-pill {
+  justify-self: end;
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--ink); color: var(--paper); text-decoration: none;
+  font-weight: 650; font-size: 17px; padding: 15px 24px 15px 20px; border-radius: 999px;
+}
+.help-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); }
+.help-pill:hover { background: #000; }
+
+.help { background: var(--paper); }
+.help-needs { margin-top: 80px; }
+.help-needs h2, .help-answers h2 { margin-bottom: 40px; }
+.help-needs .feat h3 { margin-top: 0; }
+.help-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.help-answers { background: var(--ground); }
+.help-answers .feat { background: var(--paper); scroll-margin-top: 88px; }
+.help-answers .feat p + p { margin-top: 10px; }
+.help-answers .feat p strong { color: var(--ink); font-weight: 650; }
+.help-answers .feat p a { color: var(--ink); text-underline-offset: 3px; }
+.help-more .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px; }
+.help-more h2 { margin-bottom: 14px; }
+.help-more p { color: var(--night-ink2); max-width: 32em; }
+.help-more .help-pill { background: var(--lime); color: var(--ink); }
+.help-more .help-pill:hover { background: var(--lime-soft); }
+.help-more .help-pill .dot { background: var(--ink); }
 
 /* ---------- Narrower screens ---------- */
 
@@ -376,6 +481,8 @@ html[lang^="zh"] .consent h3 { letter-spacing: 0; line-height: 1.3; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
   .spot .wrap { gap: 56px; }
+  .doc .wrap { grid-template-columns: minmax(0, 720px); }
+  .toc { display: none; }
 }
 
 @media (max-width: 900px) {
@@ -388,6 +495,8 @@ html[lang^="zh"] .consent h3 { letter-spacing: 0; line-height: 1.3; }
   .power-top, .spot .wrap { grid-template-columns: minmax(0, 1fr); gap: 44px; }
   .power .stage { margin: 0 auto; }
   .spot.flip .stage { order: 0; }
+  .help-contact { grid-template-columns: minmax(0, 1fr); }
+  .help-contact .help-pill { justify-self: start; }
 }
 
 @media (max-width: 760px) {
@@ -403,6 +512,13 @@ html[lang^="zh"] .consent h3 { letter-spacing: 0; line-height: 1.3; }
   .point p { padding-left: 0; }
   .consent { margin-top: 72px; padding-top: 52px; }
   .final { padding: 96px 0 88px; }
+  .page-head { padding: 56px 0 64px; }
+  .doc { padding: 56px 0 88px; }
+  .prose h2 { margin-top: 56px; }
+  .doc-summary { padding: 26px 22px 28px; }
+  .help-contact { padding: 30px 24px 32px; border-radius: 26px; }
+  .help-needs { margin-top: 64px; }
+  .help-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (max-width: 360px) {
