@@ -278,6 +278,14 @@ html[lang^="zh"] .feat h3 { letter-spacing: 0; }
 .power-copy p + p { margin-top: 18px; }
 .power-copy .big { font-size: clamp(19px, 1.7vw, 22px); line-height: 1.5; color: var(--night-ink); }
 .power-copy .big strong { color: var(--lime); font-weight: 650; }
+.badges { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.badges li {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 8px 15px 8px 12px; border-radius: 999px;
+  background: var(--night-tile); border: 1px solid var(--night-hair);
+  color: var(--night-ink); font-size: 14px; font-weight: 600; line-height: 1.2;
+}
+.badges li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--lime); }
 .stats {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px;
   margin-top: 80px; padding-top: 36px; border-top: 1px solid var(--night-hair);
