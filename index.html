@@ -3,28 +3,189 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DayRecall</title>
-<style>
-  html, body { height: 100%; margin: 0; }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #111318;
-    color: #CDF04A;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  h1 {
-    margin: 0;
-    padding: 0 16px;
-    font-size: clamp(2.5rem, 12vw, 7rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-align: center;
-  }
-</style>
+<title>DayRecall — AI memory for your whole day</title>
+<meta name="description" content="For people who forget things. DayRecall listens on your Apple Watch during the hours you choose, keeps what was said as text on your iPhone, and answers questions about your day with the exact words.">
+<link rel="canonical" href="https://dayrecall.com/">
+<link rel="alternate" hreflang="en" href="https://dayrecall.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-1024.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DayRecall">
+<meta property="og:title" content="DayRecall — AI memory for your whole day">
+<meta property="og:description" content="Your Apple Watch listens during the hours you choose; your iPhone keeps what was said as text. Ask about your day any time.">
+<meta property="og:url" content="https://dayrecall.com/">
+<meta property="og:image" content="https://dayrecall.com/assets/icon-1024.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/stages.js" defer></script>
 </head>
 <body>
-<h1>DayRecall</h1>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="DayRecall, home"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <a class="lang" href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>For iPhone and Apple Watch</p>
+        <h1>AI memory for your <span class="hl">whole&nbsp;day</span></h1>
+        <p class="lead">For everyone who forgets things. Your Apple Watch listens during the hours you choose, and your iPhone keeps what was said as text. <strong>Ask about your day any time, and get the exact words back.</strong></p>
+        <div class="cta-row">
+          <span class="pill"><span class="dot"></span>In beta · Coming soon to the App Store</span>
+          <a class="ghost" href="#how">See how it works <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="stage ask t-dark" data-stage="ask" role="img" aria-label="Asking DayRecall “What did Sam promise me today?”: the answer lists two promises, each numbered and linked to the moment it was said."></div>
+        <div class="chip" aria-hidden="true">
+          <span class="watch" data-icon="watch"></span>
+          <span><b>Listening</b><span>Workdays · 9:00–18:00</span></span>
+          <i class="live"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2>One tap in the morning. Answers all day.</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="stage t-light" data-stage="listening" role="img" aria-label="A strip of sound is scanned: only the bursts of speech light up and are kept; the quiet in between is skipped."></div>
+          <h3><span class="num">1</span>Remember what was said</h3>
+          <p>Your Apple Watch listens during the hours you choose. One tap in the morning, and it stops on its own. A small speech model of our own runs right on the watch and keeps only the moments when someone is talking.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="tidying" role="img" aria-label="The sound goes into the bin and becomes lines of text marked Me and Other 1; a meeting, a to-do and a deadline are picked out."></div>
+          <h3><span class="num">2</span>Organized for you</h3>
+          <p>Your iPhone turns the speech into text on the device, deletes the audio, and picks out the to-dos, deadlines and meetings. It can also tell what you said from what others said.</p>
+        </article>
+        <article class="step">
+          <div class="stage t-light" data-stage="privacy" role="img" aria-label="Memories slide into the iPhone and it locks; anything heading for the cloud is stopped and comes back."></div>
+          <h3><span class="num">3</span>Private by default</h3>
+          <p>Your memories stay on your iPhone, and answers use Apple’s on-device model. You can choose your own cloud API later; nothing is sent until you allow it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <p class="kicker">Features</p>
+      <h2>Made for the details you’d otherwise lose</h2>
+      <div class="grid">
+        <article class="feat wide">
+          <div>
+            <span class="ico" data-icon="people"></span>
+            <h3>Who said what</h3>
+            <p>Record your voice once, and your lines are marked <span class="tag-me">Me</span>. Everyone else is <span class="tag-other">Other 1</span>, <span class="tag-other">Other 2</span>. So “I’ll send it Friday” is clearly your promise. Optional, and your voiceprint never leaves your iPhone.</p>
+          </div>
+          <div class="stage t-light" data-stage="voice" role="img" aria-label="Lines of a conversation appear one by one, tagged Me or Other 1."></div>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="checkCircle"></span>
+          <h3>To-dos you confirm</h3>
+          <p>Promises, deadlines and meetings are picked out of your day. Nothing reaches your calendar or Reminders until you say yes.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="chat"></span>
+          <h3>Ask in your own words</h3>
+          <p>What did Sam promise? When is the report due? Every answer shows where it came from, down to the line that was said.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="history"></span>
+          <h3>Any day, at a glance</h3>
+          <p>See a day as a timeline, flip back through past days, and search everything you’ve heard.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="week"></span>
+          <h3>A plan for the week</h3>
+          <p>Each week, the deadlines and promises ahead in one place. You pick what goes on your calendar.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="pin"></span>
+          <h3>Places, if you want them</h3>
+          <p>See where each conversation happened on a map of your day. Off until you turn it on.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="share"></span>
+          <h3>Hand a day to your AI app</h3>
+          <p>For a deeper look, send a day’s transcript to the AI app you use, as a text file, only when you choose.</p>
+        </article>
+        <article class="feat">
+          <span class="ico" data-icon="globe"></span>
+          <h3>In 13 languages</h3>
+          <p>DayRecall comes in 13 languages, and it can follow a conversation that switches between them.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="privacy">
+    <div class="wrap">
+      <p class="kicker">Privacy</p>
+      <h2>Text only. On your iPhone. Your call.</h2>
+      <div class="priv">
+        <div class="stage t-dark" data-stage="privacy" role="img" aria-label="Memories slide into the iPhone and it locks; anything heading for the cloud is stopped and comes back."></div>
+        <div class="points">
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Text, not audio</h3>
+            <p>Speech is turned into text on your iPhone, and then the audio is deleted.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>No account, no server of ours</h3>
+            <p>There’s nothing to sign up for, and we don’t run servers that see your day.</p>
+          </div>
+          <div class="point">
+            <h3><span class="tick" data-icon="check"></span>Nothing leaves without you</h3>
+            <p>Answers use Apple’s on-device model. Handing a day to an AI app, or using your own cloud API, happens only when you allow it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="consent">
+        <div class="stage t-dark" data-stage="consent" role="img" aria-label="You tell the person you are talking with; they agree, and the two of you are linked."></div>
+        <div>
+          <h3>Tell the people around you</h3>
+          <p>Tell the people you talk with that DayRecall is listening. Some places require everyone’s consent even when only text is kept, so follow the rules where you are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+      <h2>DayRecall</h2>
+      <p class="sub">AI memory for your whole day.</p>
+      <span class="pill"><span class="dot"></span>Coming soon to the App Store</span>
+      <p class="small">For iPhone and Apple Watch · In 13 languages</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 DayRecall</span>
+    <span class="tm">Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</span>
+    <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </div>
+</footer>
 </body>
 </html>
