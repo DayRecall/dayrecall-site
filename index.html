@@ -3,25 +3,150 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DayRecall — AI memory for your whole day</title>
-<meta name="description" content="For people who forget things. DayRecall listens during the hours you choose, best on Apple Watch and also on iPhone alone, keeps what was said as text on your iPhone, and answers questions about your day with the exact words.">
+<title>DayRecall — AI memory for your whole day | Apple Watch & iPhone</title>
+<meta name="description" content="DayRecall listens on Apple Watch or iPhone during the hours you choose, turns what was said into text on your iPhone, and answers questions about your day.">
 <link rel="canonical" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="en" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
 <link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
 <meta name="theme-color" content="#0B0C0E">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon-1024.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DayRecall">
 <meta property="og:title" content="DayRecall — AI memory for your whole day">
 <meta property="og:description" content="Your Apple Watch, or just your iPhone, listens during the hours you choose and keeps what was said as text. Ask about your day any time.">
 <meta property="og:url" content="https://dayrecall.com/">
-<meta property="og:image" content="https://dayrecall.com/assets/icon-1024.png">
+<meta property="og:image" content="https://dayrecall.com/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DayRecall: AI memory for your whole day. Best with Apple Watch, works with iPhone alone.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/site.css?v=55239127">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dayrecall.com/#org",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "logo": "https://dayrecall.com/assets/icon-1024.png",
+      "email": "support@dayrecall.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dayrecall.com/#website",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "inLanguage": [
+        "en",
+        "zh-Hans"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dayrecall.com/#app",
+      "name": "DayRecall",
+      "description": "An AI memory app for Apple Watch and iPhone. During the hours you choose it listens, keeps what was said as text on your iPhone, and answers questions about your day with the exact words.",
+      "url": "https://dayrecall.com/",
+      "image": "https://dayrecall.com/assets/icon-1024.png",
+      "operatingSystem": "iOS 26, watchOS 26",
+      "applicationCategory": "UtilitiesApplication",
+      "featureList": [
+        "Listens all day on Apple Watch, with no iPhone nearby; works with iPhone alone too",
+        "Speech becomes text on the iPhone and the audio is deleted",
+        "Ask about your day and get the exact words, with the moment they were said",
+        "Marks who said what: Me, Other 1, Other 2",
+        "Follows conversations in up to three languages, translated into yours",
+        "Picks out to-dos, deadlines and meetings for you to confirm",
+        "No account and no server; answers use Apple’s on-device model"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dayrecall.com/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is DayRecall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall is an AI memory app for Apple Watch and iPhone, made for people who forget things. During the hours you choose, it listens, keeps what was said as text on your iPhone, and answers questions about your day with the exact words and where they came from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an Apple Watch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. DayRecall works best with Apple Watch, and your iPhone can also listen on its own. When both listen, your day is one timeline, and what both heard is shown once."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my iPhone have to stay near my watch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your Apple Watch keeps its recordings and sends them to your iPhone every two hours, or as soon as the two reconnect, for example when you get home in the evening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does DayRecall keep audio recordings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Speech is turned into text on your iPhone, and then the audio is deleted. Only the text is kept."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my data, and who can see it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On your iPhone. There is no account and no DayRecall server. Answers use Apple’s on-device model, and nothing leaves your iPhone unless you choose to use your own cloud API or hand a day to an AI app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much battery does it use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very little. Our in-house ultra-light speech model keeps only the moments when someone is talking. In internal testing on Apple Watch Series 11, listening added about 0.9% battery per hour."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages does it support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app comes in 13 languages. It can also transcribe a conversation that switches between up to three languages, and translate the other languages into yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When can I get DayRecall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall is in beta and coming soon to the App Store."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/site.css?v=b0655b41">
 <script src="/assets/stages.js?v=d03301f1" defer></script>
 <script src="/assets/store.js?v=267b0b59" defer></script>
 </head>
@@ -246,6 +371,49 @@
           <h3>Tell the people around you</h3>
           <p>Tell the people you talk with that DayRecall is listening. Some places require everyone’s consent even when only text is kept, so follow the rules where you are.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <p class="kicker">FAQ</p>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>What is DayRecall?</summary>
+          <p>DayRecall is an AI memory app for Apple Watch and iPhone, made for people who forget things. During the hours you choose, it listens, keeps what was said as text on your iPhone, and answers questions about your day with the exact words and where they came from.</p>
+        </details>
+        <details>
+          <summary>Do I need an Apple Watch?</summary>
+          <p>No. DayRecall works best with Apple Watch, and your iPhone can also listen on its own. When both listen, your day is one timeline, and what both heard is shown once.</p>
+        </details>
+        <details>
+          <summary>Does my iPhone have to stay near my watch?</summary>
+          <p>No. Your Apple Watch keeps its recordings and sends them to your iPhone every two hours, or as soon as the two reconnect, for example when you get home in the evening.</p>
+        </details>
+        <details>
+          <summary>Does DayRecall keep audio recordings?</summary>
+          <p>No. Speech is turned into text on your iPhone, and then the audio is deleted. Only the text is kept.</p>
+        </details>
+        <details>
+          <summary>Where is my data, and who can see it?</summary>
+          <p>On your iPhone. There is no account and no DayRecall server. Answers use Apple’s on-device model, and nothing leaves your iPhone unless you choose to use your own cloud API or hand a day to an AI app.</p>
+        </details>
+        <details>
+          <summary>How much battery does it use?</summary>
+          <p>Very little. Our in-house ultra-light speech model keeps only the moments when someone is talking. In internal testing on Apple Watch Series 11, listening added about 0.9% battery per hour.</p>
+        </details>
+        <details>
+          <summary>Which languages does it support?</summary>
+          <p>The app comes in 13 languages. It can also transcribe a conversation that switches between up to three languages, and translate the other languages into yours.</p>
+        </details>
+        <details>
+          <summary>When can I get DayRecall?</summary>
+          <p>DayRecall is in beta and coming soon to the App Store.</p>
+        </details>
       </div>
     </div>
   </section>

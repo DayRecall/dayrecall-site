@@ -3,25 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DayRecall — 你一整天的 AI 记忆</title>
-<meta name="description" content="写给容易忘事的人。DayRecall 在你选定的时段里替你听着，最适合 Apple Watch，只用 iPhone 也行；说过的话变成文字留在 iPhone 上，随时回答关于这一天的问题，并给出原话。">
+<title>DayRecall — 你一整天的 AI 记忆｜Apple Watch 录音自动转文字</title>
+<meta name="description" content="DayRecall 用 Apple Watch 或 iPhone 在你选定的时段里录音，自动转成文字，只存在你的 iPhone 上；随时问问这一天，原话都找得回来。">
+<meta name="keywords" content="Apple Watch 录音,录音转文字,AI 记忆,AI 录音,会议记录,语音转文字,手表录音,健忘,DayRecall">
 <link rel="canonical" href="https://dayrecall.com/zh/">
 <link rel="alternate" hreflang="en" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
 <link rel="alternate" hreflang="x-default" href="https://dayrecall.com/">
 <meta name="theme-color" content="#0B0C0E">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icon-1024.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DayRecall">
 <meta property="og:title" content="DayRecall — 你一整天的 AI 记忆">
 <meta property="og:description" content="Apple Watch（或者只用 iPhone）在你选定的时段里替你听着，说过的话都变成文字。随时问问这一天。">
 <meta property="og:url" content="https://dayrecall.com/zh/">
-<meta property="og:image" content="https://dayrecall.com/assets/icon-1024.png">
+<meta property="og:image" content="https://dayrecall.com/assets/og-zh.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DayRecall：你一整天的 AI 记忆。最适合 Apple Watch，只用 iPhone 也行。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/site.css?v=55239127">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dayrecall.com/#org",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "logo": "https://dayrecall.com/assets/icon-1024.png",
+      "email": "support@dayrecall.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dayrecall.com/#website",
+      "name": "DayRecall",
+      "url": "https://dayrecall.com/",
+      "inLanguage": [
+        "en",
+        "zh-Hans"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://dayrecall.com/#app",
+      "name": "DayRecall",
+      "description": "一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App：在你选定的时段里替你听着，把说过的话变成文字存在 iPhone 上，随时回答关于这一天的问题，并给出原话。",
+      "url": "https://dayrecall.com/zh/",
+      "image": "https://dayrecall.com/assets/icon-1024.png",
+      "operatingSystem": "iOS 26, watchOS 26",
+      "applicationCategory": "UtilitiesApplication",
+      "featureList": [
+        "Apple Watch 全天聆听，手机不在身边也可以；只用 iPhone 也能听",
+        "在 iPhone 上把说话转成文字，随后删除录音",
+        "随时问问这一天，给出原话和说话的时刻",
+        "分清是谁说的：我、其他人 1、其他人 2",
+        "一段对话最多三种语言，并翻译成你的母语",
+        "找出待办、截止日期和会议，由你确认",
+        "不用账号，没有服务器；回答由 Apple 设备端模型完成"
+      ],
+      "publisher": {
+        "@id": "https://dayrecall.com/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dayrecall.com/zh/#faq",
+      "inLanguage": "zh-Hans",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "DayRecall 是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall 是一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App，写给容易忘事的人。在你选定的时段里，它替你听着，把说过的话变成文字存在 iPhone 上，随时回答关于这一天的问题，并给出原话和出处。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "必须有 Apple Watch 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不必。DayRecall 最适合搭配 Apple Watch，只用 iPhone 也能单独聆听。两台一起用时，一天只有一条时间线，两台都听到的话只显示一次。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "iPhone 需要一直在手表旁边吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。Apple Watch 会先把录音存着，每 2 小时同步到 iPhone 一次；手机不在身边时，等两台设备再次连上（比如晚上回到家）就自动补上。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall 会保存录音吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。说的话在 iPhone 上转成文字后，录音随即删除，只保留文字。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "数据存在哪里？谁能看到？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "存在你的 iPhone 上。不用注册账号，我们也没有服务器。回答由 Apple 设备端模型完成；除非你自己选择使用云端 API，或把某一天交给 AI App，否则什么都不会离开你的 iPhone。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "耗电多吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "很少。自研超轻量人声模型只保留有人说话的片段。在 Apple Watch Series 11 上的内部测试中，聆听时每小时额外耗电约 0.9%。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持哪些语言？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "App 界面支持 13 种语言。转写时，一段对话里最多可以混用三种语言，其他语言的句子还能翻译成你的母语。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么时候能用上？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall 正在内测，即将登陆 App Store。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/site.css?v=b0655b41">
 <script src="/assets/stages.js?v=d03301f1" defer></script>
 <script src="/assets/store.js?v=267b0b59" defer></script>
 </head>
@@ -246,6 +372,49 @@
           <h3>告诉身边的人</h3>
           <p>请告诉和你交谈的人，DayRecall 正在听。有些地方即使只保留文字，也要求征得所有人的同意，请遵守你所在地的规定。</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <p class="kicker">常见问题</p>
+        <h2>你可能想问</h2>
+      </div>
+      <div class="qa">
+        <details open>
+          <summary>DayRecall 是什么？</summary>
+          <p>DayRecall 是一款适用于 Apple Watch 和 iPhone 的 AI 记忆 App，写给容易忘事的人。在你选定的时段里，它替你听着，把说过的话变成文字存在 iPhone 上，随时回答关于这一天的问题，并给出原话和出处。</p>
+        </details>
+        <details>
+          <summary>必须有 Apple Watch 吗？</summary>
+          <p>不必。DayRecall 最适合搭配 Apple Watch，只用 iPhone 也能单独聆听。两台一起用时，一天只有一条时间线，两台都听到的话只显示一次。</p>
+        </details>
+        <details>
+          <summary>iPhone 需要一直在手表旁边吗？</summary>
+          <p>不需要。Apple Watch 会先把录音存着，每 2 小时同步到 iPhone 一次；手机不在身边时，等两台设备再次连上（比如晚上回到家）就自动补上。</p>
+        </details>
+        <details>
+          <summary>DayRecall 会保存录音吗？</summary>
+          <p>不会。说的话在 iPhone 上转成文字后，录音随即删除，只保留文字。</p>
+        </details>
+        <details>
+          <summary>数据存在哪里？谁能看到？</summary>
+          <p>存在你的 iPhone 上。不用注册账号，我们也没有服务器。回答由 Apple 设备端模型完成；除非你自己选择使用云端 API，或把某一天交给 AI App，否则什么都不会离开你的 iPhone。</p>
+        </details>
+        <details>
+          <summary>耗电多吗？</summary>
+          <p>很少。自研超轻量人声模型只保留有人说话的片段。在 Apple Watch Series 11 上的内部测试中，聆听时每小时额外耗电约 0.9%。</p>
+        </details>
+        <details>
+          <summary>支持哪些语言？</summary>
+          <p>App 界面支持 13 种语言。转写时，一段对话里最多可以混用三种语言，其他语言的句子还能翻译成你的母语。</p>
+        </details>
+        <details>
+          <summary>什么时候能用上？</summary>
+          <p>DayRecall 正在内测，即将登陆 App Store。</p>
+        </details>
       </div>
     </div>
   </section>

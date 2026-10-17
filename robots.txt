@@ -1,0 +1,6 @@
+# Search engines and AI assistants are welcome to read every page.
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://dayrecall.com/sitemap.xml

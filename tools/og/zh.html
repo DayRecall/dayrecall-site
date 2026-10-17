@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>DayRecall share image</title>
+<!-- Source of assets/og-zh.png: open with ?still in a 1200x630 window and take a screenshot. -->
+<link rel="stylesheet" href="/assets/site.css?v=b0655b41">
+<script src="/assets/stages.js?v=d03301f1" defer></script>
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #0B0C0E; }
+  .og {
+    width: 1200px; height: 630px; box-sizing: border-box; padding: 60px 72px;
+    display: grid; grid-template-columns: minmax(0, 1fr) 430px; gap: 56px; align-items: center;
+    background: radial-gradient(760px 520px at 84% 46%, rgba(205, 240, 74, 0.15), transparent 62%), var(--night);
+    color: var(--night-ink);
+  }
+  .og .brand { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; }
+  .og .brand img { width: 54px; height: 54px; }
+  .og h1 { font-size: 78px; margin: 44px 0 24px; }
+  .og p { font-size: 25px; color: var(--night-ink2); margin: 0; }
+  .og .url { margin-top: 34px; font-size: 22px; color: var(--lime); font-weight: 650; }
+</style>
+</head>
+<body>
+<div class="og">
+  <div>
+    <div class="brand"><img src="/assets/icon.svg" alt=""><span>DayRecall</span></div>
+    <h1><span class="nw">你<span class="hl">一整天</span>的</span><br>AI&nbsp;记忆</h1>
+    <p>最适合 Apple Watch · 只用 iPhone 也行</p>
+    <p class="url">dayrecall.com</p>
+  </div>
+  <div class="stage ask t-dark" data-stage="ask"></div>
+</div>
+</body>
+</html>
