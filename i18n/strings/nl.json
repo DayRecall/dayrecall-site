@@ -7,7 +7,7 @@
   "app_description": "Een AI-geheugenapp voor Apple Watch en iPhone. Tijdens de uren die je kiest luistert hij mee, bewaart wat er gezegd is als tekst op je iPhone en beantwoordt vragen over je dag met de exacte woorden.",
   "app_features": [
     "Luistert de hele dag mee op Apple Watch, zonder iPhone in de buurt; werkt ook alleen met iPhone",
-    "Spraak wordt op je iPhone omgezet in tekst en de audio wordt verwijderd",
+    "Spraak wordt tekst op de iPhone; audio wordt niet bewaard",
     "Vraag naar je dag en krijg de exacte woorden terug, met het moment waarop ze werden gezegd",
     "Markeert wie wat zei: Ik, Ander 1, Ander 2",
     "Volgt gesprekken in maximaal drie talen, vertaald naar jouw taal",
@@ -42,13 +42,13 @@
   "how_05": "Je Apple Watch luistert tijdens de uren die je kiest, ook als je iPhone is achtergebleven. Eén tik in de ochtend, en het stopt vanzelf. Ons eigen ultralichte spraakmodel draait direct op het horloge en bewaart alleen de momenten waarop iemand praat.",
   "how_06": "Het geluid gaat de prullenbak in en wordt regels tekst, gemarkeerd als Ik en Ander 1; een vergadering, een taak en een deadline worden eruit gehaald.",
   "how_07": "Voor je geordend",
-  "how_08": "Je iPhone zet de spraak op het apparaat om in tekst, verwijdert het geluid en haalt de taken, deadlines en vergaderingen eruit. Hij kan ook onderscheiden wat je zei van wat anderen zeiden.",
+  "how_08": "Je iPhone zet spraak op het apparaat om in tekst, bewaart geen audio en haalt taken, deadlines en vergaderingen eruit. Hij kan ook onderscheiden wat jij zei van wat anderen zeiden.",
   "how_09": "Het geheugen gaat de iPhone in en die vergrendelt zich; alles op weg naar de cloud wordt tegengehouden en komt terug.",
   "how_10": "Standaard privé",
   "how_11": "Je geheugen blijft op je iPhone, en antwoorden gebruiken het model van Apple dat op het apparaat draait. Later kun je je eigen cloud-API kiezen; er wordt niets verstuurd voordat je dat toestaat.",
   "devices_01": "Apparaten",
   "devices_02": "Je horloge heeft je iPhone niet in de buurt nodig.",
-  "devices_03": "Apple Watch luistert de hele dag op zichzelf. Opnamen wachten op het horloge en gaan elke twee uur naar je iPhone. Is je iPhone niet in de buurt, dan worden ze alsnog overgezet zodra de twee weer verbinding maken, bijvoorbeeld als je ’s avonds thuiskomt. Je iPhone hoeft nooit verbonden te blijven.",
+  "devices_03": "Apple Watch luistert de hele dag zelfstandig. Wat het horloge hoort, blijft daar wachten en gaat elke twee uur naar je iPhone. Is je iPhone niet in de buurt, dan wordt het overgezet zodra de twee weer verbinding maken, bijvoorbeeld als je ’s avonds thuiskomt. Je iPhone hoeft niet voortdurend verbonden te zijn.",
   "devices_04": "Best</span></h3><p>De hele dag aan je pols, zonder telefoon nodig.",
   "devices_05": "Alleen een iPhone</h3><p>Geen Apple Watch? Je iPhone kan zelf luisteren.",
   "devices_06": "Beide samen</h3><p>Eén tijdlijn voor de dag. Wat beide toestellen hoorden, staat er één keer in, en als het horloge stopt, neemt je iPhone het over.",
@@ -105,8 +105,8 @@
   "privacy_01": "Privacy",
   "privacy_02": "Alleen tekst. Op je iPhone. Jij beslist.",
   "privacy_03": "Het geheugen gaat de iPhone in en die vergrendelt zich; alles op weg naar de cloud wordt tegengehouden en komt terug.",
-  "privacy_04": "Tekst, geen audio",
-  "privacy_05": "Spraak wordt op je iPhone omgezet in tekst en daarna wordt de audio verwijderd.",
+  "privacy_04": "Alleen tekst, geen audio bewaard",
+  "privacy_05": "Wat er wordt gezegd, wordt op je iPhone omgezet in tekst. De audio wordt automatisch verwijderd zodra die is getranscribeerd en wordt niet bewaard.",
   "privacy_06": "Geen account, geen server van ons",
   "privacy_07": "Je hoeft je nergens aan te melden, en wij draaien geen servers die je dag zien.",
   "privacy_08": "Niets gaat de deur uit zonder jou",
@@ -121,36 +121,155 @@
   "foot_01": "Apple Watch en iPhone zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio’s.",
   "faq": [
     {
-      "q": "Wat is DayRecall?",
-      "a": "DayRecall is een AI-geheugenapp voor Apple Watch en iPhone, gemaakt voor mensen die dingen vergeten. Tijdens de uren die je kiest, luistert hij mee, bewaart hij wat er is gezegd als tekst op je iPhone en beantwoordt hij vragen over je dag met de exacte woorden en waar die vandaan komen."
+      "title": "De basis",
+      "items": [
+        {
+          "q": "Wat is DayRecall?",
+          "a": "DayRecall is een AI-geheugenapp voor Apple Watch en iPhone, gemaakt voor mensen die dingen vergeten. Tijdens de uren die je kiest, luistert de app, bewaart wat er is gezegd als tekst op je iPhone en beantwoordt vragen over je dag met de exacte woorden en hun bron."
+        },
+        {
+          "q": "Heb ik een Apple Watch nodig?",
+          "a": "Nee. DayRecall werkt het best met Apple Watch, maar je iPhone kan ook zelfstandig luisteren. Als beide luisteren, komt je dag op één tijdlijn en verschijnt wat beide hebben gehoord maar één keer."
+        },
+        {
+          "q": "Bewaart DayRecall audio-opnamen?",
+          "a": "Nee. Wat er wordt gezegd, wordt op je iPhone omgezet in tekst. De audio wordt automatisch verwijderd zodra die is getranscribeerd. Alleen de tekst blijft bewaard."
+        },
+        {
+          "q": "Waar staan mijn gegevens en wie kan ze zien?",
+          "a": "Op je iPhone en in de reservekopie ervan, als je die gebruikt. Er is geen account en geen DayRecall-server, dus wij kunnen je gegevens niet zien. Antwoorden gebruiken het model van Apple op het apparaat. Niets verlaat je iPhone tenzij je zelf je eigen cloud-API gebruikt of een dag aan een AI-app overdraagt."
+        }
+      ]
     },
     {
-      "q": "Heb ik een Apple Watch nodig?",
-      "a": "Nee. DayRecall werkt het best met Apple Watch, en je iPhone kan ook zelf luisteren. Als beide luisteren, is je dag één tijdlijn en wordt wat beide hoorden één keer getoond."
+      "title": "Apparaten en vereisten",
+      "items": [
+        {
+          "q": "Wat heb ik nodig voor DayRecall?",
+          "a": "Een iPhone met iOS 26 of nieuwer die spraakherkenning van Apple op het apparaat ondersteunt. Een Apple Watch met watchOS 26 of nieuwer is optioneel, maar aanbevolen. Voor antwoorden en taken is ook Apple Intelligence nodig; voor antwoorden kun je in plaats daarvan je eigen cloud-API gebruiken."
+        },
+        {
+          "q": "Welke iPhone-modellen werken?",
+          "a": "DayRecall vereist iOS 26 of nieuwer. Dat draait op iPhone 11 en nieuwer en iPhone SE (2e generatie) en nieuwer. Voor spraak naar tekst is ook spraakherkenning van Apple op het apparaat nodig. Apple biedt die niet op sommige oudere modellen, waaronder iPhone 11-modellen en iPhone SE (2e generatie), dus we raden iPhone 12 of nieuwer aan. Als je iPhone niet kan transcriberen, laat DayRecall dat weten. Antwoorden en taken met Apple Intelligence vereisen iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air of iPhone 16 of nieuwer."
+        },
+        {
+          "q": "Welke Apple Watch-modellen werken?",
+          "a": "Elke Apple Watch met watchOS 26 of nieuwer: Apple Watch Series 6 en nieuwer, Apple Watch SE (2e generatie) en nieuwer, en alle Apple Watch Ultra-modellen. Het horloge moet gekoppeld zijn aan een iPhone waarop DayRecall draait. Apple Watch is optioneel: je iPhone kan zelfstandig luisteren."
+        },
+        {
+          "q": "Moet mijn iPhone in de buurt van mijn horloge blijven?",
+          "a": "Nee. Je Apple Watch houdt wat hij heeft gehoord tijdelijk vast en geeft het elke twee uur door aan je iPhone, of zodra beide weer verbinding hebben, bijvoorbeeld wanneer je ’s avonds thuiskomt."
+        },
+        {
+          "q": "Werkt het zonder internetverbinding?",
+          "a": "Ja. Luisteren, transcriptie, antwoorden en taken draaien op je apparaten. Ze werken offline zodra iOS de benodigde taalmodellen heeft gedownload. Voor locaties op de kaart en je eigen cloud-API is een verbinding nodig."
+        }
+      ]
     },
     {
-      "q": "Moet mijn iPhone in de buurt van mijn horloge blijven?",
-      "a": "Nee. Je Apple Watch bewaart zijn opnamen en stuurt ze elke twee uur naar je iPhone, of zodra de twee weer verbinding maken, bijvoorbeeld als je ’s avonds thuiskomt."
+      "title": "Talen",
+      "items": [
+        {
+          "q": "Waarom hangen de ondersteunde talen af van Apple?",
+          "a": "DayRecall werkt op je iPhone met ingebouwde technologie van Apple: spraakherkenning voor transcriptie, vertaling van Apple voor vertalingen en Apple Intelligence voor antwoorden en taken. Elk ondersteunt een eigen reeks talen. Apple bepaalt die en breidt ze uit met iOS-updates; sommige vereisen een recentere iPhone. Een taal kan dus wel klaar zijn voor transcriptie maar nog niet voor vertaling, of op de ene iPhone werken en op de andere niet. Een iOS-update kan talen toevoegen."
+        },
+        {
+          "q": "Welke talen kan DayRecall transcriberen?",
+          "a": "Je kunt kiezen uit Engels (VS, VK), Chinees (Mandarijn), Japans, Koreaans, Spaans, Frans, Duits, Italiaans, Portugees (Brazilië, Portugal), Nederlands, Zweeds, Deens en Turks. Elke taal werkt alleen als de spraakherkenning van Apple op het apparaat die op jouw iPhone ondersteunt. Zo niet, dan markeert DayRecall de taal als niet ondersteund. Bij het eerste gebruik van een taal downloadt iOS het bijbehorende spraakmodel."
+        },
+        {
+          "q": "Welke talen kan de app vertalen?",
+          "a": "Regels in je andere werktalen kunnen met de vertaling van Apple op het apparaat naar je hoofdtaal worden vertaald. Een talenpaar werkt dus alleen als Apple het op jouw iPhone ondersteunt. In iOS 27 geldt dat voor alle talen die DayRecall transcribeert; in iOS 26 voor minder. Deens en Zweeds vallen daar bijvoorbeeld buiten. iOS downloadt elke taal vóór het eerste gebruik. Apple vermeldt de actuele talen op de <a href=\"https://www.apple.com/ios/feature-availability/\">pagina met beschikbare functies</a>."
+        },
+        {
+          "q": "Welke talen werken voor antwoorden en taken?",
+          "a": "Antwoorden en taken gebruiken Apple Intelligence. Dat ondersteunt Engels, Chinees (vereenvoudigd en traditioneel), Deens, Nederlands, Frans, Duits, Italiaans, Japans, Koreaans, Noors, Portugees, Spaans, Zweeds, Turks en Vietnamees. De taal van je iPhone en die van Siri moeten op dezelfde ondersteunde taal staan. Apple Intelligence werkt momenteel niet op iPhones die op het Chinese vasteland zijn gekocht, of op het Chinese vasteland met een Apple Account voor het Chinese vasteland. Daar kun je via je eigen cloud-API nog wel antwoorden krijgen, maar geen taken. Zie <a href=\"https://support.apple.com/en-us/121115\">de handleiding van Apple over Apple Intelligence</a>."
+        },
+        {
+          "q": "In welke talen is de app beschikbaar?",
+          "a": "De menu’s en schermen van de app zijn beschikbaar in 13 talen: Engels, vereenvoudigd Chinees, Deens, Nederlands, Frans, Duits, Italiaans, Japans, Koreaans, Portugees (Portugal), Spaans, Zweeds en Turks. Dit staat los van de talen die de app kan transcriberen."
+        },
+        {
+          "q": "Kan de app een gesprek in meerdere talen volgen?",
+          "a": "Ja. Zet <strong>Meertalige transcriptie</strong> aan en voeg maximaal twee andere werktalen toe. DayRecall volgt een gesprek dat tussen deze talen wisselt en transcribeert elk deel in de taal waarin het werd gesproken. Regels in de andere talen kunnen daarna naar je hoofdtaal worden vertaald."
+        }
+      ]
     },
     {
-      "q": "Bewaart DayRecall audio-opnamen?",
-      "a": "Nee. Spraak wordt op je iPhone omgezet in tekst en daarna wordt de audio verwijderd. Alleen de tekst blijft bewaard."
+      "title": "DayRecall gebruiken",
+      "items": [
+        {
+          "q": "Hoe begin en stop ik met luisteren?",
+          "a": "Stel je luisteruren één keer in, bijvoorbeeld werkdagen van 9:00 tot 18:00. Als ze beginnen, vraagt je Apple Watch of hij moet starten: één tik is genoeg. Aan het einde stopt hij vanzelf. Je kunt ook eerder stoppen of een dag overslaan."
+        },
+        {
+          "q": "Wat kan ik vragen?",
+          "a": "Alles over je dag, in je eigen woorden: ‘Wat heeft Sam me vandaag beloofd?’ of ‘Wanneer moet het rapport klaar zijn?’ Elk antwoord toont waar het vandaan komt, tot op de uitgesproken regel nauwkeurig."
+        },
+        {
+          "q": "Hoe werken taken?",
+          "a": "DayRecall haalt beloften, deadlines en vergaderingen uit je dag en wacht tot jij ze bevestigt. Niets komt in je agenda of Herinneringen voordat je ja zegt."
+        },
+        {
+          "q": "Hoe onderscheidt DayRecall stemmen?",
+          "a": "Zet <strong>Markeer wie spreekt</strong> aan en lees vijf korte kaartjes hardop voor, ongeveer een minuut. Vanaf dan krijgen jouw regels het label Ik en krijgt elke andere spreker in een gesprek een eigen nummer: Ander 1, Ander 2 enzovoort. Je stemprofiel blijft op je iPhone en dat van anderen wordt niet bewaard. De functie is optioneel en staat standaard uit."
+        },
+        {
+          "q": "Kan ik een dag aan mijn eigen AI-app overdragen?",
+          "a": "Ja. <strong>Draag de dag over aan een AI-app</strong> maakt van een dag een tekstbestand met een vraag die jij kiest. Jij kiest de app in het deelmenu; DayRecall verstuurt zelf niets. Om taken terug te halen, kopieer je het antwoord van de AI en tik je op <strong>Haal het AI-antwoord terug</strong>."
+        },
+        {
+          "q": "Kan ik een audiobestand importeren?",
+          "a": "Ja. Importeer een audiobestand en DayRecall zet het op je iPhone om in tekst, net als alle andere audio. De app werkt met een eigen kopie, dus je oorspronkelijke bestand blijft ongewijzigd."
+        }
+      ]
     },
     {
-      "q": "Waar staan mijn gegevens en wie kan ze zien?",
-      "a": "Op je iPhone. Er is geen account en geen DayRecall-server. Antwoorden gebruiken het model van Apple dat op het apparaat draait, en niets verlaat je iPhone tenzij je ervoor kiest je eigen cloud-API te gebruiken of een dag aan een AI-app te geven."
+      "title": "Batterij en snelheid",
+      "items": [
+        {
+          "q": "Hoeveel batterij verbruikt de app?",
+          "a": "Heel weinig. Ons eigen ultralichte spraakmodel bewaart alleen de momenten waarop iemand praat. In interne tests met Apple Watch Series 11 kostte luisteren ongeveer 0,9% extra batterij per uur."
+        },
+        {
+          "q": "Hoe snel verschijnt de tekst?",
+          "a": "Je horloge draagt ongeveer elke twee uur, en wanneer het stopt met luisteren, over wat het heeft gehoord. Je iPhone zet het bij ontvangst om in tekst. Wil je de tekst eerder, open dan DayRecall en tik op <strong>Synchroniseer nu</strong>. In interne tests op iPhone 17 Pro Max werden 3 minuten gesprek in 17 seconden verwerkt."
+        }
+      ]
     },
     {
-      "q": "Hoeveel batterij gebruikt het?",
-      "a": "Heel weinig. Ons eigen ultralichte spraakmodel bewaart alleen de momenten waarop iemand praat. In interne tests op Apple Watch Series 11 voegde luisteren ongeveer 0,9% extra batterijverbruik per uur toe."
+      "title": "Privacy en toestemming",
+      "items": [
+        {
+          "q": "Verlaat er iets mijn iPhone?",
+          "a": "Alleen als jij dat kiest. Met je eigen cloud-API stuurt elke vraag je vraag en korte bijpassende fragmenten uit je transcripties naar die dienst. Draag je een dag over aan een AI-app, dan ontvangt die app het tekstbestand dat jij verstuurt. Locaties gebruiken Apple Kaarten en iCloud Backup bevat je gegevens als je dat gebruikt. De Privacyverklaring geeft de details."
+        },
+        {
+          "q": "Volgt DayRecall mij of toont het advertenties?",
+          "a": "Nee. DayRecall heeft geen advertenties, geen analysefuncties, geen tracking en geen code van derden die gegevens verzamelt. Om problemen te helpen oplossen, bewaart de app maximaal 14 dagen op je apparaten een logboek van wat hij deed, nooit van wat er werd gezegd. Dat logboek verlaat je iPhone alleen als je het deelt."
+        },
+        {
+          "q": "Hoe verwijder ik mijn gegevens?",
+          "a": "Verwijder een opname, met de bijbehorende tekst en taken, vanaf de pagina van die opname. Of verwijder alles via <strong>Instellingen › Privacy › Verwijder alle herinneringen</strong>. <strong>Verwijder mijn stem</strong> haalt je stemprofiel weg. Als je de app verwijdert, verdwijnen de gegevens die hij op je apparaten heeft opgeslagen. Kopieën in oudere reservekopieën blijven bestaan totdat die worden vervangen."
+        },
+        {
+          "q": "Moet ik anderen vertellen dat DayRecall luistert?",
+          "a": "Ja. Vertel het de mensen met wie je praat. Op sommige plaatsen is toestemming van iedereen nodig, zelfs als alleen tekst wordt bewaard. Volg dus de regels waar je bent; die verantwoordelijkheid ligt bij jou, zoals onze Gebruiksvoorwaarden uitleggen."
+        }
+      ]
     },
     {
-      "q": "Welke talen worden ondersteund?",
-      "a": "De app is in 13 talen beschikbaar. Hij kan ook een gesprek transcriberen waarin wordt gewisseld tussen maximaal drie talen, en de andere talen vertalen naar jouw taal."
-    },
-    {
-      "q": "Wanneer kan ik DayRecall krijgen?",
-      "a": "DayRecall is in beta en binnenkort beschikbaar in de App Store."
+      "title": "Beschikbaarheid en hulp",
+      "items": [
+        {
+          "q": "Wanneer kan ik DayRecall krijgen?",
+          "a": "DayRecall is in bèta en komt binnenkort naar de App Store."
+        },
+        {
+          "q": "Hoe krijg ik hulp?",
+          "a": "Schrijf naar support@dayrecall.com en vertel wanneer het gebeurde en op welk apparaat. Een logboek helpt het meest: <strong>Instellingen › Ontwikkelaarsopties › Logboeken › Deel logboek</strong>."
+        }
+      ]
     }
   ],
   "lang_label": "Taal",
@@ -243,5 +362,16 @@
         "Archief"
       ]
     }
-  }
+  },
+  "nav_09": "FAQ",
+  "foot_faq": "FAQ",
+  "foot_terms": "Gebruiksvoorwaarden",
+  "foot_social": "Volg DayRecall",
+  "faq_all": "Alle vragen",
+  "faq_page_title": "Veelgestelde vragen — DayRecall",
+  "faq_page_description": "Antwoorden over DayRecall: wat je nodig hebt, welke iPhone- en Apple Watch-modellen en talen werken, hoe luisteren en transcriptie werken, wat wordt bewaard, batterij en privacy.",
+  "faq_page_lead": "Zo werkt DayRecall, dit heb je nodig en dit wordt bewaard. Staat je vraag er niet bij? Schrijf ons.",
+  "faq_page_toc": "Onderwerpen",
+  "faq_page_more": "Nog een vraag?",
+  "faq_page_more_text": "Schrijf ons, dan nemen we contact met je op."
 }

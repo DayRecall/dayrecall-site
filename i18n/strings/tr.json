@@ -7,7 +7,7 @@
   "app_description": "Apple Watch ve iPhone için bir AI hafıza uygulaması. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözlerle yanıtlar.",
   "app_features": [
     "Apple Watch ile gün boyu dinler, yanınızda iPhone olmasa da; yalnız iPhone ile de çalışır",
-    "Konuşma iPhone'da metne dönüşür ve ses silinir",
+    "Konuşma iPhone'da metne dönüşür; ses saklanmaz",
     "Gününüz hakkında sorun, tam sözleri ve söylendikleri anı alın",
     "Kimin ne dediğini işaretler: Ben, Diğer 1, Diğer 2",
     "En fazla üç dildeki konuşmayı takip eder ve sizin dilinize çevirir",
@@ -24,6 +24,7 @@
   "nav_06": "Sesler",
   "nav_07": "Diller",
   "nav_08": "Gizlilik",
+  "nav_09": "SSS",
   "hero_01": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır",
   "hero_02": "AI hafızası <span class=\"hl\">tüm&nbsp;gününüz</span> için",
   "hero_03": "Bir şeyleri unutan herkes için. Apple Watch'unuz ya da yalnızca iPhone'unuz, seçtiğiniz saatlerde dinler; söylenenler iPhone'unuzda metin olarak saklanır. <strong>Gününüz hakkında istediğiniz zaman sorun, söylenenlerin tam sözlerini alın.",
@@ -42,13 +43,13 @@
   "how_05": "iPhone'unuz yanınızda olmasa bile Apple Watch'unuz seçtiğiniz saatlerde dinler. Sabah tek dokunuş yeter; ardından kendiliğinden durur. Kendi geliştirdiğimiz ultra hafif konuşma modeli doğrudan saatin üzerinde çalışır ve yalnızca birinin konuştuğu anları tutar.",
   "how_06": "Ses çöp kutusuna gider ve Ben ile Diğer 1 olarak işaretlenmiş metin satırlarına dönüşür; bir toplantı, bir görev ve bir son tarih ayıklanır.",
   "how_07": "Sizin için düzenlenir",
-  "how_08": "iPhone'unuz konuşmayı cihaz üzerinde metne çevirir, sesi siler ve görevleri, son tarihleri ve toplantıları ayıklar. Sizin söylediklerinizi başkalarının söylediklerinden de ayırt edebilir.",
+  "how_08": "iPhone'unuz konuşmayı cihaz üzerinde metne çevirir, ses saklamaz ve görevleri, son tarihleri ve toplantıları ayıklar. Sizin söylediklerinizi başkalarının söylediklerinden de ayırt edebilir.",
   "how_09": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
   "how_10": "Baştan gizli",
   "how_11": "Anılarınız iPhone'unuzda kalır ve yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir. İsterseniz daha sonra kendi bulut API'nizi seçebilirsiniz; siz izin verene kadar hiçbir şey gönderilmez.",
   "devices_01": "Cihazlar",
   "devices_02": "Apple Watch'unuzun iPhone'unuzun yakınında olması gerekmez.",
-  "devices_03": "Apple Watch gün boyu kendi başına dinler. Kayıtlar Apple Watch'ta bekler ve her iki saatte bir iPhone'unuza gönderilir; iPhone'unuz yanınızda değilse, iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, hemen yetişirler. iPhone'unuzun sürekli bağlı kalması hiç gerekmez.",
+  "devices_03": "Apple Watch gün boyu kendi başına dinler. Duydukları Apple Watch'ta bekler ve her iki saatte bir iPhone'unuza gönderilir; iPhone'unuz yanınızda değilse, iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, aktarılır. iPhone'unuzun sürekli bağlı kalması gerekmez.",
   "devices_04": "En iyisi</span></h3><p>Gün boyu bileğinizde, iPhone'a gerek kalmadan.",
   "devices_05": "Yalnızca iPhone</h3><p>Apple Watch yok mu? iPhone'unuz kendi başına dinleyebilir.",
   "devices_06": "İkisi birlikte</h3><p>Gün için tek bir zaman tüneli. İkisinin de duyduğu şey yalnızca bir kez gösterilir; saat dinlemeyi durdurursa iPhone'unuz devralabilir.",
@@ -105,8 +106,8 @@
   "privacy_01": "Gizlilik",
   "privacy_02": "Yalnızca metin. iPhone'unuzda. Karar sizde.",
   "privacy_03": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
-  "privacy_04": "Ses değil, metin",
-  "privacy_05": "Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir.",
+  "privacy_04": "Yalnızca metin; ses saklanmaz",
+  "privacy_05": "Konuşma iPhone'unuzda metne çevrilir. Ses, yazıya döküldükten sonra otomatik olarak silinir ve saklanmaz.",
   "privacy_06": "Hesap yok, bizim sunucumuz yok",
   "privacy_07": "Kaydolmanız gereken bir şey yok; gününüzü gören sunucuları da çalıştırmıyoruz.",
   "privacy_08": "Siz izin vermeden hiçbir şey dışarı çıkmaz",
@@ -121,44 +122,173 @@
   "foot_01": "Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.",
   "faq": [
     {
-      "q": "DayRecall nedir?",
-      "a": "DayRecall, şeyleri unutan insanlar için tasarlanmış, Apple Watch ve iPhone için bir AI hafıza uygulamasıdır. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları tam sözleri ve nereden geldikleriyle yanıtlar."
+      "title": "Temel bilgiler",
+      "items": [
+        {
+          "q": "DayRecall nedir?",
+          "a": "DayRecall, bir şeyleri unutan insanlar için tasarlanmış, Apple Watch ve iPhone için bir AI hafıza uygulamasıdır. Seçtiğiniz saatlerde dinler, söylenenleri iPhone'unuzda metin olarak saklar ve gününüz hakkındaki soruları söylenen sözlerle ve kaynaklarıyla yanıtlar."
+        },
+        {
+          "q": "Apple Watch'a ihtiyacım var mı?",
+          "a": "Hayır. DayRecall en iyi Apple Watch ile çalışır, iPhone'unuz da kendi başına dinleyebilir. İkisi birlikte dinlediğinde gününüz tek bir zaman çizelgesinde gösterilir ve ikisinin de duyduğu şey yalnızca bir kez görünür."
+        },
+        {
+          "q": "DayRecall ses kayıtlarını saklıyor mu?",
+          "a": "Hayır. Söylenenler iPhone'unuzda metne çevrilir. Ses, yazıya döküldükten sonra otomatik olarak silinir; yalnızca metin saklanır."
+        },
+        {
+          "q": "Verilerim nerede ve kim görebilir?",
+          "a": "Veriler iPhone'unuzdadır; yedekleme kullanıyorsanız yedeğinizde de bulunur. Hesap ve DayRecall sunucusu olmadığı için biz onları göremeyiz. Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Kendi bulut API'nizi kullanmayı ya da bir günü AI uygulamasına aktarmayı seçmediğiniz sürece iPhone'unuzdan hiçbir şey çıkmaz."
+        }
+      ]
     },
     {
-      "q": "Apple Watch'a ihtiyacım var mı?",
-      "a": "Hayır. DayRecall en iyi Apple Watch ile çalışır, iPhone'unuz da kendi başına dinleyebilir. İkisi birlikte dinlediğinde gününüz tek bir zaman tüneli olur ve ikisinin de duyduğu şey yalnızca bir kez gösterilir."
+      "title": "Cihazlar ve gereksinimler",
+      "items": [
+        {
+          "q": "DayRecall'ı kullanmak için ne gerekli?",
+          "a": "iOS 26 veya sonraki bir sürümü çalıştıran ve Apple'ın cihaz üzerinde konuşma tanıma özelliğini destekleyen bir iPhone gerekir. watchOS 26 veya sonraki bir sürümü çalıştıran Apple Watch isteğe bağlıdır, ancak önerilir. Yanıtlar ve görevler için Apple Intelligence da gerekir; yanıtlar için bunun yerine kendi bulut API'nizi kullanabilirsiniz."
+        },
+        {
+          "q": "Hangi iPhone modelleriyle çalışır?",
+          "a": "DayRecall için iOS 26 veya sonrası gerekir. Bu sürüm iPhone 11 ve sonraki modellerde, ayrıca iPhone SE (2. nesil) ve sonraki modellerde çalışır. Konuşmayı metne çevirmek için Apple'ın cihaz üzerinde konuşma tanıma özelliği de gerekir. Apple bu özelliği iPhone 11 modelleri ve iPhone SE (2. nesil) dahil bazı eski modellere sunmadığından iPhone 12 veya sonrasını öneriyoruz. iPhone'unuz yazıya dökemiyorsa DayRecall bunu bildirir. Apple Intelligence ile yanıtlar ve görevler için iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ya da iPhone 16 veya sonrası gerekir."
+        },
+        {
+          "q": "Hangi Apple Watch modelleriyle çalışır?",
+          "a": "watchOS 26 veya sonrasını çalıştıran tüm Apple Watch modelleriyle: Apple Watch Series 6 ve sonrası, Apple Watch SE (2. nesil) ve sonrası, ayrıca tüm Apple Watch Ultra modelleri. DayRecall'ı çalıştıran bir iPhone ile eşleştirilmiş olmalıdır. Apple Watch isteğe bağlıdır; iPhone'unuz tek başına da dinleyebilir."
+        },
+        {
+          "q": "iPhone'um saatimin yakınında durmak zorunda mı?",
+          "a": "Hayır. Apple Watch duyduklarını saklar ve her 2 saatte bir iPhone'unuza aktarır. İki cihaz yeniden bağlandığında da, örneğin akşam eve döndüğünüzde, hemen aktarır."
+        },
+        {
+          "q": "İnternet bağlantısı olmadan çalışır mı?",
+          "a": "Evet. Dinleme, yazıya dökme, yanıtlar ve görevler cihazlarınızda çalışır. iOS gerekli dil modellerini indirdikten sonra bunları çevrimdışı kullanabilirsiniz. Haritada yerleri göstermek ve kendi bulut API'nizi kullanmak için bağlantı gerekir."
+        }
+      ]
     },
     {
-      "q": "iPhone'um saatimin yakınında durmak zorunda mı?",
-      "a": "Hayır. Apple Watch kayıtlarını saklar ve her iki saatte bir ya da iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, iPhone'unuza gönderir."
+      "title": "Diller",
+      "items": [
+        {
+          "q": "Desteklenen diller neden Apple'a bağlı?",
+          "a": "DayRecall işlemleri iPhone'unuzda Apple'ın yerleşik teknolojileriyle yapar: yazıya dökmek için konuşma tanıma, çevirmek için Apple çevirisi, yanıtlar ve görevler için Apple Intelligence. Bunların her birinin desteklediği dilleri Apple belirler ve iOS güncellemeleriyle genişletir; bazıları yeni bir iPhone gerektirir. Dolayısıyla bir dil yazıya dökmede çalışırken çeviride henüz çalışmayabilir veya bir iPhone'da çalışıp diğerinde çalışmayabilir. iOS güncellemesi yeni diller ekleyebilir."
+        },
+        {
+          "q": "DayRecall hangi dilleri yazıya dökebilir?",
+          "a": "İngilizce (ABD, Birleşik Krallık), Çince (Mandarin), Japonca, Korece, İspanyolca, Fransızca, Almanca, İtalyanca, Portekizce (Brezilya, Portekiz), Felemenkçe, İsveççe, Danca ve Türkçe arasından seçebilirsiniz. Her dil yalnızca Apple'ın cihaz üzerinde konuşma tanıma özelliği iPhone'unuzda onu destekliyorsa çalışır; desteklemiyorsa DayRecall dili desteklenmiyor olarak işaretler. Bir dili ilk kez kullandığınızda iOS konuşma modelini indirir."
+        },
+        {
+          "q": "Hangi dilleri çevirebilir?",
+          "a": "Diğer çalışma dillerinizdeki satırlar Apple'ın cihaz üzerindeki çeviri özelliğiyle ana dilinize çevrilebilir. Bunun için dil çiftinin Apple tarafından iPhone'unuzda desteklenmesi gerekir. iOS 27'de DayRecall'ın yazıya dökebildiği tüm diller buna dahildir. iOS 26'da kapsam daha dardır; örneğin Danca ve İsveççe dahil değildir. iOS her dili ilk kullanımdan önce indirir. Güncel diller Apple'ın <a href=\"https://www.apple.com/ios/feature-availability/\">özellik kullanılabilirliği sayfasında</a> listelenir."
+        },
+        {
+          "q": "Yanıtlar ve görevler hangi dillerde çalışır?",
+          "a": "Yanıtlar ve görevler Apple Intelligence kullanır. Desteklenen diller İngilizce, Çince (basitleştirilmiş ve geleneksel), Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Norveççe, Portekizce, İspanyolca, İsveççe, Türkçe ve Vietnamcadır. iPhone'unuzun dili ile Siri'nin dili desteklenen aynı dile ayarlanmalıdır. Apple Intelligence şu anda Çin ana karasında satın alınan iPhone'larda veya Çin ana karasında bir Çin ana karası Apple Account ile kullanılan iPhone'larda çalışmıyor. Orada kendi bulut API'nizle yanıt alabilirsiniz, ancak görevler kullanılamaz. Ayrıntılar için <a href=\"https://support.apple.com/en-us/121115\">Apple'ın Apple Intelligence kılavuzuna</a> bakın."
+        },
+        {
+          "q": "Uygulamanın kendisi hangi dillerde?",
+          "a": "Uygulamanın menüleri ve ekranları 13 dilde sunulur: İngilizce, Basitleştirilmiş Çince, Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce (Portekiz), İspanyolca, İsveççe ve Türkçe. Bu, yazıya dökebildiği dillerden ayrı bir listedir."
+        },
+        {
+          "q": "Birden fazla dildeki konuşmayı takip edebilir mi?",
+          "a": "Evet. <strong>Çok dilli yazıya dökme</strong> özelliğini açıp en fazla 2 çalışma dili daha ekleyin. DayRecall, diller arasında geçiş yapılan bir konuşmayı takip eder ve her bölümü konuşulduğu dilde yazıya döker. Diğer dillerdeki satırlar daha sonra ana dilinize çevrilebilir."
+        }
+      ]
     },
     {
-      "q": "DayRecall ses kayıtlarını saklıyor mu?",
-      "a": "Hayır. Konuşma iPhone'unuzda metne çevrilir, ardından ses silinir. Yalnızca metin saklanır."
+      "title": "DayRecall kullanımı",
+      "items": [
+        {
+          "q": "Dinlemeyi nasıl başlatıp durdururum?",
+          "a": "Dinleme saatlerini bir kez ayarlayın; örneğin iş günleri 9:00–18:00 arası. Saatler başladığında Apple Watch başlatmak isteyip istemediğinizi sorar. Bir dokunuşla başlar, saatler bittiğinde kendi kendine durur. Daha erken durdurabilir veya o günü atlayabilirsiniz."
+        },
+        {
+          "q": "Neler sorabilirim?",
+          "a": "Gününüz hakkında kendi sözlerinizle istediğiniz şeyi sorabilirsiniz: “Sam bugün bana ne söz verdi?” veya “Raporun son tarihi ne zaman?” Her yanıt kaynağını, söylenen satıra kadar gösterir."
+        },
+        {
+          "q": "Görevler nasıl çalışır?",
+          "a": "DayRecall gününüzdeki sözleri, son tarihleri ve toplantıları ayıklar; ardından onayınızı bekler. Siz evet demeden takviminize veya Anımsatıcılar'a hiçbir şey eklenmez."
+        },
+        {
+          "q": "DayRecall konuşmacıları nasıl ayırt eder?",
+          "a": "<strong>Konuşanı işaretle</strong> özelliğini açın ve yaklaşık 1 dakika boyunca 5 kısa kartı sesli okuyun. Bundan sonra söyledikleriniz Ben olarak işaretlenir; konuşmadaki diğer herkes Diğer 1, Diğer 2 gibi kendi numarasını alır. Ses iziniz iPhone'unuzda kalır ve başka kimseninki saklanmaz. Bu özellik isteğe bağlıdır ve varsayılan olarak kapalıdır."
+        },
+        {
+          "q": "Bir günü kendi AI uygulamama aktarabilir miyim?",
+          "a": "Evet. <strong>Günü bir AI uygulamasına aktar</strong> bir günü, seçtiğiniz soruyla birlikte metin dosyasına dönüştürür. Paylaşım sayfasında uygulamayı siz seçersiniz; DayRecall kendiliğinden hiçbir şey göndermez. Görevleri geri almak için AI yanıtını kopyalayıp <strong>AI yanıtını geri getir</strong> seçeneğine dokunun."
+        },
+        {
+          "q": "Ses dosyası içe aktarabilir miyim?",
+          "a": "Evet. Bir ses dosyasını içe aktardığınızda DayRecall, diğer her şey gibi, onu iPhone'unuzda metne çevirir. Dosyanın kendi kopyası üzerinde çalıştığından orijinal dosyanız değişmeden kalır."
+        }
+      ]
     },
     {
-      "q": "Verilerim nerede ve kim görebilir?",
-      "a": "iPhone'unuzda. Hesap yok ve DayRecall sunucusu yok. Yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir; kendi bulut API'nizi kullanmayı ya da bir günü bir AI uygulamasına aktarmayı seçmediğiniz sürece hiçbir şey iPhone'unuzdan çıkmaz."
+      "title": "Pil ve hız",
+      "items": [
+        {
+          "q": "Pil ne kadar kullanır?",
+          "a": "Çok az. Kendi geliştirdiğimiz ultra hafif konuşma modeli yalnızca birinin konuştuğu anları tutar. Apple Watch Series 11 üzerindeki dahili testte dinleme saatte yaklaşık %0.9 ek pil harcadı."
+        },
+        {
+          "q": "Metin ne zaman görünür?",
+          "a": "Apple Watch duyduklarını yaklaşık her 2 saatte bir ve dinlemeyi durdurduğunda iPhone'unuza aktarır. iPhone, gelen sesi metne çevirir. Metni daha erken görmek için DayRecall'ı açıp <strong>Şimdi eşitle</strong> seçeneğine dokunun. iPhone 17 Pro Max üzerindeki dahili testte 3 dakikalık konuşma 17 saniyede işlendi."
+        }
+      ]
     },
     {
-      "q": "Pil ne kadar kullanır?",
-      "a": "Çok az. Kendi geliştirdiğimiz ultra hafif konuşma modeli yalnızca birinin konuştuğu anları tutar. Apple Watch Series 11 üzerindeki dahili testte dinleme saatte yaklaşık %0,9 ek pil harcadı."
+      "title": "Gizlilik ve onay",
+      "items": [
+        {
+          "q": "iPhone'umdan dışarı bir şey çıkar mı?",
+          "a": "Yalnızca siz seçtiğinizde. Kendi bulut API'nizi kullanırsanız her soru, sorunuzu ve metinlerinizden kısa, ilgili alıntıları o hizmete gönderir. Bir günü AI uygulamasına aktarırsanız uygulama, gönderdiğiniz metin dosyasını alır. Yerler özelliği Apple Maps'i kullanır; iCloud Backup kullanıyorsanız verileriniz de yedeklemeye dahildir. Ayrıntılar Gizlilik Politikası'nda yer alır."
+        },
+        {
+          "q": "DayRecall beni izler veya reklam gösterir mi?",
+          "a": "Hayır. DayRecall'da reklam, analiz, izleme veya veri toplayan üçüncü taraf kodu yoktur. Sorunları çözmeye yardımcı olmak için yaptığı işlemlerin kaydını cihazlarınızda en fazla 14 gün tutar. Günlükte söylenenler asla yer almaz. Siz paylaşmadıkça bu günlük iPhone'unuzdan çıkmaz."
+        },
+        {
+          "q": "Verilerimi nasıl silerim?",
+          "a": "Bir kaydı, metni ve görevleriyle birlikte kendi sayfasından silebilir veya <strong>Ayarlar › Gizlilik › Tüm anıları sil</strong> ile her şeyi silebilirsiniz. <strong>Sesimi sil</strong> ses izinizi kaldırır. Uygulamayı silmek cihazlarınızda sakladıklarını kaldırır; önceki yedeklemelerdeki kopyalar o yedeklemeler değiştirilene kadar kalır."
+        },
+        {
+          "q": "DayRecall'ın dinlediğini insanlara söylemeli miyim?",
+          "a": "Evet. Konuştuğunuz kişilere söyleyin. Bazı yerlerde yalnızca metin saklansa bile herkesin onayı gerekir. Bulunduğunuz yerin kurallarına uyun; Hizmet Koşulları'nda açıklandığı gibi bu sizin sorumluluğunuzdur."
+        }
+      ]
     },
     {
-      "q": "Hangi dilleri destekliyor?",
-      "a": "Uygulama 13 dilde sunulur. Ayrıca üç dile kadar değişen bir konuşmayı yazıya dökebilir ve diğer dillerdeki sözleri sizin dilinize çevirebilir."
-    },
-    {
-      "q": "DayRecall'ı ne zaman edinebilirim?",
-      "a": "DayRecall beta aşamasında ve yakında App Store'da."
+      "title": "Yayın ve yardım",
+      "items": [
+        {
+          "q": "DayRecall'ı ne zaman edinebilirim?",
+          "a": "DayRecall beta aşamasında ve yakında App Store'da."
+        },
+        {
+          "q": "Nasıl yardım alabilirim?",
+          "a": "support@dayrecall.com adresine yazarak olayın ne zaman ve hangi cihazda yaşandığını anlatın. En çok bir günlük yardımcı olur: <strong>Ayarlar › Geliştirici seçenekleri › Günlükler › Günlüğü paylaş</strong>."
+        }
+      ]
     }
   ],
   "lang_label": "Dil",
   "foot_label": "Daha fazla",
   "foot_privacy": "Gizlilik Politikası",
   "foot_support": "Destek",
+  "foot_faq": "SSS",
+  "foot_terms": "Hizmet Koşulları",
+  "foot_social": "DayRecall'ı takip edin",
   "faq_kicker": "SSS",
   "faq_heading": "Merak edilenler",
+  "faq_all": "Tüm sorular",
+  "faq_page_title": "Sık sorulan sorular — DayRecall",
+  "faq_page_description": "DayRecall hakkında yanıtlar: gereken cihazlar, uyumlu iPhone ve Apple Watch modelleri ile diller, dinleme ve yazıya dökme, saklananlar, pil ve gizlilik.",
+  "faq_page_lead": "DayRecall'ın nasıl çalıştığı, neler gerektirdiği ve neleri sakladığı. Sorunuzu bulamadınız mı? Bize yazın.",
+  "faq_page_toc": "Konular",
+  "faq_page_more": "Başka sorunuz var mı?",
+  "faq_page_more_text": "Bize yazın, size geri dönelim.",
   "og_h1": "AI hafızası <span class=\"hl\">tüm&nbsp;gününüz</span> için",
   "og_sub": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır",
   "stage": {

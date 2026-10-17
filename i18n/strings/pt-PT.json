@@ -7,7 +7,7 @@
   "app_description": "Uma app de memória com IA para Apple Watch e iPhone. Nas horas que escolher, escuta, guarda o que foi dito em texto no seu iPhone e responde a perguntas sobre o seu dia com as palavras exatas.",
   "app_features": [
     "Escuta o dia inteiro no Apple Watch, sem iPhone por perto; também funciona só com o iPhone",
-    "A fala passa a texto no iPhone e o áudio é apagado",
+    "A fala passa a texto no iPhone; não é guardado áudio",
     "Pergunte pelo seu dia e obtenha as palavras exatas, com o momento em que foram ditas",
     "Marca quem disse o quê: Eu, Outra voz 1, Outra voz 2",
     "Acompanha conversas em até três idiomas, traduzidas para o seu",
@@ -24,6 +24,7 @@
   "nav_06": "Vozes",
   "nav_07": "Idiomas",
   "nav_08": "Privacidade",
+  "nav_09": "Perguntas frequentes",
   "hero_01": "Melhor com Apple Watch · Funciona só com o iPhone",
   "hero_02": "A memória com IA do seu <span class=\"hl\">dia&nbsp;inteiro</span>",
   "hero_03": "Para todos os que se esquecem das coisas. O seu Apple Watch, ou apenas o seu iPhone, escuta nas horas que escolher, e o que foi dito fica guardado em texto no seu iPhone. <strong>Pergunte pelo seu dia a qualquer momento e receba de volta as palavras exatas.",
@@ -42,13 +43,13 @@
   "how_05": "O seu Apple Watch escuta nas horas que escolher, mesmo com o iPhone deixado para trás. Um toque de manhã, e para sozinho. O nosso modelo de fala ultraleve, desenvolvido internamente, corre no próprio relógio e guarda só os momentos em que alguém fala.",
   "how_06": "O som vai para o lixo e transforma-se em linhas de texto marcadas como Eu e Outra voz 1; a reunião, a tarefa e o prazo são destacados.",
   "how_07": "Organizado para si",
-  "how_08": "O seu iPhone transforma a fala em texto no próprio dispositivo, apaga o áudio e destaca as tarefas, os prazos e as reuniões. Também consegue distinguir o que disse do que disseram os outros.",
+  "how_08": "O seu iPhone transforma a fala em texto no próprio dispositivo, não guarda áudio e destaca as tarefas, os prazos e as reuniões. Também consegue distinguir o que disse do que disseram os outros.",
   "how_09": "As memórias entram no iPhone, que fica bloqueado; tudo o que seguiria para a nuvem é travado e volta ao iPhone.",
   "how_10": "Privado por omissão",
   "how_11": "As suas memórias ficam no iPhone, e as respostas usam o modelo no dispositivo da Apple. Mais tarde, poderá escolher a sua própria API na nuvem; nada é enviado sem a sua autorização.",
   "devices_01": "Dispositivos",
   "devices_02": "O seu relógio não precisa do iPhone por perto.",
-  "devices_03": "O Apple Watch escuta sozinho, o dia inteiro. As gravações ficam no relógio e são enviadas para o iPhone de duas em duas horas; se o iPhone não estiver por perto, são recebidas assim que os dois voltam a ligar-se, por exemplo quando chegar a casa à noite. O iPhone nunca tem de manter a ligação.",
+  "devices_03": "O Apple Watch escuta sozinho, o dia inteiro. O que ouve fica no relógio e passa para o iPhone de duas em duas horas; se o iPhone não estiver por perto, a transferência é retomada assim que os dois voltarem a ligar-se, por exemplo quando chegar a casa à noite. O iPhone nunca tem de manter a ligação.",
   "devices_04": "Melhor</span></h3><p>No pulso o dia inteiro, sem precisar do iPhone.",
   "devices_05": "Só iPhone</h3><p>Não tem Apple Watch? O seu iPhone também consegue escutar sozinho.",
   "devices_06": "Os dois juntos</h3><p>Uma só cronologia do dia. O que os dois ouviram aparece uma vez; se o relógio parar, o iPhone pode assumir a escuta.",
@@ -105,8 +106,8 @@
   "privacy_01": "Privacidade",
   "privacy_02": "Só texto. No seu iPhone. A sua decisão.",
   "privacy_03": "As memórias entram no iPhone, que fica bloqueado; tudo o que seguiria para a nuvem é travado e volta ao iPhone.",
-  "privacy_04": "Texto, não áudio",
-  "privacy_05": "A fala é convertida em texto no seu iPhone e, depois, o áudio é apagado.",
+  "privacy_04": "Só texto, sem guardar áudio",
+  "privacy_05": "O que é dito transforma-se em texto no seu iPhone. O áudio é apagado automaticamente depois de transcrito e não fica guardado.",
   "privacy_06": "Sem conta, sem servidor nosso",
   "privacy_07": "Não há nada em que se registar, e não temos servidores que vejam o seu dia.",
   "privacy_08": "Nada sai sem a sua autorização",
@@ -121,44 +122,173 @@
   "foot_01": "Apple Watch e iPhone são marcas comerciais da Apple Inc., registadas nos EUA e noutros países e regiões.",
   "faq": [
     {
-      "q": "O que é o DayRecall?",
-      "a": "O DayRecall é uma app de memória com IA para Apple Watch e iPhone, pensada para quem se esquece das coisas. Nas horas que escolher, escuta, guarda o que foi dito em texto no seu iPhone e responde a perguntas sobre o seu dia com as palavras exatas e de onde vêm."
+      "title": "O essencial",
+      "items": [
+        {
+          "q": "O que é o DayRecall?",
+          "a": "O DayRecall é uma app de memória com IA para Apple Watch e iPhone, pensada para quem se esquece das coisas. Nas horas que escolher, escuta, guarda o que foi dito em texto no seu iPhone e responde a perguntas sobre o seu dia com as palavras exatas e a respetiva origem."
+        },
+        {
+          "q": "Preciso de um Apple Watch?",
+          "a": "Não. O DayRecall funciona melhor com o Apple Watch, mas o seu iPhone também consegue escutar sozinho. Quando os dois escutam, o dia aparece numa só cronologia e o que ambos ouviram é mostrado apenas uma vez."
+        },
+        {
+          "q": "O DayRecall guarda gravações de áudio?",
+          "a": "Não. O que é dito transforma-se em texto no seu iPhone e o áudio é apagado automaticamente depois de transcrito. Só o texto fica guardado."
+        },
+        {
+          "q": "Onde estão os meus dados, e quem os pode ver?",
+          "a": "No seu iPhone e na respetiva cópia de segurança, se a usar. Não há conta nem servidor do DayRecall, por isso não os podemos ver. As respostas usam o modelo no dispositivo da Apple e nada sai do seu iPhone, a menos que escolha usar a sua própria API na nuvem ou entregar um dia a uma app de IA."
+        }
+      ]
     },
     {
-      "q": "Preciso de um Apple Watch?",
-      "a": "Não. O DayRecall funciona melhor com o Apple Watch, e o seu iPhone também consegue escutar sozinho. Quando os dois escutam, o dia fica numa só cronologia, e o que os dois ouviram aparece apenas uma vez."
+      "title": "Dispositivos e requisitos",
+      "items": [
+        {
+          "q": "De que preciso para usar o DayRecall?",
+          "a": "De um iPhone com iOS 26 ou posterior que suporte o reconhecimento de fala da Apple no dispositivo. Um Apple Watch com watchOS 26 ou posterior é opcional, mas recomendado. As respostas e as tarefas também precisam de Apple Intelligence; para as respostas, pode usar a sua própria API na nuvem em alternativa."
+        },
+        {
+          "q": "Que modelos de iPhone são compatíveis?",
+          "a": "O DayRecall precisa de iOS 26 ou posterior, disponível no iPhone 11 e seguintes e no iPhone SE (2.ª geração) e seguintes. A transcrição também precisa do reconhecimento de fala da Apple no dispositivo, que a Apple não oferece em alguns modelos mais antigos, incluindo os iPhone 11 e o iPhone SE (2.ª geração); por isso, recomendamos o iPhone 12 ou posterior. Se o seu iPhone não conseguir transcrever, o DayRecall avisa. As respostas e as tarefas com Apple Intelligence precisam de iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ou iPhone 16 ou posterior."
+        },
+        {
+          "q": "Que modelos de Apple Watch são compatíveis?",
+          "a": "Qualquer Apple Watch com watchOS 26 ou posterior: Apple Watch Series 6 e seguintes, Apple Watch SE (2.ª geração) e seguintes e todos os Apple Watch Ultra. Tem de estar emparelhado com um iPhone que execute o DayRecall. O Apple Watch é opcional: o iPhone pode escutar sozinho."
+        },
+        {
+          "q": "O iPhone tem de ficar perto do relógio?",
+          "a": "Não. O Apple Watch guarda o que ouviu e envia-o para o iPhone de duas em duas horas ou assim que os dois voltarem a ligar-se, por exemplo quando chegar a casa à noite."
+        },
+        {
+          "q": "Funciona sem ligação à Internet?",
+          "a": "Sim. A escuta, a transcrição, as respostas e as tarefas funcionam nos seus dispositivos, por isso também funcionam offline depois de o iOS descarregar os modelos de idiomas necessários. Os locais no mapa e a sua própria API na nuvem precisam de ligação."
+        }
+      ]
     },
     {
-      "q": "O iPhone tem de estar sempre perto do relógio?",
-      "a": "Não. O Apple Watch guarda as suas gravações e envia-as para o iPhone de duas em duas horas, ou assim que os dois voltarem a ligar-se, por exemplo quando chegar a casa à noite."
+      "title": "Idiomas",
+      "items": [
+        {
+          "q": "Porque dependem da Apple os idiomas suportados?",
+          "a": "O DayRecall trabalha no seu iPhone com tecnologias integradas da Apple: reconhecimento de fala para transcrever, tradução da Apple para traduzir e Apple Intelligence para respostas e tarefas. Cada uma suporta os seus próprios idiomas, que a Apple decide e alarga com as atualizações do iOS; algumas também exigem um iPhone recente. Por isso, um idioma pode estar disponível para transcrição mas ainda não para tradução, ou funcionar num iPhone e não noutro. Atualizar o iOS pode acrescentar idiomas."
+        },
+        {
+          "q": "Que idiomas consegue o DayRecall transcrever?",
+          "a": "Pode escolher entre inglês (EUA, Reino Unido), chinês (mandarim), japonês, coreano, espanhol, francês, alemão, italiano, português (Brasil, Portugal), neerlandês, sueco, dinamarquês e turco. Cada idioma só funciona se o reconhecimento de fala da Apple no dispositivo o suportar no seu iPhone; se não suportar, o DayRecall assinala-o como não suportado. Na primeira utilização de um idioma, o iOS descarrega o respetivo modelo de fala."
+        },
+        {
+          "q": "Que idiomas consegue traduzir?",
+          "a": "As frases nos outros idiomas de trabalho podem ser traduzidas para o seu idioma principal com a tradução da Apple no dispositivo, desde que a Apple suporte esse par de idiomas no seu iPhone. No iOS 27, isso abrange todos os idiomas que o DayRecall transcreve; no iOS 26, são menos: o dinamarquês e o sueco, por exemplo, não estão incluídos. O iOS descarrega cada idioma antes da primeira utilização. A Apple apresenta os idiomas atuais na sua <a href=\"https://www.apple.com/ios/feature-availability/\">página de disponibilidade de funcionalidades</a>."
+        },
+        {
+          "q": "Que idiomas funcionam para as respostas e as tarefas?",
+          "a": "As respostas e as tarefas usam Apple Intelligence, que suporta inglês, chinês (simplificado e tradicional), dinamarquês, neerlandês, francês, alemão, italiano, japonês, coreano, norueguês, português, espanhol, sueco, turco e vietnamita. O idioma do iPhone e o da Siri têm de estar definidos para o mesmo idioma suportado. Atualmente, Apple Intelligence não funciona em iPhones comprados na China continental, nem na China continental com uma Conta Apple dessa região; aí, pode obter respostas com a sua própria API na nuvem, mas não tarefas. Consulte o <a href=\"https://support.apple.com/en-us/121115\">guia da Apple para Apple Intelligence</a>."
+        },
+        {
+          "q": "Em que idiomas está disponível a app?",
+          "a": "Os menus e ecrãs da app estão disponíveis em 13 idiomas: inglês, chinês simplificado, dinamarquês, neerlandês, francês, alemão, italiano, japonês, coreano, português (Portugal), espanhol, sueco e turco. São independentes dos idiomas que a app consegue transcrever."
+        },
+        {
+          "q": "Consegue acompanhar uma conversa em mais do que um idioma?",
+          "a": "Sim. Ative a <strong>Transcrição multilingue</strong> e acrescente até mais dois idiomas de trabalho: o DayRecall acompanha uma conversa que alterna entre eles e transcreve cada trecho no idioma falado. As frases nos outros idiomas podem depois ser traduzidas para o seu idioma principal."
+        }
+      ]
     },
     {
-      "q": "O DayRecall guarda gravações de áudio?",
-      "a": "Não. A fala é convertida em texto no seu iPhone e, depois, o áudio é apagado. Só o texto fica guardado."
+      "title": "Utilizar o DayRecall",
+      "items": [
+        {
+          "q": "Como inicio e paro a escuta?",
+          "a": "Defina uma vez o seu horário de escuta, por exemplo, dias úteis das 9:00 às 18:00. Quando começar, o Apple Watch pergunta se quer iniciar: basta um toque e a escuta para sozinha quando o horário terminar. Também pode parar mais cedo ou saltar um dia."
+        },
+        {
+          "q": "O que posso perguntar?",
+          "a": "Qualquer coisa sobre o seu dia, pelas suas próprias palavras: «O que me prometeu o Sam hoje?» ou «Quando é o prazo do relatório?». Cada resposta mostra de onde veio, até à frase que foi dita."
+        },
+        {
+          "q": "Como funcionam as tarefas?",
+          "a": "O DayRecall destaca promessas, prazos e reuniões do seu dia e espera que os confirme. Nada chega ao Calendário nem aos Lembretes até dizer que sim."
+        },
+        {
+          "q": "Como distingue o DayRecall as vozes?",
+          "a": "Ative <strong>Identificar quem fala</strong> e leia em voz alta cinco cartões curtos, durante cerca de um minuto. A partir daí, as suas frases são marcadas como Eu e cada outra pessoa numa conversa recebe um número: Outra voz 1, Outra voz 2 e assim por diante. A sua impressão vocal fica no seu iPhone e a de mais ninguém é guardada. Esta funcionalidade é opcional e está desligada por omissão."
+        },
+        {
+          "q": "Posso entregar um dia à minha app de IA?",
+          "a": "Sim. <strong>Entregar o dia a uma app de IA</strong> transforma um dia num ficheiro de texto com uma pergunta à sua escolha; seleciona a app na folha de partilha e o DayRecall não envia nada por si. Para recuperar as tarefas, copie a resposta da IA e toque em <strong>Importar a resposta da IA</strong>."
+        },
+        {
+          "q": "Posso importar um ficheiro de áudio?",
+          "a": "Sim. Importe um ficheiro de áudio e o DayRecall transforma-o em texto no seu iPhone, como faz com tudo o resto. Trabalha com a sua própria cópia, pelo que o ficheiro original não é alterado."
+        }
+      ]
     },
     {
-      "q": "Onde estão os meus dados, e quem os pode ver?",
-      "a": "No seu iPhone. Não há conta nem servidor do DayRecall. As respostas usam o modelo no dispositivo da Apple, e nada sai do seu iPhone a não ser que escolha usar a sua própria API na nuvem ou entregar um dia a uma app de IA."
+      "title": "Bateria e velocidade",
+      "items": [
+        {
+          "q": "Quanta bateria gasta?",
+          "a": "Muito pouca. O nosso modelo de fala ultraleve, desenvolvido internamente, guarda apenas os momentos em que alguém fala. Em testes internos no Apple Watch Series 11, a escuta acrescentou cerca de 0,9% de consumo de bateria por hora."
+        },
+        {
+          "q": "Quanto tempo demora a aparecer o texto?",
+          "a": "O relógio envia o que ouviu aproximadamente de duas em duas horas e quando para de escutar; o iPhone transforma-o em texto à medida que chega. Para ver o texto mais cedo, abra o DayRecall e toque em <strong>Sincronizar agora</strong>. Em testes internos no iPhone 17 Pro Max, 3 minutos de conversa foram processados em 17 segundos."
+        }
+      ]
     },
     {
-      "q": "Quanta bateria gasta?",
-      "a": "Muito pouca. O nosso modelo de fala ultraleve, desenvolvido internamente, só guarda os momentos em que alguém fala. Em testes internos no Apple Watch Series 11, a escuta gastou cerca de 0,9% de bateria extra por hora."
+      "title": "Privacidade e consentimento",
+      "items": [
+        {
+          "q": "Sai alguma coisa do meu iPhone?",
+          "a": "Só quando escolher. Com a sua própria API na nuvem, cada pergunta envia a esse serviço a sua pergunta e pequenos excertos relevantes das suas transcrições. Quando entrega um dia a uma app de IA, essa app recebe o ficheiro de texto que lhe enviar. Os locais usam Apple Maps e o iCloud Backup inclui os seus dados, se o utilizar. A Política de Privacidade tem os detalhes."
+        },
+        {
+          "q": "O DayRecall segue-me ou mostra anúncios?",
+          "a": "Não. O DayRecall não tem anúncios, análises de utilização, seguimento nem código de terceiros que recolha dados. Para ajudar a resolver problemas, guarda nos seus dispositivos um registo do que fez, nunca do que foi dito, durante até 14 dias; o registo só sai do seu iPhone se o partilhar."
+        },
+        {
+          "q": "Como apago os meus dados?",
+          "a": "Apague uma gravação, com o respetivo texto e tarefas, na página correspondente, ou apague tudo em <strong>Definições › Privacidade › Apagar todas as memórias</strong>. <strong>Apagar a minha voz</strong> remove a sua impressão vocal. Apagar a app remove o que guardou nos seus dispositivos; as cópias em backups anteriores permanecem até esses backups serem substituídos."
+        },
+        {
+          "q": "Tenho de avisar as pessoas de que o DayRecall está a escutar?",
+          "a": "Sim. Avise as pessoas com quem fala. Alguns locais exigem o consentimento de todos, mesmo quando só se guarda texto, por isso cumpra as regras do local onde está; essa responsabilidade é sua, como explicam os nossos Termos de Serviço."
+        }
+      ]
     },
     {
-      "q": "Que idiomas são suportados?",
-      "a": "A app está disponível em 13 idiomas. Também consegue transcrever uma conversa que alterna entre até três idiomas, e traduzir os outros idiomas para o seu."
-    },
-    {
-      "q": "Quando posso obter o DayRecall?",
-      "a": "O DayRecall está em beta e em breve na App Store."
+      "title": "Disponibilidade e apoio",
+      "items": [
+        {
+          "q": "Quando posso obter o DayRecall?",
+          "a": "O DayRecall está em beta e chegará em breve à App Store."
+        },
+        {
+          "q": "Como posso obter ajuda?",
+          "a": "Escreva para support@dayrecall.com e diga-nos quando aconteceu e em que dispositivo. Um registo ajuda mais: <strong>Definições › Opções de programador › Registos › Partilhar registo</strong>."
+        }
+      ]
     }
   ],
   "lang_label": "Idioma",
   "foot_label": "Mais",
   "foot_privacy": "Política de Privacidade",
   "foot_support": "Apoio",
+  "foot_faq": "Perguntas frequentes",
+  "foot_terms": "Termos de Serviço",
+  "foot_social": "Siga o DayRecall",
   "faq_kicker": "Perguntas frequentes",
   "faq_heading": "Perguntas, respondidas",
+  "faq_all": "Todas as perguntas",
+  "faq_page_title": "Perguntas frequentes — DayRecall",
+  "faq_page_description": "Respostas sobre o DayRecall: requisitos, modelos de iPhone e Apple Watch compatíveis, idiomas, escuta, transcrição, dados guardados, bateria e privacidade.",
+  "faq_page_lead": "Como funciona o DayRecall, de que precisa e o que guarda. Não encontra a sua pergunta? Escreva-nos.",
+  "faq_page_toc": "Tópicos",
+  "faq_page_more": "Ainda tem alguma pergunta?",
+  "faq_page_more_text": "Escreva-nos e responderemos.",
   "og_h1": "A memória com IA do seu <span class=\"hl\">dia&nbsp;inteiro</span>",
   "og_sub": "Melhor com Apple Watch · Funciona só com o iPhone",
   "stage": {

@@ -101,7 +101,7 @@
       "applicationCategory": "UtilitiesApplication",
       "featureList": [
         "Ascolta tutto il giorno con Apple Watch, anche senza iPhone vicino; funziona anche solo con iPhone",
-        "Il parlato diventa testo sull’iPhone e l’audio viene eliminato",
+        "Il parlato diventa testo sull’iPhone; l’audio non viene conservato",
         "Chiedi della giornata e ottieni le parole esatte, con il momento in cui sono state dette",
         "Distingue chi parla: Io, Altra voce 1, Altra voce 2",
         "Segue le conversazioni in un massimo di tre lingue, tradotte nella tua",
@@ -111,77 +111,6 @@
       "publisher": {
         "@id": "https://dayrecall.com/#org"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://dayrecall.com/it/#faq",
-      "inLanguage": "it",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Che cos’è DayRecall?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "DayRecall è un’app di memoria IA per Apple Watch e iPhone, pensata per chi dimentica le cose. Nelle ore che scegli, ascolta, conserva ciò che è stato detto come testo sul tuo iPhone e risponde alle domande sulla tua giornata con le parole esatte e con l’indicazione della loro provenienza."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Serve un Apple Watch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. DayRecall funziona al meglio con Apple Watch, e il tuo iPhone può anche ascoltare da solo. Quando ascoltano entrambi, la tua giornata è un’unica cronologia, e ciò che hanno sentito entrambi compare una sola volta."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "L’iPhone deve restare vicino all’orologio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Apple Watch conserva le sue registrazioni e le invia all’iPhone ogni due ore, oppure appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "DayRecall conserva le registrazioni audio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Il parlato viene trasformato in testo sul tuo iPhone, e poi l’audio viene eliminato. Viene conservato solo il testo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Dove sono i miei dati, e chi può vederli?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sul tuo iPhone. Non esistono account né server di DayRecall. Le risposte usano il modello on-device di Apple, e nulla lascia il tuo iPhone a meno che tu non scelga di usare una tua API cloud o di affidare una giornata a un’app IA."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quanta batteria consuma?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pochissima. Il nostro modello vocale ultra-leggero, sviluppato internamente, conserva solo i momenti in cui qualcuno sta parlando. Nei test interni su Apple Watch Series 11, l’ascolto ha aggiunto circa lo 0,9% di batteria all’ora."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quali lingue supporta?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "L’app è disponibile in 13 lingue. Può anche trascrivere una conversazione che cambia lingua, fino a un massimo di tre, e tradurre nella tua le altre."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quando posso avere DayRecall?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "DayRecall è in beta e presto disponibile sull’App Store."
-          }
-        }
-      ]
     }
   ]
 }
@@ -204,7 +133,7 @@
       <a href="#voices">Voci</a>
       <a href="#languages">Lingue</a>
       <a href="#privacy">Privacy</a>
-      <a href="/faq/" hreflang="en">FAQ</a>
+      <a href="/it/faq/">FAQ</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="Lingua"><span class="ico" data-icon="globe"></span><span>Italiano</span></summary>
@@ -269,7 +198,7 @@
         <article class="step">
           <div class="stage t-light" data-stage="tidying" role="img" aria-label="Il suono va nel cestino e diventa righe di testo contrassegnate come Io e Altra voce 1; riunioni, cose da fare e scadenze vengono individuate."></div>
           <h3><span class="num">2</span>Organizzato per te</h3>
-          <p>Il tuo iPhone trasforma il parlato in testo direttamente sul dispositivo, elimina l’audio e individua cose da fare, scadenze e riunioni. Può anche distinguere ciò che hai detto tu da ciò che hanno detto gli altri.</p>
+          <p>Il tuo iPhone trasforma il parlato in testo direttamente sul dispositivo, non conserva l’audio e individua cose da fare, scadenze e riunioni. Può anche distinguere ciò che hai detto tu da ciò che hanno detto gli altri.</p>
         </article>
         <article class="step">
           <div class="stage t-light" data-stage="privacy" role="img" aria-label="I ricordi scorrono nell’iPhone, che si blocca; tutto ciò che sta per andare nel cloud viene fermato e riportato indietro."></div>
@@ -285,7 +214,7 @@
       <div class="copy">
         <p class="kicker">Dispositivi</p>
         <h2>Il tuo orologio non ha bisogno del telefono vicino.</h2>
-        <p class="body">Apple Watch ascolta da solo, tutto il giorno. Le registrazioni restano sull’orologio e vengono inviate all’iPhone ogni due ore; se l’iPhone non è nelle vicinanze, vengono recuperate appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera. Il tuo iPhone non deve mai restare connesso.</p>
+        <p class="body">Apple Watch ascolta da solo, tutto il giorno. Ciò che sente resta sull’orologio e passa all’iPhone ogni due ore; se l’iPhone non è nelle vicinanze, il trasferimento riprende appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera. Il tuo iPhone non deve mai restare connesso.</p>
         <ul class="devs">
           <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">Ideale</span></h3><p>Al polso tutto il giorno, senza bisogno del telefono.</p></div></li>
           <li><span class="dev-ico" data-icon="phone"></span><div><h3>Solo iPhone</h3><p>Niente Apple Watch? Il tuo iPhone può ascoltare anche da solo.</p></div></li>
@@ -411,8 +340,8 @@
         <div class="stage t-dark" data-stage="privacy" role="img" aria-label="I ricordi scorrono nell’iPhone, che si blocca; tutto ciò che sta per andare nel cloud viene fermato e riportato indietro."></div>
         <div class="points">
           <div class="point">
-            <h3><span class="tick" data-icon="check"></span>Testo, non audio</h3>
-            <p>Il parlato viene trasformato in testo sull’iPhone, e poi l’audio viene eliminato.</p>
+            <h3><span class="tick" data-icon="check"></span>Solo testo, nessun audio conservato</h3>
+            <p>Ciò che viene detto diventa testo sul tuo iPhone. L’audio viene cancellato automaticamente dopo la trascrizione e non viene conservato.</p>
           </div>
           <div class="point">
             <h3><span class="tick" data-icon="check"></span>Nessun account, nessun server nostro</h3>
@@ -439,40 +368,24 @@
       <div class="faq-head">
         <p class="kicker">FAQ</p>
         <h2>Domande e risposte</h2>
-        <p class="faq-all"><a href="/faq/" hreflang="en">All questions<span class="arrow" aria-hidden="true">→</span></a></p>
+        <p class="faq-all"><a href="/it/faq/">Tutte le domande<span class="arrow" aria-hidden="true">→</span></a></p>
       </div>
       <div class="qa">
         <details open>
           <summary>Che cos’è DayRecall?</summary>
-          <p>DayRecall è un’app di memoria IA per Apple Watch e iPhone, pensata per chi dimentica le cose. Nelle ore che scegli, ascolta, conserva ciò che è stato detto come testo sul tuo iPhone e risponde alle domande sulla tua giornata con le parole esatte e con l’indicazione della loro provenienza.</p>
+          <p>DayRecall è un’app di memoria IA per Apple Watch e iPhone, pensata per chi dimentica le cose. Nelle ore che scegli, ascolta, conserva ciò che è stato detto come testo sul tuo iPhone e risponde alle domande sulla tua giornata con le parole esatte e la loro provenienza.</p>
         </details>
         <details>
           <summary>Serve un Apple Watch?</summary>
-          <p>No. DayRecall funziona al meglio con Apple Watch, e il tuo iPhone può anche ascoltare da solo. Quando ascoltano entrambi, la tua giornata è un’unica cronologia, e ciò che hanno sentito entrambi compare una sola volta.</p>
+          <p>No. DayRecall funziona al meglio con Apple Watch, ma il tuo iPhone può anche ascoltare da solo. Quando ascoltano entrambi, la giornata appare in un’unica cronologia e ciò che hanno sentito entrambi compare una sola volta.</p>
         </details>
         <details>
-          <summary>L’iPhone deve restare vicino all’orologio?</summary>
-          <p>No. Apple Watch conserva le sue registrazioni e le invia all’iPhone ogni due ore, oppure appena i due dispositivi si riconnettono, ad esempio quando rientri a casa la sera.</p>
+          <summary>DayRecall conserva registrazioni audio?</summary>
+          <p>No. Ciò che viene detto diventa testo sul tuo iPhone e l’audio viene cancellato automaticamente dopo la trascrizione. Viene conservato solo il testo.</p>
         </details>
         <details>
-          <summary>DayRecall conserva le registrazioni audio?</summary>
-          <p>No. Il parlato viene trasformato in testo sul tuo iPhone, e poi l’audio viene eliminato. Viene conservato solo il testo.</p>
-        </details>
-        <details>
-          <summary>Dove sono i miei dati, e chi può vederli?</summary>
-          <p>Sul tuo iPhone. Non esistono account né server di DayRecall. Le risposte usano il modello on-device di Apple, e nulla lascia il tuo iPhone a meno che tu non scelga di usare una tua API cloud o di affidare una giornata a un’app IA.</p>
-        </details>
-        <details>
-          <summary>Quanta batteria consuma?</summary>
-          <p>Pochissima. Il nostro modello vocale ultra-leggero, sviluppato internamente, conserva solo i momenti in cui qualcuno sta parlando. Nei test interni su Apple Watch Series 11, l’ascolto ha aggiunto circa lo 0,9% di batteria all’ora.</p>
-        </details>
-        <details>
-          <summary>Quali lingue supporta?</summary>
-          <p>L’app è disponibile in 13 lingue. Può anche trascrivere una conversazione che cambia lingua, fino a un massimo di tre, e tradurre nella tua le altre.</p>
-        </details>
-        <details>
-          <summary>Quando posso avere DayRecall?</summary>
-          <p>DayRecall è in beta e presto disponibile sull’App Store.</p>
+          <summary>Dove sono i miei dati e chi può vederli?</summary>
+          <p>Sul tuo iPhone e nel suo backup, se ne usi uno. Non servono account e DayRecall non ha un server, quindi non possiamo vederli. Le risposte usano il modello on-device di Apple e nulla lascia il tuo iPhone a meno che tu non scelga di usare la tua API cloud o di affidare una giornata a un’app IA.</p>
         </details>
       </div>
     </div>
@@ -495,12 +408,12 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch e iPhone sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi e regioni.</span>
     <nav class="foot-links" aria-label="Altro">
-      <a href="/faq/" hreflang="en">FAQ</a>
+      <a href="/it/faq/">FAQ</a>
       <a href="/support/" hreflang="en">Assistenza</a>
       <a href="/privacy/" hreflang="en">Informativa sulla privacy</a>
-      <a href="/terms/" hreflang="en">Terms of Service</a>
+      <a href="/terms/" hreflang="en">Termini di servizio</a>
     </nav>
-    <nav class="social" aria-label="Follow DayRecall">
+    <nav class="social" aria-label="Segui DayRecall">
       <a href="https://www.tiktok.com/@dayrecall" rel="me" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
       <a href="https://x.com/DayRecall" rel="me" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a>
       <a href="https://www.instagram.com/dayrecall/" rel="me" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>

@@ -101,7 +101,7 @@
       "applicationCategory": "UtilitiesApplication",
       "featureList": [
         "iPhone이 근처에 없어도 Apple Watch로 하루 종일 들어요. iPhone만으로도 작동해요",
-        "음성은 iPhone에서 텍스트로 바뀌고, 음성 파일은 지워져요",
+        "음성은 iPhone에서 텍스트로 바뀌고, 음성은 남기지 않아요",
         "하루에 대해 묻고, 원래 말과 그 말이 나온 시각을 받아요",
         "누가 말했는지 구분해요: 나, 다른 사람 1, 다른 사람 2",
         "최대 세 개 언어로 된 대화를 따라가고, 내 언어로 번역해요",
@@ -111,77 +111,6 @@
       "publisher": {
         "@id": "https://dayrecall.com/#org"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://dayrecall.com/ko/#faq",
-      "inLanguage": "ko",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "DayRecall이 뭔가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "DayRecall은 잘 잊어버리는 분들을 위한 AI 기억 앱으로, Apple Watch와 iPhone에서 쓸 수 있어요. 정해 둔 시간 동안 듣고, 말한 내용을 iPhone에 텍스트로 남기며, 하루에 대한 질문에 원래 한 말 그대로와 그 출처를 함께 답해요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apple Watch가 꼭 필요한가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "아니요. DayRecall은 Apple Watch와 함께 쓸 때 가장 좋고, iPhone만으로도 혼자 들을 수 있어요. 두 기기가 함께 들으면 하루가 하나의 타임라인이 되고, 두 기기가 모두 들은 내용은 한 번만 보여요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "iPhone이 워치 근처에 꼭 있어야 하나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "아니요. Apple Watch가 녹음을 보관했다가 두 시간마다, 또는 두 기기가 다시 연결되는 대로(예: 저녁에 집에 돌아왔을 때) iPhone으로 보내요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "DayRecall이 녹음 파일을 보관하나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "아니요. 말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요. 텍스트만 남아요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "데이터는 어디에 있고, 누가 볼 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "iPhone에 있어요. 계정이 없고 DayRecall 서버도 없어요. 답변은 Apple의 기기 내 모델로 만들어지며, 직접 클라우드 API를 쓰기로 하거나 AI 앱에 하루를 넘기기로 하지 않는 한 어떤 것도 iPhone 밖으로 나가지 않아요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "배터리를 얼마나 쓰나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "아주 조금이에요. 자체 개발한 초경량 음성 모델이 누군가 말하는 순간만 남겨요. Apple Watch Series 11에서 진행한 내부 테스트에서 듣는 동안 시간당 배터리를 약 0.9% 더 썼어요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "지원하는 언어는 무엇인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "앱은 13개 언어로 제공돼요. 한 대화에서 최대 세 가지 언어가 섞여도 텍스트로 변환하고, 다른 언어는 내 언어로 번역할 수 있어요."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "DayRecall은 언제 쓸 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "DayRecall은 베타 중이며 곧 App Store에 출시돼요."
-          }
-        }
-      ]
     }
   ]
 }
@@ -204,7 +133,7 @@
       <a href="#voices">목소리</a>
       <a href="#languages">언어</a>
       <a href="#privacy">개인정보 보호</a>
-      <a href="/faq/" hreflang="en">FAQ</a>
+      <a href="/ko/faq/">자주 묻는 질문</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="언어"><span class="ico" data-icon="globe"></span><span>한국어</span></summary>
@@ -269,7 +198,7 @@
         <article class="step">
           <div class="stage t-light" data-stage="tidying" role="img" aria-label="음성은 지워지고, “나”와 “다른 사람 1”로 표시된 텍스트 줄이 남아요. 회의, 할 일, 마감 기한이 골라져요."></div>
           <h3><span class="num">2</span>알아서 정리</h3>
-          <p>iPhone에서 음성을 텍스트로 바꾸고, 음성 파일은 지우며, 할 일, 마감 기한, 회의를 골라내요. 내가 한 말과 다른 사람이 한 말도 구분할 수 있어요.</p>
+          <p>iPhone에서 음성을 텍스트로 바꾸고, 음성은 남기지 않으며, 할 일, 마감 기한, 회의를 골라내요. 내가 한 말과 다른 사람이 한 말도 구분할 수 있어요.</p>
         </article>
         <article class="step">
           <div class="stage t-light" data-stage="privacy" role="img" aria-label="기억은 iPhone으로 옮겨져 잠기고, 클라우드로 향하는 것은 멈춰서 다시 돌아와요."></div>
@@ -285,7 +214,7 @@
       <div class="copy">
         <p class="kicker">기기</p>
         <h2>워치는 휴대폰이 가까이 없어도 괜찮아요.</h2>
-        <p class="body">Apple Watch는 혼자서도 하루 종일 들어요. 녹음은 워치에 보관했다가 두 시간마다 iPhone으로 보내요. iPhone이 근처에 없으면, 두 기기가 다시 연결되는 순간(예: 저녁에 집에 돌아왔을 때) 밀린 녹음이 한꺼번에 옮겨져요. iPhone이 계속 연결돼 있을 필요는 전혀 없어요.</p>
+        <p class="body">Apple Watch는 혼자서도 하루 종일 들어요. 들은 내용은 워치에 잠시 보관했다가 두 시간마다 iPhone으로 보내요. iPhone이 근처에 없으면, 두 기기가 다시 연결되는 순간(예: 저녁에 집에 돌아왔을 때) 밀린 내용이 옮겨져요. iPhone이 계속 연결돼 있을 필요는 없어요.</p>
         <ul class="devs">
           <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">가장 좋은 선택</span></h3><p>하루 종일 손목에 차고 있으면, 휴대폰은 필요 없어요.</p></div></li>
           <li><span class="dev-ico" data-icon="phone"></span><div><h3>iPhone만 있다면</h3><p>Apple Watch가 없나요? iPhone이 혼자서도 들을 수 있어요.</p></div></li>
@@ -411,8 +340,8 @@
         <div class="stage t-dark" data-stage="privacy" role="img" aria-label="기억은 iPhone으로 옮겨져 잠기고, 클라우드로 향하는 것은 멈춰서 다시 돌아와요."></div>
         <div class="points">
           <div class="point">
-            <h3><span class="tick" data-icon="check"></span>음성이 아니라 텍스트만 저장</h3>
-            <p>말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요.</p>
+            <h3><span class="tick" data-icon="check"></span>텍스트만 저장하고 음성은 남기지 않아요</h3>
+            <p>말은 iPhone에서 텍스트로 바뀌어요. 텍스트 변환이 끝나면 음성은 자동으로 지워지고 보관되지 않아요.</p>
           </div>
           <div class="point">
             <h3><span class="tick" data-icon="check"></span>계정 없음, DayRecall 서버 없음</h3>
@@ -439,7 +368,7 @@
       <div class="faq-head">
         <p class="kicker">FAQ</p>
         <h2>궁금한 점, 답해 드려요</h2>
-        <p class="faq-all"><a href="/faq/" hreflang="en">All questions<span class="arrow" aria-hidden="true">→</span></a></p>
+        <p class="faq-all"><a href="/ko/faq/">전체 질문<span class="arrow" aria-hidden="true">→</span></a></p>
       </div>
       <div class="qa">
         <details open>
@@ -451,28 +380,12 @@
           <p>아니요. DayRecall은 Apple Watch와 함께 쓸 때 가장 좋고, iPhone만으로도 혼자 들을 수 있어요. 두 기기가 함께 들으면 하루가 하나의 타임라인이 되고, 두 기기가 모두 들은 내용은 한 번만 보여요.</p>
         </details>
         <details>
-          <summary>iPhone이 워치 근처에 꼭 있어야 하나요?</summary>
-          <p>아니요. Apple Watch가 녹음을 보관했다가 두 시간마다, 또는 두 기기가 다시 연결되는 대로(예: 저녁에 집에 돌아왔을 때) iPhone으로 보내요.</p>
-        </details>
-        <details>
           <summary>DayRecall이 녹음 파일을 보관하나요?</summary>
-          <p>아니요. 말은 iPhone에서 텍스트로 바뀌고, 그다음 음성은 지워져요. 텍스트만 남아요.</p>
+          <p>아니요. 말은 iPhone에서 텍스트로 바뀌고, 텍스트 변환이 끝나면 음성은 자동으로 지워져요. 텍스트만 남아요.</p>
         </details>
         <details>
           <summary>데이터는 어디에 있고, 누가 볼 수 있나요?</summary>
-          <p>iPhone에 있어요. 계정이 없고 DayRecall 서버도 없어요. 답변은 Apple의 기기 내 모델로 만들어지며, 직접 클라우드 API를 쓰기로 하거나 AI 앱에 하루를 넘기기로 하지 않는 한 어떤 것도 iPhone 밖으로 나가지 않아요.</p>
-        </details>
-        <details>
-          <summary>배터리를 얼마나 쓰나요?</summary>
-          <p>아주 조금이에요. 자체 개발한 초경량 음성 모델이 누군가 말하는 순간만 남겨요. Apple Watch Series 11에서 진행한 내부 테스트에서 듣는 동안 시간당 배터리를 약 0.9% 더 썼어요.</p>
-        </details>
-        <details>
-          <summary>지원하는 언어는 무엇인가요?</summary>
-          <p>앱은 13개 언어로 제공돼요. 한 대화에서 최대 세 가지 언어가 섞여도 텍스트로 변환하고, 다른 언어는 내 언어로 번역할 수 있어요.</p>
-        </details>
-        <details>
-          <summary>DayRecall은 언제 쓸 수 있나요?</summary>
-          <p>DayRecall은 베타 중이며 곧 App Store에 출시돼요.</p>
+          <p>iPhone에 있고, 백업을 사용한다면 백업에도 있어요. 계정이 없고 DayRecall 서버도 없어서 저희는 볼 수 없어요. 답변은 Apple의 기기 내 모델로 만들어지며, 직접 클라우드 API를 쓰거나 AI 앱에 하루를 넘기기로 하지 않는 한 어떤 것도 iPhone 밖으로 나가지 않아요.</p>
         </details>
       </div>
     </div>
@@ -495,12 +408,12 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch와 iPhone은 미국 및 기타 국가와 지역에 등록된 Apple Inc.의 상표예요.</span>
     <nav class="foot-links" aria-label="더 보기">
-      <a href="/faq/" hreflang="en">FAQ</a>
+      <a href="/ko/faq/">자주 묻는 질문</a>
       <a href="/support/" hreflang="en">고객 지원</a>
       <a href="/privacy/" hreflang="en">개인정보 처리방침</a>
-      <a href="/terms/" hreflang="en">Terms of Service</a>
+      <a href="/terms/" hreflang="en">이용 약관</a>
     </nav>
-    <nav class="social" aria-label="Follow DayRecall">
+    <nav class="social" aria-label="DayRecall 팔로우">
       <a href="https://www.tiktok.com/@dayrecall" rel="me" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
       <a href="https://x.com/DayRecall" rel="me" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a>
       <a href="https://www.instagram.com/dayrecall/" rel="me" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>

@@ -7,7 +7,7 @@
   "app_description": "En AI-hukommelsesapp til Apple Watch og iPhone. I de tidsrum, du vælger, lytter den med, gemmer det sagte som tekst på din iPhone og svarer på spørgsmål om din dag med de præcise ord.",
   "app_features": [
     "Lytter hele dagen med Apple Watch, uden iPhone i nærheden; virker også alene med iPhone",
-    "Tale bliver til tekst på iPhone, og lydoptagelsen slettes",
+    "Tale bliver til tekst på iPhone; ingen lyd opbevares",
     "Spørg om din dag og få de præcise ord, med tidspunktet hvor de blev sagt",
     "Viser hvem der sagde hvad: Mig, Anden 1, Anden 2",
     "Følger samtaler på op til tre sprog og oversætter til dit sprog",
@@ -42,13 +42,13 @@
   "how_05": "Din Apple Watch lytter i de tidsrum, du vælger, også hvis din iPhone bliver liggende. Ét tryk om morgenen, og den stopper af sig selv. Vores egenudviklede ultralette talemodel kører direkte på uret og gemmer kun de øjeblikke, hvor nogen taler.",
   "how_06": "Lyden går i papirkurven og bliver til tekstlinjer mærket Mig og Anden 1; et møde, en opgave og en deadline plukkes ud.",
   "how_07": "Ordnet for dig",
-  "how_08": "Din iPhone omdanner tale til tekst på enheden, sletter lyden og finder opgaver, deadlines og møder. Den kan også skelne, hvad du selv sagde, fra hvad andre sagde.",
+  "how_08": "Din iPhone omdanner tale til tekst på enheden, opbevarer ingen lyd og finder opgaver, deadlines og møder. Den kan også skelne mellem det, du selv sagde, og det, andre sagde.",
   "how_09": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
   "how_10": "Privat fra start",
   "how_11": "Dine minder bliver på din iPhone, og svarene bruger Apples model på enheden. Senere kan du vælge din egen cloud-API; intet sendes, før du tillader det.",
   "devices_01": "Enheder",
   "devices_02": "Din Apple Watch behøver ikke din iPhone i nærheden.",
-  "devices_03": "Apple Watch lytter selv hele dagen. Optagelserne venter på uret og sendes til din iPhone hver 2. time. Er iPhone ikke i nærheden, indhentes de, så snart de to forbindes igen, fx når du kommer hjem om aftenen. Din iPhone skal ikke være forbundet hele tiden.",
+  "devices_03": "Apple Watch lytter selv hele dagen. Det, uret hører, venter på uret og overføres til din iPhone hver anden time. Er din iPhone ikke i nærheden, overføres det, så snart de to forbindes igen, fx når du kommer hjem om aftenen. Din iPhone behøver ikke at være forbundet hele tiden.",
   "devices_04": "Bedst</span></h3><p>På håndleddet hele dagen, uden at telefonen skal være med.",
   "devices_05": "Kun iPhone</h3><p>Ingen Apple Watch? Din iPhone kan lytte selv.",
   "devices_06": "Begge sammen</h3><p>Én tidslinje for dagen. Det, begge hører, vises én gang, og hvis uret stopper, kan din iPhone tage over.",
@@ -105,8 +105,8 @@
   "privacy_01": "Anonymitet",
   "privacy_02": "Kun tekst. På din iPhone. Dit valg.",
   "privacy_03": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
-  "privacy_04": "Tekst, ikke lyd",
-  "privacy_05": "Tale omdannes til tekst på din iPhone, og derefter slettes lyden.",
+  "privacy_04": "Kun tekst, ingen lyd gemmes",
+  "privacy_05": "Det, der bliver sagt, omdannes til tekst på din iPhone. Lyden fjernes automatisk, når den er transskriberet, og opbevares ikke.",
   "privacy_06": "Ingen konto, ingen server fra os",
   "privacy_07": "Der er intet at oprette, og vi driver ikke servere, der kan se din dag.",
   "privacy_08": "Intet sendes uden dit ja",
@@ -121,36 +121,155 @@
   "foot_01": "Apple Watch og iPhone er varemærker tilhørende Apple Inc., registreret i USA og andre lande og regioner.",
   "faq": [
     {
-      "q": "Hvad er DayRecall?",
-      "a": "DayRecall er en AI-hukommelsesapp til Apple Watch og iPhone, lavet til mennesker, der glemmer ting. I de tidsrum, du vælger, lytter den med, gemmer det sagte som tekst på din iPhone og svarer på spørgsmål om din dag med de præcise ord og hvor de kom fra."
+      "title": "Det grundlæggende",
+      "items": [
+        {
+          "q": "Hvad er DayRecall?",
+          "a": "DayRecall er en AI-hukommelsesapp til Apple Watch og iPhone, lavet til folk, der glemmer ting. I de timer, du vælger, lytter den, gemmer det sagte som tekst på din iPhone og besvarer spørgsmål om din dag med de præcise ord og deres kilde."
+        },
+        {
+          "q": "Skal jeg have et Apple Watch?",
+          "a": "Nej. DayRecall fungerer bedst med Apple Watch, men din iPhone kan også lytte alene. Når begge lytter, samles din dag på én tidslinje, og det, begge hørte, vises kun én gang."
+        },
+        {
+          "q": "Gemmer DayRecall lydoptagelser?",
+          "a": "Nej. Det, der bliver sagt, omdannes til tekst på din iPhone, og lyden fjernes automatisk, når den er transskriberet. Kun teksten gemmes."
+        },
+        {
+          "q": "Hvor er mine data, og hvem kan se dem?",
+          "a": "På din iPhone og i dens sikkerhedskopi, hvis du bruger en. Der er ingen konto og ingen DayRecall-server, så vi kan ikke se dem. Svar bruger Apples model på enheden, og intet forlader din iPhone, medmindre du vælger at bruge din egen cloud-API eller overdrage en dag til en AI-app."
+        }
+      ]
     },
     {
-      "q": "Skal jeg have en Apple Watch?",
-      "a": "Nej. DayRecall virker bedst med Apple Watch, og din iPhone kan også lytte alene. Når begge lytter, bliver din dag til én tidslinje, og det, begge har hørt, vises én gang."
+      "title": "Enheder og krav",
+      "items": [
+        {
+          "q": "Hvad skal jeg bruge for at benytte DayRecall?",
+          "a": "En iPhone med iOS 26 eller nyere, der understøtter Apples talegenkendelse på enheden. Et Apple Watch med watchOS 26 eller nyere er valgfrit, men anbefales. Svar og opgaver kræver også Apple Intelligence; til svar kan du i stedet bruge din egen cloud-API."
+        },
+        {
+          "q": "Hvilke iPhone-modeller virker?",
+          "a": "DayRecall kræver iOS 26 eller nyere, som kører på iPhone 11 og nyere samt iPhone SE (2. generation) og nyere. Tale til tekst kræver desuden Apples talegenkendelse på enheden. Apple tilbyder den ikke på visse ældre modeller, herunder iPhone 11-modeller og iPhone SE (2. generation), så vi anbefaler iPhone 12 eller nyere. Hvis din iPhone ikke kan transskribere, fortæller DayRecall dig det. Svar og opgaver med Apple Intelligence kræver iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air eller iPhone 16 eller nyere."
+        },
+        {
+          "q": "Hvilke Apple Watch-modeller virker?",
+          "a": "Alle Apple Watch-modeller med watchOS 26 eller nyere: Apple Watch Series 6 og nyere, Apple Watch SE (2. generation) og nyere samt alle Apple Watch Ultra-modeller. Uret skal være parret med en iPhone, der kører DayRecall. Apple Watch er valgfrit: din iPhone kan lytte alene."
+        },
+        {
+          "q": "Skal min iPhone være tæt på mit ur?",
+          "a": "Nej. Dit Apple Watch opbevarer midlertidigt det, det har hørt, og overfører det til din iPhone hver anden time, eller så snart de to forbindes igen, for eksempel når du kommer hjem om aftenen."
+        },
+        {
+          "q": "Virker det uden internetforbindelse?",
+          "a": "Ja. Lytning, transskription, svar og opgaver kører på dine enheder, så de virker offline, når iOS har hentet de nødvendige sprogmodeller. Steder på kortet og din egen cloud-API kræver forbindelse."
+        }
+      ]
     },
     {
-      "q": "Skal min iPhone være i nærheden af min Apple Watch?",
-      "a": "Nej. Din Apple Watch gemmer sine optagelser og sender dem til din iPhone hver 2. time, eller så snart de to forbindes igen, fx når du kommer hjem om aftenen."
+      "title": "Sprog",
+      "items": [
+        {
+          "q": "Hvorfor afhænger de understøttede sprog af Apple?",
+          "a": "DayRecall arbejder på din iPhone med Apples indbyggede teknologi: talegenkendelse til transskription, Apples oversættelse til oversættelse og Apple Intelligence til svar og opgaver. Hver del understøtter sit eget sæt sprog, som Apple fastlægger og udvider med iOS-opdateringer, og nogle kræver en nyere iPhone. Derfor kan et sprog være klar til transskription, men endnu ikke til oversættelse, eller virke på én iPhone, men ikke en anden. En iOS-opdatering kan tilføje sprog."
+        },
+        {
+          "q": "Hvilke sprog kan DayRecall transskribere?",
+          "a": "Du kan vælge mellem engelsk (USA, Storbritannien), kinesisk (mandarin), japansk, koreansk, spansk, fransk, tysk, italiensk, portugisisk (Brasilien, Portugal), nederlandsk, svensk, dansk og tyrkisk. Hvert sprog virker kun, hvis Apples talegenkendelse på enheden understøtter det på din iPhone. Ellers markerer DayRecall sproget som ikke understøttet. Første gang du bruger et sprog, henter iOS dets talemodel."
+        },
+        {
+          "q": "Hvilke sprog kan appen oversætte?",
+          "a": "Linjer på dine andre arbejdssprog kan oversættes til dit hovedsprog med Apples oversættelse på enheden. Et sprogpar kan altså kun oversættes, hvis Apple understøtter det på din iPhone. På iOS 27 gælder det alle sprog, DayRecall kan transskribere; på iOS 26 gælder det færre. Dansk og svensk er for eksempel ikke med dér. iOS henter hvert sprog før første brug. Apple viser de aktuelle sprog på sin <a href=\"https://www.apple.com/ios/feature-availability/\">side om tilgængelige funktioner</a>."
+        },
+        {
+          "q": "Hvilke sprog virker til svar og opgaver?",
+          "a": "Svar og opgaver bruger Apple Intelligence, som understøtter engelsk, kinesisk (forenklet og traditionelt), dansk, nederlandsk, fransk, tysk, italiensk, japansk, koreansk, norsk, portugisisk, spansk, svensk, tyrkisk og vietnamesisk. Sproget på din iPhone og sproget i Siri skal være indstillet til det samme understøttede sprog. Apple Intelligence virker i øjeblikket ikke på iPhones købt i det kinesiske fastland eller i det kinesiske fastland med en Apple-konto til det kinesiske fastland. Der kan du stadig få svar via din egen cloud-API, men ikke opgaver. Se <a href=\"https://support.apple.com/en-us/121115\">Apples vejledning om Apple Intelligence</a>."
+        },
+        {
+          "q": "Hvilke sprog findes selve appen på?",
+          "a": "Appens menuer og skærme findes på 13 sprog: engelsk, forenklet kinesisk, dansk, nederlandsk, fransk, tysk, italiensk, japansk, koreansk, portugisisk (Portugal), spansk, svensk og tyrkisk. Det er adskilt fra de sprog, den kan transskribere."
+        },
+        {
+          "q": "Kan den følge en samtale på flere sprog?",
+          "a": "Ja. Slå <strong>Flersproget transskription</strong> til, og tilføj op til to arbejdssprog mere. DayRecall følger en samtale, der skifter mellem dem, og transskriberer hver del på det sprog, der blev talt. Linjer på de andre sprog kan derefter oversættes til dit hovedsprog."
+        }
+      ]
     },
     {
-      "q": "Gemmer DayRecall lydoptagelser?",
-      "a": "Nej. Tale omdannes til tekst på din iPhone, og derefter slettes lyden. Kun teksten gemmes."
+      "title": "Brug af DayRecall",
+      "items": [
+        {
+          "q": "Hvordan starter og stopper jeg lytning?",
+          "a": "Indstil dine lyttetider én gang, for eksempel hverdage fra 9:00 til 18:00. Når de begynder, spørger dit Apple Watch, om det skal starte: ét tryk, og det stopper selv, når tiden er gået. Du kan også stoppe før tid eller springe en dag over."
+        },
+        {
+          "q": "Hvad kan jeg spørge om?",
+          "a": "Alt om din dag, med dine egne ord: »Hvad lovede Sam mig i dag?« eller »Hvornår skal rapporten være færdig?« Hvert svar viser, hvor det kommer fra, helt ned til den sagte linje."
+        },
+        {
+          "q": "Hvordan fungerer opgaver?",
+          "a": "DayRecall finder løfter, deadlines og møder i din dag og venter på, at du bekræfter dem. Intet kommer i din kalender eller Påmindelser, før du siger ja."
+        },
+        {
+          "q": "Hvordan skelner DayRecall mellem stemmer?",
+          "a": "Slå <strong>Markér hvem der taler</strong> til, og læs fem korte kort højt; det tager cirka et minut. Derefter markeres dine linjer med Mig, og alle andre i en samtale får et nummer: Anden 1, Anden 2 og så videre. Dit stemmeaftryk bliver på din iPhone, og andres gemmes ikke. Funktionen er valgfri og slået fra som standard."
+        },
+        {
+          "q": "Kan jeg overdrage en dag til min egen AI-app?",
+          "a": "Ja. <strong>Overdrag dagen til en AI-app</strong> gør en dag til en tekstfil med et spørgsmål, du vælger, og du vælger appen i delingsmenuen. DayRecall sender ikke noget af sig selv. For at hente opgaver tilbage skal du kopiere AI-appens svar og trykke på <strong>Hent AI-svaret tilbage</strong>."
+        },
+        {
+          "q": "Kan jeg importere en lydfil?",
+          "a": "Ja. Importér en lydfil, så omdanner DayRecall den til tekst på din iPhone ligesom alt andet. Appen arbejder med sin egen kopi, så din originale fil forbliver uændret."
+        }
+      ]
     },
     {
-      "q": "Hvor er mine data, og hvem kan se dem?",
-      "a": "På din iPhone. Der er ingen konto og ingen DayRecall-server. Svarene bruger Apples model på enheden, og intet forlader din iPhone, medmindre du vælger at bruge din egen cloud-API eller give en dag til en AI-app."
+      "title": "Batteri og hastighed",
+      "items": [
+        {
+          "q": "Hvor meget batteri bruger appen?",
+          "a": "Meget lidt. Vores egen ultralette talemodel beholder kun de øjeblikke, hvor nogen taler. I interne test på Apple Watch Series 11 brugte lytning cirka 0,9 % ekstra batteri i timen."
+        },
+        {
+          "q": "Hvor hurtigt vises teksten?",
+          "a": "Dit ur overfører det, det har hørt, cirka hver anden time og når det stopper med at lytte. Din iPhone omdanner det til tekst, efterhånden som det modtages. Åbn DayRecall og tryk på <strong>Synkroniser nu</strong>, hvis du vil have teksten hurtigere. I interne test på iPhone 17 Pro Max blev 3 minutters samtale behandlet på 17 sekunder."
+        }
+      ]
     },
     {
-      "q": "Hvor meget batteri bruger den?",
-      "a": "Meget lidt. Vores egenudviklede ultralette talemodel gemmer kun de øjeblikke, hvor nogen taler. I intern test på Apple Watch Series 11 lagde lytning cirka 0,9 % batteri til pr. time."
+      "title": "Privatliv og samtykke",
+      "items": [
+        {
+          "q": "Forlader noget min iPhone?",
+          "a": "Kun når du vælger det. Med din egen cloud-API sender hvert spørgsmål dit spørgsmål og korte, relevante uddrag af dine transskriptioner til den tjeneste. Når du overdrager en dag til en AI-app, modtager den app den tekstfil, du sender. Steder bruger Apple Maps, og iCloud Backup indeholder dine data, hvis du bruger det. Privatlivspolitikken har detaljerne."
+        },
+        {
+          "q": "Sporer DayRecall mig eller viser reklamer?",
+          "a": "Nej. DayRecall har ingen reklamer, ingen analyseværktøjer, ingen sporing og ingen tredjepartskode, der indsamler data. For at hjælpe med at løse problemer gemmer appen en log på dine enheder over, hvad den gjorde, aldrig hvad der blev sagt, i op til 14 dage. Loggen forlader kun din iPhone, hvis du deler den."
+        },
+        {
+          "q": "Hvordan sletter jeg mine data?",
+          "a": "Slet en optagelse med dens tekst og opgaver på dens side, eller slet alt under <strong>Indstillinger › Privatliv › Slet alle minder</strong>. <strong>Slet min stemme</strong> fjerner dit stemmeaftryk. Når du sletter appen, fjernes det, den har gemt på dine enheder. Kopier i tidligere sikkerhedskopier bliver, indtil disse sikkerhedskopier erstattes."
+        },
+        {
+          "q": "Skal jeg fortælle andre, at DayRecall lytter?",
+          "a": "Ja. Fortæl det til dem, du taler med. Nogle steder kræver alles samtykke, selv når kun tekst gemmes, så følg reglerne dér, hvor du er. Det er dit ansvar, som vores vilkår for brug forklarer."
+        }
+      ]
     },
     {
-      "q": "Hvilke sprog understøtter den?",
-      "a": "Appen findes på 13 sprog. Den kan også transskribere en samtale, der skifter mellem op til tre sprog, og oversætte de andre sprog til dit."
-    },
-    {
-      "q": "Hvornår kan jeg få DayRecall?",
-      "a": "DayRecall er i beta og kommer snart til App Store."
+      "title": "Tilgængelighed og hjælp",
+      "items": [
+        {
+          "q": "Hvornår kan jeg få DayRecall?",
+          "a": "DayRecall er i beta og kommer snart i App Store."
+        },
+        {
+          "q": "Hvordan får jeg hjælp?",
+          "a": "Skriv til support@dayrecall.com, og fortæl os, hvornår det skete og på hvilken enhed. En log hjælper mest: <strong>Indstillinger › Udviklerindstillinger › Logfiler › Del log</strong>."
+        }
+      ]
     }
   ],
   "lang_label": "Sprog",
@@ -243,5 +362,16 @@
         "Arkiv"
       ]
     }
-  }
+  },
+  "nav_09": "FAQ",
+  "foot_faq": "FAQ",
+  "foot_terms": "Vilkår for brug",
+  "foot_social": "Følg DayRecall",
+  "faq_all": "Alle spørgsmål",
+  "faq_page_title": "FAQ — DayRecall",
+  "faq_page_description": "Svar om DayRecall: krav, understøttede iPhone- og Apple Watch-modeller og sprog, lytning og transskription, hvad der gemmes, batteri og privatliv.",
+  "faq_page_lead": "Sådan virker DayRecall, hvad du skal bruge, og hvad appen gemmer. Kan du ikke finde dit spørgsmål? Skriv til os.",
+  "faq_page_toc": "Emner",
+  "faq_page_more": "Har du stadig et spørgsmål?",
+  "faq_page_more_text": "Skriv til os, så vender vi tilbage."
 }
