@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DayRecall — AI memory for your whole day</title>
-<meta name="description" content="For people who forget things. DayRecall listens on your Apple Watch during the hours you choose, keeps what was said as text on your iPhone, and answers questions about your day with the exact words.">
+<meta name="description" content="For people who forget things. DayRecall listens during the hours you choose, best on Apple Watch and also on iPhone alone, keeps what was said as text on your iPhone, and answers questions about your day with the exact words.">
 <link rel="canonical" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="en" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
@@ -15,14 +15,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DayRecall">
 <meta property="og:title" content="DayRecall — AI memory for your whole day">
-<meta property="og:description" content="Your Apple Watch listens during the hours you choose; your iPhone keeps what was said as text. Ask about your day any time.">
+<meta property="og:description" content="Your Apple Watch, or just your iPhone, listens during the hours you choose and keeps what was said as text. Ask about your day any time.">
 <meta property="og:url" content="https://dayrecall.com/">
 <meta property="og:image" content="https://dayrecall.com/assets/icon-1024.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/site.css?v=bb4b91f1">
-<script src="/assets/stages.js?v=55ebb969" defer></script>
+<link rel="stylesheet" href="/assets/site.css?v=55239127">
+<script src="/assets/stages.js?v=d03301f1" defer></script>
+<script src="/assets/store.js?v=267b0b59" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -32,6 +33,7 @@
     <a class="brand" href="/" aria-label="DayRecall, home"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
     <nav class="nav-links" aria-label="Sections">
       <a href="#how">How it works</a>
+      <a href="#devices">Devices</a>
       <a href="#battery">Battery</a>
       <a href="#voices">Voices</a>
       <a href="#languages">Languages</a>
@@ -45,11 +47,12 @@
   <section class="hero">
     <div class="wrap">
       <div class="copy">
-        <p class="eyebrow"><span class="ico" data-icon="watch"></span>For iPhone and Apple Watch</p>
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>Best with Apple Watch · Works with iPhone alone</p>
         <h1>AI memory for your <span class="hl">whole&nbsp;day</span></h1>
-        <p class="lead">For everyone who forgets things. Your Apple Watch listens during the hours you choose, and your iPhone keeps what was said as text. <strong>Ask about your day any time, and get the exact words back.</strong></p>
+        <p class="lead">For everyone who forgets things. Your Apple Watch, or just your iPhone, listens during the hours you choose, and what was said is kept as text on your iPhone. <strong>Ask about your day any time, and get the exact words back.</strong></p>
         <div class="cta-row">
-          <span class="pill"><span class="dot"></span>In beta · Coming soon to the App Store</span>
+          <span class="pill" data-prelaunch><span class="dot"></span>In beta · Coming soon to the App Store</span>
+          <a class="pill store" data-store href="https://dayrecall.com/" hidden>Get DayRecall on the App Store <span class="arrow" aria-hidden="true">↗</span></a>
           <a class="ghost" href="#how">See how it works <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
         <ul class="proof">
@@ -77,7 +80,7 @@
         <article class="step">
           <div class="stage t-light" data-stage="listening" role="img" aria-label="A strip of sound is scanned: only the bursts of speech light up and are kept; the quiet in between is skipped."></div>
           <h3><span class="num">1</span>Remember what was said</h3>
-          <p>Your Apple Watch listens during the hours you choose. One tap in the morning, and it stops on its own. Our in-house ultra-light speech model runs right on the watch and keeps only the moments when someone is talking.</p>
+          <p>Your Apple Watch listens during the hours you choose, even with your iPhone left behind. One tap in the morning, and it stops on its own. Our in-house ultra-light speech model runs right on the watch and keeps only the moments when someone is talking.</p>
         </article>
         <article class="step">
           <div class="stage t-light" data-stage="tidying" role="img" aria-label="The sound goes into the bin and becomes lines of text marked Me and Other 1; a meeting, a to-do and a deadline are picked out."></div>
@@ -90,6 +93,23 @@
           <p>Your memories stay on your iPhone, and answers use Apple’s on-device model. You can choose your own cloud API later; nothing is sent until you allow it.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">Devices</p>
+        <h2>Your watch doesn’t need your phone nearby.</h2>
+        <p class="body">Apple Watch listens on its own, all day. Recordings wait on the watch and go to your iPhone every two hours, and if your iPhone isn’t around, they catch up as soon as the two reconnect, say when you get home in the evening. Your iPhone never has to stay connected.</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">Best</span></h3><p>On your wrist all day, with no phone needed.</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>Just an iPhone</h3><p>No Apple Watch? Your iPhone can listen on its own.</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>Both together</h3><p>One timeline for the day. What both heard shows once, and if the watch stops, your iPhone can take over.</p></div></li>
+        </ul>
+        <p class="vision">It starts with Apple Watch and iPhone: every device that listens adds to one memory.</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="With the iPhone away, the watch keeps listening and holds three clips; when the iPhone is back at 11:00, the clips move over and appear as text."></div>
     </div>
   </section>
 
@@ -235,8 +255,9 @@
       <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
       <h2>DayRecall</h2>
       <p class="sub">AI memory for your whole day.</p>
-      <span class="pill"><span class="dot"></span>Coming soon to the App Store</span>
-      <p class="small">For iPhone and Apple Watch · In 13 languages</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>Coming soon to the App Store</span>
+      <a class="pill store" data-store href="https://dayrecall.com/" hidden>Get DayRecall on the App Store <span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">Best with Apple Watch · Works with iPhone alone · In 13 languages</p>
     </div>
   </section>
 </main>

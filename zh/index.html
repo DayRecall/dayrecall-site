@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DayRecall — 你一整天的 AI 记忆</title>
-<meta name="description" content="写给容易忘事的人。DayRecall 在你选定的时段里用 Apple Watch 听，把说过的话变成文字留在 iPhone 上，随时回答关于这一天的问题，并给出原话。">
+<meta name="description" content="写给容易忘事的人。DayRecall 在你选定的时段里替你听着，最适合 Apple Watch，只用 iPhone 也行；说过的话变成文字留在 iPhone 上，随时回答关于这一天的问题，并给出原话。">
 <link rel="canonical" href="https://dayrecall.com/zh/">
 <link rel="alternate" hreflang="en" href="https://dayrecall.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/">
@@ -15,14 +15,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DayRecall">
 <meta property="og:title" content="DayRecall — 你一整天的 AI 记忆">
-<meta property="og:description" content="Apple Watch 在你选定的时段里听，iPhone 把说过的话变成文字替你记着。随时问问这一天。">
+<meta property="og:description" content="Apple Watch（或者只用 iPhone）在你选定的时段里替你听着，说过的话都变成文字。随时问问这一天。">
 <meta property="og:url" content="https://dayrecall.com/zh/">
 <meta property="og:image" content="https://dayrecall.com/assets/icon-1024.png">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/assets/site.css?v=bb4b91f1">
-<script src="/assets/stages.js?v=55ebb969" defer></script>
+<link rel="stylesheet" href="/assets/site.css?v=55239127">
+<script src="/assets/stages.js?v=d03301f1" defer></script>
+<script src="/assets/store.js?v=267b0b59" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>
@@ -32,6 +33,7 @@
     <a class="brand" href="/zh/" aria-label="DayRecall 首页"><img src="/assets/icon.svg" alt="" width="30" height="30"><span>DayRecall</span></a>
     <nav class="nav-links" aria-label="页面导航">
       <a href="#how">怎么用</a>
+      <a href="#devices">设备</a>
       <a href="#battery">省电</a>
       <a href="#voices">多人识别</a>
       <a href="#languages">多语言</a>
@@ -45,11 +47,12 @@
   <section class="hero">
     <div class="wrap">
       <div class="copy">
-        <p class="eyebrow"><span class="ico" data-icon="watch"></span>适用于 iPhone 和 Apple Watch</p>
+        <p class="eyebrow"><span class="ico" data-icon="watch"></span>最适合 Apple Watch · 只用 iPhone 也行</p>
         <h1><span class="nw">你<span class="hl">一整天</span>的</span> AI&nbsp;记忆</h1>
-        <p class="lead">写给容易忘事的人。Apple Watch 在你选定的时段里听，iPhone 把说过的话变成文字替你记着。<strong><span class="nw">随时问问这一天，</span><span class="nw">原话都找得回来。</span></strong></p>
+        <p class="lead">写给容易忘事的人。在你选定的时段里，Apple Watch（或者只用 iPhone）替你听着，说过的话都变成文字存在 iPhone 上。<strong><span class="nw">随时问问这一天，</span><span class="nw">原话都找得回来。</span></strong></p>
         <div class="cta-row">
-          <span class="pill"><span class="dot"></span>内测中 · 即将登陆 App Store</span>
+          <span class="pill" data-prelaunch><span class="dot"></span>内测中 · 即将登陆 App Store</span>
+          <a class="pill store" data-store href="https://dayrecall.com/zh/" hidden>前往 App Store 下载 <span class="arrow" aria-hidden="true">↗</span></a>
           <a class="ghost" href="#how">看看怎么用 <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
         <ul class="proof">
@@ -77,7 +80,7 @@
         <article class="step">
           <div class="stage t-light" data-stage="listening" role="img" aria-label="一段声音被扫过：只有说话的部分亮起来并被留下，中间安静的部分被跳过。"></div>
           <h3><span class="num">1</span>记住说过的话</h3>
-          <p>Apple Watch 会在你选定的时段里听。早上轻点一下，到点自动停止。自研超轻量人声模型在手表本地运行，只留下有人说话的片段。</p>
+          <p>Apple Watch 会在你选定的时段里听，手机不在身边也一样。早上轻点一下，到点自动停止。自研超轻量人声模型在手表本地运行，只留下有人说话的片段。</p>
         </article>
         <article class="step">
           <div class="stage t-light" data-stage="tidying" role="img" aria-label="声音进了垃圾桶，变成标着“我”和“其他人 1”的几行文字；会议、待办和截止时间被挑了出来。"></div>
@@ -90,6 +93,23 @@
           <p>你的记忆保存在你的 iPhone 上，由 Apple 设备端模型回答。之后也可以改用自己的云端 API；在你允许之前，不会发送任何内容。</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="spot devices" id="devices">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">设备</p>
+        <h2><span class="nw">手机不在身边，</span><span class="nw">手表照样记。</span></h2>
+        <p class="body">Apple Watch 可以独立聆听一整天。录音先存在手表上，每 2 小时同步到 iPhone 一次；手机不在身边也没关系，等两台设备再次连上（比如晚上回到家）就自动补上。iPhone 不用一直连着。</p>
+        <ul class="devs">
+          <li><span class="dev-ico" data-icon="watch"></span><div><h3>Apple Watch <span class="best">最推荐</span></h3><p>一直戴在手腕上，不需要手机陪着。</p></div></li>
+          <li><span class="dev-ico" data-icon="phone"></span><div><h3>只有 iPhone</h3><p>没有 Apple Watch？iPhone 自己也能听。</p></div></li>
+          <li><span class="dev-ico" data-icon="devices"></span><div><h3>两台一起</h3><p>一天只有一条时间线；两台都听到的话只显示一次，手表停了，iPhone 可以接着听。</p></div></li>
+        </ul>
+        <p class="vision">从 Apple Watch 和 iPhone 开始，每一台会听的设备，都汇进同一份记忆。</p>
+      </div>
+      <div class="stage t-light" data-stage="sync" role="img" aria-label="iPhone 不在身边时，手表照样听，攒下 3 段待同步；11:00 iPhone 回来，3 段录音传过去，变成文字。"></div>
     </div>
   </section>
 
@@ -235,8 +255,9 @@
       <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
       <h2>DayRecall</h2>
       <p class="sub">你一整天的 AI 记忆。</p>
-      <span class="pill"><span class="dot"></span>即将登陆 App Store</span>
-      <p class="small">支持 iPhone 和 Apple Watch · 13 种语言</p>
+      <span class="pill" data-prelaunch><span class="dot"></span>即将登陆 App Store</span>
+      <a class="pill store" data-store href="https://dayrecall.com/zh/" hidden>前往 App Store 下载 <span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="small">最适合 Apple Watch · 只用 iPhone 也行 · 13 种语言</p>
     </div>
   </section>
 </main>

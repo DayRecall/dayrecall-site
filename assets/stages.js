@@ -20,6 +20,7 @@
       other: 'Other 1',
       other2: 'Other 2',
       battery: { title: 'Workday', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: 'Battery used by listening' },
+      sync: { away: 'iPhone not nearby', waiting: '{n} waiting to sync', syncing: 'Syncing…', synced: 'Synced to iPhone' },
       speakers: {
         place: 'Office', time: '14:10',
         lines: ['Can we launch on Friday?', 'Design will be done today.', 'I’ll test it on Thursday.', 'Great, I’ll tell the client.']
@@ -61,6 +62,7 @@
       other: '其他人 1',
       other2: '其他人 2',
       battery: { title: '工作日', hours: '9:00–18:00', ticks: ['9:00', '12:00', '15:00', '18:00'], used: '聆听额外耗电' },
+      sync: { away: 'iPhone 不在身边', waiting: '{n} 段待同步', syncing: '正在同步…', synced: '已同步到 iPhone' },
       speakers: {
         place: '办公室', time: '14:10',
         lines: ['周五能上线吗？', '设计今天就能做完。', '我周四来测。', '好，我去跟客户说。']
@@ -231,7 +233,13 @@
     globe: [['circle', 's', { cx: 12, cy: 12, r: 8.5 }], ['path', 's', { d: 'M3.5 12h17M12 3.5c2.4 2.3 3.6 5.2 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.2-3.6-8.5S9.6 5.8 12 3.5z' }]],
     week: [['rect', 's', { x: 4, y: 5.5, width: 16, height: 14.5, rx: 2.5 }], ['path', 's', { d: 'M4 10h16M8.5 3.5v4M15.5 3.5v4M8 14h2M11 14h2M14 14h2M8 17h2' }]],
     turn: [['path', 's', { d: 'M6.5 5.5v5.7a3.3 3.3 0 0 0 3.3 3.3H18M14.2 10.7l3.8 3.8-3.8 3.8' }]],
-    mail: [['rect', 's', { x: 3.5, y: 5.5, width: 17, height: 13, rx: 2.5 }], ['path', 's', { d: 'M4.5 7.5l7.5 5.6 7.5-5.6' }]]
+    mail: [['rect', 's', { x: 3.5, y: 5.5, width: 17, height: 13, rx: 2.5 }], ['path', 's', { d: 'M4.5 7.5l7.5 5.6 7.5-5.6' }]],
+    phone: [['rect', 's', { x: 6.5, y: 2.8, width: 11, height: 18.4, rx: 2.8 }], ['path', 's', { d: 'M10.6 5.8h2.8' }]],
+    devices: [
+      ['rect', 's', { x: 3, y: 3.5, width: 10.5, height: 17, rx: 2.5 }],
+      ['rect', 's', { x: 15.5, y: 8.5, width: 6, height: 7.5, rx: 2 }],
+      ['path', 's', { d: 'M16.9 8.5l.4-2.2h2.4l.4 2.2M16.9 16l.4 2.2h2.4l.4-2.2' }]
+    ]
   };
 
   /** An icon centred on the origin of a new group; `size` is the side of its 24-point box. */
@@ -1192,12 +1200,96 @@
     }
   };
 
+  // 10. The watch on its own: with the iPhone away it keeps listening and holds the clips, then
+  //     hands them over at the two-hour sync once the iPhone is back, where they become text.
+
+  var Sync = {
+    w: 330, h: 230, length: 9, still: 7.2,
+    build: function (svg, ctx) {
+      var S = ctx.words.sync;
+      var watch = { x: 84, y: 140 }, phone = { x: 250, y: 140 };
+      var clips = [1.3, 2.3, 3.3], back = 4.4, sends = [4.9, 5.25, 5.6];
+      var from = 0.6, to = 4.2;
+
+      card(svg, 330, 230, 28);
+      var root = el(svg, 'g');
+      var clock = txt(root, '9:00', 20, 34, 20, 600, 'ink', { mono: true });
+      var status = txt(root, S.away, 20, 58, 11.5, 600, 'ink2');
+      el(root, 'line', {
+        x1: watch.x + 46, y1: watch.y, x2: phone.x - 42, y2: phone.y, stroke: 'ink3', 'stroke-opacity': 0.7,
+        'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-dasharray': '2 6'
+      });
+
+      var ph = el(root, 'g');
+      el(ph, 'rect', { x: -31, y: -58, width: 62, height: 116, rx: 16, fill: 'tile', stroke: 'ink3', 'stroke-width': 2.5 });
+      el(ph, 'rect', { x: -9, y: -49, width: 18, height: 4, rx: 2, fill: 'ink3' });
+      var rows = [34, 26, 30].map(function (w, i) {
+        var g = el(ph, 'g', { transform: 'translate(0 ' + (-24 + 17 * i) + ')' });
+        el(g, 'circle', { cx: -16, cy: 0, r: 3, fill: 'hl' });
+        el(g, 'rect', { x: -9, y: -3, width: w, height: 6, rx: 3, fill: 'ink2' });
+        return g;
+      });
+
+      var tile = el(root, 'g');
+      el(tile, 'rect', { x: -38, y: -38, width: 76, height: 76, rx: 23, fill: 'tile' });
+      var lit = el(tile, 'rect', { x: -38, y: -38, width: 76, height: 76, rx: 23, fill: 'hl' });
+      var idle = icon(tile, 'watch', 36, 'ink2', 'tile');
+      var busy = icon(tile, 'watch', 36, 'on-hl');
+      var badge = el(root, 'g');
+      el(badge, 'circle', { r: 12.5, fill: 'accent' });
+      var count = txt(badge, '0', 0, 0.5, 11.5, 700, 'on-accent', { anchor: 'middle' });
+      var packets = sends.map(function () { return el(root, 'circle', { r: 5, fill: 'hl' }); });
+      var lastClock = '', lastStatus = '', lastCount = '';
+
+      return function (t) {
+        op(root, loopFade(t, Sync.length));
+        var minutes = Math.floor(120 * seg(t, from, to) + 1e-6);
+        var hhmm = (9 + Math.floor(minutes / 60)) + ':' + ('0' + (minutes % 60)).slice(-2);
+        if (hhmm !== lastClock) {
+          clock.textContent = hhmm;
+          lastClock = hhmm;
+        }
+        var recorded = clips.filter(function (c) { return t >= c + 0.3; }).length;
+        var sent = sends.filter(function (s) { return t >= s + 0.5; }).length;
+        var waiting = recorded - sent;
+        var word = t >= sends[2] + 0.6 ? S.synced : t >= back ? S.syncing :
+          waiting > 0 ? S.waiting.replace('{n}', waiting) + ' · ' + S.away : S.away;
+        if (word !== lastStatus) {
+          status.textContent = word;
+          lastStatus = word;
+        }
+        var active = 0;
+        clips.forEach(function (c) { active = Math.max(active, seg(t, c - 0.1, c + 0.1) * (1 - seg(t, c + 0.5, c + 0.8))); });
+        move(tile, watch.x, watch.y, 1 + 0.06 * active);
+        op(lit, active);
+        op(idle, 1 - active);
+        op(busy, active);
+        move(badge, watch.x + 34, watch.y - 34, waiting > 0 ? 1 : 0.6);
+        op(badge, waiting > 0 ? 1 : 0);
+        if (String(waiting) !== lastCount) {
+          count.textContent = String(waiting);
+          lastCount = String(waiting);
+        }
+        var near = ease(seg(t, back, back + 0.5));
+        move(ph, phone.x + 12 * (1 - near), phone.y);
+        op(ph, 0.3 + 0.7 * near);
+        rows.forEach(function (r, i) { op(r, easeOut(seg(t, sends[i] + 0.5, sends[i] + 0.8))); });
+        packets.forEach(function (p, i) {
+          var k = ease(seg(t, sends[i], sends[i] + 0.5));
+          p.setAttribute('cx', lerp(watch.x + 40, phone.x - 34, k));
+          p.setAttribute('cy', watch.y);
+          op(p, k > 0 && k < 1 ? 1 : 0);
+        });
+      };
+    }
+  };
+
   // ---------------------------------------------------------------------------------------------
   // Playing: only the animations on screen run; with Reduce Motion each shows its still frame.
 
   var STAGES = {
     listening: Listening, tidying: Tidying, privacy: Privacy, consent: Consent, voice: Voice, ask: AskDay,
-    battery: Battery, speakers: Speakers, languages: Languages
+    battery: Battery, speakers: Speakers, languages: Languages, sync: Sync
   };
   var calm = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
   var items = [];
