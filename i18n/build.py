@@ -164,6 +164,7 @@ def head(lang, s, page, title, description, graph=None):
     lines += [f'<link rel="alternate" hreflang="{o["code"]}" href="{SITE}{url(o, page)}">' for o in versions(page)]
     lines += [
         f'<link rel="alternate" hreflang="x-default" href="{SITE}{url(EN, page)}">',
+        '<script src="/assets/locale.js"></script>',
         '<meta name="theme-color" content="#0B0C0E">',
         '<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">',
         '<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">',
@@ -223,7 +224,10 @@ def language_links(lang, page, indent):
     out = []
     for o in versions(page):
         current = ' aria-current="page"' if o is lang else ''
-        out.append(f'{indent}<a href="{url(o, page)}" hreflang="{o["code"]}" lang="{o["code"]}"{current}>{o["name"]}</a>')
+        # English shares the default URL, so mark an explicit English choice for browsers
+        # that cannot save the preference before following the link.
+        target = url(o, page) + ('?lang=en' if o is EN else '')
+        out.append(f'{indent}<a href="{target}" hreflang="{o["code"]}" lang="{o["code"]}"{current}>{o["name"]}</a>')
     return out
 
 
