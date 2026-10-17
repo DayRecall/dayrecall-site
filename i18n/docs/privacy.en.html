@@ -44,7 +44,7 @@
         <div class="doc-summary">
           <h2>Key points</h2>
           <ul>
-            <li><span class="tick" data-icon="check"></span><span>DayRecall works on your devices. We have no user accounts and no servers that receive your audio, transcripts, voiceprint or places, and we cannot access them.</span></li>
+            <li><span class="tick" data-icon="check"></span><span>DayRecall works on your devices. We have no user accounts and no servers that receive your audio, transcripts, voiceprint, places or health data, and we cannot access them.</span></li>
             <li><span class="tick" data-icon="check"></span><span>Speech is turned into text on your iPhone. The audio is cleared automatically once it has been transcribed: DayRecall keeps the text, not the audio.</span></li>
             <li><span class="tick" data-icon="check"></span><span>Information leaves your devices only when you choose, for example when you use your own cloud API or hand a day to an AI app, or through Apple services you use, such as iCloud Backup.</span></li>
             <li><span class="tick" data-icon="check"></span><span>No advertising, no analytics, no tracking. We do not sell personal information.</span></li>
@@ -69,6 +69,7 @@
           <li>“<strong>listening hours</strong>” means the times you choose for the App to listen;</li>
           <li>“<strong>transcript</strong>” means the text the App produces from speech;</li>
           <li>“<strong>voiceprint</strong>” means a set of numbers derived from your voice that the App uses to recognise you as a speaker; it is not an audio recording;</li>
+          <li>“<strong>health data</strong>” means the sleep, steps, walking distance, workouts, heart rate and resting heart rate that the App reads from the Health app on your iPhone, if you turn that on (Section 4.9);</li>
           <li>“<strong>third-party service</strong>” means a product or service that we do not operate, such as Apple’s services, a cloud service you connect, or another app you share content with.</li>
         </ul>
 
@@ -103,6 +104,13 @@
         <p>Notifications, such as the evening list of items to confirm and reminders of due to-dos, are scheduled on your iPhone and Apple Watch, with no server of ours involved. You can turn each kind on or off in <strong>Settings › Notifications</strong>.</p>
         <h3>4.8 Diagnostic logs</h3>
         <p>To help fix problems, the App keeps a log on your iPhone and Apple Watch of what it did, such as counts, durations, settings and errors. The log does not contain what was said, your questions or answers, names, places or calendar titles. When the App crashes or stops responding, iOS reports this to the App afterwards, and the report is added to the same log. Logs are kept for up to 14 days and are excluded from backups. A log leaves your iPhone only if you share it yourself, from <strong>Settings › Developer options › Logs › Share log</strong>.</p>
+        <h3>4.9 Health data (optional)</h3>
+        <p>(a) Reading health data is off until you turn on <strong>Show sleep, activity and heart rate</strong> in <strong>Settings › Health</strong> and allow access when iOS asks. Only then does the App read the following from the Health app on your iPhone, through Apple’s HealthKit, whichever device or app recorded it: sleep, steps and walking distance, workouts, heart rate and resting heart rate. The App reads only the kinds you allow. It only reads from Health and never writes to it.</p>
+        <p>(b) The App uses health data for two purposes only. The first is to show on your day’s timeline whether you were asleep, walking or working out during a part of the day, or had a heart rate faster than usual, with the numbers behind it, such as your heart rate, on that part’s detail page. The second is, when you ask what was said during an activity, such as “What did I say while I was running?” or “What did we talk about before bed?”, to find the times you mean.</p>
+        <p>(c) The App does not store health data. It reads it from Health again each time a day is shown or a question needs it, and processes it only on your iPhone. It is not sent to us or to any third party. The App’s diagnostic log (Section 4.8) records how many items were read, never what they were.</p>
+        <p>(d) Health data is not included when you hand a day to another app (Section 6.3), and it is not sent with your questions to your own cloud API (Section 6.2). When you ask about what was said during an activity, the App uses health data only to choose which times to search. What is sent under Section 6.2 is still your question and short excerpts of your transcripts, which may come from those times.</p>
+        <p>(e) We do not use health data for advertising, marketing or data mining. The App draws no medical conclusions and gives no health advice: it states only what the data shows, for example that your heart rate was faster than usual.</p>
+        <p>(f) Health data is health information, which many laws treat as sensitive. The App reads it only after you turn the feature on and allow access. You can turn the feature off at any time in <strong>Settings › Health</strong>, or withdraw the App’s access in the iPhone Settings app (<strong>Health › Data Access &amp; Devices</strong>). If you do not use this feature, the rest of the App works normally; it simply does not show what you were doing or find what was said during an activity.</p>
 
         <h2 id="permissions">5. Device permissions</h2>
         <p>The App asks for the following permissions only when a feature you use needs them. You can grant or withdraw each one at any time in the iPhone Settings app. Withdrawing a permission does not affect processing that took place before.</p>
@@ -118,6 +126,7 @@
               <tr><th scope="row">Calendars (iPhone)</th><td data-label="Used for">Adding events you confirm; with full access, showing meeting names on your timeline</td><td data-label="If not allowed">You can still add events through the iOS New Event screen; meeting names are not shown</td></tr>
               <tr><th scope="row">Reminders (iPhone)</th><td data-label="Used for">Adding the to-dos you confirm, if you turn this on</td><td data-label="If not allowed">To-dos stay in the App</td></tr>
               <tr><th scope="row">Notifications (iPhone and Apple Watch)</th><td data-label="Used for">Lists of items to confirm and reminders of due to-dos</td><td data-label="If not allowed">You receive no notifications</td></tr>
+              <tr><th scope="row">Health (iPhone)</th><td data-label="Used for">Reading sleep, steps and walking distance, workouts, heart rate and resting heart rate, if you turn this on; you choose which kinds to allow</td><td data-label="If not allowed">Those kinds are not read; everything else works</td></tr>
             </tbody>
           </table>
         </div>
@@ -135,7 +144,7 @@
         <h3>6.2 Your own cloud API (optional)</h3>
         <p>(a) In <strong>Settings › Answer with</strong>, you can choose <strong>My own API</strong>: an OpenAI-compatible service of your choice, used with your own key. Before anything is sent, the App shows you what will be sent to that address and asks for your permission. If you change the address, it asks again.</p>
         <p>(b) After that, each question you ask sends the service your question and, for a question about your day, the current date, time and time zone and short excerpts of your transcripts that match the question (up to about 12,000 characters), each with the date and time it was recorded and the device that heard it.</p>
-        <p>(c) The App never sends audio, your whole library, your voiceprint or your places, and it sends nothing while you are not asking. <strong>Test connection</strong> sends one fixed test message that contains none of your information. Your key is stored in the iOS Keychain on your iPhone.</p>
+        <p>(c) The App never sends audio, your whole library, your voiceprint, your places or your health data, and it sends nothing while you are not asking. <strong>Test connection</strong> sends one fixed test message that contains none of your information. Your key is stored in the iOS Keychain on your iPhone.</p>
         <p>(d) The service you choose processes what it receives under its own terms and privacy policy, and may store it. Choose a service you trust with what you record, including what other people said. You can stop at any time with <strong>Stop sharing with …</strong> in the same place, and answers return to your iPhone.</p>
         <h3>6.3 Handing a day to another app</h3>
         <p>(a) <strong>Hand the day to an AI app</strong> creates a text file of a day: what was said and when, the Me and Other labels if you mark who is speaking, places if you have turned them on, and the question you choose. You decide where it goes, through the iOS share sheet, or you can copy it. The App sends nothing by itself; the app you choose handles the file under its own terms.</p>
@@ -183,6 +192,7 @@
           <li><strong>Transcripts, to-dos, places and settings</strong> stay on your iPhone until you delete them or the App. Copies in backups remain until those backups are replaced or deleted.</li>
           <li><strong>Your voiceprint</strong> stays on your iPhone until you delete it or the App.</li>
           <li><strong>Questions and answers</strong> are not kept once the App stops running.</li>
+          <li><strong>Health data</strong> is not kept by the App: it is read from Health again each time it is needed.</li>
           <li><strong>Logs</strong> are kept on your devices for up to 14 days.</li>
           <li><strong>The copy made by Hand today to an AI</strong> is cleared from the clipboard after one hour.</li>
           <li><strong>Information we receive</strong> is kept only as long as necessary for the purpose for which we received it, such as resolving your request, and is then deleted, unless the law requires us to keep it longer. You can ask us to delete it sooner. TestFlight information and analytics are retained by Apple under its own policies.</li>
@@ -200,6 +210,7 @@
           <li>Delete your voiceprint: <strong>Delete my voice</strong>.</li>
           <li>Get a copy of a day: <strong>Hand the day to an AI app</strong> creates a text file, which you can also save from the share sheet.</li>
           <li>Stop places, meeting names or Reminders: turn the feature off in Settings, or withdraw the permission in the iPhone Settings app.</li>
+          <li>Stop reading health data: turn the feature off in <strong>Settings › Health</strong>, or withdraw the permission in the iPhone Settings app (<strong>Health › Data Access &amp; Devices</strong>).</li>
           <li>Stop using your own cloud API: <strong>Stop sharing with …</strong>; remove your key with <strong>Remove saved key</strong>.</li>
           <li>Delete the App from your iPhone and Apple Watch: this removes what it stored on them. Copies in earlier backups remain until those backups are replaced or deleted. iOS may keep a saved API key in the Keychain after the App is deleted, so remove the key first.</li>
         </ol>
@@ -210,12 +221,12 @@
 
         <h2 id="regions">14. Information for certain regions</h2>
         <h3>14.1 European Economic Area, United Kingdom and Switzerland</h3>
-        <p>Our legal bases for processing the information we receive are set out in Section 8. You may lodge a complaint with the data protection authority where you live or work, or where you believe an infringement occurred. Your voiceprint (Section 4.4) is processed only on your device, at your explicit request, and is never received by us.</p>
+        <p>Our legal bases for processing the information we receive are set out in Section 8. You may lodge a complaint with the data protection authority where you live or work, or where you believe an infringement occurred. Your voiceprint (Section 4.4) and, if you turn it on, your health data (Section 4.9) are processed only on your device, at your explicit request, and are never received by us.</p>
         <h3>14.2 United States</h3>
         <p>In the past 12 months we have received only the categories of personal information described in Section 7: identifiers, such as your name and email address if you contact us or are invited to TestFlight; the content of your messages; and device and diagnostic information, such as crash logs. We received them from you and from Apple, and use them for the purposes in Section 8. We do not sell or share personal information, as those terms are defined in California law, and we do not use or disclose sensitive personal information for purposes that would give you a right to limit it. Depending on your state, you may ask to know, access, correct or delete the personal information we hold about you, yourself or through an authorised agent, by writing to <a href="mailto:support@dayrecall.com">support@dayrecall.com</a>.</p>
         <h3>14.3 Mainland China</h3>
         <p>(a) DayRecall is the personal information handler for the information described in Section 7, and can be contacted at <a href="mailto:support@dayrecall.com">support@dayrecall.com</a>.</p>
-        <p>(b) The App processes the following sensitive personal information only on your device and only with your separate consent, which you give when you turn the feature on: <strong>your voiceprint</strong> (biometric information), used to mark which lines you said; and <strong>the places where you stay</strong> (location tracks), used to show your day on a map. They are necessary only for those features, and if you do not turn the features on, the rest of the App works normally. Because they are never sent to us, we do not provide them to anyone or transfer them outside mainland China.</p>
+        <p>(b) The App processes the following sensitive personal information only on your device and only with your separate consent, which you give when you turn the feature on: <strong>your voiceprint</strong> (biometric information), used to mark which lines you said; <strong>the places where you stay</strong> (location tracks), used to show your day on a map; and <strong>your health data</strong> (health information), used to show what you were doing during your day. They are necessary only for those features, and if you do not turn the features on, the rest of the App works normally. Because they are never sent to us, we do not provide them to anyone or transfer them outside mainland China.</p>
         <p>(c) If you contact us or take part in beta testing, the information described in Section 7 is processed by our email provider and by Apple, which may store it outside mainland China, for the purposes in Section 8. By choosing to send it to us, you separately consent to that transfer. You can exercise your rights over it by writing to us.</p>
 
         <h2 id="children">15. Children</h2>
