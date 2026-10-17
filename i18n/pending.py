@@ -3,8 +3,11 @@
     python i18n/pending.py          list keys added, changed or removed in strings/en.json
     python i18n/pending.py --done   after a batch: record the current English as translated
 
-Day-to-day changes touch only en.json and zh-Hans.json; the other 11 languages are translated in
-one batch later. Until then build.py shows the English for any key a language doesn't have yet.
+The site has 14 languages. Traditional Chinese (zh-Hant) has a home page, FAQ and support page;
+privacy and terms still link to the English pages.
+Day-to-day changes touch only en.json and zh-Hans.json; the other 12 languages (including zh-Hant)
+are translated in one batch later. Until then build.py shows the English for any key a language
+doesn't have yet.
 batch-base/en.json is the English the last batch was translated from.
 """
 import json

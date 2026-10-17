@@ -42,11 +42,25 @@
     routes[code] = new URL(alternates[i].getAttribute('href'), window.location.href).pathname;
   }
 
+  function normalize(language) {
+    return typeof language === 'string' ? language.trim().replace(/_/g, '-').toLowerCase() : '';
+  }
+
+  function isTraditionalChinese(code) {
+    return code === 'zh-hant' || code.indexOf('zh-hant-') === 0 ||
+      /^zh-(tw|hk|mo)(-|$)/.test(code);
+  }
+
   function routeFor(language) {
-    if (typeof language !== 'string') return null;
-    var code = language.trim().replace(/_/g, '-').toLowerCase();
+    var code = normalize(language);
     if (!code) return null;
     if (routes[code]) return routes[code];
+
+    if (code === 'zh' || code.indexOf('zh-') === 0) {
+      // An untranslated Traditional Chinese page stays in English, including legal pages.
+      return routes[isTraditionalChinese(code) ? 'zh-hant' : 'zh-hans'] || null;
+    }
+
     var primary = code.split('-')[0];
     var available = Object.keys(routes);
     for (var j = 0; j < available.length; j++) {
@@ -75,7 +89,13 @@
     // A saved language with no translation on this page falls back to English.
   } else {
     var preferred = navigator.languages && navigator.languages.length ? navigator.languages : [];
-    for (var k = 0; k < preferred.length && !chosen; k++) chosen = routeFor(preferred[k]);
+    for (var k = 0; k < preferred.length && !chosen; k++) {
+      chosen = routeFor(preferred[k]);
+      // A later generic "zh" preference must not turn a Traditional legal page Simplified.
+      if (!chosen && isTraditionalChinese(normalize(preferred[k]))) {
+        chosen = routes.en || window.location.pathname;
+      }
+    }
     if (!chosen) chosen = routeFor(navigator.language);
   }
 

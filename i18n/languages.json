@@ -1,6 +1,7 @@
 [
   {"code": "en", "path": "/", "og": "en_US", "name": "English", "privacy": "/privacy/", "support": "/support/"},
   {"code": "zh-Hans", "path": "/zh/", "og": "zh_CN", "name": "简体中文", "privacy": "/zh/privacy/", "support": "/zh/support/"},
+  {"code": "zh-Hant", "path": "/zh-hant/", "og": "zh_TW", "name": "繁體中文"},
   {"code": "da", "path": "/da/", "og": "da_DK", "name": "Dansk"},
   {"code": "de", "path": "/de/", "og": "de_DE", "name": "Deutsch"},
   {"code": "es", "path": "/es/", "og": "es_ES", "name": "Español"},

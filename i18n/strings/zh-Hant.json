@@ -1,0 +1,377 @@
+{
+  "title": "DayRecall — 一整天的 AI 記憶｜Apple Watch 與 iPhone",
+  "description": "DayRecall 在你選定的時段透過 Apple Watch 或 iPhone 聆聽，在 iPhone 上將說過的話轉成文字，並回答你對這一天的疑問。",
+  "og_title": "DayRecall — 你一整天的 AI 記憶",
+  "og_description": "Apple Watch，或只用 iPhone，在你選定的時段聆聽，並將說過的話以文字保存在 iPhone。隨時詢問這一天的事。",
+  "og_image_alt": "DayRecall：一整天的 AI 記憶。搭配 Apple Watch 效果最好，只用 iPhone 也能使用。",
+  "app_description": "DayRecall 是適用於 Apple Watch 和 iPhone 的 AI 記憶 App。在你選定的時段聆聽，將說過的話以文字保存在 iPhone，並用當時的原話回答你對這一天的疑問。",
+  "app_features": [
+    "Apple Watch 能全天聆聽，不必帶著 iPhone；單用 iPhone 也可以",
+    "語音在 iPhone 上轉成文字；音訊轉錄完成後不會保留",
+    "詢問一天發生的事，找回原話和說話的時刻",
+    "區分誰說了什麼：我、其他人 1、其他人 2",
+    "辨識一段對話中最多三種語言，並翻譯成你的語言",
+    "找出待辦事項、截止日期和會議，交由你確認",
+    "無須帳號，也沒有我們的伺服器；回答使用 Apple 的裝置端模型"
+  ],
+  "keywords": "Apple Watch 語音轉文字,語音轉文字,AI 記憶,會議記錄,會議摘要,忘記事情,DayRecall",
+  "top_01": "跳至主要內容",
+  "nav_01": "DayRecall 首頁",
+  "nav_02": "頁面段落",
+  "nav_03": "運作方式",
+  "nav_04": "裝置",
+  "nav_05": "電池",
+  "nav_06": "聲音辨識",
+  "nav_07": "語言",
+  "nav_08": "隱私",
+  "nav_09": "常見問題",
+  "hero_01": "搭配 Apple Watch 效果最好 · 單用 iPhone 也可以",
+  "hero_02": "<span class=\"nw\">你<span class=\"hl\">一整天</span>的</span> AI&nbsp;記憶",
+  "hero_03": "為容易忘事的人而設計。Apple Watch，或只用 iPhone，在你選定的時段聆聽，並將說過的話以文字保存在 iPhone。<strong><span class=\"nw\">隨時詢問這一天，</span><span class=\"nw\">找回當時的原話。</span>",
+  "hero_04": "測試版 · 即將登上 App Store",
+  "hero_05": "在 App Store 取得 DayRecall ",
+  "hero_06": "了解運作方式 ",
+  "hero_07": "<span class=\"nw\">聆聽時每小時</span><span class=\"nw\">額外耗電</span><a class=\"fn\" href=\"#n1\" aria-label=\"註 1",
+  "hero_08": "捕捉到的語音比例<a class=\"fn\" href=\"#n2\" aria-label=\"註 2",
+  "hero_09": "17&nbsp;秒</b><span><span class=\"nw\">處理 3 分鐘</span><span class=\"nw\">對話</span><a class=\"fn\" href=\"#n3\" aria-label=\"註 3",
+  "hero_10": "向 DayRecall 詢問「小王今天答應了我什麼？」回答會列出兩項承諾，每項都有編號，並連結到當時的發言。",
+  "hero_11": "聆聽中</b><span>平日 · 9:00–18:00",
+  "how_01": "運作方式",
+  "how_02": "<span class=\"nw\">早上點一下，</span><span class=\"nw\">一整天都能問。</span>",
+  "how_03": "掃描一段聲音時，只有說話的片段會亮起並保留；中間的安靜時段則略過。",
+  "how_04": "記住說過的話",
+  "how_05": "Apple Watch 會在你選定的時段聆聽，即使 iPhone 不在身邊也一樣。早上點一下，到時間就會自動停止。我們自行研發的超輕量語音模型直接在手錶上執行，只保留有人說話的片段。",
+  "how_06": "音訊被丟進垃圾桶，畫面留下標示「我」和「其他人 1」的文字；其中的會議、待辦事項和截止日期也被找了出來。",
+  "how_07": "為你整理",
+  "how_08": "iPhone 在裝置上將語音轉為文字，不保留音訊，並找出待辦事項、截止日期和會議。它也能區分哪些話是你說的，哪些是別人說的。",
+  "how_09": "記憶滑進 iPhone 並上鎖；前往雲端的內容被擋下，回到手機裡。",
+  "how_10": "預設保護隱私",
+  "how_11": "你的記憶保存在 iPhone，回答使用 Apple 的裝置端模型。你也可以稍後選擇自己的雲端 API；未經你允許，資料不會送出。",
+  "devices_01": "裝置",
+  "devices_02": "<span class=\"nw\">手機不在身邊，</span><span class=\"nw\">手錶照樣記。</span>",
+  "devices_03": "Apple Watch 能獨立聆聽一整天。聽到的內容會先暫存在手錶上，大約每 2 小時傳到 iPhone；如果 iPhone 不在身邊，兩部裝置重新連線後就會補上，例如晚上回家時。iPhone 不必一直保持連線。",
+  "devices_04": "最佳搭配</span></h3><p>整天戴在手腕上，不必帶著 iPhone。",
+  "devices_05": "只有 iPhone</h3><p>沒有 Apple Watch？iPhone 也能獨立聆聽。",
+  "devices_06": "兩部一起用</h3><p>一天只有一條時間軸；兩部裝置都聽到的內容只顯示一次。手錶停止時，iPhone 可以接手。",
+  "devices_07": "從 Apple Watch 和 iPhone 開始，每部聆聽的裝置都會加入同一份記憶。",
+  "devices_08": "iPhone 不在身邊時，手錶持續聆聽並暫存 3 段音訊；11:00 iPhone 回來後，這些片段便會傳過去，顯示為文字。",
+  "battery_01": "電池",
+  "battery_02": "<span class=\"nw\">聽一整天，</span><span class=\"nw\">耗電也很少。</span>",
+  "battery_03": "以 9:00 至 18:00 的工作日為例：對話沿著時間軸依序亮起，聆聽額外消耗的電量約為 8%。",
+  "battery_04": "我們自行研發的專業級超輕量語音模型，<strong>只有 2,561 個參數</strong>。它在我們設計的加速推論核心上執行，每 0.1 秒直接在手錶上判斷一次。",
+  "battery_05": "只保留有人說話的片段；安靜時段、鍵盤聲和風扇聲會提早濾除，避免後續處理耗電。從架構到推論核心，都是為手錶設計，並以我們在 AI 加速領域的博士研究為基礎。",
+  "battery_06": "自行研發的超輕量模型",
+  "battery_07": "客製化加速核心",
+  "battery_08": "手錶端推論",
+  "battery_09": "AI 加速領域的博士研究",
+  "battery_10": "聆聽時每小時額外耗電<a class=\"fn\" href=\"#n1\" aria-label=\"註 1",
+  "battery_11": "捕捉到的語音比例<a class=\"fn\" href=\"#n2\" aria-label=\"註 2",
+  "battery_12": "略過的背景雜音比例<a class=\"fn\" href=\"#n2\" aria-label=\"註 2",
+  "battery_13": "17&nbsp;秒</p><p class=\"l\">處理 3 分鐘對話<a class=\"fn\" href=\"#n3\" aria-label=\"註 3",
+  "battery_14": "根據 DayRecall 於 2026 年 10 月使用 Apple Watch Series 11 進行的內部測試。實際耗電量會因設定與使用方式而異。",
+  "battery_15": "根據公開資料集進行的實驗室測試：語音捕捉率使用 AMI Meeting Corpus 測試集測量，背景雜音的略過率使用 DEMAND 雜音資料集測量。",
+  "battery_16": "根據 DayRecall 於 2026 年 10 月使用 iPhone 17 Pro Max 進行的內部測試。實際處理時間會因機型與使用方式而異。",
+  "voices_01": "聲音辨識",
+  "voices_02": "<span class=\"nw\">認得你的聲音，</span><span class=\"nw\">也分得清其他人。</span>",
+  "voices_03": "花約一分鐘讀完五張短卡片，之後你說的話就會標成 <span class=\"tag-me\">我</span>。同一段對話中的其他人各有編號，例如 <span class=\"tag-other\">其他人 1</span>、<span class=\"tag-other\">其他人 2</span>。你答應別人的事，不會與別人答應你的事混淆。",
+  "voices_04": "區分同一段對話中的每位說話者",
+  "voices_05": "待辦事項會標明是誰做出的承諾",
+  "voices_06": "辨識一小時對話中的說話者，只需 4.4 秒",
+  "voices_07": "你的聲紋只保存在 iPhone，其他人的聲紋不會儲存",
+  "voices_08": "可選功能，預設關閉。速度基於 iPhone 17 Pro Max 上的內部測試。",
+  "voices_09": "畫面依序顯示會議中的四句話，標示為「我」「其他人 1」「其他人 2」「我」；三位說話者列在上方。",
+  "languages_01": "語言",
+  "languages_02": "<span class=\"nw\">對話中切換語言，</span><span class=\"nw\">也能跟得上。</span>",
+  "languages_03": "最多選擇三種使用語言。DayRecall 會辨識對話中的語言切換，並以原本使用的語言轉錄各段內容。<span data-feature=\"translation\">其他語言的句子也能翻譯成你的語言。",
+  "languages_04": "一段對話最多三種語言",
+  "languages_05": "以原本的語言轉錄每一段",
+  "languages_06": "翻譯成你的語言",
+  "languages_07": "辨識一小時對話中的語言，約需 32 秒",
+  "languages_08": "多語言轉錄是進階設定，預設關閉。速度根據 iPhone 17 Pro Max 的內部測試。App 本身提供 13 種介面語言。",
+  "languages_09": "使用語言中文、英文和日文依序亮起，每句話都以原本使用的語言轉錄；英文和日文的句子下方會顯示中文翻譯。",
+  "features_01": "功能",
+  "features_02": "<span class=\"nw\">留住那些容易</span><span class=\"nw\">忘記的細節</span>",
+  "features_03": "待辦事項，由你確認",
+  "features_04": "從一天的對話中找出承諾、截止日期和會議。你確認後，才會加入行事曆或提醒事項。",
+  "features_05": "用自己的話提問",
+  "features_06": "小王答應了什麼？報告何時到期？每個回答都會顯示來源，細到當時說出的那一句話。",
+  "features_07": "每天的事，一眼看清",
+  "features_08": "以時間軸回顧一天，翻閱過去的日子，也能搜尋聽過的內容。",
+  "features_09": "一週計畫",
+  "features_10": "每週集中查看接下來的截止日期和承諾，並由你決定哪些要加入行事曆。",
+  "features_11": "想知道地點時",
+  "features_12": "在一天的地圖上查看每段對話發生的位置。預設關閉，只有你開啟後才會使用。",
+  "features_13": "把一天交給你的 AI App",
+  "features_14": "想更深入了解一天的內容，可以自行選擇將當天的逐字稿以文字檔分享給常用的 AI App。",
+  "privacy_01": "隱私",
+  "privacy_02": "<span class=\"nw\">只留文字，</span><span class=\"nw\">只在你的 iPhone&nbsp;上，</span><span class=\"nw\">由你決定。</span>",
+  "privacy_03": "記憶滑進 iPhone 並上鎖；前往雲端的內容被擋下，回到手機裡。",
+  "privacy_04": "只保留文字，不保留音訊",
+  "privacy_05": "說過的話會在 iPhone 上轉成文字。音訊在轉錄完成後會自動清除，不會保留。",
+  "privacy_06": "無須帳號，也沒有我們的伺服器",
+  "privacy_07": "你不必註冊帳號，我們也沒有能查看你一天內容的伺服器。",
+  "privacy_08": "沒有你的同意，資料不會送出",
+  "privacy_09": "回答使用 Apple 的裝置端模型。只有在你允許時，才會把一天的內容交給 AI App，或使用你自己的雲端 API。",
+  "privacy_10": "畫面中，你告知對話對象，對方同意後，兩人連在一起。",
+  "privacy_11": "告訴身邊的人",
+  "privacy_12": "請告訴交談對象 DayRecall 正在聆聽。有些地區即使只保留文字，也要求所有人同意；請遵守所在地的規定。",
+  "final_01": "你一整天的 AI 記憶。",
+  "final_02": "即將登上 App Store",
+  "final_03": "在 App Store 取得 DayRecall ",
+  "final_04": "搭配 Apple Watch 效果最好 · 單用 iPhone 也可以 · App 提供 13 種語言",
+  "foot_01": "Apple Watch 和 iPhone 是 Apple Inc. 在美國及其他國家與地區的註冊商標。",
+  "faq": [
+    {
+      "title": "基本介紹",
+      "items": [
+        {
+          "q": "DayRecall 是什麼？",
+          "a": "DayRecall 是為容易忘記事情的人設計的 AI 記憶 App，適用於 Apple Watch 和 iPhone。它在你選定的時段聆聽，將說過的話以文字保存在 iPhone，並用當時的原話和來源回答你對這一天的疑問。"
+        },
+        {
+          "q": "一定要有 Apple Watch 嗎？",
+          "a": "不必。搭配 Apple Watch 使用 DayRecall 效果最好，但 iPhone 也能獨立聆聽。兩部裝置同時聆聽時，一天會整合成同一條時間軸，重複聽到的內容只顯示一次。"
+        },
+        {
+          "q": "DayRecall 會保留錄音嗎？",
+          "a": "不會。說過的話會在 iPhone 上轉成文字，音訊在轉錄完成後會自動清除，只保留文字。"
+        },
+        {
+          "q": "我的資料存在哪裡？誰看得到？",
+          "a": "資料保存在你的 iPhone；如果你有使用備份，備份裡也會有。DayRecall 無須帳號，也沒有 DayRecall 伺服器，因此我們看不到你的資料。回答使用 Apple 的裝置端模型；除非你選擇使用自己的雲端 API，或將一天的內容分享給 AI App，否則資料不會離開 iPhone。"
+        }
+      ]
+    },
+    {
+      "title": "裝置與使用條件",
+      "items": [
+        {
+          "q": "使用 DayRecall 需要什麼？",
+          "a": "你需要一部執行 iOS 26 或更新版本、並支援 Apple 裝置端語音辨識的 iPhone。執行 watchOS 26 或更新版本的 Apple Watch 並非必需，但建議搭配使用。回答和待辦事項也需要 Apple Intelligence；若只需要回答，可以改用自己的雲端 API。"
+        },
+        {
+          "q": "哪些 iPhone 機型可以使用？",
+          "a": "DayRecall 需要 iOS 26 或更新版本，適用於 iPhone 11 及後續機型，以及 iPhone SE（第 2 代）及後續機型。語音轉文字還需要 Apple 的裝置端語音辨識；部分較舊機型不支援，包括 iPhone 11 系列和 iPhone SE（第 2 代），因此我們建議使用 iPhone 12 或後續機型。如果你的 iPhone 無法轉錄，DayRecall 會告訴你。使用 Apple Intelligence 產生回答和待辦事項，則需要 iPhone 15 Pro、iPhone 15 Pro Max、iPhone Air，或 iPhone 16 及後續機型。"
+        },
+        {
+          "q": "哪些 Apple Watch 機型可以使用？",
+          "a": "凡是能執行 watchOS 26 或更新版本的 Apple Watch 都可以，包括 Apple Watch Series 6 及後續機型、Apple Watch SE（第 2 代）及後續機型，以及所有 Apple Watch Ultra。手錶必須與可執行 DayRecall 的 iPhone 配對。Apple Watch 並非必需，iPhone 也能獨立聆聽。"
+        },
+        {
+          "q": "iPhone 必須一直放在手錶旁邊嗎？",
+          "a": "不必。Apple Watch 會暫存聽到的內容，約每 2 小時傳給 iPhone；如果當時沒有連線，兩部裝置一重新連線就會傳送，例如晚上回家時。"
+        },
+        {
+          "q": "沒有網路連線也能使用嗎？",
+          "a": "可以。聆聽、轉錄、回答和待辦事項都在你的裝置上執行；只要 iOS 已下載所需的語言模型，離線時也能使用。地圖上的地點功能和你自己的雲端 API 則需要網路連線。"
+        }
+      ]
+    },
+    {
+      "title": "語言",
+      "items": [
+        {
+          "q": "為什麼支援的語言取決於 Apple？",
+          "a": "DayRecall 在 iPhone 上使用 Apple 內建的技術：以語音辨識轉錄、以 Apple 翻譯功能翻譯，並以 Apple Intelligence 產生回答和待辦事項。這些功能各自支援不同的語言，由 Apple 決定，並可能隨 iOS 更新擴充；部分功能也需要較新的 iPhone。因此，某種語言可能可以轉錄，卻還不能翻譯，或是在一部 iPhone 上可用、另一部卻不支援。更新 iOS 也可能增加可用語言。"
+        },
+        {
+          "q": "DayRecall 能轉錄哪些語言？",
+          "a": "你可以選擇英語（美國、英國）、中文（華語）、日語、韓語、西班牙語、法語、德語、義大利語、葡萄牙語（巴西、葡萄牙）、荷蘭語、瑞典語、丹麥語和土耳其語。每種語言都必須由你 iPhone 上的 Apple 裝置端語音辨識支援；若不支援，DayRecall 會標示為不適用。第一次使用某種語言時，iOS 會下載對應的語音模型。"
+        },
+        {
+          "q": "能翻譯哪些語言？",
+          "a": "其他使用語言中的句子可以透過 Apple 的裝置端翻譯功能，譯成你的主要語言；但你的 iPhone 必須支援該語言組合。在 iOS 27，DayRecall 可轉錄的所有語言都在支援範圍內；iOS 26 的範圍較小，例如不包含丹麥語和瑞典語。首次使用前，iOS 會下載各語言所需的資料。Apple 的<a href=\"https://www.apple.com/tw/ios/feature-availability/\">功能適用情況頁面</a>列有目前支援的語言。"
+        },
+        {
+          "q": "回答和待辦事項支援哪些語言？",
+          "a": "回答和待辦事項使用 Apple Intelligence，支援英語、中文（簡體與繁體）、丹麥語、荷蘭語、法語、德語、義大利語、日語、韓語、挪威語、葡萄牙語、西班牙語、瑞典語、土耳其語及越南語。iPhone 與 Siri 必須設為同一種受支援的語言。目前，在中國大陸購買的 iPhone，或是在中國大陸搭配中國大陸 Apple 帳號使用的 iPhone，無法使用 Apple Intelligence；在這些情況下，你仍可透過自己的雲端 API 取得回答，但無法取得待辦事項。詳見<a href=\"https://support.apple.com/zh-tw/121115\">Apple 的 Apple Intelligence 說明</a>。"
+        },
+        {
+          "q": "App 介面提供哪些語言？",
+          "a": "App 的選單和畫面提供 13 種語言：英語、簡體中文、丹麥語、荷蘭語、法語、德語、義大利語、日語、韓語、葡萄牙語（葡萄牙）、西班牙語、瑞典語和土耳其語。這與可轉錄的語言是兩回事。"
+        },
+        {
+          "q": "一段對話中切換語言，DayRecall 跟得上嗎？",
+          "a": "可以。開啟<strong>多語言轉錄</strong>，再加入最多兩種使用語言。DayRecall 能辨識對話中的語言切換，並以原本使用的語言轉錄各段內容。其他語言的句子也能翻譯成你的主要語言。"
+        }
+      ]
+    },
+    {
+      "title": "使用 DayRecall",
+      "items": [
+        {
+          "q": "如何開始與停止聆聽？",
+          "a": "先設定聆聽時段，例如平日 9:00 至 18:00。時段開始時，Apple Watch 會詢問是否開始；點一下即可啟動，時段結束時會自動停止。你也可以提前停止，或跳過某一天。"
+        },
+        {
+          "q": "我可以問什麼？",
+          "a": "你可以用自己的話詢問一天發生的任何事，例如「小王今天答應了什麼？」或「報告何時到期？」每個回答都會顯示來源，細到當時說出的那一句話。"
+        },
+        {
+          "q": "待辦事項如何產生？",
+          "a": "DayRecall 會從一天的對話中找出承諾、截止日期和會議，並等待你確認。在你同意之前，不會將任何內容加入行事曆或提醒事項。"
+        },
+        {
+          "q": "DayRecall 如何區分說話者？",
+          "a": "開啟<strong>標示說話者</strong>，花約 1 分鐘唸完五張短卡片。之後你的發言會標成「我」，同一段對話中的其他人則依序標成「其他人 1」「其他人 2」。你的聲紋只會保存在 iPhone，其他人的聲紋不會儲存。這項功能可自行選用，預設關閉。"
+        },
+        {
+          "q": "可以把一天的內容交給自己的 AI App 嗎？",
+          "a": "可以。<strong>將這一天分享給 AI App</strong>會把一天的內容和你選擇的問題整理成文字檔，由你在系統分享選單中選擇接收的 App；DayRecall 不會自行傳送。若要匯入 AI 找出的待辦事項，請複製它的回答，再點選<strong>匯入 AI 的回答</strong>。"
+        },
+        {
+          "q": "可以匯入音訊檔嗎？",
+          "a": "可以。匯入音訊檔後，DayRecall 會像處理其他音訊一樣，在 iPhone 上將它轉成文字。它會處理檔案的副本，不會改動原始檔案。"
+        }
+      ]
+    },
+    {
+      "title": "耗電與處理速度",
+      "items": [
+        {
+          "q": "會消耗多少電量？",
+          "a": "很少。我們自行研發的超輕量語音模型只保留有人說話的片段。在 Apple Watch Series 11 的內部測試中，聆聽每小時額外消耗約 0.9% 的電量。"
+        },
+        {
+          "q": "文字多久會出現？",
+          "a": "手錶約每 2 小時，以及停止聆聽時，會把聽到的內容傳給 iPhone；iPhone 收到後便轉成文字。想提早查看，請開啟 DayRecall 並點選<strong>立即同步</strong>。在 iPhone 17 Pro Max 的內部測試中，3 分鐘的對話可在 17 秒內處理完成。"
+        }
+      ]
+    },
+    {
+      "title": "隱私與同意",
+      "items": [
+        {
+          "q": "資料會離開我的 iPhone 嗎？",
+          "a": "只有在你選擇使用相關功能時才會。使用自己的雲端 API 時，每次提問都會將問題和相關逐字稿的簡短片段傳送給該服務。將一天的內容分享給 AI App 時，該 App 會收到你送出的文字檔。地點功能使用 Apple 地圖；如果你使用 iCloud 備份，備份中也會包含你的資料。詳情請見隱私權政策。"
+        },
+        {
+          "q": "DayRecall 會追蹤我或顯示廣告嗎？",
+          "a": "不會。DayRecall 沒有廣告、使用分析或追蹤，也沒有會蒐集資料的第三方程式碼。為了協助排除問題，裝置上會保留最長 14 天的操作紀錄；紀錄不包含說過的話。只有你主動分享時，紀錄才會離開 iPhone。"
+        },
+        {
+          "q": "如何刪除我的資料？",
+          "a": "你可以在單筆錄音的頁面，連同文字和待辦事項一併刪除；也可以透過<strong>設定 › 隱私 › 刪除所有記憶</strong>刪除全部內容。<strong>刪除我的聲音</strong>會移除你的聲紋。刪除 App 會移除它儲存在裝置上的資料；較早備份中的副本，則要等該備份被取代後才會消失。"
+        },
+        {
+          "q": "需要告訴別人 DayRecall 正在聆聽嗎？",
+          "a": "需要。請告訴交談對象。有些地區即使只保留文字，也要求所有人同意；請遵守所在地的規定。服務條款也說明，這是你自己的責任。"
+        }
+      ]
+    },
+    {
+      "title": "推出時間與支援",
+      "items": [
+        {
+          "q": "何時可以取得 DayRecall？",
+          "a": "DayRecall 目前處於測試階段，即將登上 App Store。"
+        },
+        {
+          "q": "如何取得協助？",
+          "a": "請寄信到 support@dayrecall.com，告訴我們問題發生的時間與使用的裝置。附上操作紀錄最有幫助：<strong>設定 › 開發者選項 › 紀錄 › 分享紀錄</strong>。"
+        }
+      ]
+    }
+  ],
+  "lang_label": "語言",
+  "foot_label": "更多",
+  "foot_privacy": "隱私權政策",
+  "foot_support": "支援",
+  "foot_faq": "常見問題",
+  "foot_terms": "服務條款",
+  "foot_social": "關注 DayRecall",
+  "faq_kicker": "常見問題",
+  "faq_heading": "你可能想問",
+  "faq_all": "全部問題",
+  "faq_page_title": "常見問題 — DayRecall",
+  "faq_page_description": "DayRecall 常見問題：使用條件、支援的 iPhone 與 Apple Watch 機型和語言、聆聽與轉錄方式、保留的資料、耗電量及隱私。",
+  "faq_page_lead": "了解 DayRecall 如何運作、需要哪些裝置，以及會保留哪些資料。找不到答案？歡迎寫信給我們。",
+  "faq_page_toc": "主題",
+  "faq_page_more": "還有別的問題？",
+  "faq_page_more_text": "寫信給我們，我們會盡快回覆。",
+  "og_h1": "<span class=\"nw\">你<span class=\"hl\">一整天</span>的</span><br>AI&nbsp;記憶",
+  "og_sub": "搭配 Apple Watch 效果最好 · 單用 iPhone 也可以",
+  "stage": {
+    "me": "我",
+    "other": "其他人 1",
+    "other2": "其他人 2",
+    "battery": {
+      "title": "工作日",
+      "hours": "9:00–18:00",
+      "ticks": [
+        "9:00",
+        "12:00",
+        "15:00",
+        "18:00"
+      ],
+      "used": "聆聽消耗的電量"
+    },
+    "sync": {
+      "away": "iPhone 不在身邊",
+      "waiting": "{n} 段等待同步",
+      "syncing": "正在同步…",
+      "synced": "已同步到 iPhone"
+    },
+    "speakers": {
+      "place": "辦公室",
+      "time": "14:10",
+      "lines": [
+        "週五能上線嗎？",
+        "設計今天就能做完。",
+        "我週四會測試。",
+        "好，我去跟客戶說。"
+      ]
+    },
+    "languages": {
+      "label": "使用語言",
+      "names": [
+        "中文",
+        "英文",
+        "日文"
+      ],
+      "rows": [
+        {
+          "lang": "zh-Hant",
+          "text": "那我們週五上線。"
+        },
+        {
+          "lang": "en",
+          "text": "Design's done today.",
+          "tr": "設計今天會完成。"
+        },
+        {
+          "lang": "ja",
+          "text": "木曜日にテストします。",
+          "tr": "我週四會測試。"
+        }
+      ]
+    },
+    "ask": {
+      "title": "向你的記憶提問",
+      "sub": "可以問記錄過的事，也可以問任何問題。",
+      "tryAsking": "試著問問",
+      "s1": "這週有哪些截止日期？",
+      "s2": "昨天開會我們達成了哪些共識？",
+      "placeholder": "輸入問題",
+      "question": "小王今天答應了我什麼？",
+      "thinking": "正在思考…",
+      "from": "來自你的紀錄",
+      "a1": "小王週三會把文案發給你。",
+      "a2": "你週五前要把報價發給小王。",
+      "sources": "2 個來源",
+      "today": "今天",
+      "watch": "Apple Watch",
+      "snip1": "我週三把文案發給你。",
+      "snip2": "好的，我週五發給你。",
+      "office": "辦公室",
+      "row0": "好。文案什麼時候能給我？",
+      "cited": "已引用",
+      "tabs": [
+        "今天",
+        "待辦",
+        "提問",
+        "紀錄庫"
+      ]
+    }
+  }
+}

@@ -8,7 +8,7 @@ const source = fs.readFileSync(path.join(__dirname, '..', 'assets', 'locale.js')
 
 function visit({
   pathname = '/', search = '', hash = '', htmlLanguage = 'en',
-  alternates = { en: '/', 'zh-Hans': '/zh/', de: '/de/', 'pt-PT': '/pt/' },
+  alternates = { en: '/', 'zh-Hans': '/zh/', 'zh-Hant': '/zh-hant/', de: '/de/', 'pt-PT': '/pt/' },
   languages = [], language = '', saved = null, sessionSaved = null,
   localStorageBlocked = false, sessionStorageBlocked = false
 } = {}) {
@@ -70,9 +70,20 @@ test('matches a regional language to the available translation', () => {
   assert.deepEqual(visit({ languages: [], language: 'de-AT' }).redirects, ['/de/']);
 });
 
+test('routes Traditional and Simplified Chinese preferences separately', () => {
+  for (const code of ['zh-Hant', 'zh-Hant-HK', 'zh-TW', 'zh-HK', 'zh-MO', 'zh_TW']) {
+    assert.deepEqual(visit({ languages: [code] }).redirects, ['/zh-hant/'], code);
+  }
+  for (const code of ['zh-Hans', 'zh-Hans-SG', 'zh-CN', 'zh-SG', 'zh']) {
+    assert.deepEqual(visit({ languages: [code] }).redirects, ['/zh/'], code);
+  }
+});
+
 test('respects a saved manual choice and falls back to English for missing pages', () => {
   assert.deepEqual(visit({ saved: 'en', languages: ['zh-CN'] }).redirects, []);
   assert.deepEqual(visit({ saved: 'de', languages: ['zh-CN'] }).redirects, ['/de/']);
+  assert.deepEqual(visit({ saved: 'zh-Hant', languages: ['zh-CN'] }).redirects, ['/zh-hant/']);
+  assert.deepEqual(visit({ saved: 'zh-Hans', languages: ['zh-TW'] }).redirects, ['/zh/']);
   assert.deepEqual(visit({
     pathname: '/privacy/', alternates: { en: '/privacy/', 'zh-Hans': '/zh/privacy/' },
     saved: 'de', languages: ['zh-CN']
@@ -80,14 +91,37 @@ test('respects a saved manual choice and falls back to English for missing pages
 });
 
 test('redirects a translated English subpage only when that translation exists', () => {
-  const alternates = { en: '/faq/', 'zh-Hans': '/zh/faq/' };
-  assert.deepEqual(visit({ pathname: '/faq/', alternates, languages: ['zh-TW'] }).redirects, ['/zh/faq/']);
+  const alternates = { en: '/faq/', 'zh-Hans': '/zh/faq/', 'zh-Hant': '/zh-hant/faq/' };
+  assert.deepEqual(visit({ pathname: '/faq/', alternates, languages: ['zh-TW'] }).redirects, ['/zh-hant/faq/']);
   assert.deepEqual(visit({ pathname: '/faq/', alternates, languages: ['fr-FR'] }).redirects, []);
+  assert.deepEqual(visit({
+    pathname: '/support/',
+    alternates: { en: '/support/', 'zh-Hans': '/zh/support/', 'zh-Hant': '/zh-hant/support/' },
+    languages: ['zh-HK']
+  }).redirects, ['/zh-hant/support/']);
+});
+
+test('keeps Traditional Chinese visitors on English legal pages when no translation exists', () => {
+  for (const page of ['privacy', 'terms']) {
+    const pathname = `/${page}/`;
+    const alternates = { en: pathname, 'zh-Hans': `/zh/${page}/` };
+    for (const code of ['zh-Hant', 'zh-TW', 'zh-HK', 'zh-MO']) {
+      assert.deepEqual(visit({ pathname, alternates, languages: [code] }).redirects, [], `${page}: ${code}`);
+    }
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-TW', 'zh', 'en-US'] }).redirects, []);
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-HK', 'zh-CN'] }).redirects, []);
+    assert.deepEqual(visit({ pathname, alternates, saved: 'zh-Hant', languages: ['zh-CN'] }).redirects, []);
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-CN'] }).redirects, [`/zh/${page}/`]);
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh'] }).redirects, [`/zh/${page}/`]);
+  }
 });
 
 test('never redirects an explicit localized URL', () => {
   assert.deepEqual(visit({
     pathname: '/zh/', htmlLanguage: 'zh-Hans', saved: 'en', languages: ['de-DE']
+  }).redirects, []);
+  assert.deepEqual(visit({
+    pathname: '/zh-hant/', htmlLanguage: 'zh-Hant', saved: 'zh-Hans', languages: ['zh-CN']
   }).redirects, []);
 });
 

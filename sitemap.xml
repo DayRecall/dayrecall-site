@@ -4,6 +4,7 @@
     <loc>https://dayrecall.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -21,6 +22,25 @@
     <loc>https://dayrecall.com/zh/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -38,6 +58,7 @@
     <loc>https://dayrecall.com/da/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -55,6 +76,7 @@
     <loc>https://dayrecall.com/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -72,6 +94,7 @@
     <loc>https://dayrecall.com/es/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -89,6 +112,7 @@
     <loc>https://dayrecall.com/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -106,6 +130,7 @@
     <loc>https://dayrecall.com/it/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -123,6 +148,7 @@
     <loc>https://dayrecall.com/ja/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -140,6 +166,7 @@
     <loc>https://dayrecall.com/ko/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -157,6 +184,7 @@
     <loc>https://dayrecall.com/nl/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -174,6 +202,7 @@
     <loc>https://dayrecall.com/pt/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -191,6 +220,7 @@
     <loc>https://dayrecall.com/sv/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -208,6 +238,7 @@
     <loc>https://dayrecall.com/tr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/"/>
@@ -225,6 +256,7 @@
     <loc>https://dayrecall.com/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -242,6 +274,25 @@
     <loc>https://dayrecall.com/zh/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/faq/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/faq/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -259,6 +310,7 @@
     <loc>https://dayrecall.com/da/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -276,6 +328,7 @@
     <loc>https://dayrecall.com/de/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -293,6 +346,7 @@
     <loc>https://dayrecall.com/es/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -310,6 +364,7 @@
     <loc>https://dayrecall.com/fr/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -327,6 +382,7 @@
     <loc>https://dayrecall.com/it/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -344,6 +400,7 @@
     <loc>https://dayrecall.com/ja/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -361,6 +418,7 @@
     <loc>https://dayrecall.com/ko/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -378,6 +436,7 @@
     <loc>https://dayrecall.com/nl/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -395,6 +454,7 @@
     <loc>https://dayrecall.com/pt/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -412,6 +472,7 @@
     <loc>https://dayrecall.com/sv/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -429,6 +490,7 @@
     <loc>https://dayrecall.com/tr/faq/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/faq/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/faq/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/faq/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/faq/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/faq/"/>
@@ -470,6 +532,7 @@
     <loc>https://dayrecall.com/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -487,6 +550,25 @@
     <loc>https://dayrecall.com/zh/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/support/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -504,6 +586,7 @@
     <loc>https://dayrecall.com/da/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -521,6 +604,7 @@
     <loc>https://dayrecall.com/de/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -538,6 +622,7 @@
     <loc>https://dayrecall.com/es/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -555,6 +640,7 @@
     <loc>https://dayrecall.com/fr/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -572,6 +658,7 @@
     <loc>https://dayrecall.com/it/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -589,6 +676,7 @@
     <loc>https://dayrecall.com/ja/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -606,6 +694,7 @@
     <loc>https://dayrecall.com/ko/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -623,6 +712,7 @@
     <loc>https://dayrecall.com/nl/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -640,6 +730,7 @@
     <loc>https://dayrecall.com/pt/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -657,6 +748,7 @@
     <loc>https://dayrecall.com/sv/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
@@ -674,6 +766,7 @@
     <loc>https://dayrecall.com/tr/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/support/"/>
