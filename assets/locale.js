@@ -57,7 +57,7 @@
     if (routes[code]) return routes[code];
 
     if (code === 'zh' || code.indexOf('zh-') === 0) {
-      // An untranslated Traditional Chinese page stays in English, including legal pages.
+      // Keep Traditional and Simplified Chinese routes separate.
       return routes[isTraditionalChinese(code) ? 'zh-hant' : 'zh-hans'] || null;
     }
 
@@ -86,12 +86,12 @@
 
   if (saved) {
     chosen = routeFor(saved);
-    // A saved language with no translation on this page falls back to English.
+    // A saved language with no translation on this page stays on the English URL.
   } else {
     var preferred = navigator.languages && navigator.languages.length ? navigator.languages : [];
     for (var k = 0; k < preferred.length && !chosen; k++) {
       chosen = routeFor(preferred[k]);
-      // A later generic "zh" preference must not turn a Traditional legal page Simplified.
+      // A later generic "zh" preference must not override Traditional Chinese.
       if (!chosen && isTraditionalChinese(normalize(preferred[k]))) {
         chosen = routes.en || window.location.pathname;
       }

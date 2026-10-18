@@ -86,7 +86,7 @@ test('respects a saved manual choice and falls back to English for missing pages
   assert.deepEqual(visit({ saved: 'zh-Hans', languages: ['zh-TW'] }).redirects, ['/zh/']);
   assert.deepEqual(visit({
     pathname: '/privacy/', alternates: { en: '/privacy/', 'zh-Hans': '/zh/privacy/' },
-    saved: 'de', languages: ['zh-CN']
+    saved: 'pl', languages: ['zh-CN']
   }).redirects, []);
 });
 
@@ -101,18 +101,31 @@ test('redirects a translated English subpage only when that translation exists',
   }).redirects, ['/zh-hant/support/']);
 });
 
-test('keeps Traditional Chinese visitors on English legal pages when no translation exists', () => {
+test('routes every supported language to its legal pages', () => {
+  const routes = {
+    en: '', 'zh-Hans': 'zh', 'zh-Hant': 'zh-hant', da: 'da', de: 'de',
+    es: 'es', fr: 'fr', it: 'it', ja: 'ja', ko: 'ko', nl: 'nl',
+    'pt-PT': 'pt', sv: 'sv', tr: 'tr'
+  };
   for (const page of ['privacy', 'terms']) {
     const pathname = `/${page}/`;
-    const alternates = { en: pathname, 'zh-Hans': `/zh/${page}/` };
-    for (const code of ['zh-Hant', 'zh-TW', 'zh-HK', 'zh-MO']) {
-      assert.deepEqual(visit({ pathname, alternates, languages: [code] }).redirects, [], `${page}: ${code}`);
+    const alternates = Object.fromEntries(Object.entries(routes).map(([code, slug]) =>
+      [code, slug ? `/${slug}/${page}/` : pathname]));
+    for (const [code, slug] of Object.entries(routes)) {
+      if (code === 'en') continue;
+      assert.deepEqual(visit({ pathname, alternates, languages: [code] }).redirects,
+        [`/${slug}/${page}/`], `${page}: ${code}`);
     }
-    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-TW', 'zh', 'en-US'] }).redirects, []);
-    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-HK', 'zh-CN'] }).redirects, []);
-    assert.deepEqual(visit({ pathname, alternates, saved: 'zh-Hant', languages: ['zh-CN'] }).redirects, []);
-    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-CN'] }).redirects, [`/zh/${page}/`]);
-    assert.deepEqual(visit({ pathname, alternates, languages: ['zh'] }).redirects, [`/zh/${page}/`]);
+    for (const code of ['zh-TW', 'zh-HK', 'zh-MO']) {
+      assert.deepEqual(visit({ pathname, alternates, languages: [code] }).redirects,
+        [`/zh-hant/${page}/`], `${page}: ${code}`);
+    }
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-TW', 'zh', 'en-US'] }).redirects,
+      [`/zh-hant/${page}/`]);
+    assert.deepEqual(visit({ pathname, alternates, saved: 'zh-Hant', languages: ['zh-CN'] }).redirects,
+      [`/zh-hant/${page}/`]);
+    assert.deepEqual(visit({ pathname, alternates, languages: ['zh-CN'] }).redirects,
+      [`/zh/${page}/`]);
   }
 });
 

@@ -508,24 +508,504 @@
     <loc>https://dayrecall.com/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
   </url>
   <url>
     <loc>https://dayrecall.com/zh/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/da/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/es/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/it/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ja/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ko/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/nl/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/pt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/sv/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/tr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/privacy/"/>
   </url>
   <url>
     <loc>https://dayrecall.com/terms/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
   </url>
   <url>
     <loc>https://dayrecall.com/zh/terms/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/da/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/de/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/es/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/fr/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/it/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ja/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ko/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/nl/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/pt/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/sv/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/tr/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/terms/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/terms/"/>
   </url>
   <url>
