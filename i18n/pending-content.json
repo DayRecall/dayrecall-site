@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-18",
-  "reason": "AI engine wording and current main cache/backup disclosures confirmed by the user; not reviewed by counsel.",
+  "reason": "Numeric Health export merge: user opt-in, new permission choice, updated API recap and app-sharing disclosure; pending counsel review.",
   "locales": [
     "zh-Hant",
     "da",
@@ -52,7 +52,8 @@
       "6.2(a-d)",
       "6.3(a)",
       "11",
-      "13.1"
+      "13.1",
+      "14.3(b)"
     ],
     "terms": [
       "3.1",

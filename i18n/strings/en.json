@@ -12,7 +12,7 @@
     "Marks who said what: Me, Other 1, Other 2",
     "Follows conversations in up to three languages, translated into yours",
     "Picks out to-dos, deadlines and meetings for you to confirm",
-    "Optional Health clues: inputs used by the App are kept in a protected local cache; Health labels are included in a recap sent to your API or a day shared with an AI app only if you choose to add them",
+    "Optional Health clues: inputs used by the App are kept in a protected local cache; Health labels and values are included in a recap sent to your API or a day shared with an AI app only if you choose to add them",
     "No account and no DayRecall server; to-dos, recaps and answers use this iPhone by default, or your own API after you configure it and allow sharing"
   ],
   "keywords": "",
@@ -244,11 +244,11 @@
       "items": [
         {
           "q": "Does anything leave my iPhone?",
-          "a": "With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy."
+          "a": "With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels and values only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy."
         },
         {
           "q": "Does DayRecall read my Health data?",
-          "a": "Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add what I was doing is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; heart rate, step and distance figures are not included. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given."
+          "a": "Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add health data is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; available heart rate, step, distance and duration values are included. Missing readings are left out. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given."
         },
         {
           "q": "Does DayRecall track me or show ads?",
@@ -638,7 +638,7 @@
       "label": "Health",
       "show": "Show sleep, activity and heart rate",
       "found": "Found data from the last 7 days.",
-      "note": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels go to your API or an AI app only if you choose to add them to a recap or shared day. Reading Health is off by default.",
+      "note": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels and values go to your API or an AI app only if you choose to add them to a recap or shared day. Adding Health data is off by default.",
       "today": "Today",
       "timeline": "Timeline",
       "newest": "Newest first",
@@ -683,6 +683,6 @@
   "health_04": "Labels on your timeline: walking, working out, asleep, heart rate above usual",
   "health_05": "Ask “What did we talk about before bed?” or “What did I say while I was running?”",
   "health_06": "Off until you turn it on. Read only: DayRecall never writes to Health.",
-  "health_07": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels go to your API or an AI app only if you choose to add them to a recap or shared day. Reading Health is off by default.",
+  "health_07": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels and values go to your API or an AI app only if you choose to add them to a recap or shared day. Adding Health data is off by default.",
   "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said."
 }
