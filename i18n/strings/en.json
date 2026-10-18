@@ -248,7 +248,7 @@
         },
         {
           "q": "Does DayRecall read my Health data?",
-          "a": "Only if you turn it on in Settings › Health. Then it reads sleep, steps and walking distance, workouts and heart rate from the Health app, to label parts of your day (for example, walking) and to find what was said during an activity you ask about. It never writes to Health, doesn’t store what it reads, and doesn’t send it anywhere. Health data isn’t included when you hand a day to an AI app."
+          "a": "Only if you turn it on in Settings › Health. Then it reads sleep, steps and walking distance, workouts and heart rate from the Health app, to label parts of your day (for example, walking) and to find what was said during an activity you ask about. It never writes to Health, doesn’t store what it reads, and doesn’t send it anywhere. Health data isn’t included when you hand a day to an AI app. It draws no medical conclusions and gives no health advice: it only states what the data shows."
         },
         {
           "q": "Does DayRecall track me or show ads?",
@@ -677,13 +677,12 @@
     }
   },
   "features_15": "Watch",
-  "health_01": "Health, if you want it",
+  "health_01": "Health",
   "health_02": "Sometimes you remember by what you were doing",
   "health_03": "Turn it on and DayRecall reads your sleep, walks, workouts and heart rate from the Health app. They become clues on your day: a conversation can say it happened while you were walking, just after a workout, or with a heart rate faster than usual.",
   "health_04": "Labels on your timeline: walking, working out, asleep, heart rate above usual",
   "health_05": "Ask “What did we talk about before bed?” or “What did I say while I was running?”",
   "health_06": "Off until you turn it on. Read only: DayRecall never writes to Health.",
   "health_07": "Not stored, and never sent anywhere. It isn’t in the day you hand to an AI app.",
-  "health_08": "Optional and off by default. Facts only: no medical conclusions and no health advice.",
   "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said."
 }
