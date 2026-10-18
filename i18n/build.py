@@ -16,12 +16,14 @@ lists what the next batch translation needs. Never edit the generated pages. Eac
 tools/stamp-assets.py, so the pages link current assets.
 """
 import html
+from copy import deepcopy
 import json
 import pathlib
 import re
 import subprocess
 import tempfile
 import sys
+from pending import document_locale, fallback_paths
 
 I18N = pathlib.Path(__file__).resolve().parent
 ROOT = I18N.parent
@@ -108,6 +110,28 @@ def merge(english, own, path, missing):
             out[key] = value
             missing.append(f'{path}.{key}')
     return out
+
+
+def apply_content_fallback(english, merged, code, missing):
+    """Replace only explicitly pending wording, including entries inside FAQ lists."""
+    merged = deepcopy(merged)
+    for path in fallback_paths(code):
+        keys = re.findall(r'[^.\[\]]+', path)
+        original, target = english, merged
+        try:
+            for key in keys[:-1]:
+                original = original[int(key)] if isinstance(original, list) else original[key]
+                target = target[int(key)] if isinstance(target, list) else target[key]
+            last = int(keys[-1]) if isinstance(target, list) else keys[-1]
+            source_key = int(keys[-1]) if isinstance(original, list) else keys[-1]
+            target[last] = deepcopy(original[source_key])
+        except (KeyError, IndexError, TypeError):
+            # An older language may still have a flat FAQ or a shorter list.
+            # Its complete English section is safer than retaining stale copy.
+            merged[keys[0]] = deepcopy(english[keys[0]])
+        if path not in missing:
+            missing.append(path)
+    return merged
 
 
 def has(lang, page):
@@ -383,9 +407,11 @@ def read_doc(page, code):
 
 
 def doc_page(lang, s, page):
-    meta, body = read_doc(page, lang['code'])
+    code = document_locale(page, lang['code'])
+    meta, body = read_doc(page, code)
     body = re.sub(r'( *)\{\{@social\}\}', lambda m: m.group(1) + social_nav(s, m.group(1)), body)
-    main = '<main id="main">\n' + body.rstrip() + '\n</main>'
+    body_language = ' lang="en"' if code != lang['code'] else ''
+    main = f'<main id="main"{body_language}>\n' + body.rstrip() + '\n</main>'
     return assemble(lang, s, page, meta['title'], meta['description'], main)
 
 
@@ -456,7 +482,8 @@ def main():
     for lang in BUILT:
         lang['own'] = json.loads(lang['file'].read_text(encoding='utf-8'))
         lang['missing'] = []
-        lang['strings'] = merge(english, lang['own'], '', lang['missing'])
+        lang['strings'] = apply_content_fallback(
+            english, merge(english, lang['own'], '', lang['missing']), lang['code'], lang['missing'])
     for lang in BUILT:
         s = lang['strings']
         out = ROOT / lang['path'].lstrip('/')

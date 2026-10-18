@@ -1,13 +1,12 @@
 """What the other languages still need from the English, since their last batch translation.
 
-    python i18n/pending.py          list keys added, changed or removed in strings/en.json
+    python i18n/pending.py          list string changes and pending document sections
     python i18n/pending.py --done   after a batch: record the current English as translated
 
-The site has 14 languages. Traditional Chinese (zh-Hant) has a home page, FAQ and support page;
-privacy and terms still link to the English pages.
-Day-to-day changes touch only en.json and zh-Hans.json; the other 12 languages (including zh-Hant)
-are translated in one batch later. Until then build.py shows the English for any key a language
-doesn't have yet.
+Day-to-day changes touch English and Simplified Chinese; the other 12 languages
+are translated in a later batch. pending-content.json explicitly records wording
+that must use current English until its translations are reviewed. This also
+covers legal and support documents, which are not part of strings/en.json.
 batch-base/en.json is the English the last batch was translated from.
 """
 import json
@@ -18,6 +17,23 @@ import sys
 I18N = pathlib.Path(__file__).resolve().parent
 EN = I18N / 'strings' / 'en.json'
 BASE = I18N / 'batch-base' / 'en.json'
+CONTENT = I18N / 'pending-content.json'
+
+
+def pending_content():
+    return json.loads(CONTENT.read_text(encoding='utf-8')) if CONTENT.exists() else {}
+
+
+def fallback_paths(code):
+    pending = pending_content()
+    return pending.get('strings', []) if code in pending.get('locales', []) else []
+
+
+def document_locale(page, code):
+    pending = pending_content()
+    if code in pending.get('locales', []) and page in pending.get('documents', {}):
+        return 'en'
+    return code
 
 
 def flat(value, prefix=''):
@@ -39,6 +55,11 @@ def main():
         BASE.parent.mkdir(exist_ok=True)
         shutil.copyfile(EN, BASE)
         print('Recorded the current English as translated.')
+        if CONTENT.exists():
+            pending = pending_content()
+            pending['locales'] = []
+            CONTENT.write_text(json.dumps(pending, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+            print('Cleared the reviewed content fallback after the translation batch.')
         return
     now = flat(json.loads(EN.read_text(encoding='utf-8')))
     then = flat(json.loads(BASE.read_text(encoding='utf-8')))
@@ -49,6 +70,14 @@ def main():
         for k in keys:
             print(f'{title}: {k}')
     print(f'{len(added)} added, {len(changed)} changed, {len(removed)} removed since the last batch')
+    pending = pending_content()
+    locales = pending.get('locales', [])
+    if locales:
+        print('Pending content translations: ' + ', '.join(locales))
+        for key in pending.get('strings', []):
+            print('English fallback: ' + key)
+        for page, sections in pending.get('documents', {}).items():
+            print(f'Pending document: {page}: ' + ', '.join(sections))
 
 
 if __name__ == '__main__':

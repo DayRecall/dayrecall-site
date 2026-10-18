@@ -88,7 +88,7 @@
           "name": "データはどこにあり、誰が見られますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "あなたの iPhone 上にあり、バックアップを使っている場合はその中にもあります。アカウントも DayRecall のサーバーもないため、私たちは見ることができません。回答には Apple の端末内モデルを使います。ご自身のクラウド API を使うか、一日分を AI アプリに渡すことを選ばない限り、iPhone の外には何も出ません。"
+            "text": "Your data is stored on your iPhone and in backups you choose to make. There is no account and no DayRecall server receiving your day. To-dos, recaps and answers use this iPhone by default. If you select and allow your own API, it receives new transcripts automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. It may first receive a question alone to help search. You can also share a selected day with an AI app. These recipients use their own privacy rules; audio is never sent to the API."
           }
         },
         {
@@ -96,7 +96,7 @@
           "name": "DayRecall を使うには何が必要ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "iOS 26 以降に対応し、Apple の端末内音声認識を使える iPhone が必要です。watchOS 26 以降の Apple Watch は任意ですが、併用をおすすめします。回答や、やることの抽出には Apple Intelligence も必要です。回答には代わりにご自身のクラウド API を使うこともできます。"
+            "text": "An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional. To-dos, recaps and answers use one AI engine: this iPhone’s model, which requires Apple Intelligence, or an OpenAI-compatible API that you configure and allow. Your API needs an internet connection."
           }
         },
         {
@@ -104,7 +104,7 @@
           "name": "どの iPhone で使えますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DayRecall には iOS 26 以降が必要です。iOS 26 は iPhone 11 以降と iPhone SE（第2世代）以降で動作します。文字起こしには Apple の端末内音声認識も必要ですが、iPhone 11 シリーズや iPhone SE（第2世代）など一部の旧モデルでは利用できません。そのため iPhone 12 以降をおすすめします。文字起こしができない場合は DayRecall が知らせます。Apple Intelligence による回答と、やることの抽出には iPhone 15 Pro、iPhone 15 Pro Max、iPhone Air、または iPhone 16 以降が必要です。"
+            "text": "DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. For to-dos, recaps and answers, the On this iPhone engine needs a device that supports Apple Intelligence. My own API can perform those three tasks without Apple Intelligence; transcription still requires the on-device speech recognition described above."
           }
         },
         {
@@ -128,7 +128,7 @@
           "name": "インターネットにつながらなくても使えますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい。聞き取り、文字起こし、回答、やることの抽出は端末上で行われるため、必要な言語モデルを iOS がダウンロードした後はオフラインで使えます。地図上の場所の表示と、ご自身のクラウド API には接続が必要です。"
+            "text": "Listening and transcription run on your devices. With On this iPhone selected and its required models downloaded and available, to-dos, recaps and answers also work offline. My own API needs an internet connection for those AI tasks. Places on the map also need a connection."
           }
         },
         {
@@ -136,7 +136,7 @@
           "name": "対応言語が Apple によって決まるのはなぜですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DayRecall は iPhone 上で Apple の内蔵技術を使います。文字起こしには音声認識、翻訳には Apple の翻訳機能、回答とやることの抽出には Apple Intelligence を使います。それぞれの対応言語は Apple が決め、iOS の更新で増えることがあり、一部の機能には新しい iPhone が必要です。そのため、文字起こしはできても翻訳はまだできない言語や、iPhone によって使えるかどうかが異なる言語があります。iOS の更新で対応言語が増えることもあります。"
+            "text": "Transcription uses Apple’s on-device speech recognition, and translation uses Apple’s translation; their supported languages depend on the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone uses Apple Intelligence and its supported languages. With My own API, language support depends on the service and model you choose. Choosing an API does not change transcription or translation support."
           }
         },
         {
@@ -157,10 +157,10 @@
         },
         {
           "@type": "Question",
-          "name": "回答と、やることの抽出にはどの言語が使えますか？",
+          "name": "Which languages work for to-dos, recaps and answers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "回答と、やることの抽出には Apple Intelligence を使います。対応言語は英語、中国語（簡体字・繁体字）、デンマーク語、オランダ語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ノルウェー語、ポルトガル語、スペイン語、スウェーデン語、トルコ語、ベトナム語です。iPhone と Siri の言語を、同じ対応言語に設定する必要があります。中国本土で購入した iPhone、または中国本土で中国本土の Apple Account を使う iPhone では、現在 Apple Intelligence は使えません。その場合も、ご自身のクラウド API で回答を得ることはできますが、やることの抽出はできません。詳しくはApple Intelligence に関する Apple のガイドをご覧ください。"
+            "text": "It depends on the AI engine. On this iPhone uses Apple Intelligence, so its device, language and region requirements apply. If Apple Intelligence is unavailable, including where Apple does not offer it, you can choose My own API for all three tasks: to-dos, recaps and answers. Its supported languages depend on the service and model you choose. See Apple’s guide for the current Apple Intelligence requirements."
           }
         },
         {
@@ -216,7 +216,7 @@
           "name": "一日分を自分の AI アプリに渡せますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい。一日分を AI アプリに渡すを使うと、一日の内容が選んだ質問付きのテキストファイルになり、共有シートで渡すアプリを選べます。DayRecall が勝手に送信することはありません。やることを取り込むには、AI の回答をコピーしてAI の回答を取り込むをタップします。"
+            "text": "Yes. Open Recap your day from Today, a past day or Ask. Write it here uses the AI engine you selected in Settings. To use another app, choose Hand to an AI app… and select it in the system share sheet; only the conversations you leave included go into the text file. To bring its to-dos back, copy the AI’s answer and tap Bring the AI’s answer back."
           }
         },
         {
@@ -248,7 +248,7 @@
           "name": "iPhone の外にデータが出ることはありますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "あなたが選んだときだけです。ご自身のクラウド API を使うと、質問と、関連する文字起こしの短い抜粋がそのサービスに送られます。一日分を AI アプリに渡す場合は、あなたが送るテキストファイルをそのアプリが受け取ります。場所の表示には Apple Maps を使い、iCloud Backup を使う場合はデータがバックアップに含まれます。詳しくはプライバシーポリシーをご覧ください。"
+            "text": "With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy."
           }
         },
         {
@@ -256,7 +256,7 @@
           "name": "DayRecall はヘルスケアのデータを読み取りますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "設定 › ヘルスケアで有効にした場合のみです。ヘルスケアアプリから睡眠、歩数と歩行距離、ワークアウト、心拍数を読み取り、その日の活動にラベルを付けたり、質問された活動中の会話を探したりします。ヘルスケアへの書き込みは行わず、読み取ったデータを保存したり、私たちに送ったりしません。1 日分を AI アプリに渡すとき、活動情報を追加するスイッチは初期状態ではオフで、有効にするたびに許可が必要です。追加されるのは「歩行中」などの短いラベルのみで、心拍数や歩数の数値は含みません。医学的な判断や健康上の助言は行わず、データが示す事実だけを表示します。"
+            "text": "Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add what I was doing is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; heart rate, step and distance figures are not included. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given."
           }
         },
         {
@@ -385,7 +385,7 @@
             </details>
             <details>
               <summary>データはどこにあり、誰が見られますか？</summary>
-              <p>あなたの iPhone 上にあり、バックアップを使っている場合はその中にもあります。アカウントも DayRecall のサーバーもないため、私たちは見ることができません。回答には Apple の端末内モデルを使います。ご自身のクラウド API を使うか、一日分を AI アプリに渡すことを選ばない限り、iPhone の外には何も出ません。</p>
+              <p>Your data is stored on your iPhone and in backups you choose to make. There is no account and no DayRecall server receiving your day. To-dos, recaps and answers use this iPhone by default. If you select and allow your own API, it receives new transcripts automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. It may first receive a question alone to help search. You can also share a selected day with an AI app. These recipients use their own privacy rules; audio is never sent to the API.</p>
             </details>
           </div>
         </div>
@@ -394,11 +394,11 @@
           <div class="qa">
             <details>
               <summary>DayRecall を使うには何が必要ですか？</summary>
-              <p>iOS 26 以降に対応し、Apple の端末内音声認識を使える iPhone が必要です。watchOS 26 以降の Apple Watch は任意ですが、併用をおすすめします。回答や、やることの抽出には Apple Intelligence も必要です。回答には代わりにご自身のクラウド API を使うこともできます。</p>
+              <p>An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional. To-dos, recaps and answers use one AI engine: this iPhone’s model, which requires Apple Intelligence, or an OpenAI-compatible API that you configure and allow. Your API needs an internet connection.</p>
             </details>
             <details>
               <summary>どの iPhone で使えますか？</summary>
-              <p>DayRecall には iOS 26 以降が必要です。iOS 26 は iPhone 11 以降と iPhone SE（第2世代）以降で動作します。文字起こしには Apple の端末内音声認識も必要ですが、iPhone 11 シリーズや iPhone SE（第2世代）など一部の旧モデルでは利用できません。そのため iPhone 12 以降をおすすめします。文字起こしができない場合は DayRecall が知らせます。Apple Intelligence による回答と、やることの抽出には iPhone 15 Pro、iPhone 15 Pro Max、iPhone Air、または iPhone 16 以降が必要です。</p>
+              <p>DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. For to-dos, recaps and answers, the On this iPhone engine needs a device that supports Apple Intelligence. My own API can perform those three tasks without Apple Intelligence; transcription still requires the on-device speech recognition described above.</p>
             </details>
             <details>
               <summary>どの Apple Watch で使えますか？</summary>
@@ -410,7 +410,7 @@
             </details>
             <details>
               <summary>インターネットにつながらなくても使えますか？</summary>
-              <p>はい。聞き取り、文字起こし、回答、やることの抽出は端末上で行われるため、必要な言語モデルを iOS がダウンロードした後はオフラインで使えます。地図上の場所の表示と、ご自身のクラウド API には接続が必要です。</p>
+              <p>Listening and transcription run on your devices. With On this iPhone selected and its required models downloaded and available, to-dos, recaps and answers also work offline. My own API needs an internet connection for those AI tasks. Places on the map also need a connection.</p>
             </details>
           </div>
         </div>
@@ -419,7 +419,7 @@
           <div class="qa">
             <details>
               <summary>対応言語が Apple によって決まるのはなぜですか？</summary>
-              <p>DayRecall は iPhone 上で Apple の内蔵技術を使います。文字起こしには音声認識、翻訳には Apple の翻訳機能、回答とやることの抽出には Apple Intelligence を使います。それぞれの対応言語は Apple が決め、iOS の更新で増えることがあり、一部の機能には新しい iPhone が必要です。そのため、文字起こしはできても翻訳はまだできない言語や、iPhone によって使えるかどうかが異なる言語があります。iOS の更新で対応言語が増えることもあります。</p>
+              <p>Transcription uses Apple’s on-device speech recognition, and translation uses Apple’s translation; their supported languages depend on the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone uses Apple Intelligence and its supported languages. With My own API, language support depends on the service and model you choose. Choosing an API does not change transcription or translation support.</p>
             </details>
             <details>
               <summary>DayRecall ではどの言語を文字起こしできますか？</summary>
@@ -430,8 +430,8 @@
               <p>ほかの使用言語で話された部分は、Apple の端末内翻訳で主に使う言語に翻訳できます。ただし、その言語の組み合わせに Apple があなたの iPhone 上で対応している必要があります。広東語を含め、文字起こしに対応していても翻訳できるとは限りません。利用できる言語の組み合わせは DayRecall の翻訳設定で確認してください。初回使用前に iOS が各言語をダウンロードします。現在の対応言語は Apple の<a href="https://www.apple.com/ios/feature-availability/">機能の提供状況ページ</a>で確認できます。</p>
             </details>
             <details>
-              <summary>回答と、やることの抽出にはどの言語が使えますか？</summary>
-              <p>回答と、やることの抽出には Apple Intelligence を使います。対応言語は英語、中国語（簡体字・繁体字）、デンマーク語、オランダ語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ノルウェー語、ポルトガル語、スペイン語、スウェーデン語、トルコ語、ベトナム語です。iPhone と Siri の言語を、同じ対応言語に設定する必要があります。中国本土で購入した iPhone、または中国本土で中国本土の Apple Account を使う iPhone では、現在 Apple Intelligence は使えません。その場合も、ご自身のクラウド API で回答を得ることはできますが、やることの抽出はできません。詳しくは<a href="https://support.apple.com/en-us/121115">Apple Intelligence に関する Apple のガイド</a>をご覧ください。</p>
+              <summary>Which languages work for to-dos, recaps and answers?</summary>
+              <p>It depends on the AI engine. On this iPhone uses Apple Intelligence, so its device, language and region requirements apply. If Apple Intelligence is unavailable, including where Apple does not offer it, you can choose My own API for all three tasks: to-dos, recaps and answers. Its supported languages depend on the service and model you choose. See <a href="https://support.apple.com/en-us/121115">Apple’s guide</a> for the current Apple Intelligence requirements.</p>
             </details>
             <details>
               <summary>アプリ自体は何語で使えますか？</summary>
@@ -464,7 +464,7 @@
             </details>
             <details>
               <summary>一日分を自分の AI アプリに渡せますか？</summary>
-              <p>はい。<strong>一日分を AI アプリに渡す</strong>を使うと、一日の内容が選んだ質問付きのテキストファイルになり、共有シートで渡すアプリを選べます。DayRecall が勝手に送信することはありません。やることを取り込むには、AI の回答をコピーして<strong>AI の回答を取り込む</strong>をタップします。</p>
+              <p>Yes. Open Recap your day from Today, a past day or Ask. Write it here uses the AI engine you selected in Settings. To use another app, choose Hand to an AI app… and select it in the system share sheet; only the conversations you leave included go into the text file. To bring its to-dos back, copy the AI’s answer and tap Bring the AI’s answer back.</p>
             </details>
             <details>
               <summary>音声ファイルを読み込めますか？</summary>
@@ -490,11 +490,11 @@
           <div class="qa">
             <details>
               <summary>iPhone の外にデータが出ることはありますか？</summary>
-              <p>あなたが選んだときだけです。ご自身のクラウド API を使うと、質問と、関連する文字起こしの短い抜粋がそのサービスに送られます。一日分を AI アプリに渡す場合は、あなたが送るテキストファイルをそのアプリが受け取ります。場所の表示には Apple Maps を使い、iCloud Backup を使う場合はデータがバックアップに含まれます。詳しくはプライバシーポリシーをご覧ください。</p>
+              <p>With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy.</p>
             </details>
             <details>
               <summary>DayRecall はヘルスケアのデータを読み取りますか？</summary>
-              <p>設定 › ヘルスケアで有効にした場合のみです。ヘルスケアアプリから睡眠、歩数と歩行距離、ワークアウト、心拍数を読み取り、その日の活動にラベルを付けたり、質問された活動中の会話を探したりします。ヘルスケアへの書き込みは行わず、読み取ったデータを保存したり、私たちに送ったりしません。1 日分を AI アプリに渡すとき、活動情報を追加するスイッチは初期状態ではオフで、有効にするたびに許可が必要です。追加されるのは「歩行中」などの短いラベルのみで、心拍数や歩数の数値は含みません。医学的な判断や健康上の助言は行わず、データが示す事実だけを表示します。</p>
+              <p>Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add what I was doing is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; heart rate, step and distance figures are not included. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given.</p>
             </details>
             <details>
               <summary>DayRecall は追跡や広告表示をしますか？</summary>

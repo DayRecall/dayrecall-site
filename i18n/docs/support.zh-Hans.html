@@ -40,8 +40,8 @@
             <p>一块装有 watchOS 26 或更高版本的 Apple Watch，替你听着。它不是必需的：也可以用 iPhone 录音，或者导入音频。</p>
           </article>
           <article class="feat">
-            <h3>Apple 智能</h3>
-            <p>回答和待办要用到 Apple 智能，所以需要支持 Apple 智能的 iPhone，并打开 Apple 智能。回答也可以改用你自己的 API。</p>
+        <h3>AI 引擎</h3>
+        <p>待办、复盘和回答使用“设置 › AI 引擎”中的选择。“这台 iPhone”需要设备支持 Apple 智能，并已开启、准备就绪；“我自己的 API”使用你以自己的密钥配置的兼容 OpenAI 接口的服务，并需你允许发送同意页列明的内容。</p>
           </article>
         </div>
       </div>
@@ -56,60 +56,59 @@
         <article class="feat">
           <span class="ico" data-icon="watch"></span>
           <h3><span class="nw">手表没在听</span></h3>
-          <p>Apple Watch 只在录音时段里听，时段在“设置 › 录音时段”里设定。时段开始时，手表会问你要不要开始：点“开始”，到点会自己停下。</p>
-          <p>来电或 Siri 会暂停聆听，在手表上点“开始”就能继续。iPhone 的“今天”页会显示手表有没有在听。</p>
+          <p>Apple Watch 只在录音时段里听，时段在“<strong>设置 › 录音时段</strong>”里设定。时段开始时，手表会问你要不要开始：点“<strong>开始</strong>”，到点会自己停下。</p>
+          <p>来电或 Siri 会暂停聆听，在手表上点“<strong>开始</strong>”就能继续。iPhone 的“今天”页会显示手表有没有在听。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="clock"></span>
           <h3><span class="nw">文字什么时候</span><span class="nw">出现？</span></h3>
-          <p>手表大约每 2 小时、以及停止聆听时，把听到的内容交给 iPhone，iPhone 收到就转成文字。想早点看到，打开 DayRecall 点“立即同步”。</p>
+          <p>手表大约每 2 小时、以及停止聆听时，把听到的内容交给 iPhone，iPhone 收到就转成文字。想早点看到，打开 DayRecall 点“<strong>立即同步</strong>”。</p>
           <p>第一次使用时，iPhone 会下载你所用语言的 Apple 语音模型，下载好后，录音就会转成文字。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="chat"></span>
-          <h3><span class="nw">没有回答，</span><span class="nw">或没有待办</span></h3>
-          <p>两者都要用到 Apple 智能：请在 iPhone 的“设置”App 里确认它已打开，并已下载完成。录音转成文字之后，才会出现待办。</p>
-          <p>回答也可以改用你自己的 API，在“设置 › 回答方式”里设置。</p>
+        <h3>没有回答、待办或复盘</h3>
+        <p>先检查“设置 › AI 引擎”。选择“这台 iPhone”时，确认 Apple 智能可用、已开启并下载完成；选择“我自己的 API”时，检查地址、密钥、模型、网络连接和新版共享授权。应用不会自行切换引擎。待办需要先有转写文字，API 可能分批处理。即使 iPhone 没有 Apple 智能，也可以用自己的 API 完成这三项功能。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="people"></span>
           <h3><span class="nw">分清谁在说话</span></h3>
-          <p>在“设置 › 转写”里打开“标注是谁在说话”，找个安静的地方录大约一分钟你的声音。之后你说的话会标成“我”，其他人标成“其他人 1”“其他人 2”。</p>
-          <p>想重录或删除你的声音，在同一个地方打开“我的声音”。</p>
+          <p>在“<strong>设置 › 转写</strong>”里打开“<strong>标注是谁在说话</strong>”，找个安静的地方录大约一分钟你的声音。之后你说的话会标成“我”，其他人标成“其他人 1”“其他人 2”。</p>
+          <p>想重录或删除你的声音，在同一个地方打开“<strong>我的声音</strong>”。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="globe"></span>
           <h3><span class="nw">不止一种语言</span></h3>
-          <p>在“设置 › 转写”里打开“多语言转写”，在主语言之外最多再加两种语言。DayRecall 就能跟上在这几种语言之间切换的对话。</p>
+          <p>在“<strong>设置 › 转写</strong>”里打开“<strong>多语言转写</strong>”，在主语言之外最多再加两种语言。DayRecall 就能跟上在这几种语言之间切换的对话。</p>
           <p>打开后，转写会慢一些，也更费电。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="share"></span>
-          <h3><span class="nw">把一天交给</span> <span class="nw">AI&nbsp;App</span></h3>
-          <p>在“今天”、过去的某一天或“提问”页点“把这一天交给 AI App”，在系统分享面板里选你常用的 AI App。</p>
-          <p>想把它找出的待办收回来，就拷贝它的回答，然后在“快捷指令”App 或“设置 › 待办”里点“把 AI 的回答收回来”。</p>
+        <h3>复盘一天，或交给 AI App</h3>
+        <p>在今天页、过去某一天或 Ask 中打开“复盘你的一天”。“在这里写”使用所选 AI 引擎；“交给 AI App…”会生成文本文件，交给你在系统共享表单中选择的 App。选择“我自己的 API”时，“在这里写”会把勾选的对话发给该服务；分享按钮是另一条路径。</p>
+          <p>想把它找出的待办收回来，就拷贝它的回答，然后在“快捷指令”App 或“<strong>设置 › 待办</strong>”里点“<strong>把 AI 的回答收回来</strong>”。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="calendar"></span>
           <h3><span class="nw">日历和提醒事项</span></h3>
-          <p>答应的事、截止日期和会议，会放在“待办”页的“待确认”里。确认一个日程，系统的“新建日程”界面就会打开。</p>
-          <p>想把确认的待办也放进提醒事项，在“设置 › 待办”里打开“把确认的待办加到‘提醒事项’”。</p>
+          <p>答应的事、截止日期和会议，会放在“待办”页的“<strong>待确认</strong>”里。确认一个日程，系统的“新建日程”界面就会打开。</p>
+          <p>想把确认的待办也放进提醒事项，在“<strong>设置 › 待办</strong>”里打开“<strong>把确认的待办加到‘提醒事项’</strong>”。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="pin"></span>
           <h3><span class="nw">在地图上看地点</span></h3>
-          <p>在“设置 › 地点”里打开“在地图上看这一天”。iOS 请求定位权限时选“始终”，DayRecall 关着时也能记下地点。这会多用一些电。</p>
+          <p>在“<strong>设置 › 地点</strong>”里打开“<strong>在地图上看这一天</strong>”。iOS 请求定位权限时选“始终”，DayRecall 关着时也能记下地点。这会多用一些电。</p>
         </article>
         <article class="feat">
           <span class="ico" data-icon="trash"></span>
           <h3><span class="nw">删除你的数据</span></h3>
-          <p>在录音页可以删除这条录音，或者用“设置 › 隐私 › 删除全部记忆”一次全部删除。“删除我的声音”会删掉你的声纹。</p>
-          <p>删除 App 会删掉它保存的内容；如果为自己的 API 保存过密钥，请先点“移除已存的密钥”。详见<a href="/zh/privacy/">隐私政策</a>。</p>
+          <p>在录音页可以删除这条录音，或者用“<strong>设置 › 隐私 › 删除全部记忆</strong>”一次全部删除。“<strong>删除我的声音</strong>”会删掉你的声纹。</p>
+          <p>删除 App 会删掉它保存的内容；如果为自己的 API 保存过密钥，请先点“<strong>移除已存的密钥</strong>”。详见<a href="/zh/privacy/">隐私政策</a>。</p>
         </article>
         <article class="feat" id="log">
           <span class="ico" data-icon="list"></span>
           <h3><span class="nw">给我们发日志</span></h3>
-          <p>打开“设置 › 开发者选项 › 日志”，点“分享日志”，把文件发到 <a href="mailto:support@dayrecall.com">support@dayrecall.com</a>。</p>
+          <p>打开“<strong>设置 › 开发者选项 › 日志</strong>”，点“<strong>分享日志</strong>”，把文件发到 <a href="mailto:support@dayrecall.com">support@dayrecall.com</a>。</p>
           <p>日志只写 App 做了什么、什么时候做的，从不包含说过的话、你的提问、人名或地点。</p>
         </article>
       </div>

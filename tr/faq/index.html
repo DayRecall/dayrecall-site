@@ -88,7 +88,7 @@
           "name": "Verilerim nerede ve kim görebilir?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Veriler iPhone'unuzdadır; yedekleme kullanıyorsanız yedeğinizde de bulunur. Hesap ve DayRecall sunucusu olmadığı için biz onları göremeyiz. Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Kendi bulut API'nizi kullanmayı ya da bir günü AI uygulamasına aktarmayı seçmediğiniz sürece iPhone'unuzdan hiçbir şey çıkmaz."
+            "text": "Your data is stored on your iPhone and in backups you choose to make. There is no account and no DayRecall server receiving your day. To-dos, recaps and answers use this iPhone by default. If you select and allow your own API, it receives new transcripts automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. It may first receive a question alone to help search. You can also share a selected day with an AI app. These recipients use their own privacy rules; audio is never sent to the API."
           }
         },
         {
@@ -96,7 +96,7 @@
           "name": "DayRecall'ı kullanmak için ne gerekli?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "iOS 26 veya sonraki bir sürümü çalıştıran ve Apple'ın cihaz üzerinde konuşma tanıma özelliğini destekleyen bir iPhone gerekir. watchOS 26 veya sonraki bir sürümü çalıştıran Apple Watch isteğe bağlıdır, ancak önerilir. Yanıtlar ve görevler için Apple Intelligence da gerekir; yanıtlar için bunun yerine kendi bulut API'nizi kullanabilirsiniz."
+            "text": "An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional. To-dos, recaps and answers use one AI engine: this iPhone’s model, which requires Apple Intelligence, or an OpenAI-compatible API that you configure and allow. Your API needs an internet connection."
           }
         },
         {
@@ -104,7 +104,7 @@
           "name": "Hangi iPhone modelleriyle çalışır?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DayRecall için iOS 26 veya sonrası gerekir. Bu sürüm iPhone 11 ve sonraki modellerde, ayrıca iPhone SE (2. nesil) ve sonraki modellerde çalışır. Konuşmayı metne çevirmek için Apple'ın cihaz üzerinde konuşma tanıma özelliği de gerekir. Apple bu özelliği iPhone 11 modelleri ve iPhone SE (2. nesil) dahil bazı eski modellere sunmadığından iPhone 12 veya sonrasını öneriyoruz. iPhone'unuz yazıya dökemiyorsa DayRecall bunu bildirir. Apple Intelligence ile yanıtlar ve görevler için iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ya da iPhone 16 veya sonrası gerekir."
+            "text": "DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. For to-dos, recaps and answers, the On this iPhone engine needs a device that supports Apple Intelligence. My own API can perform those three tasks without Apple Intelligence; transcription still requires the on-device speech recognition described above."
           }
         },
         {
@@ -128,7 +128,7 @@
           "name": "İnternet bağlantısı olmadan çalışır mı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Evet. Dinleme, yazıya dökme, yanıtlar ve görevler cihazlarınızda çalışır. iOS gerekli dil modellerini indirdikten sonra bunları çevrimdışı kullanabilirsiniz. Haritada yerleri göstermek ve kendi bulut API'nizi kullanmak için bağlantı gerekir."
+            "text": "Listening and transcription run on your devices. With On this iPhone selected and its required models downloaded and available, to-dos, recaps and answers also work offline. My own API needs an internet connection for those AI tasks. Places on the map also need a connection."
           }
         },
         {
@@ -136,7 +136,7 @@
           "name": "Desteklenen diller neden Apple'a bağlı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DayRecall işlemleri iPhone'unuzda Apple'ın yerleşik teknolojileriyle yapar: yazıya dökmek için konuşma tanıma, çevirmek için Apple çevirisi, yanıtlar ve görevler için Apple Intelligence. Bunların her birinin desteklediği dilleri Apple belirler ve iOS güncellemeleriyle genişletir; bazıları yeni bir iPhone gerektirir. Dolayısıyla bir dil yazıya dökmede çalışırken çeviride henüz çalışmayabilir veya bir iPhone'da çalışıp diğerinde çalışmayabilir. iOS güncellemesi yeni diller ekleyebilir."
+            "text": "Transcription uses Apple’s on-device speech recognition, and translation uses Apple’s translation; their supported languages depend on the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone uses Apple Intelligence and its supported languages. With My own API, language support depends on the service and model you choose. Choosing an API does not change transcription or translation support."
           }
         },
         {
@@ -157,10 +157,10 @@
         },
         {
           "@type": "Question",
-          "name": "Yanıtlar ve görevler hangi dillerde çalışır?",
+          "name": "Which languages work for to-dos, recaps and answers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yanıtlar ve görevler Apple Intelligence kullanır. Desteklenen diller İngilizce, Çince (basitleştirilmiş ve geleneksel), Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Norveççe, Portekizce, İspanyolca, İsveççe, Türkçe ve Vietnamcadır. iPhone'unuzun dili ile Siri'nin dili desteklenen aynı dile ayarlanmalıdır. Apple Intelligence şu anda Çin ana karasında satın alınan iPhone'larda veya Çin ana karasında bir Çin ana karası Apple Account ile kullanılan iPhone'larda çalışmıyor. Orada kendi bulut API'nizle yanıt alabilirsiniz, ancak görevler kullanılamaz. Ayrıntılar için Apple'ın Apple Intelligence kılavuzuna bakın."
+            "text": "It depends on the AI engine. On this iPhone uses Apple Intelligence, so its device, language and region requirements apply. If Apple Intelligence is unavailable, including where Apple does not offer it, you can choose My own API for all three tasks: to-dos, recaps and answers. Its supported languages depend on the service and model you choose. See Apple’s guide for the current Apple Intelligence requirements."
           }
         },
         {
@@ -216,7 +216,7 @@
           "name": "Bir günü kendi AI uygulamama aktarabilir miyim?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Evet. Günü bir AI uygulamasına aktar bir günü, seçtiğiniz soruyla birlikte metin dosyasına dönüştürür. Paylaşım sayfasında uygulamayı siz seçersiniz; DayRecall kendiliğinden hiçbir şey göndermez. Görevleri geri almak için AI yanıtını kopyalayıp AI yanıtını geri getir seçeneğine dokunun."
+            "text": "Yes. Open Recap your day from Today, a past day or Ask. Write it here uses the AI engine you selected in Settings. To use another app, choose Hand to an AI app… and select it in the system share sheet; only the conversations you leave included go into the text file. To bring its to-dos back, copy the AI’s answer and tap Bring the AI’s answer back."
           }
         },
         {
@@ -248,7 +248,7 @@
           "name": "iPhone'umdan dışarı bir şey çıkar mı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yalnızca siz seçtiğinizde. Kendi bulut API'nizi kullanırsanız her soru, sorunuzu ve metinlerinizden kısa, ilgili alıntıları o hizmete gönderir. Bir günü AI uygulamasına aktarırsanız uygulama, gönderdiğiniz metin dosyasını alır. Yerler özelliği Apple Maps'i kullanır; iCloud Backup kullanıyorsanız verileriniz de yedeklemeye dahildir. Ayrıntılar Gizlilik Politikası'nda yer alır."
+            "text": "With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy."
           }
         },
         {
@@ -256,7 +256,7 @@
           "name": "DayRecall Sağlık verilerimi okur mu?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yalnızca Ayarlar › Sağlık bölümünden açarsanız. Ardından gününüzdeki etkinlikleri işaretlemek ve sorduğunuz bir etkinlik sırasında söylenenleri bulmak için Sağlık uygulamasından uyku, adım sayısı ve yürüme mesafesi, antrenman ve kalp atış hızı verilerini okur. Sağlık’a hiçbir zaman veri yazmaz, okuduğu verileri saklamaz ve bize göndermez. Bir günü bir AI uygulamasına aktarırken etkinlik ekleme seçeneği varsayılan olarak kapalıdır ve her açışınızda izin ister. İzin verirseniz dosyaya yalnızca “Yürüyor” gibi kısa etiketler eklenir; kalp atış hızı veya adım sayıları eklenmez. Uygulama tıbbi sonuçlar çıkarmaz ve sağlık tavsiyesi vermez; yalnızca verilerin gösterdiğini belirtir."
+            "text": "Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add what I was doing is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; heart rate, step and distance figures are not included. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given."
           }
         },
         {
@@ -385,7 +385,7 @@
             </details>
             <details>
               <summary>Verilerim nerede ve kim görebilir?</summary>
-              <p>Veriler iPhone'unuzdadır; yedekleme kullanıyorsanız yedeğinizde de bulunur. Hesap ve DayRecall sunucusu olmadığı için biz onları göremeyiz. Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Kendi bulut API'nizi kullanmayı ya da bir günü AI uygulamasına aktarmayı seçmediğiniz sürece iPhone'unuzdan hiçbir şey çıkmaz.</p>
+              <p>Your data is stored on your iPhone and in backups you choose to make. There is no account and no DayRecall server receiving your day. To-dos, recaps and answers use this iPhone by default. If you select and allow your own API, it receives new transcripts automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. It may first receive a question alone to help search. You can also share a selected day with an AI app. These recipients use their own privacy rules; audio is never sent to the API.</p>
             </details>
           </div>
         </div>
@@ -394,11 +394,11 @@
           <div class="qa">
             <details>
               <summary>DayRecall'ı kullanmak için ne gerekli?</summary>
-              <p>iOS 26 veya sonraki bir sürümü çalıştıran ve Apple'ın cihaz üzerinde konuşma tanıma özelliğini destekleyen bir iPhone gerekir. watchOS 26 veya sonraki bir sürümü çalıştıran Apple Watch isteğe bağlıdır, ancak önerilir. Yanıtlar ve görevler için Apple Intelligence da gerekir; yanıtlar için bunun yerine kendi bulut API'nizi kullanabilirsiniz.</p>
+              <p>An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional. To-dos, recaps and answers use one AI engine: this iPhone’s model, which requires Apple Intelligence, or an OpenAI-compatible API that you configure and allow. Your API needs an internet connection.</p>
             </details>
             <details>
               <summary>Hangi iPhone modelleriyle çalışır?</summary>
-              <p>DayRecall için iOS 26 veya sonrası gerekir. Bu sürüm iPhone 11 ve sonraki modellerde, ayrıca iPhone SE (2. nesil) ve sonraki modellerde çalışır. Konuşmayı metne çevirmek için Apple'ın cihaz üzerinde konuşma tanıma özelliği de gerekir. Apple bu özelliği iPhone 11 modelleri ve iPhone SE (2. nesil) dahil bazı eski modellere sunmadığından iPhone 12 veya sonrasını öneriyoruz. iPhone'unuz yazıya dökemiyorsa DayRecall bunu bildirir. Apple Intelligence ile yanıtlar ve görevler için iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ya da iPhone 16 veya sonrası gerekir.</p>
+              <p>DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. For to-dos, recaps and answers, the On this iPhone engine needs a device that supports Apple Intelligence. My own API can perform those three tasks without Apple Intelligence; transcription still requires the on-device speech recognition described above.</p>
             </details>
             <details>
               <summary>Hangi Apple Watch modelleriyle çalışır?</summary>
@@ -410,7 +410,7 @@
             </details>
             <details>
               <summary>İnternet bağlantısı olmadan çalışır mı?</summary>
-              <p>Evet. Dinleme, yazıya dökme, yanıtlar ve görevler cihazlarınızda çalışır. iOS gerekli dil modellerini indirdikten sonra bunları çevrimdışı kullanabilirsiniz. Haritada yerleri göstermek ve kendi bulut API'nizi kullanmak için bağlantı gerekir.</p>
+              <p>Listening and transcription run on your devices. With On this iPhone selected and its required models downloaded and available, to-dos, recaps and answers also work offline. My own API needs an internet connection for those AI tasks. Places on the map also need a connection.</p>
             </details>
           </div>
         </div>
@@ -419,7 +419,7 @@
           <div class="qa">
             <details>
               <summary>Desteklenen diller neden Apple'a bağlı?</summary>
-              <p>DayRecall işlemleri iPhone'unuzda Apple'ın yerleşik teknolojileriyle yapar: yazıya dökmek için konuşma tanıma, çevirmek için Apple çevirisi, yanıtlar ve görevler için Apple Intelligence. Bunların her birinin desteklediği dilleri Apple belirler ve iOS güncellemeleriyle genişletir; bazıları yeni bir iPhone gerektirir. Dolayısıyla bir dil yazıya dökmede çalışırken çeviride henüz çalışmayabilir veya bir iPhone'da çalışıp diğerinde çalışmayabilir. iOS güncellemesi yeni diller ekleyebilir.</p>
+              <p>Transcription uses Apple’s on-device speech recognition, and translation uses Apple’s translation; their supported languages depend on the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone uses Apple Intelligence and its supported languages. With My own API, language support depends on the service and model you choose. Choosing an API does not change transcription or translation support.</p>
             </details>
             <details>
               <summary>DayRecall hangi dilleri yazıya dökebilir?</summary>
@@ -430,8 +430,8 @@
               <p>Diğer çalışma dillerinizdeki satırlar Apple'ın cihaz üzerindeki çeviri özelliğiyle ana dilinize çevrilebilir. Bunun için dil çiftinin Apple tarafından iPhone'unuzda desteklenmesi gerekir. Yazıya dökme desteği, Kantonca dahil, çeviri desteğini garanti etmez. Kullanılabilir dil çiftlerini DayRecall’ın çeviri ayarlarında kontrol edin. iOS her dili ilk kullanımdan önce indirir. Güncel diller Apple'ın <a href="https://www.apple.com/ios/feature-availability/">özellik kullanılabilirliği sayfasında</a> listelenir.</p>
             </details>
             <details>
-              <summary>Yanıtlar ve görevler hangi dillerde çalışır?</summary>
-              <p>Yanıtlar ve görevler Apple Intelligence kullanır. Desteklenen diller İngilizce, Çince (basitleştirilmiş ve geleneksel), Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Norveççe, Portekizce, İspanyolca, İsveççe, Türkçe ve Vietnamcadır. iPhone'unuzun dili ile Siri'nin dili desteklenen aynı dile ayarlanmalıdır. Apple Intelligence şu anda Çin ana karasında satın alınan iPhone'larda veya Çin ana karasında bir Çin ana karası Apple Account ile kullanılan iPhone'larda çalışmıyor. Orada kendi bulut API'nizle yanıt alabilirsiniz, ancak görevler kullanılamaz. Ayrıntılar için <a href="https://support.apple.com/en-us/121115">Apple'ın Apple Intelligence kılavuzuna</a> bakın.</p>
+              <summary>Which languages work for to-dos, recaps and answers?</summary>
+              <p>It depends on the AI engine. On this iPhone uses Apple Intelligence, so its device, language and region requirements apply. If Apple Intelligence is unavailable, including where Apple does not offer it, you can choose My own API for all three tasks: to-dos, recaps and answers. Its supported languages depend on the service and model you choose. See <a href="https://support.apple.com/en-us/121115">Apple’s guide</a> for the current Apple Intelligence requirements.</p>
             </details>
             <details>
               <summary>Uygulamanın kendisi hangi dillerde?</summary>
@@ -464,7 +464,7 @@
             </details>
             <details>
               <summary>Bir günü kendi AI uygulamama aktarabilir miyim?</summary>
-              <p>Evet. <strong>Günü bir AI uygulamasına aktar</strong> bir günü, seçtiğiniz soruyla birlikte metin dosyasına dönüştürür. Paylaşım sayfasında uygulamayı siz seçersiniz; DayRecall kendiliğinden hiçbir şey göndermez. Görevleri geri almak için AI yanıtını kopyalayıp <strong>AI yanıtını geri getir</strong> seçeneğine dokunun.</p>
+              <p>Yes. Open Recap your day from Today, a past day or Ask. Write it here uses the AI engine you selected in Settings. To use another app, choose Hand to an AI app… and select it in the system share sheet; only the conversations you leave included go into the text file. To bring its to-dos back, copy the AI’s answer and tap Bring the AI’s answer back.</p>
             </details>
             <details>
               <summary>Ses dosyası içe aktarabilir miyim?</summary>
@@ -490,11 +490,11 @@
           <div class="qa">
             <details>
               <summary>iPhone'umdan dışarı bir şey çıkar mı?</summary>
-              <p>Yalnızca siz seçtiğinizde. Kendi bulut API'nizi kullanırsanız her soru, sorunuzu ve metinlerinizden kısa, ilgili alıntıları o hizmete gönderir. Bir günü AI uygulamasına aktarırsanız uygulama, gönderdiğiniz metin dosyasını alır. Yerler özelliği Apple Maps'i kullanır; iCloud Backup kullanıyorsanız verileriniz de yedeklemeye dahildir. Ayrıntılar Gizlilik Politikası'nda yer alır.</p>
+              <p>With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy.</p>
             </details>
             <details>
               <summary>DayRecall Sağlık verilerimi okur mu?</summary>
-              <p>Yalnızca Ayarlar › Sağlık bölümünden açarsanız. Ardından gününüzdeki etkinlikleri işaretlemek ve sorduğunuz bir etkinlik sırasında söylenenleri bulmak için Sağlık uygulamasından uyku, adım sayısı ve yürüme mesafesi, antrenman ve kalp atış hızı verilerini okur. Sağlık’a hiçbir zaman veri yazmaz, okuduğu verileri saklamaz ve bize göndermez. Bir günü bir AI uygulamasına aktarırken etkinlik ekleme seçeneği varsayılan olarak kapalıdır ve her açışınızda izin ister. İzin verirseniz dosyaya yalnızca “Yürüyor” gibi kısa etiketler eklenir; kalp atış hızı veya adım sayıları eklenmez. Uygulama tıbbi sonuçlar çıkarmaz ve sağlık tavsiyesi vermez; yalnızca verilerin gösterdiğini belirtir.</p>
+              <p>Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add what I was doing is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; heart rate, step and distance figures are not included. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given.</p>
             </details>
             <details>
               <summary>DayRecall beni izler veya reklam gösterir mi?</summary>
