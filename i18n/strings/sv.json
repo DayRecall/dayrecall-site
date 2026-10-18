@@ -86,7 +86,7 @@
   "languages_05": "Varje del transkriberas på sitt eget språk",
   "languages_06": "Översatt till ditt språk",
   "languages_07": "Språkigenkänning för en timmes samtal på cirka 32 sekunder",
-  "languages_08": "Flerspråkig transkription är en avancerad inställning, avstängd som standard. Hastigheten bygger på interna tester på iPhone 17 Pro Max. Själva appen finns på 13 språk.",
+  "languages_08": "Flerspråkig transkription är en avancerad inställning, avstängd som standard. Hastigheten bygger på interna tester på iPhone 17 Pro Max. Själva appen finns på 14 språk.",
   "languages_09": "Arbetsspråken svenska, engelska och kinesiska tänds i tur och ordning när en rad på varje språk skrivs ner; de engelska och kinesiska raderna får svenska översättningar.",
   "features_01": "Funktioner",
   "features_02": "Gjord för detaljerna du annars skulle tappa bort",
@@ -117,7 +117,7 @@
   "final_01": "AI-minne för hela din dag.",
   "final_02": "Kommer snart till App Store",
   "final_03": "Hämta DayRecall i App Store ",
-  "final_04": "Bäst med Apple Watch · Fungerar med bara iPhone · På 13 språk",
+  "final_04": "Bäst med Apple Watch · Fungerar med bara iPhone · På 14 språk",
   "foot_01": "Apple Watch och iPhone är varumärken som tillhör Apple Inc., registrerade i USA och andra länder och regioner.",
   "faq": [
     {
@@ -175,11 +175,11 @@
         },
         {
           "q": "Vilka språk kan DayRecall transkribera?",
-          "a": "Du kan välja mellan engelska (USA, Storbritannien), kinesiska (mandarin), japanska, koreanska, spanska, franska, tyska, italienska, portugisiska (Brasilien, Portugal), nederländska, svenska, danska och turkiska. Varje språk fungerar bara om Apples taligenkänning på enheten stöder det på din iPhone. Annars markerar DayRecall språket som inte stött. Första gången du använder ett språk hämtar iOS dess talmodell."
+          "a": "Du kan välja mellan engelska (USA, Storbritannien), kinesiska (mandarin, Fastlandskina), traditionell kinesiska (Taiwan), kantonesiska (Fastlandskina), japanska, koreanska, spanska, franska, tyska, italienska, portugisiska (Brasilien, Portugal), nederländska, svenska, danska och turkiska. Varje språk fungerar bara om Apples taligenkänning på enheten stöder det på din iPhone. Annars markerar DayRecall språket som inte stött. Första gången du använder ett språk hämtar iOS dess talmodell."
         },
         {
           "q": "Vilka språk kan appen översätta?",
-          "a": "Rader på dina andra arbetsspråk kan översättas till ditt huvudspråk med Apples översättning på enheten. Ett språkpar kan alltså bara översättas om Apple stöder det på din iPhone. I iOS 27 gäller det alla språk som DayRecall kan transkribera. I iOS 26 gäller det färre; danska och svenska ingår till exempel inte. iOS hämtar varje språk före första användningen. Apple listar de aktuella språken på sin <a href=\"https://www.apple.com/ios/feature-availability/\">sida om tillgängliga funktioner</a>."
+          "a": "Rader på dina andra arbetsspråk kan översättas till ditt huvudspråk med Apples översättning på enheten. Ett språkpar kan alltså bara översättas om Apple stöder det på din iPhone. Stöd för transkribering garanterar inte stöd för översättning, inte heller för kantonesiska. Se tillgängliga språkpar i DayRecalls översättningsinställningar. iOS hämtar varje språk före första användningen. Apple listar de aktuella språken på sin <a href=\"https://www.apple.com/ios/feature-availability/\">sida om tillgängliga funktioner</a>."
         },
         {
           "q": "Vilka språk fungerar för svar och att göra-punkter?",
@@ -187,7 +187,7 @@
         },
         {
           "q": "Vilka språk finns appen på?",
-          "a": "Appens menyer och skärmar finns på 13 språk: engelska, förenklad kinesiska, danska, nederländska, franska, tyska, italienska, japanska, koreanska, portugisiska (Portugal), spanska, svenska och turkiska. Det är skilt från de språk appen kan transkribera."
+          "a": "Appens menyer och skärmar finns på 14 språk: engelska, förenklad kinesiska, traditionell kinesiska, danska, nederländska, franska, tyska, italienska, japanska, koreanska, portugisiska (Portugal), spanska, svenska och turkiska. Det är skilt från de språk appen kan transkribera."
         },
         {
           "q": "Kan appen följa ett samtal på flera språk?",
@@ -243,6 +243,10 @@
         {
           "q": "Lämnar något min iPhone?",
           "a": "Bara när du väljer det. Med ditt eget moln-API skickar varje fråga din fråga och korta, relevanta utdrag ur dina transkriptioner till den tjänsten. När du lämnar en dag till en AI-app får den appen textfilen du skickar. Platser använder Apple Kartor, och iCloud Backup innehåller dina data om du använder det. Integritetspolicyn har detaljerna."
+        },
+        {
+          "q": "Läser DayRecall mina hälsodata?",
+          "a": "Bara om du slår på det under Inställningar › Hälsa. Appen läser då sömn, steg och gångsträcka, träningspass och puls från appen Hälsa för att märka aktiviteter under dagen och hitta det som sades under en aktivitet du frågar om. Den skriver aldrig till Hälsa, sparar inte de lästa uppgifterna och skickar dem inte till oss. När du ger en dag till en AI-app är tillägget av aktiviteter avstängt som standard och kräver ditt tillstånd varje gång du slår på det. Bara korta etiketter som ”Går” läggs i filen, aldrig pulsvärden eller antal steg. Appen drar inga medicinska slutsatser och ger inga hälsoråd; den beskriver bara vad uppgifterna visar."
         },
         {
           "q": "Spårar DayRecall mig eller visar annonser?",

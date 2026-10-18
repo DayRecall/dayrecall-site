@@ -87,7 +87,7 @@
   "languages_05": "Cada tramo se transcribe en su idioma",
   "languages_06": "Traducido a tu idioma",
   "languages_07": "Detección del idioma de una hora de conversación en unos 32 segundos",
-  "languages_08": "La transcripción multilingüe es un ajuste avanzado, desactivado por defecto. Velocidad basada en pruebas internas en iPhone 17 Pro Max. La propia app está disponible en 13 idiomas.",
+  "languages_08": "La transcripción multilingüe es un ajuste avanzado, desactivado por defecto. Velocidad basada en pruebas internas en iPhone 17 Pro Max. La propia app está disponible en 14 idiomas.",
   "languages_09": "Los idiomas de trabajo español, inglés y chino se iluminan por turnos a medida que se escribe una frase de cada uno; las frases en inglés y chino llevan traducción al español.",
   "features_01": "Funciones",
   "features_02": "Para esos detalles que, si no, se perderían",
@@ -118,7 +118,7 @@
   "final_01": "Memoria con IA de todo tu día.",
   "final_02": "Próximamente en el App Store",
   "final_03": "Descarga DayRecall en el App Store ",
-  "final_04": "Ideal con Apple Watch · También funciona solo con iPhone · En 13 idiomas",
+  "final_04": "Ideal con Apple Watch · También funciona solo con iPhone · En 14 idiomas",
   "foot_01": "Apple Watch e iPhone son marcas de Apple Inc., registradas en Estados Unidos y en otros países y regiones.",
   "faq": [
     {
@@ -176,11 +176,11 @@
         },
         {
           "q": "¿Qué idiomas puede transcribir DayRecall?",
-          "a": "Puedes elegir entre inglés (EE. UU., Reino Unido), chino (mandarín), japonés, coreano, español, francés, alemán, italiano, portugués (Brasil, Portugal), neerlandés, sueco, danés y turco. Cada idioma solo funciona si el reconocimiento de voz de Apple en el dispositivo lo admite en tu iPhone; si no, DayRecall lo marca como no compatible. La primera vez que uses un idioma, iOS descargará su modelo de voz."
+          "a": "Puedes elegir entre inglés (EE. UU., Reino Unido), chino (mandarín, China continental), chino tradicional (Taiwán), cantonés (China continental), japonés, coreano, español, francés, alemán, italiano, portugués (Brasil, Portugal), neerlandés, sueco, danés y turco. Cada idioma solo funciona si el reconocimiento de voz de Apple en el dispositivo lo admite en tu iPhone; si no, DayRecall lo marca como no compatible. La primera vez que uses un idioma, iOS descargará su modelo de voz."
         },
         {
           "q": "¿Qué idiomas puede traducir?",
-          "a": "Las frases en tus otros idiomas de trabajo pueden traducirse al idioma principal mediante la traducción de Apple en el dispositivo, siempre que Apple admita ese par de idiomas en tu iPhone. En iOS 27 se pueden traducir todos los idiomas que DayRecall transcribe; en iOS 26 hay menos: por ejemplo, el danés y el sueco no están incluidos. iOS descarga cada idioma antes de usarlo por primera vez. Apple enumera los idiomas actuales en su <a href=\"https://www.apple.com/ios/feature-availability/\">página de disponibilidad de funciones</a>."
+          "a": "Las frases en tus otros idiomas de trabajo pueden traducirse al idioma principal mediante la traducción de Apple en el dispositivo, siempre que Apple admita ese par de idiomas en tu iPhone. Que un idioma se pueda transcribir no garantiza que se pueda traducir, incluido el cantonés. Consulta los pares de idiomas disponibles en los ajustes de traducción de DayRecall. iOS descarga cada idioma antes de usarlo por primera vez. Apple enumera los idiomas actuales en su <a href=\"https://www.apple.com/ios/feature-availability/\">página de disponibilidad de funciones</a>."
         },
         {
           "q": "¿Qué idiomas funcionan para las respuestas y las tareas?",
@@ -188,7 +188,7 @@
         },
         {
           "q": "¿En qué idiomas está disponible la app?",
-          "a": "Los menús y pantallas de la app están en 13 idiomas: inglés, chino simplificado, danés, neerlandés, francés, alemán, italiano, japonés, coreano, portugués (Portugal), español, sueco y turco. Son independientes de los idiomas que puede transcribir."
+          "a": "Los menús y pantallas de la app están en 14 idiomas: inglés, chino simplificado, chino tradicional, danés, neerlandés, francés, alemán, italiano, japonés, coreano, portugués (Portugal), español, sueco y turco. Son independientes de los idiomas que puede transcribir."
         },
         {
           "q": "¿Puede seguir una conversación en más de un idioma?",
@@ -244,6 +244,10 @@
         {
           "q": "¿Sale algo de mi iPhone?",
           "a": "Solo cuando tú lo eliges. Si usas tu propia API en la nube, cada pregunta envía a ese servicio tu pregunta y breves fragmentos coincidentes de tus transcripciones. Cuando pasas un día a una app de IA, esa app recibe el archivo de texto que tú le envías. Los lugares usan Apple Maps e iCloud Backup incluye tus datos si lo utilizas. Encontrarás los detalles en la Política de privacidad."
+        },
+        {
+          "q": "¿DayRecall lee mis datos de Salud?",
+          "a": "Solo si lo activas en Ajustes › Salud. Entonces lee el sueño, los pasos y la distancia caminada, los entrenamientos y la frecuencia cardiaca de la app Salud para etiquetar actividades del día y encontrar lo que se dijo durante una actividad por la que preguntes. Nunca escribe en Salud, no guarda los datos que lee ni nos los envía. Al enviar un día a una app de IA, la opción de añadir actividades está desactivada por defecto y pide tu permiso cada vez que la activas. Solo añade etiquetas breves, como «Caminando», nunca cifras de frecuencia cardiaca ni pasos. No extrae conclusiones médicas ni ofrece consejos de salud: solo describe lo que muestran los datos."
         },
         {
           "q": "¿DayRecall me rastrea o muestra anuncios?",

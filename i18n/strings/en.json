@@ -88,7 +88,7 @@
   "languages_05": "Each part transcribed in its own language",
   "languages_06": "Translated into your language",
   "languages_07": "Language identification for an hour of talk in about 32 seconds",
-  "languages_08": "Multilingual transcription is an advanced setting, off by default. Speed based on internal testing on iPhone 17 Pro Max. The app itself comes in 13 languages.",
+  "languages_08": "Multilingual transcription is an advanced setting, off by default. Speed based on internal testing on iPhone 17 Pro Max. The app itself comes in 14 languages.",
   "languages_09": "The working languages English, Chinese and Japanese light up in turn as a line in each is written down; the Chinese and Japanese lines get English translations.",
   "features_01": "Features",
   "features_02": "Made for the details you’d otherwise lose",
@@ -119,7 +119,7 @@
   "final_01": "AI memory for your whole day.",
   "final_02": "Coming soon to the App Store",
   "final_03": "Get DayRecall on the App Store ",
-  "final_04": "Best with Apple Watch · Works with iPhone alone · In 13 languages",
+  "final_04": "Best with Apple Watch · Works with iPhone alone · In 14 languages",
   "foot_01": "Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "faq": [
     {
@@ -177,11 +177,11 @@
         },
         {
           "q": "Which languages can DayRecall transcribe?",
-          "a": "You can choose from English (US, UK), Chinese (Mandarin), Japanese, Korean, Spanish, French, German, Italian, Portuguese (Brazil, Portugal), Dutch, Swedish, Danish and Turkish. Each works only if Apple’s on-device speech recognition supports it on your iPhone; if it doesn’t, DayRecall marks the language as not supported. The first time you use a language, iOS downloads its speech model."
+          "a": "You can choose from English (US, UK), Chinese (Mandarin, China mainland), Traditional Chinese (Taiwan), Cantonese (China mainland), Japanese, Korean, Spanish, French, German, Italian, Portuguese (Brazil, Portugal), Dutch, Swedish, Danish and Turkish. Each works only if Apple’s on-device speech recognition supports it on your iPhone; if it doesn’t, DayRecall marks the language as not supported. The first time you use a language, iOS downloads its speech model."
         },
         {
           "q": "Which languages can it translate?",
-          "a": "Lines in your other working languages can be translated into your main language with Apple’s on-device translation, so a pair of languages can be translated only if Apple supports it on your iPhone. On iOS 27, that covers every language DayRecall transcribes; on iOS 26, fewer: Danish and Swedish, for example, aren’t included. iOS downloads each language before its first use. Apple lists the current languages on its <a href=\"https://www.apple.com/ios/feature-availability/\">feature availability page</a>."
+          "a": "Lines in your other working languages can be translated into your main language with Apple’s on-device translation, so a pair of languages can be translated only if Apple supports it on your iPhone. Transcription support does not guarantee translation support, including for Cantonese. Check the available language pairs in DayRecall’s translation settings. iOS downloads each language before its first use. Apple lists the current languages on its <a href=\"https://www.apple.com/ios/feature-availability/\">feature availability page</a>."
         },
         {
           "q": "Which languages work for answers and to-dos?",
@@ -189,7 +189,7 @@
         },
         {
           "q": "Which languages is the app in?",
-          "a": "The app’s menus and screens come in 13 languages: English, Simplified Chinese, Danish, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Portugal), Spanish, Swedish and Turkish. This is separate from the languages it can transcribe."
+          "a": "The app’s menus and screens come in 14 languages: English, Simplified Chinese, Traditional Chinese, Danish, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Portugal), Spanish, Swedish and Turkish. This is separate from the languages it can transcribe."
         },
         {
           "q": "Can it follow a conversation in more than one language?",

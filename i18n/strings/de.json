@@ -86,7 +86,7 @@
   "languages_05": "Jeder Abschnitt in seiner Sprache transkribiert",
   "languages_06": "In deine Sprache übersetzt",
   "languages_07": "Sprachbestimmung für eine Stunde Gespräch in etwa 32 Sekunden",
-  "languages_08": "Mehrsprachige Transkription ist eine erweiterte Einstellung und standardmäßig aus. Tempo auf Basis interner Tests mit dem iPhone 17 Pro Max. Die App selbst ist in 13 Sprachen verfügbar.",
+  "languages_08": "Mehrsprachige Transkription ist eine erweiterte Einstellung und standardmäßig aus. Tempo auf Basis interner Tests mit dem iPhone 17 Pro Max. Die App selbst ist in 14 Sprachen verfügbar.",
   "languages_09": "Die Arbeitssprachen Deutsch, Englisch und Chinesisch leuchten der Reihe nach auf, sobald in jeder eine Zeile entsteht; die englische und die chinesische Zeile bekommen deutsche Übersetzungen.",
   "features_01": "Funktionen",
   "features_02": "Für die Details gemacht, die dir sonst verloren gehen",
@@ -117,7 +117,7 @@
   "final_01": "KI-Gedächtnis für deinen ganzen Tag.",
   "final_02": "Bald im App Store erhältlich",
   "final_03": "DayRecall im App Store laden ",
-  "final_04": "Am besten mit Apple Watch · Auch allein mit dem iPhone · In 13 Sprachen",
+  "final_04": "Am besten mit Apple Watch · Auch allein mit dem iPhone · In 14 Sprachen",
   "foot_01": "Apple Watch und iPhone sind Marken der Apple Inc., die in den USA und anderen Ländern und Regionen eingetragen sind.",
   "faq": [
     {
@@ -175,11 +175,11 @@
         },
         {
           "q": "Welche Sprachen kann DayRecall transkribieren?",
-          "a": "Zur Auswahl stehen Englisch (USA, UK), Chinesisch (Mandarin), Japanisch, Koreanisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch (Brasilien, Portugal), Niederländisch, Schwedisch, Dänisch und Türkisch. Eine Sprache funktioniert nur, wenn Apples Spracherkennung auf dem Gerät sie auf deinem iPhone unterstützt. Andernfalls kennzeichnet DayRecall sie als nicht unterstützt. Bei der ersten Nutzung lädt iOS das passende Sprachmodell herunter."
+          "a": "Zur Auswahl stehen Englisch (USA, UK), Chinesisch (Mandarin, Festlandchina), traditionelles Chinesisch (Taiwan), Kantonesisch (Festlandchina), Japanisch, Koreanisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch (Brasilien, Portugal), Niederländisch, Schwedisch, Dänisch und Türkisch. Eine Sprache funktioniert nur, wenn Apples Spracherkennung auf dem Gerät sie auf deinem iPhone unterstützt. Andernfalls kennzeichnet DayRecall sie als nicht unterstützt. Bei der ersten Nutzung lädt iOS das passende Sprachmodell herunter."
         },
         {
           "q": "Welche Sprachen kann DayRecall übersetzen?",
-          "a": "Zeilen in deinen anderen Arbeitssprachen lassen sich mit Apples Übersetzung auf dem Gerät in deine Hauptsprache übersetzen. Ein Sprachenpaar funktioniert also nur, wenn Apple es auf deinem iPhone unterstützt. Unter iOS 27 sind das alle Sprachen, die DayRecall transkribiert; unter iOS 26 sind es weniger. Dänisch und Schwedisch gehören dort zum Beispiel nicht dazu. iOS lädt jede Sprache vor der ersten Nutzung herunter. Die aktuellen Sprachen nennt Apple auf seiner <a href=\"https://www.apple.com/ios/feature-availability/\">Seite zur Verfügbarkeit von Funktionen</a>."
+          "a": "Zeilen in deinen anderen Arbeitssprachen lassen sich mit Apples Übersetzung auf dem Gerät in deine Hauptsprache übersetzen. Ein Sprachenpaar funktioniert also nur, wenn Apple es auf deinem iPhone unterstützt. Unterstützung für Transkription bedeutet nicht automatisch Unterstützung für Übersetzung, auch bei Kantonesisch. Die verfügbaren Sprachenpaare findest du in den Übersetzungseinstellungen von DayRecall. iOS lädt jede Sprache vor der ersten Nutzung herunter. Die aktuellen Sprachen nennt Apple auf seiner <a href=\"https://www.apple.com/ios/feature-availability/\">Seite zur Verfügbarkeit von Funktionen</a>."
         },
         {
           "q": "Welche Sprachen funktionieren für Antworten und Aufgaben?",
@@ -187,7 +187,7 @@
         },
         {
           "q": "In welchen Sprachen gibt es die App?",
-          "a": "Die Menüs und Ansichten der App gibt es in 13 Sprachen: Englisch, vereinfachtes Chinesisch, Dänisch, Niederländisch, Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Portugal), Spanisch, Schwedisch und Türkisch. Das ist unabhängig von den Sprachen, die sie transkribieren kann."
+          "a": "Die Menüs und Ansichten der App gibt es in 14 Sprachen: Englisch, vereinfachtes Chinesisch, traditionelles Chinesisch, Dänisch, Niederländisch, Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Portugal), Spanisch, Schwedisch und Türkisch. Das ist unabhängig von den Sprachen, die sie transkribieren kann."
         },
         {
           "q": "Kann sie einem Gespräch in mehreren Sprachen folgen?",
@@ -243,6 +243,10 @@
         {
           "q": "Verlässt etwas mein iPhone?",
           "a": "Nur wenn du es entscheidest. Bei deiner eigenen Cloud-API wird für jede Frage deine Frage samt kurzen passenden Auszügen aus deinen Transkripten an diesen Dienst gesendet. Übergibst du einen Tag an eine KI-App, erhält diese die von dir gesendete Textdatei. Orte verwenden Apple Karten, und iCloud Backup enthält deine Daten, wenn du es nutzt. Einzelheiten stehen in der Datenschutzerklärung."
+        },
+        {
+          "q": "Liest DayRecall meine Gesundheitsdaten?",
+          "a": "Nur wenn du es unter Einstellungen › Gesundheit einschaltest. Dann liest die App Schlaf, Schritte und Gehstrecke, Trainings und Herzfrequenz aus der Health-App, um Aktivitäten in deinem Tag zu kennzeichnen und Gesagtes zu einer erfragten Aktivität zu finden. Sie schreibt nie in Health, speichert die gelesenen Daten nicht und sendet sie nicht an uns. Bei der Übergabe eines Tages an eine KI-App ist das Hinzufügen von Aktivitäten standardmäßig ausgeschaltet und erfordert bei jedem Einschalten deine Erlaubnis. Dann enthält die Datei nur kurze Bezeichnungen wie „Gehen“, niemals Herzfrequenz- oder Schrittzahlen. Die App zieht keine medizinischen Schlüsse und gibt keine Gesundheitsratschläge; sie beschreibt nur, was die Daten zeigen."
         },
         {
           "q": "Verfolgt DayRecall mich oder zeigt es Werbung?",

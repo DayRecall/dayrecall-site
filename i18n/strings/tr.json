@@ -87,7 +87,7 @@
   "languages_05": "Her bölüm kendi dilinde yazıya dökülür",
   "languages_06": "Sizin dilinize çevrilir",
   "languages_07": "Bir saatlik konuşmada dil tanıma yaklaşık 32 saniyede",
-  "languages_08": "Çok dilli yazıya dökme gelişmiş bir ayardır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır. Uygulamanın kendisi 13 dilde sunulur.",
+  "languages_08": "Çok dilli yazıya dökme gelişmiş bir ayardır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır. Uygulamanın kendisi 14 dilde sunulur.",
   "languages_09": "Çalışma dilleri Türkçe, İngilizce ve Çince sırayla işaretlenir ve her birinde bir satır yazıya dökülür; İngilizce ve Çince satırların Türkçe çevirisi gösterilir.",
   "features_01": "Özellikler",
   "features_02": "Unutacağınız ayrıntılar için tasarlandı",
@@ -118,7 +118,7 @@
   "final_01": "Tüm gününüz için AI hafızası.",
   "final_02": "Yakında App Store'da",
   "final_03": "DayRecall'ı App Store'dan edinin ",
-  "final_04": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır · 13 dilde",
+  "final_04": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır · 14 dilde",
   "foot_01": "Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.",
   "faq": [
     {
@@ -176,11 +176,11 @@
         },
         {
           "q": "DayRecall hangi dilleri yazıya dökebilir?",
-          "a": "İngilizce (ABD, Birleşik Krallık), Çince (Mandarin), Japonca, Korece, İspanyolca, Fransızca, Almanca, İtalyanca, Portekizce (Brezilya, Portekiz), Felemenkçe, İsveççe, Danca ve Türkçe arasından seçebilirsiniz. Her dil yalnızca Apple'ın cihaz üzerinde konuşma tanıma özelliği iPhone'unuzda onu destekliyorsa çalışır; desteklemiyorsa DayRecall dili desteklenmiyor olarak işaretler. Bir dili ilk kez kullandığınızda iOS konuşma modelini indirir."
+          "a": "İngilizce (ABD, Birleşik Krallık), Çince (Mandarin, Çin ana karası), Geleneksel Çince (Tayvan), Kantonca (Çin ana karası), Japonca, Korece, İspanyolca, Fransızca, Almanca, İtalyanca, Portekizce (Brezilya, Portekiz), Felemenkçe, İsveççe, Danca ve Türkçe arasından seçebilirsiniz. Her dil yalnızca Apple'ın cihaz üzerinde konuşma tanıma özelliği iPhone'unuzda onu destekliyorsa çalışır; desteklemiyorsa DayRecall dili desteklenmiyor olarak işaretler. Bir dili ilk kez kullandığınızda iOS konuşma modelini indirir."
         },
         {
           "q": "Hangi dilleri çevirebilir?",
-          "a": "Diğer çalışma dillerinizdeki satırlar Apple'ın cihaz üzerindeki çeviri özelliğiyle ana dilinize çevrilebilir. Bunun için dil çiftinin Apple tarafından iPhone'unuzda desteklenmesi gerekir. iOS 27'de DayRecall'ın yazıya dökebildiği tüm diller buna dahildir. iOS 26'da kapsam daha dardır; örneğin Danca ve İsveççe dahil değildir. iOS her dili ilk kullanımdan önce indirir. Güncel diller Apple'ın <a href=\"https://www.apple.com/ios/feature-availability/\">özellik kullanılabilirliği sayfasında</a> listelenir."
+          "a": "Diğer çalışma dillerinizdeki satırlar Apple'ın cihaz üzerindeki çeviri özelliğiyle ana dilinize çevrilebilir. Bunun için dil çiftinin Apple tarafından iPhone'unuzda desteklenmesi gerekir. Yazıya dökme desteği, Kantonca dahil, çeviri desteğini garanti etmez. Kullanılabilir dil çiftlerini DayRecall’ın çeviri ayarlarında kontrol edin. iOS her dili ilk kullanımdan önce indirir. Güncel diller Apple'ın <a href=\"https://www.apple.com/ios/feature-availability/\">özellik kullanılabilirliği sayfasında</a> listelenir."
         },
         {
           "q": "Yanıtlar ve görevler hangi dillerde çalışır?",
@@ -188,7 +188,7 @@
         },
         {
           "q": "Uygulamanın kendisi hangi dillerde?",
-          "a": "Uygulamanın menüleri ve ekranları 13 dilde sunulur: İngilizce, Basitleştirilmiş Çince, Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce (Portekiz), İspanyolca, İsveççe ve Türkçe. Bu, yazıya dökebildiği dillerden ayrı bir listedir."
+          "a": "Uygulamanın menüleri ve ekranları 14 dilde sunulur: İngilizce, Basitleştirilmiş Çince, Geleneksel Çince, Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce (Portekiz), İspanyolca, İsveççe ve Türkçe. Bu, yazıya dökebildiği dillerden ayrı bir listedir."
         },
         {
           "q": "Birden fazla dildeki konuşmayı takip edebilir mi?",
@@ -244,6 +244,10 @@
         {
           "q": "iPhone'umdan dışarı bir şey çıkar mı?",
           "a": "Yalnızca siz seçtiğinizde. Kendi bulut API'nizi kullanırsanız her soru, sorunuzu ve metinlerinizden kısa, ilgili alıntıları o hizmete gönderir. Bir günü AI uygulamasına aktarırsanız uygulama, gönderdiğiniz metin dosyasını alır. Yerler özelliği Apple Maps'i kullanır; iCloud Backup kullanıyorsanız verileriniz de yedeklemeye dahildir. Ayrıntılar Gizlilik Politikası'nda yer alır."
+        },
+        {
+          "q": "DayRecall Sağlık verilerimi okur mu?",
+          "a": "Yalnızca Ayarlar › Sağlık bölümünden açarsanız. Ardından gününüzdeki etkinlikleri işaretlemek ve sorduğunuz bir etkinlik sırasında söylenenleri bulmak için Sağlık uygulamasından uyku, adım sayısı ve yürüme mesafesi, antrenman ve kalp atış hızı verilerini okur. Sağlık’a hiçbir zaman veri yazmaz, okuduğu verileri saklamaz ve bize göndermez. Bir günü bir AI uygulamasına aktarırken etkinlik ekleme seçeneği varsayılan olarak kapalıdır ve her açışınızda izin ister. İzin verirseniz dosyaya yalnızca “Yürüyor” gibi kısa etiketler eklenir; kalp atış hızı veya adım sayıları eklenmez. Uygulama tıbbi sonuçlar çıkarmaz ve sağlık tavsiyesi vermez; yalnızca verilerin gösterdiğini belirtir."
         },
         {
           "q": "DayRecall beni izler veya reklam gösterir mi?",

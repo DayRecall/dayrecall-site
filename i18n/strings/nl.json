@@ -86,7 +86,7 @@
   "languages_05": "Elk deel in zijn eigen taal getranscribeerd",
   "languages_06": "Vertaald naar jouw taal",
   "languages_07": "Taaldetectie voor een uur gesprek in ongeveer 32 sec.",
-  "languages_08": "Meertalige transcriptie is een geavanceerde instelling, standaard uit. Snelheid gebaseerd op interne tests op iPhone 17 Pro Max. De app zelf is in 13 talen beschikbaar.",
+  "languages_08": "Meertalige transcriptie is een geavanceerde instelling, standaard uit. Snelheid gebaseerd op interne tests op iPhone 17 Pro Max. De app zelf is in 14 talen beschikbaar.",
   "languages_09": "De werktalen Nederlands, Engels en Chinees lichten om beurten op terwijl er in elke taal een zin wordt opgeschreven; de Engelse en Chinese zinnen krijgen een Nederlandse vertaling.",
   "features_01": "Functies",
   "features_02": "Gemaakt voor de details die je anders kwijtraakt",
@@ -117,7 +117,7 @@
   "final_01": "AI-geheugen voor je hele dag.",
   "final_02": "Binnenkort in de App Store",
   "final_03": "Download DayRecall in de App Store ",
-  "final_04": "Het best met Apple Watch · Werkt ook alleen met iPhone · In 13 talen",
+  "final_04": "Het best met Apple Watch · Werkt ook alleen met iPhone · In 14 talen",
   "foot_01": "Apple Watch en iPhone zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio’s.",
   "faq": [
     {
@@ -175,11 +175,11 @@
         },
         {
           "q": "Welke talen kan DayRecall transcriberen?",
-          "a": "Je kunt kiezen uit Engels (VS, VK), Chinees (Mandarijn), Japans, Koreaans, Spaans, Frans, Duits, Italiaans, Portugees (Brazilië, Portugal), Nederlands, Zweeds, Deens en Turks. Elke taal werkt alleen als de spraakherkenning van Apple op het apparaat die op jouw iPhone ondersteunt. Zo niet, dan markeert DayRecall de taal als niet ondersteund. Bij het eerste gebruik van een taal downloadt iOS het bijbehorende spraakmodel."
+          "a": "Je kunt kiezen uit Engels (VS, VK), Chinees (Mandarijn, vasteland van China), traditioneel Chinees (Taiwan), Kantonees (vasteland van China), Japans, Koreaans, Spaans, Frans, Duits, Italiaans, Portugees (Brazilië, Portugal), Nederlands, Zweeds, Deens en Turks. Elke taal werkt alleen als de spraakherkenning van Apple op het apparaat die op jouw iPhone ondersteunt. Zo niet, dan markeert DayRecall de taal als niet ondersteund. Bij het eerste gebruik van een taal downloadt iOS het bijbehorende spraakmodel."
         },
         {
           "q": "Welke talen kan de app vertalen?",
-          "a": "Regels in je andere werktalen kunnen met de vertaling van Apple op het apparaat naar je hoofdtaal worden vertaald. Een talenpaar werkt dus alleen als Apple het op jouw iPhone ondersteunt. In iOS 27 geldt dat voor alle talen die DayRecall transcribeert; in iOS 26 voor minder. Deens en Zweeds vallen daar bijvoorbeeld buiten. iOS downloadt elke taal vóór het eerste gebruik. Apple vermeldt de actuele talen op de <a href=\"https://www.apple.com/ios/feature-availability/\">pagina met beschikbare functies</a>."
+          "a": "Regels in je andere werktalen kunnen met de vertaling van Apple op het apparaat naar je hoofdtaal worden vertaald. Een talenpaar werkt dus alleen als Apple het op jouw iPhone ondersteunt. Ondersteuning voor transcriptie garandeert geen ondersteuning voor vertaling, ook niet voor Kantonees. Bekijk de beschikbare talenparen in de vertaalinstellingen van DayRecall. iOS downloadt elke taal vóór het eerste gebruik. Apple vermeldt de actuele talen op de <a href=\"https://www.apple.com/ios/feature-availability/\">pagina met beschikbare functies</a>."
         },
         {
           "q": "Welke talen werken voor antwoorden en taken?",
@@ -187,7 +187,7 @@
         },
         {
           "q": "In welke talen is de app beschikbaar?",
-          "a": "De menu’s en schermen van de app zijn beschikbaar in 13 talen: Engels, vereenvoudigd Chinees, Deens, Nederlands, Frans, Duits, Italiaans, Japans, Koreaans, Portugees (Portugal), Spaans, Zweeds en Turks. Dit staat los van de talen die de app kan transcriberen."
+          "a": "De menu’s en schermen van de app zijn beschikbaar in 14 talen: Engels, vereenvoudigd Chinees, traditioneel Chinees, Deens, Nederlands, Frans, Duits, Italiaans, Japans, Koreaans, Portugees (Portugal), Spaans, Zweeds en Turks. Dit staat los van de talen die de app kan transcriberen."
         },
         {
           "q": "Kan de app een gesprek in meerdere talen volgen?",
@@ -243,6 +243,10 @@
         {
           "q": "Verlaat er iets mijn iPhone?",
           "a": "Alleen als jij dat kiest. Met je eigen cloud-API stuurt elke vraag je vraag en korte bijpassende fragmenten uit je transcripties naar die dienst. Draag je een dag over aan een AI-app, dan ontvangt die app het tekstbestand dat jij verstuurt. Locaties gebruiken Apple Kaarten en iCloud Backup bevat je gegevens als je dat gebruikt. De Privacyverklaring geeft de details."
+        },
+        {
+          "q": "Leest DayRecall mijn gezondheidsgegevens?",
+          "a": "Alleen als je dit inschakelt via Instellingen › Gezondheid. De app leest dan slaap, stappen en loopafstand, work-outs en hartslag uit de Gezondheid-app om activiteiten in je dag te benoemen en te vinden wat er tijdens een gevraagde activiteit is gezegd. De app schrijft nooit naar Gezondheid, bewaart de gelezen gegevens niet en stuurt ze niet naar ons. Als je een dag aan een AI-app geeft, staat het toevoegen van activiteiten standaard uit en vraagt de app bij elke inschakeling om toestemming. Alleen korte labels zoals ‘Lopen’ komen in het bestand, nooit hartslagwaarden of aantallen stappen. De app trekt geen medische conclusies en geeft geen gezondheidsadvies: ze beschrijft alleen wat de gegevens laten zien."
         },
         {
           "q": "Volgt DayRecall mij of toont het advertenties?",
