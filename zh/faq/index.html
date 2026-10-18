@@ -253,6 +253,14 @@
         },
         {
           "@type": "Question",
+          "name": "DayRecall 会读取我的健康数据吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "只有你在“设置 › 健康”里打开才会读。打开后，它从“健康”App 读取睡眠、步数和步行距离、运动和心率，用来给一天的某一段加标签（比如“步行”），并在你按某个活动提问时找到当时说的话。它从不写入“健康”，不保存读到的内容，也不发往任何地方。交给 AI App 的那一天里不含健康数据。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "DayRecall 会追踪我或者推广告吗？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -296,8 +304,8 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/assets/site.css?v=67be7cf6">
-<script src="/assets/stages.js?v=fc881cd3" defer></script>
+<link rel="stylesheet" href="/assets/site.css?v=7ce6d799">
+<script src="/assets/stages.js?v=4ea127e3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>
@@ -483,6 +491,10 @@
             <details>
               <summary>有什么会离开我的 iPhone？</summary>
               <p>只有你选择时才会。用你自己的云端 API 时，每次提问会把问题和几段相关的转写文字发给这个服务；把一天交给 AI App 时，那个 App 会收到你发的文本文件。地点功能会用到 Apple 地图；如果你用 iCloud 云备份，备份里也有你的数据。详见隐私政策。</p>
+            </details>
+            <details>
+              <summary>DayRecall 会读取我的健康数据吗？</summary>
+              <p>只有你在“设置 › 健康”里打开才会读。打开后，它从“健康”App 读取睡眠、步数和步行距离、运动和心率，用来给一天的某一段加标签（比如“步行”），并在你按某个活动提问时找到当时说的话。它从不写入“健康”，不保存读到的内容，也不发往任何地方。交给 AI App 的那一天里不含健康数据。</p>
             </details>
             <details>
               <summary>DayRecall 会追踪我或者推广告吗？</summary>

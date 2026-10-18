@@ -135,40 +135,70 @@
     </div>
   </section>
 
+  <section class="spot health dark" id="health">
+    <div class="wrap">
+      <div class="copy">
+        <p class="kicker">{{health_01}}</p>
+        <h2>{{health_02}}</h2>
+        <p class="body">{{health_03}}</p>
+        <ul class="ticks">
+          <li><span class="tick" data-icon="check"></span>{{health_04}}</li>
+          <li><span class="tick" data-icon="check"></span>{{health_05}}</li>
+          <li><span class="tick" data-icon="check"></span>{{health_06}}</li>
+          <li><span class="tick" data-icon="check"></span>{{health_07}}</li>
+        </ul>
+        <p class="note">{{health_08}}</p>
+      </div>
+      <div class="stage t-dark" data-stage="health" role="img" aria-label="{{health_09}}"></div>
+    </div>
+  </section>
+
   <section class="features" id="features">
     <div class="wrap">
       <p class="kicker">{{features_01}}</p>
       <h2>{{features_02}}</h2>
       <div class="grid">
-        <article class="feat">
+        <article class="feat" data-feature="todos">
+          <div class="feat-shot t-light" data-thumb="todos" aria-hidden="true"></div>
           <span class="ico" data-icon="checkCircle"></span>
-          <h3>{{features_03}}</h3>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_03}}</button></h3>
           <p>{{features_04}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
         </article>
-        <article class="feat">
-          <span class="ico" data-icon="chat"></span>
-          <h3>{{features_05}}</h3>
-          <p>{{features_06}}</p>
-        </article>
-        <article class="feat">
-          <span class="ico" data-icon="history"></span>
-          <h3>{{features_07}}</h3>
-          <p>{{features_08}}</p>
-        </article>
-        <article class="feat">
-          <span class="ico" data-icon="week"></span>
-          <h3>{{features_09}}</h3>
-          <p>{{features_10}}</p>
-        </article>
-        <article class="feat">
+        <article class="feat" data-feature="places">
+          <div class="feat-shot t-light" data-thumb="places" aria-hidden="true"></div>
           <span class="ico" data-icon="pin"></span>
-          <h3>{{features_11}}</h3>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_11}}</button></h3>
           <p>{{features_12}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
         </article>
-        <article class="feat">
+        <article class="feat" data-feature="ask">
+          <div class="feat-shot t-light" data-thumb="ask" aria-hidden="true"></div>
+          <span class="ico" data-icon="chat"></span>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_05}}</button></h3>
+          <p>{{features_06}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
+        </article>
+        <article class="feat" data-feature="day">
+          <div class="feat-shot t-light" data-thumb="day" aria-hidden="true"></div>
+          <span class="ico" data-icon="history"></span>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_07}}</button></h3>
+          <p>{{features_08}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
+        </article>
+        <article class="feat" data-feature="week">
+          <div class="feat-shot t-light" data-thumb="week" aria-hidden="true"></div>
+          <span class="ico" data-icon="week"></span>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_09}}</button></h3>
+          <p>{{features_10}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
+        </article>
+        <article class="feat" data-feature="handoff">
+          <div class="feat-shot t-light" data-thumb="handoff" aria-hidden="true"></div>
           <span class="ico" data-icon="share"></span>
-          <h3>{{features_13}}</h3>
+          <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_13}}</button></h3>
           <p>{{features_14}}</p>
+          <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
         </article>
       </div>
     </div>

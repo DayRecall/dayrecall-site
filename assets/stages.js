@@ -167,7 +167,22 @@
       ['rect', 's', { x: 3, y: 3.5, width: 10.5, height: 17, rx: 2.5 }],
       ['rect', 's', { x: 15.5, y: 8.5, width: 6, height: 7.5, rx: 2 }],
       ['path', 's', { d: 'M16.9 8.5l.4-2.2h2.4l.4 2.2M16.9 16l.4 2.2h2.4l.4-2.2' }]
-    ]
+    ],
+    x: [['path', 's', { d: 'M6.5 6.5l11 11M17.5 6.5l-11 11' }]],
+    doc: [['path', 's', { d: 'M6.5 3.5h7L18 8v11a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5a1.5 1.5 0 0 1 .5-1.5zM13.5 3.5V8H18M9 13h6M9 16.5h6' }]],
+    sparkle: [['path', 's', { d: 'M12 3.5c.6 4.6 3.4 7.4 8 8-4.6.6-7.4 3.4-8 8-.6-4.6-3.4-7.4-8-8 4.6-.6 7.4-3.4 8-8z' }]],
+    ellipsis: [['circle', 'f', { cx: 5.5, cy: 12, r: 1.7 }], ['circle', 'f', { cx: 12, cy: 12, r: 1.7 }], ['circle', 'f', { cx: 18.5, cy: 12, r: 1.7 }]],
+    chevronLeft: [['path', 's', { d: 'M14.5 6.5L9 12l5.5 5.5' }]],
+    calendarCheck: [['rect', 's', { x: 4, y: 5.5, width: 16, height: 14.5, rx: 2.5 }], ['path', 's', { d: 'M4 10h16M8.5 3.5v4M15.5 3.5v4M9 15.2l2.1 2.1 3.9-4' }]],
+    appForward: [['path', 's', { d: 'M10.5 4.5H7A2.5 2.5 0 0 0 4.5 7v10A2.5 2.5 0 0 0 7 19.5h10a2.5 2.5 0 0 0 2.5-2.5v-3.5M13.5 4.5h6V10.5M19.5 4.5l-8 8' }]],
+    magnifier: [['circle', 's', { cx: 10.5, cy: 10.5, r: 6.5 }], ['path', 's', { d: 'M15.5 15.5L20 20' }]],
+    bed: [['path', 's', { d: 'M3.5 6v13M3.5 15h17v4M20.5 15v-3.2a3 3 0 0 0-3-3H11V15' }], ['circle', 's', { cx: 7.3, cy: 11.4, r: 1.9 }]],
+    walk: [['circle', 'f', { cx: 13.4, cy: 4.6, r: 2 }], ['path', 's', { d: 'M10.6 20.6l2.2-5.4-2.7-2.7 1.3-4.7 4 2.3 2.7.9M8.2 12.2l2.9-3.4' }]],
+    heart: [['path', 's', { d: 'M12 19.8s-7.6-4.6-7.6-10.3A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.6 2.5c0 5.7-7.6 10.3-7.6 10.3z' }]],
+    heartFill: [['path', 'f', { d: 'M12 19.8s-7.6-4.6-7.6-10.3A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.6 2.5c0 5.7-7.6 10.3-7.6 10.3z' }]],
+    steps: [['path', 's', { d: 'M8.2 4.5c1.6 0 2.4 1.4 2.4 3.2 0 2-.9 3.4-2.5 3.4S5.8 9.7 5.8 7.8c0-1.8.8-3.3 2.4-3.3zM15.6 11.8c1.6 0 2.5 1.4 2.5 3.3 0 2-.9 3.4-2.5 3.4s-2.4-1.4-2.4-3.3c0-1.8.8-3.4 2.4-3.4z' }]],
+    dumbbell: [['path', 's', { d: 'M3.5 9.5v5M6.5 7v10M17.5 7v10M20.5 9.5v5M6.5 12h11' }]],
+    arrowRight: [['path', 's', { d: 'M5 12h14M13 6l6 6-6 6' }]]
   };
 
   /** An icon centred on the origin of a new group; `size` is the side of its 24-point box. */
@@ -217,6 +232,180 @@
 
   function card(svg, w, h, r) {
     return el(svg, 'rect', { x: 0, y: 0, width: w, height: h, rx: r, fill: 'card' });
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // Pieces of interface the feature animations share (AnimationKit.swift: tiles, switch, tab bar,
+  // the finger). Each draws once and returns what the frame needs to move it.
+
+  /** How wide `str` sets at this size, measured on a line that is taken away again. */
+  function measure(parent, str, size, weight, mono) {
+    var e = txt(parent, str, 0, 0, size, weight, 'ink', mono ? { mono: true } : null);
+    var w = width(e);
+    parent.removeChild(e);
+    return w;
+  }
+
+  /** An icon on a rounded tile, centred on the origin of a new group. */
+  function tile(parent, name, size, fg, bg) {
+    var g = el(parent, 'g');
+    el(g, 'rect', { x: -size / 2, y: -size / 2, width: size, height: size, rx: size * 0.31, fill: bg });
+    icon(g, name, size * 0.5, fg, bg);
+    return g;
+  }
+
+  /** `str` set in lines no wider than `maxW`, from `top`; returns the height. Latin text breaks between
+   *  words, Chinese and Japanese anywhere. */
+  function wrap(parent, str, x, top, size, weight, fill, maxW, lineH, anchor) {
+    var parts = str.match(/[^\s⺀-鿿＀-￯]+|\s+|[\s\S]/g) || [];
+    var probe = txt(parent, '', x, top, size, weight, fill);
+    var lines = [], line = '';
+    parts.forEach(function (p) {
+      var blank = /^\s+$/.test(p);
+      probe.textContent = (line + p).replace(/\s+$/, '');
+      if (line && !blank && width(probe) > maxW) {
+        lines.push(line.replace(/\s+$/, ''));
+        line = p;
+      } else {
+        line += p;
+      }
+    });
+    if (line) lines.push(line.replace(/\s+$/, ''));
+    parent.removeChild(probe);
+    lines.forEach(function (l, i) {
+      txt(parent, l, x, top + lineH * (i + 0.5), size, weight, fill, anchor ? { anchor: anchor } : null);
+    });
+    return lines.length * lineH;
+  }
+
+  /** Fades `e` in and moves it up into place at (x, y) over `over` seconds from `start`; returns how far. */
+  function rise(e, t, start, x, y, from, over) {
+    var k = easeOut(seg(t, start, start + (over || 0.3)));
+    e.setAttribute('transform', 'translate(' + x + ' ' + (y + (1 - k) * (from == null ? 8 : from)) + ')');
+    op(e, k);
+    return k;
+  }
+
+  /** A settings switch at the origin of a new group; the returned function sets it, 0 (off) to 1 (on). */
+  function toggle(parent) {
+    var g = el(parent, 'g');
+    el(g, 'rect', { x: 0, y: 0, width: 40, height: 23, rx: 11.5, fill: 'track' });
+    var on = el(g, 'rect', { x: 0, y: 0, width: 40, height: 23, rx: 11.5, fill: 'accent' });
+    var thumb = el(g, 'circle', { cy: 11.5, r: 9.5, fill: '#fff' });
+    thumb.style.filter = 'drop-shadow(0 1px 1px rgba(0,0,0,0.22))';
+    var set = function (v) {
+      op(on, v);
+      thumb.setAttribute('cx', 2 + 9.5 + 17 * Math.min(Math.max(v, 0), 1.06));
+    };
+    set(0);
+    return { g: g, set: set };
+  }
+
+  /** The four tabs along the bottom of the app, at height y. `set(selected, badge, pop)` for each frame. */
+  function tabBar(parent, labels, y) {
+    var g = el(parent, 'g', { transform: 'translate(0 ' + y + ')' });
+    el(g, 'rect', { x: 0, y: 0, width: 342, height: 50, fill: 'card' });
+    el(g, 'rect', { x: 0, y: 0, width: 342, height: 1, fill: 'hair' });
+    var tabs = ['sun', 'list', 'chat', 'history'].map(function (name, i) {
+      var cx = 42.75 + 85.5 * i;
+      var off = el(g, 'g'), on = el(g, 'g');
+      move(icon(off, name, 20, 'ink3'), cx, 18.5);
+      txt(off, labels[i], cx, 37, 9.5, 500, 'ink3', { anchor: 'middle' });
+      move(icon(on, name, 20, 'on-hl-soft'), cx, 18.5);
+      txt(on, labels[i], cx, 37, 9.5, 500, 'on-hl-soft', { anchor: 'middle' });
+      return { on: on, off: off };
+    });
+    var badge = el(g, 'g');
+    el(badge, 'circle', { r: 7, fill: 'hl' });
+    var badgeText = txt(badge, '', 0, 0.5, 8.5, 700, 'on-hl', { anchor: 'middle', mono: true });
+    var shown = '';
+    return {
+      g: g,
+      set: function (selected, badgeValue, pop) {
+        tabs.forEach(function (tab, i) { op(tab.on, i === selected ? 1 : 0); op(tab.off, i === selected ? 0 : 1); });
+        if (badgeValue !== shown) {
+          badgeText.textContent = badgeValue;
+          shown = badgeValue;
+        }
+        var k = clamp(pop || 0);
+        move(badge, 128.25 + 12, 10, lerp(0.3, 1, k) * (1 + 0.25 * Math.max(0, (pop || 0) - 1)));
+        op(badge, k);
+      }
+    };
+  }
+
+  /** The fingertip that shows where to tap (AnimationKit.swift's FingerLayer): it comes into view,
+   *  presses each place in turn with a ripple, and leaves again. `taps` is [{ x, y, at }]. */
+  function finger(parent, taps) {
+    var layer = el(parent, 'g', { 'pointer-events': 'none' });
+    var ripples = taps.map(function () {
+      return el(layer, 'circle', { r: 15, fill: 'none', stroke: 'ink', 'stroke-opacity': 0.4, 'stroke-width': 2 });
+    });
+    var tip = el(layer, 'g');
+    el(tip, 'circle', { r: 14, fill: 'ink', 'fill-opacity': 0.16 });
+    el(tip, 'circle', { r: 13, fill: 'none', stroke: 'ink', 'stroke-opacity': 0.5, 'stroke-width': 2 });
+    var comeIn = 0.5, settle = 0.14, linger = 0.2, travelGap = 1.0;
+    function pose(t) {
+      var first = taps[0], last = taps[taps.length - 1];
+      var firstArrives = first.at - settle;
+      if (t < firstArrives) {
+        var k0 = ease(seg(t, firstArrives - comeIn, firstArrives));
+        return [lerp(first.x + 22, first.x, k0), lerp(first.y + 28, first.y, k0), k0];
+      }
+      for (var i = 0; i < taps.length; i++) {
+        var tap = taps[i];
+        var leaves = tap.at + linger;
+        if (t <= leaves) return [tap.x, tap.y, 1];
+        if (i + 1 >= taps.length) break;
+        var next = taps[i + 1];
+        var nextArrives = next.at - settle;
+        if (t >= nextArrives) continue;
+        if (nextArrives - leaves <= travelGap) {
+          var k1 = ease(seg(t, leaves, nextArrives));
+          return [lerp(tap.x, next.x, k1), lerp(tap.y, next.y, k1), 1];
+        }
+        var out = seg(t, leaves, leaves + 0.35);
+        if (t < leaves + 0.35) return [tap.x + 14 * out, tap.y + 18 * out, 1 - out];
+        var k2 = ease(seg(t, nextArrives - comeIn, nextArrives));
+        return [lerp(next.x + 22, next.x, k2), lerp(next.y + 28, next.y, k2), k2];
+      }
+      var gone = seg(t, last.at + linger, last.at + linger + 0.35);
+      return [last.x + 14 * gone, last.y + 18 * gone, 1 - gone];
+    }
+    function press(t) {
+      var sunk = 0;
+      taps.forEach(function (tap) { sunk += seg(t, tap.at - 0.08, tap.at) * (1 - seg(t, tap.at, tap.at + 0.14)); });
+      return 1 - 0.16 * Math.min(sunk, 1);
+    }
+    return function (t) {
+      var p = pose(t);
+      move(tip, p[0], p[1], press(t));
+      op(tip, p[2]);
+      taps.forEach(function (tap, i) {
+        var k = seg(t, tap.at, tap.at + 0.45);
+        var c = ripples[i];
+        c.setAttribute('cx', tap.x);
+        c.setAttribute('cy', tap.y);
+        c.setAttribute('r', 15 * lerp(0.5, 2.0, easeOut(k)));
+        op(c, k > 0 && k < 1 ? (1 - k) * 0.6 : 0);
+      });
+    };
+  }
+
+  /** What a stage needs to start: a clip to its rounded card, and a group whose opacity is the loop's fade. */
+  function canvas(svg, length, fadeIn, fadeOut) {
+    var defs = el(svg, 'defs');
+    var clipId = uid('clip');
+    el(el(defs, 'clipPath', { id: clipId }), 'rect', { x: 0, y: 0, width: 342, height: 320, rx: 24 });
+    card(svg, 342, 320, 24);
+    var root = el(svg, 'g', { 'clip-path': 'url(#' + clipId + ')' });
+    var content = el(root, 'g');
+    return {
+      content: content,
+      fade: function (t) {
+        op(content, Math.min(seg(t, 0, fadeIn || 0.3), 1 - seg(t, length - (fadeOut || 0.4), length)));
+      }
+    };
   }
 
   // ---------------------------------------------------------------------------------------------
@@ -1213,12 +1402,1108 @@
   };
 
   // ---------------------------------------------------------------------------------------------
+  // The features, ported from the app's animation library (Animations/*.swift) so the page can
+  // show what each one does: the same moments, positions and steps. `steps` are where each step
+  // begins and the moment that shows it best; `preview` stands for the animation when it holds still.
+
+  /** A line of a transcript (MiniTranscriptRow): time, who, the words; the marker sweeps over it. */
+  function transcriptRow(parent, time, who, mine, str, maxW) {
+    var g = el(parent, 'g');
+    var o = { g: g };
+    o.mark = el(g, 'rect', { x: 0, y: 0, width: 0.31, height: 48, rx: 12, fill: 'hl-soft' });
+    o.time = txt(g, time, 10, 14, 10, 400, 'ink2', { mono: true });
+    o.timeOn = txt(g, time, 10, 14, 10, 400, 'on-hl-soft', { mono: true });
+    var tag = el(g, 'g', { transform: 'translate(54 7)' });
+    var box = el(tag, 'rect', { x: 0, y: 0, height: 13.8, rx: 5, fill: mine ? 'hl-soft' : 'tile' });
+    box.setAttribute('width', width(txt(tag, who, 5, 6.9, 9, 600, mine ? 'on-hl-soft' : 'ink2')) + 10);
+    fit(txt(g, str, 54, 32, 12, 400, 'ink'), maxW || 246, 0.8);
+    return o;
+  }
+
+  /** A heading of a card on a page, with a count after it. */
+  function heading(parent, str, count) {
+    var g = el(parent, 'g');
+    var title = txt(g, str, 0, 0, 14, 700, 'ink');
+    if (count == null) return { g: g };
+    var w = width(title);
+    var c = el(g, 'g', { transform: 'translate(' + (w + 6) + ' 0)' });
+    var cw = 18;
+    el(c, 'rect', { x: 0, y: -7.5, width: cw, height: 15, rx: 7.5, fill: 'hl' });
+    var number = txt(c, count, cw / 2, 0.5, 10.5, 700, 'on-hl', { anchor: 'middle', mono: true });
+    return {
+      g: g, count: c,
+      setCount: function (v) { if (number.textContent !== v) number.textContent = v; },
+      pop: function (k) { c.setAttribute('transform', 'translate(' + (w + 6 + cw / 2 * (1 - lerp(0.4, 1, clamp(k)))) + ' 0) scale(' + lerp(0.4, 1, clamp(k)) + ')'); op(c, k); }
+    };
+  }
+
+  /** A row of To confirm: what was picked up, with the check mark that accepts it. */
+  function suggestedRow(parent, name, title, meta) {
+    var g = el(parent, 'g');
+    move(tile(g, name, 30, 'on-hl-soft', 'hl-soft'), 27, 28);
+    fit(txt(g, title, 52, 21.3, 12, 600, 'ink'), 168, 0.8);
+    fit(txt(g, meta, 52, 36.3, 9.5, 400, 'ink2'), 168, 0.8);
+    var ck = el(g, 'g');
+    el(ck, 'circle', { r: 15, fill: 'accent' });
+    icon(ck, 'check', 13, 'on-accent');
+    var no = el(g, 'g');
+    move(no, 283, 28);
+    el(no, 'circle', { r: 15, fill: 'tile' });
+    icon(no, 'x', 12, 'ink2');
+    var press = function (p) { move(ck, 243, 28, 1 - 0.15 * p); };
+    press(0);
+    return { g: g, press: press };
+  }
+
+  /** A row of what was accepted: a to-do with the line that says it is in Reminders, or an event. */
+  function acceptedRow(parent, name, title, meta, reminderLabel) {
+    var g = el(parent, 'g');
+    move(tile(g, name, 30, 'on-hl-soft', 'hl-soft'), 27, 28);
+    var o = { g: g };
+    if (reminderLabel) {
+      fit(txt(g, title, 52, 14.75, 12, 600, 'ink'), 168, 0.8);
+      fit(txt(g, meta, 52, 29.75, 9.5, 400, 'ink2'), 168, 0.8);
+      o.label = el(g, 'g');
+      move(icon(o.label, 'list', 11, 'success'), 57.5, 43);
+      txt(o.label, reminderLabel, 65, 43, 9, 600, 'success');
+      move(el(g, 'circle', { r: 11, fill: 'none', stroke: 'ink3', 'stroke-width': 1.5 }), 283, 28);
+    } else {
+      fit(txt(g, title, 52, 21.3, 12, 600, 'ink'), 168, 0.8);
+      fit(txt(g, meta, 52, 36.3, 9.5, 400, 'ink2'), 168, 0.8);
+      move(icon(g, 'calendarCheck', 17, 'success'), 283, 28);
+    }
+    return o;
+  }
+
+  // 11. Confirm to-dos (ConfirmTodosAnimation.swift): picked out of the lines, waiting in To confirm,
+  //     accepted into Reminders and the calendar.
+
+  var Todos = {
+    w: 342, h: 320, length: 10.6, preview: 4.2, still: 4.2,
+    steps: [{ start: 0, still: 2.6 }, { start: 3.4, still: 5.9 }, { start: 6.4, still: 10.0 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.todos, ME = ctx.words.me, OTHER = ctx.words.other;
+      var M = {
+        markTodo: 1.25, markEvent: 1.9, flyTodo: 2.65, flyEvent: 2.8, badge: 3.3, tab: 3.5,
+        acceptTodo: 4.5, acceptEvent: 6.9, sheetIn: 7.0, add: 8.4, sheetOut: 8.55, eventMoves: 9.0
+      };
+      var tabPoint = [128, 287];
+      var c = canvas(svg, Todos.length, 0.15, 0.35);
+      var content = c.content;
+
+      // A recording: the four lines, two of them picked from.
+      var rec = el(content, 'g');
+      el(rec, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      fit(txt(rec, W.office, 20, 26, 17, 700, 'ink'), 200, 0.8);
+      txt(rec, '14:10–14:25', 322, 27, 10.5, 400, 'ink2', { anchor: 'end', mono: true });
+      var rows = [['14:10', OTHER, false, W.l0], ['14:11', ME, true, W.l1], ['14:11', OTHER, false, W.l2], ['14:12', ME, true, W.l3]]
+        .map(function (r, i) {
+          var o = transcriptRow(rec, r[0], r[1], r[2], r[3], i === 1 || i === 2 ? 214 : 246);
+          o.base = 56 + 50 * i;
+          if (i === 1 || i === 2) o.tile = tile(o.g, i === 1 ? 'list' : 'calendar', 24, 'on-hl', 'hl');
+          return o;
+        });
+
+      // To-dos: what waits to be confirmed, what was accepted.
+      var tp = el(content, 'g');
+      el(tp, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(tp, W.todos, 20, 24.5, 21, 700, 'ink');
+
+      var confirmG = el(tp, 'g');
+      var confirmHead = heading(confirmG, W.toConfirm, '2');
+      move(confirmHead.g, 20, 64.5);
+      txt(confirmG, ctx.words.ask.today, 20, 87, 11, 600, 'ink2');
+      var confirmCard = el(confirmG, 'rect', { x: 16, y: 98, width: 310, height: 112, rx: 20, fill: 'card' });
+      var hair = el(confirmG, 'rect', { x: 74, y: 153, width: 252, height: 1, fill: 'hair' });
+      var sTodo = suggestedRow(confirmG, 'list', W.quote, W.dueMeta);
+      var sEvent = suggestedRow(confirmG, 'calendar', W.sync, W.eventMeta);
+
+      var myG = el(tp, 'g');
+      move(heading(myG, W.myTodos).g, 20, 8.5);
+      el(myG, 'rect', { x: 16, y: 20, width: 310, height: 56, rx: 20, fill: 'card' });
+      var aTodo = acceptedRow(myG, 'list', W.quote, W.dueMeta, W.inReminders);
+      aTodo.g.setAttribute('transform', 'translate(16 20)');
+      var evG = el(tp, 'g');
+      move(heading(evG, W.events).g, 20, 8.5);
+      el(evG, 'rect', { x: 16, y: 20, width: 310, height: 56, rx: 20, fill: 'card' });
+      var aEvent = acceptedRow(evG, 'calendar', W.sync, W.eventMeta, null);
+      aEvent.g.setAttribute('transform', 'translate(16 20)');
+
+      var tabs = tabBar(content, ctx.words.ask.tabs, 270);
+
+      // The two things picked up, on their way to the To-dos tab.
+      var flights = [[304, 133, M.flyTodo, 'list'], [304, 183, M.flyEvent, 'calendar']].map(function (f) {
+        return { from: f, g: tile(content, f[3], 24, 'on-hl', 'hl') };
+      });
+
+      // The system's add-event sheet.
+      var sheetG = el(content, 'g');
+      var dim = el(sheetG, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: '#050505' });
+      var sheet = el(sheetG, 'g');
+      el(sheet, 'path', { d: corners(0, 0, 342, 252, 26, 26, 0, 0), fill: 'ground', stroke: 'hair', 'stroke-width': 1 });
+      el(sheet, 'rect', { x: 154, y: 6, width: 34, height: 4, rx: 2, fill: 'ink3', 'fill-opacity': 0.5 });
+      txt(sheet, W.cancel, 18, 31, 12.5, 400, 'ink');
+      var addW = measure(sheet, W.add, 13, 600) + 16;
+      var addPress = el(sheet, 'rect', { x: 324 - addW, y: 20, width: addW, height: 22, rx: 11, fill: 'tile' });
+      txt(sheet, W.add, 316, 31, 13, 600, 'ink', { anchor: 'end' });
+      txt(sheet, W.newEvent, 171, 32, 13, 600, 'ink', { anchor: 'middle' });
+      var fields = el(sheet, 'g', { transform: 'translate(16 56)' });
+      el(fields, 'rect', { x: 0, y: 0, width: 310, height: 167, rx: 16, fill: 'card' });
+      fit(txt(fields, W.sync, 14, 22, 13, 500, 'ink'), 282, 0.8);
+      [0, 1, 2].forEach(function (i) {
+        var y = 44 + 41 * i;
+        el(fields, 'rect', { x: 14, y: y, width: 296, height: 1, fill: 'hair' });
+        var cy = y + 1 + 20;
+        if (i === 2) el(fields, 'circle', { cx: 19, cy: cy, r: 5, fill: 'hl' });
+        cap(el(fields, 'rect', { fill: 'track' }), (i === 2 ? 34 : 14) + (i === 2 ? 35 : 23), cy, i === 2 ? 70 : 46, 7);
+        cap(el(fields, 'rect', { fill: 'tile' }), 296 - (i === 2 ? 10 : 39), cy, i === 2 ? 20 : 78, 7);
+      });
+
+      var fing = finger(content, [
+        { x: tabPoint[0], y: tabPoint[1], at: M.tab }, { x: 259, y: 126, at: M.acceptTodo },
+        { x: 259, y: 126, at: M.acceptEvent }, { x: 299, y: 96, at: M.add }
+      ]);
+
+      return function (t) {
+        c.fade(t);
+        var toTodos = seg(t, M.tab, M.tab + 0.3);
+        op(rec, 1 - toTodos);
+        op(tp, toTodos);
+
+        rows.forEach(function (o, i) {
+          var picks = i === 1 || i === 2;
+          var start = i === 1 ? M.markTodo : M.markEvent, fly = i === 1 ? M.flyTodo : M.flyEvent;
+          var marked = picks ? ease(seg(t, start, start + 0.45)) : 0;
+          var picked = picks ? spring(seg(t, start + 0.4, start + 0.75)) * (1 - seg(t, fly, fly + 0.05)) : 0;
+          rise(o.g, t, 0.3 + 0.15 * i, 16, o.base, 8, 0.3);
+          o.mark.setAttribute('width', 310 * Math.max(0.001, marked));
+          op(o.time, marked > 0.5 ? 0 : 1);
+          op(o.timeOn, marked > 0.5 ? 1 : 0);
+          if (o.tile) {
+            var k = clamp(picked);
+            move(o.tile, 288, 27, lerp(0.4, 1, k));
+            op(o.tile, k);
+          }
+        });
+        flights.forEach(function (f) {
+          var k = ease(seg(t, f.from[2], f.from[2] + 0.55));
+          var x = lerp(f.from[0], tabPoint[0] + 6, k);
+          var y = lerp(f.from[1], tabPoint[1] - 4, k) - 34 * Math.sin(Math.PI * k);
+          move(f.g, x, y, lerp(1, 0.55, k));
+          op(f.g, k > 0 && k < 0.97 ? 1 : 0);
+        });
+        tabs.set(t < M.tab + 0.05 ? 0 : 1, t < M.acceptTodo + 0.4 ? '2' : '1',
+          spring(seg(t, M.badge, M.badge + 0.35)) * (1 - seg(t, M.eventMoves, M.eventMoves + 0.3)));
+
+        var a1 = ease(seg(t, M.acceptTodo + 0.2, M.acceptTodo + 0.55));
+        var b1 = ease(seg(t, M.eventMoves, M.eventMoves + 0.35));
+        var a2 = ease(seg(t, M.acceptTodo + 0.55, M.acceptTodo + 0.9));
+        var b2 = ease(seg(t, M.eventMoves + 0.35, M.eventMoves + 0.7));
+        var waiting = 56 * (2 - a1 - b1);
+        var todosY = lerp(98 + waiting + 26, 62, b1);
+        var eventsY = todosY + 20 + 56 + 26;
+        var enter = easeOut(seg(t, 3.7, 4.05));
+        confirmG.setAttribute('transform', 'translate(0 ' + ((1 - enter) * 10) + ')');
+        op(confirmG, enter * (1 - b1));
+        confirmHead.setCount(t < M.acceptTodo + 0.4 ? '2' : '1');
+        confirmCard.setAttribute('height', Math.max(0, waiting));
+        op(hair, (1 - a1) * (1 - b1));
+        sTodo.g.setAttribute('transform', 'translate(' + (16 + 30 * a1) + ' 98)');
+        op(sTodo.g, 1 - a1);
+        sTodo.press(pulse(t, M.acceptTodo - 0.05, M.acceptTodo + 0.2));
+        sEvent.g.setAttribute('transform', 'translate(' + (16 + 30 * b1) + ' ' + (98 + 56 * (1 - a1)) + ')');
+        op(sEvent.g, 1 - b1);
+        sEvent.press(pulse(t, M.acceptEvent - 0.05, M.acceptEvent + 0.2));
+        myG.setAttribute('transform', 'translate(0 ' + todosY + ')');
+        op(myG, a2);
+        op(aTodo.label, seg(t, M.acceptTodo + 0.9, M.acceptTodo + 1.2));
+        evG.setAttribute('transform', 'translate(0 ' + eventsY + ')');
+        op(evG, b2);
+
+        var shown = ease(seg(t, M.sheetIn, M.sheetIn + 0.45)) * (1 - ease(seg(t, M.sheetOut, M.sheetOut + 0.4)));
+        op(dim, 0.2 * shown);
+        sheet.setAttribute('transform', 'translate(0 ' + (68 + (1 - shown) * 260) + ')');
+        op(addPress, pulse(t, M.add - 0.05, M.add + 0.2));
+        op(sheetG, shown > 0.001 ? 1 : 0);
+        fing(t);
+      };
+    }
+  };
+
+  // 12. Places on a map (DayMapAnimation.swift): the switch in Settings, the day's places numbered in
+  //     the order they were reached, and one opened on the map with what was said there.
+
+  var Places = {
+    w: 342, h: 320, length: 10.8, preview: 5.4, still: 5.4,
+    steps: [{ start: 0, still: 2.8 }, { start: 3.3, still: 5.4 }, { start: 7.0, still: 9.6 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.places;
+      var M = { toggle: 0.85, alert: 0.95, turnOn: 1.95, switchOn: 2.15, source: 2.4, day: 3.3,
+                pins: [3.95, 4.4, 4.85], open: 7.3, zoom: 7.85, panel: 8.3 };
+      var places = [[70, 175], [170, 100], [268, 150]];
+      var stays = ['09:02–09:41', '14:10–14:25', '19:30–19:48'];
+      var c = canvas(svg, Places.length, 0.3, 0.4);
+      var content = c.content;
+      var defs = svg.querySelector('defs');
+
+      function mapArt(parent) {
+        var g = el(parent, 'g');
+        el(g, 'rect', { x: 0, y: 0, width: 342, height: 300, fill: 'tile' });
+        el(g, 'rect', { x: 214, y: 176, width: 96, height: 72, rx: 26, fill: 'hl-soft' });
+        el(g, 'path', { d: 'M-10 262C100 300 250 196 352 226', fill: 'none', stroke: 'track', 'stroke-width': 24, 'stroke-linecap': 'round' });
+        el(g, 'path', { d: 'M-10 70L352 40M96 -10L128 310M292 -10L236 310M-10 150L352 128', fill: 'none', stroke: 'card', 'stroke-width': 7, 'stroke-linecap': 'round' });
+        el(g, 'path', { d: 'M20 -10L30 310M190 -10L176 310M-10 108L352 90M-10 206L352 180', fill: 'none', stroke: 'card', 'stroke-opacity': 0.7, 'stroke-width': 3.5, 'stroke-linecap': 'round' });
+        return g;
+      }
+      function route(parent, w) {
+        var g = el(parent, 'g');
+        var legs = [0, 1].map(function (i) {
+          return el(g, 'line', {
+            x1: places[i][0], y1: places[i][1], x2: places[i][0], y2: places[i][1], stroke: 'ink', 'stroke-opacity': 0.55,
+            'stroke-width': w, 'stroke-linecap': 'round', 'stroke-dasharray': '5 6'
+          });
+        });
+        return {
+          g: g,
+          set: function (p) {   // 0 to 2 places reached
+            legs.forEach(function (leg, i) {
+              var k = clamp(p - i);
+              leg.setAttribute('x2', lerp(places[i][0], places[i + 1][0], k));
+              leg.setAttribute('y2', lerp(places[i][1], places[i + 1][1], k));
+              op(leg, k > 0 ? 1 : 0);
+            });
+          }
+        };
+      }
+      function pin(parent, number, ring) {
+        var g = el(parent, 'g');
+        el(g, 'circle', { cy: 1.2, r: 13.2, fill: '#000', 'fill-opacity': 0.14 });
+        el(g, 'circle', { r: 12, fill: 'accent', stroke: 'ground', 'stroke-width': ring || 2 });
+        txt(g, String(number), 0, 0.5, 11, 700, 'on-accent', { anchor: 'middle', mono: true });
+        return g;
+      }
+
+      // Settings › Places.
+      var settings = el(content, 'g');
+      el(settings, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(settings, W.settings, 171, 20, 13, 600, 'ink', { anchor: 'middle' });
+      txt(settings, W.places, 20, 59.5, 12, 600, 'ink2');
+      var sCard = el(settings, 'g', { transform: 'translate(16 72)' });
+      var sBg = el(sCard, 'rect', { x: 0, y: 0, width: 310, height: 170, rx: 20, fill: 'card' });
+      fit(txt(sCard, W.show, 14, 24, 13.5, 600, 'ink'), 226, 0.8);
+      cap(el(sCard, 'rect', { fill: 'track' }), 14 + 95, 40.75, 190, 5);
+      cap(el(sCard, 'rect', { fill: 'track' }), 14 + 64, 51.75, 128, 5);
+      var sw = toggle(sCard);
+      move(sw.g, 256, 23.5);
+      var clipId = uid('src');
+      var srcClip = el(el(defs, 'clipPath', { id: clipId }), 'rect', { x: 0, y: 70, width: 310, height: 100 });
+      var src = el(sCard, 'g', { 'clip-path': 'url(#' + clipId + ')' });
+      el(src, 'rect', { x: 0, y: 70, width: 310, height: 1, fill: 'hair' });
+      txt(src, W.recordWith, 14, 87.75, 11, 600, 'ink2');
+      move(tile(src, 'phone', 34, 'on-hl-soft', 'hl-soft'), 31, 125.5);
+      txt(src, W.iphone, 60, 120.5, 13, 600, 'ink');
+      var iw = measure(src, W.iphone, 13, 600);
+      var recW = measure(src, W.recommended, 9, 600) + 12;
+      el(src, 'rect', { x: 60 + iw + 8, y: 113.5, width: recW, height: 14, rx: 7, fill: 'success', 'fill-opacity': 0.15 });
+      txt(src, W.recommended, 60 + iw + 8 + recW / 2, 120.5, 9, 600, 'success', { anchor: 'middle' });
+      cap(el(src, 'rect', { fill: 'track' }), 60 + 75, 136, 150, 5);
+      el(src, 'circle', { cx: 287, cy: 125.5, r: 9, fill: 'accent' });
+      move(icon(src, 'check', 11, 'on-accent'), 287, 125.5);
+
+      // The day's page: the places on a map above the list.
+      var day = el(content, 'g');
+      el(day, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      var dayHead = heading(day, W.places, '3');
+      move(dayHead.g, 20, 20.5);
+      var dCard = el(day, 'g', { transform: 'translate(16 40)' });
+      el(dCard, 'rect', { x: 0, y: 0, width: 310, height: 270, rx: 20, fill: 'card' });
+      var mapClip = uid('top');
+      el(el(defs, 'clipPath', { id: mapClip }), 'path', { d: corners(0, 0, 310, 130, 20, 20, 0, 0) });
+      var mini = el(dCard, 'g', { 'clip-path': 'url(#' + mapClip + ')' });
+      var miniMap = el(mini, 'g', { transform: 'translate(-16 -75)' });
+      mapArt(miniMap);
+      var miniRoute = route(miniMap, 2.5);
+      var miniPins = places.map(function (p, i) {
+        var g = pin(miniMap, i + 1);
+        return g;
+      });
+      var list = el(dCard, 'g', { transform: 'translate(0 130)' });
+      var placeRows = [0, 1, 2].map(function (i) {
+        var y = i * 45;
+        var g = el(list, 'g');
+        var o = { g: g, y: y };
+        if (i > 0) el(g, 'rect', { x: 50, y: -1, width: 260, height: 1, fill: 'hair' });
+        o.press = el(g, 'rect', { x: 0, y: 0, width: 310, height: 44, fill: 'tile' });
+        move(pin(g, i + 1), 26, 22);
+        fit(txt(g, W.names[i], 50, 15.25, 12.5, 600, 'ink'), 220, 0.8);
+        fit(txt(g, stays[i] + ' · ' + W.parts[i], 50, 30.5, 9.5, 400, 'ink2', { mono: true }), 232, 0.8);
+        move(icon(g, 'chevronRight', 11, 'ink3'), 294, 22);
+        return o;
+      });
+
+      // The full map, with the picked place and what was said there.
+      var mapPage = el(content, 'g');
+      el(mapPage, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      var mapClipId = uid('full');
+      el(el(defs, 'clipPath', { id: mapClipId }), 'rect', { x: 0, y: 40, width: 342, height: 280 });
+      var mapHost = el(mapPage, 'g', { 'clip-path': 'url(#' + mapClipId + ')' });
+      var zoomG = el(mapHost, 'g');
+      var fullMap = el(zoomG, 'g', { transform: 'translate(0 40)' });
+      mapArt(fullMap);
+      var fullRoute = route(fullMap, 3);
+      fullRoute.set(2);
+      var bigPins = places.map(function (p, i) {
+        var outer = el(fullMap, 'g');
+        return { outer: outer, inner: pin(outer, i + 1, i === 1 ? 3 : 2) };
+      });
+      el(mapPage, 'rect', { x: 0, y: 0, width: 342, height: 40, fill: 'ground', 'fill-opacity': 0.92 });
+      txt(mapPage, W.today, 171, 20, 13, 600, 'ink', { anchor: 'middle' });
+      move(icon(mapPage, 'chevronLeft', 14, 'ink'), 24, 20);
+      var panel = el(mapPage, 'g');
+      el(panel, 'rect', { x: 0, y: 0, width: 318, height: 120, rx: 24, fill: 'card', stroke: 'hair', 'stroke-width': 1 });
+      pin(panel, 2, 2.5).setAttribute('transform', 'translate(29 29) scale(1.25)');
+      txt(panel, W.names[1], 14 + 30 + 10, 14 + 8.5, 14, 700, 'ink');
+      txt(panel, stays[1], 14 + 30 + 10, 14 + 25, 10.5, 400, 'ink2', { mono: true });
+      el(panel, 'circle', { cx: 318 - 14 - 13, cy: 14 + 13, r: 13, fill: 'tile' });
+      move(icon(panel, 'x', 10, 'ink2'), 318 - 14 - 13, 14 + 13);
+      txt(panel, W.heard, 14, 14 + 32 + 8 + 6.5, 10.5, 600, 'ink2');
+      el(panel, 'rect', { x: 14, y: 14 + 32 + 8 + 13 + 8, width: 290, height: 31, rx: 12, fill: 'tile' });
+      txt(panel, '14:10', 24, 14 + 32 + 8 + 13 + 8 + 15.5, 10, 400, 'ink2', { mono: true });
+      fit(txt(panel, W.snippet, 58, 14 + 32 + 8 + 13 + 8 + 15.5, 11.5, 400, 'ink'), 214, 0.8);
+      move(icon(panel, 'chevronRight', 11, 'ink3'), 304 - 8, 14 + 32 + 8 + 13 + 8 + 15.5);
+
+      // The alert iOS asks with, drawn in the app's words.
+      var alertG = el(content, 'g');
+      var adim = el(alertG, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: '#050505' });
+      var box = el(alertG, 'g');
+      var boxBg = el(box, 'rect', { x: 0, y: 0, width: 244, rx: 22, fill: 'card', stroke: 'hair', 'stroke-width': 1 });
+      txt(box, W.alertTitle, 122, 24, 13, 600, 'ink', { anchor: 'middle' });
+      var mh = wrap(box, W.alertMessage, 122, 38, 10.5, 400, 'ink2', 212, 12.8, 'middle');
+      var y1 = 38 + mh + 14;
+      el(box, 'rect', { x: 0, y: y1, width: 244, height: 1, fill: 'hair' });
+      var primary = el(box, 'rect', { x: 0, y: y1 + 1, width: 244, height: 36, fill: 'tile' });
+      txt(box, W.turnOn, 122, y1 + 19, 13, 600, 'ink', { anchor: 'middle' });
+      el(box, 'rect', { x: 0, y: y1 + 37, width: 244, height: 1, fill: 'hair' });
+      txt(box, W.notNow, 122, y1 + 56, 13, 400, 'ink2', { anchor: 'middle' });
+      var boxH = y1 + 74;
+      boxBg.setAttribute('height', boxH);
+      var boxTop = 160 - boxH / 2;
+
+      var fing = finger(content, [
+        { x: 292, y: 107, at: M.toggle }, { x: 171, y: boxTop + y1 + 19, at: M.turnOn }, { x: 171, y: 232, at: M.open }
+      ]);
+
+      return function (t) {
+        c.fade(t);
+        // Settings
+        var on = spring(seg(t, M.switchOn, M.switchOn + 0.35));
+        var source = ease(seg(t, M.source, M.source + 0.4));
+        sw.set(on);
+        sBg.setAttribute('height', 70 + 100 * source);
+        srcClip.setAttribute('height', 100 * source);
+        op(src, source);
+        op(settings, 1 - seg(t, M.day - 0.1, M.day + 0.15));
+
+        // The day's page
+        var progress = seg(t, M.pins[0] + 0.2, M.pins[2]);
+        var push = ease(seg(t, M.open + 0.1, M.open + 0.5));
+        day.setAttribute('transform', 'translate(' + (-push * 342 * 0.28) + ' 0)');
+        op(day, seg(t, M.day, M.day + 0.3) * (1 - seg(push, 0.85, 1)));
+        dayHead.pop(spring(seg(t, M.pins[2], M.pins[2] + 0.35)));
+        rise(dCard, t, M.day + 0.15, 16, 40, 10, 0.35);
+        miniRoute.set(progress * 2);
+        miniPins.forEach(function (g, i) {
+          var pop = spring(seg(t, M.pins[i], M.pins[i] + 0.35));
+          move(g, places[i][0], places[i][1], lerp(0.3, 1, pop));
+          op(g, Math.min(pop, 1));
+        });
+        placeRows.forEach(function (o, i) {
+          rise(o.g, t, M.pins[i] + 0.1, 0, o.y, 6, 0.3);
+          op(o.press, i === 1 ? pulse(t, M.open - 0.05, M.open + 0.25) : 0);
+        });
+
+        // The full map
+        var zoom = ease(seg(t, M.zoom, M.zoom + 0.6));
+        var pn = ease(seg(t, M.panel, M.panel + 0.4));
+        var scale = lerp(1, 2.0, zoom);
+        zoomG.setAttribute('transform', 'translate(' + (places[1][0] * (1 - scale)) + ' ' + ((places[1][1] + 40) * (1 - scale)) + ') scale(' + scale + ')');
+        bigPins.forEach(function (b, i) {
+          var picked = i === 1;
+          var size = picked ? lerp(1, 34 / 24, spring(seg(t, M.zoom, M.zoom + 0.4))) : 1;
+          b.outer.setAttribute('transform', 'translate(' + places[i][0] + ' ' + places[i][1] + ') scale(' + (size / scale) + ')');
+        });
+        mapPage.setAttribute('transform', 'translate(' + ((1 - push) * 342) + ' 0)');
+        op(mapPage, push > 0 ? 1 : 0);
+        panel.setAttribute('transform', 'translate(12 ' + (196 + (1 - pn) * 130) + ')');
+        op(panel, pn);
+
+        // The alert
+        var appear = seg(t, M.alert, M.alert + 0.2) * (1 - seg(t, M.turnOn + 0.1, M.turnOn + 0.28));
+        var pop = spring(seg(t, M.alert, M.alert + 0.4));
+        op(adim, 0.28 * appear);
+        box.setAttribute('transform', 'translate(171 160) scale(' + lerp(0.9, 1, pop) + ') translate(-122 ' + (-boxH / 2) + ')');
+        op(box, appear);
+        op(primary, pulse(t, M.turnOn - 0.05, M.turnOn + 0.2));
+        op(alertG, appear > 0.001 ? 1 : 0);
+        fing(t);
+      };
+    }
+  };
+
+  // 13. Handing the day to an AI app (ExportIntroAnimation.swift): the day becomes a text file, the
+  //     file goes to the app picked in the share sheet, and the answer comes back.
+
+  var Export = {
+    w: 342, h: 320, length: 9.5, preview: 2.95, still: 2.95,
+    steps: [{ start: 0, still: 2.2 }, { start: 2.25, still: 2.95 }, { start: 5.55, still: 9.0 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.handoff;
+      var now = new Date();
+      var fileName = 'DayRecall ' + ('0' + (now.getMonth() + 1)).slice(-2) + '-' + ('0' + now.getDate()).slice(-2) + '.txt';
+      var c = canvas(svg, Export.length, 0.15, 0.35);
+      var content = c.content;
+
+      // Step 1: the day's conversations and the button.
+      var dayLayer = el(content, 'g');
+      var cards = [0, 1, 2].map(function (i) {
+        var g = el(dayLayer, 'g');
+        el(g, 'rect', { x: -143, y: -27, width: 286, height: 54, rx: 14, fill: 'tile' });
+        var card = W.cards[i];
+        txt(g, card.time, -131, -11, 10.5, 500, 'ink2', { mono: true });
+        var tw = measure(g, card.time, 10.5, 500, true);
+        var px = -131 + tw + 6, pw = measure(g, card.place, 10, 500) + 12;
+        el(g, 'rect', { x: px, y: -18, width: pw, height: 14, rx: 7, fill: 'card' });
+        txt(g, card.place, px + 6, -11, 10, 500, 'ink2');
+        fit(txt(g, card.line, -131, 9, 12.5, 400, 'ink'), 262, 0.8);
+        return g;
+      });
+      var hand = el(dayLayer, 'g');
+      el(hand, 'rect', { x: -100, y: -22, width: 200, height: 44, rx: 22, fill: 'accent' });
+      var label = txt(hand, W.handButton, 0, 0.5, 14, 600, 'on-accent');
+      var hw = fit(label, 160, 0.7);
+      move(icon(hand, 'appForward', 14, 'on-accent'), -(hw + 20) / 2 + 7, 0);
+      label.setAttribute('x', -(hw + 20) / 2 + 20);
+
+      // The file it becomes.
+      var file = el(content, 'g');
+      el(file, 'rect', { x: -36, y: -53.5, width: 72, height: 88, rx: 14, fill: 'tile', stroke: 'hair', 'stroke-width': 1 });
+      move(icon(file, 'doc', 30, 'ink'), 0, -22);
+      el(file, 'rect', { x: -14, y: -2, width: 28, height: 15, rx: 7.5, fill: 'hl' });
+      txt(file, 'TXT', 0, 5.5, 9, 700, 'on-hl', { anchor: 'middle', mono: true });
+      fit(txt(file, fileName, 0, 47, 11, 500, 'ink2', { anchor: 'middle' }), 200, 0.8);
+
+      // Step 2: the share sheet.
+      var sheet = el(content, 'g');
+      el(sheet, 'rect', { x: 0.5, y: 0.5, width: 341, height: 149, rx: 22, fill: 'tile', stroke: 'hair', 'stroke-width': 1 });
+      move(icon(sheet, 'doc', 14, 'ink2'), 25, 25.5);
+      fit(txt(sheet, fileName, 36, 25.5, 11.5, 500, 'ink'), 250, 0.8);
+      var apps = [['mail', W.appMail, false], ['doc', W.appNotes, false], ['sparkle', W.appAI, true], ['ellipsis', W.appMore, false]];
+      var appTiles = apps.map(function (a, i) {
+        var cx = 16 + 77.5 * (i + 0.5);
+        var g = el(sheet, 'g', { transform: 'translate(' + cx + ' 73)' });
+        var holder = el(g, 'g');
+        el(holder, 'rect', { x: -26, y: -26, width: 52, height: 52, rx: 14, fill: a[2] ? 'hl' : 'card' });
+        icon(holder, a[0], 22, a[2] ? 'on-hl' : 'ink', a[2] ? 'hl' : 'card');
+        fit(txt(g, a[1], 0, 37, 10, 400, 'ink2', { anchor: 'middle' }), 70, 0.75);
+        return holder;
+      });
+
+      // The AI app: a message box, then the answer.
+      var ai = el(content, 'g');
+      el(ai, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'card' });
+      var chatClip = uid('chat');
+      el(el(svg.querySelector('defs'), 'clipPath', { id: chatClip }), 'rect', { x: 0, y: 36, width: 342, height: 224 });
+      var chat = el(ai, 'g', { 'clip-path': 'url(#' + chatClip + ')' });
+      var chipBody = function (parent) {
+        var g = el(parent, 'g');
+        el(g, 'rect', { x: -98, y: -15, width: 196, height: 30, rx: 15, fill: 'hl-soft' });
+        var label = txt(g, W.chip, 0, 0.5, 11.5, 500, 'on-hl-soft');
+        var w = fit(label, 160, 0.8);
+        label.setAttribute('x', -(w + 19) / 2 + 19);
+        move(icon(g, 'doc', 13, 'on-hl-soft'), -(w + 19) / 2 + 6.5, 0);
+        return g;
+      };
+      var sent = chipBody(chat);
+      move(sent, 228, 61);
+      var thinking = el(chat, 'g', { transform: 'translate(16 88)' });
+      var dots = [0, 1, 2].map(function (i) { return el(thinking, 'circle', { cx: 3 + 11 * i, cy: 0, r: 3, fill: 'ink3' }); });
+      var reveal = [];
+      function revealed(start, build) {
+        var g = el(chat, 'g');
+        build(g);
+        reveal.push({ g: g, start: start });
+        return g;
+      }
+      var top = 86;
+      revealed(6.1, function (g) { txt(g, W.answerTitle, 16, top + 8.5, 14, 700, 'ink'); });
+      [0, 1, 2].forEach(function (i) {
+        revealed(6.4 + 0.3 * i, function (g) {
+          el(g, 'circle', { cx: 18, cy: top + 27.5 + 18 * i, r: 2, fill: 'ink3' });
+          fit(txt(g, W.bullets[i], 27, top + 27.5 + 18 * i, 12.5, 400, 'ink'), 290, 0.8);
+        });
+      });
+      var sweep;
+      function promise(y, str, highlighted) {
+        var g = el(chat, 'g');
+        var tw = measure(g, str, 12.5, 500);
+        var rw = 6 + 13 + 8 + Math.min(tw, 276) + 6;
+        var mark = highlighted ? el(g, 'rect', { x: 16, y: y - 10.5, width: rw, height: 21, rx: 7, fill: 'hl-soft' }) : null;
+        el(g, 'rect', { x: 22.5, y: y - 6, width: 12, height: 12, rx: 3, fill: 'none', stroke: 'ink2', 'stroke-width': 1.4 });
+        txt(g, str, 22 + 13 + 8, y, 12.5, 500, highlighted ? 'on-hl-soft' : 'ink');
+        return { g: g, mark: mark, w: rw };
+      }
+      revealed(7.3, function (g) { txt(g, W.promised, 22, top + 84.5, 10.5, 600, 'ink2'); });
+      var p1, p2;
+      reveal.push({ g: (p1 = promise(top + 104.5, W.promisedItem, true)).g, start: 7.5 });
+      revealed(8.15, function (g) { txt(g, W.promisedToYou, 22, top + 128.5, 10.5, 600, 'ink2'); });
+      reveal.push({ g: (p2 = promise(top + 148.5, W.promisedToYouItem, false)).g, start: 8.35 });
+      var head = el(ai, 'g');
+      el(head, 'rect', { x: 0, y: 0, width: 342, height: 36, fill: 'card' });
+      el(head, 'rect', { x: 0, y: 35, width: 342, height: 1, fill: 'hair' });
+      move(tile(head, 'sparkle', 22, 'on-hl-soft', 'hl-soft'), 25, 17.5);
+      txt(head, W.appAI, 44, 17.5, 13, 600, 'ink');
+      var bar = el(ai, 'g', { transform: 'translate(14 264)' });
+      el(bar, 'rect', { x: 0, y: 0, width: 314, height: 44, rx: 22, fill: 'tile' });
+      var placeholder = txt(bar, W.placeholder, 16, 22, 13, 400, 'ink3');
+      var send = el(bar, 'g');
+      el(send, 'circle', { r: 15, fill: 'card' });
+      var sendOn = el(send, 'circle', { r: 15, fill: 'accent' });
+      var arrowOff = icon(send, 'arrowUp', 14, 'ink3');
+      var arrowOn = icon(send, 'arrowUp', 14, 'on-accent');
+
+      // The file as a chip: out of the file icon, into the message box, up as the user's message.
+      var chip = chipBody(content);
+
+      var fing = finger(content, [{ x: 171, y: 258, at: 1.25 }, { x: 210, y: 244, at: 3.2 }, { x: 306, y: 286, at: 4.95 }]);
+
+      return function (t) {
+        c.fade(t);
+        cards.forEach(function (g, i) {
+          var start = 0.05 + 0.12 * i;
+          var appear = easeOut(seg(t, start, start + 0.5));
+          var merge = ease(seg(t, 1.5, 2.15));
+          var fade = 1 - seg(t, 1.85, 2.15);
+          move(g, 171, lerp(45 + 62 * i, 100, merge) + (1 - appear) * 16, lerp(1, 0.9, merge));
+          op(g, appear * fade);
+        });
+        var handIn = easeOut(seg(t, 0.35, 0.8)) * (1 - seg(t, 2.25, 2.6));
+        move(hand, 171, 254, 1 - 0.05 * pulse(t, 1.25, 1.4));
+        op(hand, handIn);
+
+        var formed = easeOut(seg(t, 1.8, 2.25));
+        var toChip = ease(seg(t, 3.3, 3.6));
+        move(file, 171, 100, lerp(0.85, 1, formed) * lerp(1, 0.3, toChip));
+        op(file, formed * (1 - toChip));
+
+        var shown = ease(seg(t, 2.25, 2.75)) * (1 - ease(seg(t, 3.25, 3.55)));
+        sheet.setAttribute('transform', 'translate(0 ' + (lerp(395, 245, shown) - 75) + ')');
+        op(sheet, shown > 0.001 ? 1 : 0);
+        appTiles.forEach(function (h, i) { move(h, 0, 0, i === 2 ? 1 - 0.08 * pulse(t, 3.2, 3.34) : 1); });
+
+        var slide = ease(seg(t, 3.4, 3.95));
+        ai.setAttribute('transform', 'translate(' + ((1 - slide) * 342) + ' 0)');
+        op(ai, slide > 0 ? 1 : 0);
+        op(sent, t >= 5.55 ? 1 : 0);
+        var dotsOn = seg(t, 5.6, 5.7) * (1 - seg(t, 6.05, 6.15));
+        op(thinking, dotsOn);
+        dots.forEach(function (d, i) { op(d, 0.35 + 0.65 * (0.5 + 0.5 * Math.sin(t * 9 - i * 1.2))); });
+        reveal.forEach(function (r) {
+          var k = easeOut(seg(t, r.start, r.start + 0.25));
+          r.g.setAttribute('transform', 'translate(0 ' + ((1 - k) * 6) + ')');
+          op(r.g, k);
+        });
+        var swept = seg(t, 7.9, 8.35);
+        p1.mark.setAttribute('width', Math.max(0.01, p1.w * swept));
+        var sendK = seg(t, 4.45, 4.6) * (1 - seg(t, 5.15, 5.3));
+        var away = seg(t, 4.3, 4.45) * (1 - seg(t, 5.55, 5.8));
+        op(placeholder, 1 - away);
+        move(send, 314 - 7 - 15, 22, 1 - 0.12 * pulse(t, 4.95, 5.1));
+        op(sendOn, sendK);
+        op(arrowOn, sendK);
+        op(arrowOff, 1 - sendK);
+
+        var appearC = easeOut(seg(t, 3.3, 3.6));
+        var toInput = ease(seg(t, 3.95, 4.5));
+        var toChat = ease(seg(t, 5.0, 5.55));
+        var ix = lerp(171, 122, toInput), iy = lerp(100, 286, toInput);
+        move(chip, lerp(ix, 228, toChat), lerp(iy, 61, toChat), lerp(0.5, 1, appearC));
+        op(chip, t < 5.55 ? appearC : 0);
+        fing(t);
+      };
+    }
+  };
+
+  // ---------------------------------------------------------------------------------------------
+  // Drawn for the site: the app's library has no animation of these yet. Same kit, same style, and
+  // only screens that exist in the app (TodayView's timeline and week strip, the Library's search,
+  // WeeklyPlanView, the Health switch and its labels on the timeline).
+
+  /** A span of the day on the timeline's rail (SpanCard): time, how long, the words. */
+  function spanCard(parent, y, time, dur, line, chip) {
+    var g = el(parent, 'g');
+    var h = chip ? 64 : 48;
+    el(g, 'circle', { cx: 26, cy: 16, r: 6, fill: 'ink', stroke: 'ground', 'stroke-width': 2 });
+    el(g, 'rect', { x: 42, y: 0, width: 280, height: h, rx: 16, fill: 'card' });
+    txt(g, time + ' · ' + dur, 54, 14, 10, 400, 'ink2', { mono: true });
+    if (chip) {
+      var cx = 54, cy = 32, w = 7 + 10 + 4 + measure(g, chip[1], 9.5, 500) + 7;
+      el(g, 'rect', { x: cx, y: cy - 8, width: w, height: 16, rx: 8, fill: 'tile' });
+      move(icon(g, chip[0], 10, 'ink2'), cx + 7 + 5, cy);
+      txt(g, chip[1], cx + 7 + 10 + 4, cy + 0.5, 9.5, 500, 'ink2');
+    }
+    fit(txt(g, line, 54, chip ? 51 : 33, 12, 400, 'ink'), 256, 0.8);
+    g.setAttribute('transform', 'translate(0 ' + y + ')');
+    return g;
+  }
+
+  /** A quiet line on the rail between spans (TimelineMarker). */
+  function railMarker(parent, str, symbol) {
+    var g = el(parent, 'g');
+    el(g, 'circle', { cx: 26, cy: 0, r: 5, fill: 'ink', stroke: 'ground', 'stroke-width': 2 });
+    var x = 42;
+    if (symbol) {
+      move(icon(g, symbol, 11, 'ink3'), 47.5, 0);
+      x = 57;
+    }
+    fit(txt(g, str, x, 0.5, 10.5, 400, 'ink3'), 322 - x, 0.8);
+    return g;
+  }
+
+  // 14. Any day at a glance: the day on a timeline, flipping back through the week, searching
+  //     everything that was heard (TodayView, WeekStrip, LibraryView).
+
+  var Day = {
+    w: 342, h: 320, length: 11.4, preview: 2.9, still: 2.9,
+    steps: [{ start: 0, still: 2.9 }, { start: 3.7, still: 6.1 }, { start: 7.3, still: 10.3 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.day, TABS = ctx.words.ask.tabs;
+      var M = { a: 0.4, quiet: 0.7, b: 0.85, tap: 4.2, inn: 4.7, lib: 7.6, focus: 8.35, typing: 8.6, typingEnd: 9.5, results: 9.75 };
+      var cellW = 298 / 7;
+      var c = canvas(svg, Day.length, 0.3, 0.4);
+      var content = c.content;
+
+      // Today: title, the week, the timeline.
+      var today = el(content, 'g');
+      el(today, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      var title1 = txt(today, W.today, 20, 30, 23, 700, 'ink');
+      var title2 = txt(today, W.title2, 20, 30, 23, 700, 'ink');
+      var sub2 = txt(today, W.sub2, 20, 50.5, 11, 400, 'ink2');
+      var back = el(today, 'g');
+      var bw = measure(today, W.today, 11.5, 600) + 38;
+      el(back, 'rect', { x: -bw, y: -12, width: bw, height: 24, rx: 12, fill: 'tile' });
+      txt(back, W.today, -bw + 13, 0.5, 11.5, 600, 'ink');
+      move(icon(back, 'arrowRight', 11, 'ink'), -13, 0);
+      move(back, 326, 30);
+
+      var strip = el(today, 'g', { transform: 'translate(16 66)' });
+      el(strip, 'rect', { x: 0, y: 0, width: 310, height: 56, rx: 20, fill: 'card' });
+      var heat = [2, 4, 3, 3, 0, 0, 0];
+      var days = W.weekdays.map(function (name, i) {
+        var cx = 6 + cellW * (i + 0.5), future = i > 3, o = { cx: cx };
+        txt(strip, name, cx, 15, 8, 400, future ? 'ink3' : 'ink2', { anchor: 'middle', mono: true });
+        if (future) {
+          txt(strip, String(12 + i), cx, 38.5, 12, 500, 'ink3', { anchor: 'middle' });
+          return o;
+        }
+        el(strip, 'circle', { cx: cx, cy: 38, r: 15, fill: 'heat' + heat[i] });
+        o.sel = el(strip, 'circle', { cx: cx, cy: 38, r: 15, fill: 'accent' });
+        o.num = txt(strip, String(12 + i), cx, 38.5, 12, 700, 'on-hl', { anchor: 'middle' });
+        o.numOn = txt(strip, String(12 + i), cx, 38.5, 12, 700, 'on-accent', { anchor: 'middle' });
+        return o;
+      });
+
+      txt(today, W.timeline, 20, 138, 14, 700, 'ink');
+      txt(today, W.newest, 322, 138, 10, 400, 'ink2', { anchor: 'end' });
+      el(today, 'rect', { x: 25, y: 148, width: 2, height: 122, rx: 1, fill: 'hair' });
+      var tl1 = el(today, 'g'), tl2 = el(today, 'g');
+      var one = [spanCard(tl1, 0, W.a.time, W.a.dur, W.a.line), railMarker(tl1, W.a.quiet), spanCard(tl1, 0, W.b.time, W.b.dur, W.b.line)];
+      var two = [spanCard(tl2, 0, W.c.time, W.c.dur, W.c.line), railMarker(tl2, W.c.quiet), spanCard(tl2, 0, W.d.time, W.d.dur, W.d.line)];
+      var tops = [150, 208, 218];
+
+      // Library: the weeks, then a search.
+      var lib = el(content, 'g');
+      el(lib, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(lib, TABS[3], 20, 30, 23, 700, 'ink');
+      var field = el(lib, 'g', { transform: 'translate(16 46)' });
+      el(field, 'rect', { x: 0.5, y: 0.5, width: 309, height: 33, rx: 16.5, fill: 'card', stroke: 'hair', 'stroke-width': 1 });
+      move(icon(field, 'magnifier', 14, 'ink3'), 18, 17);
+      var placeholder = txt(field, W.searchPrompt, 34, 17, 12.5, 400, 'ink3');
+      var typedText = txt(field, '', 34, 17, 12.5, 400, 'ink');
+      var typedChars = Array.from(W.query);
+      var prefix = [0];
+      typedChars.forEach(function (ch, k) { prefix.push(measure(field, typedChars.slice(0, k + 1).join(''), 12.5, 400)); });
+      var caret = el(field, 'rect', { y: 9, width: 1.5, height: 16, fill: 'ink' });
+
+      var weeks = el(lib, 'g');
+      txt(weeks, W.thisWeek, 20, 98, 14, 700, 'ink');
+      var weekRows = W.weekRows.map(function (r, i) {
+        var g = el(weeks, 'g');
+        el(g, 'rect', { x: 16, y: 0, width: 310, height: 46, rx: 20, fill: 'card' });
+        var d = 3 - i;
+        el(g, 'rect', { x: 25, y: 6, width: 34, height: 34, rx: 11, fill: i === 0 ? 'accent' : 'heat' + [3, 4, 2][i] });
+        txt(g, W.weekdays[d], 42, 17, 7.5, 400, i === 0 ? 'on-accent' : 'on-hl', { anchor: 'middle', mono: true });
+        txt(g, String(12 + d), 42, 30, 13, 700, i === 0 ? 'on-accent' : 'on-hl', { anchor: 'middle' });
+        fit(txt(g, r, 72, 23, 12, 600, 'ink'), 220, 0.8);
+        move(icon(g, 'chevronRight', 11, 'ink3'), 308, 23);
+        return g;
+      });
+
+      var results = el(lib, 'g');
+      txt(results, W.matches, 20, 98, 11, 600, 'ink2');
+      var resCard = el(results, 'g');
+      el(resCard, 'rect', { x: 16, y: 112, width: 310, height: 150, rx: 20, fill: 'card' });
+      var resRows = W.results.map(function (r, i) {
+        var g = el(results, 'g');
+        if (i > 0) el(g, 'rect', { x: 30, y: -1, width: 282, height: 1, fill: 'hair' });
+        txt(g, r.when, 30, 14, 9.5, 400, 'ink2', { mono: true });
+        var wp = measure(g, r.pre, 12.5, 400), wh = measure(g, r.hit, 12.5, 600);
+        el(g, 'rect', { x: 30 + wp - 3, y: 24, width: wh + 6, height: 19, rx: 5, fill: 'hl-soft' });
+        txt(g, r.pre, 30, 33.5, 12.5, 400, 'ink');
+        txt(g, r.hit, 30 + wp, 33.5, 12.5, 600, 'on-hl-soft');
+        txt(g, r.post, 30 + wp + wh, 33.5, 12.5, 400, 'ink');
+        return g;
+      });
+
+      var tabs = tabBar(content, TABS, 270);
+      var fing = finger(content, [
+        { x: 16 + 6 + cellW * 1.5, y: 66 + 38, at: M.tap }, { x: 299.25, y: 287, at: M.lib }, { x: 171, y: 63, at: M.focus }
+      ]);
+      var lastTyped = null;
+
+      return function (t) {
+        c.fade(t);
+        var swap = ease(seg(t, M.tap + 0.1, M.tap + 0.5));
+        var pick = spring(seg(t, M.tap, M.tap + 0.35));
+        var leave = seg(t, M.tap, M.tap + 0.2);
+        days.forEach(function (d, i) {
+          if (!d.sel) return;
+          var on = i === 3 ? 1 - leave : i === 1 ? Math.min(pick, 1) : 0;
+          d.sel.setAttribute('r', 15 * (i === 1 ? lerp(0.6, 1, pick) : 1));
+          op(d.sel, on);
+          op(d.numOn, on > 0.5 ? 1 : 0);
+          op(d.num, on > 0.5 ? 0 : 1);
+        });
+        op(title1, 1 - swap);
+        op(title2, swap);
+        op(sub2, swap);
+        op(back, swap);
+        tl1.setAttribute('transform', 'translate(' + (-16 * swap) + ' 0)');
+        op(tl1, 1 - swap);
+        tl2.setAttribute('transform', 'translate(' + (16 * (1 - swap)) + ' 0)');
+        op(tl2, swap);
+        var starts = [M.a, M.quiet, M.b];
+        one.forEach(function (g, i) { rise(g, t, starts[i], 0, tops[i], 10, 0.35); });
+        two.forEach(function (g, i) { rise(g, t, M.inn + 0.15 * i, 0, tops[i], 10, 0.35); });
+
+        var toLib = seg(t, M.lib, M.lib + 0.3);
+        op(today, 1 - toLib);
+        op(lib, toLib);
+        tabs.set(t < M.lib + 0.05 ? 0 : 3, '', 0);
+
+        var shown = typed(W.query, seg(t, M.typing, M.typingEnd));
+        if (shown !== lastTyped) {
+          typedText.textContent = shown;
+          lastTyped = shown;
+        }
+        var n = Array.from(shown).length;
+        op(placeholder, n ? 0 : 1);
+        caret.setAttribute('x', 34 + prefix[n] + 1);
+        op(caret, t >= M.focus && t < M.results + 0.1 && Math.sin(t * 9) > -0.2 ? 1 : 0);
+        var listOff = seg(t, M.typing + 0.3, M.typing + 0.65);
+        weekRows.forEach(function (g, i) { rise(g, t, M.lib + 0.15 + 0.1 * i, 0, 112 + 52 * i, 8, 0.3); });
+        op(weeks, 1 - listOff);
+        op(results, seg(t, M.results, M.results + 0.2));
+        resRows.forEach(function (g, i) { rise(g, t, M.results + 0.12 * i, 0, 112 + 50 * i, 6, 0.3); });
+        fing(t);
+      };
+    }
+  };
+
+  // 15. A plan for the week (WeeklyPlanView): everything due in the next seven days, ticked, and the
+  //     ones that were picked go to the calendar and Reminders while the rest stay in To confirm.
+
+  var Week = {
+    w: 342, h: 320, length: 10.6, preview: 5.2, still: 5.2,
+    steps: [{ start: 0, still: 2.8 }, { start: 3.4, still: 5.2 }, { start: 6.0, still: 9.4 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.week, T = ctx.words.todos;
+      var M = { rows: [0.4, 0.6, 0.8], ticks: [1.1, 1.25, 1.4], untick: 4.5, add: 6.9, push: 7.15, a: 7.95, b: 8.35, label: 8.75 };
+      var c = canvas(svg, Week.length, 0.3, 0.4);
+      var content = c.content;
+
+      // Where the items land: To-dos.
+      var td = el(content, 'g');
+      el(td, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(td, T.todos, 20, 24.5, 21, 700, 'ink');
+      var h1 = heading(td, T.toConfirm, '1');
+      move(h1.g, 20, 64.5);
+      el(td, 'rect', { x: 16, y: 76, width: 310, height: 56, rx: 20, fill: 'card' });
+      var waits = suggestedRow(td, 'list', W.t2.title, W.t2.meta);
+      waits.g.setAttribute('transform', 'translate(16 76)');
+      var mineG = el(td, 'g');
+      move(heading(mineG, T.myTodos).g, 20, 146);
+      el(mineG, 'rect', { x: 16, y: 158, width: 310, height: 56, rx: 20, fill: 'card' });
+      var mine = acceptedRow(mineG, 'list', T.quote, T.dueMeta, T.inReminders);
+      mine.g.setAttribute('transform', 'translate(16 158)');
+      var evG = el(td, 'g');
+      move(heading(evG, T.events).g, 20, 232);
+      el(evG, 'rect', { x: 16, y: 244, width: 310, height: 56, rx: 20, fill: 'card' });
+      var ev = acceptedRow(evG, 'calendar', T.sync, T.eventMeta, null);
+      ev.g.setAttribute('transform', 'translate(16 244)');
+
+      // The plan.
+      var plan = el(content, 'g');
+      el(plan, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      move(icon(plan, 'chevronLeft', 14, 'ink'), 24, 20);
+      txt(plan, W.nav, 171, 20, 13, 600, 'ink', { anchor: 'middle' });
+      txt(plan, W.range, 20, 46, 9.5, 400, 'ink2', { mono: true });
+      fit(txt(plan, W.title, 20, 67, 17, 700, 'ink'), 302, 0.7);
+
+      function planRow(parent, y, title, meta) {
+        var g = el(parent, 'g', { transform: 'translate(0 ' + y + ')' });
+        var box = el(g, 'g', { transform: 'translate(39 23)' });
+        el(box, 'rect', { x: -9, y: -9, width: 18, height: 18, rx: 5, fill: 'none', stroke: 'ink3', 'stroke-width': 1.6 });
+        var on = el(box, 'g');
+        el(on, 'rect', { x: -9, y: -9, width: 18, height: 18, rx: 5, fill: 'accent' });
+        icon(on, 'check', 13, 'on-accent');
+        fit(txt(g, title, 60, 18, 12, 600, 'ink'), 254, 0.8);
+        fit(txt(g, meta, 60, 33, 9.5, 400, 'ink2'), 254, 0.8);
+        return { box: box, on: on };
+      }
+      function group(y, symbol, label, rows) {
+        var g = el(plan, 'g');
+        move(icon(g, symbol, 11, 'ink2'), 25, y + 5);
+        fit(txt(g, label, 36, y + 5, 10.5, 600, 'ink2'), 286, 0.8);
+        var card = el(g, 'g');
+        el(card, 'rect', { x: 16, y: y + 16, width: 310, height: rows.length * 47 - 1, rx: 20, fill: 'card' });
+        var rs = rows.map(function (r, i) {
+          if (i > 0) el(card, 'rect', { x: 50, y: y + 16 + i * 47 - 1, width: 276, height: 1, fill: 'hair' });
+          var o = planRow(card, y + 16 + i * 47, r[0], r[1]);
+          o.x = 16;
+          return o;
+        });
+        return { g: g, rows: rs };
+      }
+      var g1 = group(82, 'calendar', W.events, [[T.sync, T.eventMeta]]);
+      var g2 = group(154, 'list', W.todos, [[T.quote, T.dueMeta], [W.t2.title, W.t2.meta]]);
+      var all = [g1.rows[0], g2.rows[0], g2.rows[1]];
+
+      var btn = el(plan, 'g', { transform: 'translate(16 272)' });
+      el(btn, 'rect', { x: 0, y: 0, width: 310, height: 36, rx: 18, fill: 'accent' });
+      var add3 = txt(btn, W.add.replace('{n}', '3'), 155, 18.5, 13, 600, 'on-accent', { anchor: 'middle' });
+      var add2 = txt(btn, W.add.replace('{n}', '2'), 155, 18.5, 13, 600, 'on-accent', { anchor: 'middle' });
+
+      var fing = finger(content, [{ x: 39, y: 240, at: M.untick }, { x: 171, y: 290, at: M.add }]);
+
+      return function (t) {
+        c.fade(t);
+        var push = ease(seg(t, M.push, M.push + 0.55));
+        plan.setAttribute('transform', 'translate(' + (push * 342) + ' 0)');
+        op(plan, push < 1 ? 1 : 0);
+        [g1.g, g2.g].forEach(function (g, i) { rise(g, t, M.rows[i], 0, 0, 8, 0.35); });
+        all.forEach(function (r, i) {
+          var k = spring(seg(t, M.ticks[i], M.ticks[i] + 0.3));
+          if (i === 2) k = Math.min(k, 1) * (1 - ease(seg(t, M.untick, M.untick + 0.2)));
+          op(r.on, clamp(k));
+          r.on.setAttribute('transform', 'scale(' + lerp(0.5, 1, Math.min(k, 1.2)) + ')');
+        });
+        var two = t >= M.untick + 0.1;
+        op(add3, two ? 0 : 1);
+        op(add2, two ? 1 : 0);
+        var press = pulse(t, M.add - 0.05, M.add + 0.2);
+        var bs = 1 - 0.04 * press;
+        btn.setAttribute('transform', 'translate(' + (16 + 155 * (1 - bs)) + ' ' + (272 + 18 * (1 - bs)) + ') scale(' + bs + ')');
+        op(btn, easeOut(seg(t, 0.9, 1.2)));
+
+        rise(mine.g, t, M.a, 16, 158, 8, 0.35);
+        op(mineG, push > 0 ? easeOut(seg(t, M.a, M.a + 0.3)) : 0);
+        rise(ev.g, t, M.b, 16, 244, 8, 0.35);
+        op(evG, push > 0 ? easeOut(seg(t, M.b, M.b + 0.3)) : 0);
+        op(mine.label, seg(t, M.label, M.label + 0.3));
+        fing(t);
+      };
+    }
+  };
+
+  // 16. Health as a clue (HealthSection, the timeline, AskView): off until the switch is turned on,
+  //     then a small label on what happened while walking or after a workout, and questions that
+  //     ask for a time by what you were doing.
+
+  var Health = {
+    w: 342, h: 320, length: 12.4, preview: 5.6, still: 5.6,
+    steps: [{ start: 0, still: 2.8 }, { start: 3.5, still: 5.6 }, { start: 7.6, still: 11.2 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.health, A = ctx.words.ask, ME = ctx.words.me, T = ctx.words.todos;
+      var M = { toggle: 0.9, on: 1.15, found: 1.9, tab: 3.5, a: 3.9, b: 4.25, marker: 4.6, open: 6.1,
+                askTab: 7.7, focus: 8.2, typing: 8.4, typingEnd: 9.4, send: 9.6, bubble: 9.8, thinking: 10.1,
+                answer: 10.7, chip: 10.9, source: 11.1 };
+      var c = canvas(svg, Health.length, 0.3, 0.4);
+      var content = c.content;
+
+      // Settings › Health.
+      var settings = el(content, 'g');
+      el(settings, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(settings, W.settings, 171, 20, 13, 600, 'ink', { anchor: 'middle' });
+      txt(settings, W.label, 20, 59.5, 12, 600, 'ink2');
+      var sCard = el(settings, 'g', { transform: 'translate(16 72)' });
+      el(sCard, 'rect', { x: 0, y: 0, width: 310, height: 78, rx: 20, fill: 'card' });
+      fit(txt(sCard, W.show, 14, 24, 13, 600, 'ink'), 226, 0.8);
+      cap(el(sCard, 'rect', { fill: 'track' }), 14 + 100, 42, 200, 5);
+      cap(el(sCard, 'rect', { fill: 'track' }), 14 + 70, 53, 140, 5);
+      cap(el(sCard, 'rect', { fill: 'track' }), 14 + 42, 64, 84, 5);
+      var sw = toggle(sCard);
+      move(sw.g, 256, 27.5);
+      var found = el(settings, 'g');
+      move(icon(found, 'checkCircle', 12, 'ink2'), 26, 166);
+      txt(found, W.found, 38, 166, 10.5, 400, 'ink2');
+      wrap(settings, W.note, 20, 188, 10.5, 400, 'ink3', 302, 13.5);
+
+      // The day: a label on the part of it that happened while walking, a heart rate above usual,
+      // and the night's sleep on the rail.
+      var day = el(content, 'g');
+      el(day, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(day, W.today, 20, 30, 23, 700, 'ink');
+      txt(day, W.timeline, 20, 62, 14, 700, 'ink');
+      txt(day, W.newest, 322, 62, 10, 400, 'ink2', { anchor: 'end' });
+      el(day, 'rect', { x: 25, y: 74, width: 2, height: 196, rx: 1, fill: 'hair' });
+      var cardA = spanCard(day, 0, W.a.time, W.a.dur, T.l0, ['walk', W.walking]);
+      var cardB = spanCard(day, 0, W.b.time, W.b.dur, T.l1, ['heartFill', W.heartAbove]);
+      var sleep = railMarker(day, W.sleep, 'bed');
+
+      // A part of the day, opened: the numbers behind its label.
+      var detail = el(content, 'g');
+      el(detail, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      txt(detail, W.b.time, 20, 26.5, 17, 700, 'ink');
+      txt(detail, W.b.dur, 322, 28, 10.5, 400, 'ink2', { anchor: 'end', mono: true });
+      el(detail, 'rect', { x: 16, y: 56, width: 310, height: 56, rx: 20, fill: 'card' });
+      move(tile(detail, 'heartFill', 30, 'on-hl', 'hl'), 16 + 27, 56 + 28);
+      txt(detail, W.factTitle, 16 + 52, 56 + 21.3, 12, 600, 'ink');
+      fit(txt(detail, W.factDetail, 16 + 52, 56 + 36.3, 9.5, 400, 'ink2'), 244, 0.8);
+      var row = transcriptRow(detail, W.b.time.slice(0, 5), ME, true, T.l1);
+      row.g.setAttribute('transform', 'translate(16 124)');
+
+      // Ask: the question names an activity, and the answer comes with the recording it is from.
+      var ask = el(content, 'g');
+      el(ask, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+      fit(txt(ask, A.title, 20, 28, 23, 700, 'ink'), 302, 0.7);
+      var question = el(ask, 'g');
+      var qBubble = el(question, 'path', { fill: 'accent' });
+      var qText = txt(question, W.question, 0, 16.5, 12.5, 400, 'on-accent');
+      var qw = fit(qText, 270, 0.8);
+      var bw = qw + 28, bx = 326 - bw;
+      qBubble.setAttribute('d', corners(bx, 0, bw, 33, 18, 18, 5, 18));
+      qText.setAttribute('x', bx + 14);
+      var thinking = el(ask, 'g', { transform: 'translate(20 104)' });
+      var dots = [0, 1, 2].map(function (i) { return el(thinking, 'circle', { cx: 2.75 + 9.5 * i, cy: 0, r: 2.75, fill: 'ink' }); });
+      txt(thinking, A.thinking, 32.5, 0, 12, 400, 'ink2');
+      var from = el(ask, 'g');
+      move(icon(from, 'lockClosed', 12, 'ink2'), 26, 104);
+      txt(from, A.from, 36, 104, 10.5, 500, 'ink2');
+      var answer = el(ask, 'g');
+      var aw = fit(txt(answer, W.answer, 20, 128, 12.5, 400, 'ink'), 276, 0.8);
+      var chipG = el(answer, 'g');
+      el(chipG, 'rect', { x: -9, y: -9, width: 18, height: 18, rx: 6, fill: 'hl' });
+      txt(chipG, '1', 0, 0.5, 9.5, 600, 'on-hl', { anchor: 'middle', mono: true });
+      move(chipG, 20 + aw + 15, 128);
+      var srcLabel = txt(ask, W.source1, 20, 154, 11, 600, 'ink2');
+      var srcCard = el(ask, 'g');
+      el(srcCard, 'rect', { x: 0, y: 0, width: 310, height: 54, rx: 16, fill: 'card' });
+      var sc = el(srcCard, 'g', { transform: 'translate(21 18)' });
+      el(sc, 'rect', { x: -9, y: -9, width: 18, height: 18, rx: 6, fill: 'hl' });
+      txt(sc, '1', 0, 0.5, 9.5, 600, 'on-hl', { anchor: 'middle', mono: true });
+      var whenW = width(txt(srcCard, W.when, 37, 18, 10.5, 600, 'ink'));
+      move(icon(srcCard, 'watch', 12, 'ink2'), 37 + whenW + 13, 18);
+      txt(srcCard, A.watch, 37 + whenW + 21, 18, 9.5, 400, 'ink2');
+      move(icon(srcCard, 'chevronRight', 11, 'ink3'), 294, 18);
+      fit(txt(srcCard, W.snippet, 12, 38.3, 10.5, 400, 'ink'), 286, 0.85);
+
+      var bar = el(ask, 'g', { transform: 'translate(16 224)' });
+      el(bar, 'rect', { x: 0.5, y: 0.5, width: 309, height: 43, rx: 21.5, fill: 'card', stroke: 'hair', 'stroke-width': 1 });
+      var placeholder = txt(bar, A.placeholder, 16, 22, 12.5, 400, 'ink3');
+      var typedText = txt(bar, '', 16, 22, 12.5, 400, 'ink');
+      var chars = Array.from(W.question), prefix = [0];
+      chars.forEach(function (ch, k) { prefix.push(measure(bar, chars.slice(0, k + 1).join(''), 12.5, 400)); });
+      var caret = el(bar, 'rect', { y: 14.5, width: 1.5, height: 15, fill: 'ink' });
+      var send = el(bar, 'g');
+      el(send, 'circle', { r: 16, fill: 'tile' });
+      var sendOn = el(send, 'circle', { r: 16, fill: 'accent' });
+      var arrowOff = icon(send, 'arrowUp', 15, 'ink3');
+      var arrowOn = icon(send, 'arrowUp', 15, 'on-accent');
+      var lastTyped = null;
+
+      var tabs = tabBar(content, A.tabs, 270);
+      var fing = finger(content, [
+        { x: 292, y: 111, at: M.toggle }, { x: 171, y: 182, at: M.open }, { x: 213.75, y: 287, at: M.askTab },
+        { x: 171, y: 246, at: M.focus }, { x: 304, y: 246, at: M.send }
+      ]);
+
+      return function (t) {
+        c.fade(t);
+        sw.set(spring(seg(t, M.on, M.on + 0.35)));
+        op(found, seg(t, M.found, M.found + 0.3));
+
+        var toDay = seg(t, M.tab, M.tab + 0.3);
+        rise(cardA, t, M.a, 0, 76, 10, 0.35);
+        rise(cardB, t, M.b, 0, 150, 10, 0.35);
+        rise(sleep, t, M.marker, 0, 234, 8, 0.3);
+        var push = ease(seg(t, M.open + 0.1, M.open + 0.5));
+        day.setAttribute('transform', 'translate(' + (-push * 342 * 0.28) + ' 0)');
+        op(day, toDay * (1 - seg(push, 0.85, 1)) * (1 - seg(t, M.askTab, M.askTab + 0.3)));
+        op(settings, 1 - seg(t, M.tab - 0.1, M.tab + 0.2));
+        detail.setAttribute('transform', 'translate(' + ((1 - push) * 342) + ' 0)');
+        op(detail, push > 0 ? 1 - seg(t, M.askTab, M.askTab + 0.3) : 0);
+
+        var toAsk = seg(t, M.askTab, M.askTab + 0.3);
+        op(ask, toAsk);
+        var sending = t >= M.send + 0.05;
+        var shown = sending ? '' : typed(W.question, seg(t, M.typing, M.typingEnd));
+        if (shown !== lastTyped) {
+          typedText.textContent = shown;
+          lastTyped = shown;
+        }
+        var n = Array.from(shown).length;
+        op(placeholder, n ? 0 : 1);
+        caret.setAttribute('x', 16 + prefix[n] + 1);
+        op(caret, t >= M.focus && !sending && Math.sin(t * 9) > -0.2 ? 1 : 0);
+        move(send, 288, 22, 1 - 0.14 * pulse(t, M.send - 0.05, M.send + 0.2));
+        op(sendOn, n ? 1 : 0);
+        op(arrowOn, n ? 1 : 0);
+        op(arrowOff, n ? 0 : 1);
+        var bubbleIn = easeOut(seg(t, M.bubble, M.bubble + 0.3));
+        question.setAttribute('transform', 'translate(0 ' + (52 + (1 - bubbleIn) * 10) + ')');
+        op(question, bubbleIn);
+        op(thinking, seg(t, M.thinking, M.thinking + 0.15) * (1 - seg(t, M.answer - 0.1, M.answer + 0.05)));
+        dots.forEach(function (d, i) { op(d, 0.25 + 0.75 * (0.5 + 0.5 * Math.sin(t * 8 - i * 1.1))); });
+        op(from, seg(t, M.answer, M.answer + 0.3));
+        var ans = easeOut(seg(t, M.answer + 0.1, M.answer + 0.4));
+        answer.setAttribute('transform', 'translate(0 ' + ((1 - ans) * 6) + ')');
+        op(answer, ans);
+        var chipK = spring(seg(t, M.chip, M.chip + 0.35));
+        var cp = [20 + aw + 15, 128];
+        move(chipG, cp[0], cp[1], lerp(0.4, 1, chipK));
+        op(chipG, chipK);
+        var src = easeOut(seg(t, M.source, M.source + 0.3));
+        op(srcLabel, src);
+        srcCard.setAttribute('transform', 'translate(16 ' + (164 + (1 - src) * 8) + ')');
+        op(srcCard, src);
+        tabs.set(t < M.askTab + 0.05 ? 0 : 2, '', 0);
+        op(tabs.g, t >= M.tab ? 1 : 0);
+        fing(t);
+      };
+    }
+  };
+
+  // ---------------------------------------------------------------------------------------------
   // Playing: only the animations on screen run; with Reduce Motion each shows its still frame.
 
   var STAGES = {
     listening: Listening, tidying: Tidying, privacy: Privacy, consent: Consent, voice: Voice, ask: AskDay,
-    battery: Battery, speakers: Speakers, languages: Languages, sync: Sync
+    battery: Battery, speakers: Speakers, languages: Languages, sync: Sync,
+    todos: Todos, places: Places, day: Day, week: Week, handoff: Export, health: Health
   };
+  // The steps of the longer ones, for the pages that explain them: where each begins and its best moment.
+  AskDay.preview = AskDay.still;
+  AskDay.steps = [{ start: 0, still: 2.3 }, { start: 3.0, still: 5.9 }, { start: 6.2, still: 8.6 }];
   var calm = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
   var items = [];
   var frameId = 0;
@@ -1230,10 +2515,12 @@
   if (fixedAt !== null && fixedAt !== 'still' && !(fixedAt >= 0)) fixedAt = null;
   if (fixedAt !== null) calm = { matches: true };
 
-  function mount(host) {
-    var def = STAGES[host.getAttribute('data-stage')];
-    if (!def) return;
+  /** Draws a stage into `host` without playing it; returns it for whoever plays it (mount, features.js). */
+  function create(host, name) {
+    var def = STAGES[name];
+    if (!def) return null;
     host.style.aspectRatio = def.w + ' / ' + def.h;
+    if (def.w === 342) host.style.borderRadius = (24 / def.w * 100) + '% / ' + (24 / def.h * 100) + '%';
     var svg = el(null, 'svg', { viewBox: '0 0 ' + def.w + ' ' + def.h, 'aria-hidden': 'true', focusable: 'false', class: 'stage-svg' });
     host.appendChild(svg);
     var render;
@@ -1241,10 +2528,17 @@
       render = def.build(svg, { words: WORDS, host: host, lang: lang });
     } catch (err) {
       if (window.console) console.error(err);
-      return;
+      host.removeChild(svg);
+      return null;
     }
-    render(typeof fixedAt === 'number' ? Math.min(fixedAt, def.length - 0.01) : def.still);
-    items.push({ host: host, def: def, render: render, visible: false, start: 0 });
+    return { def: def, render: render, svg: svg };
+  }
+
+  function mount(host) {
+    var made = create(host, host.getAttribute('data-stage'));
+    if (!made) return;
+    made.render(typeof fixedAt === 'number' ? Math.min(fixedAt, made.def.length - 0.01) : made.def.still);
+    items.push({ host: host, def: made.def, render: made.render, visible: false, start: 0 });
   }
 
   function frame(now) {
@@ -1290,6 +2584,14 @@
     if (calm.addEventListener) calm.addEventListener('change', onChange);
     else if (calm.addListener) calm.addListener(onChange);
   }
+
+  // What features.js needs: stages to draw and play themselves, in the page's words.
+  window.DayRecallStages = {
+    create: create,
+    words: WORDS,
+    reduced: function () { return calm.matches; },
+    ready: new Promise(function (resolve) { (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(resolve, resolve); })
+  };
 
   var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
   function start() { fontsReady.then(init, init); }

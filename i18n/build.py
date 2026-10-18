@@ -190,6 +190,7 @@ def head(lang, s, page, title, description, graph=None):
         lines.append('<script type="application/json" id="stage-words">' + script_json(s['stage']) + '</script>')
     lines += ['<link rel="stylesheet" href="/assets/site.css">', '<script src="/assets/stages.js" defer></script>']
     if home:
+        lines.append('<script src="/assets/features.js" defer></script>')
         lines.append('<script src="/assets/store.js" defer></script>')
     lines.append('</head>')
     return '\n'.join(lines)
