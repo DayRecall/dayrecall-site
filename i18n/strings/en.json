@@ -12,7 +12,7 @@
     "Marks who said what: Me, Other 1, Other 2",
     "Follows conversations in up to three languages, translated into yours",
     "Picks out to-dos, deadlines and meetings for you to confirm",
-    "Optional sleep, activity and heart-rate clues from the Health app: read only, and they stay on your iPhone",
+    "Optional sleep, activity and heart-rate clues from the Health app: read only and not stored; short labels go to an AI app only if you choose to add them",
     "No account and no server; answers use Apple’s on-device model"
   ],
   "keywords": "",
@@ -248,7 +248,7 @@
         },
         {
           "q": "Does DayRecall read my Health data?",
-          "a": "Only if you turn it on in Settings › Health. Then it reads sleep, steps and walking distance, workouts and heart rate from the Health app, to label parts of your day (for example, walking) and to find what was said during an activity you ask about. It never writes to Health, doesn’t store what it reads, and doesn’t send it anywhere. Health data isn’t included when you hand a day to an AI app. It draws no medical conclusions and gives no health advice: it only states what the data shows."
+          "a": "Only if you turn it on in Settings › Health. Then it reads sleep, steps and walking distance, workouts and heart rate from the Health app, to label parts of your day (for example, walking) and to find what was said during an activity you ask about. It never writes to Health, doesn’t store what it reads, and doesn’t send it to us. When you hand a day to an AI app, the hand-over page has a switch, “Add what I was doing”, that is off by default and asks you to allow it each time you turn it on; if you do, short labels like “Walking” go into the file, never heart rate or step numbers. It draws no medical conclusions and gives no health advice: it only states what the data shows."
         },
         {
           "q": "Does DayRecall track me or show ads?",
@@ -638,7 +638,7 @@
       "label": "Health",
       "show": "Show sleep, activity and heart rate",
       "found": "Found data from the last 7 days.",
-      "note": "DayRecall only reads from Health and never writes to it. What it reads stays on this iPhone: it isn’t sent anywhere, and it isn’t included when you hand a day to an AI. Off by default.",
+      "note": "DayRecall only reads from Health and never writes to it. What it reads stays on this iPhone: it isn’t sent anywhere. It goes into a day you hand to an AI only if you choose that when you hand it over. Off by default.",
       "today": "Today",
       "timeline": "Timeline",
       "newest": "Newest first",
@@ -683,6 +683,6 @@
   "health_04": "Labels on your timeline: walking, working out, asleep, heart rate above usual",
   "health_05": "Ask “What did we talk about before bed?” or “What did I say while I was running?”",
   "health_06": "Off until you turn it on. Read only: DayRecall never writes to Health.",
-  "health_07": "Not stored, and never sent anywhere. It isn’t in the day you hand to an AI app.",
+  "health_07": "Not stored, and never sent to us. A day you hand to an AI app carries it only if you add it, and the app asks first.",
   "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said."
 }
