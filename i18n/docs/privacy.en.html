@@ -83,12 +83,12 @@
         <p>The App stores on your iPhone:</p>
         <ol>
           <li>transcripts, with the time each part was said and the device that heard it;</li>
-          <li>the to-dos, deadlines and meetings the App identifies in them, and what you did with each;</li>
+          <li>the to-dos, deadlines and meetings the App identifies in them, what you did with each, and saved recaps and intermediate recap notes;</li>
           <li>a search index of your transcripts; and</li>
           <li>your settings, such as your listening hours.</li>
         </ol>
         <h3>4.3 AI engine, questions and recaps</h3>
-        <p>In Settings › AI engine, you choose the engine that identifies to-dos, deadlines and meetings, writes recaps and answers questions. The default is On this iPhone, using Apple’s on-device model, part of Apple Intelligence, where available. You may instead choose My own API; the information sent to that service is described in Section 6.2. The App does not switch engines on its own. Questions, answers and recaps are not saved by the App; a provider you choose may retain what it receives under its own terms.</p>
+        <p>In Settings › AI engine, you choose the engine that identifies to-dos, deadlines and meetings, writes recaps and answers questions. The default is On this iPhone, using Apple’s on-device model, part of Apple Intelligence, where available. You may instead choose My own API; the information sent to that service is described in Section 6.2. The App does not switch engines on its own. Ordinary questions and answers are not kept after the App stops running. Recaps written in the App, intermediate notes used to write them, and AI-app answers you bring back and keep with a day are saved locally in your library. A provider you choose may retain what it receives under its own terms.</p>
         <h3>4.4 Voiceprint (optional)</h3>
         <p>(a) If you turn on <strong>Mark who is speaking</strong>, the App asks you to read five short cards aloud, about a minute in total, and creates your voiceprint from that recording on your iPhone. The recording is deleted as soon as the voiceprint has been created. The App keeps your voiceprint on that iPhone and does not automatically send it to us or anyone else. It is excluded from system backups and iCloud. A password-encrypted manual backup that you create in Developer options can include it, as described in Section 6.</p>
         <p>(b) To tell speakers apart, the App compares the voices in a conversation with your voiceprint while it processes that conversation. It keeps no voiceprint of anyone else. Other speakers are labelled Other 1, Other 2 and so on, and the numbering starts again in each conversation.</p>
@@ -153,7 +153,7 @@
         <p>(d) The service processes what it receives under its own terms and privacy policy and may store it. Choose a service you trust with the included conversations, including what other people said. You can withdraw permission with Stop sharing with … in the same settings. This selects On this iPhone for to-dos, recaps and answers; the on-device model must be available for those features to work. Withdrawing permission cannot recall information already sent to the provider.</p>
         <h3>6.3 Handing a day to another app</h3>
         <p>(a) Hand the day to an AI app creates a text file of the selected conversations from a day: what was said and when, speaker labels if enabled, recorded places if available, optional activity labels and health values if you choose to add them (Section 4.9(d)), and your selected instructions. You decide where the file goes through the iOS share sheet, or you can copy the text. This sharing route does not send the text to your API by itself; using Write it here with My own API selected is the separate route described in Section 6.2. The other app handles the content it receives under its own terms.</p>
-        <p>(b) In the Shortcuts app, <strong>Hand today to an AI</strong> copies today’s conversations to your iPhone’s clipboard only, not to your other devices, and the copy is cleared after one hour. <strong>Bring the AI’s answer back</strong> reads the clipboard only when you run it and allow pasting, and keeps only the to-dos it finds there for you to confirm, not the answer itself.</p>
+        <p>(b) In the Shortcuts app, <strong>Hand today to an AI</strong> copies today’s conversations to your iPhone’s clipboard only, not to your other devices, and the copy is cleared after one hour. <strong>Bring the AI’s answer back</strong> reads the clipboard only when you run it and allow pasting, finds to-dos for you to confirm, and can save the returned answer with its day as a recap.</p>
         <h3>6.4 Logs you share</h3>
         <p>A log you share goes where you send it. If you send it to us, Section 7 applies.</p>
 
@@ -196,7 +196,7 @@
           <li><strong>Audio</strong> is deleted automatically once it has been transcribed. If transcription fails, it is kept until transcription succeeds or you delete the recording. Speech segments on Apple Watch are deleted once your iPhone confirms that they have arrived.</li>
           <li><strong>Transcripts, to-dos, places and settings</strong> stay on your iPhone until you delete them or the App. Copies in backups remain until those backups are replaced or deleted.</li>
           <li><strong>Your voiceprint</strong> stays on your iPhone until you delete it or the App.</li>
-          <li><strong>Questions and answers</strong> are not kept once the App stops running.</li>
+          <li><strong>Ordinary questions and answers</strong> are not kept once the App stops running. Saved recaps, including answers brought back from an AI app, remain in your library until you delete them or the App. Intermediate recap notes are stored locally for reuse; older notes may be cleared automatically. Delete all memories clears saved recaps and their notes. Copies in backups remain until those backups are replaced or deleted.</li>
           <li><strong>Saved health and calendar context</strong> remains in the protected local cache until you delete all memories, replace the local context through restoration or remove the App. Turning a source off stops new reads but retains earlier cached inputs. Copies in exported backups remain until you delete those files separately.</li>
           <li><strong>Logs</strong> are kept on your devices for up to 14 days.</li>
           <li><strong>The copy made by Hand today to an AI</strong> is cleared from the clipboard after one hour.</li>
@@ -210,8 +210,8 @@
         <h2 id="rights">13. Your rights and choices</h2>
         <h3>13.1 Controls in the App</h3>
         <ol>
-          <li>Delete a recording, with its transcript and to-dos: <strong>Delete recording</strong> on the recording’s page.</li>
-          <li>Delete memories, including recordings, transcripts, to-dos, places, the search index and saved health and calendar context: <strong>Settings › Privacy › Delete all memories</strong>. Separate developer backup files and test records are not deleted by this control.</li>
+          <li>Delete a recording, with its transcript and to-dos: <strong>Delete recording</strong> on the recording’s page. Delete a saved recap with <strong>Delete this recap</strong> on its own page.</li>
+          <li>Delete memories, including recordings, transcripts, to-dos, recaps and their notes, places, the search index and saved health and calendar context: <strong>Settings › Privacy › Delete all memories</strong>. Separate developer backup files and test records are not deleted by this control.</li>
           <li>Delete your voiceprint: <strong>Delete my voice</strong>.</li>
           <li>Get a copy of a day: <strong>Hand the day to an AI app</strong> creates a text file, which you can also save from the share sheet.</li>
           <li>Stop places, meeting names or Reminders: turn the feature off in Settings, or withdraw the permission in the iPhone Settings app.</li>

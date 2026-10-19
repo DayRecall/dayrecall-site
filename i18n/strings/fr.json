@@ -12,7 +12,8 @@
     "Indique qui a dit quoi : Moi, Autre 1, Autre 2",
     "Suit les conversations en jusqu’à trois langues, avec traduction dans la vôtre",
     "Repère les tâches, échéances et réunions, à confirmer par vous",
-    "Pas de compte ni de serveur ; les réponses utilisent le modèle d’Apple exécuté sur l’appareil"
+    "Indices de Santé facultatifs : les données utilisées par l’app restent dans un cache local protégé ; les étiquettes et valeurs ne sont incluses dans un bilan envoyé à votre API ou une journée partagée avec une app d’IA que si vous choisissez de les ajouter.",
+    "Aucun compte ni serveur DayRecall ; tâches, bilans et réponses utilisent cet iPhone par défaut, ou votre API après configuration et autorisation du partage."
   ],
   "keywords": "DayRecall, mémoire IA, aide-mémoire, transcription vocale, compte rendu de réunion, application anti-oubli, Apple Watch, iPhone",
   "top_01": "Aller au contenu",
@@ -43,10 +44,10 @@
   "how_05": "Votre Apple Watch écoute pendant les heures que vous choisissez, même si votre iPhone est resté à la maison. Une pression le matin suffit, et l’écoute s’arrête toute seule. Notre modèle vocal ultra-léger, développé en interne, tourne directement sur la montre et ne garde que les moments où quelqu’un parle.",
   "how_06": "L’audio part à la corbeille et devient des lignes de texte marquées « Moi » et « Autre 1 » ; une réunion, une tâche et une échéance sont repérées.",
   "how_07": "Organisé pour vous",
-  "how_08": "Votre iPhone transforme la parole en texte directement sur l’appareil, ne conserve aucun audio et repère les tâches, échéances et réunions. Il peut aussi distinguer ce que vous avez dit de ce que les autres ont dit.",
-  "how_09": "Les souvenirs entrent dans l’iPhone, qui se verrouille ; tout ce qui part vers le cloud est bloqué, puis revient.",
+  "how_08": "La parole est convertie en texte sur cet iPhone, puis le son est effacé. Le moteur d’IA choisi repère tâches, échéances et réunions. Il peut aussi distinguer vos paroles de celles des autres.",
+  "how_09": "L’animation montre le mode local par défaut : les souvenirs entrent dans l’iPhone qui se verrouille ; les paquets allant vers le cloud sont arrêtés et reviennent.",
   "how_10": "Privé par défaut",
-  "how_11": "Vos souvenirs restent sur votre iPhone, et les réponses utilisent le modèle d’Apple exécuté sur l’appareil. Vous pourrez plus tard choisir votre propre API cloud ; rien n’est envoyé sans votre accord.",
+  "how_11": "Par défaut, cet iPhone repère les tâches, rédige les bilans et répond aux questions. Si vous choisissez votre propre API et autorisez les envois, elle reçoit automatiquement les nouvelles transcriptions pour repérer les tâches, les conversations d’une journée lorsque vous demandez un bilan, et vos questions avec les extraits pertinents. Aucun audio n’est envoyé à l’API.",
   "devices_01": "Appareils",
   "devices_02": "Votre montre n’a pas besoin de votre téléphone à proximité.",
   "devices_03": "Apple Watch écoute seule, toute la journée. Ce qu’elle entend reste sur la montre et rejoint votre iPhone toutes les deux heures ; si votre iPhone n’est pas là, le transfert reprend dès que les deux appareils se reconnectent, par exemple quand vous rentrez le soir. Votre iPhone n’a jamais besoin de rester connecté.",
@@ -87,7 +88,7 @@
   "languages_05": "Chaque passage transcrit dans sa propre langue",
   "languages_06": "Traduit dans votre langue",
   "languages_07": "Identification de la langue pour une heure de conversation en environ 32 secondes",
-  "languages_08": "La transcription multilingue est un réglage avancé, désactivé par défaut. Vitesse d’après des tests internes sur iPhone 17 Pro Max. L’application elle-même est disponible en 14 langues.",
+  "languages_08": "La transcription multilingue est un réglage avancé, désactivé par défaut. Vitesse mesurée lors de tests internes sur iPhone 17 Pro Max. L’app est disponible en 14 langues.",
   "languages_09": "Les langues de travail (français, anglais et chinois) s’allument à tour de rôle, à mesure qu’une réplique est transcrite dans chacune ; les répliques en anglais et en chinois reçoivent une traduction en français.",
   "features_01": "Fonctionnalités",
   "features_02": "Pensé pour les détails que vous finiriez par oublier",
@@ -101,24 +102,24 @@
   "features_10": "Chaque semaine, les échéances et promesses à venir sont réunies au même endroit. Vous choisissez ce qui entre dans votre calendrier.",
   "features_11": "Lieux, si vous le souhaitez",
   "features_12": "Voyez où s’est déroulée chaque conversation sur une carte de votre journée. Désactivé jusqu’à ce que vous l’activiez.",
-  "features_13": "Transmettez une journée à votre application IA",
-  "features_14": "Pour aller plus loin, envoyez la transcription d’une journée à l’application IA que vous utilisez, sous forme de fichier texte, uniquement lorsque vous le décidez.",
+  "features_13": "Le bilan de votre journée, à votre façon",
+  "features_14": "Rédigez un bilan avec le moteur d’IA choisi ou partagez les conversations sélectionnées sous forme de fichier texte avec votre app d’IA. Si vous choisissez votre API pour le rédiger, ces conversations sont envoyées à ce service.",
   "privacy_01": "Confidentialité",
   "privacy_02": "Texte uniquement. Sur votre iPhone. À vous de décider.",
-  "privacy_03": "Les souvenirs entrent dans l’iPhone, qui se verrouille ; tout ce qui part vers le cloud est bloqué, puis revient.",
+  "privacy_03": "L’animation montre le mode local par défaut : les souvenirs entrent dans l’iPhone qui se verrouille ; les paquets allant vers le cloud sont arrêtés et reviennent.",
   "privacy_04": "Du texte uniquement, aucun audio conservé",
   "privacy_05": "Ce qui est dit est transformé en texte sur votre iPhone. L’audio est effacé automatiquement une fois transcrit et n’est pas conservé.",
   "privacy_06": "Aucun compte, aucun serveur de notre part",
   "privacy_07": "Aucune inscription, et nous n’exploitons aucun serveur qui voit votre journée.",
-  "privacy_08": "Rien ne part sans vous",
-  "privacy_09": "Les réponses utilisent le modèle d’Apple exécuté sur l’appareil. Transmettre une journée à une application IA, ou utiliser votre propre API cloud, n’arrive que si vous l’autorisez.",
+  "privacy_08": "Choisissez votre moteur d’IA",
+  "privacy_09": "Par défaut, cet iPhone repère les tâches, rédige les bilans et répond aux questions. Si vous choisissez et autorisez votre API, les nouvelles transcriptions sont envoyées automatiquement pour les tâches, les conversations du jour à la demande d’un bilan, et les questions avec leurs extraits correspondants. Aucun son n’est envoyé à l’API. Vous pouvez aussi partager une journée sélectionnée avec une app d’IA.",
   "privacy_10": "Vous prévenez la personne avec qui vous parlez ; elle accepte, et vous êtes tous les deux reliés.",
   "privacy_11": "Prévenez votre entourage",
   "privacy_12": "Dites aux personnes avec qui vous parlez que DayRecall écoute. Certains lieux exigent le consentement de tous, même lorsque seul le texte est conservé ; suivez les règles en vigueur là où vous êtes.",
   "final_01": "La mémoire IA de toute votre journée.",
   "final_02": "Bientôt sur l’App Store",
   "final_03": "Télécharger DayRecall sur l’App Store ",
-  "final_04": "Idéal avec Apple Watch · Fonctionne avec iPhone seul · En 14 langues",
+  "final_04": "Idéal avec Apple Watch · Fonctionne avec l’iPhone seul · En 14 langues",
   "foot_01": "Apple Watch et iPhone sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays et régions.",
   "faq": [
     {
@@ -138,7 +139,7 @@
         },
         {
           "q": "Où sont mes données, et qui peut les voir ?",
-          "a": "Sur votre iPhone, et dans sa sauvegarde si vous en utilisez une. Il n’y a ni compte ni serveur DayRecall : nous ne pouvons donc pas les voir. Les réponses utilisent le modèle d’Apple exécuté sur l’appareil, et rien ne quitte votre iPhone sauf si vous choisissez votre propre API cloud ou transmettez une journée à une application IA."
+          "a": "Vos données sont sur votre iPhone et dans les sauvegardes que vous choisissez de créer. Aucun compte ni serveur DayRecall ne reçoit votre journée. Tâches, bilans et réponses utilisent cet iPhone par défaut. Si vous choisissez et autorisez votre API, elle reçoit automatiquement les nouvelles transcriptions pour les tâches, les conversations à la demande d’un bilan, et les questions avec leurs extraits correspondants. Elle peut d’abord recevoir la question seule pour faciliter la recherche. Vous pouvez aussi partager une journée avec une app d’IA. Ces destinataires appliquent leurs propres règles de confidentialité ; aucun son n’est envoyé à l’API."
         }
       ]
     },
@@ -147,11 +148,11 @@
       "items": [
         {
           "q": "De quoi ai-je besoin pour utiliser DayRecall ?",
-          "a": "D’un iPhone sous iOS 26 ou version ultérieure, compatible avec la reconnaissance vocale d’Apple sur l’appareil. Une Apple Watch sous watchOS 26 ou version ultérieure est facultative, mais recommandée. Les réponses et les tâches nécessitent aussi Apple Intelligence ; pour les réponses, vous pouvez utiliser votre propre API cloud à la place."
+          "a": "Un iPhone sous iOS 26 ou ultérieur prenant en charge la reconnaissance vocale Apple sur l’appareil. Une Apple Watch sous watchOS 26 ou ultérieur est facultative. Tâches, bilans et réponses utilisent un seul moteur d’IA : le modèle de cet iPhone, qui nécessite Apple Intelligence, ou une API compatible OpenAI que vous configurez et autorisez. Votre API nécessite Internet."
         },
         {
           "q": "Quels modèles d’iPhone sont compatibles ?",
-          "a": "DayRecall nécessite iOS 26 ou version ultérieure, disponible sur les iPhone 11 et suivants ainsi que sur les iPhone SE (2e génération) et suivants. La transcription nécessite aussi la reconnaissance vocale d’Apple sur l’appareil, qui n’est pas proposée sur certains modèles anciens, dont les iPhone 11 et l’iPhone SE (2e génération) ; nous recommandons donc l’iPhone 12 ou un modèle plus récent. Si votre iPhone ne peut pas transcrire, DayRecall vous le signalera. Les réponses et les tâches avec Apple Intelligence nécessitent un iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ou iPhone 16 ou plus récent."
+          "a": "DayRecall nécessite iOS 26 ou ultérieur, disponible sur iPhone 11 et ultérieur et iPhone SE de 2e génération et ultérieur. La transcription nécessite aussi la reconnaissance vocale Apple sur l’appareil, absente de certains anciens modèles, dont les iPhone 11 et l’iPhone SE de 2e génération ; nous recommandons donc l’iPhone 12 ou ultérieur. DayRecall vous avertit si la transcription est impossible. Pour tâches, bilans et réponses, « Sur cet iPhone » nécessite Apple Intelligence. « Ma propre API » peut effectuer ces trois tâches sans Apple Intelligence ; la transcription nécessite toujours la reconnaissance locale décrite ci-dessus."
         },
         {
           "q": "Quels modèles d’Apple Watch sont compatibles ?",
@@ -163,7 +164,7 @@
         },
         {
           "q": "L’application fonctionne-t-elle sans connexion Internet ?",
-          "a": "Oui. L’écoute, la transcription, les réponses et les tâches fonctionnent sur vos appareils : elles sont donc accessibles hors ligne une fois qu’iOS a téléchargé les modèles linguistiques nécessaires. Les lieux sur la carte et votre propre API cloud nécessitent une connexion."
+          "a": "L’écoute et la transcription fonctionnent sur vos appareils. Avec « Sur cet iPhone » et les modèles requis téléchargés et disponibles, tâches, bilans et réponses fonctionnent aussi hors ligne. « Ma propre API » nécessite Internet pour ces tâches. Les lieux sur la carte nécessitent aussi une connexion."
         }
       ]
     },
@@ -172,23 +173,23 @@
       "items": [
         {
           "q": "Pourquoi les langues disponibles dépendent-elles d’Apple ?",
-          "a": "DayRecall travaille sur votre iPhone avec les technologies intégrées d’Apple : la reconnaissance vocale pour transcrire, la traduction d’Apple pour traduire et Apple Intelligence pour les réponses et les tâches. Chacune prend en charge ses propres langues, qu’Apple choisit et étend avec les mises à jour d’iOS ; certaines nécessitent aussi un iPhone récent. Une langue peut donc être disponible pour la transcription mais pas encore pour la traduction, ou fonctionner sur un iPhone mais pas sur un autre. Une mise à jour d’iOS peut ajouter des langues."
+          "a": "La transcription utilise la reconnaissance vocale Apple sur l’appareil et la traduction celle d’Apple ; leurs langues dépendent de l’iPhone et d’iOS. Pour tâches, bilans et réponses, « Sur cet iPhone » utilise Apple Intelligence et ses langues. Avec « Ma propre API », les langues dépendent du service et du modèle choisis. Choisir une API ne modifie pas les langues de transcription ou traduction."
         },
         {
           "q": "Quelles langues DayRecall peut-il transcrire ?",
-          "a": "Vous pouvez choisir l’anglais (États-Unis, Royaume-Uni), le chinois (mandarin, Chine continentale), le chinois traditionnel (Taïwan), le cantonais (Chine continentale), le japonais, le coréen, l’espagnol, le français, l’allemand, l’italien, le portugais (Brésil, Portugal), le néerlandais, le suédois, le danois et le turc. Chaque langue ne fonctionne que si la reconnaissance vocale d’Apple sur l’appareil la prend en charge sur votre iPhone ; sinon, DayRecall indique qu’elle n’est pas compatible. Lors de la première utilisation d’une langue, iOS télécharge son modèle vocal."
+          "a": "Vous pouvez choisir l’anglais (États-Unis, Royaume-Uni), le chinois (mandarin, Chine continentale), le chinois traditionnel (Taïwan), le cantonais (Chine continentale), le japonais, le coréen, l’espagnol, le français, l’allemand, l’italien, le portugais (Brésil, Portugal), le néerlandais, le suédois, le danois et le turc. Chaque langue nécessite la reconnaissance vocale locale Apple sur votre iPhone ; sinon, DayRecall l’indique comme non prise en charge. iOS télécharge le modèle lors de la première utilisation."
         },
         {
           "q": "Quelles langues peut-il traduire ?",
-          "a": "Les phrases dans vos autres langues de travail peuvent être traduites dans votre langue principale avec la traduction d’Apple sur l’appareil, si Apple prend en charge cette paire de langues sur votre iPhone. La transcription ne garantit pas la traduction, y compris pour le cantonais. Consultez les paires de langues disponibles dans les réglages de traduction de DayRecall. iOS télécharge chaque langue avant sa première utilisation. Apple répertorie les langues actuelles sur sa <a href=\"https://www.apple.com/ios/feature-availability/\">page de disponibilité des fonctionnalités</a>."
+          "a": "Les lignes dans vos autres langues de travail peuvent être traduites dans votre langue principale avec la traduction locale Apple, uniquement pour les paires prises en charge sur votre iPhone. La transcription ne garantit pas la traduction, y compris pour le cantonais. Consultez les paires disponibles dans les réglages de traduction de DayRecall. iOS télécharge chaque langue avant sa première utilisation. Apple indique les langues sur sa <a href=\"https://www.apple.com/ios/feature-availability/\">page de disponibilité des fonctionnalités</a>."
         },
         {
-          "q": "Quelles langues fonctionnent pour les réponses et les tâches ?",
-          "a": "Les réponses et les tâches utilisent Apple Intelligence, qui prend en charge l’anglais, le chinois (simplifié et traditionnel), le danois, le néerlandais, le français, l’allemand, l’italien, le japonais, le coréen, le norvégien, le portugais, l’espagnol, le suédois, le turc et le vietnamien. La langue de votre iPhone et celle de Siri doivent être réglées sur la même langue compatible. Apple Intelligence ne fonctionne actuellement pas sur les iPhone achetés en Chine continentale, ni en Chine continentale avec un compte Apple de cette région ; dans ces cas, vous pouvez obtenir des réponses avec votre propre API cloud, mais pas de tâches. Consultez le <a href=\"https://support.apple.com/en-us/121115\">guide d’Apple sur Apple Intelligence</a>."
+          "q": "Quelles langues fonctionnent pour les tâches, bilans et réponses ?",
+          "a": "Cela dépend du moteur d’IA. « Sur cet iPhone » utilise Apple Intelligence, avec ses conditions d’appareil, de langue et de région. Si Apple Intelligence est indisponible, y compris là où Apple ne le propose pas, vous pouvez choisir « Ma propre API » pour les trois tâches : tâches, bilans et réponses. Les langues dépendent du service et du modèle choisis. Consultez <a href=\"https://support.apple.com/en-us/121115\">le guide Apple</a> pour les conditions actuelles."
         },
         {
           "q": "Dans quelles langues l’application est-elle disponible ?",
-          "a": "Les menus et les écrans de l’application sont disponibles en 14 langues : anglais, chinois simplifié, chinois traditionnel, danois, néerlandais, français, allemand, italien, japonais, coréen, portugais (Portugal), espagnol, suédois et turc. Cela ne dépend pas des langues qu’elle peut transcrire."
+          "a": "Les menus et écrans existent en 14 langues : anglais, chinois simplifié, chinois traditionnel, danois, néerlandais, français, allemand, italien, japonais, coréen, portugais (Portugal), espagnol, suédois et turc. Ces langues sont distinctes de celles de transcription."
         },
         {
           "q": "Peut-elle suivre une conversation dans plusieurs langues ?",
@@ -217,7 +218,7 @@
         },
         {
           "q": "Puis-je transmettre une journée à mon application IA ?",
-          "a": "Oui. <strong>Transmettre la journée à une application IA</strong> crée un fichier texte pour une journée, avec la question de votre choix ; vous sélectionnez l’application dans la feuille de partage, et DayRecall n’envoie rien de lui-même. Pour récupérer les tâches, copiez la réponse de l’IA et touchez <strong>Importer la réponse de l’IA</strong>."
+          "a": "Oui. Ouvrez « Faire le bilan de votre journée » depuis Aujourd’hui, un jour passé ou Questions. « Rédiger ici » utilise le moteur choisi dans Réglages. Pour une autre app, choisissez « Confier à une app d’IA… », puis l’app dans la feuille de partage ; seules les conversations laissées incluses figurent dans le fichier texte. Pour rapporter les tâches, copiez la réponse de l’IA et touchez « Rapporter la réponse de l’IA »."
         },
         {
           "q": "Puis-je importer un fichier audio ?",
@@ -243,23 +244,23 @@
       "items": [
         {
           "q": "Des données quittent-elles mon iPhone ?",
-          "a": "Seulement si vous le choisissez. Avec votre propre API cloud, chaque question envoie à ce service votre question et de courts extraits correspondants de vos transcriptions. Quand vous transmettez une journée à une application IA, celle-ci reçoit le fichier texte que vous lui envoyez. Les lieux utilisent Apple Maps et la sauvegarde iCloud inclut vos données si vous l’utilisez. La Politique de confidentialité donne plus de détails."
+          "a": "Avec votre API sélectionnée et le partage autorisé, les nouvelles transcriptions sont envoyées automatiquement par lots pour repérer les tâches, même sans poser de question. « Rédiger ici » envoie les conversations sélectionnées pour un bilan, avec les lieux enregistrés s’ils existent, et les étiquettes et valeurs de Santé uniquement si vous les ajoutez. Les questions envoient la question et les extraits correspondants ; la question peut partir seule auparavant pour la recherche. Ni son ni empreinte vocale ne vont à l’API. Vous pouvez aussi partager une journée avec une app d’IA. Plans Apple et les sauvegardes ont leurs propres flux, expliqués dans la politique de confidentialité."
         },
         {
-          "q": "DayRecall lit-il mes données de santé ?",
-          "a": "Uniquement si vous activez cette fonction dans Réglages › Santé. L’app lit alors le sommeil, les pas et la distance parcourue à pied, les entraînements et la fréquence cardiaque dans l’app Santé pour identifier les activités de votre journée et retrouver ce qui a été dit pendant une activité sur laquelle vous posez une question. Elle n’écrit jamais dans Santé, ne conserve pas les données lues et ne nous les transmet pas. Quand vous confiez une journée à une app IA, l’ajout des activités est désactivé par défaut et demande votre autorisation à chaque activation. Seuls de courts libellés comme « Marche » sont ajoutés au fichier, jamais la fréquence cardiaque ni le nombre de pas. L’app ne tire aucune conclusion médicale et ne donne aucun conseil de santé ; elle décrit uniquement ce que montrent les données."
+          "q": "DayRecall lit-elle mes données de Santé ?",
+          "a": "Seulement si vous l’activez dans Réglages › Santé. DayRecall lit sommeil, pas, distance de marche, entraînements et fréquence cardiaque pour étiqueter votre journée et trouver les horaires des activités demandées. Elle n’écrit jamais dans Santé et ne nous envoie pas ces données. Les données utilisées restent dans un cache local protégé, inclus sur votre choix dans une sauvegarde manuelle chiffrée par mot de passe. « Ajouter des données de santé » est désactivé par défaut sur la page de bilan et de partage. Son activation demande une autorisation et mémorise votre choix. Les étiquettes et horaires d’activité, ainsi que les valeurs disponibles de fréquence cardiaque, pas, distance et durée, sont alors inclus dans le bilan envoyé à votre API ou la journée partagée avec une app d’IA. Les valeurs manquantes sont omises. Les données de Santé ne sont pas jointes aux demandes de tâches ou de réponses. Aucune conclusion médicale ni conseil de santé n’est donné."
         },
         {
-          "q": "DayRecall me suit-il ou affiche-t-il des publicités ?",
-          "a": "Non. DayRecall ne comporte ni publicité, ni analyse d’utilisation, ni suivi, ni code tiers collectant des données. Pour aider à résoudre les problèmes, il garde sur vos appareils un journal de ses actions, jamais de ce qui a été dit, pendant 14 jours au maximum ; ce journal ne quitte votre iPhone que si vous le partagez."
+          "q": "DayRecall me suit-elle ou affiche-t-elle des publicités ?",
+          "a": "Non. DayRecall n’a ni publicités, ni analyses, ni suivi, ni code tiers collectant des données. Pour résoudre les problèmes, elle conserve sur vos appareils un journal de son activité, jamais des paroles, pendant au plus 14 jours ; il ne quitte l’iPhone que si vous le partagez."
         },
         {
-          "q": "Comment supprimer mes données ?",
-          "a": "Supprimez un enregistrement, ainsi que son texte et ses tâches, depuis sa page, ou supprimez tout via <strong>Réglages › Confidentialité › Supprimer tous les souvenirs</strong>. <strong>Supprimer ma voix</strong> efface votre empreinte vocale. La suppression de l’application efface ce qu’elle a stocké sur vos appareils ; les copies présentes dans d’anciennes sauvegardes restent jusqu’à leur remplacement."
+          "q": "Comment supprimer mes données ?",
+          "a": "Supprimez un enregistrement avec son texte et ses tâches depuis sa page, ou tout via <strong>Réglages › Confidentialité › Effacer tous les souvenirs</strong>. <strong>Supprimer ma voix</strong> efface votre empreinte vocale. Supprimer l’app efface ses données sur vos appareils ; les copies des anciennes sauvegardes restent jusqu’à leur remplacement."
         },
         {
-          "q": "Dois-je prévenir les personnes que DayRecall écoute ?",
-          "a": "Oui. Prévenez les personnes avec qui vous parlez. Certains endroits exigent le consentement de tous, même si seul le texte est conservé ; respectez les règles locales. Vous en êtes responsable, comme l’expliquent nos Conditions d’utilisation."
+          "q": "Dois-je prévenir les autres que DayRecall écoute ?",
+          "a": "Oui. Prévenez vos interlocuteurs. Certains lieux exigent le consentement de tous même si seul le texte est conservé. Respectez les règles locales ; cette responsabilité vous revient, comme l’expliquent nos conditions d’utilisation."
         }
       ]
     },
@@ -375,7 +376,313 @@
         "À faire",
         "Demander",
         "Archives"
+      ],
+      "steps": [
+        {
+          "t": "Demander",
+          "c": "Écrivez une question sur ce que vous avez enregistré ou touchez une suggestion."
+        },
+        {
+          "t": "Lire la réponse",
+          "c": "La réponse est tirée de vos enregistrements. Chaque numéro renvoie à l’enregistrement dont elle provient."
+        },
+        {
+          "t": "Consulter la source",
+          "c": "Touchez une source pour voir la phrase prononcée, mise en évidence dans la transcription."
+        }
       ]
+    },
+    "ui": {
+      "close": "Fermer",
+      "play": "Lire",
+      "pause": "Mettre en pause",
+      "replay": "Rejouer",
+      "prev": "Précédent",
+      "next": "Suivant",
+      "step": "Étape {n} sur {total}",
+      "progress": "Position dans l’animation",
+      "count": "{n} sur {total}",
+      "steps": "Étapes"
+    },
+    "todos": {
+      "office": "Bureau",
+      "l0": "Pouvez-vous m’envoyer le devis d’ici vendredi ?",
+      "l1": "Bien sûr, je l’enverrai vendredi.",
+      "l2": "Le point hebdomadaire a lieu lundi à 10:30.",
+      "l3": "D’accord, à ce moment-là.",
+      "todos": "À faire",
+      "toConfirm": "À confirmer",
+      "myTodos": "Mes tâches",
+      "events": "Événements",
+      "quote": "Envoyer le devis d’ici vendredi",
+      "sync": "Point hebdomadaire lundi à 10:30",
+      "dueMeta": "Pour vendredi · Entendu à 14:11",
+      "eventMeta": "Lundi 10:30 · Entendu à 14:11",
+      "inReminders": "Dans Rappels",
+      "cancel": "Annuler",
+      "add": "Ajouter",
+      "newEvent": "Nouvel événement",
+      "steps": [
+        {
+          "t": "Détecté",
+          "c": "DayRecall repère les tâches, les promesses et les réunions dans les paroles et indique les lignes dont elles sont tirées."
+        },
+        {
+          "t": "Confirmer une tâche",
+          "c": "Elles attendent dans À confirmer. Touchez la coche pour accepter une tâche et l’envoyer à Rappels."
+        },
+        {
+          "t": "Ajouter un événement",
+          "c": "Une réunion ouvre la fiche système d’ajout d’événement, où vous choisissez le calendrier. Rien n’est ajouté sans votre confirmation."
+        }
+      ]
+    },
+    "places": {
+      "settings": "Réglages",
+      "places": "Lieux",
+      "show": "Afficher la journée sur une carte",
+      "recordWith": "Noter les lieux avec",
+      "iphone": "iPhone",
+      "recommended": "Recommandé",
+      "alertTitle": "Afficher la journée sur une carte ?",
+      "alertMessage": "Cela consomme un peu plus de batterie. iOS va ensuite demander l’accès à la position : choisissez « Toujours » pour que les lieux soient notés quand DayRecall est fermé.",
+      "turnOn": "Activer",
+      "notNow": "Plus tard",
+      "today": "Aujourd’hui",
+      "names": [
+        "Café",
+        "Bureau",
+        "Parc"
+      ],
+      "parts": [
+        "2 moments de la journée",
+        "3 moments de la journée",
+        "2 moments de la journée"
+      ],
+      "heard": "Entendu ici",
+      "snippet": "Point hebdomadaire : version Mac d’abord.",
+      "steps": [
+        {
+          "t": "Activer",
+          "c": "Activez Afficher la journée sur une carte. iOS demande ensuite l’accès à la position : choisissez Toujours pour noter les lieux même lorsque DayRecall est fermé."
+        },
+        {
+          "t": "Les lieux d’une journée",
+          "c": "Chaque moment de la journée indique où les paroles ont été prononcées. Les lieux où vous êtes resté sont numérotés dans l’ordre de votre arrivée."
+        },
+        {
+          "t": "Où les paroles ont été prononcées",
+          "c": "Touchez un lieu pour le voir sur la carte et consulter ce qui s’y est dit."
+        }
+      ]
+    },
+    "day": {
+      "today": "Aujourd’hui",
+      "title2": "Mardi",
+      "timeline": "Chronologie",
+      "newest": "Plus récents en premier",
+      "a": {
+        "line": "Pouvez-vous m’envoyer le devis d’ici vendredi ?",
+        "quiet": "Calme · 1 h 20",
+        "time": "14:10–14:25",
+        "dur": "15 min"
+      },
+      "b": {
+        "line": "Le point hebdomadaire a lieu lundi à 10:30.",
+        "time": "12:35–12:50",
+        "dur": "15 min"
+      },
+      "c": {
+        "line": "Repoussons le lancement à vendredi.",
+        "time": "11:45–12:10",
+        "dur": "25 min",
+        "quiet": "Calme · 53 min"
+      },
+      "d": {
+        "line": "Sam a dit que le devis convient.",
+        "time": "10:30–10:52",
+        "dur": "22 min"
+      },
+      "searchPrompt": "Rechercher dans tout ce que vous avez entendu",
+      "query": "devis",
+      "matches": "3 résultats",
+      "thisWeek": "Cette semaine",
+      "weekRows": [
+        "2 h 10 de parole · Aujourd’hui",
+        "3 h 02 de parole",
+        "1 h 45 de parole"
+      ],
+      "results": [
+        {
+          "hit": "devis",
+          "when": "Aujourd’hui 14:10",
+          "pre": "Pouvez-vous m’envoyer le ",
+          "post": " pour vendredi ?"
+        },
+        {
+          "hit": "devis",
+          "when": "Mar. 10:42",
+          "pre": "Sam a dit que le ",
+          "post": " convient."
+        },
+        {
+          "hit": "devis",
+          "when": "Lun. 17:20",
+          "pre": "Je vérifierai le ",
+          "post": " ce soir."
+        }
+      ],
+      "steps": [
+        {
+          "t": "Une journée sur une chronologie",
+          "c": "Chaque partie de la journée figure sur une chronologie, de la plus récente à la plus ancienne, avec les périodes calmes entre elles."
+        },
+        {
+          "t": "Parcourir les jours précédents",
+          "c": "Touchez un jour de la semaine pour voir son déroulement, ou balayez vers les semaines précédentes."
+        },
+        {
+          "t": "Rechercher dans tout ce que vous avez entendu",
+          "c": "La recherche retrouve les mots dans toutes les conversations conservées."
+        }
+      ],
+      "sub2": "13 oct. · 3 h 02 de parole",
+      "weekdays": [
+        "LUN",
+        "MAR",
+        "MER",
+        "JEU",
+        "VEN",
+        "SAM",
+        "DIM"
+      ]
+    },
+    "week": {
+      "nav": "Votre semaine",
+      "title": "Choisissez ce qui va dans votre calendrier",
+      "events": "Événements · vers votre calendrier",
+      "todos": "Tâches et promesses · vers Rappels",
+      "t2": {
+        "title": "Sam envoie le texte mercredi",
+        "meta": "Échéance mercredi · Entendu à 14:10"
+      },
+      "steps": [
+        {
+          "t": "Votre semaine, au même endroit",
+          "c": "Toutes les échéances et promesses des sept prochains jours, d’après ce que vous avez entendu. Rien n’est encore ajouté."
+        },
+        {
+          "t": "Choisissez ce qui va dans votre calendrier",
+          "c": "Tout est coché au départ. Décochez ce que vous ne voulez pas."
+        },
+        {
+          "t": "Les ajouter",
+          "c": "Touchez Ajouter. Les éléments cochés vont dans Calendrier et Rappels ; ceux décochés restent dans « À confirmer »."
+        }
+      ],
+      "range": "19–25 OCT.",
+      "add": "Ajouter {n} éléments"
+    },
+    "handoff": {
+      "cards": [
+        {
+          "place": "Café",
+          "line": "Bonjour, avez-vous vu le devis ?",
+          "time": "09:02–09:41"
+        },
+        {
+          "place": "Bureau",
+          "line": "Point hebdomadaire : version Mac d’abord.",
+          "time": "14:10–14:25"
+        },
+        {
+          "place": "Parc",
+          "line": "Une randonnée ce week-end ?",
+          "time": "19:30–19:48"
+        }
+      ],
+      "handButton": "Transmettre à une app d’IA…",
+      "appMail": "Mail",
+      "appNotes": "Notes",
+      "appAI": "Votre app d’IA",
+      "appMore": "Plus",
+      "placeholder": "Message",
+      "chip": "La journée + votre question",
+      "answerTitle": "Récapitulatif de votre journée",
+      "bullets": [
+        "Devis accepté ; à envoyer d’ici lundi.",
+        "Point hebdomadaire : version Mac d’abord.",
+        "Randonnée prévue ce week-end."
+      ],
+      "promised": "Vos promesses",
+      "promisedItem": "Envoyer le devis d’ici vendredi",
+      "promisedToYou": "Promesses reçues",
+      "promisedToYouItem": "Sam envoie le texte mercredi",
+      "steps": [
+        {
+          "t": "Transmettre",
+          "c": "Touchez « Transmettre à une app d’IA ». Les conversations du jour et votre question sont réunies dans un fichier texte."
+        },
+        {
+          "t": "Choisir l’app",
+          "c": "Choisissez votre app d’IA dans la fenêtre qui s’ouvre. Le fichier est joint, prêt à être envoyé."
+        },
+        {
+          "t": "La réponse",
+          "c": "Quelques secondes plus tard : le récapitulatif, vos tâches et les promesses de chacun."
+        }
+      ]
+    },
+    "health": {
+      "settings": "Réglages",
+      "label": "Santé",
+      "show": "Afficher sommeil, activité et fréquence cardiaque",
+      "found": "Des données des 7 derniers jours ont été trouvées.",
+      "today": "Aujourd’hui",
+      "timeline": "Chronologie",
+      "newest": "Plus récents en premier",
+      "walking": "Marche",
+      "factTitle": "Fréquence cardiaque supérieure à la normale",
+      "question": "De quoi avons-nous parlé avant le coucher ?",
+      "answer": "Vous avez prévu une randonnée ce week-end.",
+      "source1": "1 source",
+      "snippet": "Une randonnée ce week-end ?",
+      "steps": [
+        {
+          "t": "Activer",
+          "c": "Désactivé jusqu’à votre activation. DayRecall lit alors le sommeil, les pas, les entraînements et la fréquence cardiaque dans Santé. Lecture seule."
+        },
+        {
+          "t": "Des indices sur votre journée",
+          "c": "Une partie de la journée peut indiquer que vous marchiez, veniez de faire du sport ou aviez une fréquence cardiaque supérieure à l’habitude. Ouvrez-la pour voir les valeurs."
+        },
+        {
+          "t": "Poser une question par activité",
+          "c": "Posez une question sur le moment avant le coucher ou pendant votre course : DayRecall recherche dans ces périodes."
+        }
+      ],
+      "note": "Lecture seule. Les données de santé restent dans un cache protégé sur cet iPhone et ne nous sont pas envoyées. Les étiquettes et valeurs ne vont à votre API ou à une app d’IA que si vous les ajoutez à un bilan ou une journée partagée. L’ajout est désactivé par défaut.",
+      "a": {
+        "time": "14:10–14:25",
+        "dur": "15 min"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "dur": "15 min"
+      },
+      "heartAbove": "Fréquence cardiaque supérieure à l’habitude · 96 bpm",
+      "sleep": "Sommeil · 23:40–6:50 · 7 h 10",
+      "factDetail": "Fréquence cardiaque environ 96 · au repos environ 62",
+      "when": "Hier 22:52"
     }
-  }
+  },
+  "health_01": "Santé",
+  "features_15": "Voir",
+  "health_02": "Parfois, vous vous souvenez grâce à ce que vous faisiez",
+  "health_03": "Une fois activée, DayRecall lit sommeil, marches, entraînements et fréquence cardiaque dans Santé. Ce sont des indices sur votre journée : une conversation peut indiquer qu’elle a eu lieu pendant une marche, juste après un entraînement ou avec une fréquence cardiaque supérieure à l’habitude.",
+  "health_04": "Étiquettes sur votre chronologie : marche, entraînement, sommeil, fréquence cardiaque supérieure à l’habitude",
+  "health_05": "Demandez « De quoi avons-nous parlé avant le coucher ? » ou « Qu’ai-je dit pendant ma course ? »",
+  "health_06": "Désactivé jusqu’à votre activation. Lecture seule : DayRecall n’écrit jamais dans Santé.",
+  "health_07": "Lecture seule. Les données de santé restent dans un cache protégé sur cet iPhone et ne nous sont pas envoyées. Les étiquettes et valeurs ne vont à votre API ou à une app d’IA que si vous les ajoutez à un bilan ou une journée partagée. L’ajout est désactivé par défaut.",
+  "health_09": "Animation : le réglage Santé est activé, la chronologie montre une marche et une fréquence cardiaque supérieure à l’habitude, et une question sur l’avant-coucher retrouve les paroles."
 }

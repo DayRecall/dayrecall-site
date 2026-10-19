@@ -1,20 +1,7 @@
 {
   "updated": "2026-10-18",
   "reason": "Numeric Health export merge: user opt-in, new permission choice, updated API recap and app-sharing disclosure; pending counsel review.",
-  "locales": [
-    "zh-Hant",
-    "da",
-    "de",
-    "es",
-    "fr",
-    "it",
-    "ja",
-    "ko",
-    "nl",
-    "pt-PT",
-    "sv",
-    "tr"
-  ],
+  "locales": [],
   "strings": [
     "how_08",
     "how_11",

@@ -12,7 +12,8 @@
     "Viser hvem der sagde hvad: Mig, Anden 1, Anden 2",
     "Følger samtaler på op til tre sprog og oversætter til dit sprog",
     "Finder opgaver, deadlines og møder for dig, så du kan bekræfte dem",
-    "Ingen konto og ingen server; svarene bruger Apples model på enheden"
+    "Valgfrie sundhedsspor: Appens anvendte input gemmes i en beskyttet lokal cache; sundhedsetiketter og værdier medtages kun i en opsummering til din API eller en dag delt med en AI-app, hvis du vælger at tilføje dem",
+    "Ingen konto eller DayRecall-server; opgaver, opsummeringer og svar bruger som standard denne iPhone eller din egen API, når du har opsat den og tilladt deling"
   ],
   "keywords": "AI-hukommelse, tale til tekst, transskription, mødereferat, diktafon, optagelse af møder, optageapp, Apple Watch, DayRecall",
   "top_01": "Gå til indholdet",
@@ -42,10 +43,10 @@
   "how_05": "Din Apple Watch lytter i de tidsrum, du vælger, også hvis din iPhone bliver liggende. Ét tryk om morgenen, og den stopper af sig selv. Vores egenudviklede ultralette talemodel kører direkte på uret og gemmer kun de øjeblikke, hvor nogen taler.",
   "how_06": "Lyden går i papirkurven og bliver til tekstlinjer mærket Mig og Anden 1; et møde, en opgave og en deadline plukkes ud.",
   "how_07": "Ordnet for dig",
-  "how_08": "Din iPhone omdanner tale til tekst på enheden, opbevarer ingen lyd og finder opgaver, deadlines og møder. Den kan også skelne mellem det, du selv sagde, og det, andre sagde.",
-  "how_09": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
+  "how_08": "Tale omdannes til tekst på denne iPhone, og lyden slettes efter transskription. Din valgte AI-motor finder opgaver, frister og møder. Den kan også skelne dine ord fra andres.",
+  "how_09": "Animationen viser standardtilstanden på enheden: minder kommer ind i iPhone, som låser; pakker på vej mod skyen stoppes og vender tilbage.",
   "how_10": "Privat fra start",
-  "how_11": "Dine minder bliver på din iPhone, og svarene bruger Apples model på enheden. Senere kan du vælge din egen cloud-API; intet sendes, før du tillader det.",
+  "how_11": "Som standard finder denne iPhone opgaver, skriver opsummeringer og besvarer spørgsmål. Hvis du vælger din egen API og giver tilladelse til at sende data, modtager den automatisk nye transskriptioner for at finde opgaver, dagens samtaler, når du beder om en opsummering, og dine spørgsmål med relevante uddrag. Lyd sendes aldrig til API’en.",
   "devices_01": "Enheder",
   "devices_02": "Din Apple Watch behøver ikke din iPhone i nærheden.",
   "devices_03": "Apple Watch lytter selv hele dagen. Det, uret hører, venter på uret og overføres til din iPhone hver anden time. Er din iPhone ikke i nærheden, overføres det, så snart de to forbindes igen, fx når du kommer hjem om aftenen. Din iPhone behøver ikke at være forbundet hele tiden.",
@@ -86,7 +87,7 @@
   "languages_05": "Hver del transskriberet på sit eget sprog",
   "languages_06": "Oversat til dit sprog",
   "languages_07": "Sproggenkendelse for en times samtale på cirka 32 sekunder",
-  "languages_08": "Flersproget transskription er en avanceret indstilling, slået fra som standard. Hastighed baseret på intern test på iPhone 17 Pro Max. Selve appen findes på 14 sprog.",
+  "languages_08": "Flersproget transskription er en avanceret indstilling, slået fra som standard. Hastigheden bygger på interne tests med iPhone 17 Pro Max. Selve appen fås på 14 sprog.",
   "languages_09": "Arbejdssprogene dansk, engelsk og kinesisk lyser op på skift, mens en linje på hvert sprog skrives ned; de engelske og kinesiske linjer får danske oversættelser.",
   "features_01": "Funktioner",
   "features_02": "Lavet til de detaljer, du ellers ville tabe",
@@ -100,24 +101,24 @@
   "features_10": "Hver uge samlet et sted: de kommende deadlines og løfter. Du vælger, hvad der kommer i din kalender.",
   "features_11": "Steder, hvis du vil have dem",
   "features_12": "Se, hvor hver samtale fandt sted, på et kort over din dag. Slået fra, til du tænder for det.",
-  "features_13": "Giv en dag til din AI-app",
-  "features_14": "Vil du dykke dybere? Send en dags udskrift til den AI-app, du bruger, som en tekstfil, kun når du selv vælger det.",
+  "features_13": "Opsummer din dag på din måde",
+  "features_14": "Skriv en opsummering med din valgte AI-motor, eller del de valgte samtaler fra dagen som en tekstfil med din AI-app. Hvis du vælger din API til at skrive den, sendes samtalerne til den tjeneste.",
   "privacy_01": "Anonymitet",
   "privacy_02": "Kun tekst. På din iPhone. Dit valg.",
-  "privacy_03": "Minderne glider ind i iPhone, og den låser sig; alt, der er på vej til skyen, stoppes og vender tilbage.",
+  "privacy_03": "Animationen viser standardtilstanden på enheden: minder kommer ind i iPhone, som låser; pakker på vej mod skyen stoppes og vender tilbage.",
   "privacy_04": "Kun tekst, ingen lyd gemmes",
   "privacy_05": "Det, der bliver sagt, omdannes til tekst på din iPhone. Lyden fjernes automatisk, når den er transskriberet, og opbevares ikke.",
   "privacy_06": "Ingen konto, ingen server fra os",
   "privacy_07": "Der er intet at oprette, og vi driver ikke servere, der kan se din dag.",
-  "privacy_08": "Intet sendes uden dit ja",
-  "privacy_09": "Svarene bruger Apples model på enheden. At give en dag til en AI-app eller bruge din egen cloud-API sker kun, når du tillader det.",
+  "privacy_08": "Vælg din AI-motor",
+  "privacy_09": "Som standard finder denne iPhone opgaver, skriver opsummeringer og besvarer spørgsmål. Hvis du vælger og tillader din egen API, sendes nye transskriptioner automatisk til opgaver, dagens samtaler, når du beder om en opsummering, og spørgsmål med relevante uddrag. Lyd sendes aldrig til API'en. Du kan også dele en valgt dag med en AI-app.",
   "privacy_10": "Du fortæller personen, du taler med; de siger ja, og I to er forbundet.",
   "privacy_11": "Sig det til dem omkring dig",
   "privacy_12": "Fortæl dem, du taler med, at DayRecall lytter med. Nogle steder kræver det samtykke fra alle, selv når der kun gemmes tekst, så følg reglerne, hvor du er.",
   "final_01": "AI-hukommelse for hele dagen.",
   "final_02": "Kommer snart til App Store",
   "final_03": "Hent DayRecall i App Store ",
-  "final_04": "Bedst med Apple Watch · Virker også alene med iPhone · På 14 sprog",
+  "final_04": "Bedst med Apple Watch · Virker med iPhone alene · På 14 sprog",
   "foot_01": "Apple Watch og iPhone er varemærker tilhørende Apple Inc., registreret i USA og andre lande og regioner.",
   "faq": [
     {
@@ -137,7 +138,7 @@
         },
         {
           "q": "Hvor er mine data, og hvem kan se dem?",
-          "a": "På din iPhone og i dens sikkerhedskopi, hvis du bruger en. Der er ingen konto og ingen DayRecall-server, så vi kan ikke se dem. Svar bruger Apples model på enheden, og intet forlader din iPhone, medmindre du vælger at bruge din egen cloud-API eller overdrage en dag til en AI-app."
+          "a": "Dine data gemmes på din iPhone og i de sikkerhedskopier, du vælger at lave. Der er ingen konto eller DayRecall-server, som modtager din dag. Opgaver, opsummeringer og svar bruger som standard denne iPhone. Vælger og tillader du din egen API, modtager den automatisk nye transskriptioner til opgaver, dagens samtaler, når du beder om en opsummering, og spørgsmål med relevante uddrag. Den kan først modtage spørgsmålet alene for at hjælpe med søgning. Du kan også dele en valgt dag med en AI-app. Modtagerne bruger egne privatlivsregler; lyd sendes aldrig til API'en."
         }
       ]
     },
@@ -146,11 +147,11 @@
       "items": [
         {
           "q": "Hvad skal jeg bruge for at benytte DayRecall?",
-          "a": "En iPhone med iOS 26 eller nyere, der understøtter Apples talegenkendelse på enheden. Et Apple Watch med watchOS 26 eller nyere er valgfrit, men anbefales. Svar og opgaver kræver også Apple Intelligence; til svar kan du i stedet bruge din egen cloud-API."
+          "a": "En iPhone med iOS 26 eller nyere, som understøtter Apples talegenkendelse på enheden. Et Apple Watch med watchOS 26 eller nyere er valgfrit. Opgaver, opsummeringer og svar bruger én AI-motor: denne iPhones model, som kræver Apple Intelligence, eller en OpenAI-kompatibel API, som du opsætter og tillader. Din API kræver internetforbindelse."
         },
         {
           "q": "Hvilke iPhone-modeller virker?",
-          "a": "DayRecall kræver iOS 26 eller nyere, som kører på iPhone 11 og nyere samt iPhone SE (2. generation) og nyere. Tale til tekst kræver desuden Apples talegenkendelse på enheden. Apple tilbyder den ikke på visse ældre modeller, herunder iPhone 11-modeller og iPhone SE (2. generation), så vi anbefaler iPhone 12 eller nyere. Hvis din iPhone ikke kan transskribere, fortæller DayRecall dig det. Svar og opgaver med Apple Intelligence kræver iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air eller iPhone 16 eller nyere."
+          "a": "DayRecall kræver iOS 26 eller nyere, som kører på iPhone 11 og nyere samt iPhone SE (2. generation) og nyere. Tale til tekst kræver også Apples talegenkendelse på enheden, som Apple ikke tilbyder på nogle ældre modeller, herunder iPhone 11-modeller og iPhone SE (2. generation). Derfor anbefaler vi iPhone 12 eller nyere. DayRecall giver besked, hvis din iPhone ikke kan transskribere. Til opgaver, opsummeringer og svar kræver På denne iPhone-motoren en enhed med Apple Intelligence. Min egen API kan udføre de tre opgaver uden Apple Intelligence; transskription kræver stadig den beskrevne talegenkendelse på enheden."
         },
         {
           "q": "Hvilke Apple Watch-modeller virker?",
@@ -162,7 +163,7 @@
         },
         {
           "q": "Virker det uden internetforbindelse?",
-          "a": "Ja. Lytning, transskription, svar og opgaver kører på dine enheder, så de virker offline, når iOS har hentet de nødvendige sprogmodeller. Steder på kortet og din egen cloud-API kræver forbindelse."
+          "a": "Lytning og transskription foregår på dine enheder. Når På denne iPhone er valgt, og nødvendige modeller er hentet og tilgængelige, virker opgaver, opsummeringer og svar også offline. Min egen API kræver internet til disse AI-opgaver. Steder på kortet kræver også forbindelse."
         }
       ]
     },
@@ -171,23 +172,23 @@
       "items": [
         {
           "q": "Hvorfor afhænger de understøttede sprog af Apple?",
-          "a": "DayRecall arbejder på din iPhone med Apples indbyggede teknologi: talegenkendelse til transskription, Apples oversættelse til oversættelse og Apple Intelligence til svar og opgaver. Hver del understøtter sit eget sæt sprog, som Apple fastlægger og udvider med iOS-opdateringer, og nogle kræver en nyere iPhone. Derfor kan et sprog være klar til transskription, men endnu ikke til oversættelse, eller virke på én iPhone, men ikke en anden. En iOS-opdatering kan tilføje sprog."
+          "a": "Transskription bruger Apples talegenkendelse på enheden, og oversættelse bruger Apples oversættelse; sprogunderstøttelsen afhænger af iPhone og iOS-version. Til opgaver, opsummeringer og svar bruger På denne iPhone Apple Intelligence og dets understøttede sprog. Med Min egen API afhænger sprogene af tjenesten og modellen. API-valget ændrer ikke understøttelsen af transskription eller oversættelse."
         },
         {
           "q": "Hvilke sprog kan DayRecall transskribere?",
-          "a": "Du kan vælge mellem engelsk (USA, Storbritannien), kinesisk (mandarin, Kina), traditionelt kinesisk (Taiwan), kantonesisk (Kina), japansk, koreansk, spansk, fransk, tysk, italiensk, portugisisk (Brasilien, Portugal), nederlandsk, svensk, dansk og tyrkisk. Hvert sprog virker kun, hvis Apples talegenkendelse på enheden understøtter det på din iPhone. Ellers markerer DayRecall sproget som ikke understøttet. Første gang du bruger et sprog, henter iOS dets talemodel."
+          "a": "Du kan vælge engelsk (USA, Storbritannien), kinesisk (mandarin, Kina), traditionelt kinesisk (Taiwan), kantonesisk (Kina), japansk, koreansk, spansk, fransk, tysk, italiensk, portugisisk (Brasilien, Portugal), nederlandsk, svensk, dansk og tyrkisk. Hvert sprog virker kun, hvis Apples talegenkendelse på din iPhone understøtter det; ellers markerer DayRecall det som ikke understøttet. Første gang henter iOS sprogets talemodel."
         },
         {
           "q": "Hvilke sprog kan appen oversætte?",
-          "a": "Linjer på dine andre arbejdssprog kan oversættes til dit hovedsprog med Apples oversættelse på enheden. Et sprogpar kan altså kun oversættes, hvis Apple understøtter det på din iPhone. Understøttelse af transskription garanterer ikke oversættelse, heller ikke for kantonesisk. Se de tilgængelige sprogpar i DayRecalls oversættelsesindstillinger. iOS henter hvert sprog før første brug. Apple viser de aktuelle sprog på sin <a href=\"https://www.apple.com/ios/feature-availability/\">side om tilgængelige funktioner</a>."
+          "a": "Linjer på dine andre arbejdssprog kan oversættes til dit hovedsprog med Apples oversættelse på enheden; et sprogpar virker derfor kun, hvis Apple understøtter det på din iPhone. Transskriptionsstøtte garanterer ikke oversættelsesstøtte, heller ikke for kantonesisk. Se sprogparrene i DayRecalls oversættelsesindstillinger. iOS henter hvert sprog før første brug. Apple viser aktuelle sprog på sin <a href=\"https://www.apple.com/ios/feature-availability/\">side om funktionstilgængelighed</a>."
         },
         {
-          "q": "Hvilke sprog virker til svar og opgaver?",
-          "a": "Svar og opgaver bruger Apple Intelligence, som understøtter engelsk, kinesisk (forenklet og traditionelt), dansk, nederlandsk, fransk, tysk, italiensk, japansk, koreansk, norsk, portugisisk, spansk, svensk, tyrkisk og vietnamesisk. Sproget på din iPhone og sproget i Siri skal være indstillet til det samme understøttede sprog. Apple Intelligence virker i øjeblikket ikke på iPhones købt i det kinesiske fastland eller i det kinesiske fastland med en Apple-konto til det kinesiske fastland. Der kan du stadig få svar via din egen cloud-API, men ikke opgaver. Se <a href=\"https://support.apple.com/en-us/121115\">Apples vejledning om Apple Intelligence</a>."
+          "q": "Hvilke sprog virker til opgaver, opsummeringer og svar?",
+          "a": "Det afhænger af AI-motoren. På denne iPhone bruger Apple Intelligence, så dets enheds-, sprog- og regionskrav gælder. Hvis Apple Intelligence er utilgængelig, også hvor Apple ikke tilbyder det, kan du vælge Min egen API til alle tre opgaver: opgaver, opsummeringer og svar. Sprogene afhænger af tjenesten og modellen. Se aktuelle Apple Intelligence-krav i <a href=\"https://support.apple.com/en-us/121115\">Apples vejledning</a>."
         },
         {
           "q": "Hvilke sprog findes selve appen på?",
-          "a": "Appens menuer og skærme findes på 14 sprog: engelsk, forenklet kinesisk, traditionelt kinesisk, dansk, nederlandsk, fransk, tysk, italiensk, japansk, koreansk, portugisisk (Portugal), spansk, svensk og tyrkisk. Det er adskilt fra de sprog, den kan transskribere."
+          "a": "Appens menuer og skærme fås på 14 sprog: engelsk, forenklet kinesisk, traditionelt kinesisk, dansk, nederlandsk, fransk, tysk, italiensk, japansk, koreansk, portugisisk (Portugal), spansk, svensk og tyrkisk. Dette er adskilt fra transskriptionssprogene."
         },
         {
           "q": "Kan den følge en samtale på flere sprog?",
@@ -216,7 +217,7 @@
         },
         {
           "q": "Kan jeg overdrage en dag til min egen AI-app?",
-          "a": "Ja. <strong>Overdrag dagen til en AI-app</strong> gør en dag til en tekstfil med et spørgsmål, du vælger, og du vælger appen i delingsmenuen. DayRecall sender ikke noget af sig selv. For at hente opgaver tilbage skal du kopiere AI-appens svar og trykke på <strong>Hent AI-svaret tilbage</strong>."
+          "a": "Ja. Åbn Opsummer din dag fra I dag, en tidligere dag eller Spørg. Skriv den her bruger AI-motoren valgt i Indstillinger. Vælg Giv til en AI-app… for at bruge en anden app, og vælg den i systemets delingsark; kun de samtaler, du lader være medtaget, kommer i tekstfilen. Kopiér AI'ens svar, og tryk på Hent AI'ens svar tilbage for at hente opgaverne tilbage."
         },
         {
           "q": "Kan jeg importere en lydfil?",
@@ -242,11 +243,11 @@
       "items": [
         {
           "q": "Forlader noget min iPhone?",
-          "a": "Kun når du vælger det. Med din egen cloud-API sender hvert spørgsmål dit spørgsmål og korte, relevante uddrag af dine transskriptioner til den tjeneste. Når du overdrager en dag til en AI-app, modtager den app den tekstfil, du sender. Steder bruger Apple Maps, og iCloud Backup indeholder dine data, hvis du bruger det. Privatlivspolitikken har detaljerne."
+          "a": "Når din egen API er valgt, og deling er tilladt, sendes nye transskriptioner automatisk i portioner for at finde opgaver, også uden spørgsmål. Skriv den her sender dagens valgte samtaler til tjenesten for en opsummering, med registrerede steder, hvis de findes, og kun sundhedsetiketter og værdier, hvis du vælger at tilføje dem. Spørgsmål sender spørgsmålet og relevante uddrag; spørgsmålet kan først sendes alene til søgning. Lyd og stemmeaftryk sendes aldrig til API'en. Du kan også dele en dag med en AI-app. Apple Kort og sikkerhedskopier har egne datastrømme, forklaret i privatlivspolitikken."
         },
         {
           "q": "Læser DayRecall mine sundhedsdata?",
-          "a": "Kun hvis du slår det til i Indstillinger › Sundhed. Så læser appen søvn, skridt og gangdistance, træninger og puls fra appen Sundhed for at sætte aktivitetsmærker på din dag og finde det, der blev sagt under en aktivitet, du spørger om. Den skriver aldrig til Sundhed, gemmer ikke de læste data og sender dem ikke til os. Når du giver en dag til en AI-app, er kontakten til at tilføje aktiviteter slået fra som standard og kræver din tilladelse, hver gang du slår den til. Så medtages kun korte mærker som «Går», aldrig pulstal eller antal skridt. Appen drager ingen medicinske konklusioner og giver ingen sundhedsråd; den beskriver kun det, dataene viser."
+          "a": "Kun hvis du slår det til i Indstillinger › Sundhed. DayRecall læser søvn, skridt og gangdistance, træning og puls for at mærke dagens dele og finde tidspunkterne for aktiviteter, du spørger om. Den skriver aldrig til Sundhed eller sender input til os. Anvendte input gemmes i en beskyttet lokal cache, som kan indgå i en adgangskodekrypteret manuel sikkerhedskopi, du opretter. Tilføj sundhedsdata er som standard slået fra på opsummerings- og overdragelsessiden. Aktivering beder om tilladelse, og valget huskes. Når det er slået til, medtages sundhedsetiketter, aktivitetstidspunkter og tilgængelige værdier for puls, skridt, distance og varighed i opsummeringer til din API eller dage delt med en AI-app. Manglende målinger udelades. Sundhedsposter vedhæftes ikke opgave- eller spørgsmålsanmodninger. Der gives ingen medicinske konklusioner eller sundhedsråd."
         },
         {
           "q": "Sporer DayRecall mig eller viser reklamer?",
@@ -364,7 +365,304 @@
         "Opgaver",
         "Spørg",
         "Arkiv"
+      ],
+      "steps": [
+        {
+          "t": "Spørg",
+          "c": "Skriv et spørgsmål om noget, du har optaget, eller tryk på et af forslagene."
+        },
+        {
+          "t": "Læs svaret",
+          "c": "Svaret kommer fra dine optagelser. Hvert tal peger på den optagelse, det stammer fra."
+        },
+        {
+          "t": "Tjek kilden",
+          "c": "Tryk på en kilde for at se den sagte linje markeret i transskriptionen."
+        }
       ]
+    },
+    "ui": {
+      "close": "Luk",
+      "play": "Afspil",
+      "pause": "Pause",
+      "replay": "Afspil igen",
+      "prev": "Forrige",
+      "next": "Næste",
+      "step": "Trin {n} af {total}",
+      "progress": "Placering i animationen",
+      "count": "{n} af {total}",
+      "steps": "Trin"
+    },
+    "todos": {
+      "office": "Kontoret",
+      "l0": "Kan du sende mig tilbuddet senest fredag?",
+      "l1": "Selvfølgelig, jeg sender det på fredag.",
+      "l2": "Det ugentlige møde er mandag kl. 10:30.",
+      "l3": "Forstået, vi ses der.",
+      "todos": "Opgaver",
+      "toConfirm": "Til bekræftelse",
+      "myTodos": "Mine opgaver",
+      "events": "Begivenheder",
+      "quote": "Send tilbuddet senest fredag",
+      "sync": "Ugentligt møde mandag kl. 10:30",
+      "dueMeta": "Senest fredag · Hørt 14:11",
+      "eventMeta": "Mandag 10:30 · Hørt 14:11",
+      "inReminders": "I Påmindelser",
+      "cancel": "Annuller",
+      "add": "Tilføj",
+      "newEvent": "Ny begivenhed",
+      "steps": [
+        {
+          "t": "Opfanget",
+          "c": "DayRecall finder opgaver, løfter og møder i det sagte og markerer de linjer, de stammer fra."
+        },
+        {
+          "t": "Bekræft en opgave",
+          "c": "De venter under Til bekræftelse. Tryk på fluebenet for at godkende en opgave, så føjes den til Påmindelser."
+        },
+        {
+          "t": "Tilføj en begivenhed",
+          "c": "Et møde åbner systemets ark til at tilføje en begivenhed, hvor du vælger kalender. Intet tilføjes, før du bekræfter."
+        }
+      ]
+    },
+    "places": {
+      "settings": "Indstillinger",
+      "places": "Steder",
+      "show": "Vis dagen på et kort",
+      "recordWith": "Noter steder med",
+      "iphone": "iPhone",
+      "recommended": "Anbefalet",
+      "alertTitle": "Vil du vise dagen på et kort?",
+      "alertMessage": "Det bruger lidt ekstra batteri. Derefter beder iOS om adgang til lokalitet: Vælg Altid, så steder også noteres, når DayRecall er lukket.",
+      "turnOn": "Slå til",
+      "notNow": "Ikke nu",
+      "today": "I dag",
+      "names": [
+        "Café",
+        "Kontoret",
+        "Park"
+      ],
+      "parts": [
+        "2 dele af dagen",
+        "3 dele af dagen",
+        "2 dele af dagen"
+      ],
+      "heard": "Hørt her",
+      "snippet": "Ugentligt møde: Mac-versionen først.",
+      "steps": [
+        {
+          "t": "Slå til",
+          "c": "Slå Vis dagen på et kort til. iOS beder så om adgang til din lokalitet: Vælg Altid, så steder noteres, mens DayRecall er lukket."
+        },
+        {
+          "t": "En dags steder",
+          "c": "Hver del af dagen viser, hvor noget blev sagt. De steder, du opholdt dig, nummereres i den rækkefølge, du kom til dem."
+        },
+        {
+          "t": "Hvor det blev sagt",
+          "c": "Tryk på et sted for at se det på kortet og se, hvad der blev sagt der."
+        }
+      ]
+    },
+    "day": {
+      "today": "I dag",
+      "title2": "Tirsdag",
+      "timeline": "Tidslinje",
+      "newest": "Nyeste først",
+      "a": {
+        "time": "14:10–14:25",
+        "line": "Kan du sende mig tilbuddet senest fredag?",
+        "quiet": "Stille · 1 t 20 min",
+        "dur": "15 min"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "line": "Det ugentlige møde er mandag kl. 10:30.",
+        "dur": "15 min"
+      },
+      "c": {
+        "time": "11:45–12:10",
+        "dur": "25 min",
+        "line": "Lad os flytte lanceringen til fredag.",
+        "quiet": "Stille · 53 min"
+      },
+      "d": {
+        "time": "10:30–10:52",
+        "line": "Sam sagde, at tilbuddet er i orden.",
+        "dur": "22 min"
+      },
+      "searchPrompt": "Søg i alt, hvad du har hørt",
+      "query": "tilbud",
+      "matches": "3 fund",
+      "thisWeek": "Denne uge",
+      "weekRows": [
+        "2 t 10 min tale · I dag",
+        "3 t 02 min tale",
+        "1 t 45 min tale"
+      ],
+      "results": [
+        {
+          "hit": "tilbud",
+          "when": "I dag 14.10",
+          "pre": "Kan du sende mig ",
+          "post": " senest fredag?"
+        },
+        {
+          "hit": "tilbud",
+          "when": "tir 10.42",
+          "pre": "Sam sagde, at ",
+          "post": " er i orden."
+        },
+        {
+          "hit": "tilbud",
+          "when": "man 17.20",
+          "pre": "Jeg tjekker ",
+          "post": " i aften."
+        }
+      ],
+      "steps": [
+        {
+          "t": "En dag på en tidslinje",
+          "c": "Hver del af dagen ligger på en tidslinje, nyeste først, med stille perioder imellem."
+        },
+        {
+          "t": "Bladr tilbage gennem dagene",
+          "c": "Tryk på en ugedag for at se, hvordan den gik, eller skub tilbage til tidligere uger."
+        },
+        {
+          "t": "Søg i alt, hvad du har hørt",
+          "c": "Søgning finder ordene i alle de samtaler, du har gemt."
+        }
+      ],
+      "sub2": "13. okt. · 3 t 02 min tale",
+      "weekdays": [
+        "MAN",
+        "TIR",
+        "ONS",
+        "TOR",
+        "FRE",
+        "LØR",
+        "SØN"
+      ]
+    },
+    "week": {
+      "nav": "Din uge",
+      "title": "Vælg, hvad der skal i kalenderen",
+      "events": "Begivenheder · til din kalender",
+      "todos": "Opgaver og løfter · til Påmindelser",
+      "t2": {
+        "title": "Sam sender teksten på onsdag",
+        "meta": "Frist onsdag · Hørt 14.10"
+      },
+      "steps": [
+        {
+          "t": "Din uge samlet ét sted",
+          "c": "Alle frister og løfter i de næste syv dage fra det, du har hørt. Intet er tilføjet endnu."
+        },
+        {
+          "t": "Vælg, hvad der skal i kalenderen",
+          "c": "Alt er markeret fra start. Fjern markeringen ved det, du ikke vil have med."
+        },
+        {
+          "t": "Tilføj dem",
+          "c": "Tryk på Tilføj. De markerede emner kommer i din kalender og Påmindelser; de umarkerede bliver i Til bekræftelse."
+        }
+      ],
+      "range": "19.–25. OKT.",
+      "add": "Tilføj {n} emner"
+    },
+    "handoff": {
+      "cards": [
+        {
+          "time": "09:02–09:41",
+          "place": "Café",
+          "line": "Godmorgen, så du tilbuddet?"
+        },
+        {
+          "time": "14:10–14:25",
+          "place": "Kontoret",
+          "line": "Ugentligt møde: Mac-versionen først."
+        },
+        {
+          "time": "19:30–19:48",
+          "place": "Park",
+          "line": "Vandretur i weekenden?"
+        }
+      ],
+      "handButton": "Giv til en AI-app…",
+      "appMail": "Mail",
+      "appNotes": "Noter",
+      "appAI": "Din AI-app",
+      "appMore": "Mere",
+      "placeholder": "Besked",
+      "chip": "Dagen + dit spørgsmål",
+      "answerTitle": "Opsummering af din dag",
+      "bullets": [
+        "Tilbud aftalt; send senest mandag.",
+        "Ugentligt møde: Mac-versionen først.",
+        "Vandretur planlagt til weekenden."
+      ],
+      "promised": "Du lovede",
+      "promisedItem": "Send tilbuddet senest fredag",
+      "promisedToYou": "Lovet til dig",
+      "promisedToYouItem": "Sam sender teksten på onsdag",
+      "steps": [
+        {
+          "t": "Giv videre",
+          "c": "Tryk på ”Giv til en AI-app”. Dagens samtaler og dit spørgsmål bliver til én tekstfil."
+        },
+        {
+          "t": "Vælg appen",
+          "c": "Vælg din AI-app i det ark, der åbnes. Filen følger med, klar til at sende."
+        },
+        {
+          "t": "Svaret",
+          "c": "Få sekunder senere: dagens opsummering, dine opgaver og hvem der lovede hvad."
+        }
+      ]
+    },
+    "health": {
+      "settings": "Indstillinger",
+      "label": "Sundhed",
+      "show": "Vis søvn, aktivitet og puls",
+      "found": "Fandt data fra de sidste 7 dage.",
+      "today": "I dag",
+      "timeline": "Tidslinje",
+      "newest": "Nyeste først",
+      "a": {
+        "time": "14:10–14:25",
+        "dur": "15 min"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "dur": "15 min"
+      },
+      "walking": "Gang",
+      "factTitle": "Højere puls end normalt",
+      "question": "Hvad talte vi om før sengetid?",
+      "answer": "Du planlagde en vandretur i weekenden.",
+      "source1": "1 kilde",
+      "snippet": "Vandretur i weekenden?",
+      "steps": [
+        {
+          "t": "Slå til",
+          "c": "Slået fra, indtil du aktiverer det. Derefter læser DayRecall søvn, skridt, træning og puls fra Sundhed. Kun læseadgang."
+        },
+        {
+          "t": "Spor i din dag",
+          "c": "En del af dagen kan vise, at du gik, lige havde trænet eller havde højere puls end normalt. Åbn den for at se tallene."
+        },
+        {
+          "t": "Spørg ud fra, hvad du lavede",
+          "c": "Spørg om før sengetid, eller mens du løb, så søger DayRecall i de tidsrum."
+        }
+      ],
+      "note": "Kun læseadgang. Sundhedsoplysninger ligger i en beskyttet cache på denne iPhone og sendes ikke til os. Sundhedsetiketter og værdier sendes kun til din API eller en AI-app, hvis du vælger at tilføje dem til en opsummering eller delt dag. Tilføjelse af sundhedsdata er slået fra som standard.",
+      "heartAbove": "Puls over normalt · 96 slag/min",
+      "sleep": "Sovende · 23.40–6.50 · 7 t 10 min",
+      "factDetail": "Puls omkring 96 · hvilepuls ca. 62",
+      "when": "I går 22.52"
     }
   },
   "nav_09": "FAQ",
@@ -377,5 +675,14 @@
   "faq_page_lead": "Sådan virker DayRecall, hvad du skal bruge, og hvad appen gemmer. Kan du ikke finde dit spørgsmål? Skriv til os.",
   "faq_page_toc": "Emner",
   "faq_page_more": "Har du stadig et spørgsmål?",
-  "faq_page_more_text": "Skriv til os, så vender vi tilbage."
+  "faq_page_more_text": "Skriv til os, så vender vi tilbage.",
+  "health_01": "Sundhed",
+  "features_15": "Ur",
+  "health_02": "Nogle gange husker du ud fra, hvad du lavede",
+  "health_03": "Slå det til, så læser DayRecall søvn, gåture, træning og puls fra Sundhed. De bliver spor i din dag: en samtale kan vise, at den fandt sted under en gåtur, lige efter træning eller med højere puls end normalt.",
+  "health_04": "Etiketter på tidslinjen: gang, træning, søvn, puls over normalt",
+  "health_05": "Spørg ”Hvad talte vi om før sengetid?” eller ”Hvad sagde jeg, mens jeg løb?”",
+  "health_06": "Slået fra, indtil du aktiverer det. Kun læseadgang: DayRecall skriver aldrig til Sundhed.",
+  "health_07": "Kun læseadgang. Sundhedsoplysninger ligger i en beskyttet cache på denne iPhone og sendes ikke til os. Sundhedsetiketter og værdier sendes kun til din API eller en AI-app, hvis du vælger at tilføje dem til en opsummering eller delt dag. Tilføjelse af sundhedsdata er slået fra som standard.",
+  "health_09": "Animation: Sundhed slås til, tidslinjen viser en gåtur og puls over normalt, og et spørgsmål om før sengetid finder det sagte."
 }

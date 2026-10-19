@@ -12,7 +12,8 @@
     "Marks who said what: Me, Other 1, Other 2",
     "Follows conversations in up to three languages, translated into yours",
     "Picks out to-dos, deadlines and meetings for you to confirm",
-    "No account and no server; answers use Apple’s on-device model"
+    "Optional Health clues: inputs used by the App are kept in a protected local cache; Health labels and values are included in a recap sent to your API or a day shared with an AI app only if you choose to add them",
+    "No account and no DayRecall server; to-dos, recaps and answers use this iPhone by default, or your own API after you configure it and allow sharing"
   ],
   "keywords": "",
   "top_01": "Skip to content",
@@ -43,10 +44,10 @@
   "how_05": "Your Apple Watch listens during the hours you choose, even with your iPhone left behind. One tap in the morning, and it stops on its own. Our in-house ultra-light speech model runs right on the watch and keeps only the moments when someone is talking.",
   "how_06": "The sound goes into the bin and becomes lines of text marked Me and Other 1; a meeting, a to-do and a deadline are picked out.",
   "how_07": "Organized for you",
-  "how_08": "Your iPhone turns the speech into text on the device, keeps no audio, and picks out the to-dos, deadlines and meetings. It can also tell what you said from what others said.",
-  "how_09": "Memories slide into the iPhone and it locks; anything heading for the cloud is stopped and comes back.",
+  "how_08": "Speech is turned into text on this iPhone, and the audio is cleared once transcribed. Your chosen AI engine finds to-dos, deadlines and meetings. It can also tell what you said from what others said.",
+  "how_09": "The animation shows the default on-device mode: memories enter the iPhone and it locks; packets heading for a cloud are stopped and return.",
   "how_10": "Private by default",
-  "how_11": "Your memories stay on your iPhone, and answers use Apple’s on-device model. You can choose your own cloud API later; nothing is sent until you allow it.",
+  "how_11": "By default, this iPhone finds to-dos, writes recaps and answers questions. If you choose and allow your own API, new transcripts are sent automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. Audio is never sent to the API.",
   "devices_01": "Devices",
   "devices_02": "Your watch doesn’t need your phone nearby.",
   "devices_03": "Apple Watch listens on its own, all day. What it hears waits on the watch and goes to your iPhone every two hours, and if your iPhone isn’t around, it catches up as soon as the two reconnect, say when you get home in the evening. Your iPhone never has to stay connected.",
@@ -87,7 +88,7 @@
   "languages_05": "Each part transcribed in its own language",
   "languages_06": "Translated into your language",
   "languages_07": "Language identification for an hour of talk in about 32 seconds",
-  "languages_08": "Multilingual transcription is an advanced setting, off by default. Speed based on internal testing on iPhone 17 Pro Max. The app itself comes in 13 languages.",
+  "languages_08": "Multilingual transcription is an advanced setting, off by default. Speed based on internal testing on iPhone 17 Pro Max. The app itself comes in 14 languages.",
   "languages_09": "The working languages English, Chinese and Japanese light up in turn as a line in each is written down; the Chinese and Japanese lines get English translations.",
   "features_01": "Features",
   "features_02": "Made for the details you’d otherwise lose",
@@ -101,24 +102,24 @@
   "features_10": "Each week, the deadlines and promises ahead in one place. You pick what goes on your calendar.",
   "features_11": "Places, if you want them",
   "features_12": "See where each conversation happened on a map of your day. Off until you turn it on.",
-  "features_13": "Hand a day to your AI app",
-  "features_14": "For a deeper look, send a day’s transcript to the AI app you use, as a text file, only when you choose.",
+  "features_13": "Recap your day, your way",
+  "features_14": "Write a recap with your chosen AI engine, or share the selected day’s conversations as a text file with the AI app you use. If you choose your API to write it, those conversations go to that service.",
   "privacy_01": "Privacy",
   "privacy_02": "Text only. On your iPhone. Your call.",
-  "privacy_03": "Memories slide into the iPhone and it locks; anything heading for the cloud is stopped and comes back.",
+  "privacy_03": "The animation shows the default on-device mode: memories enter the iPhone and it locks; packets heading for a cloud are stopped and return.",
   "privacy_04": "Text only, no audio kept",
   "privacy_05": "What’s said is turned into text on your iPhone. The audio is cleared automatically once it’s transcribed, and isn’t kept.",
   "privacy_06": "No account, no server of ours",
   "privacy_07": "There’s nothing to sign up for, and we don’t run servers that see your day.",
-  "privacy_08": "Nothing leaves without you",
-  "privacy_09": "Answers use Apple’s on-device model. Handing a day to an AI app, or using your own cloud API, happens only when you allow it.",
+  "privacy_08": "Choose your AI engine",
+  "privacy_09": "By default, this iPhone finds to-dos, writes recaps and answers questions. If you choose and allow your own API, new transcripts are sent automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. Audio is never sent to the API. You can also choose to share a selected day with an AI app.",
   "privacy_10": "You tell the person you are talking with; they agree, and the two of you are linked.",
   "privacy_11": "Tell the people around you",
   "privacy_12": "Tell the people you talk with that DayRecall is listening. Some places require everyone’s consent even when only text is kept, so follow the rules where you are.",
   "final_01": "AI memory for your whole day.",
   "final_02": "Coming soon to the App Store",
   "final_03": "Get DayRecall on the App Store ",
-  "final_04": "Best with Apple Watch · Works with iPhone alone · In 13 languages",
+  "final_04": "Best with Apple Watch · Works with iPhone alone · In 14 languages",
   "foot_01": "Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "faq": [
     {
@@ -138,7 +139,7 @@
         },
         {
           "q": "Where is my data, and who can see it?",
-          "a": "On your iPhone, and in its backup if you use one. There’s no account and no DayRecall server, so we can’t see it. Answers use Apple’s on-device model, and nothing leaves your iPhone unless you choose to use your own cloud API or hand a day to an AI app."
+          "a": "Your data is stored on your iPhone and in backups you choose to make. There is no account and no DayRecall server receiving your day. To-dos, recaps and answers use this iPhone by default. If you select and allow your own API, it receives new transcripts automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. It may first receive a question alone to help search. You can also share a selected day with an AI app. These recipients use their own privacy rules; audio is never sent to the API."
         }
       ]
     },
@@ -147,11 +148,11 @@
       "items": [
         {
           "q": "What do I need to use DayRecall?",
-          "a": "An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional, and recommended. Answers and to-dos also need Apple Intelligence; for answers, you can use your own cloud API instead."
+          "a": "An iPhone with iOS 26 or later that supports Apple’s on-device speech recognition. An Apple Watch with watchOS 26 or later is optional. To-dos, recaps and answers use one AI engine: this iPhone’s model, which requires Apple Intelligence, or an OpenAI-compatible API that you configure and allow. Your API needs an internet connection."
         },
         {
           "q": "Which iPhone models work?",
-          "a": "DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. Answers and to-dos with Apple Intelligence need iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air, or iPhone 16 or later."
+          "a": "DayRecall needs iOS 26 or later, which runs on iPhone 11 and later and iPhone SE (2nd generation) and later. Turning speech into text also needs Apple’s on-device speech recognition, which Apple doesn’t offer on some older models, including iPhone 11 models and iPhone SE (2nd generation), so we recommend iPhone 12 or later. If your iPhone can’t transcribe, DayRecall tells you. For to-dos, recaps and answers, the On this iPhone engine needs a device that supports Apple Intelligence. My own API can perform those three tasks without Apple Intelligence; transcription still requires the on-device speech recognition described above."
         },
         {
           "q": "Which Apple Watch models work?",
@@ -163,7 +164,7 @@
         },
         {
           "q": "Does it work without an internet connection?",
-          "a": "Yes. Listening, transcription, answers and to-dos run on your devices, so they work offline once iOS has downloaded the language models they need. Places on the map and your own cloud API need a connection."
+          "a": "Listening and transcription run on your devices. With On this iPhone selected and its required models downloaded and available, to-dos, recaps and answers also work offline. My own API needs an internet connection for those AI tasks. Places on the map also need a connection."
         }
       ]
     },
@@ -172,23 +173,23 @@
       "items": [
         {
           "q": "Why do the supported languages depend on Apple?",
-          "a": "DayRecall does its work on your iPhone with Apple’s built-in technology: speech recognition to transcribe, Apple’s translation to translate, and Apple Intelligence for answers and to-dos. Each supports its own set of languages, which Apple decides and expands with iOS updates, and some need a recent iPhone. So a language may be ready for transcription but not yet for translation, or work on one iPhone and not on another. Updating iOS can add languages."
+          "a": "Transcription uses Apple’s on-device speech recognition, and translation uses Apple’s translation; their supported languages depend on the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone uses Apple Intelligence and its supported languages. With My own API, language support depends on the service and model you choose. Choosing an API does not change transcription or translation support."
         },
         {
           "q": "Which languages can DayRecall transcribe?",
-          "a": "You can choose from English (US, UK), Chinese (Mandarin), Japanese, Korean, Spanish, French, German, Italian, Portuguese (Brazil, Portugal), Dutch, Swedish, Danish and Turkish. Each works only if Apple’s on-device speech recognition supports it on your iPhone; if it doesn’t, DayRecall marks the language as not supported. The first time you use a language, iOS downloads its speech model."
+          "a": "You can choose from English (US, UK), Chinese (Mandarin, China mainland), Traditional Chinese (Taiwan), Cantonese (China mainland), Japanese, Korean, Spanish, French, German, Italian, Portuguese (Brazil, Portugal), Dutch, Swedish, Danish and Turkish. Each works only if Apple’s on-device speech recognition supports it on your iPhone; if it doesn’t, DayRecall marks the language as not supported. The first time you use a language, iOS downloads its speech model."
         },
         {
           "q": "Which languages can it translate?",
-          "a": "Lines in your other working languages can be translated into your main language with Apple’s on-device translation, so a pair of languages can be translated only if Apple supports it on your iPhone. On iOS 27, that covers every language DayRecall transcribes; on iOS 26, fewer: Danish and Swedish, for example, aren’t included. iOS downloads each language before its first use. Apple lists the current languages on its <a href=\"https://www.apple.com/ios/feature-availability/\">feature availability page</a>."
+          "a": "Lines in your other working languages can be translated into your main language with Apple’s on-device translation, so a pair of languages can be translated only if Apple supports it on your iPhone. Transcription support does not guarantee translation support, including for Cantonese. Check the available language pairs in DayRecall’s translation settings. iOS downloads each language before its first use. Apple lists the current languages on its <a href=\"https://www.apple.com/ios/feature-availability/\">feature availability page</a>."
         },
         {
-          "q": "Which languages work for answers and to-dos?",
-          "a": "Answers and to-dos use Apple Intelligence, which supports English, Chinese (simplified and traditional), Danish, Dutch, French, German, Italian, Japanese, Korean, Norwegian, Portuguese, Spanish, Swedish, Turkish and Vietnamese. Your iPhone’s language and Siri’s language need to be set to the same supported language. Apple Intelligence doesn’t currently work on iPhones bought in mainland China, or in mainland China with a mainland China Apple Account; there, you can still get answers through your own cloud API, but not to-dos. See <a href=\"https://support.apple.com/en-us/121115\">Apple’s guide to Apple Intelligence</a>."
+          "q": "Which languages work for to-dos, recaps and answers?",
+          "a": "It depends on the AI engine. On this iPhone uses Apple Intelligence, so its device, language and region requirements apply. If Apple Intelligence is unavailable, including where Apple does not offer it, you can choose My own API for all three tasks: to-dos, recaps and answers. Its supported languages depend on the service and model you choose. See <a href=\"https://support.apple.com/en-us/121115\">Apple’s guide</a> for the current Apple Intelligence requirements."
         },
         {
           "q": "Which languages is the app in?",
-          "a": "The app’s menus and screens come in 13 languages: English, Simplified Chinese, Danish, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Portugal), Spanish, Swedish and Turkish. This is separate from the languages it can transcribe."
+          "a": "The app’s menus and screens come in 14 languages: English, Simplified Chinese, Traditional Chinese, Danish, Dutch, French, German, Italian, Japanese, Korean, Portuguese (Portugal), Spanish, Swedish and Turkish. This is separate from the languages it can transcribe."
         },
         {
           "q": "Can it follow a conversation in more than one language?",
@@ -217,7 +218,7 @@
         },
         {
           "q": "Can I hand a day to my own AI app?",
-          "a": "Yes. <strong>Hand the day to an AI app</strong> turns a day into a text file, with a question you pick, and you choose the app in the share sheet; DayRecall sends nothing by itself. To bring to-dos back, copy the AI’s answer and tap <strong>Bring the AI’s answer back</strong>."
+          "a": "Yes. Open Recap your day from Today, a past day or Ask. Write it here uses the AI engine you selected in Settings. To use another app, choose Hand to an AI app… and select it in the system share sheet; only the conversations you leave included go into the text file. To bring its to-dos back, copy the AI’s answer and tap Bring the AI’s answer back."
         },
         {
           "q": "Can I import an audio file?",
@@ -243,7 +244,11 @@
       "items": [
         {
           "q": "Does anything leave my iPhone?",
-          "a": "Only when you choose. With your own cloud API, each question sends that service your question and short matching excerpts of your transcripts. When you hand a day to an AI app, that app gets the text file you send it. Places use Apple Maps, and iCloud Backup includes your data if you use it. The Privacy Policy has the details."
+          "a": "With your own API selected and sharing allowed, new transcripts are sent automatically in batches to find to-dos, even when you are not asking questions. Write it here sends the selected day’s conversations to that service for a recap, including recorded places if present and Health labels and values only if you choose to add them. Questions send the question and matching excerpts; the question may first be sent alone to help search. Audio and your voiceprint are never sent to the API. You can also share a day with an AI app. Apple Maps and backups have their own data flows, explained in the Privacy Policy."
+        },
+        {
+          "q": "Does DayRecall read my Health data?",
+          "a": "Only if you turn it on in Settings › Health. DayRecall reads sleep, steps and walking distance, workouts and heart rate to label parts of your day and find the times of activities you ask about. It never writes to Health or sends the inputs to us. Inputs used by the App are kept in a protected local cache, which can be included in a password-encrypted manual backup you create. On the recap and hand-over page, Add health data is off by default. Turning it on asks for permission and your choice is remembered. With it on, Health labels and activity times are included in a recap sent to your API or a day shared with an AI app; available heart rate, step, distance and duration values are included. Missing readings are left out. Health records are not attached to to-do or question requests. No medical conclusions or health advice are given."
         },
         {
           "q": "Does DayRecall track me or show ads?",
@@ -371,7 +376,313 @@
         "To-dos",
         "Ask",
         "Library"
+      ],
+      "steps": [
+        {
+          "t": "Ask",
+          "c": "Type a question about anything you recorded, or tap one of the suggestions."
+        },
+        {
+          "t": "Read the answer",
+          "c": "The answer comes from your recordings. Each number points to the recording it came from."
+        },
+        {
+          "t": "Check the source",
+          "c": "Tap a source to see the line that was said, marked in the transcript."
+        }
+      ]
+    },
+    "ui": {
+      "close": "Close",
+      "play": "Play",
+      "pause": "Pause",
+      "replay": "Replay",
+      "prev": "Previous",
+      "next": "Next",
+      "step": "Step {n} of {total}",
+      "progress": "Position in the animation",
+      "count": "{n} of {total}",
+      "steps": "Steps"
+    },
+    "todos": {
+      "office": "Office",
+      "l0": "Can you send me the quote by Friday?",
+      "l1": "Sure, I'll send it on Friday.",
+      "l2": "Weekly sync is Monday at 10:30.",
+      "l3": "Got it, see you then.",
+      "todos": "To-dos",
+      "toConfirm": "To confirm",
+      "myTodos": "My to-dos",
+      "events": "Events",
+      "quote": "Send the quote by Friday",
+      "sync": "Weekly sync on Monday at 10:30",
+      "dueMeta": "Due Friday · Heard 14:11",
+      "eventMeta": "Monday 10:30 · Heard 14:11",
+      "inReminders": "In Reminders",
+      "cancel": "Cancel",
+      "add": "Add",
+      "newEvent": "New Event",
+      "steps": [
+        {
+          "t": "Picked up",
+          "c": "DayRecall finds to-dos, promises and meetings in what was said, and marks the lines they came from."
+        },
+        {
+          "t": "Confirm a to-do",
+          "c": "They wait in To confirm. Tap the check mark to accept a to-do, and it goes to Reminders."
+        },
+        {
+          "t": "Add an event",
+          "c": "A meeting opens the system’s add-event sheet, where you choose the calendar. Nothing is added until you confirm."
+        }
+      ]
+    },
+    "places": {
+      "settings": "Settings",
+      "places": "Places",
+      "show": "Show the day on a map",
+      "recordWith": "Record places with",
+      "iphone": "iPhone",
+      "recommended": "Recommended",
+      "alertTitle": "Show the day on a map?",
+      "alertMessage": "This uses some extra battery. Next, iOS asks for location access: choose Always, so places are noted while DayRecall is closed.",
+      "turnOn": "Turn on",
+      "notNow": "Not now",
+      "today": "Today",
+      "names": [
+        "Café",
+        "Office",
+        "Park"
+      ],
+      "parts": [
+        "2 parts of the day",
+        "3 parts of the day",
+        "2 parts of the day"
+      ],
+      "heard": "Heard here",
+      "snippet": "Weekly sync: Mac version first.",
+      "steps": [
+        {
+          "t": "Turn it on",
+          "c": "Turn on Show the day on a map. iOS then asks for location access: choose Always, so places are noted while DayRecall is closed."
+        },
+        {
+          "t": "A day of places",
+          "c": "Each part of the day shows where it was said. The places you stayed at are numbered in the order you reached them."
+        },
+        {
+          "t": "Where it was said",
+          "c": "Tap a place to see it on the map, and what was said there."
+        }
+      ]
+    },
+    "day": {
+      "today": "Today",
+      "title2": "Tuesday",
+      "sub2": "Oct 13 · 3h 02m speech",
+      "weekdays": [
+        "MON",
+        "TUE",
+        "WED",
+        "THU",
+        "FRI",
+        "SAT",
+        "SUN"
+      ],
+      "timeline": "Timeline",
+      "newest": "Newest first",
+      "a": {
+        "time": "14:10–14:25",
+        "dur": "15 min",
+        "line": "Can you send me the quote by Friday?",
+        "quiet": "Quiet · 1h 20m"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "dur": "15 min",
+        "line": "Weekly sync is Monday at 10:30."
+      },
+      "c": {
+        "time": "11:45–12:10",
+        "dur": "25 min",
+        "line": "Let’s push the launch to Friday.",
+        "quiet": "Quiet · 53 min"
+      },
+      "d": {
+        "time": "10:30–10:52",
+        "dur": "22 min",
+        "line": "Sam said the quote is fine."
+      },
+      "searchPrompt": "Search everything you heard",
+      "query": "quote",
+      "matches": "3 matches",
+      "thisWeek": "This week",
+      "weekRows": [
+        "2h 10m speech · Today",
+        "3h 02m speech",
+        "1h 45m speech"
+      ],
+      "results": [
+        {
+          "when": "Today 14:10",
+          "pre": "Can you send me the ",
+          "hit": "quote",
+          "post": " by Friday?"
+        },
+        {
+          "when": "Tue 10:42",
+          "pre": "Sam said the ",
+          "hit": "quote",
+          "post": " is fine."
+        },
+        {
+          "when": "Mon 17:20",
+          "pre": "I’ll check the ",
+          "hit": "quote",
+          "post": " tonight."
+        }
+      ],
+      "steps": [
+        {
+          "t": "A day on a timeline",
+          "c": "Each part of the day sits on a timeline, newest first, with the quiet stretches in between."
+        },
+        {
+          "t": "Flip back through days",
+          "c": "Tap any day of the week to see how it went, or swipe back to earlier weeks."
+        },
+        {
+          "t": "Search everything you heard",
+          "c": "Search finds the words in every conversation you’ve kept."
+        }
+      ]
+    },
+    "week": {
+      "nav": "Your week",
+      "range": "OCT 19 – OCT 25",
+      "title": "Pick what goes on your calendar",
+      "events": "Events · to your calendar",
+      "todos": "To-dos and promises · to Reminders",
+      "add": "Add {n} items",
+      "t2": {
+        "title": "Sam sends the copy on Wednesday",
+        "meta": "Due Wednesday · Heard 14:10"
+      },
+      "steps": [
+        {
+          "t": "Your week, in one place",
+          "c": "Every deadline and promise coming up in the next seven days, from what you heard. Nothing is added yet."
+        },
+        {
+          "t": "Pick what goes on your calendar",
+          "c": "Everything starts ticked. Untick what you don’t want."
+        },
+        {
+          "t": "Add them",
+          "c": "Tap Add. The ticked ones go to your calendar and Reminders; what you left unticked stays in To confirm."
+        }
+      ]
+    },
+    "handoff": {
+      "cards": [
+        {
+          "time": "09:02–09:41",
+          "place": "Café",
+          "line": "Morning, did you see the quote?"
+        },
+        {
+          "time": "14:10–14:25",
+          "place": "Office",
+          "line": "Weekly sync: Mac version first."
+        },
+        {
+          "time": "19:30–19:48",
+          "place": "Park",
+          "line": "Hike this weekend?"
+        }
+      ],
+      "handButton": "Hand to an AI app…",
+      "appMail": "Mail",
+      "appNotes": "Notes",
+      "appAI": "Your AI app",
+      "appMore": "More",
+      "placeholder": "Message",
+      "chip": "The day + your question",
+      "answerTitle": "Recap of your day",
+      "bullets": [
+        "Quote agreed; send it by Monday.",
+        "Weekly sync: Mac version first.",
+        "Weekend hike planned."
+      ],
+      "promised": "You promised",
+      "promisedItem": "Send the quote by Friday",
+      "promisedToYou": "Promised to you",
+      "promisedToYouItem": "Sam sends the copy on Wednesday",
+      "steps": [
+        {
+          "t": "Hand over",
+          "c": "Tap “Hand to an AI app”. The day’s conversations and your question become one text file."
+        },
+        {
+          "t": "Pick the app",
+          "c": "Pick the AI app you use in the sheet that opens. The file goes along, ready to send."
+        },
+        {
+          "t": "The answer",
+          "c": "A few seconds later: the recap, your to-dos, who promised what."
+        }
+      ]
+    },
+    "health": {
+      "settings": "Settings",
+      "label": "Health",
+      "show": "Show sleep, activity and heart rate",
+      "found": "Found data from the last 7 days.",
+      "note": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels and values go to your API or an AI app only if you choose to add them to a recap or shared day. Adding Health data is off by default.",
+      "today": "Today",
+      "timeline": "Timeline",
+      "newest": "Newest first",
+      "a": {
+        "time": "14:10–14:25",
+        "dur": "15 min"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "dur": "15 min"
+      },
+      "walking": "Walking",
+      "heartAbove": "Heart rate above usual · 96 bpm",
+      "sleep": "Asleep · 23:40 – 6:50 · 7h 10m",
+      "factTitle": "Heart rate above usual",
+      "factDetail": "Heart rate around 96 · resting heart rate about 62",
+      "question": "What did we talk about before bed?",
+      "answer": "You planned a hike for this weekend.",
+      "source1": "1 source",
+      "when": "Yesterday 22:52",
+      "snippet": "Hike this weekend?",
+      "steps": [
+        {
+          "t": "Turn it on",
+          "c": "Off until you turn it on. Then DayRecall reads sleep, steps, workouts and heart rate from the Health app. Read only."
+        },
+        {
+          "t": "Clues on your day",
+          "c": "A part of the day can say you were walking, just after a workout, or had a heart rate faster than usual. Open it to see the numbers."
+        },
+        {
+          "t": "Ask by what you were doing",
+          "c": "Ask about before bed or while you were running, and DayRecall looks in those times."
+        }
       ]
     }
-  }
+  },
+  "features_15": "Watch",
+  "health_01": "Health",
+  "health_02": "Sometimes you remember by what you were doing",
+  "health_03": "Turn it on and DayRecall reads your sleep, walks, workouts and heart rate from the Health app. They become clues on your day: a conversation can say it happened while you were walking, just after a workout, or with a heart rate faster than usual.",
+  "health_04": "Labels on your timeline: walking, working out, asleep, heart rate above usual",
+  "health_05": "Ask “What did we talk about before bed?” or “What did I say while I was running?”",
+  "health_06": "Off until you turn it on. Read only: DayRecall never writes to Health.",
+  "health_07": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels and values go to your API or an AI app only if you choose to add them to a recap or shared day. Adding Health data is off by default.",
+  "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said."
 }

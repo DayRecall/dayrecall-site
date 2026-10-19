@@ -12,7 +12,8 @@
     "Kimin ne dediğini işaretler: Ben, Diğer 1, Diğer 2",
     "En fazla üç dildeki konuşmayı takip eder ve sizin dilinize çevirir",
     "Görevleri, son tarihleri ve toplantıları onaylamanız için ayıklar",
-    "Hesap ve sunucu yok; yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir"
+    "İsteğe bağlı Sağlık ipuçları: Uygulamanın kullandığı girdiler korumalı yerel önbellekte tutulur; Sağlık etiketleri ve değerleri ancak siz eklemeyi seçerseniz API'nize gönderilen özete veya yapay zekâ uygulamasıyla paylaşılan güne eklenir",
+    "Hesap veya DayRecall sunucusu yok; görevler, özetler ve yanıtlar varsayılan olarak bu iPhone'u, yapılandırıp paylaşıma izin verirseniz kendi API'nizi kullanır"
   ],
   "keywords": "Apple Watch sesi metne çevirme, konuşmayı yazıya dökme, toplantı notları, yapay zeka hafızası, AI hafıza uygulaması, unutkanlık, DayRecall",
   "top_01": "İçeriğe geç",
@@ -43,10 +44,10 @@
   "how_05": "iPhone'unuz yanınızda olmasa bile Apple Watch'unuz seçtiğiniz saatlerde dinler. Sabah tek dokunuş yeter; ardından kendiliğinden durur. Kendi geliştirdiğimiz ultra hafif konuşma modeli doğrudan saatin üzerinde çalışır ve yalnızca birinin konuştuğu anları tutar.",
   "how_06": "Ses çöp kutusuna gider ve Ben ile Diğer 1 olarak işaretlenmiş metin satırlarına dönüşür; bir toplantı, bir görev ve bir son tarih ayıklanır.",
   "how_07": "Sizin için düzenlenir",
-  "how_08": "iPhone'unuz konuşmayı cihaz üzerinde metne çevirir, ses saklamaz ve görevleri, son tarihleri ve toplantıları ayıklar. Sizin söylediklerinizi başkalarının söylediklerinden de ayırt edebilir.",
-  "how_09": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
+  "how_08": "Konuşma bu iPhone'da metne dönüştürülür, döküm çıkarılınca ses silinir. Seçtiğiniz yapay zekâ motoru görevleri, son tarihleri ve toplantıları bulur. Sizin söylediklerinizi başkalarınınkinden de ayırabilir.",
+  "how_09": "Animasyon, varsayılan aygıtta çalışma modunu gösterir: anılar iPhone'a girer ve telefon kilitlenir; buluta giden paketler durdurulup geri döner.",
   "how_10": "Baştan gizli",
-  "how_11": "Anılarınız iPhone'unuzda kalır ve yanıtlar Apple'ın cihaz üzerindeki modeliyle verilir. İsterseniz daha sonra kendi bulut API'nizi seçebilirsiniz; siz izin verene kadar hiçbir şey gönderilmez.",
+  "how_11": "Varsayılan olarak bu iPhone görevleri bulur, gün özetleri yazar ve soruları yanıtlar. Kendi API’nizi seçip veri gönderimine izin verirseniz görevleri bulmak için yeni dökümler otomatik olarak gönderilir. Bir özet istediğinizde günün konuşmaları, soru sorduğunuzda ise sorunuz ve ilgili alıntılar gönderilir. Ses hiçbir zaman API’ye gönderilmez.",
   "devices_01": "Cihazlar",
   "devices_02": "Apple Watch'unuzun iPhone'unuzun yakınında olması gerekmez.",
   "devices_03": "Apple Watch gün boyu kendi başına dinler. Duydukları Apple Watch'ta bekler ve her iki saatte bir iPhone'unuza gönderilir; iPhone'unuz yanınızda değilse, iki cihaz yeniden bağlandığında, örneğin akşam eve döndüğünüzde, aktarılır. iPhone'unuzun sürekli bağlı kalması gerekmez.",
@@ -87,7 +88,7 @@
   "languages_05": "Her bölüm kendi dilinde yazıya dökülür",
   "languages_06": "Sizin dilinize çevrilir",
   "languages_07": "Bir saatlik konuşmada dil tanıma yaklaşık 32 saniyede",
-  "languages_08": "Çok dilli yazıya dökme gelişmiş bir ayardır ve varsayılan olarak kapalıdır. Hız, iPhone 17 Pro Max üzerindeki dahili teste dayanır. Uygulamanın kendisi 14 dilde sunulur.",
+  "languages_08": "Çok dilli döküm, varsayılan olarak kapalı ileri düzey bir ayardır. Hız, iPhone 17 Pro Max'teki dâhilî testlere dayanır. Uygulamanın kendisi 14 dilde sunulur.",
   "languages_09": "Çalışma dilleri Türkçe, İngilizce ve Çince sırayla işaretlenir ve her birinde bir satır yazıya dökülür; İngilizce ve Çince satırların Türkçe çevirisi gösterilir.",
   "features_01": "Özellikler",
   "features_02": "Unutacağınız ayrıntılar için tasarlandı",
@@ -101,24 +102,24 @@
   "features_10": "Her hafta, önümüzdeki son tarihler ve sözler tek bir yerde. Takviminize neyin ekleneceğini siz seçersiniz.",
   "features_11": "İsterseniz Yerler",
   "features_12": "Her konuşmanın gününüzün haritasında nerede geçtiğini görün. Siz açana kadar kapalıdır.",
-  "features_13": "Bir günü AI uygulamanıza aktarın",
-  "features_14": "Daha derin bir bakış için, yalnızca siz seçtiğinizde, bir günün metnini kullandığınız AI uygulamasına metin dosyası olarak gönderin.",
+  "features_13": "Gününüzü kendi tarzınızda özetleyin",
+  "features_14": "Seçtiğiniz yapay zekâ motoruyla özet yazın veya seçilen günün konuşmalarını metin dosyası olarak kullandığınız yapay zekâ uygulamasıyla paylaşın. Yazması için API'nizi seçerseniz konuşmalar o hizmete gider.",
   "privacy_01": "Gizlilik",
   "privacy_02": "Yalnızca metin. iPhone'unuzda. Karar sizde.",
-  "privacy_03": "Anılar iPhone'a kayar ve kilit altında kalır; buluta gönderilecek her şey durdurulur ve geri döner.",
+  "privacy_03": "Animasyon, varsayılan aygıtta çalışma modunu gösterir: anılar iPhone'a girer ve telefon kilitlenir; buluta giden paketler durdurulup geri döner.",
   "privacy_04": "Yalnızca metin; ses saklanmaz",
   "privacy_05": "Konuşma iPhone'unuzda metne çevrilir. Ses, yazıya döküldükten sonra otomatik olarak silinir ve saklanmaz.",
   "privacy_06": "Hesap yok, bizim sunucumuz yok",
   "privacy_07": "Kaydolmanız gereken bir şey yok; gününüzü gören sunucuları da çalıştırmıyoruz.",
-  "privacy_08": "Siz izin vermeden hiçbir şey dışarı çıkmaz",
-  "privacy_09": "Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Bir günü bir AI uygulamasına aktarmak ya da kendi bulut API'nizi kullanmak yalnızca siz izin verdiğinizde gerçekleşir.",
+  "privacy_08": "Yapay zekâ motorunuzu seçin",
+  "privacy_09": "Varsayılan olarak bu iPhone görevleri bulur, özetleri yazar ve soruları yanıtlar. Kendi API'nizi seçip izin verirseniz görevler için yeni dökümler otomatik, özet istediğinizde günün konuşmaları ve eşleşen alıntılarla sorular gönderilir. Ses asla API'ye gönderilmez. Seçtiğiniz bir günü yapay zekâ uygulamasıyla da paylaşabilirsiniz.",
   "privacy_10": "Konuştuğunuz kişiye söylersiniz; o kişi kabul eder ve ikiniz birbirinize bağlanırsınız.",
   "privacy_11": "Çevrenizdekilere söyleyin",
   "privacy_12": "Konuştuğunuz kişilere DayRecall'ın dinlediğini söyleyin. Bazı yerlerde yalnızca metin tutulsa bile herkesin rızası gerekir; bulunduğunuz yerin kurallarına uyun.",
   "final_01": "Tüm gününüz için AI hafızası.",
   "final_02": "Yakında App Store'da",
   "final_03": "DayRecall'ı App Store'dan edinin ",
-  "final_04": "En iyisi Apple Watch ile · Yalnız iPhone ile de çalışır · 14 dilde",
+  "final_04": "Apple Watch ile en iyi deneyim · Yalnızca iPhone ile de çalışır · 14 dilde",
   "foot_01": "Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.",
   "faq": [
     {
@@ -138,7 +139,7 @@
         },
         {
           "q": "Verilerim nerede ve kim görebilir?",
-          "a": "Veriler iPhone'unuzdadır; yedekleme kullanıyorsanız yedeğinizde de bulunur. Hesap ve DayRecall sunucusu olmadığı için biz onları göremeyiz. Yanıtlar Apple'ın cihaz üzerindeki modelini kullanır. Kendi bulut API'nizi kullanmayı ya da bir günü AI uygulamasına aktarmayı seçmediğiniz sürece iPhone'unuzdan hiçbir şey çıkmaz."
+          "a": "Verileriniz iPhone'unuzda ve oluşturmayı seçtiğiniz yedeklerde saklanır. Gününüzü alan bir hesap veya DayRecall sunucusu yoktur. Görevler, özetler ve yanıtlar varsayılan olarak bu iPhone'u kullanır. Kendi API'nizi seçip izin verirseniz görevler için yeni dökümleri otomatik, özet istediğinizde günün konuşmalarını ve eşleşen alıntılarla soruları alır. Aramaya yardımcı olmak için önce yalnızca soruyu alabilir. Seçtiğiniz günü bir yapay zekâ uygulamasıyla da paylaşabilirsiniz. Alıcıların kendi gizlilik kuralları geçerlidir; ses asla API'ye gönderilmez."
         }
       ]
     },
@@ -147,11 +148,11 @@
       "items": [
         {
           "q": "DayRecall'ı kullanmak için ne gerekli?",
-          "a": "iOS 26 veya sonraki bir sürümü çalıştıran ve Apple'ın cihaz üzerinde konuşma tanıma özelliğini destekleyen bir iPhone gerekir. watchOS 26 veya sonraki bir sürümü çalıştıran Apple Watch isteğe bağlıdır, ancak önerilir. Yanıtlar ve görevler için Apple Intelligence da gerekir; yanıtlar için bunun yerine kendi bulut API'nizi kullanabilirsiniz."
+          "a": "Apple'ın aygıtta konuşma tanımasını destekleyen, iOS 26 veya üzeri bir iPhone. watchOS 26 veya üzeri Apple Watch isteğe bağlıdır. Görevler, özetler ve yanıtlar tek yapay zekâ motoru kullanır: Apple Intelligence gerektiren bu iPhone'un modeli veya yapılandırıp izin verdiğiniz OpenAI uyumlu API. API'niz internet bağlantısı gerektirir."
         },
         {
           "q": "Hangi iPhone modelleriyle çalışır?",
-          "a": "DayRecall için iOS 26 veya sonrası gerekir. Bu sürüm iPhone 11 ve sonraki modellerde, ayrıca iPhone SE (2. nesil) ve sonraki modellerde çalışır. Konuşmayı metne çevirmek için Apple'ın cihaz üzerinde konuşma tanıma özelliği de gerekir. Apple bu özelliği iPhone 11 modelleri ve iPhone SE (2. nesil) dahil bazı eski modellere sunmadığından iPhone 12 veya sonrasını öneriyoruz. iPhone'unuz yazıya dökemiyorsa DayRecall bunu bildirir. Apple Intelligence ile yanıtlar ve görevler için iPhone 15 Pro, iPhone 15 Pro Max, iPhone Air ya da iPhone 16 veya sonrası gerekir."
+          "a": "DayRecall, iPhone 11 ve sonrası ile iPhone SE (2. nesil) ve sonrasında çalışan iOS 26 veya üzerini gerektirir. Metne dönüştürme, Apple'ın iPhone 11 modelleri ve iPhone SE (2. nesil) dâhil bazı eski modellerde sunmadığı aygıtta konuşma tanımasını da gerektirir; bu yüzden iPhone 12 veya sonrasını öneririz. iPhone'unuz döküm çıkaramıyorsa DayRecall bildirir. Görevler, özetler ve yanıtlar için Bu iPhone'da motoru Apple Intelligence destekli aygıt gerektirir. Kendi API'm bu üç işi Apple Intelligence olmadan yapabilir; döküm yine yukarıdaki aygıtta konuşma tanımasını gerektirir."
         },
         {
           "q": "Hangi Apple Watch modelleriyle çalışır?",
@@ -163,7 +164,7 @@
         },
         {
           "q": "İnternet bağlantısı olmadan çalışır mı?",
-          "a": "Evet. Dinleme, yazıya dökme, yanıtlar ve görevler cihazlarınızda çalışır. iOS gerekli dil modellerini indirdikten sonra bunları çevrimdışı kullanabilirsiniz. Haritada yerleri göstermek ve kendi bulut API'nizi kullanmak için bağlantı gerekir."
+          "a": "Dinleme ve döküm aygıtlarınızda çalışır. Bu iPhone'da seçili ve gerekli modeller indirilip kullanılabilir olduğunda görevler, özetler ve yanıtlar da çevrimdışı çalışır. Kendi API'm bu yapay zekâ işleri için internet gerektirir. Haritadaki yerler de bağlantı gerektirir."
         }
       ]
     },
@@ -172,23 +173,23 @@
       "items": [
         {
           "q": "Desteklenen diller neden Apple'a bağlı?",
-          "a": "DayRecall işlemleri iPhone'unuzda Apple'ın yerleşik teknolojileriyle yapar: yazıya dökmek için konuşma tanıma, çevirmek için Apple çevirisi, yanıtlar ve görevler için Apple Intelligence. Bunların her birinin desteklediği dilleri Apple belirler ve iOS güncellemeleriyle genişletir; bazıları yeni bir iPhone gerektirir. Dolayısıyla bir dil yazıya dökmede çalışırken çeviride henüz çalışmayabilir veya bir iPhone'da çalışıp diğerinde çalışmayabilir. iOS güncellemesi yeni diller ekleyebilir."
+          "a": "Döküm Apple'ın aygıtta konuşma tanımasını, çeviri Apple'ın çevirisini kullanır; desteklenen diller iPhone ve iOS sürümüne bağlıdır. Görevler, özetler ve yanıtlar için Bu iPhone'da, Apple Intelligence ve desteklediği dilleri kullanır. Kendi API'm ile dil desteği seçtiğiniz hizmete ve modele bağlıdır. API seçimi döküm veya çeviri desteğini değiştirmez."
         },
         {
           "q": "DayRecall hangi dilleri yazıya dökebilir?",
-          "a": "İngilizce (ABD, Birleşik Krallık), Çince (Mandarin, Çin ana karası), Geleneksel Çince (Tayvan), Kantonca (Çin ana karası), Japonca, Korece, İspanyolca, Fransızca, Almanca, İtalyanca, Portekizce (Brezilya, Portekiz), Felemenkçe, İsveççe, Danca ve Türkçe arasından seçebilirsiniz. Her dil yalnızca Apple'ın cihaz üzerinde konuşma tanıma özelliği iPhone'unuzda onu destekliyorsa çalışır; desteklemiyorsa DayRecall dili desteklenmiyor olarak işaretler. Bir dili ilk kez kullandığınızda iOS konuşma modelini indirir."
+          "a": "İngilizce (ABD, Birleşik Krallık), Çince (Mandarin, Çin ana karası), Geleneksel Çince (Tayvan), Kantonca (Çin ana karası), Japonca, Korece, İspanyolca, Fransızca, Almanca, İtalyanca, Portekizce (Brezilya, Portekiz), Felemenkçe, İsveççe, Danca ve Türkçe seçilebilir. Yalnızca Apple'ın aygıtta konuşma tanıması iPhone'unuzda destekliyorsa çalışır; yoksa DayRecall desteklenmiyor olarak işaretler. İlk kullanımda iOS konuşma modelini indirir."
         },
         {
           "q": "Hangi dilleri çevirebilir?",
-          "a": "Diğer çalışma dillerinizdeki satırlar Apple'ın cihaz üzerindeki çeviri özelliğiyle ana dilinize çevrilebilir. Bunun için dil çiftinin Apple tarafından iPhone'unuzda desteklenmesi gerekir. Yazıya dökme desteği, Kantonca dahil, çeviri desteğini garanti etmez. Kullanılabilir dil çiftlerini DayRecall’ın çeviri ayarlarında kontrol edin. iOS her dili ilk kullanımdan önce indirir. Güncel diller Apple'ın <a href=\"https://www.apple.com/ios/feature-availability/\">özellik kullanılabilirliği sayfasında</a> listelenir."
+          "a": "Diğer çalışma dillerinizdeki satırlar Apple'ın aygıtta çevirisiyle ana dilinize çevrilebilir; dil çifti ancak Apple iPhone'unuzda destekliyorsa çevrilir. Döküm desteği, Kantonca dâhil çeviri desteğini garanti etmez. DayRecall çeviri ayarlarında mevcut çiftleri kontrol edin. iOS her dili ilk kullanımdan önce indirir. Apple güncel dilleri <a href=\"https://www.apple.com/ios/feature-availability/\">özellik kullanılabilirliği sayfasında</a> listeler."
         },
         {
-          "q": "Yanıtlar ve görevler hangi dillerde çalışır?",
-          "a": "Yanıtlar ve görevler Apple Intelligence kullanır. Desteklenen diller İngilizce, Çince (basitleştirilmiş ve geleneksel), Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Norveççe, Portekizce, İspanyolca, İsveççe, Türkçe ve Vietnamcadır. iPhone'unuzun dili ile Siri'nin dili desteklenen aynı dile ayarlanmalıdır. Apple Intelligence şu anda Çin ana karasında satın alınan iPhone'larda veya Çin ana karasında bir Çin ana karası Apple Account ile kullanılan iPhone'larda çalışmıyor. Orada kendi bulut API'nizle yanıt alabilirsiniz, ancak görevler kullanılamaz. Ayrıntılar için <a href=\"https://support.apple.com/en-us/121115\">Apple'ın Apple Intelligence kılavuzuna</a> bakın."
+          "q": "Görevler, özetler ve yanıtlar hangi dillerde çalışır?",
+          "a": "Yapay zekâ motoruna bağlıdır. Bu iPhone'da, Apple Intelligence kullanır; aygıt, dil ve bölge gereksinimleri geçerlidir. Apple'ın sunmadığı yerler dâhil Apple Intelligence yoksa üç iş için de Kendi API'm seçilebilir: görevler, özetler ve yanıtlar. Dil desteği hizmet ve modele bağlıdır. Güncel Apple Intelligence gereksinimleri için <a href=\"https://support.apple.com/en-us/121115\">Apple'ın rehberine</a> bakın."
         },
         {
           "q": "Uygulamanın kendisi hangi dillerde?",
-          "a": "Uygulamanın menüleri ve ekranları 14 dilde sunulur: İngilizce, Basitleştirilmiş Çince, Geleneksel Çince, Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce (Portekiz), İspanyolca, İsveççe ve Türkçe. Bu, yazıya dökebildiği dillerden ayrı bir listedir."
+          "a": "Uygulama menüleri ve ekranları 14 dilde sunulur: İngilizce, Basitleştirilmiş Çince, Geleneksel Çince, Danca, Felemenkçe, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce (Portekiz), İspanyolca, İsveççe ve Türkçe. Bu, döküm çıkarılabilen dillerden ayrıdır."
         },
         {
           "q": "Birden fazla dildeki konuşmayı takip edebilir mi?",
@@ -217,7 +218,7 @@
         },
         {
           "q": "Bir günü kendi AI uygulamama aktarabilir miyim?",
-          "a": "Evet. <strong>Günü bir AI uygulamasına aktar</strong> bir günü, seçtiğiniz soruyla birlikte metin dosyasına dönüştürür. Paylaşım sayfasında uygulamayı siz seçersiniz; DayRecall kendiliğinden hiçbir şey göndermez. Görevleri geri almak için AI yanıtını kopyalayıp <strong>AI yanıtını geri getir</strong> seçeneğine dokunun."
+          "a": "Evet. Bugün'den, geçmiş bir günden veya Sor'dan Gününüzü özetleyin'i açın. Burada yaz, Ayarlar'da seçtiğiniz yapay zekâ motorunu kullanır. Başka uygulama için Yapay zekâ uygulamasına aktar… seçip sistem paylaşım sayfasında uygulamayı seçin; yalnızca dâhil bıraktığınız konuşmalar metin dosyasına girer. Görevleri geri almak için yapay zekâ yanıtını kopyalayıp Yapay zekâ yanıtını geri getir'e dokunun."
         },
         {
           "q": "Ses dosyası içe aktarabilir miyim?",
@@ -243,11 +244,11 @@
       "items": [
         {
           "q": "iPhone'umdan dışarı bir şey çıkar mı?",
-          "a": "Yalnızca siz seçtiğinizde. Kendi bulut API'nizi kullanırsanız her soru, sorunuzu ve metinlerinizden kısa, ilgili alıntıları o hizmete gönderir. Bir günü AI uygulamasına aktarırsanız uygulama, gönderdiğiniz metin dosyasını alır. Yerler özelliği Apple Maps'i kullanır; iCloud Backup kullanıyorsanız verileriniz de yedeklemeye dahildir. Ayrıntılar Gizlilik Politikası'nda yer alır."
+          "a": "Kendi API'niz seçili ve paylaşım izinliyken soru sormasanız da görev bulmak için yeni dökümler otomatik olarak gruplar hâlinde gönderilir. Burada yaz, seçili günün konuşmalarını özet için hizmete gönderir; kayıtlı yerler varsa eklenir, Sağlık etiketleri ve değerleri yalnızca siz seçerseniz eklenir. Sorular, soruyu ve eşleşen alıntıları gönderir; arama için önce tek başına soru gönderilebilir. Ses ve ses iziniz asla API'ye gönderilmez. Günü yapay zekâ uygulamasıyla da paylaşabilirsiniz. Apple Harita ve yedeklerin veri akışları Gizlilik Politikası'nda açıklanır."
         },
         {
           "q": "DayRecall Sağlık verilerimi okur mu?",
-          "a": "Yalnızca Ayarlar › Sağlık bölümünden açarsanız. Ardından gününüzdeki etkinlikleri işaretlemek ve sorduğunuz bir etkinlik sırasında söylenenleri bulmak için Sağlık uygulamasından uyku, adım sayısı ve yürüme mesafesi, antrenman ve kalp atış hızı verilerini okur. Sağlık’a hiçbir zaman veri yazmaz, okuduğu verileri saklamaz ve bize göndermez. Bir günü bir AI uygulamasına aktarırken etkinlik ekleme seçeneği varsayılan olarak kapalıdır ve her açışınızda izin ister. İzin verirseniz dosyaya yalnızca “Yürüyor” gibi kısa etiketler eklenir; kalp atış hızı veya adım sayıları eklenmez. Uygulama tıbbi sonuçlar çıkarmaz ve sağlık tavsiyesi vermez; yalnızca verilerin gösterdiğini belirtir."
+          "a": "Yalnızca Ayarlar › Sağlık'ta açarsanız. DayRecall, günün bölümlerini etiketlemek ve sorduğunuz etkinliklerin zamanını bulmak için uyku, adım, yürüme mesafesi, antrenman ve nabız okur. Sağlık'a asla yazmaz veya girdileri bize göndermez. Kullanılan girdiler korumalı yerel önbellekte tutulur; oluşturduğunuz parola şifreli elle yedeğe eklenebilir. Özet ve aktarma sayfasındaki Sağlık verileri ekle varsayılan olarak kapalıdır. Açarken izin istenir ve seçiminiz hatırlanır. Açıkken Sağlık etiketleri, etkinlik zamanları ve mevcut nabız, adım, mesafe ve süre değerleri API'nize gönderilen özete veya yapay zekâ uygulamasıyla paylaşılan güne eklenir. Eksik ölçümler atlanır. Sağlık kayıtları görev veya soru isteklerine eklenmez. Tıbbi sonuç veya sağlık tavsiyesi verilmez."
         },
         {
           "q": "DayRecall beni izler veya reklam gösterir mi?",
@@ -375,7 +376,313 @@
         "Görevler",
         "Sor",
         "Arşiv"
+      ],
+      "steps": [
+        {
+          "t": "Sor",
+          "c": "Kaydettiğiniz herhangi bir şey hakkında soru yazın veya önerilerden birine dokunun."
+        },
+        {
+          "t": "Yanıtı oku",
+          "c": "Yanıt kayıtlarınızdan gelir. Her sayı, kaynak alındığı kaydı gösterir."
+        },
+        {
+          "t": "Kaynağı denetle",
+          "c": "Söylenen satırın dökümde işaretlenmiş hâlini görmek için bir kaynağa dokunun."
+        }
       ]
+    },
+    "ui": {
+      "close": "Kapat",
+      "play": "Oynat",
+      "pause": "Duraklat",
+      "replay": "Yeniden oynat",
+      "prev": "Önceki",
+      "next": "Sonraki",
+      "step": "Adım {n} / {total}",
+      "progress": "Animasyondaki konum",
+      "count": "{n} / {total}",
+      "steps": "Adımlar"
+    },
+    "todos": {
+      "office": "Ofis",
+      "l0": "Teklifi cuma gününe kadar gönderebilir misiniz?",
+      "l1": "Elbette, cuma günü göndereceğim.",
+      "l2": "Haftalık toplantı pazartesi 10:30'da.",
+      "l3": "Tamam, o zaman görüşürüz.",
+      "todos": "Görevler",
+      "toConfirm": "Onay bekleyenler",
+      "myTodos": "Görevlerim",
+      "events": "Etkinlikler",
+      "quote": "Teklifi cuma gününe kadar gönder",
+      "sync": "Pazartesi 10:30'da haftalık toplantı",
+      "dueMeta": "Son gün cuma · 14:11'de duyuldu",
+      "eventMeta": "Pazartesi 10:30 · 14:11'de duyuldu",
+      "inReminders": "Anımsatıcılar'da",
+      "cancel": "Vazgeç",
+      "add": "Ekle",
+      "newEvent": "Yeni Etkinlik",
+      "steps": [
+        {
+          "t": "Çıkarıldı",
+          "c": "DayRecall, söylenenlerden görevleri, sözleri ve toplantıları bulur; kaynak satırlarını işaretler."
+        },
+        {
+          "t": "Görevi onayla",
+          "c": "Onay bekleyenler'de bekler. Bir görevi kabul etmek için onay işaretine dokunun; görev Anımsatıcılar'a gider."
+        },
+        {
+          "t": "Etkinlik ekle",
+          "c": "Bir toplantı, takvimi seçtiğiniz sistem etkinlik ekleme sayfasını açar. Onaylamadan hiçbir şey eklenmez."
+        }
+      ]
+    },
+    "places": {
+      "settings": "Ayarlar",
+      "places": "Yerler",
+      "show": "Günü haritada göster",
+      "recordWith": "Yerleri kaydeden aygıt",
+      "iphone": "iPhone",
+      "recommended": "Önerilen",
+      "alertTitle": "Gün haritada gösterilsin mi?",
+      "alertMessage": "Bu biraz daha fazla pil kullanır. Ardından iOS konum erişimi isteyecek: Her Zaman'ı seçin; böylece DayRecall kapalıyken de yerler not edilir.",
+      "turnOn": "Aç",
+      "notNow": "Şimdi değil",
+      "today": "Bugün",
+      "names": [
+        "Kafe",
+        "Ofis",
+        "Park"
+      ],
+      "parts": [
+        "Günün 2 bölümü",
+        "Günün 3 bölümü",
+        "Günün 2 bölümü"
+      ],
+      "heard": "Burada duyulanlar",
+      "snippet": "Haftalık toplantı: Önce Mac sürümü.",
+      "steps": [
+        {
+          "t": "Aç",
+          "c": "“Günü haritada göster”i açın. iOS konum erişimi istediğinde Her Zaman'ı seçin; böylece DayRecall kapalıyken de yerler not edilir."
+        },
+        {
+          "t": "Gün boyunca gidilen yerler",
+          "c": "Günün her bölümü, sözlerin nerede söylendiğini gösterir. Kaldığınız yerler, varış sıranıza göre numaralandırılır."
+        },
+        {
+          "t": "Nerede söylendi?",
+          "c": "Haritada görmek ve orada neler söylendiğini okumak için bir yere dokunun."
+        }
+      ]
+    },
+    "day": {
+      "today": "Bugün",
+      "title2": "Salı",
+      "timeline": "Zaman tüneli",
+      "newest": "En yeni önce",
+      "a": {
+        "time": "14:10–14:25",
+        "line": "Teklifi cuma gününe kadar gönderebilir misiniz?",
+        "quiet": "Sessiz · 1 sa. 20 dk.",
+        "dur": "15 dk"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "line": "Haftalık toplantı pazartesi 10:30'da.",
+        "dur": "15 dk"
+      },
+      "c": {
+        "time": "11:45–12:10",
+        "dur": "25 dk",
+        "line": "Lansmanı cumaya erteleyelim.",
+        "quiet": "Sessiz · 53 dk"
+      },
+      "d": {
+        "time": "10:30–10:52",
+        "line": "Sam teklifin uygun olduğunu söyledi.",
+        "dur": "22 dk"
+      },
+      "searchPrompt": "Duyduğunuz her şeyde arayın",
+      "query": "teklif",
+      "matches": "3 eşleşme",
+      "thisWeek": "Bu hafta",
+      "weekRows": [
+        "2 sa. 10 dk. konuşma · Bugün",
+        "3 sa. 02 dk. konuşma",
+        "1 sa. 45 dk. konuşma"
+      ],
+      "results": [
+        {
+          "hit": "teklifi",
+          "when": "Bugün 14.10",
+          "pre": "Bana ",
+          "post": " cuma gününe kadar gönderebilir misiniz?"
+        },
+        {
+          "hit": "teklifin",
+          "when": "Sal 10.42",
+          "pre": "Sam, ",
+          "post": " uygun olduğunu söyledi."
+        },
+        {
+          "hit": "teklifi",
+          "when": "Pzt 17.20",
+          "pre": "Bu akşam ",
+          "post": " kontrol edeceğim."
+        }
+      ],
+      "steps": [
+        {
+          "t": "Zaman çizelgesinde bir gün",
+          "c": "Günün her bölümü, aradaki sessiz sürelerle birlikte en yeniden başlayarak zaman çizelgesinde yer alır."
+        },
+        {
+          "t": "Önceki günlere dönün",
+          "c": "Nasıl geçtiğini görmek için haftanın bir gününe dokunun veya önceki haftalara kaydırın."
+        },
+        {
+          "t": "Duyduğunuz her şeyde arayın",
+          "c": "Arama, sakladığınız her konuşmadaki sözcükleri bulur."
+        }
+      ],
+      "sub2": "13 Eki · 3 sa. 02 dk. konuşma",
+      "weekdays": [
+        "PZT",
+        "SAL",
+        "ÇAR",
+        "PER",
+        "CUM",
+        "CMT",
+        "PAZ"
+      ]
+    },
+    "week": {
+      "nav": "Haftanız",
+      "title": "Takviminize ne gireceğini seçin",
+      "events": "Etkinlikler · takviminize",
+      "todos": "Görevler ve sözler · Anımsatıcılar'a",
+      "t2": {
+        "title": "Sam metni çarşamba günü gönderecek",
+        "meta": "Son tarih Çarşamba · 14.10'da duyuldu"
+      },
+      "steps": [
+        {
+          "t": "Haftanız tek yerde",
+          "c": "Duyduklarınızdaki önümüzdeki yedi güne ait tüm son tarihler ve sözler. Henüz hiçbir şey eklenmedi."
+        },
+        {
+          "t": "Takviminize ne gireceğini seçin",
+          "c": "Başlangıçta her şey seçilidir. İstemediklerinizin işaretini kaldırın."
+        },
+        {
+          "t": "Bunları ekle",
+          "c": "Ekle'ye dokunun. İşaretliler Takvim ve Anımsatıcılar'a gider; işaretlemedikleriniz Onaylanacaklar'da kalır."
+        }
+      ],
+      "range": "19–25 EKİM",
+      "add": "{n} öğe ekle"
+    },
+    "handoff": {
+      "cards": [
+        {
+          "time": "09:02–09:41",
+          "place": "Kafe",
+          "line": "Günaydın, teklifi gördünüz mü?"
+        },
+        {
+          "time": "14:10–14:25",
+          "place": "Ofis",
+          "line": "Haftalık toplantı: Önce Mac sürümü."
+        },
+        {
+          "time": "19:30–19:48",
+          "place": "Park",
+          "line": "Hafta sonu doğa yürüyüşüne ne dersiniz?"
+        }
+      ],
+      "handButton": "Yapay zekâ uygulamasına aktar…",
+      "appMail": "Mail",
+      "appNotes": "Notlar",
+      "appAI": "Yapay zekâ uygulamanız",
+      "appMore": "Daha fazla",
+      "placeholder": "Mesaj",
+      "chip": "Gün + sorunuz",
+      "answerTitle": "Gününüzün özeti",
+      "bullets": [
+        "Teklifte anlaşıldı; pazartesiye kadar gönderilecek.",
+        "Haftalık toplantı: Önce Mac sürümü.",
+        "Hafta sonu doğa yürüyüşü planlandı."
+      ],
+      "promised": "Verdiğiniz sözler",
+      "promisedItem": "Teklifi cuma gününe kadar gönder",
+      "promisedToYou": "Size verilen sözler",
+      "promisedToYouItem": "Sam metni çarşamba günü gönderecek",
+      "steps": [
+        {
+          "t": "Aktar",
+          "c": "“Yapay zekâ uygulamasına aktar”a dokunun. Günün konuşmaları ve sorunuz tek bir metin dosyasına dönüşür."
+        },
+        {
+          "t": "Uygulamayı seç",
+          "c": "Açılan ekranda kullandığınız yapay zekâ uygulamasını seçin. Dosya da gönderilmeye hazır olarak eklenir."
+        },
+        {
+          "t": "Yanıt",
+          "c": "Birkaç saniye sonra günün özeti, görevleriniz ve kimin ne söz verdiği hazır."
+        }
+      ]
+    },
+    "health": {
+      "settings": "Ayarlar",
+      "label": "Sağlık",
+      "show": "Uyku, aktivite ve nabzı göster",
+      "found": "Son 7 güne ait veri bulundu.",
+      "today": "Bugün",
+      "timeline": "Zaman tüneli",
+      "newest": "En yeni önce",
+      "a": {
+        "time": "14:10–14:25",
+        "dur": "15 dk"
+      },
+      "b": {
+        "time": "12:35–12:50",
+        "dur": "15 dk"
+      },
+      "walking": "Yürüyüş",
+      "factTitle": "Normalin üzerinde nabız",
+      "question": "Yatmadan önce ne konuştuk?",
+      "answer": "Bu hafta sonu için bir doğa yürüyüşü planladınız.",
+      "source1": "1 kaynak",
+      "snippet": "Hafta sonu doğa yürüyüşüne ne dersiniz?",
+      "steps": [
+        {
+          "t": "Aç",
+          "c": "Siz açana kadar kapalıdır. Sonrasında DayRecall, Sağlık'tan uyku, adım, antrenman ve nabzı okur. Salt okunur."
+        },
+        {
+          "t": "Gününüze dair ipuçları",
+          "c": "Günün bir bölümü yürüdüğünüzü, antrenmandan yeni çıktığınızı veya nabzınızın normalden yüksek olduğunu gösterebilir. Sayıları görmek için açın."
+        },
+        {
+          "t": "Yaptığınız etkinliğe göre sorun",
+          "c": "Yatmadan önce veya koşarken olanları sorun; DayRecall o zaman aralıklarında arar."
+        }
+      ],
+      "note": "Salt okunur. Sağlık bilgileri bu iPhone'da korumalı önbellekte tutulur ve bize gönderilmez. Sağlık etiketleri ve değerleri yalnızca bir özete veya paylaşılan güne eklemeyi seçerseniz API'nize ya da yapay zekâ uygulamasına gider. Sağlık verisi ekleme varsayılan olarak kapalıdır.",
+      "heartAbove": "Nabız normalden yüksek · 96 atım/dk",
+      "sleep": "Uykuda · 23.40–6.50 · 7 sa. 10 dk.",
+      "factDetail": "Nabız yaklaşık 96 · dinlenme nabzı yaklaşık 62",
+      "when": "Dün 22.52"
     }
-  }
+  },
+  "health_01": "Sağlık",
+  "features_15": "Saat",
+  "health_02": "Bazen yaptığınız etkinlikle hatırlarsınız",
+  "health_03": "Açtığınızda DayRecall Sağlık'tan uyku, yürüyüş, antrenman ve nabzınızı okur. Bunlar gününüzde ipucu olur: bir konuşma yürürken, antrenmandan hemen sonra veya nabzınız normalden yüksekken gerçekleştiğini gösterebilir.",
+  "health_04": "Zaman çizelgenizdeki etiketler: yürüme, antrenman, uyku, normalden yüksek nabız",
+  "health_05": "“Yatmadan önce ne konuştuk?” veya “Koşarken ne söyledim?” diye sorun",
+  "health_06": "Siz açana kadar kapalıdır. Salt okunur: DayRecall Sağlık'a asla yazmaz.",
+  "health_07": "Salt okunur. Sağlık bilgileri bu iPhone'da korumalı önbellekte tutulur ve bize gönderilmez. Sağlık etiketleri ve değerleri yalnızca bir özete veya paylaşılan güne eklemeyi seçerseniz API'nize ya da yapay zekâ uygulamasına gider. Sağlık verisi ekleme varsayılan olarak kapalıdır.",
+  "health_09": "Animasyon: Sağlık anahtarı açılır, zaman çizelgesi yürüyüş ve normalden yüksek nabız gösterir; yatmadan önceye ilişkin soru söylenenleri bulur."
 }
