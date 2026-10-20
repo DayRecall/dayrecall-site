@@ -1,12 +1,32 @@
 {
-  "updated": "2026-10-20",
-  "reason": "Optional public model directory downloads: informed agreement for each download, connection metadata, offline cache and separate AI content-sharing permission; pending counsel review.",
-  "locales": ["zh-Hant", "da", "de", "es", "fr", "it", "ja", "ko", "nl", "pt-PT", "sv", "tr"],
-  "strings": [],
+  "updated": "2026-10-21",
+  "reason": "Optional public model directory downloads: informed agreement for each download, connection metadata, offline cache and separate AI content-sharing permission; pending counsel review.; temporary local audio retention for language correction and reprocessing.",
+  "locales": [
+    "zh-Hant",
+    "da",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pt-PT",
+    "sv",
+    "tr"
+  ],
+  "strings": [
+    "how_08",
+    "privacy_05",
+    "faq[0].items[2].a"
+  ],
   "documents": {
     "privacy": [
       "6.5",
-      "17"
+      "17",
+      "4.1",
+      "11",
+      "summary"
     ]
   }
 }
