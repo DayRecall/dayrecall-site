@@ -44,7 +44,7 @@
   "how_05": "Your Apple Watch listens during the hours you choose, even with your iPhone left behind. One tap in the morning, and it stops on its own. Our in-house ultra-light speech model runs right on the watch and keeps only the moments when someone is talking.",
   "how_06": "The sound goes into the bin and becomes lines of text marked Me and Other 1; a meeting, a to-do and a deadline are picked out.",
   "how_07": "Organized for you",
-  "how_08": "Speech is turned into text on this iPhone, and the audio is cleared once transcribed. Your chosen AI engine finds to-dos, deadlines and meetings. It can also tell what you said from what others said.",
+  "how_08": "Speech is turned into text on this iPhone. Audio is kept briefly for corrections, then cleared automatically. Your chosen AI engine finds to-dos, deadlines and meetings. It can also tell what you said from what others said.",
   "how_09": "The animation shows the default on-device mode: memories enter the iPhone and it locks; packets heading for a cloud are stopped and return.",
   "how_10": "Private by default",
   "how_11": "By default, this iPhone finds to-dos, writes recaps and answers questions. If you choose and allow your own API, new transcripts are sent automatically for to-dos, a day’s conversations when you request a recap, and questions with matching excerpts. Audio is never sent to the API.",
@@ -107,8 +107,8 @@
   "privacy_01": "Privacy",
   "privacy_02": "Text only. On your iPhone. Your call.",
   "privacy_03": "The animation shows the default on-device mode: memories enter the iPhone and it locks; packets heading for a cloud are stopped and return.",
-  "privacy_04": "Text only, no audio kept",
-  "privacy_05": "What’s said is turned into text on your iPhone. The audio is cleared automatically once it’s transcribed, and isn’t kept.",
+  "privacy_04": "Audio kept briefly",
+  "privacy_05": "Speech is transcribed on your iPhone. Original audio is kept briefly on this device for corrections and reprocessing, then cleared automatically. You can delete it earlier.",
   "privacy_06": "No account, no server of ours",
   "privacy_07": "There’s nothing to sign up for, and we don’t run servers that see your day.",
   "privacy_08": "Choose your AI engine",
@@ -135,7 +135,7 @@
         },
         {
           "q": "Does DayRecall keep audio recordings?",
-          "a": "No. What’s said is turned into text on your iPhone, and the audio is cleared automatically once it’s transcribed. Only the text is kept."
+          "a": "Original audio is temporarily kept on your iPhone so you can correct a conversation’s language and process it again. It is then cleared automatically. You can delete a recording and its audio at any time; the text stays until you delete it."
         },
         {
           "q": "Where is my data, and who can see it?",

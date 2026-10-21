@@ -43,7 +43,7 @@
   "how_05": "Je Apple Watch luistert tijdens de uren die je kiest, ook als je iPhone is achtergebleven. Eén tik in de ochtend, en het stopt vanzelf. Ons eigen ultralichte spraakmodel draait direct op het horloge en bewaart alleen de momenten waarop iemand praat.",
   "how_06": "Het geluid gaat de prullenbak in en wordt regels tekst, gemarkeerd als Ik en Ander 1; een vergadering, een taak en een deadline worden eruit gehaald.",
   "how_07": "Voor je geordend",
-  "how_08": "Spraak wordt op deze iPhone omgezet naar tekst en de audio wordt daarna gewist. Je gekozen AI-engine vindt taken, deadlines en afspraken. Ook kan de app jouw woorden onderscheiden van die van anderen.",
+  "how_08": "Spraak wordt op deze iPhone omgezet in tekst. Audio wordt kort bewaard voor correcties en daarna automatisch gewist. De gekozen AI-engine vindt taken, deadlines en vergaderingen. Ook kan de app jouw woorden onderscheiden van die van anderen.",
   "how_09": "De animatie toont de standaardmodus op het apparaat: herinneringen gaan de iPhone in en deze vergrendelt; pakketten naar de cloud worden tegengehouden en keren terug.",
   "how_10": "Standaard privé",
   "how_11": "Standaard vindt deze iPhone taken, schrijft hij dagoverzichten en beantwoordt hij vragen. Als je je eigen API kiest en toestemming geeft om gegevens te versturen, ontvangt die automatisch nieuwe transcripties voor taken, de gesprekken van een dag wanneer je om een overzicht vraagt, en vragen met passende fragmenten. Audio wordt nooit naar de API verstuurd.",
@@ -106,8 +106,8 @@
   "privacy_01": "Privacy",
   "privacy_02": "Alleen tekst. Op je iPhone. Jij beslist.",
   "privacy_03": "De animatie toont de standaardmodus op het apparaat: herinneringen gaan de iPhone in en deze vergrendelt; pakketten naar de cloud worden tegengehouden en keren terug.",
-  "privacy_04": "Alleen tekst, geen audio bewaard",
-  "privacy_05": "Wat er wordt gezegd, wordt op je iPhone omgezet in tekst. De audio wordt automatisch verwijderd zodra die is getranscribeerd en wordt niet bewaard.",
+  "privacy_04": "Audio kort bewaard",
+  "privacy_05": "Spraak wordt op uw iPhone omgezet in tekst. Originele audio wordt kort bewaard voor correcties en daarna automatisch gewist. Je kunt de audio ook eerder verwijderen.",
   "privacy_06": "Geen account, geen server van ons",
   "privacy_07": "Je hoeft je nergens aan te melden, en wij draaien geen servers die je dag zien.",
   "privacy_08": "Kies je AI-engine",
@@ -134,7 +134,7 @@
         },
         {
           "q": "Bewaart DayRecall audio-opnamen?",
-          "a": "Nee. Wat er wordt gezegd, wordt op je iPhone omgezet in tekst. De audio wordt automatisch verwijderd zodra die is getranscribeerd. Alleen de tekst blijft bewaard."
+          "a": "Na transcriptie wordt originele audio tijdelijk op deze iPhone bewaard, zodat je de gesprekstaal kunt corrigeren en de audio opnieuw kunt verwerken. De audio wordt automatisch gewist zodra de app kan opruimen. Je kunt de opname en de audio op elk moment verwijderen. Tekst blijft staan tot je die verwijdert."
         },
         {
           "q": "Waar staan mijn gegevens en wie kan ze zien?",

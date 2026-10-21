@@ -44,7 +44,7 @@
   "how_05": "iPhone'unuz yanınızda olmasa bile Apple Watch'unuz seçtiğiniz saatlerde dinler. Sabah tek dokunuş yeter; ardından kendiliğinden durur. Kendi geliştirdiğimiz ultra hafif konuşma modeli doğrudan saatin üzerinde çalışır ve yalnızca birinin konuştuğu anları tutar.",
   "how_06": "Ses çöp kutusuna gider ve Ben ile Diğer 1 olarak işaretlenmiş metin satırlarına dönüşür; bir toplantı, bir görev ve bir son tarih ayıklanır.",
   "how_07": "Sizin için düzenlenir",
-  "how_08": "Konuşma bu iPhone'da metne dönüştürülür, döküm çıkarılınca ses silinir. Seçtiğiniz yapay zekâ motoru görevleri, son tarihleri ve toplantıları bulur. Sizin söylediklerinizi başkalarınınkinden de ayırabilir.",
+  "how_08": "Konuşma bu iPhone’da metne dönüştürülür. Ses düzeltmeler için kısa süre saklanır, ardından otomatik silinir. Seçtiğiniz yapay zekâ motoru görevleri, son tarihleri ve toplantıları bulur. Sizin söylediklerinizi başkalarınınkinden de ayırabilir.",
   "how_09": "Animasyon, varsayılan aygıtta çalışma modunu gösterir: anılar iPhone'a girer ve telefon kilitlenir; buluta giden paketler durdurulup geri döner.",
   "how_10": "Baştan gizli",
   "how_11": "Varsayılan olarak bu iPhone görevleri bulur, gün özetleri yazar ve soruları yanıtlar. Kendi API’nizi seçip veri gönderimine izin verirseniz görevleri bulmak için yeni dökümler otomatik olarak gönderilir. Bir özet istediğinizde günün konuşmaları, soru sorduğunuzda ise sorunuz ve ilgili alıntılar gönderilir. Ses hiçbir zaman API’ye gönderilmez.",
@@ -107,8 +107,8 @@
   "privacy_01": "Gizlilik",
   "privacy_02": "Yalnızca metin. iPhone'unuzda. Karar sizde.",
   "privacy_03": "Animasyon, varsayılan aygıtta çalışma modunu gösterir: anılar iPhone'a girer ve telefon kilitlenir; buluta giden paketler durdurulup geri döner.",
-  "privacy_04": "Yalnızca metin; ses saklanmaz",
-  "privacy_05": "Konuşma iPhone'unuzda metne çevrilir. Ses, yazıya döküldükten sonra otomatik olarak silinir ve saklanmaz.",
+  "privacy_04": "Ses kısa süre saklanır",
+  "privacy_05": "Konuşma, iPhone'unuzda metne dönüştürülür. Özgün ses düzeltmeler için kısa süre saklanır, ardından otomatik silinir. Sesi daha erken de silebilirsiniz.",
   "privacy_06": "Hesap yok, bizim sunucumuz yok",
   "privacy_07": "Kaydolmanız gereken bir şey yok; gününüzü gören sunucuları da çalıştırmıyoruz.",
   "privacy_08": "Yapay zekâ motorunuzu seçin",
@@ -135,7 +135,7 @@
         },
         {
           "q": "DayRecall ses kayıtlarını saklıyor mu?",
-          "a": "Hayır. Söylenenler iPhone'unuzda metne çevrilir. Ses, yazıya döküldükten sonra otomatik olarak silinir; yalnızca metin saklanır."
+          "a": "Yazıya dökme sonrasında özgün ses, konuşma dilini düzeltip yeniden işleyebilmeniz için bu iPhone’da geçici olarak saklanır. Uygulama temizliği çalıştırabildiğinde otomatik silinir. Kaydı ve sesini istediğiniz zaman silebilirsiniz. Metin siz silene kadar kalır."
         },
         {
           "q": "Verilerim nerede ve kim görebilir?",

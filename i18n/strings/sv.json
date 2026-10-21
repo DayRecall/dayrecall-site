@@ -43,7 +43,7 @@
   "how_05": "Din Apple Watch lyssnar under de timmar du väljer, även när iPhonen är kvar hemma. Ett tryck på morgonen, så slutar den av sig själv. Vår egenutvecklade, ultralätta talmodell körs direkt på klockan och behåller bara de stunder när någon pratar.",
   "how_06": "Ljudet slängs och blir textrader märkta Jag och Annan 1; ett möte, en att göra-punkt och en deadline plockas ut.",
   "how_07": "Ordnat åt dig",
-  "how_08": "Tal omvandlas till text på denna iPhone och ljudet raderas efter transkription. Din valda AI-motor hittar uppgifter, tidsfrister och möten. Den kan även skilja det du sa från det andra sa.",
+  "how_08": "Tal blir text på denna iPhone. Ljud sparas kort för korrigeringar och raderas sedan automatiskt. Din valda AI-motor hittar uppgifter, tidsfrister och möten. Den kan även skilja det du sa från det andra sa.",
   "how_09": "Animationen visar standardläget på enheten: minnen kommer in i iPhone som låser sig; paket på väg mot molnet stoppas och återvänder.",
   "how_10": "Privat från början",
   "how_11": "Som standard hittar denna iPhone uppgifter, skriver dagsöversikter och svarar på frågor. Om du väljer ditt eget API och tillåter att data skickas får det automatiskt nya transkriberingar för att hitta uppgifter, dagens samtal när du ber om en översikt och frågor med relevanta utdrag. Ljud skickas aldrig till API:et.",
@@ -106,8 +106,8 @@
   "privacy_01": "Integritet",
   "privacy_02": "Bara text. På din iPhone. Ditt beslut.",
   "privacy_03": "Animationen visar standardläget på enheten: minnen kommer in i iPhone som låser sig; paket på väg mot molnet stoppas och återvänder.",
-  "privacy_04": "Bara text, inget ljud sparas",
-  "privacy_05": "Det som sägs blir text på din iPhone. Ljudet tas bort automatiskt när det har transkriberats och sparas inte.",
+  "privacy_04": "Ljud sparas kort",
+  "privacy_05": "Tal omvandlas till text på din iPhone. Originalljud sparas kort för korrigeringar och raderas sedan automatiskt. Du kan också radera ljudet tidigare.",
   "privacy_06": "Inget konto, ingen server från oss",
   "privacy_07": "Det finns inget att registrera sig för, och vi driver inga servrar som ser din dag.",
   "privacy_08": "Välj din AI-motor",
@@ -134,7 +134,7 @@
         },
         {
           "q": "Sparar DayRecall ljudinspelningar?",
-          "a": "Nej. Det som sägs blir text på din iPhone, och ljudet tas bort automatiskt när det har transkriberats. Bara texten sparas."
+          "a": "Efter transkription sparas originalljud tillfälligt på denna iPhone så att du kan korrigera samtalsspråket och bearbeta ljudet igen. Det raderas automatiskt när appen kan utföra sin rensning. Du kan när som helst radera inspelningen och dess ljud. Texten finns kvar tills du raderar den."
         },
         {
           "q": "Var finns mina data och vem kan se dem?",

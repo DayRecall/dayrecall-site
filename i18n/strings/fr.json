@@ -44,7 +44,7 @@
   "how_05": "Votre Apple Watch écoute pendant les heures que vous choisissez, même si votre iPhone est resté à la maison. Une pression le matin suffit, et l’écoute s’arrête toute seule. Notre modèle vocal ultra-léger, développé en interne, tourne directement sur la montre et ne garde que les moments où quelqu’un parle.",
   "how_06": "L’audio part à la corbeille et devient des lignes de texte marquées « Moi » et « Autre 1 » ; une réunion, une tâche et une échéance sont repérées.",
   "how_07": "Organisé pour vous",
-  "how_08": "La parole est convertie en texte sur cet iPhone, puis le son est effacé. Le moteur d’IA choisi repère tâches, échéances et réunions. Il peut aussi distinguer vos paroles de celles des autres.",
+  "how_08": "La parole est convertie en texte sur cet iPhone. L’audio est conservé brièvement pour les corrections, puis supprimé automatiquement. Le moteur d’IA choisi repère les tâches, échéances et réunions. Il peut aussi distinguer vos paroles de celles des autres.",
   "how_09": "L’animation montre le mode local par défaut : les souvenirs entrent dans l’iPhone qui se verrouille ; les paquets allant vers le cloud sont arrêtés et reviennent.",
   "how_10": "Privé par défaut",
   "how_11": "Par défaut, cet iPhone repère les tâches, rédige les bilans et répond aux questions. Si vous choisissez votre propre API et autorisez les envois, elle reçoit automatiquement les nouvelles transcriptions pour repérer les tâches, les conversations d’une journée lorsque vous demandez un bilan, et vos questions avec les extraits pertinents. Aucun audio n’est envoyé à l’API.",
@@ -107,8 +107,8 @@
   "privacy_01": "Confidentialité",
   "privacy_02": "Texte uniquement. Sur votre iPhone. À vous de décider.",
   "privacy_03": "L’animation montre le mode local par défaut : les souvenirs entrent dans l’iPhone qui se verrouille ; les paquets allant vers le cloud sont arrêtés et reviennent.",
-  "privacy_04": "Du texte uniquement, aucun audio conservé",
-  "privacy_05": "Ce qui est dit est transformé en texte sur votre iPhone. L’audio est effacé automatiquement une fois transcrit et n’est pas conservé.",
+  "privacy_04": "Audio conservé brièvement",
+  "privacy_05": "La parole est convertie en texte sur votre iPhone. L’audio original est conservé brièvement pour les corrections, puis supprimé automatiquement. Vous pouvez aussi supprimer l’audio plus tôt.",
   "privacy_06": "Aucun compte, aucun serveur de notre part",
   "privacy_07": "Aucune inscription, et nous n’exploitons aucun serveur qui voit votre journée.",
   "privacy_08": "Choisissez votre moteur d’IA",
@@ -135,7 +135,7 @@
         },
         {
           "q": "DayRecall conserve-t-il des enregistrements audio ?",
-          "a": "Non. Ce qui est dit est transformé en texte sur votre iPhone et l’audio est effacé automatiquement une fois transcrit. Seul le texte est conservé."
+          "a": "Après transcription, l’audio original est conservé temporairement sur cet iPhone pour corriger la langue de la conversation et le retraiter. Il est supprimé automatiquement lorsque l’App peut effectuer son nettoyage. Vous pouvez supprimer l’enregistrement et son audio à tout moment. Le texte reste jusqu’à sa suppression par vos soins."
         },
         {
           "q": "Où sont mes données, et qui peut les voir ?",
