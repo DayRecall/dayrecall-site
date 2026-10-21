@@ -265,6 +265,23 @@
       ]
     },
     {
+      "title": "Mac, yedekler ve not uygulamaları",
+      "items": [
+        {
+          "q": "Mac uygulaması iPhone ve Apple Watch ile nasıl çalışır?",
+          "a": "Mac yüz yüze toplantıyı veya mikrofonunuzla seçtiğiniz toplantı uygulamasının sesini kaydedebilir. Otomatik yazıya dökme macOS 26 veya yenisini kullanan desteklenen bir Mac gerektirir. Kayıtlı metni, notları, başlıkları, görev güncellemelerini ve cihaz durumunu şifreli yerel ağda paylaşmak için kendi iPhone’unuzu eşleyip iki uygulamayı açık tutun. Ses yardımı ayrı açılır, iCloud paylaşımı isteğe bağlıdır. Mac sesi döküm kaydedilince kaldırılır; yazıya dökme başarısızsa yeniden denemek için tutulur."
+        },
+        {
+          "q": "Kitaplığımı nasıl yedeklerim?",
+          "a": "Ayarlar’da yerel kitaplık dosyası dışa aktarın veya isteğe bağlı özel iCloud yedeğini kullanın. Yerel dosyanın parolası yoktur ve kayıtlı Sağlık ile Takvim girdilerini içerebilir; güvenilir bir yerde saklayın. Uygulama içi iCloud yedeği bu girdileri ve kayıtlı özetleri hariç tutar. Geri yükleme mevcut kitaplığı ve desteklenen ayarları değiştirir. Yerel verileri silmek dışa aktarılan dosyaları veya bulut kopyalarını silmez; bunları ayrıca kaldırın."
+        },
+        {
+          "q": "Özeti Notion veya Obsidian’a kaydedebilir miyim?",
+          "a": "Ayarlar › Üçüncü taraf bağlantıları’nda hedef ayarlayın, sonra kayıtlı özette seçip onaylayın. Hiçbir şey otomatik gönderilmez. Notion alt sayfa oluşturmak için özeti doğrudan alır. Obsidian, yalnızca cihazda bulunan ve iki dakika sonra süresi dolan pano kopyasını kullanarak tarihli not açar; kaydı Obsidian’da doğrulayın. Bağlantıyı kesmek veya DayRecall’da özeti silmek bu uygulamalardaki mevcut kopyaları silmez."
+        }
+      ]
+    },
+    {
       "title": "Yayın ve yardım",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "“Yatmadan önce ne konuştuk?” veya “Koşarken ne söyledim?” diye sorun",
   "health_06": "Siz açana kadar kapalıdır. Salt okunur: DayRecall Sağlık'a asla yazmaz.",
   "health_07": "Salt okunur. Sağlık bilgileri bu iPhone'da korumalı önbellekte tutulur ve bize gönderilmez. Sağlık etiketleri ve değerleri yalnızca bir özete veya paylaşılan güne eklemeyi seçerseniz API'nize ya da yapay zekâ uygulamasına gider. Sağlık verisi ekleme varsayılan olarak kapalıdır.",
-  "health_09": "Animasyon: Sağlık anahtarı açılır, zaman çizelgesi yürüyüş ve normalden yüksek nabız gösterir; yatmadan önceye ilişkin soru söylenenleri bulur."
+  "health_09": "Animasyon: Sağlık anahtarı açılır, zaman çizelgesi yürüyüş ve normalden yüksek nabız gösterir; yatmadan önceye ilişkin soru söylenenleri bulur.",
+  "not_found_title": "Sayfa bulunamadı — DayRecall",
+  "not_found_heading": "Bu sayfa burada yok.",
+  "not_found_home": "DayRecall ana sayfa"
 }

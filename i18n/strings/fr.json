@@ -265,6 +265,23 @@
       ]
     },
     {
+      "title": "Mac, sauvegardes et apps de notes",
+      "items": [
+        {
+          "q": "Comment l’app Mac fonctionne-t-elle avec l’iPhone et l’Apple Watch ?",
+          "a": "Le Mac peut enregistrer une réunion en personne ou votre microphone et une app de réunion choisie. La transcription automatique nécessite un Mac compatible avec macOS 26 ou ultérieur. Jumelez votre iPhone pour partager textes enregistrés, notes, titres, mises à jour des tâches et état des appareils sur un réseau local chiffré ; gardez les deux apps ouvertes. L’assistance audio s’active séparément et le partage iCloud est facultatif. L’audio du Mac est supprimé une fois la transcription enregistrée ; en cas d’échec, il est conservé pour réessayer."
+        },
+        {
+          "q": "Comment sauvegarder ma bibliothèque ?",
+          "a": "Dans Réglages, exportez un fichier local de la bibliothèque ou utilisez la sauvegarde iCloud privée facultative. Le fichier local n’a pas de mot de passe et peut contenir des données enregistrées de Santé et Calendrier : conservez-le dans un lieu de confiance. La sauvegarde iCloud de l’app exclut ces données et les bilans enregistrés. Restaurer remplace la bibliothèque actuelle et les réglages pris en charge. Supprimer les données locales ne supprime pas les fichiers exportés ni les copies cloud ; supprimez-les séparément."
+        },
+        {
+          "q": "Puis-je enregistrer un bilan dans Notion ou Obsidian ?",
+          "a": "Configurez une destination dans Réglages › Connexions tierces, puis choisissez-la et confirmez depuis un bilan enregistré. Rien n’est envoyé automatiquement. Notion reçoit directement le bilan pour créer une sous-page. Obsidian utilise une copie du presse-papiers limitée à cet appareil et expirant après deux minutes, puis ouvre une note datée ; vérifiez-y l’enregistrement. Déconnecter ou supprimer le bilan dans DayRecall ne supprime pas les copies déjà présentes dans ces apps."
+        }
+      ]
+    },
+    {
       "title": "Disponibilité et assistance",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Demandez « De quoi avons-nous parlé avant le coucher ? » ou « Qu’ai-je dit pendant ma course ? »",
   "health_06": "Désactivé jusqu’à votre activation. Lecture seule : DayRecall n’écrit jamais dans Santé.",
   "health_07": "Lecture seule. Les données de santé restent dans un cache protégé sur cet iPhone et ne nous sont pas envoyées. Les étiquettes et valeurs ne vont à votre API ou à une app d’IA que si vous les ajoutez à un bilan ou une journée partagée. L’ajout est désactivé par défaut.",
-  "health_09": "Animation : le réglage Santé est activé, la chronologie montre une marche et une fréquence cardiaque supérieure à l’habitude, et une question sur l’avant-coucher retrouve les paroles."
+  "health_09": "Animation : le réglage Santé est activé, la chronologie montre une marche et une fréquence cardiaque supérieure à l’habitude, et une question sur l’avant-coucher retrouve les paroles.",
+  "not_found_title": "Page introuvable — DayRecall",
+  "not_found_heading": "Cette page n’existe pas.",
+  "not_found_home": "Accueil DayRecall"
 }

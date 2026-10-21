@@ -1,12 +1,7 @@
 {
-  "updated": "2026-10-20",
-  "reason": "Optional public model directory downloads: informed agreement for each download, connection metadata, offline cache and separate AI content-sharing permission; pending counsel review.",
-  "locales": ["zh-Hant", "da", "de", "es", "fr", "it", "ja", "ko", "nl", "pt-PT", "sv", "tr"],
+  "updated": "2026-10-21",
+  "reason": "Weekly translation batch completed for model directory downloads and Notion/Obsidian recap exports. Native-speaker and counsel review are separate from translation coverage.",
+  "locales": [],
   "strings": [],
-  "documents": {
-    "privacy": [
-      "6.5",
-      "17"
-    ]
-  }
+  "documents": {}
 }

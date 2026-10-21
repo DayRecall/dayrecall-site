@@ -264,6 +264,23 @@
       ]
     },
     {
+      "title": "Mac, Backups und Notiz-Apps",
+      "items": [
+        {
+          "q": "Wie arbeitet die Mac-App mit iPhone und Apple Watch zusammen?",
+          "a": "Der Mac kann eine Besprechung vor Ort oder dein Mikrofon zusammen mit einer ausgewählten Besprechungs-App aufnehmen. Automatische Transkription erfordert einen unterstützten Mac mit macOS 26 oder neuer. Kopple dein eigenes iPhone, um gespeicherten Text, Besprechungsnotizen, Titel, Aufgabenänderungen und Gerätestatus über ein verschlüsseltes lokales Netzwerk zu teilen. Lass beide Apps geöffnet. Audiounterstützung wird separat aktiviert; iCloud-Freigabe ist optional. Mac-Audio wird nach dem Speichern des Transkripts entfernt und bei fehlgeschlagener Transkription für einen neuen Versuch behalten."
+        },
+        {
+          "q": "Wie sichere ich meine Bibliothek?",
+          "a": "Exportiere in den Einstellungen eine lokale Bibliotheksdatei oder nutze das optionale private iCloud-Backup. Die lokale Datei hat kein Passwort und kann gespeicherte Health- und Kalendereingaben enthalten. Bewahre sie an einem vertrauenswürdigen Ort auf. Das iCloud-Backup in der App schließt diese Eingaben und gespeicherte Tagesrückblicke aus. Eine Wiederherstellung ersetzt die aktuelle Bibliothek und unterstützte Einstellungen. Lokales Löschen entfernt keine exportierten Dateien oder Cloud-Kopien; lösche diese separat."
+        },
+        {
+          "q": "Kann ich einen Tagesrückblick in Notion oder Obsidian speichern?",
+          "a": "Richte unter Einstellungen › Verbindungen zu Drittanbietern ein Ziel ein und wähle und bestätige es in einem gespeicherten Tagesrückblick. Nichts wird automatisch gesendet. Notion erhält den Rückblick direkt, um eine Unterseite zu erstellen. Obsidian nutzt eine auf dieses Gerät beschränkte Zwischenablagekopie, die nach zwei Minuten abläuft, und öffnet eine datierte Notiz. Prüfe dort, ob sie gespeichert wurde. Trennen oder Löschen in DayRecall entfernt keine bereits in diesen Apps gespeicherten Kopien."
+        }
+      ]
+    },
+    {
       "title": "Verfügbarkeit und Hilfe",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Frage „Worüber haben wir vor dem Schlafengehen gesprochen?“ oder „Was habe ich beim Laufen gesagt?“",
   "health_06": "Aus, bis du es einschaltest. Nur Lesezugriff: DayRecall schreibt nie in Health.",
   "health_07": "Nur Lesezugriff. Gesundheitsdaten liegen in einem geschützten Cache auf diesem iPhone und werden nicht an uns gesendet. Health-Bezeichnungen und -Werte gehen nur an deine API oder eine KI-App, wenn du sie einem Rückblick oder geteilten Tag hinzufügst. Gesundheitsdaten sind standardmäßig nicht beigefügt.",
-  "health_09": "Animation: Health wird eingeschaltet, die Zeitleiste zeigt einen Spaziergang und eine höhere Herzfrequenz als üblich. Eine Frage nach der Zeit vor dem Schlafengehen findet das Gesagte."
+  "health_09": "Animation: Health wird eingeschaltet, die Zeitleiste zeigt einen Spaziergang und eine höhere Herzfrequenz als üblich. Eine Frage nach der Zeit vor dem Schlafengehen findet das Gesagte.",
+  "not_found_title": "Seite nicht gefunden — DayRecall",
+  "not_found_heading": "Diese Seite gibt es nicht.",
+  "not_found_home": "DayRecall-Startseite"
 }

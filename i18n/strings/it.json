@@ -265,6 +265,23 @@
       ]
     },
     {
+      "title": "Mac, backup e app di note",
+      "items": [
+        {
+          "q": "Come funziona l’app Mac con iPhone e Apple Watch?",
+          "a": "Il Mac può registrare una riunione in presenza oppure il microfono e un’app di riunione selezionata. La trascrizione automatica richiede un Mac supportato con macOS 26 o successivo. Abbina il tuo iPhone per condividere testi salvati, note, titoli, aggiornamenti delle attività e stato dei dispositivi su una rete locale crittografata; tieni entrambe le app aperte. L’assistenza audio si attiva separatamente e iCloud è facoltativo. L’audio del Mac viene rimosso dopo il salvataggio della trascrizione; se fallisce, viene conservato per riprovare."
+        },
+        {
+          "q": "Come posso fare il backup della libreria?",
+          "a": "Nelle Impostazioni, esporta un file locale della libreria o usa il backup iCloud privato facoltativo. Il file locale non ha password e può contenere dati salvati di Salute e Calendario: conservalo in un luogo affidabile. Il backup iCloud nell’app esclude questi dati e i riepiloghi salvati. Il ripristino sostituisce la libreria attuale e le impostazioni supportate. Eliminare i dati locali non elimina file esportati o copie nel cloud; rimuovili separatamente."
+        },
+        {
+          "q": "Posso salvare un riepilogo in Notion o Obsidian?",
+          "a": "Configura una destinazione in Impostazioni › Connessioni di terze parti, poi sceglila e conferma in un riepilogo salvato. Nulla viene inviato automaticamente. Notion riceve direttamente il riepilogo per creare una sottopagina. Obsidian usa una copia degli appunti limitata al dispositivo che scade dopo due minuti e apre una nota datata: verifica lì il salvataggio. Disconnettere o eliminare il riepilogo in DayRecall non elimina le copie già presenti in quelle app."
+        }
+      ]
+    },
+    {
       "title": "Disponibilità e assistenza",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Chiedi «Di cosa abbiamo parlato prima di dormire?» o «Cosa ho detto mentre correvo?»",
   "health_06": "Disattivato finché non lo attivi. Sola lettura: DayRecall non scrive mai in Salute.",
   "health_07": "Sola lettura. Le informazioni di Salute restano in una cache protetta su questo iPhone e non ci vengono inviate. Le etichette e i valori di Salute vanno alla tua API o a un'app IA solo se scegli di aggiungerli a un riepilogo o a una giornata condivisa. L'aggiunta di dati sanitari è disattivata per impostazione predefinita.",
-  "health_09": "Animazione: si attiva Salute, la cronologia mostra una camminata e una frequenza cardiaca sopra la norma, e una domanda su prima di dormire ritrova ciò che è stato detto."
+  "health_09": "Animazione: si attiva Salute, la cronologia mostra una camminata e una frequenza cardiaca sopra la norma, e una domanda su prima di dormire ritrova ciò che è stato detto.",
+  "not_found_title": "Pagina non trovata — DayRecall",
+  "not_found_heading": "Questa pagina non esiste.",
+  "not_found_home": "Pagina iniziale di DayRecall"
 }

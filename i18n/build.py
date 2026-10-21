@@ -471,9 +471,59 @@ def sitemap():
 
 
 def write(path, text):
+    if path.exists():
+        existing = path.read_text(encoding='utf-8')
+        # The final asset-stamping step refreshes these versions independently.
+        unstamped = re.sub(r'(/assets/[\w.-]+\.(?:css|js))\?v=[0-9a-f]+(?=")', r'\1', existing)
+        if existing == text or (path.suffix == '.html' and unstamped == text):
+            return
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
+
+
+def not_found_page():
+    """One GitHub Pages error document, with the same locale sources as the site."""
+    words = {lang['code']: {
+        'path': lang['path'], 'title': lang['strings']['not_found_title'],
+        'heading': lang['strings']['not_found_heading'],
+        'home': lang['strings']['not_found_home'],
+        'languageLabel': lang['strings']['lang_label']
+    } for lang in BUILT}
+    s = EN['strings']
+    links = '\n'.join(
+        f'      <a href="{lang["path"]}{"?lang=en" if lang is EN else ""}" '
+        f'hreflang="{lang["code"]}" lang="{lang["code"]}">{html.escape(lang["name"])}</a>'
+        for lang in BUILT)
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(s['not_found_title'])}</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/json" id="not-found-words">{script_json(words)}</script>
+<script src="/assets/locale.js"></script>
+<script src="/assets/not-found.js" defer></script>
+</head>
+<body>
+<main class="final missing">
+  <div class="wrap">
+    <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
+    <h1 id="not-found-heading">{html.escape(s['not_found_heading'])}</h1>
+    <p class="links"><a class="pill" id="not-found-home" href="/?lang=en">{html.escape(s['not_found_home'])}</a></p>
+    <nav class="foot-langs" id="not-found-languages" aria-label="{html.escape(s['lang_label'], quote=True)}">
+{links}
+    </nav>
+  </div>
+</main>
+</body>
+</html>
+'''
 
 
 def main():
@@ -496,6 +546,7 @@ def main():
         write(ROOT / 'tools' / 'og' / f'{lang["slug"]}.html', og_page(lang, s))
         note = f'; {len(lang["missing"])} keys shown in English until the next batch' if lang['missing'] else ''
         print(f'built {lang["code"]}: {", ".join(built)}{note}')
+    write(ROOT / '404.html', not_found_page())
     write(ROOT / 'sitemap.xml', sitemap())
     if '--og' in sys.argv[1:]:
         profile = pathlib.Path(tempfile.gettempdir()) / 'dayrecall-og-edge'   # browser data stays out of the site

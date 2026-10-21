@@ -9,14 +9,32 @@
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/icon-96.png" sizes="96x96" type="image/png">
 <link rel="stylesheet" href="/assets/site.css?v=7ce6d799">
+<script type="application/json" id="not-found-words">{"en": {"path": "/", "title": "Page not found — DayRecall", "heading": "This page isn’t here.", "home": "DayRecall home", "languageLabel": "Language"}, "zh-Hans": {"path": "/zh/", "title": "页面不存在 — DayRecall", "heading": "这个页面不存在。", "home": "DayRecall 首页", "languageLabel": "语言"}, "zh-Hant": {"path": "/zh-hant/", "title": "找不到頁面 — DayRecall", "heading": "找不到這個頁面。", "home": "DayRecall 首頁", "languageLabel": "語言"}, "da": {"path": "/da/", "title": "Siden blev ikke fundet — DayRecall", "heading": "Denne side findes ikke.", "home": "DayRecalls forside", "languageLabel": "Sprog"}, "de": {"path": "/de/", "title": "Seite nicht gefunden — DayRecall", "heading": "Diese Seite gibt es nicht.", "home": "DayRecall-Startseite", "languageLabel": "Sprache"}, "es": {"path": "/es/", "title": "Página no encontrada — DayRecall", "heading": "Esta página no existe.", "home": "Inicio de DayRecall", "languageLabel": "Idioma"}, "fr": {"path": "/fr/", "title": "Page introuvable — DayRecall", "heading": "Cette page n’existe pas.", "home": "Accueil DayRecall", "languageLabel": "Langue"}, "it": {"path": "/it/", "title": "Pagina non trovata — DayRecall", "heading": "Questa pagina non esiste.", "home": "Pagina iniziale di DayRecall", "languageLabel": "Lingua"}, "ja": {"path": "/ja/", "title": "ページが見つかりません — DayRecall", "heading": "このページは見つかりません。", "home": "DayRecallのホーム", "languageLabel": "言語"}, "ko": {"path": "/ko/", "title": "페이지를 찾을 수 없음 — DayRecall", "heading": "이 페이지를 찾을 수 없어요.", "home": "DayRecall 홈", "languageLabel": "언어"}, "nl": {"path": "/nl/", "title": "Pagina niet gevonden — DayRecall", "heading": "Deze pagina bestaat niet.", "home": "DayRecall-startpagina", "languageLabel": "Taal"}, "pt-PT": {"path": "/pt/", "title": "Página não encontrada — DayRecall", "heading": "Esta página não existe.", "home": "Página inicial do DayRecall", "languageLabel": "Idioma"}, "sv": {"path": "/sv/", "title": "Sidan hittades inte — DayRecall", "heading": "Den här sidan finns inte.", "home": "DayRecalls startsida", "languageLabel": "Språk"}, "tr": {"path": "/tr/", "title": "Sayfa bulunamadı — DayRecall", "heading": "Bu sayfa burada yok.", "home": "DayRecall ana sayfa", "languageLabel": "Dil"}}</script>
+<script src="/assets/locale.js?v=72e36029"></script>
+<script src="/assets/not-found.js?v=b54e751a" defer></script>
 </head>
 <body>
 <main class="final missing">
   <div class="wrap">
     <img class="final-icon" src="/assets/icon.svg" alt="" width="96" height="96">
-    <h1>This page isn’t here.</h1>
-    <p class="sub" lang="zh-Hans">这个页面不存在。</p>
-    <p class="links"><a class="pill" href="/">DayRecall home</a> <a class="pill" href="/zh/" lang="zh-Hans">中文首页</a></p>
+    <h1 id="not-found-heading">This page isn’t here.</h1>
+    <p class="links"><a class="pill" id="not-found-home" href="/?lang=en">DayRecall home</a></p>
+    <nav class="foot-langs" id="not-found-languages" aria-label="Language">
+      <a href="/?lang=en" hreflang="en" lang="en">English</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      <a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+      <a href="/da/" hreflang="da" lang="da">Dansk</a>
+      <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="/es/" hreflang="es" lang="es">Español</a>
+      <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/" hreflang="it" lang="it">Italiano</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a>
+      <a href="/pt/" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="/sv/" hreflang="sv" lang="sv">Svenska</a>
+      <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+    </nav>
   </div>
 </main>
 </body>

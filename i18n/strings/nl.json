@@ -264,6 +264,23 @@
       ]
     },
     {
+      "title": "Mac, reservekopieën en notitie-apps",
+      "items": [
+        {
+          "q": "Hoe werkt de Mac-app samen met iPhone en Apple Watch?",
+          "a": "Mac kan een fysieke vergadering opnemen of je microfoon met een gekozen vergaderapp. Automatische transcriptie vereist een ondersteunde Mac met macOS 26 of nieuwer. Koppel je eigen iPhone om bewaarde tekst, notities, titels, taakwijzigingen en apparaatstatus via een versleuteld lokaal netwerk te delen; houd beide apps open. Audiohulp schakel je apart in en iCloud-delen is optioneel. Mac-audio wordt na het bewaren van het transcript verwijderd; bij mislukte transcriptie blijft ze voor een nieuwe poging bewaard."
+        },
+        {
+          "q": "Hoe maak ik een reservekopie van mijn bibliotheek?",
+          "a": "Exporteer bij Instellingen een lokaal bibliotheekbestand of gebruik de optionele privé-iCloud-reservekopie. Het lokale bestand heeft geen wachtwoord en kan opgeslagen Gezondheid- en Agenda-gegevens bevatten; bewaar het op een vertrouwde plek. De iCloud-reservekopie in de app sluit deze gegevens en bewaarde dagoverzichten uit. Herstellen vervangt de huidige bibliotheek en ondersteunde instellingen. Lokaal wissen verwijdert geen geëxporteerde bestanden of cloudkopieën; verwijder die apart."
+        },
+        {
+          "q": "Kan ik een dagoverzicht in Notion of Obsidian bewaren?",
+          "a": "Stel bij Instellingen › Verbindingen met derden een bestemming in en kies en bevestig die bij een bewaard dagoverzicht. Er wordt niets automatisch verstuurd. Notion ontvangt het overzicht direct om een subpagina te maken. Obsidian gebruikt een klembordkopie op alleen dit apparaat die na twee minuten verloopt en opent een gedateerde notitie; controleer daar of die is bewaard. Loskoppelen of het overzicht in DayRecall wissen verwijdert geen bestaande kopieën in die apps."
+        }
+      ]
+    },
+    {
       "title": "Beschikbaarheid en hulp",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Vraag ‘Waar hadden we het over voor het slapengaan?’ of ‘Wat zei ik tijdens het hardlopen?’",
   "health_06": "Uit totdat je het aanzet. Alleen lezen: DayRecall schrijft nooit naar Gezondheid.",
   "health_07": "Alleen lezen. Gezondheidsinformatie staat in een beschermde cache op deze iPhone en gaat niet naar ons. Labels en waarden gaan alleen naar je API of een AI-app als je ze aan een dagoverzicht of gedeelde dag toevoegt. Toevoegen staat standaard uit.",
-  "health_09": "Animatie: Gezondheid wordt aangezet, de tijdlijn toont een wandeling en een hogere hartslag dan normaal en een vraag over voor het slapengaan vindt wat er is gezegd."
+  "health_09": "Animatie: Gezondheid wordt aangezet, de tijdlijn toont een wandeling en een hogere hartslag dan normaal en een vraag over voor het slapengaan vindt wat er is gezegd.",
+  "not_found_title": "Pagina niet gevonden — DayRecall",
+  "not_found_heading": "Deze pagina bestaat niet.",
+  "not_found_home": "DayRecall-startpagina"
 }

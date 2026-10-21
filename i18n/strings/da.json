@@ -264,6 +264,23 @@
       ]
     },
     {
+      "title": "Mac, sikkerhedskopier og noteapps",
+      "items": [
+        {
+          "q": "Hvordan fungerer Mac-appen med iPhone og Apple Watch?",
+          "a": "Mac kan optage et fysisk møde eller din mikrofon sammen med en valgt mødeapp. Automatisk transskription kræver en understøttet Mac med macOS 26 eller nyere. Par din egen iPhone for at dele gemt tekst, noter, titler, opgaveændringer og enhedsstatus via et krypteret lokalt netværk; hold begge apps åbne. Lydhjælp aktiveres særskilt, og iCloud-deling er valgfri. Mac-lyd fjernes, når transskriptionen er gemt; mislykkes den, beholdes lyden til et nyt forsøg."
+        },
+        {
+          "q": "Hvordan sikkerhedskopierer jeg biblioteket?",
+          "a": "Eksporter en lokal biblioteksfil i Indstillinger, eller brug den valgfrie private iCloud-sikkerhedskopi. Den lokale fil har ingen adgangskode og kan indeholde gemte Sundhed- og Kalenderdata; opbevar den et betroet sted. Appens iCloud-sikkerhedskopi udelader disse data og gemte opsummeringer. Gendannelse erstatter det aktuelle bibliotek og understøttede indstillinger. Lokal sletning fjerner ikke eksporterede filer eller skykopier; slet dem særskilt."
+        },
+        {
+          "q": "Kan jeg gemme en opsummering i Notion eller Obsidian?",
+          "a": "Indstil en destination i Indstillinger › Tredjepartsforbindelser, og vælg og bekræft den i en gemt opsummering. Intet sendes automatisk. Notion får opsummeringen direkte for at oprette en underside. Obsidian bruger en enhedslokal udklipsholderkopi, der udløber efter to minutter, og åbner en dateret note; kontrollér dér, at den er gemt. Afbrydelse eller sletning i DayRecall fjerner ikke kopier, der allerede er i appsene."
+        }
+      ]
+    },
+    {
       "title": "Tilgængelighed og hjælp",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Spørg ”Hvad talte vi om før sengetid?” eller ”Hvad sagde jeg, mens jeg løb?”",
   "health_06": "Slået fra, indtil du aktiverer det. Kun læseadgang: DayRecall skriver aldrig til Sundhed.",
   "health_07": "Kun læseadgang. Sundhedsoplysninger ligger i en beskyttet cache på denne iPhone og sendes ikke til os. Sundhedsetiketter og værdier sendes kun til din API eller en AI-app, hvis du vælger at tilføje dem til en opsummering eller delt dag. Tilføjelse af sundhedsdata er slået fra som standard.",
-  "health_09": "Animation: Sundhed slås til, tidslinjen viser en gåtur og puls over normalt, og et spørgsmål om før sengetid finder det sagte."
+  "health_09": "Animation: Sundhed slås til, tidslinjen viser en gåtur og puls over normalt, og et spørgsmål om før sengetid finder det sagte.",
+  "not_found_title": "Siden blev ikke fundet — DayRecall",
+  "not_found_heading": "Denne side findes ikke.",
+  "not_found_home": "DayRecalls forside"
 }

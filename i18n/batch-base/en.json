@@ -265,6 +265,23 @@
       ]
     },
     {
+      "title": "Mac, backups and note apps",
+      "items": [
+        {
+          "q": "How does the Mac app work with iPhone and Apple Watch?",
+          "a": "Mac can record an in-person meeting or your microphone and a selected meeting app. Automatic transcription requires a supported Mac with macOS 26 or later. Pair your own iPhone to share saved text, meeting notes, titles, task updates and device status over an encrypted local network; keep both apps open. Audio assistance is enabled separately, and iCloud sharing is optional. Mac audio is removed after its transcript is saved; failed transcription keeps audio for retry."
+        },
+        {
+          "q": "How can I back up my library?",
+          "a": "In Settings, export a local library file or use the optional private iCloud backup. The local file has no password and can include saved Health and Calendar inputs, so store it somewhere you trust. The in-app iCloud backup excludes these inputs and saved recaps. Restoring replaces the current library and supported settings. Deleting local data does not delete exported files or cloud copies; remove those separately."
+        },
+        {
+          "q": "Can I save a recap to Notion or Obsidian?",
+          "a": "Set up a destination in Settings › Third-party connections, then choose and confirm it on a saved recap. Nothing is sent automatically. Notion receives the recap directly to create a child page. Obsidian uses a device-only clipboard copy that expires after two minutes and opens a dated note; check Obsidian to confirm it was saved. Disconnecting or deleting a recap in DayRecall does not delete copies already in those apps."
+        }
+      ]
+    },
+    {
       "title": "Availability and help",
       "items": [
         {
@@ -684,5 +701,8 @@
   "health_05": "Ask “What did we talk about before bed?” or “What did I say while I was running?”",
   "health_06": "Off until you turn it on. Read only: DayRecall never writes to Health.",
   "health_07": "Read only. Health information is kept in a protected cache on this iPhone and is not sent to us. Health labels and values go to your API or an AI app only if you choose to add them to a recap or shared day. Adding Health data is off by default.",
-  "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said."
+  "health_09": "Animation: the Health switch is turned on, the timeline shows a walk and a heart rate above usual, and a question about before bed finds what was said.",
+  "not_found_title": "Page not found — DayRecall",
+  "not_found_heading": "This page isn’t here.",
+  "not_found_home": "DayRecall home"
 }
