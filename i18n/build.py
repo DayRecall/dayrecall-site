@@ -8,6 +8,8 @@ A language is built when i18n/strings/<code>.json exists; languages.json lists t
 order. Each language gets:
 - the home page, from template.html filled with its strings;
 - the FAQ page (<lang>/faq/), from the "faq" groups in its strings, once it has "faq_page_title";
+- the What's new page (<lang>/updates/), from updates.json (versions and dates, newest first) and the
+  "updates" words in its strings, once it has "updates_page_title"; the home page links its newest entry;
 - the long pages (<lang>/privacy/, terms/, support/), from docs/<page>.<code>.html, when that exists.
 All pages share the header and footer written here. A link to a page that a language doesn't have
 goes to the English page. A key missing from a language's strings shows the English text, and the
@@ -28,6 +30,8 @@ from pending import document_locale, fallback_paths
 I18N = pathlib.Path(__file__).resolve().parent
 ROOT = I18N.parent
 DOCS = I18N / 'docs'
+# Each entry: the versions it covers (oldest first), the day the newest came out and where (beta).
+UPDATES = json.loads((I18N / 'updates.json').read_text(encoding='utf-8'))
 SITE = 'https://dayrecall.com'
 EDGE = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 
@@ -40,10 +44,11 @@ EN = LANGS[0]
 assert EN['code'] == 'en', 'languages.json must list English first'
 
 DOC_PAGES = ['privacy', 'terms', 'support']
-PAGES = ['home', 'faq'] + DOC_PAGES
+PAGES = ['home', 'faq', 'updates'] + DOC_PAGES
 SECTIONS = [('how', 'nav_03'), ('devices', 'nav_04'), ('battery', 'nav_05'), ('voices', 'nav_06'),
             ('languages', 'nav_07'), ('privacy', 'nav_08')]
-FOOT = [('faq', 'foot_faq'), ('support', 'foot_support'), ('privacy', 'foot_privacy'), ('terms', 'foot_terms')]
+FOOT = [('updates', 'foot_updates'), ('faq', 'foot_faq'), ('support', 'foot_support'), ('privacy', 'foot_privacy'),
+        ('terms', 'foot_terms')]
 
 # Our accounts, with each platform's own monochrome glyph (from Simple Icons 16.35.0, CC0), drawn in
 # the text colour and never redrawn or boxed, as the platforms' brand guidelines ask.
@@ -88,6 +93,30 @@ def percent(code, number):
     if code == 'tr':
         return '%' + n
     return n + ('&nbsp;%' if code in SPACE_BEFORE_PERCENT else '%')
+
+
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+          'November', 'December']
+
+
+def date_text(code, iso, year=True):
+    """A day as the language writes it: October 22, 2026 or 2026年10月22日. A language without its own
+    words for the What's new lines shows them in English, so it is given 'en' here too; when a batch
+    translates What's new into another language, add that language's way of writing a date here."""
+    y, m, d = (int(part) for part in iso.split('-'))
+    if code in ('zh-Hans', 'zh-Hant', 'ja'):
+        return (f'{y}年' if year else '') + f'{m}月{d}日'
+    return f'{MONTHS[m - 1]} {d}, {y}' if year else f'{MONTHS[m - 1]} {d}'
+
+
+def version_label(entry):
+    """1.3.3, or 0.2.21–0.2.28 for an entry that covers several versions."""
+    v = entry['versions']
+    return v[0] if len(v) == 1 else f'{v[0]}–{v[-1]}'
+
+
+def release_anchor(entry):
+    return 'v' + entry['versions'][0].replace('.', '-')
 
 
 def plain(s):
@@ -139,6 +168,8 @@ def has(lang, page):
         return True
     if page == 'faq':
         return 'faq_page_title' in lang['own']
+    if page == 'updates':
+        return 'updates_page_title' in lang['own']
     return (DOCS / f'{page}.{lang["code"]}.html').exists()
 
 
@@ -238,6 +269,8 @@ def home_graph(lang, s):
          'description': plain(s['app_description']), 'url': SITE + lang['path'],
          'image': SITE + '/assets/icon-1024.png', 'operatingSystem': 'iOS 26, watchOS 26',
          'applicationCategory': 'UtilitiesApplication', 'featureList': [plain(f) for f in s['app_features']],
+         'softwareVersion': UPDATES[0]['versions'][-1],
+         'releaseNotes': SITE + url(lang if has(lang, 'updates') else EN, 'updates'),
          'publisher': {'@id': SITE + '/#org'}},
     ]
     if not has(lang, 'faq'):   # the questions are answered on the home page itself
@@ -340,6 +373,16 @@ def faq_section(lang, s):
             '      </div>\n      <div class="qa">\n' + questions(items, '        ', True) + '\n      </div>\n    </div>\n  </section>\n')
 
 
+def latest_link(lang, s):
+    """Under the hero's buttons: the newest entry of What's new, with its day, so a visitor sees how recent it is."""
+    entry = UPDATES[0]
+    code = lang['code'] if 'updates_latest' in lang['own'] else 'en'
+    text = (s['updates_latest'].replace('{date}', date_text(code, entry['date'], year=False))
+            .replace('{title}', s['updates'][entry['id']]['title']))
+    return (f'<a class="latest" {href(lang, "updates")}><span class="latest-ver">{version_label(entry)}</span>'
+            f'<span class="latest-text">{text}</span><span class="arrow" aria-hidden="true">→</span></a>')
+
+
 def home_page(lang, s, template):
     body = template
     for key, value in s.items():
@@ -347,6 +390,7 @@ def home_page(lang, s, template):
             body = body.replace('{{' + key + '}}', value)
     body = (body.replace('{{@home}}', lang['path'])
                 .replace('{{@home_url}}', SITE + lang['path'])
+                .replace('{{@latest}}', latest_link(lang, s))
                 .replace('{{@faq}}', faq_section(lang, s)))
     body = re.sub(r'\{\{@pct:([0-9.]+)\}\}', lambda m: percent(lang['code'], m.group(1)), body)
     if '{{' in body:
@@ -396,6 +440,57 @@ def faq_page(lang, s):
   </section>
 </main>'''
     return assemble(lang, s, 'faq', s['faq_page_title'], s['faq_page_description'], main, [faq_graph(lang, s, 'faq')])
+
+
+def updates_page(lang, s):
+    """What's new: every entry of updates.json, newest first and open, the older ones folded to a line each."""
+    code = lang['code']
+    total = sum(len(entry['versions']) for entry in UPDATES)
+    summary = s['updates_summary'].replace('{n}', str(total)).replace('{date}', date_text(code, UPDATES[-1]['date']))
+    entries = []
+    for i, entry in enumerate(UPDATES):
+        words = s['updates'][entry['id']]
+        items = '\n'.join(f'            <li>{item}</li>' for item in words['items'])
+        entries.append(
+            f'        <details id="{release_anchor(entry)}"{" open" if i == 0 else ""}>\n'
+            '          <summary><span class="rel-head"><span class="rel-meta">'
+            f'<time datetime="{entry["date"]}">{date_text(code, entry["date"])}</time>'
+            f'<span class="rel-ver">{version_label(entry)}</span>'
+            f'<span class="rel-tag">{s["updates_" + entry["channel"]]}</span></span>'
+            f'<span class="rel-title">{words["title"]}</span></span></summary>\n'
+            f'          <ul class="rel-items">\n{items}\n          </ul>\n'
+            '        </details>')
+    entries = '\n'.join(entries)
+    main = f'''<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="kicker">{s["updates_kicker"]}</p>
+      <h1>{s["updates_heading"]}</h1>
+      <p class="lead">{s["updates_lead"]}</p>
+      <p class="meta">{summary}</p>
+    </div>
+  </section>
+
+  <section class="doc releases-doc">
+    <div class="wrap">
+      <div class="qa releases">
+{entries}
+      </div>
+    </div>
+  </section>
+
+  <section class="dark help-more">
+    <div class="wrap">
+      <div>
+        <p class="kicker">{s["updates_kicker"]}</p>
+        <h2>{s["foot_social"]}</h2>
+        <p>{s["updates_follow_text"]}</p>
+      </div>
+      {social_nav(s, "      ")}
+    </div>
+  </section>
+</main>'''
+    return assemble(lang, s, 'updates', s['updates_page_title'], s['updates_page_description'], main)
 
 
 def read_doc(page, code):
@@ -539,9 +634,11 @@ def main():
         out = ROOT / lang['path'].lstrip('/')
         write(out / 'index.html', home_page(lang, s, template))
         built = ['home']
-        for page in ['faq'] + DOC_PAGES:
+        for page in ['faq', 'updates'] + DOC_PAGES:
             if has(lang, page):
-                write(out / page / 'index.html', faq_page(lang, s) if page == 'faq' else doc_page(lang, s, page))
+                text = (faq_page(lang, s) if page == 'faq' else updates_page(lang, s) if page == 'updates'
+                        else doc_page(lang, s, page))
+                write(out / page / 'index.html', text)
                 built.append(page)
         write(ROOT / 'tools' / 'og' / f'{lang["slug"]}.html', og_page(lang, s))
         note = f'; {len(lang["missing"])} keys shown in English until the next batch' if lang['missing'] else ''

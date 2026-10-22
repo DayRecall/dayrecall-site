@@ -182,7 +182,9 @@
     heartFill: [['path', 'f', { d: 'M12 19.8s-7.6-4.6-7.6-10.3A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.6 2.5c0 5.7-7.6 10.3-7.6 10.3z' }]],
     steps: [['path', 's', { d: 'M8.2 4.5c1.6 0 2.4 1.4 2.4 3.2 0 2-.9 3.4-2.5 3.4S5.8 9.7 5.8 7.8c0-1.8.8-3.3 2.4-3.3zM15.6 11.8c1.6 0 2.5 1.4 2.5 3.3 0 2-.9 3.4-2.5 3.4s-2.4-1.4-2.4-3.3c0-1.8.8-3.4 2.4-3.4z' }]],
     dumbbell: [['path', 's', { d: 'M3.5 9.5v5M6.5 7v10M17.5 7v10M20.5 9.5v5M6.5 12h11' }]],
-    arrowRight: [['path', 's', { d: 'M5 12h14M13 6l6 6-6 6' }]]
+    arrowRight: [['path', 's', { d: 'M5 12h14M13 6l6 6-6 6' }]],
+    poster: [['rect', 's', { x: 5.5, y: 3, width: 13, height: 18, rx: 2.5 }], ['path', 's', { d: 'M9 16.5V14M12 16.5v-6M15 16.5v-4' }]],
+    video: [['rect', 's', { x: 3.5, y: 5.5, width: 17, height: 13, rx: 3 }], ['path', 'f', { d: 'M10.2 9.4v5.2l4.4-2.6z' }]]
   };
 
   /** An icon centred on the origin of a new group; `size` is the side of its 24-point box. */
@@ -2493,13 +2495,321 @@
     }
   };
 
+  // 17. A poster of the day (PosterEditorView, PosterCanvas.swift): the day as a dark poster with how long
+  //     the talking took, a name for the day and when it happened; then a line picked from it, swept by the
+  //     highlighter; then the day as a till receipt, and a short video of it to share.
+
+  /** The poster's own colours (PosterPalette): the same in the light and the dark theme of the page. */
+  var PP = {
+    ink: '#111318', white: '#FFFFFF', lime: '#CDF04A', muted: '#9AA0AA', faint: '#6E747E', tile: '#24272C',
+    paperMuted: '#5E636E', rule: '#B9BEC6', levels: ['#24272C', '#2F3B12', '#536A17', '#87A81A', '#CDF04A']
+  };
+  /** How much was said in each half hour of the poster's day, from 0 (nothing) to 4 (the most). */
+  var POSTER_DAY = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 2, 1, 4, 2, 3, 3, 4, 1, 0, 4, 2, 1, 2, 0, 1, 3, 2, 1, 0, 2, 4, 2, 1, 0, 0, 0, 0, 0, 0];
+
+  /** The app icon in small: lime bars on a dark tile, and the name after it unless `bare`. */
+  function posterMark(parent, x, y, onInk, bare) {
+    var g = el(parent, 'g', { transform: 'translate(' + x + ' ' + y + ')' });
+    el(g, 'rect', { x: 0, y: -5.5, width: 11, height: 11, rx: 2.6, fill: onInk ? PP.tile : PP.ink });
+    [0.22, 0.44, 0.3, 0.56, 0.36, 0.18].forEach(function (h, i) {
+      el(g, 'rect', { x: 2.05 + i * 1.25, y: -h * 5.5, width: 0.8, height: h * 11, rx: 0.4, fill: PP.lime });
+    });
+    if (!bare) txt(g, 'DayRecall', 15, 0.5, 8, 700, onInk ? PP.white : PP.ink);
+    return g;
+  }
+
+  /** A QR code in the corner: its three finder squares and a scatter of modules, enough to read as one. */
+  function qrTile(parent, x, y, side, onPaper) {
+    var g = el(parent, 'g', { transform: 'translate(' + x + ' ' + y + ')' });
+    el(g, 'rect', { x: 0, y: 0, width: side, height: side, rx: side * 0.14, fill: PP.white, stroke: onPaper ? '#E4E6EA' : 'none', 'stroke-width': 0.8 });
+    var cell = (side - 4) / 9;
+    function at(cx, cy, w, fill) { el(g, 'rect', { x: 2 + cx * cell, y: 2 + cy * cell, width: cell * w, height: cell * w, fill: fill }); }
+    [[0, 0], [6, 0], [0, 6]].forEach(function (p) {
+      at(p[0], p[1], 3, PP.ink);
+      at(p[0] + 0.55, p[1] + 0.55, 1.9, PP.white);
+      at(p[0] + 1, p[1] + 1, 1, PP.ink);
+    });
+    [[4, 0], [4, 2], [3, 4], [5, 4], [4, 5], [7, 4], [8, 5], [6, 6], [8, 7], [4, 7], [5, 8], [7, 8], [3, 3], [8, 3]].forEach(function (p) {
+      at(p[0], p[1], 1, PP.ink);
+    });
+    return g;
+  }
+
+  var Poster = {
+    w: 342, h: 320, length: 13.8, preview: 3.9, still: 3.9,
+    steps: [{ start: 0, still: 3.9 }, { start: 4.1, still: 7.5 }, { start: 7.8, still: 13.1 }],
+    build: function (svg, ctx) {
+      var W = ctx.words.poster;
+      var M = { line: 4.3, receipt: 7.9, video: 11.6 };
+      var c = canvas(svg, Poster.length, 0.3, 0.4);
+      var content = c.content;
+      el(content, 'rect', { x: 0, y: 0, width: 342, height: 320, fill: 'ground' });
+
+      // The preview: a 9:16 poster on the left of the editor.
+      var PW = 160, PH = 288, SX = 12, SW = 136, pitch = SW / POSTER_DAY.length;
+      var clip = uid('poster');
+      el(el(el(svg, 'defs'), 'clipPath', { id: clip }), 'rect', { x: 0, y: 0, width: PW, height: PH, rx: 14 });
+      // A still shadow under the poster, so the moving picture above it is not filtered on every frame.
+      var shadow = el(content, 'rect', { x: 20, y: 24, width: PW - 8, height: PH - 4, rx: 14, fill: PP.ink, opacity: 0.16 });
+      shadow.style.filter = 'blur(7px)';
+      var frame = el(content, 'g', { transform: 'translate(16 16)' });
+      var pic = el(frame, 'g', { 'clip-path': 'url(#' + clip + ')' });
+
+      // The day: dark, the length of the talk counted up, the name of the day, the day as a strip of bars.
+      var dayG = el(pic, 'g');
+      el(dayG, 'rect', { x: 0, y: 0, width: PW, height: PH, fill: PP.ink });
+      var dHead = el(dayG, 'g');
+      posterMark(dHead, 12, 18, true);
+      txt(dHead, W.date, PW - 12, 18.5, 7, 500, PP.muted, { anchor: 'end' });
+      var big = el(dayG, 'g');
+      var hN = txt(big, '3', 0, 0, 34, 600, PP.white), hU = txt(big, W.hours, 0, 8, 12, 500, PP.muted);
+      var mN = txt(big, '02', 0, 0, 34, 600, PP.white), mU = txt(big, W.minutes, 0, 8, 12, 500, PP.muted);
+      hN.style.fontVariantNumeric = mN.style.fontVariantNumeric = 'tabular-nums';
+      var bx = 12 + width(hN) + 2;
+      hN.setAttribute('x', 12);
+      hU.setAttribute('x', bx);
+      bx += width(hU) + 5;
+      mN.setAttribute('x', bx);
+      mU.setAttribute('x', bx + width(mN) + 2);
+      var shownMinutes = -1;
+      var caption = txt(dayG, W.caption, 0, 0, 8, 400, PP.muted);
+      fit(caption, SW, 0.7);
+      var chip = el(dayG, 'g');
+      var chipW = measure(dayG, W.dayName, 8, 650) + 16;
+      el(chip, 'rect', { x: 0, y: -7.5, width: chipW, height: 15, rx: 7.5, fill: PP.lime });
+      txt(chip, W.dayName, 8, 0.5, 8, 650, PP.ink);
+      var HT = [3, 8, 14, 22, 32], base = 190;
+      var dayBars = POSTER_DAY.map(function (lv, i) {
+        return el(dayG, 'rect', { x: SX + i * pitch, y: base, width: pitch - 0.8, height: 0, rx: 0.8, fill: PP.levels[lv] });
+      });
+      var cursor = el(dayG, 'rect', { x: SX, y: base - 36, width: 1.2, height: 38, rx: 0.6, fill: PP.lime });
+      var hours = el(dayG, 'g');
+      ['6:00', '12:00', '18:00'].forEach(function (m, i) {
+        txt(hours, m, SX + SW * (i + 1) / 4, base + 9, 6.5, 500, PP.faint, { anchor: 'middle' });
+      });
+      var stats = W.stats.map(function (st) {
+        var g = el(dayG, 'g');
+        txt(g, st.v, 0, 0, 13, 650, PP.white);
+        fit(txt(g, st.l, 0, 13, 7, 400, PP.muted), 42, 0.7);
+        return g;
+      });
+      var dFoot = el(dayG, 'g');
+      txt(dFoot, W.address, 12, 270, 7.5, 650, PP.white);
+      qrTile(dFoot, PW - 34, 254, 22, false);
+
+      // A line: white, the line you picked swept by the highlighter, and the moment it was said.
+      var lineG = el(pic, 'g');
+      el(lineG, 'rect', { x: 0, y: 0, width: PW, height: PH, fill: PP.white });
+      var lHead = el(lineG, 'g');
+      fit(txt(lHead, W.kicker, 12, 18.5, 7, 500, PP.paperMuted), 84, 0.7);
+      txt(lHead, W.date, PW - 12, 18.5, 7, 500, PP.paperMuted, { anchor: 'end' });
+      var quote = el(lineG, 'g');
+      [0, 11].forEach(function (dx) {
+        el(quote, 'circle', { cx: 17.5 + dx, cy: 61, r: 4.4, fill: PP.ink });
+        el(quote, 'path', { d: 'M' + (13.2 + dx) + ' 61.5C' + (13.2 + dx) + ' 55 ' + (15.8 + dx) + ' 51.5 ' + (20.4 + dx) + ' 50',
+          fill: 'none', stroke: PP.ink, 'stroke-width': 3, 'stroke-linecap': 'round' });
+      });
+      var lineSize = /[⺀-鿿]/.test(W.line) ? 18 : 20, lineH = lineSize * 1.34;
+      var parts = W.line.match(/[^\s⺀-鿿＀-￯]+|\s+|[\s\S]/g) || [];
+      var probe = txt(lineG, '', 12, 0, lineSize, 750, PP.ink);
+      var lines = [], line = '';
+      parts.forEach(function (p) {
+        probe.textContent = (line + p).replace(/\s+$/, '');
+        if (line && !/^\s+$/.test(p) && width(probe) > SW) {
+          lines.push(line.replace(/\s+$/, ''));
+          line = p;
+        } else {
+          line += p;
+        }
+      });
+      if (line) lines.push(line.replace(/\s+$/, ''));
+      lineG.removeChild(probe);
+      var marked = lines.map(function (l, i) {
+        var y = 90 + lineH * i;
+        var mark = el(lineG, 'rect', { x: 10, y: y - lineSize * 0.44, width: 0, height: lineSize * 0.88, rx: 3, fill: PP.lime });
+        return { mark: mark, w: width(txt(lineG, l, 12, y, lineSize, 750, PP.ink)) + 4 };
+      });
+      var lBase = 222, MI = 39;
+      var lineBars = POSTER_DAY.map(function (lv, i) {
+        var h = [2, 4, 6, 8, 10][lv];
+        return el(lineG, 'rect', { x: SX + i * pitch, y: lBase - h, width: pitch - 0.8, height: h, rx: 0.6, fill: PP.ink, 'fill-opacity': i === MI ? 0 : 0.16 });
+      });
+      var marker = el(lineG, 'rect', { x: SX + MI * pitch, y: lBase - 10, width: pitch - 0.8, height: 10, rx: 0.6, fill: PP.ink });
+      var lineTime = txt(lineG, W.lineTime, SX + MI * pitch + pitch / 2, lBase + 9, 7, 650, PP.ink, { anchor: 'middle' });
+      var lFoot = el(lineG, 'g');
+      txt(lFoot, W.address, 12, 270, 7.5, 650, PP.ink);
+      qrTile(lFoot, PW - 34, 254, 22, true);
+
+      // A receipt: the day's numbers as items on a till receipt on a lime table, the day itself as the barcode.
+      var recG = el(pic, 'g');
+      el(recG, 'rect', { x: 0, y: 0, width: PW, height: PH, fill: PP.lime });
+      var paper = el(recG, 'g');
+      var RX = 14, RW = 132, RT = 24, RH = 200, teeth = 12, tw = RW / teeth;
+      var d = 'M' + RX + ' ' + (RT + 3);
+      for (var i = 0; i < teeth; i++) d += 'L' + (RX + tw * (i + 0.5)) + ' ' + RT + 'L' + (RX + tw * (i + 1)) + ' ' + (RT + 3);
+      d += 'L' + (RX + RW) + ' ' + (RT + RH - 3);
+      for (var j = teeth; j > 0; j--) d += 'L' + (RX + tw * (j - 0.5)) + ' ' + (RT + RH) + 'L' + (RX + tw * (j - 1)) + ' ' + (RT + RH - 3);
+      el(paper, 'path', { d: d + 'Z', fill: PP.white });
+      var mid = RX + RW / 2;
+      posterMark(paper, mid - 5.5, RT + 17, false, true);
+      txt(paper, 'DayRecall', mid, RT + 33, 8, 650, PP.ink, { anchor: 'middle', mono: true });
+      txt(paper, W.date, mid, RT + 43, 6.5, 400, PP.paperMuted, { anchor: 'middle', mono: true });
+      function rule(y) {
+        el(paper, 'line', { x1: RX + 10, y1: y, x2: RX + RW - 10, y2: y, stroke: PP.rule, 'stroke-width': 0.8, 'stroke-dasharray': '2.5 2' });
+      }
+      rule(RT + 53);
+      var rows = W.rows.map(function (r, k) {
+        var g = el(paper, 'g');
+        var y = RT + 65 + 12.5 * k;
+        var lw = width(txt(g, r[0], RX + 10, y, 7, 400, PP.ink, { mono: true }));
+        var vw = width(txt(g, r[1], RX + RW - 10, y, 7, 400, PP.ink, { anchor: 'end', mono: true }));
+        el(g, 'line', { x1: RX + 13 + lw, y1: y + 2, x2: RX + RW - 13 - vw, y2: y + 2, stroke: PP.rule, 'stroke-width': 0.9,
+          'stroke-dasharray': '0.1 2', 'stroke-linecap': 'round' });
+        return g;
+      });
+      var afterRows = RT + 65 + 12.5 * rows.length;
+      rule(afterRows - 2);
+      var total = el(paper, 'g');
+      txt(total, W.total[0], RX + 10, afterRows + 10, 7.5, 700, PP.ink, { mono: true });
+      fit(txt(total, W.total[1], RX + RW - 10, afterRows + 10, 7.5, 700, PP.ink, { anchor: 'end', mono: true }), RW - 56, 0.7);
+      var codeBars = [], cx = RX + 12;
+      POSTER_DAY.slice(18, 42).forEach(function (lv) {
+        var w = 0.8 + 0.7 * lv;
+        codeBars.push(el(paper, 'rect', { x: cx, y: afterRows + 22, width: w, height: 22, fill: PP.ink }));
+        cx += (RW - 24) / 24;
+      });
+      var address = txt(paper, W.address, mid, afterRows + 53, 6, 400, PP.paperMuted, { anchor: 'middle', mono: true });
+      var rFoot = el(recG, 'g');
+      txt(rFoot, W.address, 12, 270, 7.5, 650, PP.ink);
+      qrTile(rFoot, PW - 34, 254, 22, false);
+
+      // The editor's controls on the right: the look, then sharing a picture or a video.
+      txt(content, W.title, 190, 30, 19, 700, 'ink');
+      el(content, 'rect', { x: 190, y: 48, width: 136, height: 120, rx: 18, fill: 'card' });
+      var swatch = [PP.ink, PP.white, PP.lime];
+      var looks = W.looks.map(function (name, k) {
+        var y = 68 + 40 * k;
+        if (k) el(content, 'rect', { x: 228, y: y - 20, width: 98, height: 1, fill: 'hair' });
+        el(content, 'rect', { x: 203, y: y - 11, width: 16, height: 22, rx: 4, fill: swatch[k], stroke: k === 1 ? '#E4E6EA' : 'none', 'stroke-width': 1 });
+        var off = txt(content, name, 229, y + 0.5, 12, 500, 'ink2');
+        fit(off, 70, 0.75);
+        var on = el(content, 'g');
+        fit(txt(on, name, 229, y + 0.5, 12, 650, 'ink'), 70, 0.75);
+        var tick = el(on, 'g');
+        icon(tick, 'check', 13, 'accent');
+        move(tick, 312, y);
+        return { on: on, off: off, tick: tick, y: y };
+      });
+      var picBtn = el(content, 'g', { transform: 'translate(190 182)' });
+      el(picBtn, 'rect', { x: 0, y: 0, width: 136, height: 36, rx: 18, fill: 'accent' });
+      move(icon(picBtn, 'share', 13, 'on-accent'), 20, 18);
+      fit(txt(picBtn, W.picture, 34, 18.5, 11.5, 600, 'on-accent'), 92, 0.75);
+      var vidBtn = el(content, 'g', { transform: 'translate(190 226)' });
+      el(vidBtn, 'rect', { x: 0, y: 0, width: 136, height: 36, rx: 18, fill: 'card' });
+      var vidIcon = el(vidBtn, 'g');
+      move(icon(vidIcon, 'video', 14, 'ink'), 20, 18);
+      var vidDone = el(vidBtn, 'g');
+      move(icon(vidDone, 'check', 14, 'success'), 20, 18);
+      fit(txt(vidBtn, W.video, 34, 18.5, 11.5, 600, 'ink'), 92, 0.75);
+      var making = el(content, 'g');
+      fit(txt(making, W.making, 190, 281, 10, 500, 'ink2'), 136, 0.75);
+      el(making, 'rect', { x: 190, y: 291, width: 136, height: 5, rx: 2.5, fill: 'track' });
+      var bar = el(making, 'rect', { x: 190, y: 291, width: 0, height: 5, rx: 2.5, fill: 'accent' });
+
+      var fing = finger(content, [{ x: 262, y: 108, at: M.line }, { x: 262, y: 148, at: M.receipt }, { x: 258, y: 244, at: M.video }]);
+      // A look that cannot be seen is not drawn at all.
+      function shown(g, v) {
+        op(g, v);
+        g.style.display = v > 0 ? '' : 'none';
+      }
+
+      return function (t) {
+        c.fade(t);
+        var toLine = ease(seg(t, M.line + 0.05, M.line + 0.3)), toReceipt = ease(seg(t, M.receipt + 0.05, M.receipt + 0.3));
+        shown(dayG, 1 - toLine);
+        shown(lineG, toLine * (1 - toReceipt));
+        shown(recG, toReceipt);
+
+        // The day.
+        var td = t - 0.2;
+        rise(dHead, td, 0, 0, 0, 6, 0.4);
+        rise(big, td, 0.2, 0, 74, 12, 0.5);
+        var minutes = Math.round(182 * easeOut(seg(td, 0.3, 1.9)));
+        if (minutes !== shownMinutes) {
+          shownMinutes = minutes;
+          hN.textContent = String(Math.floor(minutes / 60));
+          mN.textContent = (minutes % 60 < 10 ? '0' : '') + (minutes % 60);
+        }
+        rise(caption, td, 1.4, 12, 100, 6, 0.4);
+        var pop = seg(td, 1.6, 2.1);
+        move(chip, 12, 122, lerp(0.6, 1, spring(pop)));
+        op(chip, seg(td, 1.6, 1.8));
+        var sweep = ease(seg(td, 1.9, 3.2)), edge = SX + SW * sweep;
+        dayBars.forEach(function (b, i) {
+          var x = SX + i * pitch, h = HT[POSTER_DAY[i]] * clamp((edge - x) / (pitch * 3));
+          b.setAttribute('y', base - h);
+          b.setAttribute('height', h);
+        });
+        cursor.setAttribute('x', edge - 0.6);
+        op(cursor, sweep > 0 && sweep < 1 ? 1 : 0);
+        op(hours, seg(td, 1.9, 2.2));
+        stats.forEach(function (g, i) { rise(g, td, 2.9 + 0.15 * i, 12 + 46 * i, 220, 8, 0.35); });
+        rise(dFoot, td, 3.3, 0, 0, 6, 0.4);
+
+        // A line.
+        var tl = t - (M.line + 0.15);
+        rise(lHead, tl, 0, 0, 0, 6, 0.4);
+        rise(quote, tl, 0.15, 0, 0, 6, 0.4);
+        var swept = ease(seg(tl, 0.4, 1.8)) * marked.length;
+        marked.forEach(function (m, i) { m.mark.setAttribute('width', m.w * clamp(swept - i)); });
+        var shownBars = seg(tl, 1.9, 2.4);
+        lineBars.forEach(function (b, i) { op(b, clamp(shownBars * 48 - i) > 0 ? 1 : 0); });
+        var grow = easeOut(seg(tl, 2.4, 2.8));
+        marker.setAttribute('height', lerp(10, 26, grow));
+        marker.setAttribute('y', lBase - lerp(10, 26, grow));
+        op(marker, shownBars > 0.8 ? 1 : 0);
+        op(lineTime, seg(tl, 2.6, 2.8));
+        rise(lFoot, tl, 2.6, 0, 0, 6, 0.4);
+
+        // A receipt.
+        var tr = t - (M.receipt + 0.15);
+        paper.setAttribute('transform', 'translate(0 ' + ((1 - easeOut(seg(tr, 0, 0.9))) * 300) + ')');
+        rows.forEach(function (g, k) { rise(g, tr, 0.8 + 0.22 * k, 0, 0, 4, 0.25); });
+        rise(total, tr, 1.9, 0, 0, 4, 0.3);
+        var printed = seg(tr, 2.1, 2.8) * codeBars.length;
+        codeBars.forEach(function (b, k) { op(b, printed > k ? 1 : 0); });
+        op(address, seg(tr, 2.7, 3.0));
+        rise(rFoot, tr, 2.9, 0, 0, 6, 0.4);
+
+        // The controls.
+        var chosen = t < M.line ? 0 : t < M.receipt ? 1 : 2;
+        looks.forEach(function (l, k) {
+          var at = k === 0 ? 0 : k === 1 ? M.line : M.receipt;
+          op(l.on, k === chosen ? 1 : 0);
+          op(l.off, k === chosen ? 0 : 1);
+          var s = k === chosen ? (k === 0 ? 1 : spring(seg(t, at, at + 0.35))) : 0;
+          l.tick.setAttribute('transform', 'translate(312 ' + l.y + ') scale(' + lerp(0.4, 1, Math.min(s, 1.15)) + ')');
+        });
+        var press = pulse(t, M.video - 0.05, M.video + 0.2), bs = 1 - 0.04 * press;
+        vidBtn.setAttribute('transform', 'translate(' + (190 + 68 * (1 - bs)) + ' ' + (226 + 18 * (1 - bs)) + ') scale(' + bs + ')');
+        var made = seg(t, M.video + 0.15, M.video + 1.15), done = seg(t, M.video + 1.25, M.video + 1.45);
+        op(making, seg(t, M.video + 0.1, M.video + 0.3) * (1 - done));
+        bar.setAttribute('width', 136 * made);
+        op(vidIcon, 1 - done);
+        op(vidDone, done);
+        fing(t);
+      };
+    }
+  };
+
   // ---------------------------------------------------------------------------------------------
   // Playing: only the animations on screen run; with Reduce Motion each shows its still frame.
 
   var STAGES = {
     listening: Listening, tidying: Tidying, privacy: Privacy, consent: Consent, voice: Voice, ask: AskDay,
     battery: Battery, speakers: Speakers, languages: Languages, sync: Sync,
-    todos: Todos, places: Places, day: Day, week: Week, handoff: Export, health: Health
+    todos: Todos, places: Places, day: Day, week: Week, handoff: Export, health: Health, poster: Poster
   };
   // The steps of the longer ones, for the pages that explain them: where each begins and its best moment.
   AskDay.preview = AskDay.still;

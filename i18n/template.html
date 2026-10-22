@@ -10,6 +10,7 @@
           <a class="pill store" data-store href="{{@home_url}}" hidden>{{hero_05}}<span class="arrow" aria-hidden="true">↗</span></a>
           <a class="ghost" href="#how">{{hero_06}}<span class="arrow" aria-hidden="true">↓</span></a>
         </div>
+        {{@latest}}
         <ul class="proof">
           <li><b>{{@pct:0.9}}</b><span>{{hero_07}}">1</a></span></li>
           <li><b>{{@pct:99.9}}</b><span>{{hero_08}}">2</a></span></li>
@@ -199,6 +200,15 @@
           <p>{{features_14}}</p>
           <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
         </article>
+        <article class="feat wide" data-feature="poster">
+          <div class="feat-shot t-light" data-thumb="poster" aria-hidden="true"></div>
+          <div class="feat-text">
+            <span class="ico" data-icon="poster"></span>
+            <h3><button type="button" class="feat-open" aria-haspopup="dialog">{{features_16}}</button></h3>
+            <p>{{features_17}}</p>
+            <span class="feat-watch" aria-hidden="true"><i class="play"></i>{{features_15}}</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -242,6 +252,7 @@
       <p class="sub">{{final_01}}</p>
       <span class="pill" data-prelaunch><span class="dot"></span>{{final_02}}</span>
       <a class="pill store" data-store href="{{@home_url}}" hidden>{{final_03}}<span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="price">{{final_05}}</p>
       <p class="small">{{final_04}}</p>
     </div>
   </section>

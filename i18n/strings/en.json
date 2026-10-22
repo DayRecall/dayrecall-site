@@ -120,6 +120,7 @@
   "final_02": "Coming soon to the App Store",
   "final_03": "Get DayRecall on the App Store ",
   "final_04": "Best with Apple Watch · Works with iPhone alone · In 14 languages",
+  "final_05": "Free to download, with every feature free for 3 days. Then buy it once: no subscription.",
   "foot_01": "Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "faq": [
     {
@@ -289,6 +290,14 @@
           "a": "DayRecall is in beta and coming soon to the App Store."
         },
         {
+          "q": "How much does DayRecall cost?",
+          "a": "DayRecall will be free to download from the App Store. Once it is set up, you can start a free 3-day trial with every feature; the 3 days begin when you start the trial, not when you download. After that, one purchase unlocks it: there is no subscription and nothing renews. The price is shown before your trial begins. If you don’t buy it, what you kept stays yours, to read, search, export and delete. While DayRecall is in beta on TestFlight, it is free."
+        },
+        {
+          "q": "Is DayRecall still being worked on?",
+          "a": "Yes. Every version is written up on <a href=\"/updates/\">What’s new</a>, newest first, with the date it came out."
+        },
+        {
           "q": "How do I get help?",
           "a": "Write to support@dayrecall.com and tell us when it happened and on which device. A log helps most: <strong>Settings › Developer options › Logs › Share log</strong>."
         }
@@ -301,6 +310,7 @@
   "foot_support": "Support",
   "foot_faq": "FAQ",
   "foot_terms": "Terms of Service",
+  "foot_updates": "What’s new",
   "foot_social": "Follow DayRecall",
   "faq_kicker": "FAQ",
   "faq_heading": "Questions, answered",
@@ -311,6 +321,96 @@
   "faq_page_toc": "Topics",
   "faq_page_more": "Still have a question?",
   "faq_page_more_text": "Write to us and we’ll get back to you.",
+  "updates_page_title": "What’s new — DayRecall",
+  "updates_page_description": "Every DayRecall update, newest first: what changed in each beta version, and when it came out.",
+  "updates_kicker": "What’s new",
+  "updates_heading": "Every update, written down.",
+  "updates_lead": "DayRecall is in beta on TestFlight and coming soon to the App Store. Here is what changed in each version, newest first.",
+  "updates_summary": "{n} versions since {date}",
+  "updates_beta": "Beta",
+  "updates_latest": "Updated {date}: {title}",
+  "updates_follow_text": "We post news on TikTok, X and Instagram. For help or feedback, email <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: that’s where we reply.",
+  "updates": {
+    "1.3.3": {
+      "title": "Settings, simplified",
+      "items": [
+        "Meeting language now sits under Multilingual transcription, and appears once you have a second working language.",
+        "Listening hours take one line a day. A day you switch on reuses the hours of the day before, and a changed time can go to every listening day at once.",
+        "Advanced settings is a short list that opens each part, and Data and Backups is redesigned.",
+        "Fixes a recap page that could freeze, Apple Watch transfers that could stall, and a backup compatibility problem."
+      ]
+    },
+    "1.3.2": {
+      "title": "New voice matching, and backups",
+      "items": [
+        "“My voice” uses a new voice-matching model. Record your voice once more after updating; earlier labels stay.",
+        "Language detection decides on 6 seconds of speech by default; choose 3 or 6 seconds in Advanced settings.",
+        "Back up your library to a file or to your private iCloud, and restore it.",
+        "Fixes for turning off sharing with your API and for cancelled requests. Edits you make while a conversation is transcribed again are kept."
+      ]
+    },
+    "1.3.1": {
+      "title": "All 14 languages, smoother days",
+      "items": [
+        "Every screen, the new ones included, comes in all 14 languages.",
+        "On Mac, the same 17 transcription languages as on iPhone, with Simplified and Traditional Chinese told apart.",
+        "Switching between days is smoother.",
+        "Speaking time counts only real speech, and a silent recording no longer says it was transcribed."
+      ]
+    },
+    "1.3.0": {
+      "title": "Mac, daily posters and editing",
+      "items": [
+        "DayRecall for Mac, in beta: record an in-person or online meeting, pause and resume, keep your meetings and to-dos, and link your iPhone and Apple Watch over your local network. Transcribing on the Mac needs a supported Mac with macOS 26.",
+        "Daily posters: three looks and a line you pick, as a picture or a short video.",
+        "Edit a conversation: rename it, fix a line, or go back to the original. While its audio is still kept, you can also correct its language.",
+        "Choose the meeting language from your Apple Watch.",
+        "Save a recap to Notion or Obsidian.",
+        "Fixes the watch showing as listening after it had stopped, and its stop reminder being withdrawn too early."
+      ]
+    },
+    "0.2.34": {
+      "title": "Mac joins the beta",
+      "items": [
+        "DayRecall for Mac joins the beta: import meeting transcripts, and let a paired Mac transcribe for your iPhone over your encrypted local network.",
+        "A free 3-day trial and a one-time purchase are added, for when DayRecall is on the App Store. During the beta it stays free.",
+        "About now has links to rate DayRecall, share it and visit the website."
+      ]
+    },
+    "0.2.33": {
+      "title": "Listening picks itself back up",
+      "items": [
+        "When an alarm, a call or Siri interrupts, your Apple Watch goes back to listening on its own, and reminds you only if it can’t.",
+        "Choose when that reminder comes in Settings › Listening hours › If listening pauses.",
+        "Better at questions about what you were doing, like “What did I say while I was running?”",
+        "Short walks no longer hide behind long conversations on the timeline."
+      ]
+    },
+    "0.2.29": {
+      "title": "Recaps, written in the background",
+      "items": [
+        "Recap your day writes in the background: leave the page, and the recap is saved with that day.",
+        "Before it starts, you see about how long it will take; while it works, its step and the time left.",
+        "Not good enough? Hand the day to an AI app and bring its answer back, saved next to the day.",
+        "Recap every day: Remind me, Write it for me, or Off.",
+        "If this iPhone can’t write a recap, it says why and offers two other ways.",
+        "A reminder on your watch when listening hours begin, and once more on your iPhone 20 minutes later if you haven’t started.",
+        "A crash at launch in 0.2.31 was fixed the same day, in 0.2.32."
+      ]
+    },
+    "0.2.21": {
+      "title": "The first betas as DayRecall",
+      "items": [
+        "Recording is more reliable: Apple Watch transfers retry, deleted recordings stay deleted, and listening and reminders recover after an interruption.",
+        "New Settings: it is the last tab, in clear groups, and first-time setup lets you choose what DayRecall records.",
+        "Today’s first screen is for your day: a slimmer listening card and a small recap row you can close.",
+        "Health on the timeline has a new look. When you hand a day to an AI app, you can choose to include Health labels and values; it’s off by default.",
+        "With your own API, choose the model and the reasoning effort.",
+        "Read the terms and the privacy policy in the app, offline, in 14 languages.",
+        "When listening ends, the reminder to sync says about when the text will be ready."
+      ]
+    }
+  },
   "og_h1": "AI memory for your <span class=\"hl\">whole&nbsp;day</span>",
   "og_sub": "Best with Apple Watch · Works with iPhone alone",
   "stage": {
@@ -691,9 +791,85 @@
           "c": "Ask about before bed or while you were running, and DayRecall looks in those times."
         }
       ]
+    },
+    "poster": {
+      "title": "Poster",
+      "looks": [
+        "The day",
+        "A line",
+        "Receipt"
+      ],
+      "date": "Tue, Oct 13",
+      "hours": "h",
+      "minutes": "m",
+      "caption": "of conversation, remembered",
+      "dayName": "Chatterbox day",
+      "stats": [
+        {
+          "v": "6",
+          "l": "conversations"
+        },
+        {
+          "v": "3",
+          "l": "places"
+        },
+        {
+          "v": "9,840",
+          "l": "words"
+        }
+      ],
+      "kicker": "A line worth keeping",
+      "line": "Hike this weekend?",
+      "lineTime": "19:30",
+      "rows": [
+        [
+          "Conversations",
+          "6"
+        ],
+        [
+          "Talked",
+          "3h 02m"
+        ],
+        [
+          "Words",
+          "9,840"
+        ],
+        [
+          "Places",
+          "3"
+        ],
+        [
+          "Longest talk",
+          "25 min"
+        ]
+      ],
+      "total": [
+        "Total",
+        "1 day, remembered"
+      ],
+      "address": "dayrecall.com",
+      "picture": "Share picture",
+      "video": "Share video",
+      "making": "Making your video…",
+      "steps": [
+        {
+          "t": "The day, in numbers",
+          "c": "How long you talked, a name for the day, and when the talking happened. No words from your conversations, unless you add a line."
+        },
+        {
+          "t": "A line you pick",
+          "c": "Pick one line from the day, or write your own. Only the line you picked goes on the poster."
+        },
+        {
+          "t": "A picture or a video",
+          "c": "Choose a look, then share a picture or a short video. The QR code in the corner can be swapped for the web address or the name alone."
+        }
+      ]
     }
   },
   "features_15": "Watch",
+  "features_16": "A poster of your day",
+  "features_17": "Share a day as a picture or a short video: how long you talked, a name for the day, and a line you pick. Nothing else that was said goes on it.",
   "health_01": "Health",
   "health_02": "Sometimes you remember by what you were doing",
   "health_03": "Turn it on and DayRecall reads your sleep, walks, workouts and heart rate from the Health app. They become clues on your day: a conversation can say it happened while you were walking, just after a workout, or with a heart rate faster than usual.",

@@ -19,7 +19,10 @@ DayRecall 是适用于 Apple Watch 和 iPhone 的 AI 记忆 App，在你选定�
 - Optional multilingual transcription: up to three languages in one conversation, each part transcribed in the language it was spoken in, with translation into the user's language. The app itself is available in 14 languages.
 - Transcription and translation depend on Apple’s on-device technology, the iPhone and iOS version. For to-dos, recaps and answers, On this iPhone depends on Apple Intelligence and its device, language and region requirements. My own API can perform all three tasks without Apple Intelligence; language support depends on the selected service and model. It does not replace on-device transcription or translation.
 - 转写和翻译取决于 Apple 的设备端技术、iPhone 和 iOS 版本。待办、复盘和回答若使用“这台 iPhone”，需要满足 Apple 智能的设备、语言和地区要求；若使用“我自己的 API”，可以不依赖 Apple 智能完成这三项功能，语言支持取决于所选服务和模型。API 不替代设备端的转写或翻译。
-- Status: in beta, coming soon to the App Store.
+- Daily posters: a day as a picture or a short video, in three looks: how long the user talked, a name for the day, when the talking happened, and one line the user picks. Nothing else that was said goes on it.
+- Price: free to download from the App Store. Once set up, a free 3-day trial with every feature, counted from when the user starts it; then one purchase unlocks the app. No subscription, nothing renews. If the user does not buy, what they kept stays readable, searchable, exportable and deletable. Free during the TestFlight beta.
+- 价格：在 App Store 免费下载。设置好后可开始 3 天免费试用，所有功能可用，从用户开始试用时计时；之后一次购买即可解锁。没有订阅，不会自动续费。不购买的话，已记下的内容仍可查看、搜索、导出和删除。TestFlight 内测期间免费。
+- Status: in beta on TestFlight (iPhone and Apple Watch, plus a Mac beta), coming soon to the App Store. Every version is listed, newest first, on What’s new: https://dayrecall.com/updates/
 
 ## Pages
 
@@ -38,6 +41,7 @@ DayRecall 是适用于 Apple Watch 和 iPhone 的 AI 记忆 App，在你选定�
   - [Português](https://dayrecall.com/pt/)
   - [Svenska](https://dayrecall.com/sv/)
   - [Türkçe](https://dayrecall.com/tr/)
+- [What’s new](https://dayrecall.com/updates/) · [更新动态](https://dayrecall.com/zh/updates/)
 - [FAQ](https://dayrecall.com/faq/) · [常见问题](https://dayrecall.com/zh/faq/)
 - [Privacy Policy](https://dayrecall.com/privacy/) · [隐私政策](https://dayrecall.com/zh/privacy/)
 - [Terms of Service](https://dayrecall.com/terms/) · [服务条款](https://dayrecall.com/zh/terms/)
