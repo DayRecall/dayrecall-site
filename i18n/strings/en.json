@@ -120,7 +120,7 @@
   "final_02": "Coming soon to the App Store",
   "final_03": "Get DayRecall on the App Store ",
   "final_04": "Best with Apple Watch · Works with iPhone alone · In 14 languages",
-  "final_05": "Free to download, with every feature free for 3 days. Then buy it once: no subscription.",
+  "final_05": "Free to download, with every feature free for 3 days. Then buy it once, and every future update is included. No subscription.",
   "foot_01": "Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "faq": [
     {
@@ -291,11 +291,11 @@
         },
         {
           "q": "How much does DayRecall cost?",
-          "a": "DayRecall will be free to download from the App Store. Once it is set up, you can start a free 3-day trial with every feature; the 3 days begin when you start the trial, not when you download. After that, one purchase unlocks it: there is no subscription and nothing renews. The price is shown before your trial begins. If you don’t buy it, what you kept stays yours, to read, search, export and delete. While DayRecall is in beta on TestFlight, it is free."
+          "a": "DayRecall will be free to download from the App Store. Once it is set up, you can start a free 3-day trial with every feature; the 3 days begin when you start the trial, not when you download. After that, one purchase unlocks it, and every future update is included: there is no subscription and nothing renews. The price is shown before your trial begins. If you don’t buy it, what you kept stays yours, to read, search, export and delete. While DayRecall is in beta on TestFlight, it is free."
         },
         {
           "q": "Is DayRecall still being worked on?",
-          "a": "Yes. Every version is written up on <a href=\"/updates/\">What’s new</a>, newest first, with the date it came out."
+          "a": "Yes. Every version is written up on <a href=\"/updates/\">What’s new</a>, newest first, with the date it came out. Buy it once, and every future update is included."
         },
         {
           "q": "How do I get help?",
@@ -325,7 +325,7 @@
   "updates_page_description": "Every DayRecall update, newest first: what changed in each beta version, and when it came out.",
   "updates_kicker": "What’s new",
   "updates_heading": "Every update, written down.",
-  "updates_lead": "DayRecall is in beta on TestFlight and coming soon to the App Store. Here is what changed in each version, newest first.",
+  "updates_lead": "DayRecall is in beta on TestFlight and coming soon to the App Store. Here is what changed in each version, newest first. Buy it once, and every future update is included.",
   "updates_summary": "{n} versions since {date}",
   "updates_beta": "Beta",
   "updates_latest": "Updated {date}: {title}",
