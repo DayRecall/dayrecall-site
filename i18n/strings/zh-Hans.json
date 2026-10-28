@@ -304,6 +304,35 @@
       ]
     }
   ],
+  "faq_devices": {
+    "title": "支持的设备一览",
+    "head": [
+      "设备",
+      "系统要求",
+      "机型与说明"
+    ],
+    "rows": [
+      {
+        "name": "iPhone",
+        "tag": "必需",
+        "software": "<span class=\"nw\">iOS 26</span> <span class=\"nw\">或更高版本</span>",
+        "details": "建议使用 iPhone&nbsp;12 或更新机型。iPhone&nbsp;11 系列和 iPhone&nbsp;SE（第 2 代）能装 iOS&nbsp;26，但 Apple 没有在这些机型上提供设备端语音识别，所以无法转写。"
+      },
+      {
+        "name": "Apple Watch",
+        "tag": "可选",
+        "software": "<span class=\"nw\">watchOS 26</span> <span class=\"nw\">或更高版本</span>",
+        "details": "Series&nbsp;6 及更新机型、SE（第 2 代）及更新机型，以及所有 Ultra。需与装有 DayRecall 的 iPhone 配对。"
+      },
+      {
+        "name": "Mac",
+        "tag": "可选 · 内测",
+        "software": "<span class=\"nw\">macOS 15</span> <span class=\"nw\">或更高版本</span>",
+        "details": "自动转写需要运行 macOS&nbsp;26 或更高版本的受支持 Mac。可与你的 iPhone 通过加密的局域网配对。"
+      }
+    ],
+    "note": "待办、复盘和回答使用 iPhone 上的本机模型<span class=\"nw\">（需要 Apple 智能）</span>，或你自己的 API<span class=\"nw\">（不需要）</span>。"
+  },
   "lang_label": "语言",
   "foot_label": "更多",
   "foot_privacy": "隐私政策",

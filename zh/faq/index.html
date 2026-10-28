@@ -344,7 +344,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/assets/site.css?v=3ed3e975">
+<link rel="stylesheet" href="/assets/site.css?v=a8014fca">
 <script src="/assets/stages.js?v=cb3bb21d" defer></script>
 </head>
 <body>
@@ -361,6 +361,7 @@
       <a href="/zh/#languages">多语言</a>
       <a href="/zh/#privacy">隐私</a>
       <a href="/zh/faq/" aria-current="page">常见问题</a>
+      <a href="/zh/updates/">更新动态</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="语言"><span class="ico" data-icon="globe"></span><span>简体中文</span></summary>
@@ -432,6 +433,29 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>设备和系统要求</h2>
+          <div class="devtable">
+            <table aria-label="支持的设备一览">
+              <thead><tr><th scope="col">设备</th><th scope="col">系统要求</th><th scope="col">机型与说明</th></tr></thead>
+              <tbody>
+              <tr>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">必需</span></th>
+                <td data-label="系统要求"><span class="nw">iOS 26</span> <span class="nw">或更高版本</span></td>
+                <td data-label="机型与说明">建议使用 iPhone&nbsp;12 或更新机型。iPhone&nbsp;11 系列和 iPhone&nbsp;SE（第 2 代）能装 iOS&nbsp;26，但 Apple 没有在这些机型上提供设备端语音识别，所以无法转写。</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">可选</span></th>
+                <td data-label="系统要求"><span class="nw">watchOS 26</span> <span class="nw">或更高版本</span></td>
+                <td data-label="机型与说明">Series&nbsp;6 及更新机型、SE（第 2 代）及更新机型，以及所有 Ultra。需与装有 DayRecall 的 iPhone 配对。</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">可选 · 内测</span></th>
+                <td data-label="系统要求"><span class="nw">macOS 15</span> <span class="nw">或更高版本</span></td>
+                <td data-label="机型与说明">自动转写需要运行 macOS&nbsp;26 或更高版本的受支持 Mac。可与你的 iPhone 通过加密的局域网配对。</td>
+              </tr>
+              </tbody>
+            </table>
+            <p class="dev-note">待办、复盘和回答使用 iPhone 上的本机模型<span class="nw">（需要 Apple 智能）</span>，或你自己的 API<span class="nw">（不需要）</span>。</p>
+          </div>
           <div class="qa">
             <details>
               <summary>用 DayRecall 需要什么？</summary>

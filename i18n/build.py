@@ -49,6 +49,7 @@ SECTIONS = [('how', 'nav_03'), ('devices', 'nav_04'), ('battery', 'nav_05'), ('v
             ('languages', 'nav_07'), ('privacy', 'nav_08')]
 FOOT = [('updates', 'foot_updates'), ('faq', 'foot_faq'), ('support', 'foot_support'), ('privacy', 'foot_privacy'),
         ('terms', 'foot_terms')]
+DEVICES_GROUP = 'devices-and-requirements'   # the FAQ group that opens with the supported-devices table
 
 # Our accounts, with each platform's own monochrome glyph (from Simple Icons 16.35.0, CC0), drawn in
 # the text colour and never redrawn or boxed, as the platforms' brand guidelines ask.
@@ -307,6 +308,9 @@ def header(lang, s, page):
     links = [f'      <a href="{home}#{anchor}">{s[key]}</a>' for anchor, key in SECTIONS]
     current = ' aria-current="page"' if page == 'faq' else ''
     links.append(f'      <a {href(lang, "faq")}{current}>{s["nav_09"]}</a>')
+    # What's new reuses the footer's words, so a language without its own page shows the English link there too.
+    current = ' aria-current="page"' if page == 'updates' else ''
+    links.append(f'      <a {href(lang, "updates")}{current}>{s["foot_updates"]}</a>')
     return '\n'.join([
         f'<a class="skip" href="#main">{s["top_01"]}</a>',
         '',
@@ -399,10 +403,36 @@ def home_page(lang, s, template):
     return assemble(lang, s, 'home', s['title'], s['description'], body, home_graph(lang, s))
 
 
+def devices_table(lang, s):
+    """The supported devices as a table at the top of the FAQ's devices group; on a phone each row is a card.
+    The first row is the device you need (Required), the others are optional. A language that hasn't
+    translated the table yet shows the English one, marked as English for screen readers."""
+    d = s['faq_devices']
+    labels = d['head']
+    mine = '' if 'faq_devices' in lang['own'] else ' lang="en"'
+    head = ''.join(f'<th scope="col">{text}</th>' for text in labels)
+    rows = []
+    for i, row in enumerate(d['rows']):
+        tag = f'<span class="dev-tag{" req" if i == 0 else ""}">{row["tag"]}</span>'
+        rows.append('              <tr>\n'
+                    f'                <th scope="row"><span class="dev-name">{row["name"]}</span>{tag}</th>\n'
+                    f'                <td data-label="{html.escape(labels[1], quote=True)}">{row["software"]}</td>\n'
+                    f'                <td data-label="{html.escape(labels[2], quote=True)}">{row["details"]}</td>\n'
+                    '              </tr>')
+    return (f'          <div class="devtable"{mine}>\n'
+            f'            <table aria-label="{html.escape(d["title"], quote=True)}">\n'
+            f'              <thead><tr>{head}</tr></thead>\n'
+            '              <tbody>\n' + '\n'.join(rows) + '\n              </tbody>\n'
+            '            </table>\n'
+            f'            <p class="dev-note">{d["note"]}</p>\n'
+            '          </div>\n')
+
+
 def faq_page(lang, s):
     groups = faq_groups(s)
     toc = '\n'.join(f'          <li><a href="#{g["id"]}">{g["title"]}</a></li>' for g in groups)
     sections = '\n'.join(f'        <div class="faq-group" id="{g["id"]}">\n          <h2>{g["title"]}</h2>\n'
+                         f'{devices_table(lang, s) if g["id"] == DEVICES_GROUP else ""}'
                          f'          <div class="qa">\n{questions(g["items"], "            ")}\n          </div>\n'
                          '        </div>' for g in groups)
     main = f'''<main id="main">

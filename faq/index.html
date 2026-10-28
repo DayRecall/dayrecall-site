@@ -344,7 +344,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="/assets/site.css?v=3ed3e975">
+<link rel="stylesheet" href="/assets/site.css?v=a8014fca">
 <script src="/assets/stages.js?v=cb3bb21d" defer></script>
 </head>
 <body>
@@ -361,6 +361,7 @@
       <a href="/#languages">Languages</a>
       <a href="/#privacy">Privacy</a>
       <a href="/faq/" aria-current="page">FAQ</a>
+      <a href="/updates/">What’s new</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="Language"><span class="ico" data-icon="globe"></span><span>English</span></summary>
@@ -432,6 +433,29 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>Devices and requirements</h2>
+          <div class="devtable">
+            <table aria-label="Supported devices at a glance">
+              <thead><tr><th scope="col">Device</th><th scope="col">Software</th><th scope="col">Models and notes</th></tr></thead>
+              <tbody>
+              <tr>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Required</span></th>
+                <td data-label="Software"><span class="nw">iOS 26</span> <span class="nw">or later</span></td>
+                <td data-label="Models and notes">iPhone&nbsp;12 or later is recommended. iPhone&nbsp;11 and iPhone&nbsp;SE (2nd generation) can run iOS&nbsp;26, but Apple doesn’t offer on-device speech recognition on them, so they can’t transcribe.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Optional</span></th>
+                <td data-label="Software"><span class="nw">watchOS 26</span> <span class="nw">or later</span></td>
+                <td data-label="Models and notes">Series&nbsp;6 or later, SE (2nd generation) or later, and every Ultra. Paired with an iPhone that runs DayRecall.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Optional · Beta</span></th>
+                <td data-label="Software"><span class="nw">macOS 15</span> <span class="nw">or later</span></td>
+                <td data-label="Models and notes">Automatic transcription needs a supported Mac with macOS&nbsp;26 or later. Pairs with your iPhone over an encrypted local network.</td>
+              </tr>
+              </tbody>
+            </table>
+            <p class="dev-note">To-dos, recaps and answers use the model on your iPhone, which needs Apple Intelligence, or your own API, which doesn’t.</p>
+          </div>
           <div class="qa">
             <details>
               <summary>What do I need to use DayRecall?</summary>
