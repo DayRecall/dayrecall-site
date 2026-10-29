@@ -1,7 +1,24 @@
 {
-  "updated": "2026-10-21",
-  "reason": "Weekly translations complete, including temporary audio retention, language correction, model directory and note exports.",
-  "locales": [],
+  "updated": "2026-10-29",
+  "reason": "Places from Apple Watch: an optional switch lets the watch note where it is about every ten minutes while it listens and send those places only to the iPhone.",
+  "locales": [
+    "zh-Hant",
+    "da",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pt-PT",
+    "sv",
+    "tr"
+  ],
   "strings": [],
-  "documents": {}
+  "documents": {
+    "privacy": [
+      "4.5"
+    ]
+  }
 }
