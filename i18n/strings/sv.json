@@ -119,6 +119,7 @@
   "final_02": "Kommer snart till App Store",
   "final_03": "Hämta DayRecall i App Store ",
   "final_04": "Bäst med Apple Watch · Fungerar med bara iPhone · På 14 språk",
+  "final_05": "Gratis att ladda ner, med alla funktioner gratis i 3 dagar. Köp sedan en gång, så ingår alla framtida uppdateringar. Ingen prenumeration.",
   "foot_01": "Apple Watch och iPhone är varumärken som tillhör Apple Inc., registrerade i USA och andra länder och regioner.",
   "faq": [
     {
@@ -288,12 +289,49 @@
           "a": "DayRecall är i beta och kommer snart till App Store."
         },
         {
+          "q": "Hur mycket kostar DayRecall?",
+          "a": "DayRecall blir gratis att ladda ner från App Store. När den är konfigurerad kan du starta en gratis 3-dagars provperiod med alla funktioner; de 3 dagarna börjar när du startar provperioden, inte när du laddar ner. Därefter låser ett engångsköp upp den, och alla framtida uppdateringar ingår: det finns ingen prenumeration och inget förnyas. Priset visas innan din provperiod börjar. Om du inte köper den är allt du sparat kvar hos dig, för att läsa, söka, exportera och radera. Medan DayRecall är i beta på TestFlight är den gratis."
+        },
+        {
+          "q": "Utvecklas DayRecall fortfarande?",
+          "a": "Ja. Varje version beskrivs i <a href=\"/sv/updates/\">Vad är nytt</a>, senaste först, med datumet då den kom ut. Köp en gång, så ingår alla framtida uppdateringar."
+        },
+        {
           "q": "Hur får jag hjälp?",
           "a": "Skriv till support@dayrecall.com och berätta när det hände och på vilken enhet. En logg hjälper mest: <strong>Inställningar › Utvecklaralternativ › Loggar › Dela logg</strong>."
         }
       ]
     }
   ],
+  "faq_devices": {
+    "title": "Enheter som stöds i korthet",
+    "head": [
+      "Enhet",
+      "Programvara",
+      "Modeller och anmärkningar"
+    ],
+    "rows": [
+      {
+        "name": "iPhone",
+        "tag": "Krävs",
+        "software": "<span class=\"nw\">iOS 26</span> <span class=\"nw\">eller senare</span>",
+        "details": "iPhone&nbsp;12 eller senare rekommenderas. iPhone&nbsp;11 och iPhone&nbsp;SE (2:a generationen) kan köra iOS&nbsp;26, men Apple erbjuder inte taligenkänning på enheten för dem, så de kan inte transkribera."
+      },
+      {
+        "name": "Apple Watch",
+        "tag": "Valfri",
+        "software": "<span class=\"nw\">watchOS 26</span> <span class=\"nw\">eller senare</span>",
+        "details": "Series&nbsp;6 eller senare, SE (2:a generationen) eller senare och alla Ultra-modeller. Parkopplad med en iPhone som kör DayRecall."
+      },
+      {
+        "name": "Mac",
+        "tag": "Valfri · Beta",
+        "software": "<span class=\"nw\">macOS 15</span> <span class=\"nw\">eller senare</span>",
+        "details": "Automatisk transkribering kräver en Mac som stöds med macOS&nbsp;26 eller senare. Parkopplas med din iPhone över ett krypterat lokalt nätverk."
+      }
+    ],
+    "note": "Uppgifter, sammanfattningar och svar använder modellen på din iPhone, som kräver Apple Intelligence, eller ditt eget API, som inte gör det."
+  },
   "lang_label": "Språk",
   "foot_label": "Mer",
   "foot_privacy": "Integritetspolicy",
@@ -680,11 +718,86 @@
       "sleep": "Sovande · 23.40–6.50 · 7 tim 10 min",
       "factDetail": "Puls omkring 96 · vilopuls cirka 62",
       "when": "I går 22.52"
+    },
+    "poster": {
+      "title": "Affisch",
+      "looks": [
+        "Dagen",
+        "En rad",
+        "Kvitto"
+      ],
+      "date": "tis 13 okt",
+      "hours": "h",
+      "minutes": "min",
+      "caption": "av samtal, ihågkommet",
+      "dayName": "Pratkvarnsdag",
+      "stats": [
+        {
+          "v": "6",
+          "l": "samtal"
+        },
+        {
+          "v": "3",
+          "l": "platser"
+        },
+        {
+          "v": "9 840",
+          "l": "ord"
+        }
+      ],
+      "kicker": "En rad värd att spara",
+      "line": "Vandra i helgen?",
+      "lineTime": "19:30",
+      "rows": [
+        [
+          "Samtal",
+          "6"
+        ],
+        [
+          "Pratat",
+          "3h 02min"
+        ],
+        [
+          "Ord",
+          "9 840"
+        ],
+        [
+          "Platser",
+          "3"
+        ],
+        [
+          "Längsta samtalet",
+          "25 min"
+        ]
+      ],
+      "total": [
+        "Totalt",
+        "1 dag, ihågkommen"
+      ],
+      "address": "dayrecall.com",
+      "picture": "Dela bild",
+      "video": "Dela video",
+      "making": "Din video skapas…",
+      "steps": [
+        {
+          "t": "Dagen i siffror",
+          "c": "Hur länge du pratade, ett namn på dagen och när pratandet skedde. Inga ord från dina samtal, om du inte lägger till en rad."
+        },
+        {
+          "t": "En rad du väljer",
+          "c": "Välj en rad från dagen, eller skriv din egen. Bara raden du valde kommer med på affischen."
+        },
+        {
+          "t": "En bild eller en video",
+          "c": "Välj en stil och dela sedan en bild eller en kort video. QR-koden i hörnet kan bytas mot webbadressen eller bara namnet."
+        }
+      ]
     }
   },
   "nav_09": "FAQ",
   "foot_faq": "FAQ",
   "foot_terms": "Användarvillkor",
+  "foot_updates": "Vad är nytt",
   "foot_social": "Följ DayRecall",
   "faq_all": "Alla frågor",
   "faq_page_title": "Vanliga frågor — DayRecall",
@@ -693,8 +806,100 @@
   "faq_page_toc": "Ämnen",
   "faq_page_more": "Har du fler frågor?",
   "faq_page_more_text": "Skriv till oss så återkommer vi.",
+  "updates_page_title": "Vad är nytt — DayRecall",
+  "updates_page_description": "Varje DayRecall-uppdatering, senaste först: vad som ändrades i varje betaversion och när den kom ut.",
+  "updates_kicker": "Vad är nytt",
+  "updates_heading": "Varje uppdatering, nedskriven.",
+  "updates_lead": "DayRecall är i beta på TestFlight och kommer snart till App Store. Här är vad som ändrades i varje version, senaste först. Köp en gång, så ingår alla framtida uppdateringar.",
+  "updates_summary": "{n} versioner sedan {date}",
+  "updates_beta": "Beta",
+  "updates_latest": "Uppdaterad {date}: {title}",
+  "updates_follow_text": "Vi publicerar nyheter på TikTok, X och Instagram. För hjälp eller feedback, skriv till <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: det är där vi svarar.",
+  "updates": {
+    "1.3.3": {
+      "title": "Inställningar, förenklade",
+      "items": [
+        "Mötesspråket ligger nu under Flerspråkig transkription och visas när du har ett andra arbetsspråk.",
+        "Lyssningstider tar en rad per dag. En dag du slår på återanvänder tiderna från dagen innan, och en ändrad tid kan gälla alla lyssningsdagar på en gång.",
+        "Avancerade inställningar är en kort lista som öppnar varje del, och Data och säkerhetskopior har fått en ny design.",
+        "Åtgärdar en sammanfattningssida som kunde frysa, Apple Watch-överföringar som kunde fastna och ett problem med kompatibiliteten för säkerhetskopior."
+      ]
+    },
+    "1.3.2": {
+      "title": "Ny röstmatchning och säkerhetskopior",
+      "items": [
+        "”Min röst” använder en ny modell för röstmatchning. Spela in din röst en gång till efter uppdateringen; tidigare märkningar finns kvar.",
+        "Språkigenkänningen avgör utifrån 6 sekunders tal som standard; välj 3 eller 6 sekunder under Avancerade inställningar.",
+        "Säkerhetskopiera ditt arkiv till en fil eller till din privata iCloud, och återställ det.",
+        "Rättningar för att stänga av delning med ditt API och för avbrutna förfrågningar. Ändringar du gör medan ett samtal transkriberas på nytt behålls."
+      ]
+    },
+    "1.3.1": {
+      "title": "Alla 14 språk, smidigare dagar",
+      "items": [
+        "Varje skärm, även de nya, finns på alla 14 språk.",
+        "På Mac finns samma 17 språk för transkribering som på iPhone, och förenklad och traditionell kinesiska särskiljs.",
+        "Att växla mellan dagar går smidigare.",
+        "Talad tid räknar bara riktigt tal, och en tyst inspelning säger inte längre att den transkriberats."
+      ]
+    },
+    "1.3.0": {
+      "title": "Mac, dagliga affischer och redigering",
+      "items": [
+        "DayRecall för Mac, i beta: spela in ett möte på plats eller online, pausa och återuppta, spara dina möten och uppgifter, och koppla ihop din iPhone och Apple Watch över ditt lokala nätverk. Transkribering på Mac kräver en Mac som stöds med macOS 26.",
+        "Dagliga affischer: tre stilar och en rad du väljer, som bild eller kort video.",
+        "Redigera ett samtal: byt namn på det, rätta en rad eller gå tillbaka till originalet. Så länge ljudet ännu finns kvar kan du också rätta språket.",
+        "Välj mötesspråk från din Apple Watch.",
+        "Spara en sammanfattning i Notion eller Obsidian.",
+        "Åtgärdar att klockan visade att den lyssnade efter att den slutat, och att dess påminnelse om att sluta drogs tillbaka för tidigt."
+      ]
+    },
+    "0.2.34": {
+      "title": "Mac går med i betan",
+      "items": [
+        "DayRecall för Mac går med i betan: importera mötestranskriptioner, och låt en parkopplad Mac transkribera åt din iPhone över ditt krypterade lokala nätverk.",
+        "En gratis 3-dagars provperiod och ett engångsköp läggs till, för när DayRecall finns i App Store. Under betan är den gratis.",
+        "Sidan Om nu har länkar för att betygsätta DayRecall, dela appen och besöka webbplatsen."
+      ]
+    },
+    "0.2.33": {
+      "title": "Lyssningen återupptas av sig själv",
+      "items": [
+        "När ett larm, ett samtal eller Siri avbryter, går din Apple Watch tillbaka till lyssning av sig själv, och påminner dig bara om den inte kan.",
+        "Välj när den påminnelsen kommer under Inställningar › Lyssningstider › Om lyssningen pausar.",
+        "Bättre på frågor om vad du gjorde, som ”Vad sa jag när jag sprang?”",
+        "Korta promenader döljs inte längre bakom långa samtal på tidslinjen."
+      ]
+    },
+    "0.2.29": {
+      "title": "Sammanfattningar, skrivna i bakgrunden",
+      "items": [
+        "Sammanfatta dagen skriver i bakgrunden: lämna sidan, så sparas sammanfattningen med den dagen.",
+        "Innan den startar ser du ungefär hur lång tid den tar; medan den arbetar visas steget och tiden kvar.",
+        "Inte tillräckligt bra? Lämna dagen till en AI-app och hämta tillbaka svaret, sparat bredvid dagen.",
+        "Sammanfatta varje dag: Påminn mig, Skriv åt mig eller Av.",
+        "Om den här iPhonen inte kan skriva en sammanfattning säger den varför och erbjuder två andra sätt.",
+        "En påminnelse på klockan när lyssningstiderna börjar, och en gång till på din iPhone 20 minuter senare om du inte har börjat.",
+        "En krasch vid start i 0.2.31 åtgärdades samma dag, i 0.2.32."
+      ]
+    },
+    "0.2.21": {
+      "title": "De första betorna som DayRecall",
+      "items": [
+        "Inspelningen är mer tillförlitlig: Apple Watch-överföringar görs om, borttagna inspelningar förblir borttagna, och lyssning och påminnelser återhämtar sig efter ett avbrott.",
+        "Nya Inställningar ligger i sista fliken, i tydliga grupper, och vid första konfigurationen väljer du vad DayRecall spelar in.",
+        "Dagens första skärm är till för din dag: ett smalare lyssningskort och en liten sammanfattningsrad som du kan stänga.",
+        "Hälsa på tidslinjen har fått ett nytt utseende. När du lämnar en dag till en AI-app kan du välja att ta med hälsoetiketter och värden; det är av som standard.",
+        "Med ditt eget API väljer du modell och resonemangsnivå.",
+        "Läs användarvillkoren och integritetspolicyn i appen, offline, på 14 språk.",
+        "När lyssningen slutar säger påminnelsen att synka ungefär när texten blir klar."
+      ]
+    }
+  },
   "health_01": "Hälsa",
   "features_15": "Klocka",
+  "features_16": "En affisch över din dag",
+  "features_17": "Dela en dag som bild eller kort video: hur länge du pratade, ett namn på dagen och en rad du väljer. Inget annat som sades kommer med.",
   "health_02": "Ibland minns du utifrån vad du gjorde",
   "health_03": "Aktivera det så läser DayRecall sömn, promenader, träningspass och puls från Hälsa. De blir ledtrådar i dagen: ett samtal kan visa att det skedde under en promenad, strax efter träning eller med högre puls än vanligt.",
   "health_04": "Etiketter på tidslinjen: gång, träning, sömn, puls över det vanliga",
