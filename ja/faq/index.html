@@ -317,6 +317,22 @@
         },
         {
           "@type": "Question",
+          "name": "DayRecall の料金はいくらですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall は App Store から無料でダウンロードできるようになります。設定が済んだら、すべての機能を使える無料の3日間トライアルを開始できます。3日間は、ダウンロードした時点ではなく、トライアルを開始した時点から数えます。その後は1回の購入で利用でき、今後のアップデートもすべて含まれます。サブスクリプションではなく、自動で更新されることもありません。トライアルを始める前に料金が表示されます。購入しない場合も、残した内容はお客様のものです。読む、検索する、書き出す、削除することができます。DayRecall が TestFlight でベータ版の間は、無料です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall は今も開発が続いていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。すべてのバージョンを公開日つきで、新着情報に新しい順で掲載しています。1回購入すれば、今後のアップデートもすべて含まれます。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "サポートを受けるには？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -345,7 +361,7 @@
       <a href="/ja/#languages">言語</a>
       <a href="/ja/#privacy">プライバシー</a>
       <a href="/ja/faq/" aria-current="page">よくある質問</a>
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/ja/updates/">新着情報</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="言語"><span class="ico" data-icon="globe"></span><span>日本語</span></summary>
@@ -417,28 +433,28 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>デバイスと動作条件</h2>
-          <div class="devtable" lang="en">
-            <table aria-label="Supported devices at a glance">
-              <thead><tr><th scope="col">Device</th><th scope="col">Software</th><th scope="col">Models and notes</th></tr></thead>
+          <div class="devtable">
+            <table aria-label="対応デバイス一覧">
+              <thead><tr><th scope="col">デバイス</th><th scope="col">ソフトウェア</th><th scope="col">機種と注意点</th></tr></thead>
               <tbody>
               <tr>
-                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Required</span></th>
-                <td data-label="Software"><span class="nw">iOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">iPhone&nbsp;12 or later is recommended. iPhone&nbsp;11 and iPhone&nbsp;SE (2nd generation) can run iOS&nbsp;26, but Apple doesn’t offer on-device speech recognition on them, so they can’t transcribe.</td>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">必須</span></th>
+                <td data-label="ソフトウェア"><span class="nw">iOS 26</span> <span class="nw">以降</span></td>
+                <td data-label="機種と注意点">iPhone&nbsp;12 以降をおすすめします。iPhone&nbsp;11 と iPhone&nbsp;SE（第2世代）でも iOS&nbsp;26 は動きますが、Apple がこれらの機種にデバイス上の音声認識を提供していないため、文字起こしはできません。</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Optional</span></th>
-                <td data-label="Software"><span class="nw">watchOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Series&nbsp;6 or later, SE (2nd generation) or later, and every Ultra. Paired with an iPhone that runs DayRecall.</td>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">任意</span></th>
+                <td data-label="ソフトウェア"><span class="nw">watchOS 26</span> <span class="nw">以降</span></td>
+                <td data-label="機種と注意点">Series&nbsp;6 以降、SE（第2世代）以降、およびすべての Ultra。DayRecall が動く iPhone とペアリングして使います。</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Optional · Beta</span></th>
-                <td data-label="Software"><span class="nw">macOS 15</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Automatic transcription needs a supported Mac with macOS&nbsp;26 or later. Pairs with your iPhone over an encrypted local network.</td>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">任意 · ベータ</span></th>
+                <td data-label="ソフトウェア"><span class="nw">macOS 15</span> <span class="nw">以降</span></td>
+                <td data-label="機種と注意点">自動の文字起こしには、macOS&nbsp;26 以降に対応した Mac が必要です。暗号化されたローカルネットワーク経由で iPhone とペアリングします。</td>
               </tr>
               </tbody>
             </table>
-            <p class="dev-note">To-dos, recaps and answers use the model on your iPhone, which needs Apple Intelligence, or your own API, which doesn’t.</p>
+            <p class="dev-note">やること、振り返り、回答には、iPhone 上のモデル（Apple Intelligence が必要）か、ご自身の API（Apple Intelligence は不要）を使います。</p>
           </div>
           <div class="qa">
             <details>
@@ -584,6 +600,14 @@
               <p>DayRecall はベータ版で、App Store で近日公開予定です。</p>
             </details>
             <details>
+              <summary>DayRecall の料金はいくらですか？</summary>
+              <p>DayRecall は App Store から無料でダウンロードできるようになります。設定が済んだら、すべての機能を使える無料の3日間トライアルを開始できます。3日間は、ダウンロードした時点ではなく、トライアルを開始した時点から数えます。その後は1回の購入で利用でき、今後のアップデートもすべて含まれます。サブスクリプションではなく、自動で更新されることもありません。トライアルを始める前に料金が表示されます。購入しない場合も、残した内容はお客様のものです。読む、検索する、書き出す、削除することができます。DayRecall が TestFlight でベータ版の間は、無料です。</p>
+            </details>
+            <details>
+              <summary>DayRecall は今も開発が続いていますか？</summary>
+              <p>はい。すべてのバージョンを公開日つきで、<a href="/ja/updates/">新着情報</a>に新しい順で掲載しています。1回購入すれば、今後のアップデートもすべて含まれます。</p>
+            </details>
+            <details>
               <summary>サポートを受けるには？</summary>
               <p>support@dayrecall.com に、問題が起きた時刻と使用した端末を添えてご連絡ください。ログがあると特に役立ちます。<strong>設定 › 開発者オプション › ログ › ログを共有</strong>から送れます。</p>
             </details>
@@ -610,7 +634,7 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch および iPhone は、米国およびその他の国や地域で登録された Apple Inc. の商標です。</span>
     <nav class="foot-links" aria-label="その他">
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/ja/updates/">新着情報</a>
       <a href="/ja/faq/" aria-current="page">よくある質問</a>
       <a href="/ja/support/">サポート</a>
       <a href="/ja/privacy/">プライバシーポリシー</a>

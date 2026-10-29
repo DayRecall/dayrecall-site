@@ -508,12 +508,252 @@
     <loc>https://dayrecall.com/updates/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
   </url>
   <url>
     <loc>https://dayrecall.com/zh/updates/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/zh-hant/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/da/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/de/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/es/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/fr/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/it/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ja/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/ko/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/nl/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/pt/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/sv/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
+  </url>
+  <url>
+    <loc>https://dayrecall.com/tr/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dayrecall.com/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dayrecall.com/zh/updates/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dayrecall.com/zh-hant/updates/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://dayrecall.com/da/updates/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dayrecall.com/de/updates/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dayrecall.com/es/updates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dayrecall.com/fr/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://dayrecall.com/it/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dayrecall.com/ja/updates/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dayrecall.com/ko/updates/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://dayrecall.com/nl/updates/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://dayrecall.com/pt/updates/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dayrecall.com/sv/updates/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dayrecall.com/tr/updates/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dayrecall.com/updates/"/>
   </url>
   <url>

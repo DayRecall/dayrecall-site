@@ -317,7 +317,23 @@
         },
         {
           "@type": "Question",
-          "name": "어디서 도움을 받을 수 있나요?",
+          "name": "DayRecall 가격은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall은 App Store에서 무료로 내려받을 수 있어요. 앱을 설정하고 나면 모든 기능을 갖춘 무료 3일 체험을 시작할 수 있어요. 3일은 내려받은 날이 아니라 체험을 시작한 날부터 세요. 그 뒤에는 한 번 구매하면 잠금이 풀리고, 앞으로의 모든 업데이트가 포함돼요. 구독은 없고 자동으로 갱신되는 것도 없어요. 체험을 시작하기 전에 가격을 보여 드려요. 구매하지 않아도 남긴 기록은 그대로 여러분의 것이어서, 읽고, 검색하고, 내보내고, 삭제할 수 있어요. DayRecall이 TestFlight에서 베타 중인 동안에는 무료예요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall은 아직 개발되고 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네. 모든 버전은 새로운 소식에 최신순으로, 나온 날짜와 함께 정리돼요. 한 번 구매하면 앞으로의 모든 업데이트가 포함돼요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "도움은 어떻게 받나요?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "support@dayrecall.com으로 언제 어떤 기기에서 문제가 발생했는지 알려 주세요. 로그를 함께 보내면 가장 도움이 돼요. 설정 › 개발자 옵션 › 로그 › 로그 공유에서 공유할 수 있어요."
@@ -345,7 +361,7 @@
       <a href="/ko/#languages">언어</a>
       <a href="/ko/#privacy">개인정보 보호</a>
       <a href="/ko/faq/" aria-current="page">자주 묻는 질문</a>
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/ko/updates/">새로운 소식</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="언어"><span class="ico" data-icon="globe"></span><span>한국어</span></summary>
@@ -417,28 +433,28 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>기기 및 요구 사항</h2>
-          <div class="devtable" lang="en">
-            <table aria-label="Supported devices at a glance">
-              <thead><tr><th scope="col">Device</th><th scope="col">Software</th><th scope="col">Models and notes</th></tr></thead>
+          <div class="devtable">
+            <table aria-label="지원 기기 한눈에 보기">
+              <thead><tr><th scope="col">기기</th><th scope="col">소프트웨어</th><th scope="col">모델 및 참고 사항</th></tr></thead>
               <tbody>
               <tr>
-                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Required</span></th>
-                <td data-label="Software"><span class="nw">iOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">iPhone&nbsp;12 or later is recommended. iPhone&nbsp;11 and iPhone&nbsp;SE (2nd generation) can run iOS&nbsp;26, but Apple doesn’t offer on-device speech recognition on them, so they can’t transcribe.</td>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">필수</span></th>
+                <td data-label="소프트웨어"><span class="nw">iOS 26</span> <span class="nw">이상</span></td>
+                <td data-label="모델 및 참고 사항">iPhone&nbsp;12 이후 모델을 권장해요. iPhone&nbsp;11과 iPhone&nbsp;SE(2세대)도 iOS&nbsp;26을 실행할 수 있지만, Apple이 이 기기들에는 기기 내 음성 인식을 제공하지 않아서 텍스트로 바꿀 수 없어요.</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Optional</span></th>
-                <td data-label="Software"><span class="nw">watchOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Series&nbsp;6 or later, SE (2nd generation) or later, and every Ultra. Paired with an iPhone that runs DayRecall.</td>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">선택 사항</span></th>
+                <td data-label="소프트웨어"><span class="nw">watchOS 26</span> <span class="nw">이상</span></td>
+                <td data-label="모델 및 참고 사항">Series&nbsp;6 이후 모델, SE(2세대) 이후 모델, 모든 Ultra 모델이에요. DayRecall을 실행하는 iPhone과 페어링해요.</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Optional · Beta</span></th>
-                <td data-label="Software"><span class="nw">macOS 15</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Automatic transcription needs a supported Mac with macOS&nbsp;26 or later. Pairs with your iPhone over an encrypted local network.</td>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">선택 사항 · 베타</span></th>
+                <td data-label="소프트웨어"><span class="nw">macOS 15</span> <span class="nw">이상</span></td>
+                <td data-label="모델 및 참고 사항">자동 텍스트 변환에는 macOS&nbsp;26 이상을 실행하는 지원 Mac이 필요해요. iPhone과 암호화된 로컬 네트워크로 페어링해요.</td>
               </tr>
               </tbody>
             </table>
-            <p class="dev-note">To-dos, recaps and answers use the model on your iPhone, which needs Apple Intelligence, or your own API, which doesn’t.</p>
+            <p class="dev-note">할 일, 하루 정리, 답변은 iPhone의 모델을 쓰며, 이 모델에는 Apple Intelligence가 필요해요. 자신의 API를 쓰면 Apple Intelligence는 필요하지 않아요.</p>
           </div>
           <div class="qa">
             <details>
@@ -584,7 +600,15 @@
               <p>DayRecall은 베타 중이며 곧 App Store에 출시돼요.</p>
             </details>
             <details>
-              <summary>어디서 도움을 받을 수 있나요?</summary>
+              <summary>DayRecall 가격은 얼마인가요?</summary>
+              <p>DayRecall은 App Store에서 무료로 내려받을 수 있어요. 앱을 설정하고 나면 모든 기능을 갖춘 무료 3일 체험을 시작할 수 있어요. 3일은 내려받은 날이 아니라 체험을 시작한 날부터 세요. 그 뒤에는 한 번 구매하면 잠금이 풀리고, 앞으로의 모든 업데이트가 포함돼요. 구독은 없고 자동으로 갱신되는 것도 없어요. 체험을 시작하기 전에 가격을 보여 드려요. 구매하지 않아도 남긴 기록은 그대로 여러분의 것이어서, 읽고, 검색하고, 내보내고, 삭제할 수 있어요. DayRecall이 TestFlight에서 베타 중인 동안에는 무료예요.</p>
+            </details>
+            <details>
+              <summary>DayRecall은 아직 개발되고 있나요?</summary>
+              <p>네. 모든 버전은 <a href="/ko/updates/">새로운 소식</a>에 최신순으로, 나온 날짜와 함께 정리돼요. 한 번 구매하면 앞으로의 모든 업데이트가 포함돼요.</p>
+            </details>
+            <details>
+              <summary>도움은 어떻게 받나요?</summary>
               <p>support@dayrecall.com으로 언제 어떤 기기에서 문제가 발생했는지 알려 주세요. 로그를 함께 보내면 가장 도움이 돼요. <strong>설정 › 개발자 옵션 › 로그 › 로그 공유</strong>에서 공유할 수 있어요.</p>
             </details>
           </div>
@@ -610,7 +634,7 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch와 iPhone은 미국 및 기타 국가와 지역에 등록된 Apple Inc.의 상표예요.</span>
     <nav class="foot-links" aria-label="더 보기">
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/ko/updates/">새로운 소식</a>
       <a href="/ko/faq/" aria-current="page">자주 묻는 질문</a>
       <a href="/ko/support/">고객 지원</a>
       <a href="/ko/privacy/">개인정보 처리방침</a>

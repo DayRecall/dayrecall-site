@@ -317,6 +317,22 @@
         },
         {
           "@type": "Question",
+          "name": "Combien coûte DayRecall ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall sera gratuit au téléchargement sur l’App Store. Une fois l’installation terminée, vous pouvez commencer un essai gratuit de 3 jours avec toutes les fonctions ; les 3 jours débutent au lancement de l’essai, et non au téléchargement. Ensuite, un achat unique le débloque, et toutes les mises à jour futures sont incluses : il n’y a pas d’abonnement et rien ne se renouvelle. Le prix est affiché avant le début de votre essai. Si vous ne l’achetez pas, ce que vous avez conservé vous appartient toujours, pour le lire, le rechercher, l’exporter et le supprimer. Pendant la bêta sur TestFlight, il est gratuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le développement de DayRecall se poursuit-il ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Chaque version est décrite dans Nouveautés, les plus récentes en premier, avec sa date de sortie. Achetez-la une seule fois : toutes les mises à jour futures sont incluses."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Comment obtenir de l’aide ?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -345,7 +361,7 @@
       <a href="/fr/#languages">Langues</a>
       <a href="/fr/#privacy">Confidentialité</a>
       <a href="/fr/faq/" aria-current="page">FAQ</a>
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/fr/updates/">Nouveautés</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="Langue"><span class="ico" data-icon="globe"></span><span>Français</span></summary>
@@ -417,28 +433,28 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>Appareils et configuration requise</h2>
-          <div class="devtable" lang="en">
-            <table aria-label="Supported devices at a glance">
-              <thead><tr><th scope="col">Device</th><th scope="col">Software</th><th scope="col">Models and notes</th></tr></thead>
+          <div class="devtable">
+            <table aria-label="Appareils compatibles en un coup d’œil">
+              <thead><tr><th scope="col">Appareil</th><th scope="col">Système</th><th scope="col">Modèles et précisions</th></tr></thead>
               <tbody>
               <tr>
-                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Required</span></th>
-                <td data-label="Software"><span class="nw">iOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">iPhone&nbsp;12 or later is recommended. iPhone&nbsp;11 and iPhone&nbsp;SE (2nd generation) can run iOS&nbsp;26, but Apple doesn’t offer on-device speech recognition on them, so they can’t transcribe.</td>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Requis</span></th>
+                <td data-label="Système"><span class="nw">iOS 26</span> <span class="nw">ou ultérieur</span></td>
+                <td data-label="Modèles et précisions">L’iPhone&nbsp;12 ou ultérieur est recommandé. L’iPhone&nbsp;11 et l’iPhone&nbsp;SE (2e génération) peuvent fonctionner sous iOS&nbsp;26, mais Apple n’y propose pas la reconnaissance vocale sur l’appareil : ils ne peuvent donc pas transcrire.</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Optional</span></th>
-                <td data-label="Software"><span class="nw">watchOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Series&nbsp;6 or later, SE (2nd generation) or later, and every Ultra. Paired with an iPhone that runs DayRecall.</td>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Facultatif</span></th>
+                <td data-label="Système"><span class="nw">watchOS 26</span> <span class="nw">ou ultérieur</span></td>
+                <td data-label="Modèles et précisions">Series&nbsp;6 et suivantes, SE (2e génération) et suivantes, et toutes les Ultra. Jumelée à un iPhone sur lequel fonctionne DayRecall.</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Optional · Beta</span></th>
-                <td data-label="Software"><span class="nw">macOS 15</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Automatic transcription needs a supported Mac with macOS&nbsp;26 or later. Pairs with your iPhone over an encrypted local network.</td>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Facultatif · Bêta</span></th>
+                <td data-label="Système"><span class="nw">macOS 15</span> <span class="nw">ou ultérieur</span></td>
+                <td data-label="Modèles et précisions">La transcription automatique nécessite un Mac compatible avec macOS&nbsp;26 ou ultérieur. Se jumelle à votre iPhone via un réseau local chiffré.</td>
               </tr>
               </tbody>
             </table>
-            <p class="dev-note">To-dos, recaps and answers use the model on your iPhone, which needs Apple Intelligence, or your own API, which doesn’t.</p>
+            <p class="dev-note">Les tâches, bilans et réponses utilisent le modèle de votre iPhone, qui nécessite Apple Intelligence, ou votre propre API, qui n’en a pas besoin.</p>
           </div>
           <div class="qa">
             <details>
@@ -580,12 +596,20 @@
           <h2>Disponibilité et assistance</h2>
           <div class="qa">
             <details>
-              <summary>Quand pourrai-je obtenir DayRecall ?</summary>
+              <summary>Quand pourrai-je obtenir DayRecall ?</summary>
               <p>DayRecall est en bêta et arrivera bientôt sur l’App Store.</p>
             </details>
             <details>
-              <summary>Comment obtenir de l’aide ?</summary>
-              <p>Écrivez à support@dayrecall.com en précisant quand le problème est survenu et sur quel appareil. Un journal nous aide le plus : <strong>Réglages › Options pour les développeurs › Journaux › Partager le journal</strong>.</p>
+              <summary>Combien coûte DayRecall ?</summary>
+              <p>DayRecall sera gratuit au téléchargement sur l’App Store. Une fois l’installation terminée, vous pouvez commencer un essai gratuit de 3 jours avec toutes les fonctions ; les 3 jours débutent au lancement de l’essai, et non au téléchargement. Ensuite, un achat unique le débloque, et toutes les mises à jour futures sont incluses : il n’y a pas d’abonnement et rien ne se renouvelle. Le prix est affiché avant le début de votre essai. Si vous ne l’achetez pas, ce que vous avez conservé vous appartient toujours, pour le lire, le rechercher, l’exporter et le supprimer. Pendant la bêta sur TestFlight, il est gratuit.</p>
+            </details>
+            <details>
+              <summary>Le développement de DayRecall se poursuit-il ?</summary>
+              <p>Oui. Chaque version est décrite dans <a href="/fr/updates/">Nouveautés</a>, les plus récentes en premier, avec sa date de sortie. Achetez-la une seule fois : toutes les mises à jour futures sont incluses.</p>
+            </details>
+            <details>
+              <summary>Comment obtenir de l’aide ?</summary>
+              <p>Écrivez à support@dayrecall.com en précisant quand le problème est survenu et sur quel appareil. Un journal nous aide le plus : <strong>Réglages › Options pour les développeurs › Journaux › Partager le journal</strong>.</p>
             </details>
           </div>
         </div>
@@ -610,7 +634,7 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch et iPhone sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays et régions.</span>
     <nav class="foot-links" aria-label="Plus">
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/fr/updates/">Nouveautés</a>
       <a href="/fr/faq/" aria-current="page">FAQ</a>
       <a href="/fr/support/">Assistance</a>
       <a href="/fr/privacy/">Politique de confidentialité</a>

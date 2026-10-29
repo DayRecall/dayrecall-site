@@ -312,7 +312,23 @@
           "name": "何時可以取得 DayRecall？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DayRecall 目前處於測試階段，即將登上 App Store。"
+            "text": "DayRecall 目前在內測中，即將登上 App Store。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall 怎麼收費？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DayRecall 會在 App Store 免費下載。設定好之後，可以開始 3 天免費試用，所有功能都能用；3 天從你開始試用時起算，不是從下載時算。之後一次購買即可解鎖，以後的更新都包含在內；沒有訂閱，也不會自動續訂。試用開始前就會顯示價格。不買的話，已經保留的內容仍然歸你，可以照常閱讀、搜尋、匯出和刪除。DayRecall 在 TestFlight 內測期間免費。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DayRecall 還在持續開發嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。每個版本改了什麼、哪天發布，都寫在更新動態頁，最新的在最前面。一次購買，以後的更新都包含在內。"
           }
         },
         {
@@ -320,7 +336,7 @@
           "name": "如何取得協助？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "請寄信到 support@dayrecall.com，告訴我們問題發生的時間與使用的裝置。附上操作紀錄最有幫助：設定 › 開發者選項 › 紀錄 › 分享紀錄。"
+            "text": "請寄信到 support@dayrecall.com，告訴我們問題發生的時間與使用的裝置。附上紀錄最有幫助：設定 › 開發者選項 › 紀錄 › 分享紀錄。"
           }
         }
       ]
@@ -345,7 +361,7 @@
       <a href="/zh-hant/#languages">語言</a>
       <a href="/zh-hant/#privacy">隱私</a>
       <a href="/zh-hant/faq/" aria-current="page">常見問題</a>
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/zh-hant/updates/">更新動態</a>
     </nav>
     <details class="langmenu">
       <summary aria-label="語言"><span class="ico" data-icon="globe"></span><span>繁體中文</span></summary>
@@ -390,7 +406,7 @@
           <li><a href="#battery-and-speed">耗電與處理速度</a></li>
           <li><a href="#privacy-and-consent">隱私與同意</a></li>
           <li><a href="#mac-backups-and-note-apps">Mac、備份與筆記 App</a></li>
-          <li><a href="#availability-and-help">推出時間與支援</a></li>
+          <li><a href="#availability-and-help">上線時間與協助</a></li>
         </ol>
       </nav>
       <div class="faq-groups">
@@ -417,28 +433,28 @@
         </div>
         <div class="faq-group" id="devices-and-requirements">
           <h2>裝置與使用條件</h2>
-          <div class="devtable" lang="en">
-            <table aria-label="Supported devices at a glance">
-              <thead><tr><th scope="col">Device</th><th scope="col">Software</th><th scope="col">Models and notes</th></tr></thead>
+          <div class="devtable">
+            <table aria-label="支援的裝置一覽">
+              <thead><tr><th scope="col">裝置</th><th scope="col">系統要求</th><th scope="col">機型與說明</th></tr></thead>
               <tbody>
               <tr>
-                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">Required</span></th>
-                <td data-label="Software"><span class="nw">iOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">iPhone&nbsp;12 or later is recommended. iPhone&nbsp;11 and iPhone&nbsp;SE (2nd generation) can run iOS&nbsp;26, but Apple doesn’t offer on-device speech recognition on them, so they can’t transcribe.</td>
+                <th scope="row"><span class="dev-name">iPhone</span><span class="dev-tag req">必要</span></th>
+                <td data-label="系統要求"><span class="nw">iOS 26</span> <span class="nw">或更新版本</span></td>
+                <td data-label="機型與說明">建議使用 iPhone&nbsp;12 或更新機型。iPhone&nbsp;11 和 iPhone&nbsp;SE（第 2 代）能安裝 iOS&nbsp;26，但 Apple 沒有在這些機型上提供裝置端語音辨識，因此無法轉錄。</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">Optional</span></th>
-                <td data-label="Software"><span class="nw">watchOS 26</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Series&nbsp;6 or later, SE (2nd generation) or later, and every Ultra. Paired with an iPhone that runs DayRecall.</td>
+                <th scope="row"><span class="dev-name">Apple Watch</span><span class="dev-tag">可選</span></th>
+                <td data-label="系統要求"><span class="nw">watchOS 26</span> <span class="nw">或更新版本</span></td>
+                <td data-label="機型與說明">Series&nbsp;6 及更新機型、SE（第 2 代）及更新機型，以及所有 Ultra。需與執行 DayRecall 的 iPhone 配對。</td>
               </tr>
               <tr>
-                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">Optional · Beta</span></th>
-                <td data-label="Software"><span class="nw">macOS 15</span> <span class="nw">or later</span></td>
-                <td data-label="Models and notes">Automatic transcription needs a supported Mac with macOS&nbsp;26 or later. Pairs with your iPhone over an encrypted local network.</td>
+                <th scope="row"><span class="dev-name">Mac</span><span class="dev-tag">可選 · 內測</span></th>
+                <td data-label="系統要求"><span class="nw">macOS 15</span> <span class="nw">或更新版本</span></td>
+                <td data-label="機型與說明">自動轉錄需要支援的 Mac，並執行 macOS&nbsp;26 或更新版本。可透過加密的區域網路與你的 iPhone 配對。</td>
               </tr>
               </tbody>
             </table>
-            <p class="dev-note">To-dos, recaps and answers use the model on your iPhone, which needs Apple Intelligence, or your own API, which doesn’t.</p>
+            <p class="dev-note">待辦、回顧和回答使用 iPhone 上的本機模型（需要 Apple Intelligence），或你自己的 API（不需要）。</p>
           </div>
           <div class="qa">
             <details>
@@ -577,15 +593,23 @@
           </div>
         </div>
         <div class="faq-group" id="availability-and-help">
-          <h2>推出時間與支援</h2>
+          <h2>上線時間與協助</h2>
           <div class="qa">
             <details>
               <summary>何時可以取得 DayRecall？</summary>
-              <p>DayRecall 目前處於測試階段，即將登上 App Store。</p>
+              <p>DayRecall 目前在內測中，即將登上 App Store。</p>
+            </details>
+            <details>
+              <summary>DayRecall 怎麼收費？</summary>
+              <p>DayRecall 會在 App Store 免費下載。設定好之後，可以開始 3 天免費試用，所有功能都能用；3 天從你開始試用時起算，不是從下載時算。之後一次購買即可解鎖，以後的更新都包含在內；沒有訂閱，也不會自動續訂。試用開始前就會顯示價格。不買的話，已經保留的內容仍然歸你，可以照常閱讀、搜尋、匯出和刪除。DayRecall 在 TestFlight 內測期間免費。</p>
+            </details>
+            <details>
+              <summary>DayRecall 還在持續開發嗎？</summary>
+              <p>是的。每個版本改了什麼、哪天發布，都寫在<a href="/zh-hant/updates/">更新動態</a>頁，最新的在最前面。一次購買，以後的更新都包含在內。</p>
             </details>
             <details>
               <summary>如何取得協助？</summary>
-              <p>請寄信到 support@dayrecall.com，告訴我們問題發生的時間與使用的裝置。附上操作紀錄最有幫助：<strong>設定 › 開發者選項 › 紀錄 › 分享紀錄</strong>。</p>
+              <p>請寄信到 support@dayrecall.com，告訴我們問題發生的時間與使用的裝置。附上紀錄最有幫助：<strong>設定 › 開發者選項 › 紀錄 › 分享紀錄</strong>。</p>
             </details>
           </div>
         </div>
@@ -610,7 +634,7 @@
     <span>© 2026 DayRecall</span>
     <span class="tm">Apple Watch 和 iPhone 是 Apple Inc. 在美國及其他國家與地區的註冊商標。</span>
     <nav class="foot-links" aria-label="更多">
-      <a href="/updates/" hreflang="en">What’s new</a>
+      <a href="/zh-hant/updates/">更新動態</a>
       <a href="/zh-hant/faq/" aria-current="page">常見問題</a>
       <a href="/zh-hant/support/">支援</a>
       <a href="/zh-hant/privacy/">隱私權政策</a>
