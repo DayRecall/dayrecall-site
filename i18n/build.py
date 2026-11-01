@@ -30,7 +30,8 @@ from pending import document_locale, fallback_paths
 I18N = pathlib.Path(__file__).resolve().parent
 ROOT = I18N.parent
 DOCS = I18N / 'docs'
-# Each entry: the versions it covers (oldest first), the day the newest came out and where (beta).
+# Each entry: the versions it covers (oldest first), the day the newest came out and where:
+# beta (TestFlight), review (in App Store review) or appstore (on the App Store).
 UPDATES = json.loads((I18N / 'updates.json').read_text(encoding='utf-8'))
 SITE = 'https://dayrecall.com'
 # No country in the path, so the App Store opens the visitor's own storefront.
@@ -271,7 +272,8 @@ def home_graph(lang, s):
          'description': plain(s['app_description']), 'url': SITE + lang['path'],
          'image': SITE + '/assets/icon-1024.png', 'downloadUrl': APP_STORE, 'operatingSystem': 'iOS 26, watchOS 26',
          'applicationCategory': 'UtilitiesApplication', 'featureList': [plain(f) for f in s['app_features']],
-         'softwareVersion': UPDATES[0]['versions'][-1],
+         # The version people download, not one still in beta or in review.
+         'softwareVersion': next(e for e in UPDATES if e['channel'] == 'appstore')['versions'][-1],
          'releaseNotes': SITE + url(lang if has(lang, 'updates') else EN, 'updates'),
          'publisher': {'@id': SITE + '/#org'}},
     ]
@@ -381,8 +383,10 @@ def faq_section(lang, s):
 def latest_link(lang, s):
     """Under the hero's buttons: the newest entry of What's new, with its day, so a visitor sees how recent it is."""
     entry = UPDATES[0]
-    code = lang['code'] if 'updates_latest' in lang['own'] else 'en'
-    text = (s['updates_latest'].replace('{date}', date_text(code, entry['date'], year=False))
+    # A version still in App Store review says so instead of a day, since nobody can download it yet.
+    key = 'updates_latest_review' if entry['channel'] == 'review' else 'updates_latest'
+    code = lang['code'] if key in lang['own'] else 'en'
+    text = (s[key].replace('{date}', date_text(code, entry['date'], year=False))
             .replace('{title}', s['updates'][entry['id']]['title']))
     return (f'<a class="latest" {href(lang, "updates")}><span class="latest-ver">{version_label(entry)}</span>'
             f'<span class="latest-text">{text}</span><span class="arrow" aria-hidden="true">→</span></a>')
@@ -487,7 +491,7 @@ def updates_page(lang, s):
             '          <summary><span class="rel-head"><span class="rel-meta">'
             f'<time datetime="{entry["date"]}">{date_text(code, entry["date"])}</time>'
             f'<span class="rel-ver">{version_label(entry)}</span>'
-            f'<span class="rel-tag">{s["updates_" + entry["channel"]]}</span></span>'
+            f'<span class="rel-tag">{words.get("tag") or s["updates_" + entry["channel"]]}</span></span>'
             f'<span class="rel-title">{words["title"]}</span></span></summary>\n'
             f'          <ul class="rel-items">\n{items}\n          </ul>\n'
             '        </details>')
