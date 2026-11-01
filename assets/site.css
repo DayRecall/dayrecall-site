@@ -229,7 +229,6 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) h1 { letter-spacing: -0.01em; li
   font-weight: 650; font-size: 15px; padding: 12px 20px 12px 16px; border-radius: 999px;
 }
 .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); }
-/* The App Store link takes the pill's place once assets/store.js says the app is live. */
 [hidden] { display: none !important; }
 a.store { text-decoration: none; transition: transform .15s, box-shadow .15s; }
 a.store:hover { transform: translateY(-1px); box-shadow: 0 10px 24px -12px rgba(205, 240, 74, 0.6); }

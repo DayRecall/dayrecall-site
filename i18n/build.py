@@ -33,6 +33,8 @@ DOCS = I18N / 'docs'
 # Each entry: the versions it covers (oldest first), the day the newest came out and where (beta).
 UPDATES = json.loads((I18N / 'updates.json').read_text(encoding='utf-8'))
 SITE = 'https://dayrecall.com'
+# No country in the path, so the App Store opens the visitor's own storefront.
+APP_STORE = 'https://apps.apple.com/app/id6824073384'
 EDGE = r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 
 LANGS = json.loads((I18N / 'languages.json').read_text(encoding='utf-8'))
@@ -247,7 +249,6 @@ def head(lang, s, page, title, description, graph=None):
     lines += ['<link rel="stylesheet" href="/assets/site.css">', '<script src="/assets/stages.js" defer></script>']
     if home:
         lines.append('<script src="/assets/features.js" defer></script>')
-        lines.append('<script src="/assets/store.js" defer></script>')
     lines.append('</head>')
     return '\n'.join(lines)
 
@@ -268,7 +269,7 @@ def home_graph(lang, s):
          'inLanguage': [o['code'] for o in BUILT], 'publisher': {'@id': SITE + '/#org'}},
         {'@type': 'MobileApplication', '@id': SITE + '/#app', 'name': 'DayRecall',
          'description': plain(s['app_description']), 'url': SITE + lang['path'],
-         'image': SITE + '/assets/icon-1024.png', 'operatingSystem': 'iOS 26, watchOS 26',
+         'image': SITE + '/assets/icon-1024.png', 'downloadUrl': APP_STORE, 'operatingSystem': 'iOS 26, watchOS 26',
          'applicationCategory': 'UtilitiesApplication', 'featureList': [plain(f) for f in s['app_features']],
          'softwareVersion': UPDATES[0]['versions'][-1],
          'releaseNotes': SITE + url(lang if has(lang, 'updates') else EN, 'updates'),
@@ -393,7 +394,7 @@ def home_page(lang, s, template):
         if isinstance(value, str):
             body = body.replace('{{' + key + '}}', value)
     body = (body.replace('{{@home}}', lang['path'])
-                .replace('{{@home_url}}', SITE + lang['path'])
+                .replace('{{@store_url}}', APP_STORE)
                 .replace('{{@latest}}', latest_link(lang, s))
                 .replace('{{@faq}}', faq_section(lang, s)))
     body = re.sub(r'\{\{@pct:([0-9.]+)\}\}', lambda m: percent(lang['code'], m.group(1)), body)
