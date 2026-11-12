@@ -120,7 +120,7 @@
   "final_02": "Coming soon to the App Store",
   "final_03": "Get DayRecall on the App Store ",
   "final_04": "Best with Apple Watch · Works with iPhone alone · In 14 languages",
-  "final_05": "Buy it once on the App Store, and every future update is included. No subscription.",
+  "final_05": "Free to download from the App Store: try everything for 3 days, then unlock it once, and every future update is included. No subscription.",
   "foot_01": "Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries and regions.",
   "faq": [
     {
@@ -291,11 +291,11 @@
         },
         {
           "q": "How much does DayRecall cost?",
-          "a": "You buy DayRecall once on the App Store, which shows the price for your country before you buy. Every future update is included: there is no subscription and nothing renews."
+          "a": "DayRecall is free to download from the App Store. Try everything free for 3 days, then unlock it with one in-app purchase; the App Store shows the price for your country before you buy. Every future update is included: there is no subscription and nothing renews. If you got DayRecall before November 7, 2026 (UTC), it is already fully unlocked."
         },
         {
           "q": "Is DayRecall still being worked on?",
-          "a": "Yes. Every version is written up on <a href=\"/updates/\">What’s new</a>, newest first, with the date it came out. Buy it once, and every future update is included."
+          "a": "Yes. Every version is written up on <a href=\"/updates/\">What’s new</a>, newest first, with the date it came out. Unlock it once, and every future update is included."
         },
         {
           "q": "How do I get help?",
@@ -354,7 +354,7 @@
   "updates_page_description": "Every DayRecall update, newest first: what changed in each version, and when it came out.",
   "updates_kicker": "What’s new",
   "updates_heading": "Every update, written down.",
-  "updates_lead": "Download DayRecall from the <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Each new version is tested in a beta on TestFlight first; here is what changed in each one, newest first. Buy it once, and every future update is included.",
+  "updates_lead": "Download DayRecall from the <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Each new version is tested in a beta on TestFlight first; here is what changed in each one, newest first. Unlock it once, and every future update is included.",
   "updates_summary": "{n} versions since {date}",
   "updates_beta": "Beta",
   "updates_review": "In App Store review",
@@ -363,96 +363,341 @@
   "updates_latest_review": "In App Store review: {title}",
   "updates_follow_text": "We post news on TikTok, X and Instagram. For help or feedback, email <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: that’s where we reply.",
   "updates": {
+    "1.4.3": {
+      "title": "Free to download: try it, then unlock it once",
+      "lead": "The first App Store version since 0.2.32, with everything from 0.2.33 to 1.4.2 below.",
+      "groups": [
+        {
+          "title": "Price and unlock",
+          "items": [
+            "Free to download. Start with a 3-day trial of everything, then unlock DayRecall with one purchase. No subscription, no automatic charge.",
+            "The trial starts when you tap “Start free 3-day trial” and Apple confirms it, and runs for 72 hours in a row. Reinstalling, a new phone or restoring purchases doesn’t restart it.",
+            "One purchase unlocks DayRecall on iPhone and Apple Watch.",
+            "If you got DayRecall before November 7 (UTC), as a paid or a free download, it is fully unlocked for you: no trial, nothing more to pay.",
+            "After the trial, new recordings, audio imports and new AI tasks need the unlock. What you have already captured stays yours to view, search, export and delete, and recordings already on your watch still arrive and turn into text."
+          ]
+        },
+        {
+          "title": "Fixes",
+          "items": [
+            "A line corrected on another device no longer keeps its old translation; it waits for a new one.",
+            "Meeting notes are written again when more of the meeting turns into text or a line is corrected.",
+            "A meeting started on your iPhone keeps your Apple Watch listening until it ends, even past your listening hours (up to 12 hours)."
+          ]
+        }
+      ]
+    },
     "1.4.2": {
       "title": "Start your watch from your iPhone",
-      "items": [
-        "When your Apple Watch is connected but not listening, Today offers Start on Apple Watch first: raise your wrist, open DayRecall on the watch, and it starts by itself.",
-        "My voice: all five cards are read aloud from a script. With more than one working language, the last two are in your other languages.",
-        "On a recording’s page, tap a line to play the recording from there, while its audio is still kept.",
-        "A day opened from the Library shows its date.",
-        "The privacy policy and terms inside the app are complete in all 14 languages."
+      "groups": [
+        {
+          "title": "Today and Apple Watch",
+          "items": [
+            "When your Apple Watch is connected but not listening, the first button on the listening card is “Start on Apple Watch”, and the iPhone one becomes “Record on iPhone instead”. The watch card in Devices has the same button.",
+            "After you tap it, raise your wrist and open DayRecall on the watch: it starts by itself, and the hint goes away once the watch is listening.",
+            "One tap counts once: if you open the watch more than 5 minutes later, or the watch stopped in between, it doesn’t start by itself."
+          ]
+        },
+        {
+          "title": "My voice",
+          "items": [
+            "All five voice cards are now read from a script; none asks you to answer in your own words.",
+            "With multilingual transcription on, cards 4 and 5 are in your other working languages. Cantonese has its own spoken script."
+          ]
+        },
+        {
+          "title": "Recordings and Library",
+          "items": [
+            "On a recording’s page (Library › Recordings), while its audio is still kept (for 24 hours after recording), tap a line to play from there; the line playing is marked.",
+            "Touch and hold a line to copy it.",
+            "A day opened from Library shows its date at the top; tap Library again to go back to its front page."
+          ]
+        },
+        {
+          "title": "Privacy policy and terms",
+          "items": [
+            "The privacy policy and terms inside the app now have the Mac, meeting and Apple Watch sections in the other 12 languages."
+          ]
+        }
       ]
     },
     "1.4.1": {
       "title": "Meetings when you want them, clearer places",
-      "items": [
-        "Meetings are off until you turn them on in Settings › Features. Then Today and your watch show a Meeting button, and a meeting starts at once in the language you chose.",
-        "When your Apple Watch isn’t listening, its two buttons are Listen all day and Meeting.",
-        "Choose where places come from, your iPhone or your Apple Watch, in one row: Places from.",
-        "My places: Home, Work and the others are kinds, not names. When an address is a little off, drag the map or correct the house number.",
-        "DayRecall for Mac no longer freezes right after it opens on macOS 27."
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "When it isn’t listening, the two buttons are “Listen all day” and “Meeting”. “Meeting” appears once Meetings is on in Settings on your iPhone.",
+            "A meeting starts at once, in the language chosen in Settings; tap “Meeting · language” during the meeting to switch.",
+            "When your watch notes places, its listening screen says so; if its location permission is off, it tells you where to turn it on."
+          ]
+        },
+        {
+          "title": "Meetings",
+          "items": [
+            "A new Meetings switch in Settings › Features, off by default. Turn it on, then choose the language meetings start in under “Meeting language”, where you can also add languages.",
+            "On Today, “Start a meeting” sits beside “Record on iPhone” and no longer asks for a language; tap its label during a meeting to switch."
+          ]
+        },
+        {
+          "title": "Places",
+          "items": [
+            "“Places from” is now one row: open it to choose iPhone or Apple Watch.",
+            "My places: Home, Work and the other kinds are kinds, not names, and two places of one kind are told apart by their street.",
+            "The address found is kept. If it’s slightly off, drag the map to move the place a little (up to 250 m) or correct the house number. Your own name for it is optional.",
+            "Places named with those words before become kinds."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "Fixes the Mac app freezing right after it opens on macOS 27."
+          ]
+        }
       ]
     },
     "1.4.0": {
       "title": "Pause the watch, meetings and named places",
-      "items": [
-        "Apple Watch shows its state and controls on one screen: pause for 15 minutes, 30 minutes or an hour and it picks up by itself, or hold to end the day.",
-        "Meetings: start one on your iPhone or your watch, choose its language, and get notes afterwards. On a Mac it is the same meeting.",
-        "Places: several stays at one spot become one place, and you can name a place on the map and set how far it reaches (Settings › My places). Your watch can note places while it listens; that’s off until you turn it on.",
-        "My voice: add up to four people you often talk with, and their names appear on the timeline, the poster and the text you export.",
-        "Touch and hold the app icon for Ask, To-dos and Recap.",
-        "DayRecall for Mac, in beta, gets a real Mac window: a sidebar, a month calendar, search, sharing and a menu bar item."
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "One screen shows its state, with two round buttons: pause and end.",
+            "Pause for 15 minutes, 30 minutes or an hour and it picks up by itself, never past your listening hours; hold to end the day."
+          ]
+        },
+        {
+          "title": "Meetings",
+          "items": [
+            "Start a meeting on your iPhone or your watch and choose its language; it shows as its own stretch on the timeline.",
+            "After three hours, your watch asks whether you’re still in the meeting.",
+            "When it ends you can get meeting notes. If they come from your own API, DayRecall asks for your permission for that separately.",
+            "A meeting is the same one on your iPhone and your Mac."
+          ]
+        },
+        {
+          "title": "Places",
+          "items": [
+            "Several stays at one spot become one place. A name that can’t be found is tried again, and shows as “Unnamed place” if it still can’t.",
+            "Name a place on the map and set how far it reaches (Settings › My places): later stays there get its name, and it goes into your backups.",
+            "Your watch can note places while it listens (off until you turn it on); its location then stands in for your iPhone’s."
+          ]
+        },
+        {
+          "title": "My voice",
+          "items": [
+            "Add up to four people you often talk with (a name and how you know them); their names appear on the timeline, the poster and the text you export."
+          ]
+        },
+        {
+          "title": "Quicker ways in",
+          "items": [
+            "Touch and hold the app icon for Ask, To-dos and Recap.",
+            "“View Settings” on a notification opens the app’s own notification settings."
+          ]
+        },
+        {
+          "title": "First-time setup",
+          "items": [
+            "The map, Health and who-is-speaking switches start off; turn them on when you want them."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "A real Mac window: a sidebar, a compact list of records, a details column, a month calendar, search by word, sharing and a menu bar item. You can also export and import records.",
+            "Steadier syncing between devices on a poor network: meeting notes now sync, and a phone that walks away no longer ties up the connection."
+          ]
+        }
       ]
     },
     "1.3.4": {
       "title": "A recap fix",
-      "items": [
-        "Fixes Recap your day freezing for people who had recorded their voice."
+      "groups": [
+        {
+          "title": "Fix",
+          "items": [
+            "If you had recorded your own voice, opening “Recap your day” could freeze the screen, or the app was closed when you came back to it and had to be swiped away. That no longer happens.",
+            "People who never recorded their voice were not affected."
+          ]
+        }
       ]
     },
     "1.3.3": {
       "title": "Settings, simplified",
-      "items": [
-        "Meeting language now sits under Multilingual transcription, and appears once you have a second working language.",
-        "Listening hours take one line a day. A day you switch on reuses the hours of the day before, and a changed time can go to every listening day at once.",
-        "Advanced settings is a short list that opens each part, and Data and Backups is redesigned.",
-        "Fixes a recap page that could freeze, Apple Watch transfers that could stall, and a backup compatibility problem."
+      "groups": [
+        {
+          "title": "Settings",
+          "items": [
+            "Meeting language now sits under Multilingual transcription and is called “Meeting language”. It appears once you have a second working language: one row, Off or one of your languages.",
+            "With multilingual transcription off, your watch no longer shows a meeting-language button you can’t use, and your earlier choice is kept.",
+            "Listening hours take one row per day (day, time, switch); a day you turn on reuses the hours of the listening day before it.",
+            "Change one day’s time and you’re asked whether every listening day should match; one tap applies it.",
+            "Advanced Settings is a short list in three parts, Listening, Detection and Data; open one to adjust it. Explanations for sliders and switches sit behind an “i”.",
+            "Data and Backups has a new look, and before you export a backup with Health data, one card sums up the three things to know.",
+            "Detailed logging can stay on until you turn it off (by default it turns off after 24 hours)."
+          ]
+        },
+        {
+          "title": "Fixes",
+          "items": [
+            "The recap page no longer freezes the screen.",
+            "Stalled Apple Watch transfers are retried.",
+            "A compatibility problem with library backups."
+          ]
+        }
       ]
     },
     "1.3.2": {
       "title": "New voice matching, and backups",
-      "items": [
-        "“My voice” uses a new voice-matching model. Record your voice once more after updating; earlier labels stay.",
-        "Language detection decides on 6 seconds of speech by default; choose 3 or 6 seconds in Advanced settings.",
-        "Back up your library to a file or to your private iCloud, and restore it.",
-        "Fixes for turning off sharing with your API and for cancelled requests. Edits you make while a conversation is transcribed again are kept."
+      "groups": [
+        {
+          "title": "My voice",
+          "items": [
+            "My voice uses a new voice model. Record your voice once more after updating; earlier speaker labels stay."
+          ]
+        },
+        {
+          "title": "Languages",
+          "items": [
+            "Language detection listens to six seconds of speech by default; choose three or six seconds in Advanced Settings."
+          ]
+        },
+        {
+          "title": "Backup and restore",
+          "items": [
+            "Export your library as a file or back it up to your own private iCloud, and restore it later.",
+            "Health and calendar history brought in from a backup is kept apart and never passes for the new phone’s own data."
+          ]
+        },
+        {
+          "title": "Fixes",
+          "items": [
+            "Problems when you withdraw consent for your API or cancel a request.",
+            "Your edits survive while a conversation is transcribed again."
+          ]
+        }
       ]
     },
     "1.3.1": {
       "title": "All 14 languages, smoother days",
-      "items": [
-        "Every screen, the new ones included, comes in all 14 languages.",
-        "On Mac, the same 17 transcription languages as on iPhone, with Simplified and Traditional Chinese told apart.",
-        "Switching between days is smoother.",
-        "Speaking time counts only real speech, and a silent recording no longer says it was transcribed."
+      "groups": [
+        {
+          "title": "Languages",
+          "items": [
+            "Every screen, the new ones too, is in all 14 languages: device connections, the model directory, permission notes, the poster, the purchase screens and more.",
+            "The offline privacy notes in all 14 languages match the website: how long audio is kept, language correction, and how exported and backup copies are kept."
+          ]
+        },
+        {
+          "title": "Smoother and more accurate",
+          "items": [
+            "Switching days is smoother, with less repeated counting and map work.",
+            "Speaking time counts only the parts where someone actually talks.",
+            "A silent recording ends normally and no longer says the transcription is done."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "Transcription languages match the iPhone’s 17 choices, tell Simplified and Traditional Chinese apart, and follow your region."
+          ]
+        }
       ]
     },
     "1.3.0": {
       "title": "Mac, daily posters and editing",
-      "items": [
-        "DayRecall for Mac, in beta: record an in-person or online meeting, pause and resume, keep your meetings and to-dos, and link your iPhone and Apple Watch over your local network. Transcribing on the Mac needs a supported Mac with macOS 26.",
-        "Daily posters: three looks and a line you pick, as a picture or a short video.",
-        "Edit a conversation: rename it, fix a line, or go back to the original. While its audio is still kept, you can also correct its language.",
-        "Choose the meeting language from your Apple Watch.",
-        "Save a recap to Notion or Obsidian.",
-        "Fixes the watch showing as listening after it had stopped, and its stop reminder being withdrawn too early."
+      "groups": [
+        {
+          "title": "Daily poster",
+          "items": [
+            "Three looks and a line you pick from your day, saved as a picture or a short video.",
+            "You can also make one with Shortcuts."
+          ]
+        },
+        {
+          "title": "Edit conversations",
+          "items": [
+            "Rename a conversation, edit a line or bring back the original text.",
+            "While the audio is still there, change a conversation’s language to transcribe it again; pick the meeting language right on your Apple Watch."
+          ]
+        },
+        {
+          "title": "Connections and reading",
+          "items": [
+            "Save recaps to Notion or Obsidian.",
+            "With your own API, the model directory can be updated; it only goes online when you tap.",
+            "Open the website and the legal documents inside the app."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "A real library on the Mac: record in-person or online meetings, pause and resume them, and manage meetings, records and to-dos.",
+            "Works with your paired iPhone and Apple Watch over your local network."
+          ]
+        },
+        {
+          "title": "Fixes",
+          "items": [
+            "The watch showing it was listening after it had stopped.",
+            "Stop reminders being withdrawn too early."
+          ]
+        }
       ]
     },
     "0.2.34": {
       "title": "Mac joins the beta",
-      "items": [
-        "DayRecall for Mac joins the beta: import meeting transcripts, and let a paired Mac transcribe for your iPhone over your encrypted local network.",
-        "The beta gets a 3-day trial and a one-time purchase, to test buying. Nothing is charged in the beta.",
-        "About now has links to rate DayRecall, share it and visit the website."
+      "groups": [
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "DayRecall for Mac joins the beta: a native window, meeting text you can import, and meetings kept in their own place.",
+            "Once paired, a Mac with its language model ready can transcribe for your iPhone over an encrypted local connection and send the text back; if the Mac can’t, your iPhone does it.",
+            "Meeting text on the Mac can sync through your own private iCloud, once you turn it on."
+          ]
+        },
+        {
+          "title": "Trial and purchase (beta)",
+          "items": [
+            "The beta gets the 3-day trial and the one-time unlock so the purchase flow can be tested; nothing is charged in the beta.",
+            "Before a trial starts, DayRecall checks that speech and your chosen AI are ready; if not, the clock doesn’t start."
+          ]
+        },
+        {
+          "title": "About",
+          "items": [
+            "Rate DayRecall, share it or open the website from About."
+          ]
+        }
       ]
     },
     "0.2.33": {
       "title": "Listening picks itself back up",
-      "items": [
-        "When an alarm, a call or Siri interrupts, your Apple Watch goes back to listening on its own, and reminds you only if it can’t.",
-        "Choose when that reminder comes in Settings › Listening hours › If listening pauses.",
-        "Better at questions about what you were doing, like “What did I say while I was running?”",
-        "Short walks no longer hide behind long conversations on the timeline."
+      "groups": [
+        {
+          "title": "After an interruption",
+          "items": [
+            "After an alarm, a call or Siri, DayRecall keeps trying for about a minute and picks up recording by itself; it only tells you if it can’t.",
+            "The “Listening paused” reminder no longer comes at once: it waits until the microphone has been free for 20 seconds without recording resuming, and repeats once 5 minutes later. If recording comes back on its own, nothing rings.",
+            "While an alarm is still ringing or a call is still going, you aren’t reminded halfway through.",
+            "The iPhone’s “Apple Watch stopped recording” notice waits the same way and goes away once the watch is listening again.",
+            "Choose when reminders come in Settings › Listening hours › If recording pauses."
+          ]
+        },
+        {
+          "title": "Ask and the timeline",
+          "items": [
+            "Better at questions about what you were doing, like “what did we talk about while I was running?”; if the first search finds nothing, it tries once more in other words.",
+            "Short walks on the timeline are no longer hidden behind long conversations."
+          ]
+        },
+        {
+          "title": "Languages",
+          "items": [
+            "The screens and offline legal documents are complete in all 14 languages."
+          ]
+        }
       ]
     },
     "0.2.32": {
@@ -465,25 +710,97 @@
     },
     "0.2.29": {
       "title": "Recaps, written in the background",
-      "items": [
-        "Recap your day writes in the background: leave the page, and the recap is saved with that day.",
-        "Before it starts, you see about how long it will take; while it works, its step and the time left.",
-        "Not good enough? Hand the day to an AI app and bring its answer back, saved next to the day.",
-        "Recap every day: Remind me, Write it for me, or Off.",
-        "If this iPhone can’t write a recap, it says why and offers two other ways.",
-        "A reminder on your watch when listening hours begin, and once more on your iPhone 20 minutes later if you haven’t started."
+      "groups": [
+        {
+          "title": "Recap your day",
+          "items": [
+            "Written in the background: leave the page or switch tabs while it works. A thin bar above every tab shows the step and the time left, and you can stop at any moment.",
+            "A finished recap is kept with its day. On Today the row says “Your recap · written at …”; tap to read it, then copy, share, send its list to To confirm, write it again or delete it.",
+            "Before it starts you see roughly how long it will take; over a minute, it first explains that you can leave the page, that DayRecall needs to stay open, and the quicker ways.",
+            "Stopping and starting again, or retrying after a failure, doesn’t read the parts already read.",
+            "When the app isn’t in front or the iPhone is warm, the on-device model waits, and carries on once you’re back and it has cooled down.",
+            "If you’ve left the app when it’s done, a silent notification says your recap is ready (turn it off in Settings › Notifications)."
+          ]
+        },
+        {
+          "title": "Ask a stronger AI",
+          "items": [
+            "Not good enough? Hand the day to an AI app and bring its answer back: it’s kept with the day, next to the iPhone’s own recap.",
+            "When this iPhone can’t write a recap (no Apple Intelligence, turned off, model still downloading, or your API not set up), it says why and shows the two other ways."
+          ]
+        },
+        {
+          "title": "Recap every day",
+          "items": [
+            "Settings › AI engine › Recap every day: Remind me (the default), Write it for me, or Off.",
+            "“Remind me” sends a silent notification half an hour after your listening hours end, if the day has over 5 minutes of speech and no recap yet."
+          ]
+        },
+        {
+          "title": "Reminders and reliability",
+          "items": [
+            "When your listening hours begin, your watch reminds you once; if nothing has started 20 minutes later, your iPhone reminds you again, and both go away once recording starts.",
+            "Ask finishes on time even when the model is slow to answer, and a late recap can’t come back after you’ve cleared your library."
+          ]
+        }
       ]
     },
     "0.2.21": {
       "title": "The first betas as DayRecall",
-      "items": [
-        "Recording is more reliable: Apple Watch transfers retry, deleted recordings stay deleted, and listening and reminders recover after an interruption.",
-        "New Settings: it is the last tab, in clear groups, and first-time setup lets you choose what DayRecall records.",
-        "Today’s first screen is for your day: a slimmer listening card and a small recap row you can close.",
-        "Health on the timeline has a new look. When you hand a day to an AI app, you can choose to include Health labels and values; it’s off by default.",
-        "With your own API, choose the model and the reasoning effort.",
-        "Read the terms and the privacy policy in the app, offline, in 14 languages.",
-        "When listening ends, the reminder to sync says about when the text will be ready."
+      "groups": [
+        {
+          "title": "More reliable recording",
+          "items": [
+            "iPhone recording recovers by itself after an interruption; Apple Watch transfers are retried, and deleted recordings don’t come back.",
+            "If a recording that arrives from an offline watch can’t be placed before or after something you deleted, it’s kept apart for you to restore or delete.",
+            "A stop that wasn’t registered is registered later; once the speech model is installed, waiting recordings are transcribed, older months too, and their translations become searchable."
+          ]
+        },
+        {
+          "title": "Today",
+          "items": [
+            "The first screen is for your day: the listening card keeps only the state, today’s speaking time and the record button, with a small warning only when something needs you.",
+            "“Recap your day” is a small row you can close, and a button at the top still opens it.",
+            "Quiet stretches with no words found no longer notify you; transcription progress and failures you can retry are in Settings › Devices."
+          ]
+        },
+        {
+          "title": "Settings and first-time setup",
+          "items": [
+            "Settings is the last tab, grouped into General, Features, Help and About; advanced options have their own page, with explanations behind an “i”.",
+            "In first-time setup, choose what DayRecall keeps track of.",
+            "Setting your watch to come back to DayRecall when you raise your wrist takes four numbered steps."
+          ]
+        },
+        {
+          "title": "To-dos and reminders",
+          "items": [
+            "To-dos and your Reminders stay in step: no duplicate reminders, and completion syncs.",
+            "When listening ends, you’re reminded to sync and told roughly when the text will be ready; from the second day waiting to sync, the reminder can make a sound."
+          ]
+        },
+        {
+          "title": "Health",
+          "items": [
+            "Health on the timeline has a new look, and a day with only a workout shows it too.",
+            "When you hand a day to an AI app or write a recap with your own API, you can add Health labels and values (heart rate, steps, distance and more). It’s off by default, and missing values are never turned into zeros."
+          ]
+        },
+        {
+          "title": "AI and privacy",
+          "items": [
+            "With your own API, choose the model and how hard it reasons.",
+            "Once you allow your API, it’s used to find to-dos, write recaps and answer questions; audio is never sent, and you’re asked again before more is shared.",
+            "If saving an API key fails, the old key is kept and you’re told.",
+            "Read the terms and the privacy policy offline in the app, in all 14 languages."
+          ]
+        },
+        {
+          "title": "Sample day",
+          "items": [
+            "The sample day has speakers, walks, workouts, heart rate and translations, and takes you from a to-do back to the words and the moment."
+          ]
+        }
       ]
     }
   },

@@ -477,6 +477,30 @@ def faq_page(lang, s):
     return assemble(lang, s, 'faq', s['faq_page_title'], s['faq_page_description'], main, [faq_graph(lang, s, 'faq')])
 
 
+def release_body(lang, entry, words):
+    """An entry's changes: an optional lead line, then either groups (a heading and its points each) or a flat
+    list. A language that translated an older flat list keeps its own list until a batch brings the groups;
+    a language without the entry at all shows the English groups."""
+    own = (lang['own'].get('updates') or {}).get(entry['id'], {})
+    use_groups = 'groups' in words and ('groups' in own or 'items' not in own)
+    lead = own.get('lead') if 'lead' in own else (words.get('lead') if use_groups else None)
+    parts = []
+    if lead:
+        parts.append(f'          <p class="rel-lead">{lead}</p>')
+    if use_groups:
+        for group in words['groups']:
+            points = '\n'.join(f'              <li>{item}</li>' for item in group['items'])
+            parts.append('          <div class="rel-group">\n'
+                         f'            <h3>{group["title"]}</h3>\n'
+                         f'            <ul class="rel-items">\n{points}\n            </ul>\n'
+                         '          </div>')
+    else:
+        flat = own.get('items') or words['items']
+        points = '\n'.join(f'            <li>{item}</li>' for item in flat)
+        parts.append(f'          <ul class="rel-items">\n{points}\n          </ul>')
+    return '\n'.join(parts)
+
+
 def updates_page(lang, s):
     """What's new: every entry of updates.json, newest first and open, the older ones folded to a line each."""
     code = lang['code']
@@ -485,7 +509,7 @@ def updates_page(lang, s):
     entries = []
     for i, entry in enumerate(UPDATES):
         words = s['updates'][entry['id']]
-        items = '\n'.join(f'            <li>{item}</li>' for item in words['items'])
+        items = release_body(lang, entry, words)
         entries.append(
             f'        <details id="{release_anchor(entry)}"{" open" if i == 0 else ""}>\n'
             '          <summary><span class="rel-head"><span class="rel-meta">'
@@ -493,7 +517,7 @@ def updates_page(lang, s):
             f'<span class="rel-ver">{version_label(entry)}</span>'
             f'<span class="rel-tag">{words.get("tag") or s["updates_" + entry["channel"]]}</span></span>'
             f'<span class="rel-title">{words["title"]}</span></span></summary>\n'
-            f'          <ul class="rel-items">\n{items}\n          </ul>\n'
+            f'{items}\n'
             '        </details>')
     entries = '\n'.join(entries)
     main = f'''<main id="main">

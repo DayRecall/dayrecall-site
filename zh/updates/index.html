@@ -50,7 +50,7 @@
 <meta property="og:locale:alternate" content="sv_SE">
 <meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/site.css?v=c20aa541">
+<link rel="stylesheet" href="/assets/site.css?v=c1bbd42c">
 <script src="/assets/stages.js?v=cb3bb21d" defer></script>
 </head>
 <body>
@@ -96,105 +96,328 @@
     <div class="wrap">
       <p class="kicker">更新动态</p>
       <h1><span class="nw">每一次更新，</span><span class="nw">都写在这里。</span></h1>
-      <p class="lead">在 <a href="https://apps.apple.com/app/id6824073384">App Store</a> 下载 DayRecall。每个新版本都先在 TestFlight 内测；这里按时间倒序，写着每个版本改了什么。一次购买，以后的更新都包含在内。</p>
-      <p class="meta">2026年10月18日以来，共发布 22 个版本</p>
+      <p class="lead">在 <a href="https://apps.apple.com/app/id6824073384">App Store</a> 下载 DayRecall。每个新版本都先在 TestFlight 内测；这里按时间倒序，写着每个版本改了什么。一次买断，以后的更新都包含在内。</p>
+      <p class="meta">2026年10月18日以来，共发布 23 个版本</p>
     </div>
   </section>
 
   <section class="doc releases-doc">
     <div class="wrap">
       <div class="qa releases">
-        <details id="v1-4-2" open>
-          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-30">2026年10月30日</time><span class="rel-ver">1.4.2</span><span class="rel-tag">App Store 审核中</span></span><span class="rel-title">在 iPhone 上让手表开始聆听</span></span></summary>
-          <ul class="rel-items">
-            <li>Apple Watch 连着却没在听时，今天页的第一个按钮是“在手表上开始”：抬腕打开手表上的 DayRecall，它会自己开始。</li>
-            <li>我的声音：五张卡都照着稿子念；开着多种工作语言时，最后两张换成你的其他语言。</li>
-            <li>录音详情页：音频还保留时，点一句话就从那一句开始播放。</li>
-            <li>从回顾点进某一天，顶上写明日期。</li>
-            <li>App 里的隐私政策和服务条款，14 种语言都已补齐。</li>
-          </ul>
+        <details id="v1-4-3" open>
+          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-11-06">2026年11月6日</time><span class="rel-ver">1.4.3</span><span class="rel-tag">App Store</span></span><span class="rel-title">免费下载，先试用再买断</span></span></summary>
+          <p class="rel-lead">0.2.32 之后的第一个 App Store 版本，下面 0.2.33 到 1.4.2 的更新都在里面。</p>
+          <div class="rel-group">
+            <h3>价格与解锁</h3>
+            <ul class="rel-items">
+              <li>下载免费。先领 3 天完整试用，之后一次买断，没有订阅，不会自动扣费。</li>
+              <li>试用从你点“开始 3 天试用”、Apple 确认的那一刻算起，连续 72 小时；重装 App、换手机或恢复购买，都不会重新计时。</li>
+              <li>一次购买，iPhone 和 Apple Watch 上都解锁。</li>
+              <li>在 11 月 7 日（UTC）之前拿到 DayRecall 的人，不管当时是付费还是免费下载，都自动完整解锁，不用试用，也不用再付。</li>
+              <li>试用结束后，新的录音、导入音频和新的 AI 任务需要解锁；已经记下的内容照样能看、搜索、导出和删除，手表上已经录好的部分也会继续传完、转成文字。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>修复</h3>
+            <ul class="rel-items">
+              <li>在另一台设备上改过的句子，不再留着旧的译文，会等新的翻译。</li>
+              <li>会议里的文字变多，或者某一句被改过之后，会议笔记会重新写。</li>
+              <li>在 iPhone 上开始的会议，Apple Watch 会一直听到会议结束，不受聆听时段限制（最长 12 小时）。</li>
+            </ul>
+          </div>
+        </details>
+        <details id="v1-4-2">
+          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-30">2026年10月30日</time><span class="rel-ver">1.4.2</span><span class="rel-tag">内测版</span></span><span class="rel-title">在 iPhone 上让手表开始聆听</span></span></summary>
+          <div class="rel-group">
+            <h3>今天页与 Apple Watch</h3>
+            <ul class="rel-items">
+              <li>Apple Watch 连着却没在听时，聆听卡片的第一个按钮是“在手表上开始”，iPhone 的按钮改叫“改用 iPhone 录音”。设备页的手表卡片上也有这个按钮。</li>
+              <li>点了以后，抬腕打开手表上的 DayRecall，它会自己开始；手表开始聆听后，卡片上的提示就消失。</li>
+              <li>同一次点按只算一次：隔了 5 分钟以上才打开手表，或者中间手表已经停过，就不会自动开始。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>我的声音</h3>
+            <ul class="rel-items">
+              <li>录声音的五张卡都改成照着稿子念，不再要你用自己的话回答。</li>
+              <li>开着多语言转写时，第 4、5 张换成你的其他工作语言；粤语有自己的口语稿。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>录音与回顾</h3>
+            <ul class="rel-items">
+              <li>录音详情页（回顾 › 录音管理）：音频还保留时（录音后 24 小时内），点一句话就从那一句开始播放，正在放的那句会标出来。</li>
+              <li>长按一句可以拷贝。</li>
+              <li>从回顾点进某一天，顶上写明日期；再点一下底部的“回顾”，回到回顾首页。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>隐私政策与条款</h3>
+            <ul class="rel-items">
+              <li>App 里自带的隐私政策和服务条款，另外 12 种语言补齐了 Mac、会议和手表几节。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-4-1">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-29">2026年10月29日</time><span class="rel-ver">1.4.1</span><span class="rel-tag">内测版</span></span><span class="rel-title">会议按需打开，地点更清楚</span></span></summary>
-          <ul class="rel-items">
-            <li>会议默认关闭，在“设置 › 功能”里打开；之后今天页和手表上才有会议按钮，一点就用选好的语言开始。</li>
-            <li>Apple Watch 没在听时，两个按钮是“全天聆听”和“会议”。</li>
-            <li>位置从哪来，合成一行“位置来源”：选 iPhone 或 Apple Watch。</li>
-            <li>我的地点：家、公司这些是类别，不再当名字；地址差一点时，可以拖动地图或改门牌号。</li>
-            <li>修复 Mac 版在 macOS 27 上一打开就卡住的问题。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Apple Watch</h3>
+            <ul class="rel-items">
+              <li>没在听时，两个按钮是“全天聆听”和“会议”；“会议”要先在 iPhone 的设置里打开会议才会出现。</li>
+              <li>会议一点就开始，用设置里选好的语言；开会时点“会议 · 语言”可以换语言。</li>
+              <li>用手表记位置时，聆听画面多一行“正在记位置”；手表的定位权限没开时，会告诉你去哪里打开。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>会议</h3>
+            <ul class="rel-items">
+              <li>设置 › 功能里新增“会议”开关，默认关闭；打开后，在“会议语言”里选开会用的语言，也可以在这里添加语言。</li>
+              <li>今天页上，“开始会议”放在“用 iPhone 录音”旁边，开始时不再弹框选语言；开会时点标签就能换语言。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>地点</h3>
+            <ul class="rel-items">
+              <li>“位置来源”单独一行，点进去选 iPhone 或 Apple Watch。</li>
+              <li>我的地点：家、公司、学校、健身房、咖啡馆是类别，不再当成名字；同类的两个地点用街道区分。</li>
+              <li>地址沿用查到的；差一点时，可以拖动地图把地点挪一点（最多 250 米），或者直接改门牌号。自己起的名字可写可不写。</li>
+              <li>以前起名为“家”“公司”的地点，会自动变成类别。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Mac 版（内测）</h3>
+            <ul class="rel-items">
+              <li>修复 1.4.0 的 Mac 版在 macOS 27 上一打开就卡住、点不动的问题。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-4-0">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-29">2026年10月29日</time><span class="rel-ver">1.4.0</span><span class="rel-tag">内测版</span></span><span class="rel-title">手表暂停、会议，给地点起名</span></span></summary>
-          <ul class="rel-items">
-            <li>Apple Watch 一屏看状态和控制：可暂停 15 分钟、30 分钟或 1 小时，到点自己恢复；长按结束这一天。</li>
-            <li>会议：在 iPhone 或手表上开始，选好语言，结束后可以生成会议笔记；在 Mac 上是同一场会议。</li>
-            <li>地点：同一处的几段停留合成一个地点；可以在地图上给地点起名、设范围（设置 › 我的地方）。手表也能在聆听时记录地点，默认关闭。</li>
-            <li>我的声音：最多添加 4 位常说话的人，时间线、海报和导出的文字里会写出他们的名字。</li>
-            <li>长按 App 图标，有“问答”“待办”“复盘”三个快捷操作。</li>
-            <li>Mac 版（内测）换成真正的 Mac 窗口：侧栏、月历、搜索、分享和菜单栏图标。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Apple Watch</h3>
+            <ul class="rel-items">
+              <li>一屏看清状态，两个圆形按钮：暂停和结束。</li>
+              <li>可暂停 15 分钟、30 分钟或 1 小时，到点自己恢复，不会超过聆听时段；长按结束这一天。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>会议</h3>
+            <ul class="rel-items">
+              <li>在 iPhone 或手表上开始会议，选好语言；会议在时间线上单独成一段。</li>
+              <li>会议开了三个小时，手表会问一句“还在开会吗”。</li>
+              <li>会议结束后可以生成会议笔记；用自己的 API 生成时，会单独问你同不同意。</li>
+              <li>同一场会议在 iPhone 和 Mac 上是同一条。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>地点</h3>
+            <ul class="rel-items">
+              <li>同一处的几段停留合成一个地点；地名查不到会重试，还是查不到就显示“未命名的地点”。</li>
+              <li>可以在地图上给地点起名、设范围（设置 › 我的地方），以后在那里的停留都用这个名字，也会进备份。</li>
+              <li>手表在聆听时也能记录地点（默认关闭），这时用手表的位置代替 iPhone 的。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>我的声音</h3>
+            <ul class="rel-items">
+              <li>最多添加 4 位常说话的人（名字和关系），时间线、海报和导出的文字里会写出他们的名字。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>更快的入口</h3>
+            <ul class="rel-items">
+              <li>长按 App 图标，有“问答”“待办”“复盘”三个快捷操作。</li>
+              <li>通知上的“查看设置”直接打开 App 里的通知设置。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>首次设置</h3>
+            <ul class="rel-items">
+              <li>地图、健康、标注说话人三个开关默认关闭，想用再打开。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Mac 版（内测）</h3>
+            <ul class="rel-items">
+              <li>换成真正的 Mac 窗口：侧栏、紧凑的记录列表、详情栏、月历、按词搜索、分享和菜单栏图标，还能导出和导入记录。</li>
+              <li>网络不好时，几台设备之间的同步更稳：修好了会议笔记不同步、手机走远后连接被占满等问题。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-4">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-23">2026年10月23日</time><span class="rel-ver">1.3.4</span><span class="rel-tag">内测版</span></span><span class="rel-title">修复复盘卡住</span></span></summary>
-          <ul class="rel-items">
-            <li>修复录过自己声音的人打开“复盘你的一天”时卡住的问题。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>修复</h3>
+            <ul class="rel-items">
+              <li>录过自己声音的人点“复盘你的一天”时，页面会卡住不动，或者回到前台时被系统关掉、要划掉重开。现在不会了。</li>
+              <li>没录过自己声音的人不受影响。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-3">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-22">2026年10月22日</time><span class="rel-ver">1.3.3</span><span class="rel-tag">内测版</span></span><span class="rel-title">设置更清爽</span></span></summary>
-          <ul class="rel-items">
-            <li>会议语言收进“多语言转写”，有第二种工作语言时才出现。</li>
-            <li>录音时段一天一行：打开某一天会沿用前一天的时间，改了一天的时间，可以一键用到每个录音日。</li>
-            <li>高级设置改成短目录，点进去再调；“数据与备份”页重新设计。</li>
-            <li>修复复盘页面卡住、Apple Watch 传输停滞和备份兼容的问题。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>设置</h3>
+            <ul class="rel-items">
+              <li>会议语言收进“多语言转写”，改名叫“会议语言”；有第二种工作语言时才出现，一行选“关闭”或一种语言。</li>
+              <li>多语言转写关着时，手表上不再显示用不上的会议语言按钮，你原来的选择会保留。</li>
+              <li>录音时段一天一行（星期、时间、开关）；打开某一天，会沿用前一个录音日的时间。</li>
+              <li>改了某一天的时间，下面会问“每个录音日都改成这样吗？”，一键就能用到每一天。</li>
+              <li>高级设置改成短目录：聆听、检测、数据三组，点进去再调；滑块和开关的说明收进“i”。</li>
+              <li>“数据与备份”页重新设计；导出带健康数据的备份前，先用一张卡片讲清楚三件事。</li>
+              <li>详细日志可以一直开着，直到你自己关掉（默认 24 小时后自动关）。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>修复</h3>
+            <ul class="rel-items">
+              <li>复盘页面不会再卡住界面。</li>
+              <li>Apple Watch 传输卡住时会重试。</li>
+              <li>修复资料库备份的兼容问题。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-2">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-21">2026年10月21日</time><span class="rel-ver">1.3.2</span><span class="rel-tag">内测版</span></span><span class="rel-title">新的声纹模型，和资料库备份</span></span></summary>
-          <ul class="rel-items">
-            <li>“我的声音”换用新的声纹模型。更新后请重新录一次自己的声音，以前的标注会保留。</li>
-            <li>语种识别默认按 6 秒的语音来判断，可以在高级设置里选 3 秒或 6 秒。</li>
-            <li>资料库可以导出成文件，或备份到你自己的私人 iCloud，并且能恢复。</li>
-            <li>修复撤销 API 共享授权和取消请求时的问题；对话重新转写时，你正在改的内容会保留。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>我的声音</h3>
+            <ul class="rel-items">
+              <li>“我的声音”换用新的声纹模型。更新后请重新录一次自己的声音，以前的标注会保留。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>多语言</h3>
+            <ul class="rel-items">
+              <li>语种识别默认按 6 秒的语音来判断，可以在高级设置里选 3 秒或 6 秒。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>备份与恢复</h3>
+            <ul class="rel-items">
+              <li>资料库可以导出成文件，也可以备份到你自己的私人 iCloud，之后都能恢复。</li>
+              <li>从备份带过来的健康和日历记录单独保存，不会当成新手机自己的数据。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>修复</h3>
+            <ul class="rel-items">
+              <li>撤销 API 共享授权、取消请求时的问题。</li>
+              <li>对话重新转写时，你正在改的内容会保留。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-1">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-21">2026年10月21日</time><span class="rel-ver">1.3.1</span><span class="rel-tag">内测版</span></span><span class="rel-title">补齐 14 种语言，切换日期更顺</span></span></summary>
-          <ul class="rel-items">
-            <li>所有界面（包括新加的）都有 14 种语言。</li>
-            <li>Mac 上的转写语言和 iPhone 一样有 17 个选项，简体中文和繁体中文分得清。</li>
-            <li>切换日期更顺畅。</li>
-            <li>说话时长只算真正有人说话的部分；静音的录音不再提示“转写完成”。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>语言</h3>
+            <ul class="rel-items">
+              <li>所有界面（包括新加的）都有 14 种语言：设备连接、模型目录、权限说明、海报、购买说明等。</li>
+              <li>14 种语言的离线隐私说明和官网同步，写明音频短期保留、语言校正，以及导出和备份的副本怎么保存。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>更顺、更准</h3>
+            <ul class="rel-items">
+              <li>切换日期更顺畅：少了重复的统计和地图计算。</li>
+              <li>说话时长只算真正有人说话的部分。</li>
+              <li>静音的录音会正常结束，不再提示“转写完成”。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Mac 版（内测）</h3>
+            <ul class="rel-items">
+              <li>转写语言和 iPhone 一样有 17 个选项，简体中文和繁体中文分得清，也认得地区偏好。</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-0">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-21">2026年10月21日</time><span class="rel-ver">1.3.0</span><span class="rel-tag">内测版</span></span><span class="rel-title">Mac 版、每日海报和编辑对话</span></span></summary>
-          <ul class="rel-items">
-            <li>Mac 版（内测）：录线下或线上会议，可以暂停、继续；管理会议和待办；和 iPhone、Apple Watch 在局域网里联动。在 Mac 上转写需要受支持的 Mac 和 macOS 26。</li>
-            <li>每日海报：三种样式，加一句你挑的话，存成图片或短视频。</li>
-            <li>编辑对话：改名、改某一句，或恢复原文；录音还在的时候，也可以改对话的语言重新转写。</li>
-            <li>在 Apple Watch 上就能选会议语言。</li>
-            <li>复盘可以存到 Notion 或 Obsidian。</li>
-            <li>修复手表停了却还显示在听、停止提醒被过早撤回的问题。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>每日海报</h3>
+            <ul class="rel-items">
+              <li>三种样式，加一句你从这一天挑出来的话，存成图片或短视频。</li>
+              <li>也可以用快捷指令生成。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>编辑对话</h3>
+            <ul class="rel-items">
+              <li>给对话改名、改某一句，或者恢复原文。</li>
+              <li>录音还在的时候，可以改对话的语言重新转写；在 Apple Watch 上就能选会议语言。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>连接与阅读</h3>
+            <ul class="rel-items">
+              <li>复盘可以存到 Notion 或 Obsidian。</li>
+              <li>用自己的 API 时，模型目录可以更新；只在你点了之后才联网。</li>
+              <li>官网和法律文档可以在 App 里直接打开阅读。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Mac 版（内测）</h3>
+            <ul class="rel-items">
+              <li>用真正的资料库：录线下或线上会议，可以暂停、继续；管理会议、资料和待办。</li>
+              <li>和配对的 iPhone、Apple Watch 在局域网里联动。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>修复</h3>
+            <ul class="rel-items">
+              <li>手表停了却还显示在听的问题。</li>
+              <li>停止提醒被过早撤回的问题。</li>
+            </ul>
+          </div>
         </details>
         <details id="v0-2-34">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-21">2026年10月21日</time><span class="rel-ver">0.2.34</span><span class="rel-tag">内测版</span></span><span class="rel-title">Mac 版加入内测</span></span></summary>
-          <ul class="rel-items">
-            <li>Mac 版加入内测：可以导入会议文字；配对之后，Mac 能通过加密的局域网帮 iPhone 转写。</li>
-            <li>内测版加入 3 天试用和一次性购买，用来测试购买流程；内测期间不收费。</li>
-            <li>“关于”页可以给 DayRecall 评分、分享，或打开官网。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Mac 版（内测）</h3>
+            <ul class="rel-items">
+              <li>Mac 版加入内测：一个原生窗口，可以导入会议文字，会议单独存放。</li>
+              <li>配对之后，语言模型就绪的 Mac 能通过加密的局域网帮 iPhone 转写，结果送回 iPhone；Mac 用不了时由 iPhone 自己转。</li>
+              <li>Mac 上的会议文字，可以经你自己打开的私人 iCloud 同步。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>试用与购买（内测）</h3>
+            <ul class="rel-items">
+              <li>内测版加入 3 天试用和一次买断，用来测试购买流程；内测期间不收费。</li>
+              <li>开始试用前，会先检查语音和你选的 AI 是否准备好；没准备好不会开始计时。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>关于</h3>
+            <ul class="rel-items">
+              <li>“关于”页可以给 DayRecall 评分、分享，或打开官网。</li>
+            </ul>
+          </div>
         </details>
         <details id="v0-2-33">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-20">2026年10月20日</time><span class="rel-ver">0.2.33</span><span class="rel-tag">内测版</span></span><span class="rel-title">被打断后，自己接着录</span></span></summary>
-          <ul class="rel-items">
-            <li>被闹钟、电话或 Siri 打断后，Apple Watch 会自己接着录；接不上才提醒你。</li>
-            <li>提醒什么时候来，可以在“设置 › 录音时段 › 如果录音暂停”里调。</li>
-            <li>更懂“我跑步的时候说了什么”这类按活动来问的问题。</li>
-            <li>时间线上的短步行，不再被长对话挡住。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>被打断之后</h3>
+            <ul class="rel-items">
+              <li>被闹钟、电话或 Siri 打断后，DayRecall 会接着试大约 1 分钟，自己接着录；接不上才提醒你。</li>
+              <li>“聆听已暂停”的提醒不再马上响：麦克风空出来 20 秒还没恢复才提醒，5 分钟后再提醒一次；自己恢复了就一条都不响。</li>
+              <li>闹钟还在响、电话还没挂的时候，不会中途提醒你。</li>
+              <li>iPhone 上“Apple Watch 停止录音了”的提示也会等一等，手表重新在听就撤掉。</li>
+              <li>提醒什么时候来，可以在“设置 › 录音时段 › 如果录音暂停”里调。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>问答与时间线</h3>
+            <ul class="rel-items">
+              <li>更懂“我跑步的时候说了什么”这类按活动来问的问题；第一次没找到，会换个说法再找一次。</li>
+              <li>时间线上的短步行，不再被长对话挡住。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>语言</h3>
+            <ul class="rel-items">
+              <li>14 种语言的界面和离线法律文档补齐。</li>
+            </ul>
+          </div>
         </details>
         <details id="v0-2-32">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-19">2026年10月19日</time><span class="rel-ver">0.2.32</span><span class="rel-tag">App Store · 首个公开版本</span></span><span class="rel-title">在 App Store 下载</span></span></summary>
@@ -205,26 +428,94 @@
         </details>
         <details id="v0-2-29">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-19">2026年10月19日</time><span class="rel-ver">0.2.29–0.2.31</span><span class="rel-tag">内测版</span></span><span class="rel-title">复盘改在后台写</span></span></summary>
-          <ul class="rel-items">
-            <li>“复盘你的一天”改在后台写：可以离开这一页，写好的复盘会和那一天存在一起。</li>
-            <li>开始前先告诉你大概要多久；写的时候显示进行到第几步、还要多久。</li>
-            <li>觉得不够好？把这一天交给 AI App，再把答案取回来，和这一天存在一起。</li>
-            <li>每天复盘：提醒我、替我写，或关闭。</li>
-            <li>这台 iPhone 写不了复盘时，会说明原因，并给出另外两条路。</li>
-            <li>录音时段开始时手表提醒一次；20 分钟后还没开始，iPhone 再提醒一次。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>复盘你的一天</h3>
+            <ul class="rel-items">
+              <li>改在后台写：写的时候可以离开这一页、切到别的标签，标签上方的细条显示第几步、还要多久，随时可以停。</li>
+              <li>写好的复盘和那一天存在一起：今天页那一行写着“你的复盘 · 写于几点”，点一下就读；可以复制、分享、把清单放进待确认、重写或删除。</li>
+              <li>开始前先告诉你大概要多久；超过 1 分钟时，会先说明可以离开这一页、要让 DayRecall 开着，以及更快的办法。</li>
+              <li>停了再开始、失败后重试，已经读过的部分不再重读。</li>
+              <li>App 不在前台或 iPhone 偏热时，手机上的模型会先等一等，回到前台、凉下来再继续。</li>
+              <li>写好时你不在 App 里，会收到一条静音通知“复盘写好了”（可以在设置 › 通知里关掉）。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>交给更强的 AI</h3>
+            <ul class="rel-items">
+              <li>觉得不够好？把这一天交给 AI App，再把答案取回来，和这一天存在一起，不会盖掉手机写的那份。</li>
+              <li>这台 iPhone 写不了复盘时（不支持 Apple 智能、没打开、模型还在下载，或 API 没设好），会说明原因，并给出另外两条路。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>每天复盘</h3>
+            <ul class="rel-items">
+              <li>设置 › AI 引擎 › 每天复盘：提醒我（默认）、替我写，或关闭。</li>
+              <li>“提醒我”：当天录音时段结束半小时后，如果有 5 分钟以上的人声、还没复盘，发一条静音通知。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>提醒与可靠性</h3>
+            <ul class="rel-items">
+              <li>录音时段开始时，手表提醒一次；20 分钟后还没开始，iPhone 再补一次；开始录音后就撤掉。</li>
+              <li>问答在模型迟迟不回时也能按时结束；清空资料库后，迟到的复盘不会再写回来。</li>
+            </ul>
+          </div>
         </details>
         <details id="v0-2-21">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-18">2026年10月18日</time><span class="rel-ver">0.2.21–0.2.28</span><span class="rel-tag">内测版</span></span><span class="rel-title">改名 DayRecall 后的第一批内测</span></span></summary>
-          <ul class="rel-items">
-            <li>录音更可靠：Apple Watch 传输会重试，删掉的录音不会再冒出来，中断后录音和提醒能自己恢复。</li>
-            <li>新的设置：放到最后一个标签，分组更清楚；第一次设置时，可以选择 DayRecall 记录哪些内容。</li>
-            <li>“今天”的第一屏留给这一天：聆听卡片更简洁，复盘行变小，还能关掉。</li>
-            <li>时间线上的健康信息换了新样式；把一天交给 AI App 时，可以选择附上健康标签和数值，默认关闭。</li>
-            <li>用自己的 API 时，可以选模型和推理强度。</li>
-            <li>服务条款和隐私政策可以在 App 里离线阅读，14 种语言都有。</li>
-            <li>聆听结束后的同步提醒，会告诉你文字大概多久能好。</li>
-          </ul>
+          <div class="rel-group">
+            <h3>录音更可靠</h3>
+            <ul class="rel-items">
+              <li>iPhone 录音被打断后能自己恢复；Apple Watch 传输失败会重试，删掉的录音不会再冒出来。</li>
+              <li>手表离线时传来的录音，如果分不清是在你删除之前还是之后录的，会单独留着，由你决定恢复还是删除。</li>
+              <li>停止录音时没登记上的会自动补上；语音模型装好后，等着的录音会自动转写，旧月份的录音也会补转，译文也能搜到。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>今天页</h3>
+            <ul class="rel-items">
+              <li>第一屏留给这一天：聆听卡片只留状态、今天的人声时长和录音入口；真正需要你处理的失败才出现一个小警告。</li>
+              <li>“复盘你的一天”变成一行小卡片，可以关掉，右上角仍能一点进入。</li>
+              <li>安静时段“没识别出文字”的片段不再提醒你；转写进度和可以重试的失败，放到设置 › 设备里。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>设置与首次设置</h3>
+            <ul class="rel-items">
+              <li>设置放到最后一个标签，按通用、功能、帮助与关于分组；高级选项收进单独的页面，说明点“i”查看。</li>
+              <li>第一次设置时，可以选择 DayRecall 记录哪些内容。</li>
+              <li>抬腕回到 DayRecall 的设置改成四个编号的步骤。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>待办与提醒</h3>
+            <ul class="rel-items">
+              <li>App 里的待办和系统提醒事项保持一致：不会重复创建提醒，完成状态会同步。</li>
+              <li>聆听结束后会提醒你同步，并告诉你文字大概多久能好；从第二个待同步的日子起，提醒可以出声。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>健康</h3>
+            <ul class="rel-items">
+              <li>时间线上的健康信息换了新样式；只有锻炼记录的日子，也会显示健康信息。</li>
+              <li>把一天交给 AI App、或用自己的 API 写复盘时，可以选择附上健康标签和数值（心率、步数、距离等），默认关闭；缺的数值不会编成零。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>AI 与隐私</h3>
+            <ul class="rel-items">
+              <li>用自己的 API 时，可以选模型和推理强度。</li>
+              <li>授权 API 后，它会用来找待办、写复盘和回答问题；音频始终不会发送。要分享的内容变多时，会重新问你。</li>
+              <li>保存 API 密钥失败时，会保留原来的密钥并提示你。</li>
+              <li>服务条款和隐私政策可以在 App 里离线阅读，14 种语言都有。</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>示例的一天</h3>
+            <ul class="rel-items">
+              <li>示例里有说话人、步行、锻炼、心率和译文，可以从待办回到原话和当时的情景。</li>
+            </ul>
+          </div>
         </details>
       </div>
     </div>

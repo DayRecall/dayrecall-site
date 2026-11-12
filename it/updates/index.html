@@ -50,7 +50,7 @@
 <meta property="og:locale:alternate" content="sv_SE">
 <meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/site.css?v=c20aa541">
+<link rel="stylesheet" href="/assets/site.css?v=c1bbd42c">
 <script src="/assets/stages.js?v=cb3bb21d" defer></script>
 </head>
 <body>
@@ -97,49 +97,162 @@
       <p class="kicker">Novità</p>
       <h1>Ogni aggiornamento, nero su bianco.</h1>
       <p class="lead">DayRecall è in beta su TestFlight e presto disponibile sull’App Store. Ecco cosa è cambiato in ogni versione, dalla più recente. Acquistala una sola volta, e ogni futuro aggiornamento è incluso.</p>
-      <p class="meta">22 versioni dal October 18, 2026</p>
+      <p class="meta">23 versioni dal October 18, 2026</p>
     </div>
   </section>
 
   <section class="doc releases-doc">
     <div class="wrap">
       <div class="qa releases">
-        <details id="v1-4-2" open>
-          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-30">October 30, 2026</time><span class="rel-ver">1.4.2</span><span class="rel-tag">In App Store review</span></span><span class="rel-title">Start your watch from your iPhone</span></span></summary>
-          <ul class="rel-items">
-            <li>When your Apple Watch is connected but not listening, Today offers Start on Apple Watch first: raise your wrist, open DayRecall on the watch, and it starts by itself.</li>
-            <li>My voice: all five cards are read aloud from a script. With more than one working language, the last two are in your other languages.</li>
-            <li>On a recording’s page, tap a line to play the recording from there, while its audio is still kept.</li>
-            <li>A day opened from the Library shows its date.</li>
-            <li>The privacy policy and terms inside the app are complete in all 14 languages.</li>
-          </ul>
+        <details id="v1-4-3" open>
+          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-11-06">November 6, 2026</time><span class="rel-ver">1.4.3</span><span class="rel-tag">App Store</span></span><span class="rel-title">Free to download: try it, then unlock it once</span></span></summary>
+          <p class="rel-lead">The first App Store version since 0.2.32, with everything from 0.2.33 to 1.4.2 below.</p>
+          <div class="rel-group">
+            <h3>Price and unlock</h3>
+            <ul class="rel-items">
+              <li>Free to download. Start with a 3-day trial of everything, then unlock DayRecall with one purchase. No subscription, no automatic charge.</li>
+              <li>The trial starts when you tap “Start free 3-day trial” and Apple confirms it, and runs for 72 hours in a row. Reinstalling, a new phone or restoring purchases doesn’t restart it.</li>
+              <li>One purchase unlocks DayRecall on iPhone and Apple Watch.</li>
+              <li>If you got DayRecall before November 7 (UTC), as a paid or a free download, it is fully unlocked for you: no trial, nothing more to pay.</li>
+              <li>After the trial, new recordings, audio imports and new AI tasks need the unlock. What you have already captured stays yours to view, search, export and delete, and recordings already on your watch still arrive and turn into text.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Fixes</h3>
+            <ul class="rel-items">
+              <li>A line corrected on another device no longer keeps its old translation; it waits for a new one.</li>
+              <li>Meeting notes are written again when more of the meeting turns into text or a line is corrected.</li>
+              <li>A meeting started on your iPhone keeps your Apple Watch listening until it ends, even past your listening hours (up to 12 hours).</li>
+            </ul>
+          </div>
+        </details>
+        <details id="v1-4-2">
+          <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-30">October 30, 2026</time><span class="rel-ver">1.4.2</span><span class="rel-tag">Beta</span></span><span class="rel-title">Start your watch from your iPhone</span></span></summary>
+          <div class="rel-group">
+            <h3>Today and Apple Watch</h3>
+            <ul class="rel-items">
+              <li>When your Apple Watch is connected but not listening, the first button on the listening card is “Start on Apple Watch”, and the iPhone one becomes “Record on iPhone instead”. The watch card in Devices has the same button.</li>
+              <li>After you tap it, raise your wrist and open DayRecall on the watch: it starts by itself, and the hint goes away once the watch is listening.</li>
+              <li>One tap counts once: if you open the watch more than 5 minutes later, or the watch stopped in between, it doesn’t start by itself.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>My voice</h3>
+            <ul class="rel-items">
+              <li>All five voice cards are now read from a script; none asks you to answer in your own words.</li>
+              <li>With multilingual transcription on, cards 4 and 5 are in your other working languages. Cantonese has its own spoken script.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Recordings and Library</h3>
+            <ul class="rel-items">
+              <li>On a recording’s page (Library › Recordings), while its audio is still kept (for 24 hours after recording), tap a line to play from there; the line playing is marked.</li>
+              <li>Touch and hold a line to copy it.</li>
+              <li>A day opened from Library shows its date at the top; tap Library again to go back to its front page.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Privacy policy and terms</h3>
+            <ul class="rel-items">
+              <li>The privacy policy and terms inside the app now have the Mac, meeting and Apple Watch sections in the other 12 languages.</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-4-1">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-29">October 29, 2026</time><span class="rel-ver">1.4.1</span><span class="rel-tag">Beta</span></span><span class="rel-title">Meetings when you want them, clearer places</span></span></summary>
-          <ul class="rel-items">
-            <li>Meetings are off until you turn them on in Settings › Features. Then Today and your watch show a Meeting button, and a meeting starts at once in the language you chose.</li>
-            <li>When your Apple Watch isn’t listening, its two buttons are Listen all day and Meeting.</li>
-            <li>Choose where places come from, your iPhone or your Apple Watch, in one row: Places from.</li>
-            <li>My places: Home, Work and the others are kinds, not names. When an address is a little off, drag the map or correct the house number.</li>
-            <li>DayRecall for Mac no longer freezes right after it opens on macOS 27.</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Apple Watch</h3>
+            <ul class="rel-items">
+              <li>When it isn’t listening, the two buttons are “Listen all day” and “Meeting”. “Meeting” appears once Meetings is on in Settings on your iPhone.</li>
+              <li>A meeting starts at once, in the language chosen in Settings; tap “Meeting · language” during the meeting to switch.</li>
+              <li>When your watch notes places, its listening screen says so; if its location permission is off, it tells you where to turn it on.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Meetings</h3>
+            <ul class="rel-items">
+              <li>A new Meetings switch in Settings › Features, off by default. Turn it on, then choose the language meetings start in under “Meeting language”, where you can also add languages.</li>
+              <li>On Today, “Start a meeting” sits beside “Record on iPhone” and no longer asks for a language; tap its label during a meeting to switch.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Places</h3>
+            <ul class="rel-items">
+              <li>“Places from” is now one row: open it to choose iPhone or Apple Watch.</li>
+              <li>My places: Home, Work and the other kinds are kinds, not names, and two places of one kind are told apart by their street.</li>
+              <li>The address found is kept. If it’s slightly off, drag the map to move the place a little (up to 250 m) or correct the house number. Your own name for it is optional.</li>
+              <li>Places named with those words before become kinds.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>DayRecall for Mac (beta)</h3>
+            <ul class="rel-items">
+              <li>Fixes the Mac app freezing right after it opens on macOS 27.</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-4-0">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-29">October 29, 2026</time><span class="rel-ver">1.4.0</span><span class="rel-tag">Beta</span></span><span class="rel-title">Pause the watch, meetings and named places</span></span></summary>
-          <ul class="rel-items">
-            <li>Apple Watch shows its state and controls on one screen: pause for 15 minutes, 30 minutes or an hour and it picks up by itself, or hold to end the day.</li>
-            <li>Meetings: start one on your iPhone or your watch, choose its language, and get notes afterwards. On a Mac it is the same meeting.</li>
-            <li>Places: several stays at one spot become one place, and you can name a place on the map and set how far it reaches (Settings › My places). Your watch can note places while it listens; that’s off until you turn it on.</li>
-            <li>My voice: add up to four people you often talk with, and their names appear on the timeline, the poster and the text you export.</li>
-            <li>Touch and hold the app icon for Ask, To-dos and Recap.</li>
-            <li>DayRecall for Mac, in beta, gets a real Mac window: a sidebar, a month calendar, search, sharing and a menu bar item.</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Apple Watch</h3>
+            <ul class="rel-items">
+              <li>One screen shows its state, with two round buttons: pause and end.</li>
+              <li>Pause for 15 minutes, 30 minutes or an hour and it picks up by itself, never past your listening hours; hold to end the day.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Meetings</h3>
+            <ul class="rel-items">
+              <li>Start a meeting on your iPhone or your watch and choose its language; it shows as its own stretch on the timeline.</li>
+              <li>After three hours, your watch asks whether you’re still in the meeting.</li>
+              <li>When it ends you can get meeting notes. If they come from your own API, DayRecall asks for your permission for that separately.</li>
+              <li>A meeting is the same one on your iPhone and your Mac.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Places</h3>
+            <ul class="rel-items">
+              <li>Several stays at one spot become one place. A name that can’t be found is tried again, and shows as “Unnamed place” if it still can’t.</li>
+              <li>Name a place on the map and set how far it reaches (Settings › My places): later stays there get its name, and it goes into your backups.</li>
+              <li>Your watch can note places while it listens (off until you turn it on); its location then stands in for your iPhone’s.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>My voice</h3>
+            <ul class="rel-items">
+              <li>Add up to four people you often talk with (a name and how you know them); their names appear on the timeline, the poster and the text you export.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>Quicker ways in</h3>
+            <ul class="rel-items">
+              <li>Touch and hold the app icon for Ask, To-dos and Recap.</li>
+              <li>“View Settings” on a notification opens the app’s own notification settings.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>First-time setup</h3>
+            <ul class="rel-items">
+              <li>The map, Health and who-is-speaking switches start off; turn them on when you want them.</li>
+            </ul>
+          </div>
+          <div class="rel-group">
+            <h3>DayRecall for Mac (beta)</h3>
+            <ul class="rel-items">
+              <li>A real Mac window: a sidebar, a compact list of records, a details column, a month calendar, search by word, sharing and a menu bar item. You can also export and import records.</li>
+              <li>Steadier syncing between devices on a poor network: meeting notes now sync, and a phone that walks away no longer ties up the connection.</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-4">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-23">October 23, 2026</time><span class="rel-ver">1.3.4</span><span class="rel-tag">Beta</span></span><span class="rel-title">A recap fix</span></span></summary>
-          <ul class="rel-items">
-            <li>Fixes Recap your day freezing for people who had recorded their voice.</li>
-          </ul>
+          <div class="rel-group">
+            <h3>Fix</h3>
+            <ul class="rel-items">
+              <li>If you had recorded your own voice, opening “Recap your day” could freeze the screen, or the app was closed when you came back to it and had to be swiped away. That no longer happens.</li>
+              <li>People who never recorded their voice were not affected.</li>
+            </ul>
+          </div>
         </details>
         <details id="v1-3-3">
           <summary><span class="rel-head"><span class="rel-meta"><time datetime="2026-10-22">October 22, 2026</time><span class="rel-ver">1.3.3</span><span class="rel-tag">Beta</span></span><span class="rel-title">Impostazioni, semplificate</span></span></summary>

@@ -809,6 +809,13 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .rel-title { letter-spacing: 0; 
   width: 7px; height: 7px; border-radius: 50%; background: var(--ink);
 }
 html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .rel-items li::before { top: calc(0.875em - 3.5px); }
+/* A fuller entry: a lead line, then the changes in groups, each with a small heading. */
+.rel-lead { margin: 0 0 22px; padding-right: 48px; max-width: 44em; color: var(--ink); }
+.rel-group { padding-right: 48px; max-width: 44em; }
+.rel-group + .rel-group { margin-top: 22px; }
+.rel-group h3 { margin: 0 0 10px; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: 0; color: var(--ink); }
+.rel-group .rel-items { padding: 0; }
+.releases details > .rel-group:last-child { padding-bottom: 30px; }
 /* Our accounts on a dark band: bigger targets, lime when pointed at. */
 .help-more .social { margin: 0; gap: 8px; }
 .help-more .social a { width: 52px; height: 52px; background: var(--night-tile); color: var(--night-ink); }
@@ -925,7 +932,7 @@ html:is([lang^="zh"], [lang="ja"], [lang="ko"]) .rel-items li::before { top: cal
   .feat.wide .feat-text { padding: 0; }
   .features .feat.wide h3 { font-size: 20px; margin-top: 18px; }
   .features .feat.wide p { font-size: 15.5px; }
-  .rel-items { padding-right: 0; }
+  .rel-items, .rel-group, .rel-lead { padding-right: 0; }
   .proof { margin-top: 36px; gap: 14px; }
   .proof b { font-size: 25px; }
   .latest { margin-top: 12px; }
