@@ -120,7 +120,7 @@
   "final_02": "Yakında App Store'da",
   "final_03": "DayRecall'ı App Store'dan edinin ",
   "final_04": "Apple Watch ile en iyi deneyim · Yalnızca iPhone ile de çalışır · 14 dilde",
-  "final_05": "Ücretsiz indirilir; her özellik 3 gün boyunca ücretsizdir. Sonra bir kez satın alın; gelecekteki tüm güncellemeler dahildir. Abonelik yok.",
+  "final_05": "App Store'dan ücretsiz indirilir; her özelliği 3 gün deneyin, sonra bir kez satın alarak kilidini açın. Gelecekteki tüm güncellemeler dahildir. Abonelik yok.",
   "foot_01": "Apple Watch ve iPhone, Apple Inc.'in ABD'de ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.",
   "faq": [
     {
@@ -286,12 +286,12 @@
       "title": "Yayın ve yardım",
       "items": [
         {
-          "q": "DayRecall'ı ne zaman edinebilirim?",
-          "a": "DayRecall beta aşamasında ve yakında App Store'da."
+          "q": "DayRecall'ı nereden edinebilirim?",
+          "a": "<a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>'dan indirebilirsiniz. iPhone'da çalışır; Apple Watch isteğe bağlıdır."
         },
         {
           "q": "DayRecall ne kadar?",
-          "a": "DayRecall App Store'dan ücretsiz indirilecek. Kurulumu tamamlandıktan sonra her özelliği içeren ücretsiz 3 günlük denemeyi başlatabilirsiniz; 3 gün, indirdiğinizde değil denemeyi başlattığınızda başlar. Sonrasında tek bir satın alma uygulamanın kilidini açar ve gelecekteki tüm güncellemeler dahildir: abonelik yoktur ve hiçbir şey yenilenmez. Fiyat, deneme başlamadan önce gösterilir. Satın almazsanız, sakladığınız her şey size ait kalır; okuyabilir, arayabilir, dışa aktarabilir ve silebilirsiniz. DayRecall TestFlight'ta beta aşamasındayken ücretsizdir."
+          "a": "DayRecall App Store'dan ücretsiz indirilir. Her özelliği 3 gün ücretsiz deneyin, sonra uygulama içi tek bir satın almayla kilidini açın; App Store, satın almadan önce ülkeniz için fiyatı gösterir. Gelecekteki tüm güncellemeler dahildir: abonelik yoktur ve hiçbir şey yenilenmez. DayRecall'ı 7 Kasım 2026 (UTC) tarihinden önce edindiyseniz, zaten tüm özellikleriyle açıktır."
         },
         {
           "q": "DayRecall hâlâ geliştiriliyor mu?",
@@ -351,92 +351,453 @@
   "faq_page_more": "Başka sorunuz var mı?",
   "faq_page_more_text": "Bize yazın, size geri dönelim.",
   "updates_page_title": "Yenilikler — DayRecall",
-  "updates_page_description": "Her DayRecall güncellemesi, en yenisi önce: her beta sürümünde neyin değiştiği ve ne zaman çıktığı.",
+  "updates_page_description": "Her DayRecall güncellemesi, en yenisi önce: her sürümde neyin değiştiği ve ne zaman çıktığı.",
   "updates_kicker": "Yenilikler",
   "updates_heading": "Her güncelleme, yazılı olarak.",
-  "updates_lead": "DayRecall, TestFlight'ta beta aşamasında ve yakında App Store'da. Her sürümde neyin değiştiği, en yenisi önce, aşağıda. Bir kez satın alın; gelecekteki tüm güncellemeler dahildir.",
+  "updates_lead": "DayRecall'ı <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>'dan indirin. Her yeni sürüm önce TestFlight'ta beta olarak test edilir; her birinde neyin değiştiği, en yenisi önce, aşağıda. Bir kez satın alın; gelecekteki tüm güncellemeler dahildir.",
   "updates_summary": "{date} tarihinden bu yana {n} sürüm",
   "updates_beta": "Beta",
   "updates_latest": "{date} güncellendi: {title}",
   "updates_follow_text": "Haberleri TikTok, X ve Instagram'da paylaşıyoruz. Yardım ya da geri bildirim için <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a> adresine yazın: yanıtı oradan veriyoruz.",
   "updates": {
+    "1.4.3": {
+      "title": "Ücretsiz indirin: önce deneyin, sonra bir kez açın",
+      "lead": "0.2.32'den sonra App Store'a çıkan ilk sürüm; aşağıda 0.2.33'ten 1.4.2'ye kadar olan her şeyi içerir.",
+      "groups": [
+        {
+          "title": "Fiyat ve kilit açma",
+          "items": [
+            "DayRecall ücretsiz indirilir. Her özelliği 3 gün deneyin, sonra tek bir satın almayla kilidini açın. Abonelik yok, otomatik ücret yok.",
+            "‘Ücretsiz 3 günlük denemeyi başlat’a dokunup Apple onaylayınca deneme başlar ve 72 saat kesintisiz sürer. Yeniden yüklemek, yeni bir telefon kullanmak ya da satın almaları geri yüklemek denemeyi yeniden başlatmaz.",
+            "Tek bir satın alma, DayRecall'ın kilidini iPhone ve Apple Watch'ta açar.",
+            "DayRecall'ı 7 Kasım 2026 (UTC) tarihinden önce edindiyseniz, ücretli ya da ücretsiz, tamamen açıktır: deneme yok, ödenecek bir şey yok.",
+            "Denemeden sonra yeni kayıtlar, ses içe aktarmaları ve yeni yapay zekâ işleri kilit açmayı gerektirir. Zaten kaydettikleriniz görüntülenebilir, aranabilir, dışa aktarılabilir ve silinebilir; saatinizde zaten bekleyen kayıtlar yine gelir ve metne dönüşür."
+          ]
+        },
+        {
+          "title": "Düzeltmeler",
+          "items": [
+            "Başka bir cihazda düzeltilen bir satır artık eski çevirisini tutmaz; yenisini bekler.",
+            "Toplantının daha fazlası metne dönüştüğünde ya da bir satır düzeltildiğinde toplantı notları yeniden yazılır.",
+            "iPhone'unuzda başlatılan bir toplantı, bitene kadar Apple Watch'ın dinlemesini sürdürür; dinleme saatlerinizi aşsa bile (en fazla 12 saat)."
+          ]
+        }
+      ]
+    },
+    "1.4.2": {
+      "title": "Saatinizi iPhone'unuzdan başlatın",
+      "groups": [
+        {
+          "title": "Bugün ve Apple Watch",
+          "items": [
+            "Apple Watch'unuz bağlı ama dinlemiyorsa, Bugün ekranındaki dinleme kartının ilk düğmesi ‘Apple Watch'ta başlat’ olur ve iPhone düğmesi ‘Bunun yerine iPhone'da kaydet’ olur. Cihazlar'daki saat kartında da aynı düğme vardır.",
+            "Dokunduktan sonra bileğinizi kaldırıp saatte DayRecall'ı açın: kendiliğinden başlar; saat dinlemeye başlayınca ipucu kaybolur.",
+            "Bir dokunuş bir kez sayılır: saati 5 dakikadan uzun bir süre sonra açarsanız ya da aradaki sürede saat durduysa, kendiliğinden başlamaz."
+          ]
+        },
+        {
+          "title": "Sesim",
+          "items": [
+            "Beş ses kartının hepsi artık bir metinden okunur; hiçbiri kendi sözlerinizle yanıtlamanızı istemez.",
+            "Çok dilli yazıya dökme açıkken 4. ve 5. kartlar diğer çalışma dillerinizde gelir. Kantonca'nın kendi konuşma metni vardır."
+          ]
+        },
+        {
+          "title": "Kayıtlar ve Arşiv",
+          "items": [
+            "Bir kaydın sayfasında (Arşiv › Kayıtlar), sesi hâlâ saklanırken (kayıttan sonra 24 saat), o satırdan çalmak için satıra dokunun; çalan satır işaretlenir.",
+            "Bir satırı kopyalamak için basılı tutun.",
+            "Arşiv'den açılan bir gün, üstünde tarihini gösterir; Arşiv'e yeniden dokunarak ana sayfasına dönersiniz."
+          ]
+        },
+        {
+          "title": "Gizlilik politikası ve koşullar",
+          "items": [
+            "Uygulama içindeki gizlilik politikası ve koşullar artık diğer 12 dilde de Mac, toplantı ve Apple Watch bölümlerini içeriyor."
+          ]
+        }
+      ]
+    },
+    "1.4.1": {
+      "title": "İstediğinizde toplantılar, daha net yerler",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Dinlemediğinde iki düğme vardır: ‘Bütün gün dinle’ ve ‘Toplantı’. ‘Toplantı’, iPhone'unuzda Toplantılar açıkken görünür.",
+            "Toplantı hemen başlar; Ayarlar'da seçilen dilde. Toplantı sırasında ‘Toplantı · dil’e dokunarak değiştirebilirsiniz.",
+            "Saatiniz yerleri not ettiğinde dinleme ekranı bunu söyler; konum izni kapalıysa nerede açacağınızı gösterir."
+          ]
+        },
+        {
+          "title": "Toplantılar",
+          "items": [
+            "Ayarlar › Özellikler'de yeni bir Toplantılar anahtarı var; varsayılan olarak kapalı. Açın, sonra ‘Toplantı dili’nde toplantıların hangi dilde başlayacağını seçin; dil de ekleyebilirsiniz.",
+            "Bugün ekranında ‘Toplantı başlat’, ‘iPhone'da kaydet’in yanında durur ve artık dil sormaz; toplantı sırasında etikete dokunarak değiştirin."
+          ]
+        },
+        {
+          "title": "Yerler",
+          "items": [
+            "‘Yer kaynağı’ artık tek bir satır: açıp iPhone ya da Apple Watch seçin.",
+            "Yerlerim: Ev, İş ve diğer türler isim değil türdür; aynı türden iki yer sokağına göre ayrılır.",
+            "Bulunan adres saklanır. Biraz yanlışsa haritayı sürükleyerek yeri birkaç metre (en fazla 250 m) taşıyın ya da kapı numarasını düzeltin. Kendi adı vermek isteğe bağlıdır.",
+            "Daha önce bu kelimelerle adlandırılmış yerler türe dönüşür."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "macOS 27'de Mac uygulamasının açılır açılmaz donmasını düzeltir."
+          ]
+        }
+      ]
+    },
+    "1.4.0": {
+      "title": "Saati duraklatın, toplantılar ve adlandırılmış yerler",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Tek bir ekran durumu gösterir; iki yuvarlak düğme vardır: duraklat ve bitir.",
+            "15 dakika, 30 dakika ya da 1 saat duraklatın; kendiliğinden devam eder ve dinleme saatlerinizi asla aşmaz. Günü bitirmek için basılı tutun."
+          ]
+        },
+        {
+          "title": "Toplantılar",
+          "items": [
+            "iPhone'unuzda ya da saatinizde bir toplantı başlatın ve dilini seçin; zaman tünelinde kendi aralığı olarak görünür.",
+            "Üç saat sonra saatiniz hâlâ toplantıda olup olmadığınızı sorar.",
+            "Bittiğinde toplantı notlarını alabilirsiniz. Bunlar kendi API'nizden geliyorsa, DayRecall bunun için ayrıca izninizi ister.",
+            "Bir toplantı, iPhone'unuzda ve Mac'inizde aynı toplantıdır."
+          ]
+        },
+        {
+          "title": "Yerler",
+          "items": [
+            "Aynı noktada yapılan birkaç kalış tek bir yer olur. Adı bulunamayan yer yeniden denenir; hâlâ bulunamazsa ‘Adsız yer’ olarak görünür.",
+            "Haritada bir yere ad verin ve ne kadar geniş olduğunu ayarlayın (Ayarlar › Yerlerim): sonraki kalışlarda o ad kullanılır ve yedeklemelerinize girer.",
+            "Saatiniz dinlerken yerleri not edebilir (siz açana kadar kapalıdır); konumu o zaman iPhone'unuzun konumunun yerini alır."
+          ]
+        },
+        {
+          "title": "Sesim",
+          "items": [
+            "Sık konuştuğunuz en fazla dört kişi ekleyin (bir ad ve nasıl tanıdığınız); adları zaman tünelinde, posterde ve dışa aktardığınız metinde görünür."
+          ]
+        },
+        {
+          "title": "Daha hızlı erişim",
+          "items": [
+            "Soru, Görevler ve Özet için uygulama simgesini basılı tutun.",
+            "Bir bildirimdeki ‘Ayarları görüntüle’, uygulamanın kendi bildirim ayarlarını açar."
+          ]
+        },
+        {
+          "title": "İlk kurulum",
+          "items": [
+            "Harita, Sağlık ve kimin konuştuğu anahtarları kapalı başlar; istediğinizde açın."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "Gerçek bir Mac penceresi: kenar çubuğu, kompakt kayıt listesi, ayrıntı sütunu, ay takvimi, kelimeyle arama, paylaşım ve menü çubuğu öğesi. Kayıtları dışa ve içe aktarabilirsiniz.",
+            "Zayıf ağda cihazlar arası senkronizasyon daha sağlam: toplantı notları artık senkronize olur ve uzaklaşan bir telefon bağlantıyı meşgul tutmaz."
+          ]
+        }
+      ]
+    },
+    "1.3.4": {
+      "title": "Özet düzeltmesi",
+      "groups": [
+        {
+          "title": "Düzeltme",
+          "items": [
+            "Kendi sesinizi kaydettiyseniz, ‘Gününü özetle’yi açtığınızda ekran donabilir ya da geri döndüğünüzde uygulama kapanmış olabilir ve kaydırarak kapatmanız gerekebilirdi. Artık böyle olmuyor.",
+            "Sesini hiç kaydetmemiş kişiler etkilenmedi."
+          ]
+        }
+      ]
+    },
     "1.3.3": {
       "title": "Ayarlar, sadeleşti",
-      "items": [
-        "Toplantı dili artık Çok dilli yazıya dökme altında yer alır ve ikinci bir çalışma diliniz olduğunda görünür.",
-        "Dinleme saatleri artık günde tek satır. Açtığınız bir gün, önceki günün saatlerini kullanır; değiştirdiğiniz bir saat de tüm dinleme günlerine tek seferde uygulanabilir.",
-        "Gelişmiş ayarlar, her bölümü açan kısa bir liste; Veriler ve yedekler yeniden tasarlandı.",
-        "Donabilen bir özet sayfası, takılabilen Apple Watch aktarımları ve bir yedek uyumluluk sorunu düzeltildi."
+      "groups": [
+        {
+          "title": "Ayarlar",
+          "items": [
+            "Toplantı dili artık Çok dilli yazıya dökme'nin altında ve ‘Toplantı dili’ adıyla yer alıyor. İkinci bir çalışma diliniz olduğunda görünür: Kapalı ya da dillerinizden biri olan tek bir satır.",
+            "Çok dilli yazıya dökme kapalıyken saatinizde kullanamayacağınız bir toplantı dili düğmesi artık görünmez; önceki seçiminiz saklanır.",
+            "Dinleme saatleri her gün için tek satır (gün, saat, anahtar) olarak gelir; açtığınız bir gün, önceki dinleme gününün saatlerini kullanır.",
+            "Bir günün saatini değiştirirseniz, her dinleme gününün de eşleşmesi gerekip gerekmediği sorulur; tek dokunuşla uygulanır.",
+            "Gelişmiş Ayarlar, Dinleme, Algılama ve Veri olmak üzere üç bölümlü kısa bir liste; birini açıp ayarlayın. Kaydırıcıların ve anahtarların açıklamaları ‘i’ işaretinin arkasındadır.",
+            "Veri ve Yedeklemeler yeni bir görünüme kavuştu; Sağlık verisi içeren bir yedeği dışa aktarmadan önce, bilmeniz gereken üç şeyi özetleyen bir kart gösterilir.",
+            "Ayrıntılı günlük tutma, siz kapatana kadar açık kalabilir (varsayılan olarak 24 saat sonra kapanır)."
+          ]
+        },
+        {
+          "title": "Düzeltmeler",
+          "items": [
+            "Özet sayfası artık ekranı dondurmaz.",
+            "Takılan Apple Watch aktarımları yeniden denenir.",
+            "Kitaplık yedeklemeleriyle ilgili bir uyumluluk sorunu."
+          ]
+        }
       ]
     },
     "1.3.2": {
-      "title": "Yeni ses eşleştirme ve yedekler",
-      "items": [
-        "“Sesim”, yeni bir ses eşleştirme modeli kullanır. Güncellemeden sonra sesinizi bir kez daha kaydedin; önceki etiketler kalır.",
-        "Dil algılama varsayılan olarak 6 saniyelik konuşmaya göre karar verir; Gelişmiş ayarlar'da 3 ya da 6 saniye seçin.",
-        "Arşivinizi bir dosyaya ya da özel iCloud'unuza yedekleyin ve geri yükleyin.",
-        "API'nizle paylaşımı kapatma ve iptal edilen isteklerle ilgili düzeltmeler. Bir konuşma yeniden yazıya dökülürken yaptığınız düzenlemeler korunur."
+      "title": "Yeni ses eşleştirme ve yedeklemeler",
+      "groups": [
+        {
+          "title": "Sesim",
+          "items": [
+            "Sesim yeni bir ses modeli kullanır. Güncellemeden sonra sesinizi bir kez daha kaydedin; önceki konuşmacı etiketleri kalır."
+          ]
+        },
+        {
+          "title": "Diller",
+          "items": [
+            "Dil algılama varsayılan olarak altı saniyelik konuşmayı dinler; Gelişmiş Ayarlar'da üç ya da altı saniye seçebilirsiniz."
+          ]
+        },
+        {
+          "title": "Yedekleme ve geri yükleme",
+          "items": [
+            "Arşivinizi bir dosya olarak dışa aktarın ya da kendi özel iCloud'unuza yedekleyin; sonra geri yükleyin.",
+            "Bir yedekten gelen sağlık ve takvim geçmişi ayrı tutulur ve yeni telefonun kendi verisiymiş gibi görünmez."
+          ]
+        },
+        {
+          "title": "Düzeltmeler",
+          "items": [
+            "API'niz için verdiğiniz izni geri çektiğinizde ya da bir isteği iptal ettiğinizde ortaya çıkan sorunlar.",
+            "Bir konuşma yeniden metne dönüştürülürken yaptığınız düzenlemeler korunur."
+          ]
+        }
       ]
     },
     "1.3.1": {
       "title": "14 dilin tamamı, daha akıcı günler",
-      "items": [
-        "Yenileri dâhil her ekran 14 dilin tamamında sunulur.",
-        "Mac'te, iPhone'daki ile aynı 17 yazıya dökme dili; Basitleştirilmiş ve Geleneksel Çince ayrı ayrı tanınır.",
-        "Günler arasında geçiş daha akıcı.",
-        "Konuşma süresi yalnızca gerçek konuşmayı sayar; sessiz bir kayıt artık yazıya döküldü diye bildirilmez."
+      "groups": [
+        {
+          "title": "Diller",
+          "items": [
+            "Yeni olanlar dahil her ekran 14 dilde: cihaz bağlantıları, model dizini, izin notları, poster, satın alma ekranları ve daha fazlası.",
+            "Çevrimdışı gizlilik notları 14 dilde web sitesiyle aynı: sesin ne kadar süre saklandığı, dil düzeltme ve dışa aktarılan ile yedek kopyaların nasıl tutulduğu."
+          ]
+        },
+        {
+          "title": "Daha akıcı ve daha doğru",
+          "items": [
+            "Günler arasında geçiş daha akıcı; tekrarlanan sayım ve harita işi azaltıldı.",
+            "Konuşma süresi yalnızca birinin gerçekten konuştuğu bölümleri sayar.",
+            "Sessiz bir kayıt normal biter ve metne dönüşmenin tamamlandığını artık söylemez."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "Metin dönüştürme dilleri iPhone'daki 17 seçenekle eşleşir; Basitleştirilmiş ve Geleneksel Çince'yi ayırt eder ve bölgenizi izler."
+          ]
+        }
       ]
     },
     "1.3.0": {
       "title": "Mac, günlük posterler ve düzenleme",
-      "items": [
-        "DayRecall for Mac, beta'da: yüz yüze ya da çevrimiçi bir toplantıyı kaydedin, duraklatıp sürdürün, toplantılarınızı ve görevlerinizi saklayın, iPhone'unuzu ve Apple Watch'unuzu yerel ağınız üzerinden bağlayın. Mac'te yazıya dökme, macOS 26 çalıştıran desteklenen bir Mac gerektirir.",
-        "Günlük posterler: üç görünüm ve seçtiğiniz bir satır; resim ya da kısa video olarak.",
-        "Bir konuşmayı düzenleyin: adını değiştirin, bir satırı düzeltin ya da özgün hâline dönün. Sesi hâlâ saklanırken dilini de düzeltebilirsiniz.",
-        "Toplantı dilini Apple Watch'unuzdan seçin.",
-        "Özeti Notion ya da Obsidian'a kaydedin.",
-        "Saatin durduktan sonra da dinliyor gibi görünmesi ve durdurma hatırlatıcısının çok erken geri çekilmesi düzeltildi."
+      "groups": [
+        {
+          "title": "Günlük poster",
+          "items": [
+            "Gününüzden seçtiğiniz bir satır ve üç görünüm; fotoğraf ya da kısa video olarak kaydedilir.",
+            "Kısayollar ile de oluşturabilirsiniz."
+          ]
+        },
+        {
+          "title": "Konuşmaları düzenleme",
+          "items": [
+            "Bir konuşmanın adını değiştirin, bir satırı düzenleyin ya da özgün metne geri dönün.",
+            "Ses hâlâ duruyorsa, konuşmanın dilini değiştirerek yeniden metne dönüştürebilirsiniz; toplantı dilini doğrudan Apple Watch'ta seçin."
+          ]
+        },
+        {
+          "title": "Bağlantılar ve okuma",
+          "items": [
+            "Özetleri Notion'a ya da Obsidian'a kaydedin.",
+            "Kendi API'nizle model dizini güncellenebilir; yalnızca siz dokunduğunuzda çevrimiçi olur.",
+            "Web sitesini ve yasal belgeleri uygulama içinde açın."
+          ]
+        },
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "Mac'te gerçek bir arşiv: yüz yüze ya da çevrimiçi toplantıları kaydedin, duraklatın ve devam ettirin; toplantıları, kayıtları ve görevleri yönetin.",
+            "Eşleştirilmiş iPhone ve Apple Watch'unuzla yerel ağınız üzerinden çalışır."
+          ]
+        },
+        {
+          "title": "Düzeltmeler",
+          "items": [
+            "Saatin durduktan sonra da dinlediğini göstermesi.",
+            "Hatırlatıcıların çok erken geri çekilmesi."
+          ]
+        }
       ]
     },
     "0.2.34": {
       "title": "Mac beta'ya katılıyor",
-      "items": [
-        "DayRecall for Mac beta'ya katıldı: toplantı dökümlerini içe aktarın ve eşleştirilmiş bir Mac'in iPhone'unuz için şifreli yerel ağınız üzerinden yazıya dökmesine izin verin.",
-        "DayRecall App Store'a geldiğinde kullanılmak üzere ücretsiz 3 günlük deneme ve tek seferlik satın alma eklendi. Beta sırasında ücretsiz kalır.",
-        "Hakkında bölümünde DayRecall'ı puanlamak, paylaşmak ve web sitesini ziyaret etmek için bağlantılar var."
+      "groups": [
+        {
+          "title": "DayRecall for Mac (beta)",
+          "items": [
+            "DayRecall for Mac beta'ya katıldı: yerel bir pencere, içe aktarabileceğiniz toplantı metni ve kendi yerinde tutulan toplantılar.",
+            "Eşleştirildikten sonra dil modeli hazır olan bir Mac, şifreli yerel bağlantı üzerinden iPhone'unuz için metin dönüştürüp sonucu geri gönderebilir; Mac yapamazsa iPhone yapar.",
+            "Açtığınızda Mac'teki toplantı metni kendi özel iCloud'unuz üzerinden senkronize olabilir."
+          ]
+        },
+        {
+          "title": "Deneme ve satın alma (beta)",
+          "items": [
+            "Beta, satın alma akışının test edilebilmesi için 3 günlük denemeyi ve tek seferlik kilit açmayı içerir; beta'da hiçbir ücret alınmaz.",
+            "Deneme başlamadan önce DayRecall konuşmanın ve seçtiğiniz yapay zekânın hazır olduğunu kontrol eder; değilse süre başlamaz."
+          ]
+        },
+        {
+          "title": "Hakkında",
+          "items": [
+            "Hakkında bölümünden DayRecall'ı puanlayabilir, paylaşabilir ya da web sitesini açabilirsiniz."
+          ]
+        }
       ]
     },
     "0.2.33": {
       "title": "Dinleme kendiliğinden devam eder",
+      "groups": [
+        {
+          "title": "Kesintiden sonra",
+          "items": [
+            "Bir alarm, arama ya da Siri'den sonra DayRecall yaklaşık bir dakika boyunca denemeye devam eder ve kaydı kendiliğinden yeniden başlatır; yalnızca yapamazsa size söyler.",
+            "‘Dinleme duraklatıldı’ hatırlatıcısı hemen gelmez: mikrofon, kayıt devam etmeden 20 saniye boyunca boş kalırsa gelir ve 5 dakika sonra bir kez daha tekrarlanır. Kayıt kendiliğinden geri gelirse hiçbir şey çalmaz.",
+            "Alarm hâlâ çalıyorsa ya da bir arama sürüyorsa, ortasında hatırlatılmazsınız.",
+            "iPhone'daki ‘Apple Watch kaydı durdurdu’ bildirimi aynı şekilde bekler ve saat yeniden dinlemeye başlayınca kaybolur.",
+            "Hatırlatıcıların ne zaman geleceğini Ayarlar › Dinleme saatleri › Kayıt duraklarsa bölümünden seçin."
+          ]
+        },
+        {
+          "title": "Sor ve zaman tüneli",
+          "items": [
+            "‘Koşarken ne hakkında konuştuk?’ gibi yaptığınız şeyle ilgili sorularda daha iyi; ilk arama bir şey bulamazsa farklı kelimelerle bir kez daha dener.",
+            "Zaman tünelindeki kısa yürüyüşler artık uzun konuşmaların arkasında gizlenmez."
+          ]
+        },
+        {
+          "title": "Diller",
+          "items": [
+            "Ekranlar ve çevrimdışı yasal belgeler 14 dilin tamamında hazır."
+          ]
+        }
+      ]
+    },
+    "0.2.32": {
+      "title": "App Store'dan indirin",
+      "tag": "App Store · İlk genel sürüm",
       "items": [
-        "Bir alarm, arama ya da Siri dinlemeyi kestiğinde Apple Watch'unuz kendiliğinden yeniden dinlemeye geçer ve yalnızca geçemezse hatırlatır.",
-        "Bu hatırlatmanın ne zaman gelmesini Ayarlar › Dinleme saatleri › Dinleme duraklarsa bölümünden seçin.",
-        "Ne yaptığınıza dair sorulara daha iyi yanıt verir, örneğin “Koşarken ne söyledim?”",
-        "Kısa yürüyüşler artık zaman tünelinde uzun konuşmaların arkasında gizlenmiyor."
+        "30 Ekim'den itibaren App Store'da; aşağıdaki sürümlerin tüm özellikleriyle birlikte.",
+        "0.2.31'deki açılış çökmesini düzeltir."
       ]
     },
     "0.2.29": {
-      "title": "Özetler, arka planda yazılır",
-      "items": [
-        "Gününüzü özetleyin, arka planda yazılır: sayfadan çıkın, özet o günle birlikte kaydedilir.",
-        "Başlamadan önce yaklaşık ne kadar süreceğini görürsünüz; çalışırken adımını ve kalan süreyi.",
-        "Yeterince iyi değil mi? Günü bir yapay zekâ uygulamasına aktarın ve yanıtını geri getirin; yanıt o günün yanına kaydedilir.",
-        "Her gün özet: Hatırlat, Benim için yaz veya Kapalı.",
-        "Bu iPhone özet yazamıyorsa nedenini söyler ve iki başka yol önerir.",
-        "Dinleme saatleri başladığında saatinizde bir hatırlatma; başlatmadıysanız 20 dakika sonra iPhone'unuzda bir kez daha.",
-        "0.2.31'deki açılış çökmesi aynı gün, 0.2.32'de düzeltildi."
+      "title": "Özetler arka planda yazılır",
+      "groups": [
+        {
+          "title": "Gününü özetle",
+          "items": [
+            "Arka planda yazılır: çalışırken sayfadan çıkabilir ya da sekme değiştirebilirsiniz. Her sekmenin üstündeki ince çubuk adımı ve kalan süreyi gösterir; istediğiniz an durdurabilirsiniz.",
+            "Biten özet, gününle birlikte saklanır. Bugün ekranında ‘Özetiniz · yazılma saati …’ satırı çıkar; dokunarak okuyun, kopyalayın, paylaşın, listesini Onaylanacaklar'a gönderin, yeniden yazdırın ya da silin.",
+            "Başlamadan önce yaklaşık ne kadar süreceğini görürsünüz. Bir dakikadan uzunsa, sayfadan çıkabileceğinizi, DayRecall'ın açık kalması gerektiğini ve daha hızlı yolları önce açıklar.",
+            "Durdurup yeniden başlatmak ya da bir hatadan sonra yeniden denemek, zaten okunmuş bölümleri yeniden okumaz.",
+            "Uygulama ön planda değilse ya da iPhone ısınmışsa cihaz üzerindeki model bekler; siz geri dönüp soğuduğunda devam eder.",
+            "İş bittiğinde uygulamadan çıktıysanız, sessiz bir bildirim özetinizin hazır olduğunu söyler (Ayarlar › Bildirimler'den kapatabilirsiniz)."
+          ]
+        },
+        {
+          "title": "Daha güçlü bir yapay zekâ kullanın",
+          "items": [
+            "Yetmiyor mu? Günü bir yapay zekâ uygulamasına aktarın ve yanıtını geri getirin: gününüzle birlikte, iPhone'un kendi özetinin yanında saklanır.",
+            "Bu iPhone özet yazamıyorsa (Apple Intelligence yok, kapalı, model hâlâ iniyor ya da API'niz kurulmamış), nedenini söyler ve diğer iki yolu gösterir."
+          ]
+        },
+        {
+          "title": "Her gün özetle",
+          "items": [
+            "Ayarlar › Yapay zekâ motoru › Her gün özetle: Hatırlat (varsayılan), Benim için yaz ya da Kapalı.",
+            "‘Hatırlat’, dinleme saatleriniz bittikten yarım saat sonra, gün 5 dakikadan fazla konuşma içeriyorsa ve henüz özet yoksa sessiz bir bildirim gönderir."
+          ]
+        },
+        {
+          "title": "Hatırlatıcılar ve güvenilirlik",
+          "items": [
+            "Dinleme saatleriniz başladığında saatiniz bir kez hatırlatır; 20 dakika sonra hâlâ bir şey başlamamışsa iPhone'unuz yeniden hatırlatır. Kayıt başlayınca ikisi de kaybolur.",
+            "Sor, model yanıtı yavaş verse bile zamanında biter; kitaplığınızı temizledikten sonra geç kalmış bir özet geri gelmez."
+          ]
+        }
       ]
     },
     "0.2.21": {
-      "title": "İlk betalar DayRecall olarak",
-      "items": [
-        "Kayıt daha güvenilir: Apple Watch aktarımları yeniden denenir, silinen kayıtlar silinmiş kalır ve dinleme ile hatırlatmalar bir kesintiden sonra kendini toparlar.",
-        "Yeni Ayarlar: son sekme, net gruplar hâlinde; ilk kurulumda DayRecall'ın neleri kaydedeceğini seçebilirsiniz.",
-        "Bugün sekmesinin ilk ekranı gününüz içindir: daha ince bir dinleme kartı ve kapatabileceğiniz küçük bir özet satırı.",
-        "Zaman tünelindeki Sağlık yeni bir görünüme kavuştu. Bir günü bir yapay zekâ uygulamasına aktardığınızda Sağlık etiketlerini ve değerlerini eklemeyi seçebilirsiniz; varsayılan olarak kapalıdır.",
-        "Kendi API'nizle modeli ve akıl yürütme düzeyini seçin.",
-        "Hizmet Koşulları ve Gizlilik Politikası'nı uygulamada, çevrimdışı olarak, 14 dilde okuyun.",
-        "Dinleme bittiğinde eşitleme hatırlatması, metnin yaklaşık ne zaman hazır olacağını söyler."
+      "title": "İlk betalar, DayRecall adıyla",
+      "groups": [
+        {
+          "title": "Daha güvenilir kayıt",
+          "items": [
+            "iPhone kaydı bir kesintiden sonra kendiliğinden toparlanır; Apple Watch aktarımları yeniden denenir ve silinen kayıtlar geri gelmez.",
+            "Çevrimdışı bir saatten gelen bir kayıt, sildiğiniz bir şeyin öncesine ya da sonrasına yerleştirilemiyorsa, geri yüklemeniz ya da silmeniz için ayrı tutulur.",
+            "Kaydedilmeyen bir durdurma sonradan kaydedilir; konuşma modeli kurulduğunda bekleyen kayıtlar, daha eski aylar dahil, metne dönüşür ve çevirileri aranabilir olur."
+          ]
+        },
+        {
+          "title": "Bugün",
+          "items": [
+            "İlk ekran gününüz içindir: dinleme kartı yalnızca durumu, bugünkü konuşma süresini ve kayıt düğmesini tutar; yalnızca bir şey dikkatinizi istediğinde küçük bir uyarı çıkar.",
+            "‘Gününü özetle’ kapatabileceğiniz küçük bir satırdır; en üstteki düğme yine açar.",
+            "Kelime bulunmayan sessiz aralıklar artık bildirim göndermez; metne dönüştürme ilerlemesi ve yeniden deneyebileceğiniz hatalar Ayarlar › Cihazlar'dadır."
+          ]
+        },
+        {
+          "title": "Ayarlar ve ilk kurulum",
+          "items": [
+            "Ayarlar son sekmedir; Genel, Özellikler, Yardım ve Hakkında olarak gruplanır. Gelişmiş seçenekler kendi sayfasındadır; açıklamalar ‘i’ işaretinin arkasındadır.",
+            "İlk kurulumda DayRecall'ın neyi takip edeceğini seçebilirsiniz.",
+            "Saatinizi bileğinizi kaldırdığınızda DayRecall'a dönecek şekilde ayarlamak dört numaralı adımdan oluşur."
+          ]
+        },
+        {
+          "title": "Görevler ve hatırlatıcılar",
+          "items": [
+            "Görevleriniz ve Hatırlatıcılar senkron kalır: yinelenen hatırlatıcı yok, tamamlama senkronize olur.",
+            "Dinleme bittiğinde senkronize etmeniz hatırlatılır ve metnin yaklaşık ne zaman hazır olacağı söylenir; senkronizasyonu bekleyen ikinci günden itibaren hatırlatıcı ses çıkarabilir."
+          ]
+        },
+        {
+          "title": "Sağlık",
+          "items": [
+            "Zaman tünelindeki Sağlık görünümü yenilendi; yalnızca antrenman olan bir gün de bunu gösterir.",
+            "Bir günü yapay zekâ uygulamasına aktardığınızda ya da kendi API'nizle özet yazdığınızda, Sağlık etiketlerini ve değerlerini (kalp atışı, adım, mesafe ve daha fazlası) ekleyebilirsiniz. Varsayılan olarak kapalıdır; eksik değerler asla sıfıra çevrilmez."
+          ]
+        },
+        {
+          "title": "Yapay zekâ ve gizlilik",
+          "items": [
+            "Kendi API'nizle modeli ve ne kadar derin akıl yürüteceğini seçin.",
+            "API'nizi onayladıktan sonra görevleri bulmak, özet yazmak ve soruları yanıtlamak için kullanılır; ses asla gönderilmez ve daha fazlası paylaşılmadan önce tekrar sorulursunuz.",
+            "API anahtarı kaydı başarısız olursa eski anahtar korunur ve bu size bildirilir.",
+            "Koşulları ve gizlilik politikasını uygulamada çevrimdışı, 14 dilde okuyabilirsiniz."
+          ]
+        },
+        {
+          "title": "Örnek gün",
+          "items": [
+            "Örnek günde konuşmacılar, yürüyüşler, antrenmanlar, kalp atışı ve çeviriler var; bir görevden kelimelere ve o ana geri dönmenizi sağlar."
+          ]
+        }
       ]
     }
   },
@@ -909,5 +1270,8 @@
   "health_09": "Animasyon: Sağlık anahtarı açılır, zaman çizelgesi yürüyüş ve normalden yüksek nabız gösterir; yatmadan önceye ilişkin soru söylenenleri bulur.",
   "not_found_title": "Sayfa bulunamadı — DayRecall",
   "not_found_heading": "Bu sayfa burada yok.",
-  "not_found_home": "DayRecall ana sayfa"
+  "not_found_home": "DayRecall ana sayfa",
+  "updates_review": "App Store incelemesinde",
+  "updates_appstore": "App Store",
+  "updates_latest_review": "App Store incelemesinde: {title}"
 }

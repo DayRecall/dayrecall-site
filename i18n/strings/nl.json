@@ -119,7 +119,7 @@
   "final_02": "Binnenkort in de App Store",
   "final_03": "Download DayRecall in de App Store ",
   "final_04": "Het beste met Apple Watch · Werkt ook met alleen iPhone · In 14 talen",
-  "final_05": "Gratis te downloaden, met alle functies 3 dagen gratis. Daarna koop je het één keer, en elke toekomstige update is inbegrepen. Geen abonnement.",
+  "final_05": "Gratis te downloaden uit de App Store: probeer alles 3 dagen gratis, ontgrendel het daarna één keer, en elke toekomstige update is inbegrepen. Geen abonnement.",
   "foot_01": "Apple Watch en iPhone zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio’s.",
   "faq": [
     {
@@ -285,16 +285,16 @@
       "title": "Beschikbaarheid en hulp",
       "items": [
         {
-          "q": "Wanneer kan ik DayRecall krijgen?",
-          "a": "DayRecall is in bèta en komt binnenkort naar de App Store."
+          "q": "Waar kan ik DayRecall krijgen?",
+          "a": "Download het via de <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Het werkt op de iPhone, de Apple Watch is optioneel."
         },
         {
           "q": "Wat kost DayRecall?",
-          "a": "DayRecall is straks gratis te downloaden uit de App Store. Zodra je het hebt ingesteld, kun je een gratis proefperiode van 3 dagen starten met alle functies; de 3 dagen beginnen wanneer je de proefperiode start, niet wanneer je downloadt. Daarna ontgrendel je het met één aankoop, en elke toekomstige update is inbegrepen: er is geen abonnement en niets wordt verlengd. De prijs wordt getoond voordat je proefperiode begint. Koop je het niet, dan blijft wat je hebt bewaard van jou, om te lezen, te doorzoeken, te exporteren en te verwijderen. Zolang DayRecall in bèta op TestFlight is, is het gratis."
+          "a": "DayRecall is gratis te downloaden uit de App Store. Probeer alles 3 dagen gratis en ontgrendel het daarna met één aankoop in de app; de App Store toont de prijs voor jouw land voordat je koopt. Elke toekomstige update is inbegrepen: er is geen abonnement en niets wordt verlengd. Als je DayRecall vóór 7 november 2026 (UTC) hebt gekregen, is het al volledig ontgrendeld."
         },
         {
           "q": "Wordt er nog aan DayRecall gewerkt?",
-          "a": "Ja. Elke versie staat beschreven op <a href=\"/nl/updates/\">Wat is er nieuw</a>, nieuwste eerst, met de datum waarop hij uitkwam. Koop het één keer, en elke toekomstige update is inbegrepen."
+          "a": "Ja. Elke versie staat beschreven op <a href=\"/nl/updates/\">Wat is er nieuw</a>, nieuwste eerst, met de datum waarop hij uitkwam. Ontgrendel het één keer, en elke toekomstige update is inbegrepen."
         },
         {
           "q": "Hoe krijg ik hulp?",
@@ -807,92 +807,453 @@
   "faq_page_more": "Nog een vraag?",
   "faq_page_more_text": "Schrijf ons, dan nemen we contact met je op.",
   "updates_page_title": "Wat is er nieuw — DayRecall",
-  "updates_page_description": "Elke DayRecall-update, nieuwste eerst: wat er in elke bètaversie veranderde en wanneer die uitkwam.",
+  "updates_page_description": "Elke DayRecall-update, nieuwste eerst: wat er in elke versie veranderde en wanneer die uitkwam.",
   "updates_kicker": "Wat is er nieuw",
   "updates_heading": "Elke update, op een rij.",
-  "updates_lead": "DayRecall is in bèta op TestFlight en komt binnenkort naar de App Store. Hieronder staat wat er per versie is veranderd, nieuwste eerst. Koop het één keer, en elke toekomstige update is inbegrepen.",
+  "updates_lead": "Download DayRecall uit de <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Elke nieuwe versie wordt eerst in een bèta op TestFlight getest; hieronder staat wat er per versie is veranderd, nieuwste eerst. Ontgrendel het één keer, en elke toekomstige update is inbegrepen.",
   "updates_summary": "{n} versies sinds {date}",
   "updates_beta": "Bèta",
   "updates_latest": "Bijgewerkt {date}: {title}",
   "updates_follow_text": "We plaatsen nieuws op TikTok, X en Instagram. Voor hulp of feedback mail je naar <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: daar reageren we.",
   "updates": {
+    "1.4.3": {
+      "title": "Gratis downloaden: probeer het, en ontgrendel het één keer",
+      "lead": "De eerste App Store-versie sinds 0.2.32, met alles van 0.2.33 tot 1.4.2 hieronder.",
+      "groups": [
+        {
+          "title": "Prijs en ontgrendelen",
+          "items": [
+            "Gratis te downloaden. Begin met een proefperiode van 3 dagen met alles, en ontgrendel DayRecall daarna met één aankoop. Geen abonnement, geen automatische betaling.",
+            "De proefperiode begint wanneer je op „Gratis proefperiode van 3 dagen starten“ tikt en Apple dat bevestigt, en duurt 72 uur achter elkaar. Opnieuw installeren, een nieuwe telefoon of het herstellen van aankopen start hem niet opnieuw.",
+            "Eén aankoop ontgrendelt DayRecall op iPhone en Apple Watch.",
+            "Als je DayRecall vóór 7 november (UTC) hebt gekocht of gratis hebt gedownload, is het voor jou volledig ontgrendeld: geen proefperiode, niets meer te betalen.",
+            "Na de proefperiode hebben nieuwe opnamen, audio-imports en nieuwe AI-taken de ontgrendeling nodig. Wat je al hebt opgenomen blijft van jou om te bekijken, te doorzoeken, te exporteren en te verwijderen; opnamen die al op je horloge staan, komen nog steeds binnen en worden tekst."
+          ]
+        },
+        {
+          "title": "Oplossingen",
+          "items": [
+            "Een regel die op een ander apparaat is gecorrigeerd, behoudt geen oude vertaling meer; die wacht op een nieuwe.",
+            "Vergadernotities worden opnieuw geschreven wanneer meer van de vergadering tekst wordt of wanneer een regel wordt gecorrigeerd.",
+            "Een vergadering die op je iPhone is gestart, houdt je Apple Watch luisterend tot hij eindigt, ook na je luistertijden (tot 12 uur)."
+          ]
+        }
+      ]
+    },
+    "1.4.2": {
+      "title": "Start je horloge vanaf je iPhone",
+      "groups": [
+        {
+          "title": "Vandaag en Apple Watch",
+          "items": [
+            "Wanneer je Apple Watch verbonden is maar niet luistert, is de eerste knop op de luisterkaart „Starten op Apple Watch“, en wordt de iPhone-knop „In plaats daarvan opnemen op iPhone“. De horloge-kaart onder Apparaten heeft dezelfde knop.",
+            "Nadat je erop hebt getikt, til je je pols op en open je DayRecall op het horloge: het start vanzelf, en de hint verdwijnt zodra het horloge luistert.",
+            "Eén tik telt één keer: als je het horloge meer dan 5 minuten later opent, of het ondertussen is gestopt, start het niet vanzelf."
+          ]
+        },
+        {
+          "title": "Mijn stem",
+          "items": [
+            "Alle vijf stemkaarten worden nu voorgelezen uit een tekst; er wordt je nergens gevraagd in je eigen woorden te antwoorden.",
+            "Met meertalige transcriptie aan staan kaarten 4 en 5 in je andere werktalen. Kantonees heeft zijn eigen gesproken schrift."
+          ]
+        },
+        {
+          "title": "Opnamen en Archief",
+          "items": [
+            "Op de pagina van een opname (Archief › Opnamen) tik je op een regel om vanaf daar af te spelen, zolang de audio nog bewaard wordt (24 uur na het opnemen); de regel die speelt is gemarkeerd.",
+            "Houd een regel ingedrukt om hem te kopiëren.",
+            "Een dag die je vanuit Archief opent, toont bovenaan zijn datum; tik nogmaals op Archief om terug te gaan naar de voorpagina."
+          ]
+        },
+        {
+          "title": "Privacybeleid en voorwaarden",
+          "items": [
+            "Het privacybeleid en de voorwaarden in de app hebben nu ook in de andere 12 talen de secties over Mac, vergaderingen en Apple Watch."
+          ]
+        }
+      ]
+    },
+    "1.4.1": {
+      "title": "Vergaderingen wanneer je ze wilt, duidelijkere plekken",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Wanneer hij niet luistert, zijn de twee knoppen „De hele dag luisteren“ en „Vergadering“. „Vergadering“ verschijnt zodra Vergaderingen aanstaat in Instellingen op je iPhone.",
+            "Een vergadering begint meteen in de taal die je in Instellingen kiest; tik tijdens de vergadering op „Vergadering · taal“ om te wisselen.",
+            "Wanneer je horloge plekken noteert, zegt het luisterscherm dat; staat de locatietoestemming uit, dan vertelt het waar je die aanzet."
+          ]
+        },
+        {
+          "title": "Vergaderingen",
+          "items": [
+            "Een nieuwe schakelaar Vergaderingen in Instellingen › Functies, standaard uit. Zet hem aan en kies onder „Vergadertaal“ de taal waarin vergaderingen beginnen; daar kun je ook talen toevoegen.",
+            "Op Vandaag staat „Vergadering starten“ naast „Opnemen op iPhone“ en vraagt niet langer om een taal; tik tijdens een vergadering op het label om te wisselen."
+          ]
+        },
+        {
+          "title": "Plekken",
+          "items": [
+            "„Plekken van“ is nu één regel: open hem om iPhone of Apple Watch te kiezen.",
+            "Mijn plekken: Thuis, Werk en de andere soorten zijn soorten, geen namen, en twee plekken van dezelfde soort worden onderscheiden op hun straat.",
+            "Het gevonden adres blijft bewaard. Staat het een beetje ernaast, sleep dan de kaart om de plek iets te verplaatsen (tot 250 m) of corrigeer het huisnummer. Je eigen naam ervoor is optioneel.",
+            "Plekken die eerder met die woorden zijn benoemd, worden soorten."
+          ]
+        },
+        {
+          "title": "DayRecall voor Mac (bèta)",
+          "items": [
+            "Verhelpt dat de Mac-app vastloopt direct nadat hij opent op macOS 27."
+          ]
+        }
+      ]
+    },
+    "1.4.0": {
+      "title": "Het horloge pauzeren, vergaderingen en benoemde plekken",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Één scherm toont de status, met twee ronde knoppen: pauzeren en beëindigen.",
+            "Pauzeer 15 minuten, 30 minuten of een uur, en het hervat vanzelf, nooit na je luistertijden; houd ingedrukt om de dag te beëindigen."
+          ]
+        },
+        {
+          "title": "Vergaderingen",
+          "items": [
+            "Start een vergadering op je iPhone of je horloge en kies de taal; ze verschijnt als een eigen stuk op de tijdlijn.",
+            "Na drie uur vraagt je horloge of je nog in de vergadering zit.",
+            "Wanneer die eindigt, kun je vergadernotities krijgen. Komen ze van je eigen API, dan vraagt DayRecall daar apart om je toestemming.",
+            "Een vergadering is op je iPhone en je Mac dezelfde."
+          ]
+        },
+        {
+          "title": "Plekken",
+          "items": [
+            "Meerdere verblijven op één plek worden één plek. Een naam die niet gevonden wordt, wordt opnieuw geprobeerd, en verschijnt als „Naamloze plek“ als het nog steeds niet lukt.",
+            "Noem een plek op de kaart en stel in hoe ver die reikt (Instellingen › Mijn plekken): latere verblijven daar krijgen de naam, en hij komt in je back-ups terecht.",
+            "Je horloge kan plekken noteren terwijl het luistert (uit tot je het aanzet); de locatie ervan vervangt dan die van je iPhone."
+          ]
+        },
+        {
+          "title": "Mijn stem",
+          "items": [
+            "Voeg tot vier mensen toe met wie je vaak praat (een naam en hoe je ze kent); hun namen verschijnen op de tijdlijn, de poster en de tekst die je exporteert."
+          ]
+        },
+        {
+          "title": "Snellere toegang",
+          "items": [
+            "Houd het app-icoon ingedrukt voor Vraag, Taken en Overzicht.",
+            "„Instellingen bekijken“ bij een melding opent de eigen meldingsinstellingen van de app."
+          ]
+        },
+        {
+          "title": "Eerste installatie",
+          "items": [
+            "De schakelaars voor kaart, Gezondheid en wie er praat staan uit; zet ze aan wanneer je wilt."
+          ]
+        },
+        {
+          "title": "DayRecall voor Mac (bèta)",
+          "items": [
+            "Een echt Mac-venster: een zijbalk, een compacte lijst van vastleggingen, een detailkolom, een maandagenda, zoeken op woord, delen en een menubalkitem. Je kunt vastleggingen ook exporteren en importeren.",
+            "Stabielere synchronisatie tussen apparaten op een slecht netwerk: vergadernotities worden nu gesynchroniseerd, en een telefoon die wegloopt blokkeert de verbinding niet meer."
+          ]
+        }
+      ]
+    },
+    "1.3.4": {
+      "title": "Een fix voor het overzicht",
+      "groups": [
+        {
+          "title": "Oplossing",
+          "items": [
+            "Als je je eigen stem had opgenomen, kon het openen van „Vat je dag samen“ het scherm laten vastlopen, of was de app gesloten toen je terugkwam en moest hij weggeveegd worden. Dat gebeurt niet meer.",
+            "Mensen die nooit hun stem hebben opgenomen, waren niet getroffen."
+          ]
+        }
+      ]
+    },
     "1.3.3": {
-      "title": "Instellingen, eenvoudiger",
-      "items": [
-        "De vergadertaal staat nu onder Meertalige transcriptie en verschijnt zodra je een tweede werktaal hebt.",
-        "Luisteruren staan per dag op één regel. Een dag die je aanzet, gebruikt de uren van de dag ervoor, en een gewijzigde tijd kan in één keer naar alle luisterdagen.",
-        "Geavanceerde instellingen is een korte lijst die elk onderdeel opent, en Gegevens en reservekopieën is opnieuw ontworpen.",
-        "Verhelpt een dagoverzichtpagina die kon vastlopen, Apple Watch-overdrachten die konden blijven hangen en een compatibiliteitsprobleem bij reservekopieën."
+      "title": "Instellingen, vereenvoudigd",
+      "groups": [
+        {
+          "title": "Instellingen",
+          "items": [
+            "De vergadertaal staat nu onder Meertalige transcriptie en heet „Vergadertaal“. Ze verschijnt zodra je een tweede werktaal hebt: één regel, Uit of een van je talen.",
+            "Met meertalige transcriptie uit, toont je horloge geen vergadertaal-knop meer die je niet kunt gebruiken, en je eerdere keuze blijft bewaard.",
+            "Luistertijden nemen één regel per dag (dag, tijd, schakelaar); een dag die je aanzet, neemt de tijden van de luisterdag ervoor over.",
+            "Wijzig je de tijd van één dag, dan wordt je gevraagd of elke luisterdag hetzelfde moet zijn; één tik past het toe.",
+            "Geavanceerde instellingen is een korte lijst in drie delen: Luisteren, Detectie en Gegevens; open een deel om het aan te passen. Uitleg bij schuifregelaars en schakelaars staat achter een „i“.",
+            "Gegevens en back-ups heeft een nieuwe look, en voordat je een back-up met Gezondheidsgegevens exporteert, vat één kaart de drie dingen samen die je moet weten.",
+            "Uitgebreide logregistratie kan aan blijven tot je hem uitzet (standaard gaat hij na 24 uur uit)."
+          ]
+        },
+        {
+          "title": "Oplossingen",
+          "items": [
+            "De overzichtpagina kan het scherm niet meer laten vastlopen.",
+            "Hangende overdrachten van de Apple Watch worden opnieuw geprobeerd.",
+            "Een compatibiliteitsprobleem met archief-back-ups."
+          ]
+        }
       ]
     },
     "1.3.2": {
-      "title": "Nieuwe sprekerherkenning, en reservekopieën",
-      "items": [
-        "“Mijn stem” gebruikt een nieuw model voor sprekerherkenning. Neem je stem na de update nog eens op; eerdere labels blijven staan.",
-        "Taaldetectie baseert zich standaard op 6 seconden spraak; kies 3 of 6 seconden in Geavanceerde instellingen.",
-        "Maak een reservekopie van je archief naar een bestand of naar je privé-iCloud, en herstel die.",
-        "Verbeteringen voor het uitschakelen van delen met je API en voor geannuleerde verzoeken. Wijzigingen die je maakt terwijl een gesprek opnieuw wordt getranscribeerd, blijven bewaard."
+      "title": "Nieuwe stemherkenning, en back-ups",
+      "groups": [
+        {
+          "title": "Mijn stem",
+          "items": [
+            "Mijn stem gebruikt een nieuw stemmodel. Neem je stem na de update nog eens op; eerdere sprekerlabels blijven."
+          ]
+        },
+        {
+          "title": "Talen",
+          "items": [
+            "Taaldetectie luistert standaard naar zes seconden spraak; kies drie of zes seconden in Geavanceerde instellingen."
+          ]
+        },
+        {
+          "title": "Back-up en herstel",
+          "items": [
+            "Exporteer je archief als bestand of maak een back-up naar je eigen privé-iCloud, en herstel het later.",
+            "Gezondheids- en agendageschiedenis uit een back-up wordt apart bewaard en lijkt nooit de eigen gegevens van de nieuwe telefoon."
+          ]
+        },
+        {
+          "title": "Oplossingen",
+          "items": [
+            "Problemen wanneer je toestemming voor je API intrekt of een verzoek annuleert.",
+            "Je bewerkingen blijven bewaard terwijl een gesprek opnieuw wordt getranscribeerd."
+          ]
+        }
       ]
     },
     "1.3.1": {
       "title": "Alle 14 talen, soepelere dagen",
-      "items": [
-        "Elk scherm, ook de nieuwe, is beschikbaar in alle 14 talen.",
-        "Op Mac dezelfde 17 transcriptietalen als op iPhone, met Vereenvoudigd Chinees en Traditioneel Chinees als aparte talen.",
-        "Wisselen tussen dagen gaat soepeler.",
-        "Spreektijd telt alleen echte spraak, en bij een stille opname staat niet langer dat die is getranscribeerd."
+      "groups": [
+        {
+          "title": "Talen",
+          "items": [
+            "Elk scherm, ook de nieuwe, is in alle 14 talen: apparaatverbindingen, de modelmap, toestemmingsnotities, de poster, de aankoopschermen en meer.",
+            "De offline privacynotities in alle 14 talen komen overeen met de website: hoe lang audio wordt bewaard, taalcorrectie, en hoe geëxporteerde en back-upkopieën worden bewaard."
+          ]
+        },
+        {
+          "title": "Soepeler en nauwkeuriger",
+          "items": [
+            "Wisselen tussen dagen gaat soepeler, met minder herhaald tellen en kaartwerk.",
+            "Spreektijd telt alleen de delen waarin echt iemand praat.",
+            "Een stille opname eindigt normaal en zegt niet langer dat de transcriptie klaar is."
+          ]
+        },
+        {
+          "title": "DayRecall voor Mac (bèta)",
+          "items": [
+            "De transcriptietalen komen overeen met de 17 keuzes van de iPhone, onderscheiden vereenvoudigd en traditioneel Chinees, en volgen je regio."
+          ]
+        }
       ]
     },
     "1.3.0": {
       "title": "Mac, dagposters en bewerken",
-      "items": [
-        "DayRecall voor Mac, in bèta: neem een fysieke of online vergadering op, pauzeer en hervat, bewaar je vergaderingen en taken, en koppel je iPhone en Apple Watch via je lokale netwerk. Transcriberen op de Mac vereist een ondersteunde Mac met macOS 26.",
-        "Dagposters: drie stijlen en een zin die je kiest, als foto of korte video.",
-        "Bewerk een gesprek: hernoem het, verbeter een zin, of ga terug naar het origineel. Zolang de audio nog bewaard is, kun je ook de taal corrigeren.",
-        "Kies de vergadertaal op je Apple Watch.",
-        "Bewaar een dagoverzicht in Notion of Obsidian.",
-        "Verhelpt dat het horloge nog als luisterend werd getoond nadat het was gestopt, en dat de herinnering om te stoppen te vroeg werd verwijderd."
+      "groups": [
+        {
+          "title": "Dagposter",
+          "items": [
+            "Drie stijlen en een zin die je kiest uit je dag, bewaard als foto of korte video.",
+            "Je kunt er ook een maken met Opdrachten."
+          ]
+        },
+        {
+          "title": "Gesprekken bewerken",
+          "items": [
+            "Hernoem een gesprek, bewerk een zin of herstel de oorspronkelijke tekst.",
+            "Zolang de audio er nog is, kun je de taal van een gesprek wijzigen om het opnieuw te transcriberen; kies de vergadertaal meteen op je Apple Watch."
+          ]
+        },
+        {
+          "title": "Verbindingen en lezen",
+          "items": [
+            "Sla overzichten op in Notion of Obsidian.",
+            "Met je eigen API kan de modelmap worden bijgewerkt; die gaat alleen online wanneer je tikt.",
+            "Open de website en de juridische documenten in de app."
+          ]
+        },
+        {
+          "title": "DayRecall voor Mac (bèta)",
+          "items": [
+            "Een echt archief op de Mac: neem vergaderingen op locatie of online op, pauzeer en hervat ze, en beheer vergaderingen, vastleggingen en taken.",
+            "Werkt met je gekoppelde iPhone en Apple Watch via je lokale netwerk."
+          ]
+        },
+        {
+          "title": "Oplossingen",
+          "items": [
+            "Het horloge toonde dat het luisterde nadat het was gestopt.",
+            "Stopherinneringen werden te vroeg weer ingetrokken."
+          ]
+        }
       ]
     },
     "0.2.34": {
-      "title": "Mac doet mee aan de bèta",
-      "items": [
-        "DayRecall voor Mac doet mee aan de bèta: importeer vergadertranscripten, en laat een gekoppelde Mac voor je iPhone transcriberen via je versleutelde lokale netwerk.",
-        "Er komt een gratis proefperiode van 3 dagen en een eenmalige aankoop bij, voor als DayRecall in de App Store staat. Tijdens de bèta blijft het gratis.",
-        "Het scherm Over heeft nu links om DayRecall te beoordelen, te delen en de website te bezoeken."
+      "title": "De Mac doet mee in de bèta",
+      "groups": [
+        {
+          "title": "DayRecall voor Mac (bèta)",
+          "items": [
+            "DayRecall voor Mac doet mee in de bèta: een native venster, vergadertekst die je kunt importeren, en vergaderingen op hun eigen plek.",
+            "Eenmaal gekoppeld kan een Mac met zijn taalmodel klaar voor je iPhone transcriberen via een versleutelde lokale verbinding en de tekst terugsturen; kan de Mac het niet, dan doet je iPhone het.",
+            "Vergadertekst op de Mac kan synchroniseren via je eigen privé-iCloud, zodra je dat aanzet."
+          ]
+        },
+        {
+          "title": "Proefperiode en aankoop (bèta)",
+          "items": [
+            "De bèta krijgt de proefperiode van 3 dagen en de eenmalige ontgrendeling, zodat de aankoopstroom getest kan worden; in de bèta wordt niets in rekening gebracht.",
+            "Voordat een proefperiode begint, controleert DayRecall of spraak en je gekozen AI klaar zijn; zo niet, dan start de klok niet."
+          ]
+        },
+        {
+          "title": "Over",
+          "items": [
+            "Beoordeel DayRecall, deel het, of open de website vanuit Over."
+          ]
+        }
       ]
     },
     "0.2.33": {
-      "title": "Luisteren hervat zichzelf",
+      "title": "Luisteren pakt zichzelf weer op",
+      "groups": [
+        {
+          "title": "Na een onderbreking",
+          "items": [
+            "Na een wekker, een oproep of Siri probeert DayRecall ongeveer een minuut door te gaan en pakt het opnemen vanzelf weer op; alleen als het niet lukt, zegt het iets.",
+            "De herinnering „Luisteren gepauzeerd“ komt niet meteen: die wacht tot de microfoon 20 seconden vrij is geweest zonder dat het opnemen hervat, en herhaalt zich één keer 5 minuten later. Als het opnemen vanzelf terugkomt, gaat er niets rinkelen.",
+            "Zolang een wekker nog gaat of een oproep nog bezig is, word je niet midden in het gesprek herinnerd.",
+            "De melding „Apple Watch is gestopt met opnemen“ op de iPhone wacht net zo en verdwijnt zodra het horloge weer luistert.",
+            "Kies onder Instellingen › Luistertijden › Wanneer het luisteren pauzeert wanneer herinneringen komen."
+          ]
+        },
+        {
+          "title": "Vragen en de tijdlijn",
+          "items": [
+            "Beter bij vragen over wat je aan het doen was, zoals „waar hadden we het over terwijl ik aan het hardlopen was?“; vindt de eerste zoekopdracht niets, dan probeert hij het nog eens met andere woorden.",
+            "Korte wandelingen op de tijdlijn zijn niet langer verborgen achter lange gesprekken."
+          ]
+        },
+        {
+          "title": "Talen",
+          "items": [
+            "De schermen en de offline juridische documenten zijn volledig in alle 14 talen."
+          ]
+        }
+      ]
+    },
+    "0.2.32": {
+      "title": "Download het uit de App Store",
+      "tag": "App Store · Eerste openbare versie",
       "items": [
-        "Als een wekker, een telefoongesprek of Siri het onderbreekt, gaat je Apple Watch vanzelf weer luisteren, en herinnert je er alleen aan als dat niet lukt.",
-        "Kies wanneer die herinnering komt via Instellingen › Luisteruren › Als luisteren pauzeert.",
-        "Beter in vragen over wat je deed, zoals “Wat zei ik tijdens het hardlopen?”",
-        "Korte wandelingen worden op de tijdlijn niet langer achter lange gesprekken verborgen."
+        "In de App Store vanaf 30 oktober, met alles uit de versies hieronder.",
+        "Verhelpt een crash bij het starten in 0.2.31."
       ]
     },
     "0.2.29": {
-      "title": "Dagoverzichten, op de achtergrond geschreven",
-      "items": [
-        "‘Je dag samenvatten’ schrijft op de achtergrond: verlaat de pagina, en het overzicht wordt bij die dag bewaard.",
-        "Voordat het begint, zie je ongeveer hoe lang het duurt; terwijl het werkt, zie je de stap en de resterende tijd.",
-        "Niet goed genoeg? Geef de dag door aan een AI-app en haal het antwoord terug, bewaard naast de dag.",
-        "Dagoverzicht elke dag: Herinner me, Hier schrijven, of Uit.",
-        "Kan deze iPhone geen dagoverzicht schrijven, dan zegt hij waarom en biedt hij twee andere manieren aan.",
-        "Een herinnering op je horloge als de luisteruren beginnen, en nog eens op je iPhone 20 minuten later als je nog niet bent begonnen.",
-        "Een crash bij het opstarten in 0.2.31 is dezelfde dag verholpen, in 0.2.32."
+      "title": "Overzichten, op de achtergrond geschreven",
+      "groups": [
+        {
+          "title": "Vat je dag samen",
+          "items": [
+            "Op de achtergrond geschreven: verlaat de pagina of wissel van tabblad terwijl het werkt. Een dunne balk boven elk tabblad toont de stap en de resterende tijd, en je kunt op elk moment stoppen.",
+            "Een afgerond overzicht wordt bewaard bij zijn dag. Op Vandaag staat „Je overzicht · geschreven om …“; tik erop om het te lezen, en daarna te kopiëren, te delen, de lijst naar Te bevestigen te sturen, opnieuw te schrijven of te verwijderen.",
+            "Voordat het begint zie je ongeveer hoe lang het duurt; duurt het langer dan een minuut, dan legt het eerst uit dat je de pagina mag verlaten, dat DayRecall open moet blijven, en toont het de snellere manieren.",
+            "Stoppen en opnieuw beginnen, of opnieuw proberen na een fout, leest de delen die al gelezen zijn niet opnieuw.",
+            "Wanneer de app niet vooraan staat of de iPhone warm is, wacht het model op het apparaat en gaat het verder zodra je terug bent en het is afgekoeld.",
+            "Als je de app hebt verlaten wanneer het klaar is, meldt een stille melding dat je overzicht klaar is (uit te zetten in Instellingen › Meldingen)."
+          ]
+        },
+        {
+          "title": "Vraag een sterkere AI",
+          "items": [
+            "Niet goed genoeg? Geef de dag door aan een AI-app en haal het antwoord terug: het wordt bewaard bij de dag, naast het eigen overzicht van de iPhone.",
+            "Als deze iPhone geen overzicht kan schrijven (geen Apple Intelligence, uit, model nog aan het downloaden, of je API is niet ingesteld), dan zegt het waarom en toont het de twee andere manieren."
+          ]
+        },
+        {
+          "title": "Elke dag een overzicht",
+          "items": [
+            "Instellingen › AI-engine › Elke dag een overzicht: Herinner me (de standaard), Schrijf het voor mij, of Uit.",
+            "„Herinner me“ stuurt een half uur nadat je luistertijden eindigen een stille melding, als de dag meer dan 5 minuten spraak heeft en nog geen overzicht."
+          ]
+        },
+        {
+          "title": "Herinneringen en betrouwbaarheid",
+          "items": [
+            "Wanneer je luistertijden beginnen, herinnert je horloge je één keer; is er na 20 minuten nog niets gestart, dan herinnert je iPhone je opnieuw, en beide verdwijnen zodra het opnemen begint.",
+            "Vragen eindigt op tijd, ook als het model traag antwoordt, en een laat overzicht kan niet terugkomen nadat je je archief hebt gewist."
+          ]
+        }
       ]
     },
     "0.2.21": {
-      "title": "De eerste bèta’s als DayRecall",
-      "items": [
-        "Opnemen is betrouwbaarder: Apple Watch-overdrachten worden opnieuw geprobeerd, verwijderde opnamen blijven weg, en luisteren en herinneringen herstellen zich na een onderbreking.",
-        "Nieuwe Instellingen: het is het laatste tabblad, in duidelijke groepen, en bij de eerste keer instellen kies je wat DayRecall opneemt.",
-        "Het eerste scherm van Vandaag is voor je dag: een slankere luisterkaart en een kleine dagoverzichtrij die je kunt sluiten.",
-        "Gezondheid op de tijdlijn heeft een nieuwe vormgeving. Als je een dag aan een AI-app doorgeeft, kun je kiezen om labels en waarden uit Gezondheid mee te sturen; standaard staat dat uit.",
-        "Met je eigen API kies je het model en de redeneerinspanning.",
-        "Lees de voorwaarden en het privacybeleid in de app, offline, in 14 talen.",
-        "Als het luisteren eindigt, zegt de herinnering om te synchroniseren ongeveer wanneer de tekst klaar is."
+      "title": "De eerste bèta's als DayRecall",
+      "groups": [
+        {
+          "title": "Betrouwbaarder opnemen",
+          "items": [
+            "Opnemen op de iPhone herstelt zich vanzelf na een onderbreking; overdrachten van de Apple Watch worden opnieuw geprobeerd, en verwijderde opnamen komen niet terug.",
+            "Als een opname van een offline horloge niet vóór of na iets verwijderds geplaatst kan worden, wordt die apart voor je bewaard, om te herstellen of te verwijderen.",
+            "Een stop die niet werd geregistreerd, wordt later geregistreerd; zodra het spraakmodel is geïnstalleerd, worden wachtende opnamen getranscribeerd, ook oudere maanden, en hun vertalingen worden doorzoekbaar."
+          ]
+        },
+        {
+          "title": "Vandaag",
+          "items": [
+            "Het eerste scherm is voor je dag: de luisterkaart toont alleen de status, je spreektijd van vandaag en de opnameknop, met alleen een kleine waarschuwing wanneer er iets van je nodig is.",
+            "„Vat je dag samen“ is een kleine rij die je kunt sluiten; een knop bovenaan opent hem nog steeds.",
+            "Stille stukken zonder gevonden woorden sturen je geen melding meer; de voortgang van de transcriptie en fouten die je opnieuw kunt proberen staan onder Instellingen › Apparaten."
+          ]
+        },
+        {
+          "title": "Instellingen en eerste installatie",
+          "items": [
+            "Instellingen is het laatste tabblad, gegroepeerd in Algemeen, Functies, Hulp en Over; geavanceerde opties hebben hun eigen pagina, met uitleg achter een „i“.",
+            "Bij de eerste installatie kies je wat DayRecall bijhoudt.",
+            "Je horloge instellen zodat het naar DayRecall terugkeert wanneer je je pols optilt, kost vier genummerde stappen."
+          ]
+        },
+        {
+          "title": "Taken en herinneringen",
+          "items": [
+            "Taken en je Herinneringen blijven gelijk: geen dubbele herinneringen, en afronding wordt gesynchroniseerd.",
+            "Wanneer het luisteren eindigt, word je herinnerd om te synchroniseren en krijg je te horen ongeveer wanneer de tekst klaar is; vanaf de tweede dag dat er op synchronisatie wordt gewacht, kan de herinnering een geluid maken."
+          ]
+        },
+        {
+          "title": "Gezondheid",
+          "items": [
+            "Gezondheid op de tijdlijn heeft een nieuwe look, en een dag met alleen een training toont dat ook.",
+            "Wanneer je een dag aan een AI-app doorgeeft of een overzicht schrijft met je eigen API, kun je Gezondheidslabels en -waarden toevoegen (hartslag, stappen, afstand en meer). Dat staat standaard uit, en ontbrekende waarden worden nooit nullen."
+          ]
+        },
+        {
+          "title": "AI en privacy",
+          "items": [
+            "Met je eigen API kies je het model en hoe zwaar het redeneert.",
+            "Zodra je je API toestemming geeft, wordt die gebruikt om taken te vinden, overzichten te schrijven en vragen te beantwoorden; audio wordt nooit verstuurd, en je wordt opnieuw gevraagd voordat er meer wordt gedeeld.",
+            "Als het opslaan van een API-sleutel mislukt, blijft de oude sleutel bewaard en krijg je te horen dat dat zo is.",
+            "Lees de voorwaarden en het privacybeleid offline in de app, in alle 14 talen."
+          ]
+        },
+        {
+          "title": "Voorbeelddag",
+          "items": [
+            "De voorbeelddag heeft sprekers, wandelingen, trainingen, hartslag en vertalingen, en brengt je van een taak terug naar de woorden en het moment."
+          ]
+        }
       ]
     }
   },
@@ -909,5 +1270,8 @@
   "health_09": "Animatie: Gezondheid wordt aangezet, de tijdlijn toont een wandeling en een hogere hartslag dan normaal en een vraag over voor het slapengaan vindt wat er is gezegd.",
   "not_found_title": "Pagina niet gevonden — DayRecall",
   "not_found_heading": "Deze pagina bestaat niet.",
-  "not_found_home": "DayRecall-startpagina"
+  "not_found_home": "DayRecall-startpagina",
+  "updates_review": "In beoordeling bij de App Store",
+  "updates_appstore": "App Store",
+  "updates_latest_review": "In beoordeling bij de App Store: {title}"
 }

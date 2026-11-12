@@ -119,7 +119,7 @@
   "final_02": "Kommer snart till App Store",
   "final_03": "Hämta DayRecall i App Store ",
   "final_04": "Bäst med Apple Watch · Fungerar med bara iPhone · På 14 språk",
-  "final_05": "Gratis att ladda ner, med alla funktioner gratis i 3 dagar. Köp sedan en gång, så ingår alla framtida uppdateringar. Ingen prenumeration.",
+  "final_05": "Gratis att ladda ner från App Store: prova allt i 3 dagar, lås sedan upp det en gång, så ingår alla framtida uppdateringar. Ingen prenumeration.",
   "foot_01": "Apple Watch och iPhone är varumärken som tillhör Apple Inc., registrerade i USA och andra länder och regioner.",
   "faq": [
     {
@@ -285,16 +285,16 @@
       "title": "Tillgänglighet och hjälp",
       "items": [
         {
-          "q": "När kan jag få DayRecall?",
-          "a": "DayRecall är i beta och kommer snart till App Store."
+          "q": "Var kan jag hämta DayRecall?",
+          "a": "Hämta den från <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Den körs på iPhone, och Apple Watch är valfri."
         },
         {
           "q": "Hur mycket kostar DayRecall?",
-          "a": "DayRecall blir gratis att ladda ner från App Store. När den är konfigurerad kan du starta en gratis 3-dagars provperiod med alla funktioner; de 3 dagarna börjar när du startar provperioden, inte när du laddar ner. Därefter låser ett engångsköp upp den, och alla framtida uppdateringar ingår: det finns ingen prenumeration och inget förnyas. Priset visas innan din provperiod börjar. Om du inte köper den är allt du sparat kvar hos dig, för att läsa, söka, exportera och radera. Medan DayRecall är i beta på TestFlight är den gratis."
+          "a": "DayRecall är gratis att hämta från App Store. Prova allt gratis i 3 dagar och lås sedan upp det med ett enda köp i appen; App Store visar priset för ditt land innan du köper. Alla framtida uppdateringar ingår: det finns ingen prenumeration och inget förnyas. Om du fick DayRecall före 7 november 2026 (UTC) är den redan helt upplåst."
         },
         {
           "q": "Utvecklas DayRecall fortfarande?",
-          "a": "Ja. Varje version beskrivs i <a href=\"/sv/updates/\">Vad är nytt</a>, senaste först, med datumet då den kom ut. Köp en gång, så ingår alla framtida uppdateringar."
+          "a": "Ja. Varje version beskrivs i <a href=\"/sv/updates/\">Vad är nytt</a>, senaste först, med datumet då den kom ut. Lås upp den en gång, så ingår alla framtida uppdateringar."
         },
         {
           "q": "Hur får jag hjälp?",
@@ -807,92 +807,453 @@
   "faq_page_more": "Har du fler frågor?",
   "faq_page_more_text": "Skriv till oss så återkommer vi.",
   "updates_page_title": "Vad är nytt — DayRecall",
-  "updates_page_description": "Varje DayRecall-uppdatering, senaste först: vad som ändrades i varje betaversion och när den kom ut.",
+  "updates_page_description": "Varje DayRecall-uppdatering, senaste först: vad som ändrades i varje version och när den kom ut.",
   "updates_kicker": "Vad är nytt",
   "updates_heading": "Varje uppdatering, nedskriven.",
-  "updates_lead": "DayRecall är i beta på TestFlight och kommer snart till App Store. Här är vad som ändrades i varje version, senaste först. Köp en gång, så ingår alla framtida uppdateringar.",
+  "updates_lead": "Hämta DayRecall från <a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Varje ny version testas först i en beta på TestFlight; här är vad som ändrades i var och en, senaste först. Lås upp den en gång, så ingår alla framtida uppdateringar.",
   "updates_summary": "{n} versioner sedan {date}",
   "updates_beta": "Beta",
   "updates_latest": "Uppdaterad {date}: {title}",
   "updates_follow_text": "Vi publicerar nyheter på TikTok, X och Instagram. För hjälp eller feedback, skriv till <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: det är där vi svarar.",
   "updates": {
+    "1.4.3": {
+      "title": "Gratis att ladda ner: prova, och lås upp en gång",
+      "lead": "Första App Store-versionen sedan 0.2.32, med allt från 0.2.33 till 1.4.2 nedan.",
+      "groups": [
+        {
+          "title": "Pris och upplåsning",
+          "items": [
+            "Gratis att ladda ner. Börja med en 3-dagars provperiod av allt, och lås sedan upp DayRecall med ett enda köp. Ingen prenumeration och ingen automatisk debitering.",
+            "Provperioden startar när du trycker på ”Starta gratis 3-dagars provperiod” och Apple bekräftar det, och den går i 72 timmar i följd. Att installera om, byta telefon eller återställa köp startar den inte på nytt.",
+            "Ett enda köp låser upp DayRecall på iPhone och Apple Watch.",
+            "Om du fick DayRecall före 7 november (UTC), som betald eller gratis nedladdning, är den helt upplåst för dig: ingen provperiod, inget mer att betala.",
+            "Efter provperioden kräver nya inspelningar, ljudimporter och nya AI-uppgifter upplåsningen. Det du redan har spelat in är ditt att visa, söka i, exportera och radera, och inspelningar som redan finns på din klocka kommer fram och blir till text."
+          ]
+        },
+        {
+          "title": "Rättelser",
+          "items": [
+            "En rad som rättats på en annan enhet behåller inte sin gamla översättning; den väntar på en ny.",
+            "Mötesanteckningar skrivs på nytt när mer av mötet blir till text eller en rad rättas.",
+            "Ett möte som startats på din iPhone håller din Apple Watch igång tills det slutar, även efter dina lyssningstider (upp till 12 timmar)."
+          ]
+        }
+      ]
+    },
+    "1.4.2": {
+      "title": "Starta klockan från din iPhone",
+      "groups": [
+        {
+          "title": "I dag och Apple Watch",
+          "items": [
+            "När din Apple Watch är ansluten men inte lyssnar är första knappen på lyssningskortet ”Starta på Apple Watch”, och knappen på iPhone blir ”Spela in på iPhone i stället”. Klockkortet under Enheter har samma knapp.",
+            "När du har tryckt lyfter du handleden och öppnar DayRecall på klockan: den startar av sig själv, och tipset försvinner när klockan lyssnar.",
+            "En knapptryckning räknas en gång: om du öppnar klockan mer än 5 minuter senare, eller om klockan har stoppat emellan, startar den inte av sig själv."
+          ]
+        },
+        {
+          "title": "Min röst",
+          "items": [
+            "Alla fem röstkort läses nu från ett manus; ingen ber dig svara med egna ord.",
+            "Med flerspråkig transkription på ligger kort 4 och 5 på dina övriga arbetsspråk. Kantonesiska har ett eget talat skriftspråk."
+          ]
+        },
+        {
+          "title": "Inspelningar och Arkiv",
+          "items": [
+            "På en inspelnings sida (Arkiv › Inspelningar), medan ljudet fortfarande sparas (i 24 timmar efter inspelningen), tryck på en rad för att spela från den; raden som spelas markeras.",
+            "Tryck och håll på en rad för att kopiera den.",
+            "En dag som öppnas från Arkiv visar sitt datum överst; tryck på Arkiv igen för att gå tillbaka till startsidan."
+          ]
+        },
+        {
+          "title": "Integritetspolicy och villkor",
+          "items": [
+            "Integritetspolicyn och villkoren i appen har nu avsnitten om Mac, möten och Apple Watch på de andra 12 språken."
+          ]
+        }
+      ]
+    },
+    "1.4.1": {
+      "title": "Möten när du vill, tydligare platser",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "När den inte lyssnar är de två knapparna ”Lyssna hela dagen” och ”Möte”. ”Möte” visas när Möten är på i Inställningar på din iPhone.",
+            "Ett möte startar direkt, på det språk som valts i Inställningar; tryck på ”Möte · språk” under mötet för att byta.",
+            "När din klocka noterar platser säger lyssningsskärmen det; om platsbehörigheten är av talar den om var du slår på den."
+          ]
+        },
+        {
+          "title": "Möten",
+          "items": [
+            "En ny Möten-omkopplare i Inställningar › Funktioner, avstängd som standard. Slå på den och välj under ”Mötesspråk” vilket språk möten startar på; där kan du också lägga till språk.",
+            "På I dag sitter ”Starta ett möte” bredvid ”Spela in på iPhone” och frågar inte längre efter språk; tryck på texten under ett möte för att byta."
+          ]
+        },
+        {
+          "title": "Platser",
+          "items": [
+            "”Platser från” är nu en rad: öppna den för att välja iPhone eller Apple Watch.",
+            "Mina platser: Hem, Jobb och de andra är typer, inte namn, och två platser av samma typ skiljs åt på sin gata.",
+            "Den hittade adressen sparas. Om den är lite fel kan du dra kartan för att flytta platsen lite (upp till 250 m) eller rätta husnumret. Ditt eget namn på platsen är valfritt.",
+            "Platser som tidigare namngetts med dessa ord blir typer."
+          ]
+        },
+        {
+          "title": "DayRecall för Mac (beta)",
+          "items": [
+            "Åtgärdar att Mac-appen fryser direkt efter att den öppnats på macOS 27."
+          ]
+        }
+      ]
+    },
+    "1.4.0": {
+      "title": "Pausa klockan, möten och namngivna platser",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "En skärm visar dess läge, med två runda knappar: pausa och avsluta.",
+            "Pausa i 15 minuter, 30 minuter eller en timme, så startar den av sig själv, aldrig efter dina lyssningstider; håll inne för att avsluta dagen."
+          ]
+        },
+        {
+          "title": "Möten",
+          "items": [
+            "Starta ett möte på din iPhone eller din klocka och välj dess språk; det visas som en egen sträcka på tidslinjen.",
+            "Efter tre timmar frågar din klocka om du fortfarande är med i mötet.",
+            "När mötet slutar kan du få mötesanteckningar. Om de kommer från ditt eget API frågar DayRecall separat efter ditt tillstånd för det.",
+            "Ett möte är detsamma på din iPhone och din Mac."
+          ]
+        },
+        {
+          "title": "Platser",
+          "items": [
+            "Flera besök på samma ställe blir en plats. Ett namn som inte kan hittas försöks igen, och visas som ”Namnlös plats” om det fortfarande inte går.",
+            "Namnge en plats på kartan och välj hur långt den sträcker sig (Inställningar › Mina platser): senare besök där får dess namn, och det ingår i dina säkerhetskopior.",
+            "Din klocka kan anteckna platser medan den lyssnar (av tills du slår på det); dess plats ersätter då din iPhones."
+          ]
+        },
+        {
+          "title": "Min röst",
+          "items": [
+            "Lägg till upp till fyra personer du ofta pratar med (ett namn och hur du känner dem); deras namn visas på tidslinjen, affischen och texten du exporterar."
+          ]
+        },
+        {
+          "title": "Snabbare vägar in",
+          "items": [
+            "Tryck och håll på appikonen för Fråga, Att göra och Sammanfatta.",
+            "”Visa inställningar” på en avisering öppnar appens egna aviseringsinställningar."
+          ]
+        },
+        {
+          "title": "Första inställningen",
+          "items": [
+            "Omkopplarna för karta, Hälsa och vem som talar startar avstängda; slå på dem när du vill ha dem."
+          ]
+        },
+        {
+          "title": "DayRecall för Mac (beta)",
+          "items": [
+            "Ett riktigt Mac-fönster: en sidopanel, en kompakt lista över poster, en detaljkolumn, en månadskalender, sökning på ord, delning och en menyradsikon. Du kan också exportera och importera poster.",
+            "Stabilare synkronisering mellan enheter vid dålig nätanslutning: mötesanteckningar synkas nu, och en telefon som går bort blockerar inte längre anslutningen."
+          ]
+        }
+      ]
+    },
+    "1.3.4": {
+      "title": "En rättelse för sammanfattningen",
+      "groups": [
+        {
+          "title": "Rättelse",
+          "items": [
+            "Om du hade spelat in din egen röst kunde ”Sammanfatta din dag” frysa skärmen, eller så stängdes appen när du kom tillbaka till den och måste svepas bort. Det händer inte längre.",
+            "De som aldrig spelat in sin röst påverkades inte."
+          ]
+        }
+      ]
+    },
     "1.3.3": {
       "title": "Inställningar, förenklade",
-      "items": [
-        "Mötesspråket ligger nu under Flerspråkig transkription och visas när du har ett andra arbetsspråk.",
-        "Lyssningstider tar en rad per dag. En dag du slår på återanvänder tiderna från dagen innan, och en ändrad tid kan gälla alla lyssningsdagar på en gång.",
-        "Avancerade inställningar är en kort lista som öppnar varje del, och Data och säkerhetskopior har fått en ny design.",
-        "Åtgärdar en sammanfattningssida som kunde frysa, Apple Watch-överföringar som kunde fastna och ett problem med kompatibiliteten för säkerhetskopior."
+      "groups": [
+        {
+          "title": "Inställningar",
+          "items": [
+            "Mötesspråk ligger nu under Flerspråkig transkription och heter ”Mötesspråk”. Det visas när du har ett andra arbetsspråk: en rad, Av eller ett av dina språk.",
+            "Med flerspråkig transkription av kan din klocka inte längre visa en mötesspråksknapp som du inte kan använda, och ditt tidigare val sparas.",
+            "Lyssningstider har en rad per dag (dag, tid, omkopplare); en dag du slår på återanvänder tiderna för lyssningsdagen före den.",
+            "Ändrar du en dags tid får du frågan om varje lyssningsdag ska matcha; ett tryck tillämpar det.",
+            "Avancerade inställningar är en kort lista i tre delar, Lyssning, Identifiering och Data; öppna en för att justera den. Förklaringar till reglage och omkopplare finns bakom ett ”i”.",
+            "Data och säkerhetskopior har en ny look, och innan du exporterar en säkerhetskopia med hälsodata sammanfattar ett kort de tre saker du behöver veta.",
+            "Utförlig loggning kan vara på tills du stänger av den (som standard stängs den av efter 24 timmar)."
+          ]
+        },
+        {
+          "title": "Rättelser",
+          "items": [
+            "Sidan Sammanfattning fryser inte längre skärmen.",
+            "Fastnade överföringar från Apple Watch försöks igen.",
+            "Ett kompatibilitetsproblem med arkivsäkerhetskopior."
+          ]
+        }
       ]
     },
     "1.3.2": {
       "title": "Ny röstmatchning och säkerhetskopior",
-      "items": [
-        "”Min röst” använder en ny modell för röstmatchning. Spela in din röst en gång till efter uppdateringen; tidigare märkningar finns kvar.",
-        "Språkigenkänningen avgör utifrån 6 sekunders tal som standard; välj 3 eller 6 sekunder under Avancerade inställningar.",
-        "Säkerhetskopiera ditt arkiv till en fil eller till din privata iCloud, och återställ det.",
-        "Rättningar för att stänga av delning med ditt API och för avbrutna förfrågningar. Ändringar du gör medan ett samtal transkriberas på nytt behålls."
+      "groups": [
+        {
+          "title": "Min röst",
+          "items": [
+            "Min röst använder en ny röstmodell. Spela in din röst en gång till efter uppdateringen; tidigare talarmärkningar finns kvar."
+          ]
+        },
+        {
+          "title": "Språk",
+          "items": [
+            "Språkigenkänning lyssnar på sex sekunder tal som standard; välj tre eller sex sekunder i Avancerade inställningar."
+          ]
+        },
+        {
+          "title": "Säkerhetskopiering och återställning",
+          "items": [
+            "Exportera ditt arkiv som en fil eller säkerhetskopiera det till din egen privata iCloud, och återställ det senare.",
+            "Hälsodata och kalenderhistorik som hämtas från en säkerhetskopia hålls åtskilda och framställs aldrig som den nya telefonens egna data."
+          ]
+        },
+        {
+          "title": "Rättelser",
+          "items": [
+            "Problem när du återkallar samtycket till ditt API eller avbryter en begäran.",
+            "Dina redigeringar består medan ett samtal transkriberas på nytt."
+          ]
+        }
       ]
     },
     "1.3.1": {
       "title": "Alla 14 språk, smidigare dagar",
-      "items": [
-        "Varje skärm, även de nya, finns på alla 14 språk.",
-        "På Mac finns samma 17 språk för transkribering som på iPhone, och förenklad och traditionell kinesiska särskiljs.",
-        "Att växla mellan dagar går smidigare.",
-        "Talad tid räknar bara riktigt tal, och en tyst inspelning säger inte längre att den transkriberats."
+      "groups": [
+        {
+          "title": "Språk",
+          "items": [
+            "Varje skärm, även de nya, finns på alla 14 språk: enhetsanslutningar, modellkatalogen, behörighetsnoteringar, affischen, köpskärmarna och mer.",
+            "Integritetsnoteringarna offline på alla 14 språk stämmer med webbplatsen: hur länge ljud sparas, språkrättelse och hur exporterade och säkerhetskopierade kopior sparas."
+          ]
+        },
+        {
+          "title": "Smidigare och mer exakt",
+          "items": [
+            "Att byta dag går smidigare, med mindre upprepad räkning och kartarbete.",
+            "Talad tid räknar bara de delar där någon faktiskt pratar.",
+            "En tyst inspelning slutar normalt och säger inte längre att transkriptionen är klar."
+          ]
+        },
+        {
+          "title": "DayRecall för Mac (beta)",
+          "items": [
+            "Transkriptionsspråken motsvarar iPhones 17 val, skiljer förenklad och traditionell kinesiska åt och följer din region."
+          ]
+        }
       ]
     },
     "1.3.0": {
       "title": "Mac, dagliga affischer och redigering",
-      "items": [
-        "DayRecall för Mac, i beta: spela in ett möte på plats eller online, pausa och återuppta, spara dina möten och uppgifter, och koppla ihop din iPhone och Apple Watch över ditt lokala nätverk. Transkribering på Mac kräver en Mac som stöds med macOS 26.",
-        "Dagliga affischer: tre stilar och en rad du väljer, som bild eller kort video.",
-        "Redigera ett samtal: byt namn på det, rätta en rad eller gå tillbaka till originalet. Så länge ljudet ännu finns kvar kan du också rätta språket.",
-        "Välj mötesspråk från din Apple Watch.",
-        "Spara en sammanfattning i Notion eller Obsidian.",
-        "Åtgärdar att klockan visade att den lyssnade efter att den slutat, och att dess påminnelse om att sluta drogs tillbaka för tidigt."
+      "groups": [
+        {
+          "title": "Dagaffisch",
+          "items": [
+            "Tre utseenden och en rad du väljer från din dag, sparade som bild eller kort video.",
+            "Du kan också göra en med Genvägar."
+          ]
+        },
+        {
+          "title": "Redigera samtal",
+          "items": [
+            "Byt namn på ett samtal, redigera en rad eller återställ den ursprungliga texten.",
+            "Medan ljudet finns kvar kan du ändra ett samtals språk för att transkribera det igen; välj mötesspråk direkt på din Apple Watch."
+          ]
+        },
+        {
+          "title": "Kopplingar och läsning",
+          "items": [
+            "Spara sammanfattningar till Notion eller Obsidian.",
+            "Med ditt eget API kan modellkatalogen uppdateras; den går bara online när du trycker.",
+            "Öppna webbplatsen och de juridiska dokumenten i appen."
+          ]
+        },
+        {
+          "title": "DayRecall för Mac (beta)",
+          "items": [
+            "Ett riktigt arkiv på Mac: spela in möten på plats eller online, pausa och återuppta dem, och hantera möten, poster och uppgifter.",
+            "Fungerar med din ihopkopplade iPhone och Apple Watch över ditt lokala nätverk."
+          ]
+        },
+        {
+          "title": "Rättelser",
+          "items": [
+            "Klockan visade att den lyssnade efter att den slutat.",
+            "Stoppåminnelser tas inte bort för tidigt."
+          ]
+        }
       ]
     },
     "0.2.34": {
       "title": "Mac går med i betan",
-      "items": [
-        "DayRecall för Mac går med i betan: importera mötestranskriptioner, och låt en parkopplad Mac transkribera åt din iPhone över ditt krypterade lokala nätverk.",
-        "En gratis 3-dagars provperiod och ett engångsköp läggs till, för när DayRecall finns i App Store. Under betan är den gratis.",
-        "Sidan Om nu har länkar för att betygsätta DayRecall, dela appen och besöka webbplatsen."
+      "groups": [
+        {
+          "title": "DayRecall för Mac (beta)",
+          "items": [
+            "DayRecall för Mac går med i betan: ett inbyggt fönster, mötestext du kan importera och möten som sparas på egen plats.",
+            "När den är ihopkopplad kan en Mac med sin språkmodell redo transkribera åt din iPhone över en krypterad lokal anslutning och skicka texten tillbaka; om Mac inte kan gör din iPhone det.",
+            "Mötestext på Mac kan synkas via din egen privata iCloud, när du slår på det."
+          ]
+        },
+        {
+          "title": "Provperiod och köp (beta)",
+          "items": [
+            "Betan får 3-dagars provperioden och engångsupplåsningen så att köpflödet kan testas; inget debiteras i betan.",
+            "Innan en provperiod startar kontrollerar DayRecall att tal och din valda AI är redo; om inte startar inte klockan."
+          ]
+        },
+        {
+          "title": "Om",
+          "items": [
+            "Betygsätt DayRecall, dela den eller öppna webbplatsen från Om."
+          ]
+        }
       ]
     },
     "0.2.33": {
       "title": "Lyssningen återupptas av sig själv",
+      "groups": [
+        {
+          "title": "Efter ett avbrott",
+          "items": [
+            "Efter ett alarm, ett samtal eller Siri fortsätter DayRecall att försöka i ungefär en minut och återupptar inspelningen av sig själv; den säger bara till om den inte kan.",
+            "Påminnelsen ”Lyssning pausad” kommer inte direkt: den väntar tills mikrofonen har varit ledig i 20 sekunder utan att inspelningen återupptas, och upprepas en gång 5 minuter senare. Om inspelningen startar igen av sig själv hörs inget.",
+            "Medan ett alarm fortfarande ringer eller ett samtal pågår påminns du inte mitt i.",
+            "iPhones notis ”Apple Watch slutade spela in” väntar på samma sätt och försvinner när klockan lyssnar igen.",
+            "Välj när påminnelser kommer i Inställningar › Lyssningstider › Om inspelningen pausas."
+          ]
+        },
+        {
+          "title": "Fråga och tidslinjen",
+          "items": [
+            "Bättre på frågor om vad du gjorde, som ”vad pratade vi om medan jag sprang?”; om första sökningen inte hittar något försöker den en gång till med andra ord.",
+            "Korta promenader på tidslinjen döljs inte längre bakom långa samtal."
+          ]
+        },
+        {
+          "title": "Språk",
+          "items": [
+            "Skärmarna och de juridiska dokumenten offline finns helt på alla 14 språk."
+          ]
+        }
+      ]
+    },
+    "0.2.32": {
+      "title": "Ladda ner den från App Store",
+      "tag": "App Store · Första offentliga version",
       "items": [
-        "När ett larm, ett samtal eller Siri avbryter, går din Apple Watch tillbaka till lyssning av sig själv, och påminner dig bara om den inte kan.",
-        "Välj när den påminnelsen kommer under Inställningar › Lyssningstider › Om lyssningen pausar.",
-        "Bättre på frågor om vad du gjorde, som ”Vad sa jag när jag sprang?”",
-        "Korta promenader döljs inte längre bakom långa samtal på tidslinjen."
+        "I App Store från 30 oktober, med allt i versionerna nedan.",
+        "Åtgärdar en krasch vid start i 0.2.31."
       ]
     },
     "0.2.29": {
       "title": "Sammanfattningar, skrivna i bakgrunden",
-      "items": [
-        "Sammanfatta dagen skriver i bakgrunden: lämna sidan, så sparas sammanfattningen med den dagen.",
-        "Innan den startar ser du ungefär hur lång tid den tar; medan den arbetar visas steget och tiden kvar.",
-        "Inte tillräckligt bra? Lämna dagen till en AI-app och hämta tillbaka svaret, sparat bredvid dagen.",
-        "Sammanfatta varje dag: Påminn mig, Skriv åt mig eller Av.",
-        "Om den här iPhonen inte kan skriva en sammanfattning säger den varför och erbjuder två andra sätt.",
-        "En påminnelse på klockan när lyssningstiderna börjar, och en gång till på din iPhone 20 minuter senare om du inte har börjat.",
-        "En krasch vid start i 0.2.31 åtgärdades samma dag, i 0.2.32."
+      "groups": [
+        {
+          "title": "Sammanfatta din dag",
+          "items": [
+            "Skrivs i bakgrunden: lämna sidan eller byt flik medan den arbetar. Ett tunt fält ovanför varje flik visar steget och tiden kvar, och du kan stoppa när som helst.",
+            "En färdig sammanfattning sparas med sin dag. På I dag står det ”Din sammanfattning · skriven kl. …”; tryck för att läsa den och sedan kopiera, dela, skicka dess lista till Att bekräfta, skriva den på nytt eller radera den.",
+            "Innan den startar ser du ungefär hur lång tid det tar; för över en minut förklarar den först att du kan lämna sidan, att DayRecall måste vara öppen, och de snabbare vägarna.",
+            "Stoppa och starta igen, eller försök igen efter ett fel, läser inte de delar som redan lästs.",
+            "När appen inte är i förgrunden eller iPhone är varm väntar modellen på enheten och fortsätter när du är tillbaka och den har svalnat.",
+            "Om du har lämnat appen när den är klar säger en tyst notis att din sammanfattning är klar (stäng av den i Inställningar › Aviseringar)."
+          ]
+        },
+        {
+          "title": "Fråga en starkare AI",
+          "items": [
+            "Inte tillräckligt bra? Ge dagen till en AI-app och ta tillbaka dess svar: det sparas med dagen, bredvid iPhones egen sammanfattning.",
+            "När den här iPhonen inte kan skriva en sammanfattning (ingen Apple Intelligence, av, modellen laddas fortfarande ner eller ditt API inte är inställt), säger den varför och visar de två andra sätten."
+          ]
+        },
+        {
+          "title": "Sammanfatta varje dag",
+          "items": [
+            "Inställningar › AI-motor › Sammanfatta varje dag: Påminn mig (standard), Skriv den åt mig eller Av.",
+            "”Påminn mig” skickar en tyst notis en halvtimme efter att dina lyssningstider slutar, om dagen har över 5 minuters tal och ingen sammanfattning ännu."
+          ]
+        },
+        {
+          "title": "Påminnelser och tillförlitlighet",
+          "items": [
+            "När dina lyssningstider börjar påminner din klocka dig en gång; om inget startat 20 minuter senare påminner din iPhone dig igen, och båda försvinner när inspelningen startar.",
+            "Fråga blir klar i tid även när modellen svarar långsamt, och en sen sammanfattning kan inte komma tillbaka efter att du rensat ditt arkiv."
+          ]
+        }
       ]
     },
     "0.2.21": {
       "title": "De första betorna som DayRecall",
-      "items": [
-        "Inspelningen är mer tillförlitlig: Apple Watch-överföringar görs om, borttagna inspelningar förblir borttagna, och lyssning och påminnelser återhämtar sig efter ett avbrott.",
-        "Nya Inställningar ligger i sista fliken, i tydliga grupper, och vid första konfigurationen väljer du vad DayRecall spelar in.",
-        "Dagens första skärm är till för din dag: ett smalare lyssningskort och en liten sammanfattningsrad som du kan stänga.",
-        "Hälsa på tidslinjen har fått ett nytt utseende. När du lämnar en dag till en AI-app kan du välja att ta med hälsoetiketter och värden; det är av som standard.",
-        "Med ditt eget API väljer du modell och resonemangsnivå.",
-        "Läs användarvillkoren och integritetspolicyn i appen, offline, på 14 språk.",
-        "När lyssningen slutar säger påminnelsen att synka ungefär när texten blir klar."
+      "groups": [
+        {
+          "title": "Mer tillförlitlig inspelning",
+          "items": [
+            "Inspelning på iPhone återhämtar sig av sig själv efter ett avbrott; överföringar från Apple Watch försöks igen, och raderade inspelningar kommer inte tillbaka.",
+            "Om en inspelning från en offline-klocka inte kan placeras före eller efter något du raderat, sparas den separat så att du kan återställa eller radera den.",
+            "Ett stopp som inte registrerades registreras senare; när talmodellen är installerad transkriberas väntande inspelningar, även äldre månader, och deras översättningar blir sökbara."
+          ]
+        },
+        {
+          "title": "I dag",
+          "items": [
+            "Första skärmen är till för din dag: lyssningskortet visar bara läget, dagens talade tid och inspelningsknappen, med en liten varning endast när något behöver dig.",
+            "”Sammanfatta din dag” är en liten rad du kan stänga, och en knapp överst öppnar den ändå.",
+            "Tysta stunder utan funna ord aviserar inte längre; framsteg i transkriptionen och fel du kan försöka igen finns i Inställningar › Enheter."
+          ]
+        },
+        {
+          "title": "Inställningar och första inställningen",
+          "items": [
+            "Inställningar är sista fliken, grupperad i Allmänt, Funktioner, Hjälp och Om; avancerade alternativ har en egen sida, med förklaringar bakom ett ”i”.",
+            "I första inställningen väljer du vad DayRecall håller koll på.",
+            "Att ställa in din klocka så att den går tillbaka till DayRecall när du lyfter handleden tar fyra numrerade steg."
+          ]
+        },
+        {
+          "title": "Att göra och påminnelser",
+          "items": [
+            "Att göra och dina Påminnelser håller takten: inga dubbla påminnelser, och att något är klart synkas.",
+            "När lyssningen slutar påminns du om att synka och får veta ungefär när texten är klar; från andra dagen som väntar på synk kan påminnelsen låta."
+          ]
+        },
+        {
+          "title": "Hälsa",
+          "items": [
+            "Hälsa på tidslinjen har en ny look, och en dag med bara ett träningspass visar det också.",
+            "När du ger en dag till en AI-app eller skriver en sammanfattning med ditt eget API kan du lägga till Hälsa-etiketter och värden (puls, steg, sträcka och mer). Det är avstängt som standard, och saknade värden görs aldrig om till nollor."
+          ]
+        },
+        {
+          "title": "AI och integritet",
+          "items": [
+            "Med ditt eget API väljer du modell och hur hårt den resonerar.",
+            "När du tillåtit ditt API används det för att hitta uppgifter, skriva sammanfattningar och svara på frågor; ljud skickas aldrig, och du frågas igen innan mer delas.",
+            "Om det misslyckas att spara en API-nyckel behålls den gamla nyckeln och du får veta det.",
+            "Läs villkoren och integritetspolicyn offline i appen, på alla 14 språk."
+          ]
+        },
+        {
+          "title": "Exempeldag",
+          "items": [
+            "Exempeldagen har talare, promenader, träningspass, puls och översättningar, och tar dig från en uppgift tillbaka till orden och stunden."
+          ]
+        }
       ]
     }
   },
@@ -909,5 +1270,8 @@
   "health_09": "Animation: Hälsa aktiveras, tidslinjen visar en promenad och puls över det vanliga och en fråga om före läggdags hittar det som sades.",
   "not_found_title": "Sidan hittades inte — DayRecall",
   "not_found_heading": "Den här sidan finns inte.",
-  "not_found_home": "DayRecalls startsida"
+  "not_found_home": "DayRecalls startsida",
+  "updates_review": "I App Store-granskning",
+  "updates_appstore": "App Store",
+  "updates_latest_review": "I App Store-granskning: {title}"
 }

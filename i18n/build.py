@@ -110,7 +110,36 @@ def date_text(code, iso, year=True):
     y, m, d = (int(part) for part in iso.split('-'))
     if code in ('zh-Hans', 'zh-Hant', 'ja'):
         return (f'{y}年' if year else '') + f'{m}月{d}日'
+    if code == 'ko':
+        return (f'{y}년 ' if year else '') + f'{m}월 {d}일'
+    if code in LOCAL_MONTHS:
+        names, pattern, pattern_no_year = LOCAL_MONTHS[code]
+        day = '1er' if code == 'fr' and d == 1 else str(d)
+        return (pattern if year else pattern_no_year).format(d=day, m=names[m - 1], y=y)
     return f'{MONTHS[m - 1]} {d}, {y}' if year else f'{MONTHS[m - 1]} {d}'
+
+
+# How each translated language writes a day: month names, then the pattern with and without the year.
+LOCAL_MONTHS = {
+    'de': ('Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split(),
+           '{d}. {m} {y}', '{d}. {m}'),
+    'da': ('januar februar marts april maj juni juli august september oktober november december'.split(),
+           '{d}. {m} {y}', '{d}. {m}'),
+    'fr': ('janvier février mars avril mai juin juillet août septembre octobre novembre décembre'.split(),
+           '{d} {m} {y}', '{d} {m}'),
+    'es': ('enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split(),
+           '{d} de {m} de {y}', '{d} de {m}'),
+    'pt-PT': ('janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro'.split(),
+              '{d} de {m} de {y}', '{d} de {m}'),
+    'it': ('gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre'.split(),
+           '{d} {m} {y}', '{d} {m}'),
+    'nl': ('januari februari maart april mei juni juli augustus september oktober november december'.split(),
+           '{d} {m} {y}', '{d} {m}'),
+    'sv': ('januari februari mars april maj juni juli augusti september oktober november december'.split(),
+           '{d} {m} {y}', '{d} {m}'),
+    'tr': ('Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık'.split(),
+           '{d} {m} {y}', '{d} {m}'),
+}
 
 
 def version_label(entry):

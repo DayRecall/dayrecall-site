@@ -120,7 +120,7 @@
   "final_02": "Presto disponibile sull’App Store",
   "final_03": "Scarica DayRecall su App Store ",
   "final_04": "Ideale con Apple Watch · Funziona anche solo con iPhone · In 14 lingue",
-  "final_05": "Download gratuito, con ogni funzione gratis per 3 giorni. Poi acquistala una sola volta, e ogni futuro aggiornamento è incluso. Nessun abbonamento.",
+  "final_05": "Gratis da scaricare dall’App Store: provala tutta per 3 giorni, poi sbloccala una volta sola, e ogni aggiornamento futuro è incluso. Nessun abbonamento.",
   "foot_01": "Apple Watch e iPhone sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi e regioni.",
   "faq": [
     {
@@ -283,23 +283,23 @@
       ]
     },
     {
-      "title": "Disponibilità e assistenza",
+      "title": "Disponibilità e aiuto",
       "items": [
         {
-          "q": "Quando posso avere DayRecall?",
-          "a": "DayRecall è in beta e arriverà presto sull’App Store."
+          "q": "Dove posso scaricare DayRecall?",
+          "a": "Scaricala dall’<a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Funziona su iPhone, e Apple Watch è facoltativo."
         },
         {
           "q": "Quanto costa DayRecall?",
-          "a": "DayRecall sarà scaricabile gratis dall’App Store. Una volta configurata l’app, puoi avviare una prova gratuita di 3 giorni con tutte le funzioni: i 3 giorni iniziano quando avvii la prova, non quando scarichi l’app. Poi un unico acquisto la sblocca, e ogni futuro aggiornamento è incluso: non c’è abbonamento e nulla si rinnova. Il prezzo viene mostrato prima che la prova inizi. Se non acquisti, ciò che hai conservato resta tuo, da leggere, cercare, esportare ed eliminare. Mentre DayRecall è in beta su TestFlight, è gratuita."
+          "a": "DayRecall si scarica gratis dall’App Store. Provala gratuitamente per 3 giorni, poi sbloccala con un unico acquisto in app; l’App Store mostra il prezzo del tuo Paese prima dell’acquisto. Ogni aggiornamento futuro è incluso: nessun abbonamento, nulla si rinnova. Se hai scaricato DayRecall prima del 7 novembre 2026 (UTC), è già sbloccata del tutto."
         },
         {
-          "q": "Si continua a sviluppare DayRecall?",
-          "a": "Sì. Ogni versione è descritta in <a href=\"/it/updates/\">Novità</a>, dalla più recente, con la data di uscita. Acquistala una sola volta, e ogni futuro aggiornamento è incluso."
+          "q": "DayRecall è ancora in sviluppo?",
+          "a": "Sì. Ogni versione è descritta in <a href=\"/updates/\">Novità</a>, dalla più recente, con la data di uscita. Sbloccala una volta sola, e ogni aggiornamento futuro è incluso."
         },
         {
-          "q": "Come ricevo assistenza?",
-          "a": "Scrivi a support@dayrecall.com indicando quando è successo e su quale dispositivo. Un registro ci aiuta più di ogni altra cosa: <strong>Impostazioni › Opzioni sviluppatore › Registri › Condividi registro</strong>."
+          "q": "Come ricevo aiuto?",
+          "a": "Scrivi a support@dayrecall.com dicendoci quando è successo e su quale dispositivo. Un registro aiuta moltissimo: <strong>Impostazioni › Opzioni sviluppatore › Log › Condividi log</strong>."
         }
       ]
     }
@@ -351,92 +351,453 @@
   "faq_page_more": "Hai ancora una domanda?",
   "faq_page_more_text": "Scrivici e ti risponderemo.",
   "updates_page_title": "Novità — DayRecall",
-  "updates_page_description": "Ogni aggiornamento di DayRecall, dal più recente: cosa è cambiato in ogni versione beta e quando è uscita.",
+  "updates_page_description": "Ogni aggiornamento di DayRecall, dal più recente: cosa è cambiato in ogni versione e quando è uscita.",
   "updates_kicker": "Novità",
   "updates_heading": "Ogni aggiornamento, nero su bianco.",
-  "updates_lead": "DayRecall è in beta su TestFlight e presto disponibile sull’App Store. Ecco cosa è cambiato in ogni versione, dalla più recente. Acquistala una sola volta, e ogni futuro aggiornamento è incluso.",
+  "updates_lead": "Scarica DayRecall dall’<a href=\"https://apps.apple.com/app/id6824073384\">App Store</a>. Ogni nuova versione viene prima testata in beta su TestFlight; ecco cosa è cambiato in ciascuna, dalla più recente. Sbloccala una volta sola, e ogni aggiornamento futuro è incluso.",
   "updates_summary": "{n} versioni dal {date}",
   "updates_beta": "Beta",
-  "updates_latest": "Aggiornato {date}: {title}",
+  "updates_latest": "Aggiornato il {date}: {title}",
   "updates_follow_text": "Pubblichiamo notizie su TikTok, X e Instagram. Per assistenza o feedback, scrivi a <a href=\"mailto:support@dayrecall.com\">support@dayrecall.com</a>: è lì che rispondiamo.",
   "updates": {
+    "1.4.3": {
+      "title": "Gratis da scaricare: provala, poi sbloccala una volta sola",
+      "lead": "La prima versione sull’App Store dalla 0.2.32, con tutto ciò che va dalla 0.2.33 alla 1.4.2 qui sotto.",
+      "groups": [
+        {
+          "title": "Prezzo e sblocco",
+          "items": [
+            "Gratis da scaricare. Inizia con una prova di 3 giorni di tutto, poi sblocca DayRecall con un unico acquisto. Nessun abbonamento, nessun addebito automatico.",
+            "La prova inizia quando tocchi «Inizia la prova gratuita di 3 giorni» e Apple lo conferma, e dura 72 ore di seguito. Reinstallare, cambiare telefono o ripristinare gli acquisti non la fa ripartire.",
+            "Un solo acquisto sblocca DayRecall su iPhone e Apple Watch.",
+            "Se hai scaricato DayRecall prima del 7 novembre (UTC), a pagamento o gratis, per te è sbloccata del tutto: niente prova, niente da pagare.",
+            "Dopo la prova, le nuove registrazioni, le importazioni audio e le nuove attività di IA richiedono lo sblocco. Ciò che hai già acquisito resta tuo da vedere, cercare, esportare ed eliminare, e le registrazioni già sull’orologio continuano ad arrivare e a diventare testo."
+          ]
+        },
+        {
+          "title": "Correzioni",
+          "items": [
+            "Una riga corretta su un altro dispositivo non conserva più la vecchia traduzione: attende una nuova.",
+            "Le note delle riunioni vengono di nuovo scritte quando si trascrive altro della riunione o si corregge una riga.",
+            "Una riunione avviata sull’iPhone tiene l’Apple Watch in ascolto fino alla fine, anche oltre i tuoi orari di ascolto (fino a 12 ore)."
+          ]
+        }
+      ]
+    },
+    "1.4.2": {
+      "title": "Avvia l’orologio dall’iPhone",
+      "groups": [
+        {
+          "title": "Oggi e Apple Watch",
+          "items": [
+            "Quando l’Apple Watch è collegato ma non ascolta, il primo pulsante della scheda di ascolto è «Avvia su Apple Watch», e quello dell’iPhone diventa «Registra invece su iPhone». La scheda dell’orologio in Dispositivi ha lo stesso pulsante.",
+            "Dopo averlo toccato, alza il polso e apri DayRecall sull’orologio: parte da sola, e il suggerimento scompare appena l’orologio ascolta.",
+            "Un tocco conta una volta sola: se apri l’orologio più di 5 minuti dopo, o se nel frattempo si è fermato, non parte da solo."
+          ]
+        },
+        {
+          "title": "La mia voce",
+          "items": [
+            "Tutte e cinque le schede voce ora si leggono da un testo; nessuna chiede di rispondere con parole tue.",
+            "Con la trascrizione multilingue attiva, le schede 4 e 5 sono nelle altre lingue di lavoro. Il cantonese ha un proprio testo parlato."
+          ]
+        },
+        {
+          "title": "Registrazioni e Archivio",
+          "items": [
+            "Nella pagina di una registrazione (Archivio › Registrazioni), finché l’audio è conservato (per 24 ore dalla registrazione), tocca una riga per riprodurre da lì; la riga in riproduzione è segnata.",
+            "Tieni premuta una riga per copiarla.",
+            "Una giornata aperta dall’Archivio mostra la sua data in alto; tocca di nuovo Archivio per tornare alla pagina iniziale."
+          ]
+        },
+        {
+          "title": "Informativa sulla privacy e condizioni",
+          "items": [
+            "L’informativa sulla privacy e le condizioni nell’app hanno ora le sezioni su Mac, riunioni e Apple Watch nelle altre 12 lingue."
+          ]
+        }
+      ]
+    },
+    "1.4.1": {
+      "title": "Riunioni quando vuoi, luoghi più chiari",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Quando non ascolta, i due pulsanti sono «Ascolta tutto il giorno» e «Riunione». «Riunione» compare una volta attivate le Riunioni in Impostazioni sull’iPhone.",
+            "Una riunione parte subito, nella lingua scelta in Impostazioni; tocca «Riunione · lingua» durante la riunione per cambiare.",
+            "Quando l’orologio registra i luoghi, la sua schermata di ascolto lo dice; se l’autorizzazione alla posizione è disattivata, ti indica dove attivarla."
+          ]
+        },
+        {
+          "title": "Riunioni",
+          "items": [
+            "Un nuovo interruttore Riunioni in Impostazioni › Funzioni, disattivato di default. Attivalo, poi scegli sotto «Lingua delle riunioni» la lingua con cui iniziano; puoi anche aggiungere lingue.",
+            "In Oggi, «Avvia una riunione» sta accanto a «Registra su iPhone» e non chiede più una lingua; tocca la sua etichetta durante una riunione per cambiare."
+          ]
+        },
+        {
+          "title": "Luoghi",
+          "items": [
+            "«Luoghi da» è ora una sola riga: aprila per scegliere iPhone o Apple Watch.",
+            "I miei luoghi: Casa, Lavoro e gli altri tipi sono categorie, non nomi, e due luoghi dello stesso tipo si distinguono dalla via.",
+            "L’indirizzo trovato viene conservato. Se è un po’ impreciso, trascina la mappa per spostare il luogo di poco (fino a 250 m) o correggi il numero civico. Il nome personale è facoltativo.",
+            "I luoghi chiamati prima con queste parole diventano categorie."
+          ]
+        },
+        {
+          "title": "DayRecall per Mac (beta)",
+          "items": [
+            "Risolve il blocco dell’app Mac subito dopo l’apertura su macOS 27."
+          ]
+        }
+      ]
+    },
+    "1.4.0": {
+      "title": "Metti in pausa l’orologio, riunioni e luoghi con nome",
+      "groups": [
+        {
+          "title": "Apple Watch",
+          "items": [
+            "Una schermata mostra lo stato, con due pulsanti rotondi: pausa e fine.",
+            "Pausa di 15 minuti, 30 minuti o un’ora, poi riprende da sola, mai oltre i tuoi orari di ascolto; tieni premuto per chiudere la giornata."
+          ]
+        },
+        {
+          "title": "Riunioni",
+          "items": [
+            "Avvia una riunione sull’iPhone o sull’orologio e scegli la lingua; appare come un tratto a sé sulla cronologia.",
+            "Dopo tre ore, l’orologio chiede se sei ancora in riunione.",
+            "Quando finisce puoi ottenere le note della riunione. Se arrivano dalla tua API, DayRecall chiede a parte il tuo permesso.",
+            "Una riunione è la stessa sull’iPhone e sul Mac."
+          ]
+        },
+        {
+          "title": "Luoghi",
+          "items": [
+            "Più soste nello stesso punto diventano un solo luogo. Un nome non trovato viene riprovato, e appare come «Luogo senza nome» se ancora non si trova.",
+            "Dai un nome a un luogo sulla mappa e imposta il raggio (Impostazioni › I miei luoghi): le soste successive lì ricevono il suo nome, ed entra nei backup.",
+            "L’orologio può annotare i luoghi mentre ascolta (disattivato finché non lo attivi); la sua posizione sostituisce quella dell’iPhone."
+          ]
+        },
+        {
+          "title": "La mia voce",
+          "items": [
+            "Aggiungi fino a quattro persone con cui parli spesso (un nome e come le conosci); i loro nomi compaiono sulla cronologia, sul poster e nel testo che esporti."
+          ]
+        },
+        {
+          "title": "Accessi rapidi",
+          "items": [
+            "Tieni premuta l’icona dell’app per Chiedi, Da fare e Riepilogo.",
+            "«Mostra impostazioni» su una notifica apre le impostazioni delle notifiche dell’app."
+          ]
+        },
+        {
+          "title": "Prima configurazione",
+          "items": [
+            "Gli interruttori di mappa, Salute e di chi parla partono disattivati; attivali quando vuoi."
+          ]
+        },
+        {
+          "title": "DayRecall per Mac (beta)",
+          "items": [
+            "Una vera finestra Mac: barra laterale, elenco compatto dei record, colonna dei dettagli, calendario mensile, ricerca per parola, condivisione e un elemento nella barra dei menu. Puoi anche esportare e importare i record.",
+            "Sincronizzazione più stabile tra dispositivi con una rete debole: le note delle riunioni ora si sincronizzano, e un telefono che si allontana non occupa più la connessione."
+          ]
+        }
+      ]
+    },
+    "1.3.4": {
+      "title": "Una correzione del riepilogo",
+      "groups": [
+        {
+          "title": "Correzione",
+          "items": [
+            "Se avevi registrato la tua voce, aprire «Riepiloga la tua giornata» poteva bloccare lo schermo, oppure l’app era chiusa quando tornavi e andava chiusa a mano. Non succede più.",
+            "Chi non aveva mai registrato la propria voce non era interessato."
+          ]
+        }
+      ]
+    },
     "1.3.3": {
-      "title": "Impostazioni, semplificate",
-      "items": [
-        "La lingua della riunione ora si trova sotto Trascrizione multilingue, e compare quando hai una seconda lingua di lavoro.",
-        "Le ore di ascolto occupano una riga al giorno. Un giorno che attivi riprende le ore del giorno precedente, e un orario modificato può essere esteso a tutti i giorni di ascolto in una sola volta.",
-        "Impostazioni avanzate è un breve elenco che apre ciascuna parte, e Dati e backup è stato riprogettato.",
-        "Correzioni: una pagina del riepilogo che poteva bloccarsi, trasferimenti da Apple Watch che potevano arrestarsi e un problema di compatibilità dei backup."
+      "title": "Impostazioni semplificate",
+      "groups": [
+        {
+          "title": "Impostazioni",
+          "items": [
+            "La lingua delle riunioni ora sta sotto Trascrizione multilingue e si chiama «Lingua delle riunioni». Compare quando hai una seconda lingua di lavoro: una riga, Disattivata o una delle tue lingue.",
+            "Con la trascrizione multilingue disattivata, l’orologio non mostra più un pulsante di lingua per le riunioni che non puoi usare, e la scelta precedente resta salvata.",
+            "Gli orari di ascolto hanno una riga per giorno (giorno, orario, interruttore); un giorno che attivi riprende gli orari del giorno di ascolto precedente.",
+            "Cambia l’orario di un giorno e ti viene chiesto se tutti i giorni di ascolto debbano adeguarsi; un tocco applica.",
+            "Le impostazioni avanzate sono un breve elenco in tre parti, Ascolto, Rilevamento e Dati; aprine una per regolarla. Le spiegazioni di cursori e interruttori stanno dietro una «i».",
+            "Dati e backup ha un nuovo aspetto e, prima di esportare un backup con dati Salute, una scheda riassume le tre cose da sapere.",
+            "Il registro dettagliato può restare attivo finché non lo spegni (di default si spegne dopo 24 ore)."
+          ]
+        },
+        {
+          "title": "Correzioni",
+          "items": [
+            "La pagina del riepilogo non blocca più lo schermo.",
+            "I trasferimenti bloccati verso l’Apple Watch vengono ritentati.",
+            "Un problema di compatibilità con i backup della libreria."
+          ]
+        }
       ]
     },
     "1.3.2": {
       "title": "Nuovo riconoscimento della voce e backup",
-      "items": [
-        "“La mia voce” usa un nuovo modello di riconoscimento della voce. Registra di nuovo la tua voce dopo l’aggiornamento; le etichette precedenti restano.",
-        "Il rilevamento della lingua si basa per impostazione predefinita su 6 secondi di parlato; scegli 3 o 6 secondi in Impostazioni avanzate.",
-        "Esegui il backup del tuo archivio in un file o nel tuo iCloud privato, e ripristinalo.",
-        "Correzioni per la disattivazione della condivisione con la tua API e per le richieste annullate. Le modifiche fatte mentre una conversazione viene trascritta di nuovo vengono conservate."
+      "groups": [
+        {
+          "title": "La mia voce",
+          "items": [
+            "La mia voce usa un nuovo modello vocale. Registra di nuovo la tua voce dopo l’aggiornamento; le etichette degli interlocutori precedenti restano."
+          ]
+        },
+        {
+          "title": "Lingue",
+          "items": [
+            "Il rilevamento della lingua ascolta sei secondi di parlato di default; scegli tre o sei secondi nelle Impostazioni avanzate."
+          ]
+        },
+        {
+          "title": "Backup e ripristino",
+          "items": [
+            "Esporta la tua libreria come file o salvala nel tuo iCloud privato, e ripristinala quando vuoi.",
+            "La cronologia di Salute e calendario importata da un backup resta separata e non viene mai scambiata per i dati del nuovo telefono."
+          ]
+        },
+        {
+          "title": "Correzioni",
+          "items": [
+            "Problemi quando ritiri il consenso per la tua API o annulli una richiesta.",
+            "Le tue modifiche restano mentre una conversazione viene ritrascritta."
+          ]
+        }
       ]
     },
     "1.3.1": {
-      "title": "Tutte le 14 lingue, giornate più fluide",
-      "items": [
-        "Ogni schermata, incluse le nuove, è disponibile in tutte e 14 le lingue.",
-        "Su Mac, le stesse 17 lingue di trascrizione dell’iPhone, con cinese semplificato e tradizionale distinti.",
-        "Il passaggio da un giorno all’altro è più fluido.",
-        "Il tempo di parlato conta solo il parlato vero e proprio, e una registrazione silenziosa non risulta più come trascritta."
+      "title": "Tutte e 14 le lingue, giornate più fluide",
+      "groups": [
+        {
+          "title": "Lingue",
+          "items": [
+            "Ogni schermata, anche le nuove, è disponibile in tutte e 14 le lingue: connessioni dei dispositivi, elenco dei modelli, note sui permessi, il poster, le schermate d’acquisto e altro.",
+            "Le note offline sulla privacy in tutte e 14 le lingue corrispondono al sito: per quanto tempo si conserva l’audio, la correzione della lingua e come si conservano le copie esportate e di backup."
+          ]
+        },
+        {
+          "title": "Più fluido e più preciso",
+          "items": [
+            "Cambiare giornata è più fluido, con meno conteggi e lavoro sulla mappa ripetuti.",
+            "Il tempo di parlato conta solo le parti in cui qualcuno parla davvero.",
+            "Una registrazione silenziosa finisce normalmente e non dice più che la trascrizione è terminata."
+          ]
+        },
+        {
+          "title": "DayRecall per Mac (beta)",
+          "items": [
+            "Le lingue di trascrizione corrispondono alle 17 scelte dell’iPhone, distinguono il cinese semplificato dal tradizionale e seguono la tua regione."
+          ]
+        }
       ]
     },
     "1.3.0": {
-      "title": "Mac, poster giornalieri e modifica",
-      "items": [
-        "DayRecall per Mac, in beta: registra una riunione di persona o online, metti in pausa e riprendi, conserva riunioni e cose da fare, e collega iPhone e Apple Watch tramite la rete locale. Per la trascrizione su Mac serve un Mac supportato con macOS 26.",
-        "Poster giornalieri: tre aspetti e una frase a scelta, come immagine o come breve video.",
-        "Modifica una conversazione: rinominala, correggi una riga o torna all’originale. Finché il suo audio è ancora conservato, puoi anche correggerne la lingua.",
-        "Scegli la lingua della riunione dal tuo Apple Watch.",
-        "Salva un riepilogo in Notion o Obsidian.",
-        "Correzioni: l’orologio risultava in ascolto anche dopo essersi fermato, e il promemoria di arresto veniva ritirato troppo presto."
+      "title": "Mac, poster quotidiani e modifica",
+      "groups": [
+        {
+          "title": "Poster quotidiano",
+          "items": [
+            "Tre stili e una riga che scegli dalla tua giornata, salvati come immagine o breve video.",
+            "Puoi crearne uno anche con Comandi rapidi."
+          ]
+        },
+        {
+          "title": "Modifica le conversazioni",
+          "items": [
+            "Rinomina una conversazione, modifica una riga o ripristina il testo originale.",
+            "Finché l’audio c’è ancora, cambia la lingua di una conversazione per ritrascriverla; scegli la lingua della riunione direttamente sull’Apple Watch."
+          ]
+        },
+        {
+          "title": "Collegamenti e lettura",
+          "items": [
+            "Salva i riepiloghi su Notion o Obsidian.",
+            "Con la tua API, l’elenco dei modelli si può aggiornare; va online solo quando tocchi.",
+            "Apri il sito web e i documenti legali dall’app."
+          ]
+        },
+        {
+          "title": "DayRecall per Mac (beta)",
+          "items": [
+            "Una vera libreria sul Mac: registra riunioni di persona o online, mettile in pausa e riprendile, e gestisci riunioni, record e attività.",
+            "Funziona con iPhone e Apple Watch abbinati tramite la rete locale."
+          ]
+        },
+        {
+          "title": "Correzioni",
+          "items": [
+            "L’orologio diceva di ascoltare quando si era già fermato.",
+            "I promemoria di stop non venivano ritirati troppo presto."
+          ]
+        }
       ]
     },
     "0.2.34": {
-      "title": "Mac entra nella beta",
-      "items": [
-        "DayRecall per Mac entra nella beta: importa le trascrizioni delle riunioni, e lascia che un Mac abbinato trascriva per il tuo iPhone tramite la tua rete locale crittografata.",
-        "Vengono aggiunte una prova gratuita di 3 giorni e un acquisto unico, per quando DayRecall sarà sull’App Store. Durante la beta resta gratuita.",
-        "La schermata Informazioni ora ha link per valutare DayRecall, condividerla e visitare il sito."
+      "title": "Il Mac entra nella beta",
+      "groups": [
+        {
+          "title": "DayRecall per Mac (beta)",
+          "items": [
+            "DayRecall per Mac entra nella beta: una finestra nativa, testo delle riunioni da importare, e riunioni tenute nel loro spazio.",
+            "Una volta abbinato, un Mac con il modello linguistico pronto può trascrivere per il tuo iPhone su una connessione locale cifrata e rimandare il testo; se il Mac non può, lo fa l’iPhone.",
+            "Il testo delle riunioni sul Mac può sincronizzarsi tramite il tuo iCloud privato, una volta attivato."
+          ]
+        },
+        {
+          "title": "Prova e acquisto (beta)",
+          "items": [
+            "La beta riceve la prova di 3 giorni e lo sblocco unico per poter testare l’acquisto; in beta non si addebita nulla.",
+            "Prima che una prova parta, DayRecall controlla che il parlato e l’IA scelta siano pronti; se no, il conteggio non parte."
+          ]
+        },
+        {
+          "title": "Info",
+          "items": [
+            "Valuta DayRecall, condividilo o apri il sito web da Info."
+          ]
+        }
       ]
     },
     "0.2.33": {
-      "title": "L’ascolto riprende da solo",
+      "title": "L’ascolto riparte da solo",
+      "groups": [
+        {
+          "title": "Dopo un’interruzione",
+          "items": [
+            "Dopo una sveglia, una chiamata o Siri, DayRecall continua a riprovare per circa un minuto e riprende da sola a registrare; ti avvisa solo se non ci riesce.",
+            "Il promemoria «Ascolto in pausa» non arriva più subito: aspetta che il microfono resti libero per 20 secondi senza che la registrazione riprenda, e si ripete una volta dopo 5 minuti. Se la registrazione riparte da sola, non suona nulla.",
+            "Mentre una sveglia suona ancora o una chiamata è in corso, non vieni avvisato a metà.",
+            "L’avviso «L’Apple Watch ha smesso di registrare» dell’iPhone attende allo stesso modo e scompare appena l’orologio torna in ascolto.",
+            "Scegli quando arrivano i promemoria in Impostazioni › Orari di ascolto › Se la registrazione si mette in pausa."
+          ]
+        },
+        {
+          "title": "Chiedi e cronologia",
+          "items": [
+            "Più bravo con le domande su cosa stavi facendo, tipo «di cosa abbiamo parlato mentre correvo?»; se la prima ricerca non trova nulla, riprova una volta con altre parole.",
+            "Le brevi passeggiate sulla cronologia non sono più nascoste dalle conversazioni lunghe."
+          ]
+        },
+        {
+          "title": "Lingue",
+          "items": [
+            "Le schermate e i documenti legali offline sono completi in tutte e 14 le lingue."
+          ]
+        }
+      ]
+    },
+    "0.2.32": {
+      "title": "Scaricala dall’App Store",
+      "tag": "App Store · Prima versione pubblica",
       "items": [
-        "Quando una sveglia, una chiamata o Siri interrompe, il tuo Apple Watch torna da solo in ascolto, e ti avvisa solo se non ci riesce.",
-        "Scegli quando arriva quel promemoria in Impostazioni › Ore di ascolto › Se l’ascolto si interrompe.",
-        "Risposte migliori alle domande su ciò che stavi facendo, come «Che cosa ho detto mentre correvo?».",
-        "Le brevi passeggiate non si nascondono più dietro le lunghe conversazioni nella cronologia."
+        "Sull’App Store dal 30 ottobre, con tutto ciò che è nelle versioni qui sotto.",
+        "Risolve un arresto anomalo all’avvio della 0.2.31."
       ]
     },
     "0.2.29": {
       "title": "Riepiloghi, scritti in background",
-      "items": [
-        "«Riepiloga la giornata» ora scrive in background: esci dalla pagina, e il riepilogo viene salvato con quella giornata.",
-        "Prima che inizi vedi più o meno quanto durerà; mentre lavora, il passaggio in corso e il tempo rimanente.",
-        "Non ti basta? Passa la giornata a un’app di IA e riporta indietro la sua risposta, salvata accanto alla giornata.",
-        "Riepilogo ogni giorno: Ricordamelo, Scrivilo per me oppure Disattivato.",
-        "Se questo iPhone non può scrivere un riepilogo, lo dice e offre altri due modi.",
-        "Un promemoria sull’orologio quando iniziano le ore di ascolto, e un altro sull’iPhone 20 minuti dopo se non hai ancora iniziato.",
-        "Un arresto anomalo all’avvio nella 0.2.31 è stato corretto lo stesso giorno, con la 0.2.32."
+      "groups": [
+        {
+          "title": "Riepiloga la tua giornata",
+          "items": [
+            "Scritto in background: puoi lasciare la pagina o cambiare scheda mentre lavora. Una sottile barra sopra ogni scheda mostra il passo e il tempo rimasto, e puoi fermarti in ogni momento.",
+            "Un riepilogo completato viene conservato con la sua giornata. In Oggi la riga dice «Il tuo riepilogo · scritto alle …»; toccala per leggerlo, poi copiare, condividere, inviare il suo elenco in Da confermare, riscriverlo o eliminarlo.",
+            "Prima di partire vedi più o meno quanto durerà; oltre un minuto, l’app ti spiega prima che puoi lasciare la pagina, che DayRecall deve restare aperto, e le scorciatoie.",
+            "Fermare e riavviare, o riprovare dopo un errore, non rilegge le parti già lette.",
+            "Quando l’app non è in primo piano o l’iPhone è caldo, il modello sul dispositivo aspetta e riprende quando torni e si è raffreddato.",
+            "Se hai lasciato l’app quando è finito, una notifica silenziosa dice che il riepilogo è pronto (disattivabile in Impostazioni › Notifiche)."
+          ]
+        },
+        {
+          "title": "Chiedi a un’IA più potente",
+          "items": [
+            "Non basta? Affida la giornata a un’app di IA e riporta la sua risposta: viene conservata con la giornata, accanto al riepilogo dell’iPhone.",
+            "Quando questo iPhone non può scrivere un riepilogo (niente Apple Intelligence, disattivata, modello ancora in download, o la tua API non è configurata), lo dice e ti mostra gli altri due modi."
+          ]
+        },
+        {
+          "title": "Riepiloga ogni giorno",
+          "items": [
+            "Impostazioni › Motore IA › Riepiloga ogni giorno: Ricordamelo (predefinito), Scrivilo per me, oppure Disattivato.",
+            "«Ricordamelo» invia una notifica silenziosa mezz’ora dopo la fine dei tuoi orari di ascolto, se la giornata ha più di 5 minuti di parlato e nessun riepilogo ancora."
+          ]
+        },
+        {
+          "title": "Promemoria e affidabilità",
+          "items": [
+            "All’inizio dei tuoi orari di ascolto l’orologio ti ricorda una volta; se dopo 20 minuti non è partito nulla, ti ricorda l’iPhone, e i due avvisi spariscono appena la registrazione inizia.",
+            "Chiedi termina in tempo anche quando il modello è lento a rispondere, e un riepilogo in ritardo non può ricomparire dopo che hai svuotato la libreria."
+          ]
+        }
       ]
     },
     "0.2.21": {
       "title": "Le prime beta come DayRecall",
-      "items": [
-        "La registrazione è più affidabile: i trasferimenti da Apple Watch vengono ritentati, le registrazioni eliminate restano eliminate, e l’ascolto e i promemoria si riprendono dopo un’interruzione.",
-        "Nuove Impostazioni: è l’ultima scheda, in gruppi chiari, e la configurazione iniziale ti fa scegliere che cosa registra DayRecall.",
-        "La prima schermata di Oggi è per la tua giornata: una scheda di ascolto più snella e una piccola riga di riepilogo che puoi chiudere.",
-        "La Salute nella cronologia ha un nuovo aspetto. Quando affidi una giornata a un’app di IA, puoi scegliere di includere etichette e valori di Salute; è disattivato per impostazione predefinita.",
-        "Con la tua API, scegli il modello e l’intensità del ragionamento.",
-        "Leggi i termini e l’informativa sulla privacy nell’app, anche offline, in 14 lingue.",
-        "Quando l’ascolto finisce, il promemoria per sincronizzare indica più o meno quando il testo sarà pronto."
+      "groups": [
+        {
+          "title": "Registrazione più affidabile",
+          "items": [
+            "La registrazione su iPhone si riprende da sola dopo un’interruzione; i trasferimenti dall’Apple Watch vengono ritentati, e le registrazioni eliminate non tornano.",
+            "Se una registrazione arrivata da un orologio offline non si può collocare prima o dopo qualcosa che hai eliminato, viene tenuta a parte perché la ripristini o la elimini.",
+            "Un arresto non registrato viene registrato in seguito; una volta installato il modello vocale, le registrazioni in attesa vengono trascritte, anche i mesi precedenti, e le loro traduzioni diventano cercabili."
+          ]
+        },
+        {
+          "title": "Oggi",
+          "items": [
+            "La prima schermata è per la tua giornata: la scheda di ascolto mostra solo lo stato, il tempo di parlato di oggi e il pulsante di registrazione, con un piccolo avviso solo quando qualcosa richiede la tua attenzione.",
+            "«Riepiloga la tua giornata» è una piccola riga che puoi chiudere; un pulsante in alto la apre comunque.",
+            "I momenti di silenzio senza parole trovate non ti avvisano più; l’avanzamento della trascrizione e gli errori che puoi riprovare stanno in Impostazioni › Dispositivi."
+          ]
+        },
+        {
+          "title": "Impostazioni e prima configurazione",
+          "items": [
+            "Impostazioni è l’ultima scheda, raggruppata in Generali, Funzioni, Aiuto e Info; le opzioni avanzate hanno una pagina propria, con le spiegazioni dietro una «i».",
+            "Nella prima configurazione scegli cosa tiene traccia DayRecall.",
+            "Impostare l’orologio perché torni su DayRecall quando alzi il polso richiede quattro passaggi numerati."
+          ]
+        },
+        {
+          "title": "Attività e promemoria",
+          "items": [
+            "Le attività e i tuoi Promemoria restano allineati: nessun promemoria doppio, e il completamento si sincronizza.",
+            "Quando l’ascolto finisce, ti viene ricordato di sincronizzare e ti viene detto più o meno quando il testo sarà pronto; dal secondo giorno in attesa di sincronizzazione, il promemoria può suonare."
+          ]
+        },
+        {
+          "title": "Salute",
+          "items": [
+            "La Salute sulla cronologia ha un nuovo aspetto, e anche una giornata con solo un allenamento la mostra.",
+            "Quando affidi una giornata a un’app di IA o scrivi un riepilogo con la tua API, puoi aggiungere etichette e valori di Salute (frequenza cardiaca, passi, distanza e altro). È disattivato di default, e i valori mancanti non diventano mai zero."
+          ]
+        },
+        {
+          "title": "IA e privacy",
+          "items": [
+            "Con la tua API, scegli il modello e quanto deve ragionare.",
+            "Una volta autorizzata la tua API, viene usata per trovare le attività, scrivere i riepiloghi e rispondere alle domande; l’audio non viene mai inviato, e ti viene chiesto di nuovo prima di condividere altro.",
+            "Se il salvataggio di una chiave API fallisce, resta quella vecchia e ti viene segnalato.",
+            "Leggi le condizioni e l’informativa sulla privacy offline nell’app, in tutte e 14 le lingue."
+          ]
+        },
+        {
+          "title": "Giornata di esempio",
+          "items": [
+            "La giornata di esempio ha interlocutori, passeggiate, allenamenti, frequenza cardiaca e traduzioni, e ti porta da un’attività alle parole e al momento preciso."
+          ]
+        }
       ]
     }
   },
@@ -909,5 +1270,8 @@
   "health_09": "Animazione: si attiva Salute, la cronologia mostra una camminata e una frequenza cardiaca sopra la norma, e una domanda su prima di dormire ritrova ciò che è stato detto.",
   "not_found_title": "Pagina non trovata — DayRecall",
   "not_found_heading": "Questa pagina non esiste.",
-  "not_found_home": "Pagina iniziale di DayRecall"
+  "not_found_home": "Pagina iniziale di DayRecall",
+  "updates_review": "In revisione su App Store",
+  "updates_appstore": "App Store",
+  "updates_latest_review": "In revisione su App Store: {title}"
 }
